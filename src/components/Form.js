@@ -10,7 +10,7 @@ export const Form = () => {
   }
 
   return (
-    <div className="form-container">
+    <section className="form">
       <form>
         <h1>The state is: {name}</h1>
         <input
@@ -19,6 +19,6 @@ export const Form = () => {
           value={name} />
       </form>
       <button type="button" onClick={onBackButtonClick}>Go back</button>
-    </div>
+    </section>
   );
 }
