@@ -5,6 +5,7 @@ export const Form = () => {
 
   return (
     <form>
+      <h1>The state is: {name}</h1>
       <input
         type="text"
         onChange={(event) => setName(event.target.value)}
