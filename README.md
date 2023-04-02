@@ -1,8 +1,10 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
+This project was completed as part of the React Sprint in the Technigo bootcamp. The goal was to build a landing page using React and learn about components and styling.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The landing page was designed by UX students and provided as a design hand-off. Through this project, I learned about the role of color, typography, and hierarchy in web design. I also learned how to use Styled Components as a CSS framework to style React components.
+
+Overall, this project helped me to strengthen my React skills and better understand how to work with designers and create visually appealing web pages.
 
 ## The problem
 
