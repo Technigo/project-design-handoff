@@ -12,8 +12,12 @@ code {
     monospace;
 }
 
-.form {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 1px solid red;
+.main-container {
+  border: 1px solid red;
+  margin: 10px;
+}
+
+.navbar {
+  border: 1px solid red;
+  margin: 10px;
 }

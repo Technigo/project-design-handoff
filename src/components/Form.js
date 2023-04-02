@@ -1,24 +1,19 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react'
 
-export const Form = () => {
-  const [name, setName] = useState('')
-  const navigate = useNavigate()
-
-  const onBackButtonClick = () => {
-    navigate(-1);
+export const Form = (props) => {
+  const handleSubmit = (event) => {
+    props.setName(event.targe.usernameInput.value);
   }
 
   return (
-    <section className="form">
-      <form>
-        <h1>The state is: {name}</h1>
+    <div className="main-container">
+      <h2>Enter your name</h2>
+      <form className="form" onSubmit={handleSubmit}>
         <input
+          name="usernameInput"
           type="text"
-          onChange={(event) => setName(event.target.value)}
-          value={name} />
+          required />
       </form>
-      <button type="button" onClick={onBackButtonClick}>Go back</button>
-    </section>
-  );
+    </div>
+  )
 }
