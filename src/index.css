@@ -13,5 +13,7 @@ code {
 }
 
 .head-container {
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 1px solid red;
 }
