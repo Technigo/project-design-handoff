@@ -3,10 +3,14 @@ import React from 'react'
 export const Header = () => {
   return (
     <header>
-      <div className="head-container">
-        <h1>Header</h1>
-        <p>Design the header and logo</p>
-      </div>
+      <nav>
+
+        <ul className="navLinks">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
     </header>
   )
 }
