@@ -1,8 +1,9 @@
 import React from 'react'
+import { HeaderDesign } from './HeaderDesign'
 
 export const Header = () => {
   return (
-    <header>
+    <HeaderDesign>
       <nav>
         <ul className="navLinks">
           <li><a href="">CONTACT</a></li>
@@ -10,6 +11,6 @@ export const Header = () => {
           <li><a href="">ABOUT</a></li>
         </ul>
       </nav>
-    </header>
+    </HeaderDesign>
   )
 }
