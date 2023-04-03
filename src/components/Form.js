@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Form = (props) => {
   const handleSubmit = (event) => {
-    props.setName(event.targe.usernameInput.value);
+    props.set(event.targe.usernameInput.value);
   }
 
   return (
