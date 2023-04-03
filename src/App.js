@@ -8,26 +8,18 @@ import { Footer } from './components/footer';
 
 export const App = () => {
   return (
-    <BrowserRouter className="Main-container">
-      <Routes>
-        <Header />
-        <Route path="/" element={<Main />} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/classes" element={<Classes />} />
-        <Footer />
-        <Route path="*" element={<Navigate to="/404" replace />} />
-      </Routes>
+    <BrowserRouter>
+      <div className="Main-container">
+        <h1>Hejsan</h1>
+        <Route component={Header} />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/register/:register" element={<Register />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="*" element={<Navigate to="/404" replace />} />
+        </Routes>
+        <Route component={Footer} />
+      </div>
     </BrowserRouter>
   );
 }
-
-/*
-<BrowserRouter className="Main-container">
-      <Routes>
-        <Route path="/" element={<Movies />} />
-        <Route path="/details/:movieInfo" element={<Details />} />
-        <Route path="/404" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/404" replace />} />
-
-      </Routes>
-    </BrowserRouter> */
