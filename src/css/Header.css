@@ -1,0 +1,27 @@
+.nav-container {
+  display: flex; 
+  flex-direction: row; 
+  border: 2px solid red; 
+  background-color: aqua;
+}
+
+.navbar-header {
+  display: flex; 
+  flex-direction: row; 
+  border: 2px solid green; 
+}
+
+.logo-and-title {
+  display: flex; 
+  flex-direction: row; 
+  border: 2px solid orange; 
+}
+
+.nav-links {
+  border: 2px solid pink; 
+  width: 80%;
+}
+
+.logo {
+  width: 30px; 
+}
