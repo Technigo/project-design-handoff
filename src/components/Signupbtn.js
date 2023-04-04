@@ -10,6 +10,8 @@ height: 55px;
 background-color: #FF9F0A;
 color: black;
 font-size: 24px;
+position: absolute;
+top: 700px;
 `
 
 const SignUpBtn = () => {
