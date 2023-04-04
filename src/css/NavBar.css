@@ -5,26 +5,21 @@
 .nav-container {
   display: flex; 
   width: 100%; 
-  border: 2px solid red; 
   align-content: space-between; 
   background-color: #7034E4; 
   justify-content:space-between; 
 
 }
 
-.navbar-header {
-  border: 2px solid green; 
-}
-
 .logo-and-title {
   display: flex; 
   color: #FBEDDE; 
-  border: 2px solid orange; 
+  gap: 10px; 
+  margin-left: 10px; 
 }
 
 .nav-links {
   display: flex; 
-  border: 2px solid pink; 
   width: 40%;
   justify-content: space-between; 
   align-items: center; 
@@ -38,7 +33,7 @@
 .hamburger {
   display: flex; 
   justify-content: flex-end; 
-  border: 2px solid blue; 
+  margin-right: 10px; 
 }
 
 .hamburger-menu{
@@ -48,15 +43,9 @@
   width: 30px; 
 }
 
-.header-container {
-  position: relative; 
-  text-align: center; 
+@media (max-width:1024px) {
+.nav-img {
+  display: none; 
 }
-
-.background-image {
-  width: 100%; 
-}
-
-.title-text {
-  position: absolute; 
+  
 }

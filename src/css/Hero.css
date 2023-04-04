@@ -1,0 +1,12 @@
+.hero-container {
+  position: relative; 
+  text-align: center; 
+}
+
+.background-image {
+  width: 100%; 
+}
+
+.title-text {
+  position: absolute; 
+}
