@@ -6,21 +6,33 @@ import SearchIcon from '../icons/Search.png'
 
 const StyledNavBar = styled.div`
 display: flex;
+width: 100vw;
 justify-content: space-between;
 background-color: transparent;
 position: absolute;
+top: 32px;
 `
 const StyledIcons = styled.div`
 display:flex;
+`
+const Icon = styled.img`
+width: 40px;
+height: 40px;
+padding-right: 16px;
+`
+const Logo = styled.img`
+width: 96px;
+height: 29px;
+padding-left: 16px;
 `
 
 export const NavBar = () => {
   return (
     <StyledNavBar>
-      <img src={LogoImg} alt="site-logo" />
+      <Logo src={LogoImg} alt="site-logo" />
       <StyledIcons>
-        <img src={MenuIcon} alt="menu" />
-        <img src={SearchIcon} alt="search" />
+        <Icon src={MenuIcon} alt="menu" />
+        <Icon src={SearchIcon} alt="search" />
       </StyledIcons>
     </StyledNavBar>
   )

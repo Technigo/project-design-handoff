@@ -1,10 +1,10 @@
 import React from 'react'
-import { Hero } from 'components/Hero'
+import { HeroSite } from 'components/HeroSite'
 
 export const App = () => {
   return (
     <div>
-      <Hero />
+      <HeroSite />
     </div>
   )
 }
