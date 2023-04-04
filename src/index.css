@@ -77,7 +77,7 @@ padding: 24px 24px 40px 24px;
   border-radius: 12px;
   width: 342px;
   height: 345px;
-
+  margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
