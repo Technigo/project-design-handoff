@@ -36,6 +36,7 @@ body {
   --color-success: #22992e;
 
   /* xxx */
+  /* Margin 32px 64px */
 }
 
 .App {
@@ -46,6 +47,7 @@ body {
 
 /* Headline 3 */
 h1 {
+  margin: 0;
   font-size: 24px;
   letter-spacing: 1px;
   font-weight: medium;
@@ -53,6 +55,7 @@ h1 {
 
 /* Sub headline 3 */
 h2 {
+  margin: 0;
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: medium;
@@ -60,6 +63,7 @@ h2 {
 
 /* Title 3 */
 h3 {
+  margin: 0;
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: normal;
@@ -67,6 +71,7 @@ h3 {
 
 /* Body */
 p {
+  margin: 0;
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 160%;
@@ -75,6 +80,7 @@ p {
 
 /* Caption */
 p .caption {
+  margin: 0;
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 160%;
