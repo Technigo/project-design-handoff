@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { slide as BurgerMenu } from 'react-burger-menu'
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
+import './css/header.css'
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
