@@ -3,7 +3,7 @@ import React from 'react'
 export const HeroSection = () => {
   return (
     <div className="navbar">
-      <img src="../VectorSmall.png" alt="logo" />
+      <img src="/assets/logo/VectorSmall" alt="logo" />
       <div className="hero-container">
         <div className="hero-text" />
         <h2>See New Heights with Aerial Silks</h2>
