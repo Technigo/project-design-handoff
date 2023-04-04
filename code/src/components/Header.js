@@ -13,7 +13,7 @@ const stickyMenu = () => {
         <a href="#about">About</a>
         <a href="#shop">Shop</a>
         <a href="#club">Club</a>
-        <img src="https://icons8.com/icon/DlQ7rde0TrSv/magnifying-glass" alt="magnifying glass" />
+        <img src="../assets/magnifying-glass.png" alt="magnifying glass" />
         <button className="tryforfree" type="submit" onClick={handleButtonClick}>Try for Free</button>
       </nav>
     </header>
