@@ -1,0 +1,21 @@
+.main-content-container {
+    border: red 2px solid;
+    width: 75%;
+    margin: auto;
+    background-color: rgba(149, 166, 181, 0.5);
+    border-radius: 8px 80px;
+    height: 323px;
+    padding: 20px;
+    color: white;
+}
+.main-text {
+    display: flex;  
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-text h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+}
