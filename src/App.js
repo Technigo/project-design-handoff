@@ -2,6 +2,7 @@ import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import Benefits from 'components/Benefits.js';
 import Workouts from 'components/Workouts';
+import Activity from 'components/Activity';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -15,6 +16,7 @@ export const App = () => {
       <GlobalStyle />
       <Benefits />
       <Workouts />
+      <Activity />
     </>
   )
 }

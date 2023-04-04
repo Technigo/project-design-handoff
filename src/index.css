@@ -12,6 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+ /* SECTIONS */
+ section {
+  max-width: 100%;
+  margin-top: 128px;
+ }
 
 /* CARDS */
 .cardWrapper, .videoCard, .smallCard, .mediumCard {
@@ -61,6 +66,31 @@ code {
   transform: scale(0.9);
 }
 
+/* ACTIVITY SECTION */
+.sectionActivity {
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneImg {
+  width: 228px;
+  height: 440px;
+  margin: 48px auto;
+}
+
+.scrollWrapper {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.textCard {
+  min-width: 270px;
+  margin-left: 16px;
+}
+
+
 /* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
 @media (min-width: 667px) {
   .textBtnWrapper {
@@ -79,6 +109,12 @@ code {
     justify-content: center;
     gap: 20px;
   }
+
+  .phoneImg {
+    width: 325px;
+    height: 625px;
+    margin: 64px auto;
+  }
 }
 
 /* RESPONSIVE DESIGN FOR TABLET ONLY */
@@ -94,6 +130,10 @@ code {
 
   .introBenefits, .benefitsBtn {
     grid-column: 1 / span 2;
+  }
+
+  .textCard {
+    min-width: 287px;
   }
 }
 
@@ -114,7 +154,7 @@ code {
 
   .sectionWorkouts {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
   }
 
   .introWorkouts {
@@ -130,5 +170,29 @@ code {
 
   .smallCardWrapper {
     grid-column: 2 / span 1;
+  }
+
+  .sectionActivity {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+  }
+
+  .introActivity {
+    grid-column: 1 / span 2;
+  }
+
+  .phoneImg {
+    grid-column: 1 / span 1;
+  }
+
+  .textCard {
+    margin: 16px 0;
+    max-width: 80%;
+  }
+
+  .scrollWrapper {
+    flex-direction: column;
+    overflow: hidden;
   }
 }
