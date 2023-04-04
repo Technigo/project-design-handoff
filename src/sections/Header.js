@@ -23,7 +23,7 @@ const Header = () => {
       {!isDesktop && (
         <div className="Header">
           {isMobile && (<img src={LogoMini} alt="Gracious moments logo" />)}
-          {isMobile && (<img src={LogoSmall} alt="Gracious moments logo" />)}
+          {!isMobile && (<img src={LogoSmall} alt="Gracious moments logo" />)}
           <div className="icons">
             <img src={MenuIcon} alt="menu" className="menu" />
             <img src={SearchIcon} alt="search" className="search" />
