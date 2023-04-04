@@ -9,8 +9,8 @@ import './Header.css'
 
 const Header = () => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
-  const isDesktop = screenSize >= 1025;
   const isMobile = screenSize <= 640;
+  const isDesktop = screenSize >= 1025;
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
