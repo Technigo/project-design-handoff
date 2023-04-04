@@ -1,27 +1,62 @@
+.nav-bar {
+  display: flex; 
+}
+
 .nav-container {
   display: flex; 
-  flex-direction: row; 
+  width: 100%; 
   border: 2px solid red; 
-  background-color: aqua;
+  align-content: space-between; 
+  background-color: #7034E4; 
+  justify-content:space-between; 
+
 }
 
 .navbar-header {
-  display: flex; 
-  flex-direction: row; 
   border: 2px solid green; 
 }
 
 .logo-and-title {
   display: flex; 
-  flex-direction: row; 
+  color: #FBEDDE; 
   border: 2px solid orange; 
 }
 
 .nav-links {
+  display: flex; 
   border: 2px solid pink; 
-  width: 80%;
+  width: 40%;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 50px; 
 }
 
+.nav-img {
+  height: 30px; 
+}
+
+.hamburger {
+  display: flex; 
+  justify-content: flex-end; 
+  border: 2px solid blue; 
+}
+
+.hamburger-menu{
+  justify-content: flex-end; 
+}
 .logo {
   width: 30px; 
+}
+
+.header-container {
+  position: relative; 
+  text-align: center; 
+}
+
+.background-image {
+  width: 100%; 
+}
+
+.title-text {
+  position: absolute; 
 }

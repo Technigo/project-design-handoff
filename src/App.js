@@ -1,13 +1,15 @@
 import React from 'react';
 import { NavBar } from './components/NavBar';
-import { Header } from './components/Header';
+import { Hero } from './components/Hero';
 import { Pitch } from './components/Pitch';
 
 export const App = () => {
   return (
     <div className="app">
-      <NavBar />
-      <Header />
+      <header>
+        <NavBar />
+        <Hero />
+      </header>
       <Pitch />
     </div>
   )

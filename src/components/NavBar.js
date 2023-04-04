@@ -5,15 +5,17 @@ export const NavBar = () => {
     <nav className="nav-bar">
       <div className="nav-container">
         <div className="logo-and-title">
-          <img alt="logo" className="logo" src="https://cdn.worldvectorlogo.com/logos/svg-1.svg" />
-          <h1>Title text</h1>
+          <img alt="logo" className="logo" src="./assets/Union.svg" />
+          <h1>fit parent</h1>
         </div>
         <div className="nav-links">
-          <ul>
-            <li>About</li>
-            <li>Home</li>
-            <li>Yada yada</li>
-          </ul>
+          <img alt="nav-img" className="nav-img" src="./assets/Dads.svg" />
+          <img alt="nav-img" className="nav-img" src="./assets/Moms.svg" />
+          <img alt="nav-img" className="nav-img" src="./assets/Moms & Dads.svg" />
+          <img alt="nav-img" className="nav-img" src="./assets/Food.svg" />
+        </div>
+        <div className="hamburger">
+          <img alt="hamburger-menu" className="hamburger-menu" src="./assets/Hamburger.svg" />
         </div>
       </div>
     </nav>
