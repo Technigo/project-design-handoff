@@ -1,9 +1,10 @@
 import React from 'react';
+import './css/main.css'
 
-export const Main = () => {
+export const Hero = () => {
   return (
-    <div>
-      <p>Main info of project</p>
+    <div className="test">
+      <p>Go beyond the limit</p>
     </div>
   );
 }
