@@ -7,9 +7,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 16px auto;
+    margin: 10px auto;
     padding: 20px;
     border: 1px solid red;
+  }
+
+  .menu-text {
+    display: flex;
+    gap: 80px;
   }
   
   @media (min-width: 641px) {}
