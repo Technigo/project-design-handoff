@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unused-class-component-methods */
 import React from 'react';
 import { bubble as Menu } from 'react-burger-menu';
-import '../react-burger-menu/dist/react-burger-menu.css';
 
 class HamburgerMenu extends React.Component {
   showSettings(event) {
@@ -12,10 +11,8 @@ class HamburgerMenu extends React.Component {
     return (
       <Menu
         right
-        styles={{
-        }}
-        customBurgerIcon={<img src="../assets/burger-menu.svg" alt="hamburger menu" />}
-        customCrossIcon={<img src="../assets/cross.svg" alt="closing cross" />}>
+        customBurgerIcon={<img className="burger-icon" src="../assets/burger-menu.svg" alt="hamburger menu" />}
+        customCrossIcon={<img className="cross-icon" src="../assets/cross.svg" alt="closing cross" />}>
         <a className="menu-item" href="#services">
           Services
         </a>

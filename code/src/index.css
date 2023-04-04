@@ -14,13 +14,42 @@ code {
 
 .tryforfree{
   border-color:#FF8F3D;
-  border-radius: 15px;
-  border-width: 5px;
+  border-radius: 10px;
+  border-width: 3px;
   color:#FF8F3D;
-  fill-opacity: 0;
-  font-size: 2rem;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .logo{
   color:black;
+}
+
+.hero-wrapper {
+  background-image: url("/Users/jennifer 1/Desktop/TECHNIGO/Sprint 3/project-design-handoff/code/public/assets/HeroImage.jpg");
+  overflow: hidden;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.burger-icon{
+  max-height: 10vh;
+  align-content: left;
+}
+
+
+.menu-item{
+  color:white;
+  font-size: 2rem;
+  padding:10px;
+  text-decoration: none;
+  text-align:left;
 }
