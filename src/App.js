@@ -1,9 +1,16 @@
 import React from 'react'
+import { Benefits } from 'components/Benefits'
+import { createGlobalStyle } from 'styled-components';
 
 export const App = () => {
+  const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: 'Libre Franklin', sans-serif;
+  }`
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <GlobalStyle />
+      <Benefits />
+    </>
   )
 }
