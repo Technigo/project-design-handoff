@@ -11,6 +11,7 @@ class HamburgerMenu extends React.Component {
     return (
       <Menu
         right
+        className="burger-menu"
         customBurgerIcon={<img className="burger-icon" src="../assets/burger-menu.svg" alt="hamburger menu" />}
         customCrossIcon={<img className="cross-icon" src="../assets/cross.svg" alt="closing cross" />}>
         <a className="menu-item" href="#services">

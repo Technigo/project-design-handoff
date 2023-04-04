@@ -22,15 +22,14 @@ code {
   font-weight: bold;
 }
 
-.logo{
-  color:black;
+.navcomp {
+ opacity: 0;
 }
 
 .hero-wrapper {
   background-image: url("/Users/jennifer 1/Desktop/TECHNIGO/Sprint 3/project-design-handoff/code/public/assets/HeroImage.jpg");
   overflow: hidden;
-  background-position: center;
-  height: 100vh;
+  background-position: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,11 +39,20 @@ code {
   padding: 20px;
 }
 
+.hero-wrapper img{
+  height: 100vh;
+
+}
+
 .burger-icon{
   max-height: 10vh;
   align-content: left;
 }
 
+.burger-menu{
+  background-color: #03092E;
+  opacity: 0.4;
+}
 
 .menu-item{
   color:white;
@@ -53,3 +61,15 @@ code {
   text-decoration: none;
   text-align:left;
 }
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* CSS styles for screens between 641px and 1024px */
+  .navcomp {
+    opacity: 1;
+   }
+
+}
+
+
+@media (min-width: 1025px){}
