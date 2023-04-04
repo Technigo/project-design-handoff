@@ -1,0 +1,11 @@
+.cta-background {
+    height: 144px;
+    width: 390px;
+    left: 81px;
+    top: 2239px;
+    border-radius: 0px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
