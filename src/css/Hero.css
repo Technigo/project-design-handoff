@@ -1,12 +1,72 @@
 .hero-container {
-  position: relative; 
+  display: flex; 
   text-align: center; 
+  border: 2px solid purple;
+  background-image: url('../Images/hero.png');
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position:25% 21%; 
 }
 
-.background-image {
-  width: 100%; 
+.hero-text-and-button {
+display: flex; 
+flex-direction: column; 
+align-content: center;
+width: 100%; 
+height: 745px; 
+object-fit: cover;
+border:2px solid lightgreen;
+}
+
+.hero-text-and-button h4 {
+  width: 700px; 
+  font-family: 'Inter';
+  font-weight: 700; 
+  font-size: 32px; 
+  align-self: center; 
+  color: #FBEDDE; 
+
 }
 
 .title-text {
-  position: absolute; 
+  display: flex; 
+  width: 700px;
+  font-family:'Poppins';
+  font-weight: 600;
+  font-size: 96px; 
+  color: #FBEDDE; 
+  align-self: center; 
+
+}
+
+.button {
+  width: 390px; 
+  padding: 32px 49px; 
+  background: #DBFE62;
+  border-radius: 47px;
+  align-self: center; 
+  font-family: 'Poppins'; 
+  font-size: 24px; 
+  font-weight: 600; 
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .hero-container {
+    background-position: 75% 21%; 
+  }
+
+  .title-text {
+    font-size: 88px; 
+    font-weight:500; 
+  }
+}
+
+@media (max-width: 667px) {
+  .title-text {
+    font-size: 25px; 
+  }
+
+  .hero-container {
+    background-position: 75% 21%; 
+  }
 }

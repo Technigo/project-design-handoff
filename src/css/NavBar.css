@@ -1,5 +1,6 @@
 .nav-bar {
   display: flex; 
+  position: sticky; 
 }
 
 .nav-container {
@@ -8,7 +9,6 @@
   align-content: space-between; 
   background-color: #7034E4; 
   justify-content:space-between; 
-
 }
 
 .logo-and-title {
