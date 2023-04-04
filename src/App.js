@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from 'components/Header.js';
+import Navbar from 'components/Navbar.js';
 
 export const App = () => {
   return (
     <div className="landingPage">
-      <Header />
+      <Navbar />
     </div>
   )
 }

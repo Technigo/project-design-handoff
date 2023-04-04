@@ -11,3 +11,74 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 64px;
+  background-color: #F2FDFF;
+}
+
+.logo {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 16px;
+}
+
+.signUpButton {
+  display: none;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-right: 80px;
+}
+
+@media (min-width: 667px) and (max-width: 1023px) {
+
+  .signUpButton {
+    background-color: #FFD9BF;
+    color: #210440;
+    border-radius: 30px;
+    height: 46px;
+    width: 116px;
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 100px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .signUpButton {
+    background-color: #FFD9BF;
+    color: #210440;
+    border-radius: 30px;
+    height: 46px;
+    width: 116px;
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 100px;
+  }
+}
