@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.hero {
+    background-image: url('/public/images/HERO_How-exercise-makes-you-feel-better.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FBEDDE;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .hero h1 {
+    font-size: 96px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .hero button {
+    background-color: #DBFE62;
+    color: #344840;
+    width: 390px;
+    height: 84px;
+    border-radius: 47px;
+    border: 0;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+  }
