@@ -1,0 +1,11 @@
+
+.top-silk img {
+    width: 100%;
+    margin: 0;
+}
+
+.bottom-silk img {
+    width: 100%;
+    transform: rotate(180deg);
+    margin: 0;
+}

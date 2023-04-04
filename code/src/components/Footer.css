@@ -14,17 +14,62 @@ hr {
     color: var(--main-light-color);
     border: 0.25px solid var(--main-light-color);
     opacity: 0.5;
-    width: 40%;
+    width: 80%;
 }
 
 .linkfield {
     display: flex;
+
     flex-direction: row;
-    gap: 65px;
+    gap: 20px;
 }
 
 .iconfield {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+.iconfield img {
+    scale: 0.9;
+}
+
+  
+@media (min-width: 641px) {
+    .linkfield {
+        gap: 55px;
+    }
+
+    .iconfield {
+        gap: 30px;
+    }
+
+    .iconfield img {
+        scale: 1;
+    }
+    
+    hr {
+        width: 50%;
+    }
+
+  }
+
+  @media (min-width: 1025px) {
+    .linkfield {
+        gap: 65px;
+    }
+    
+    .iconfield {
+        gap: 40px;
+    }
+
+    .iconfield img {
+        scale: 1;
+    }
+
+    hr {
+        width: 500px;
+    }
+    
+  }
