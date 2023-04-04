@@ -1,8 +1,8 @@
 // /////////////// IMPORT //////////////////////// //
 
 import React from 'react';
-import { StartButton } from './Components/StartButton/StartButton';
 import './Hero.css';
+import { StartButton } from 'Components/StartButton/StartButton';
 
 // /////////////// COMPONENT //////////////////////// //
 
@@ -17,7 +17,10 @@ export const Hero = () => {
             Get started at your personal level.
         </p>
       </div>
-      <StartButton cta />
+      <div className="buttons-container">
+        <StartButton cta>Get started</StartButton>
+        <StartButton outlined>Default</StartButton>
+      </div>
     </div>
   )
 }
