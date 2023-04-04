@@ -1,9 +1,13 @@
 import React from 'react'
+import { Hero } from 'components/Hero'
+import { Classes } from 'components/Classes'
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <Hero />
+      <Classes />
+
     </div>
   )
 }
