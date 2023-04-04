@@ -1,0 +1,17 @@
+.Header {
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px auto;
+    padding: 20px;
+    border: 1px solid red;
+  }
+  
+  @media (min-width: 641px) {}
+
+  @media (min-width: 1025px) {}

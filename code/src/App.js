@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
 
-export const App = () => {
+import './index.css';
+
+const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
+    <div className="App">
+      <Header />
+      <Hero />
     </div>
-  )
-}
+  );
+};
+
+export default App;

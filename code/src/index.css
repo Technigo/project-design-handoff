@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +9,134 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+  /* COLORS */
+  --primary-color: #d7c3e2;
+  --primary-color-a: #e1d2e9;
+  --primary-color-b: #cdb4db;
+  --primary-color-c: #a490af;
+  --primary-color-d: #7b6c83;
+
+  --secondary-color: #bde0fe;
+  --secondary-color-a: #d7ecfe;
+  --secondary-color-b: #97b3cb;
+  --secondary-color-c: #718698;
+
+  --main-light-color: #f9f6fb;
+  --main-mid-color: #4c5a66;
+  --main-dark-color: #131313;
+
+  --color-error: #a91717;
+  --color-success: #22992e;
+
+  /* xxx */
 }
+
+.App {
+  font-family: "Poppins", sans-serif;
+}
+
+/* --------- MOBILE --------- */
+
+/* Headline 3 */
+h1 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: medium;
+}
+
+/* Sub headline 3 */
+h2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: medium;
+}
+
+/* Title 3 */
+h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+/* Body */
+p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 160%;
+  font-weight: normal;
+}
+
+/* Caption */
+p .caption {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 160%;
+  font-weight: medium;
+}
+
+/* --------- TABLET --------- */
+
+@media (min-width: 641px) {
+  /* Headline 2 */
+  h1 {
+    font-size: 40px;
+  }
+
+  /* Sub headline 2 */
+  h2 {
+    font-size: 24px;
+  }
+
+  /* Title 2 */
+  h3 {
+    font-size: 32px;
+  }
+
+  /* Body */
+  p {
+    font-size: 16px;
+  }
+
+  /* Caption */
+  p .caption {
+    font-size: 16px;
+  }
+}
+
+/* --------- DESKTOP --------- */
+
+@media (min-width: 1025px) {
+  /* Headline 1 */
+  h1 {
+    font-size: 64px;
+  }
+
+  /* Sub headline 1 */
+  h2 {
+    font-size: 32px;
+  }
+
+  /* Title 1 */
+  h3 {
+    font-size: 40px;
+  }
+
+  /* Body */
+  p {
+    font-size: 20px;
+  }
+
+  /* Caption */
+  p .caption {
+    font-size: 16px;
+  }
+}
+
+
