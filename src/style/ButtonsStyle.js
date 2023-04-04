@@ -7,13 +7,24 @@ export const GlobalStyle = createGlobalStyle`
 export const Button = styled.button`
     width: 205px;
     border-radius: 100px;
-    font-family: 'Karla*, sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
+    border: none;
+    background-color: ${({ bg }) => bg};
+    color: ${({ color }) => color};
+    padding: 18px;
 `
-
-export const DownloadBtnStyle = styled(Button)`
-    background-color: #DCD2F1;
-    color: #222322;
+export const ButtonOutline = styled.button`
+    width: 205px;
+    border-radius: 100px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    border: solid 1px white;
+    background-color: transparent;
+    color: ${({ color }) => color};
+    padding: 18px;
 `

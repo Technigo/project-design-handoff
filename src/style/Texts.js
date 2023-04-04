@@ -5,23 +5,23 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const H2 = styled.h2`
-    font-family: 'Karla', sans-serif; ;
+    font-family: "Karla", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 131%;
     letter-spacing: -0.022em;
-    color: red;
+    color: ${({ color }) => color};
 `
 
 export const BodyText = styled.p`
-    font-family: 'Karla', sans-serif;;
+    font-family: 'Karla', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     letter-spacing: -0.022em;
-    color: red;
+    color: ${({ color }) => color};
 `
 
 export const TagLine = styled.p`
@@ -30,6 +30,7 @@ export const TagLine = styled.p`
     font-weight: 700;
     font-size: 12px;
     line-height: 118%;
-    font-type: uppercase;
     letter-spacing: -0.022em;
+    text-transform: uppercase;
+    color: ${({ color }) => color};
 `
