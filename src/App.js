@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Header } from './components/header';
 import { Hero } from './components/maininfo';
 import { Register } from './components/register';
 import { Classes } from './components/classes';
@@ -10,7 +9,6 @@ import './index.css'
 export const App = () => {
   return (
     <div className="Main-container">
-      <Header />
 
       <Hero />
       <Register />

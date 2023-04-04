@@ -1,3 +1,92 @@
-.test{
-	background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Kulim+Park&display=swap');
+
+p{
+font-family: 'Kulim Park', sans-serif;
+}
+
+/*Tablet*/
+.goBeyond{
+	color: #B9F615;
+	position: absolute;
+	left: 53%;
+	top: 28%;
+	transform: translate(-50%, -50%);
+	z-index: 2;		
+	width: 402px;
+	height: 326px;
+	font-family: 'Kulim Park';
+	font-style: italic;
+	font-weight: 600;
+	font-size: 90px;
+	line-height: 325px;
+  }
+
+  .goBeyond1{
+	color: #B9F615;
+	position: absolute;
+	left: 50%;
+	top: 46%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 352px;
+	height: 118px;
+	font-family: 'Kulim Park';
+	font-style: italic;
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 117px;
+  }
+
+  .goBeyond2{
+	color: #B9F615;
+	position: absolute;
+	left: 68%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 475px;
+	height: 206px;
+	font-family: 'Kulim Park';
+	font-style: italic;
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 206px;
+	letter-spacing: -0.022em;
+
+  }
+  .goBeyond3{
+	color: #B9F615;
+	position: absolute;
+	left: 82%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 475px;
+	height: 206px;
+	font-family: 'Kulim Park';
+	font-style: italic;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 206px;
+	letter-spacing: -0.022em;
+
+  }
+ 
+.woman{
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	top: 0;
+}
+
+.hero-paragraph{
+	width: 538px;
+height: 413px;
+
+font-family: 'Kulim Park';
+font-style: normal;
+font-weight: 300;
+font-size: 34px;
+line-height: 43px;
+
 }

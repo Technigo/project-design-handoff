@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Kulim+Park&display=swap');
+/*Ipad ej mobile first!!!*/
+.header-container {
+	display: flex;
+	position: absolute;
+  }
+  
+  /*Behöver komma till vänster*/
+  .navbar {
+	display: flex;
+	justify-content: flex-end;
+
+background-color: rgba(221, 221, 221, 0.7);
+
+  }
+  
+  li {
+	display: inline;
+  }
+  
+  a {
+	padding: 20px;
+	color: #0962CF;
+	font-family: 'Kulim Park', sans-serif; 
+  }
+  
