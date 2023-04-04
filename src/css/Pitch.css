@@ -1,0 +1,17 @@
+.pitch-container {
+  display: flex; 
+  justify-content: center; 
+  background-image:url(../Images/Pitch.png); 
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position:25% 21%; 
+  height: 888px; 
+} 
+
+.pitch-title {
+  font-family: 'Poppins';
+  font-weight: 500; 
+  font-size: 48px; 
+  color: white; 
+  justify-content: center; 
+}
