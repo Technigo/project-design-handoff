@@ -8,3 +8,5 @@ const Button = styled.button`
 `
 
 <Button>Order!</Button>
+
+export default Button
