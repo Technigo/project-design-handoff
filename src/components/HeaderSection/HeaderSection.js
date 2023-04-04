@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { RxHamburgerMenu } from 'react-icons/rx'
 import { Background } from '../Background'
-import { Navbar, Logo, Container, HamburgerIcon, NavbarOptions, NavbarOption } from './Navbar'
-import { Hero, Title, SecondaryTitle } from './Hero'
+import { Navbar, Logo, HamburgerIcon, NavbarOptions, NavbarOption, ContainerNavbar } from './Navbar'
+import { Hero, Title, SecondaryTitle, ButtonContainer, ParagraphContainer } from './Hero'
 import { Button } from '../Button'
 import { Highlight } from '../Highlight'
 import { Paragraph } from '../Paragraph'
 import { Image } from '../Image'
-import logo from '../../images/logo.svg';
-import headerBackground from '../../images/headerBackground.svg';
-import hero from '../../images/hero.svg';
+import logo from '../../images/logo.svg'
+import headerBackground from '../../images/headerBackground.svg'
+import hero from '../../images/hero.svg'
+import hamburger from '../../images/hamburger.svg'
 
 const Header = styled.header`
 height:100%;
@@ -18,6 +18,7 @@ width:100%;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
+position:relative;
 `
 
 export const HeaderSection = () => {
@@ -27,9 +28,9 @@ export const HeaderSection = () => {
       <Background src={headerBackground} />
       <Navbar>
         <Logo src={logo} />
-        <Container>
+        <ContainerNavbar>
           <HamburgerIcon onClick={() => setShow(!show)} show={show}>
-            <RxHamburgerMenu style={{ width: '100%', height: '100%' }} />
+            <img src={hamburger} alt="hamburger icon" />
           </HamburgerIcon>
           <NavbarOptions show={show}>
             <NavbarOption>Our Vision</NavbarOption>
@@ -38,18 +39,18 @@ export const HeaderSection = () => {
             <NavbarOption>Contact us</NavbarOption>
           </NavbarOptions>
 
-          <Button fontSize="12px" width="80px" height="24px">Log in</Button>
-        </Container>
+          <Button fontSize="12px" width="80px" login>Log in</Button>
+        </ContainerNavbar>
       </Navbar>
       <Hero>
-        <Image src={hero} top="50%" width="309.48px" height="298px" />
+        <Image src={hero} />
         <Title>Up your game with fit2Derby!</Title>
         <SecondaryTitle mobile>Customised online off skate programs
           for roller derby players
         </SecondaryTitle>
         <SecondaryTitle>Looking to put the Power in power jam?
         Land that apex? Brace for days? With fit2Derby’s
-        customised online off skate programs for roller derby players,
+        <Highlight> customised online off skate programs for roller derby players, </Highlight>
         a full time jam will feel like a breeze!
         </SecondaryTitle>
         <Paragraph mobile>Choose between our
@@ -58,16 +59,19 @@ export const HeaderSection = () => {
           with exclusive access to our
           <Highlight> Multiplayer Platform </Highlight>
         </Paragraph>
-        <Paragraph>
-          <span>Sign up as an individual if you are looking
+        <ParagraphContainer>
+          <Paragraph> <Highlight> Sign up as an individual </Highlight> if you are looking
             to improve your skills on your own.
-          </span>
-          <span>Or, sign up as a team to access our Multiplayer Platform
+          </Paragraph>
+          <Paragraph> Or, <Highlight> sign up as a team </Highlight>
+           to access our <Highlight> Multiplayer Platform </Highlight>
 to track your own as well as your team’s progress.
-          </span>
-        </Paragraph>
-        <Button fontSize="20px" height="50px">Individual sign-up</Button>
-        <Button fontSize="20px" height="50px">Join with your team</Button>
+          </Paragraph>
+        </ParagraphContainer>
+        <ButtonContainer>
+          <Button fontSize="20px">Individual sign-up</Button>
+          <Button fontSize="20px">Join with your team</Button>
+        </ButtonContainer>
       </Hero>
     </Header>
   )

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Background = styled.img`
-position:absolute;
+position:fixed;
 height:100%;
 width:100%;
 object-fit:cover;
