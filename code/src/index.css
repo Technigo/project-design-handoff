@@ -8,12 +8,19 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: Helvetica Neue,
     monospace;
 }
 
-.button{
-  border:#FF8F3D;
+.tryforfree{
+  border-color:#FF8F3D;
+  border-radius: 15px;
+  border-width: 5px;
   color:#FF8F3D;
   fill-opacity: 0;
+  font-size: 2rem;
+}
+
+.logo{
+  color:black;
 }
