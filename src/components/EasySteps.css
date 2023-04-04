@@ -1,0 +1,61 @@
+
+.easy-steps-container {
+  background-color: #D7CBFF;
+  width: 360px;
+  height: 800px;
+}
+
+.easy-steps-container h2 {
+position: absolute;
+width: 360px;
+height: 100px;
+color: #03092E;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 50px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -1px;
+}
+
+.easy-steps-container h3 {
+margin-top: 30px;
+font-size: 30px;
+font-weight: 500;
+color: #03092E;
+padding-left: 20px;
+} 
+
+
+
+.cards {
+  margin-top: 206px;
+  box-shadow: 0px 5px 31px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  box-sizing: border-box;
+  height: 382.5px;
+
+  }
+  
+
+.cards img {
+  margin: 20px;
+
+}
+
+.easy-steps-container p1 {
+  width: 275px;
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 34px;
+display: flex;
+align-items: center;
+color: #03092E;
+padding: 20px;
+ }
+
+
