@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Logo from '../assets/logo/Vector.png'
-import MenuIcon from '../assets/icons/Menu.png'
-import SearchIcon from '../assets/icons/Search.png'
 import LogoMini from '../assets/logo/VectorMini.png'
 import LogoSmall from '../assets/logo/VectorSmall.png'
+import MenuIcon from '../assets/icons/Menu.png'
+import SearchIcon from '../assets/icons/Search.png'
 
 import './Header.css'
 
