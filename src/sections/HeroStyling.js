@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
-export const Navbar = styled.navbar`
+export const StyledNav = styled.div`
 display: flex;
-flex-direction: row;
+justify-content: space-between;
+background-color: transparent;
+position: absolute;
+`
+export const StyledIcon = styled.div`
+display: flex;
 `
