@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ImageSlider } from './ImageSlider';
+import { FindUs } from './FindUs';
 
 const YellowText = styled.h2`
 font-size: 1.5rem;
@@ -17,7 +18,7 @@ flex-direction: column;
 align-items: center;
 gap: 16px; 
 height: 538px;
-padding-top:16px; 
+padding-top: 16px; 
 `
 
 export const Classes = () => {
@@ -29,6 +30,7 @@ export const Classes = () => {
         </svg>
       </YellowText>
       <ImageSlider />
+      <FindUs />
     </ClassesWrapper>
   )
 }
