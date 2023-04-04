@@ -1,20 +1,22 @@
 import React from 'react'
-import Header from 'Header';
-import Carousel from 'Carousel';
-import Find from 'Find';
-import Join from 'Join';
-import SignUp from 'SignUp';
-
+import Header from 'components/Header';
+import Carousel from 'components/Carousel';
+import YogaInfo from 'components/YogaInfo';
+import Find from 'components/Find';
+import Join from 'components/Join';
+import SignUp from 'components/SignUp';
+import Footer from 'components/Footer';
 
 export const App = () => {
   return (
     <>
-    < Header/>
-    < Carousel/>
-    < Find/>
-    < Join/>
-    < SignUp/>
-    < Footer/>
+      <Header />
+      <Carousel />
+      <YogaInfo />
+      <Find />
+      <Join />
+      <SignUp />
+      <Footer />
     </>
   )
 }
