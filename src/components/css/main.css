@@ -80,13 +80,15 @@ font-family: 'Kulim Park', sans-serif;
 }
 
 .hero-paragraph{
-	width: 538px;
+max-width: 300px;
 height: 413px;
-
+position: absolute;
+left: 50%;
+top: 35%;
 font-family: 'Kulim Park';
 font-style: normal;
-font-weight: 300;
-font-size: 34px;
-line-height: 43px;
+font-size: 17px;
+white-space: pre-wrap;
+color: white;
 
 }
