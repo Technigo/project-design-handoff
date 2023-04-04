@@ -5,7 +5,7 @@ import React from 'react';
 import styled from 'styled-components'
 
 export const Hero = () => {
-  const Title = styled.h1`
+  const Heading = styled.h1`
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 600;
@@ -15,7 +15,7 @@ export const Hero = () => {
     color: #025323;`
   return (
     <>
-      <Title>Breath in breath out</Title>
+      <Heading>Breath in breath out</Heading>
       <p>Yogistudio offers an overall concept in self-healing with a focus on calm and therapeutic forms of yoga.</p>
       <label>
         <btn type="button" id="bookAClass">Book a class</btn>
