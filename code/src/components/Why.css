@@ -13,6 +13,7 @@
     border: 1px solid rgb(148, 103, 20);
     max-width: calc(100% - 32px);
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .why-box h2 {
