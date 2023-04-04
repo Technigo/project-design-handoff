@@ -1,34 +1,52 @@
 import React from 'react';
 import styled from 'styled-components';
+import SignUpBtn from './SignUpBtn';
 
 const HeaderSection = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
 `
 const HeaderImg = styled.img`
-min-height: 100vh;
-background-repeat: no-repeat;
+height: 982px;
 background-size: cover;
-background-position: center;
 `
-const HeaderText = styled.h2`
+const HeaderText = styled.p`
 color: white;
+font-size: 16px;
 position: absolute;
+align-self: center;
+`
+const SloganText = styled.h1`
+color: white;
+font-size: 25px;
+position: absolute;
+margin-top: 200px;
+
+`
+const KnowMoreText = styled.h1`
+color: white;
+font-size: 16px;
+position: absolute;
+margin-top: 350px;
 `
 
 const Header = () => {
   return (
     <HeaderSection>
-      <HeaderImg src="./images/headerphoto.webp" alt="person doing yoga" />
+      <HeaderImg src="./images/headeryoga.png" alt="person doing yoga" />
       <HeaderText>
-        <h2>Santulan Power Yoga Stockholm</h2>
+        <p>Santulan Power Yoga Stockholm</p>
+      </HeaderText>
+      <SloganText>
         <h1>Move your body</h1>
         <h1>Rest your mind</h1>
-      </HeaderText>
-      <div>
-        <h3>Want to know more about us?</h3>
-      </div>
+      </SloganText>
+      <SignUpBtn />
+      <KnowMoreText>
+        <p>Want to know more about us?</p>
+      </KnowMoreText>
     </HeaderSection>
   )
 }
