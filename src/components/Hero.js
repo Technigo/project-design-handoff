@@ -1,6 +1,6 @@
 import React from 'react';
-import CTA from './CTA';
-import '../style/Hero.css'
+import { CTA } from './CTA';
+import '../style/hero.css'
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
              plan - for holistic health anytime, anywhere.  Achieve optimal health and
              balance through our comprehensive wellness program.
           </p>
-          <CTA />
+          <CTA test>Start your 7-day FREE trial</CTA>
         </div>
       </div>
     </header>
