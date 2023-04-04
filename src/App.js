@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: 'Karla', sans-serif;
+  }
+`;
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <GlobalStyle />
+      <div>
+        Find me in src/app.js!
+      </div>
+    </>
   )
 }
