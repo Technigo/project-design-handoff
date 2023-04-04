@@ -1,13 +1,14 @@
 import React from 'react';
+import HamburgerMenu from './Hamburger';
 
 const stickyMenu = () => {
   const handleButtonClick = () => {
     alert('Thank you for trying Self Health!');
   };
   return (
-    <header>
+    <header className="outer-wrapper">
       <div>
-        <img className="logo" src="../assets/Logo.svg" alt="Self Health Logo" />
+        <img className="logo" src="../assets/Logo.jpg" alt="Self Health Logo" />
       </div>
 
       <nav>
@@ -21,7 +22,7 @@ const stickyMenu = () => {
       <div>
         <img src="../assets/magnifying-glass.png" alt="magnifying glass" />
       </div>
-
+      <HamburgerMenu />
       <button className="tryforfree" type="submit" onClick={handleButtonClick}>Try for Free</button>
 
     </header>

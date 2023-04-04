@@ -1,5 +1,4 @@
 import React from 'react'
-import HamburgerMenu from './components/Hamburger'
 import StickyMenu from './components/Header'
 import LoadingPage from './components/LoadingPage'
 import InfoPage from './components/InfoPage'
@@ -8,9 +7,8 @@ import ClientReviews from './components/ClientReviews'
 
 export const App = () => {
   return (
-    <div>
+    <div className="entire-wrapper">
       <StickyMenu />
-      <HamburgerMenu />
       <LoadingPage />
       <InfoPage />
       <ClientReviews />
