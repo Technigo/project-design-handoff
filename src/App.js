@@ -5,10 +5,12 @@ import FreeTrialButton from 'Button';
 
 export const App = () => {
   return (
-    <div className="start-page">
+    <div className="start-container">
       <Header />
       <Hero />
-      <FreeTrialButton />
+      <div className="button-container">
+        <FreeTrialButton />
+      </div>
     </div>
   )
 }

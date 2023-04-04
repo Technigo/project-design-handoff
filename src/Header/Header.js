@@ -1,37 +1,28 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import React from 'react';
+import styled from 'styled-components';
 import './Header.css';
-import HamburgerMenu from 'HamburgerMenu';
+
+const Logo = styled.img`
+  width: 55px;
+  height: 55px;
+`
+
+const HamburgerIcon = styled.img`
+  border: none;
+`;
 
 const Header = () => {
-  const [expanded, setExpanded] = useState(false);
-
-  const toggleExpanded = () => {
-    setExpanded(!expanded);
-  };
-
   return (
-    <Navbar
-      expand="lg"
-      expanded={expanded}
-      variant="dark">
-      <Container>
-        <Navbar.Brand href="/">My Website</Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={toggleExpanded}>
-          <HamburgerMenu />
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <section className="navbar-container">
+      <div className="logo-container">
+        <Logo src="/icons/Vector.png" />
+      </div>
+      <div className="hamburger-container">
+        <HamburgerIcon src="./icons/hamburgermenu.png" />
+      </div>
+    </section>
   );
 };
 
 export default Header;
+

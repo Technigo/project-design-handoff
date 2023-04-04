@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
-width: 345px;
+width: 300px;
 height: 56px;
   font-size: 16px;
   line-height: 24px;
