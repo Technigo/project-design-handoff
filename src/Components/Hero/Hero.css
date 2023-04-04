@@ -1,5 +1,4 @@
 .main-content-container {
-    border: red 2px solid;
     width: 75%;
     margin: auto;
     background-color: rgba(149, 166, 181, 0.5);
@@ -18,4 +17,32 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 36px;
+    color: white;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+}
+
+.main-text p {
+    color: white;
+    margin-bottom: 15px;
+} 
+
+.newscircle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #EB5577;
+    font-size: 16px;
+}
+
+.newscirclepicture {
+    width: 250px;
+    height: 250px;
+    display: none;
 }

@@ -1,4 +1,23 @@
 .thebenefits-box {
     background-color: #95A6B5;
     height: 442px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 12%;
+
+}
+
+.check-text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: left;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+.thebenefits-box p {
+    font-size: 15px;
 }
