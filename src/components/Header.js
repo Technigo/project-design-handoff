@@ -2,7 +2,13 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <h1>Header</h1>
+    <section className="header-section">
+      <div className="header-container">
+
+        <h1>logo</h1>
+        <h1>Hamburger</h1>
+      </div>
+    </section>
   );
 }
 
