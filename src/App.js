@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Header from 'components/Header.js';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
+    <div className="landingPage">
+      <Header />
     </div>
   )
 }
+
+// export const App = () => {
+//   return (
+//     <div className="app">
+//       <Button cta>SIGN UP</Button>
+//       <Hero />
+//     </div>
+//   )
+// }
