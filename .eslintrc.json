@@ -128,4 +128,9 @@
     "react-hooks/exhaustive-deps": "warn",
     "semi": "off"
   }
+  "rules": {
+    "linebreak-style":[
+      "off",
+      "unix"
+    ],}
 }
