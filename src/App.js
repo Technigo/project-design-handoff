@@ -1,9 +1,20 @@
 import React from 'react'
+import Header from 'Header';
+import Carousel from 'Carousel';
+import Find from 'Find';
+import Join from 'Join';
+import SignUp from 'SignUp';
+
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+    < Header/>
+    < Carousel/>
+    < Find/>
+    < Join/>
+    < SignUp/>
+    < Footer/>
+    </>
   )
 }
