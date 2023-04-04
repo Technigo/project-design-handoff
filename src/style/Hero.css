@@ -1,0 +1,26 @@
+header {
+    margin: 24px;
+    background-image: url(/public/img/dane-wetton-t1NEMSm1rgI-unsplash.png);
+    background-size: cover;
+    font-weight: 700;
+    color: #F5F5F5;
+}
+
+.header-wrapper {
+    margin: 24px;
+}
+
+.logo-hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-hero {
+    width: 64px;
+}
+
+.burger {
+    height: 40px;
+}
+
