@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import './Header.css';
 
 const Logo = styled.img`
   width: 55px;

@@ -13,19 +13,20 @@ code {
     monospace;
 }
 
-/* Mobile */
-.navbar-wrapper {
-  display: flex;
-  justify-content: space-between;
- 
 
-}
+/* Mobile */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+    }
 
 .start-container {
   background-image: url('/public/images/hero-image.png');
   background-size: cover;
   background-position: center;
-
+ padding: 24px;
 }
 
 .text-container h1 {
@@ -34,23 +35,104 @@ line-height: 160%;
 font-weight: bold;
 color: #F5F5F5;
 font-family: 'Libre Baskerville';
-margin-top: 10rem;
-padding: 1rem;
+
 }
 
 .text-container p {
 font-size: 21px;
 line-height: 160%;
-font-weight: bold;
 color: #F5F5F5;
 font-family: 'Libre Baskerville';
-padding: 1 rem;
+
 }
 
 .button-container {
   display: flex;
-  align-items: center;
+  align-items: left;
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+
+.wellbeing-container {
+  background-color: #D0C4B8;
+grid: 1fr;
+justify-content: center;
+align-items: center;
+grid-template-columns: repeat(3, 1fr);
+padding: 24px 24px 40px 24px;
+
+
+}
+
+.wellbeing-container h1 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.standing-man {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 342px;
+  height: 345px;
+
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.standing-man p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 32px;
+ 
+}
+
+.sitting-man {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 342px;
+  height: 345px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sitting-man p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 32px;
+  margin: 24px 24px 0px 24px;
+}
+
+.hand-heart {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 342px;
+  height: 345px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand-heart p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 32px;
+  margin: 24px 24px 0px 24px;
 }
 
 /* Tablet */
@@ -58,7 +140,7 @@ padding: 1 rem;
 
   .start-container {
     padding: 15px 32px 0px 32px;
-    height: 1024px;
+  height: 1024px;
    }
 
   .navbar-container {
@@ -69,9 +151,19 @@ padding: 1 rem;
       }
 
       .text-container {
-        padding: 190px 0px 0px 0px;
-        width: 70%;
+        padding: 250px 0px 0px 0px;
+        width: 60%;
       }
+
+      .text-container h1 {
+        font-size: 50px;
+        line-height: 80px;
+        weight: 700;
+        }
+        
+        .text-container p {
+          font-size: 21px;
+          }
 
   .button-container {
     display: flex;
@@ -80,12 +172,42 @@ padding: 1 rem;
     margin: 40px 0px 0px 0px;
   }
 
+  .wellbeing-container {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .wellbeing-container h1 {
+    flex-basis: 100%;
+    text-align: left;
+  
+  }
+
+  .standing-man {
+   height: 313px;
+    width: 450px;
+  }
+
+  .sitting-man {
+    height: 313px;
+    width: 450px;
+  }
+
+  .hand-heart {
+    height: 313px;
+    width: 450px;
+  }
+
 }
+
 
 @media only screen and (min-width: 1440px) {
 
 .start-container {
  padding: 50px 112px 0px 112px;
+height: 100vh;
 }
 
   .navbar-container {
@@ -99,6 +221,14 @@ justify-content: space-between;
     width: 600px;
   }
 
+  .text-container h1 {
+font-size: 50px;
+  }
+
+  .text-container p {
+    font-size: 21px;
+  }
+
   .button-container {
     display: flex;
     align-items: left;
@@ -107,8 +237,5 @@ justify-content: space-between;
   }
 
   /* Add this style to move the MainText div */
-  .start-container {
-    height: 100vh;
-    
-  }
+ 
 }
