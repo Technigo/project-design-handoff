@@ -14,8 +14,9 @@ height: 192px;
 const FindUsText = styled.p`
 color: white;
 font-size: 16px;
-`
+margin-left: 16px;
 
+`
 
 const Find = () => {
   return (
