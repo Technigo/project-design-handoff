@@ -5,11 +5,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 16px;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* CARDS */
+.cardWrapper, .videoCard, .smallCard, .mediumCard {
+  margin: 16px 0;
+  padding: 40px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /* BENEFITS SECTION */
@@ -21,18 +34,54 @@ code {
 
 .cardWrapper {
   height: 815px;
-  margin: 16px 0;
-  padding: 40px;
-  border-radius: 20px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   color: white;
 }
 
-/* RESPONSIVE DESIGN FOR TABLET */
+/* WORKOUTS SECTION */
+.videoCard {
+  height: 627px;
+}
+
+.mediumCard {
+  height: 420px;
+  justify-content: space-between;
+}
+
+.smallCard {
+  height: 140px;
+}
+
+.playIcon {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+.playIcon:hover {
+  transform: scale(0.9);
+}
+
+/* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
+@media (min-width: 667px) {
+  .textBtnWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .smallCard {
+    width: 380px;
+  }
+
+  .smallCardWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* RESPONSIVE DESIGN FOR TABLET ONLY */
 @media (min-width: 667px) and (max-width: 1024px) {
   .sectionBenefits {
     grid-template-columns: repeat(2, 1fr);
@@ -48,7 +97,7 @@ code {
   }
 }
 
-/* RESPONSIVE DESIGN FOR DESKTOP */
+/* RESPONSIVE DESIGN FOR DESKTOP ONLY */
 @media (min-width: 1024px) {
   .sectionBenefits {
     grid-template-columns: repeat(4, 1fr);
@@ -61,5 +110,25 @@ code {
 
   .introBenefits, .benefitsBtn {
     grid-column: 1 / span 4;
+  }
+
+  .sectionWorkouts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .introWorkouts {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .videoCard {
+    grid-row: 2 / span 2;
+    height: 672px;
+    margin-right: 20px;
+  }
+
+  .smallCardWrapper {
+    grid-column: 2 / span 1;
   }
 }

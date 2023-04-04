@@ -18,8 +18,11 @@ export const SecondaryBtn = styled.button`
     background-color: #FFFFFF;
     border: none;
     border-radius: 20px;
+    padding: 16px 32px;
     color: #222322;
     font-size: 18px;
+    width: 205px;
+    margin-top: 8px;
 
     &:hover {
         font-size: 17px;
