@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const Nav = () => {
+export const HeroSection = () => {
   return (
-    <div className="navbar-container">
+    <div className="nav-top">
       <p>Here goes icons</p>
       <div className="hero-container">
         <div className="hero-text" />
@@ -13,4 +13,3 @@ export const Nav = () => {
     </div>
   )
 }
-
