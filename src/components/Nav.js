@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Nav = () => {
   return (
-    <div className="navbar-mobile">
+    <div className="navbar-container">
       <p>Here goes icons</p>
       <div className="hero-container">
         <div className="hero-text" />
