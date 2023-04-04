@@ -12,12 +12,8 @@ code {
     monospace;
 }
 
-.main-container {
-  border: 1px solid red;
-  margin: 10px;
-}
-
 .navbar {
+  display: flex;
   border: 1px solid red;
   margin: 10px;
 }
