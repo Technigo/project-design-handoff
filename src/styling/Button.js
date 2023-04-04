@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
-export const PrimaryBtn = styled.btn`
+export const PrimaryBtn = styled.button`
     background-color: #DCD2F1;
     border: none;
     border-radius: 20px;
+    padding: 18px 36px;
     color: #222322;
     font-size: 18px;
+    width: 225px;
 
     &:hover {
         background-color: #A99BD1;
     }
 `;
 
-export const SecondaryBtn = styled.btn`
+export const SecondaryBtn = styled.button`
     background-color: #FFFFFF;
     border: none;
     border-radius: 20px;
@@ -24,7 +26,7 @@ export const SecondaryBtn = styled.btn`
     }
 `;
 
-export const OutlinedBtn = styled.btn`
+export const OutlinedBtn = styled.button`
     background-color: transparent;
     border: 1px solid white;
     border-radius: 20px;

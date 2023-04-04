@@ -1,5 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import Benefits from 'components/Benefits.js';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -11,9 +12,7 @@ export const App = () => {
   return (
     <>
       <GlobalStyle />
-      <div>
-        Find me in src/app.js!
-      </div>
+      <Benefits />
     </>
   )
 }
