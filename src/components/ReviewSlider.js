@@ -2,8 +2,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import YogaGirlImg from '../images/yoga-girl.jpg'
 import YogaGuyImg from '../images/yoga-guy.jpg'
 import YogaGirl2Img from '../images/yoga-girl-2.jpg'
