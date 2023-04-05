@@ -4,6 +4,11 @@ import React from 'react';
 import './Signup.css';
 
 const Signup = () => {
+  const reloadPage = (event) => {
+    event.preventDefault();
+    window.location.reload();
+  }
+
   return (
     <div className="signup-container">
       <form className="signupform">
@@ -83,7 +88,7 @@ const Signup = () => {
           </div>
         </div>
 
-        <input type="submit" value="Send form" className="mainbutton" />
+        <input type="submit" value="Send form" className="mainbutton" onClick={reloadPage} />
       </form>
     </div>
   );
