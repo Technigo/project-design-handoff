@@ -5,7 +5,7 @@ const Nav = styled.nav`
   display: flex; 
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;  // Set this property to space-between
+  justify-content: space-between; 
   height: 85px;
   width: 100vw;
   background-color: white;
@@ -58,7 +58,7 @@ font-size: 22px;
 font-weight: 600;
 
 li {
-    padding-right: 2rem;
+    margin-right: 2rem;
     &:hover {
     cursor: pointer;
   }
