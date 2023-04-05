@@ -19,7 +19,7 @@ code {
  }
 
 /* CARDS */
-.cardWrapper, .videoCard, .smallCard, .mediumCard {
+.cardWrapper, .videoCard, .smallCard, .mediumCard, .communityCard {
   margin: 16px 0;
   padding: 40px;
   border-radius: 20px;
@@ -90,6 +90,72 @@ code {
   margin-left: 16px;
 }
 
+/* COMMUNITY SECTION */
+.communityCard {
+  height: 627px;
+}
+
+.signUpWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+fieldset:hover {
+  border: 1px solid #A99BD1;
+}
+
+legend {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+input {
+  margin: 2px 2px 2px 6px;
+  padding: 5px 0;
+  border: none;
+  width: 95%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.formBtn, .orText {
+  min-width: 100%;
+}
+
+.accountText {
+  margin-top: 20px;
+}
+
+.login {
+  font-weight: 600;
+}
+
+.line {
+  border-bottom: 1px solid black;
+  width: 148px;
+}
+
+.signInBtn, .orText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.orText {
+  margin: 20px 0;
+}
 
 /* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
 @media (min-width: 667px) {
@@ -114,6 +180,28 @@ code {
     width: 325px;
     height: 625px;
     margin: 64px auto;
+  }
+
+  form, .signInBtnWrapper {
+    min-width: 667px;
+  }
+
+  legend {
+    font-size: 16px;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .line {
+    width: 318px;
+  }
+
+  .nameInput, .signInBtnWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
 }
 

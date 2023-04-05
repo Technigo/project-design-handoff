@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import Benefits from 'components/Benefits.js';
 import Workouts from 'components/Workouts';
 import Activity from 'components/Activity';
+import Community from 'components/Community';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -17,6 +18,7 @@ export const App = () => {
       <Benefits />
       <Workouts />
       <Activity />
+      <Community />
     </>
   )
 }

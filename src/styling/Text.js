@@ -23,6 +23,7 @@ export const Headline3 = styled.h3`
 
     @media (min-width: 667px) {
         font-size: 48px;
+    }
 `;
 
 export const Headline4 = styled.h4`
@@ -32,6 +33,7 @@ export const Headline4 = styled.h4`
 
     @media (min-width: 667px) {
         font-size: 36px;
+    }
 `;
 
 export const Headline5 = styled.h5`
@@ -41,6 +43,7 @@ export const Headline5 = styled.h5`
 
     @media (min-width: 667px) {
         font-size: 32px;
+    }
 `;
 
 export const Tagline = styled.p`
@@ -56,4 +59,14 @@ export const Body = styled.p`
 
     @media (min-width: 667px) {
         font-size: 18px;
-    `;
+    }
+`;
+
+export const Error = styled.p`
+    font-size: 12px;
+    color: red;
+
+    @media (min-width: 667px) {
+        font-size: 14px;
+    }
+`;
