@@ -1,5 +1,6 @@
+/* eslint-disable max-len */
 
-import styled from 'styled-components'; import herobackground from '../Assets/herobackground.jpg';
+/* import styled from 'styled-components'; import herobackground from '../../Assets/herobackground.jpg';
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -11,4 +12,4 @@ const HeaderContainer = styled.header`
   background-size: cover;
 
 `;
-export default HeaderContainer;
+export default HeaderContainer; */
