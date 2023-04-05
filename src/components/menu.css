@@ -107,6 +107,7 @@ justify-content: flex-start;
   margin: 0px;
   padding: 0;
   cursor: pointer;
+  z-index: 11;
   }
 
   .menu > li {
@@ -197,7 +198,7 @@ justify-content: flex-start;
     width: 100%;
     justify-content:flex-end;
     align-items: center;
-    z-index: 2;
+    z-index: 11;
     border: none;
   }
   #menu-toggle ~ .menu li {
@@ -299,6 +300,7 @@ justify-content: flex-start;
     margin-top: 30px;
     display: flex;
     cursor: pointer;
+    z-index: 11;
   }
 
   .menu > li {
