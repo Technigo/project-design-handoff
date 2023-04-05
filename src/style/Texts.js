@@ -14,6 +14,16 @@ export const H2 = styled.h2`
     color: ${({ color }) => color};
 `
 
+export const H3 = styled.h3`
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 131%;
+    letter-spacing: -0.022em;
+    color: ${({ color }) => color};
+`
+
 export const BodyText = styled.p`
     font-family: 'Karla', sans-serif;
     font-style: normal;

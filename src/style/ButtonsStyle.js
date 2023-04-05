@@ -28,3 +28,9 @@ export const ButtonOutline = styled.button`
     color: ${({ color }) => color};
     padding: 18px;
 `
+export const SubmitButton = styled(Button)`
+    border-radius: 8px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 22px 10px;
+`
