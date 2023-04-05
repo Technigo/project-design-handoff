@@ -5,7 +5,7 @@ import Hamburger from 'Components/Hamburger';
 const Navbar = () => {
   return (
     <section className="navbar">
-      <img src={MobileLogo} alt="Fit2Derby-logo" />
+      <img className="header-logo" src={MobileLogo} alt="Fit2Derby-logo" />
       <div className="menu">
         <Hamburger />
         <button type="button" className="login-button">Log in</button>
