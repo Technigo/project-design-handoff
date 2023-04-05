@@ -12,14 +12,15 @@ export const FlexColumn = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
     position: absolute;
+    gap: 12px;
     padding: 32px;
 `
 
-export const FlexColumnNoPosition = styled.div`
+export const FlexColumnCenter = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 `

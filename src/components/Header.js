@@ -19,6 +19,7 @@ export const Header = () => {
         </BodyText>
         <Button bg="#DCD2F1" color="#222322">Download app</Button>
         <ButtonOutline color="#fff">Create account</ButtonOutline>
+        <BodyText color="#fff">Compatible with</BodyText>
       </FlexColumn>
       <Image src="./images/childpose.jpg" />
     </>

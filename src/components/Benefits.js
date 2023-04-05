@@ -1,13 +1,14 @@
 import React from 'react';
 import { TagLine, H5 } from 'style/Texts';
 import { Button } from 'style/ButtonsStyle';
+import { FlexColumnCenter } from 'style/Flex';
 import { Card } from './Cards';
 
 export const Benefits = () => {
   return (
     <>
       <TagLine color="#222322">Benefits</TagLine>
-      <H5 color="#222322">Healthy doen’t have to be hard. We make it easy.</H5>
+      <H5 color="#222322">Healthy doesn’t have to be hard. We make it easy.</H5>
       <Card
         color="#DCBAF9"
         imgSrc="./images/swanposition.jpg"
@@ -28,7 +29,9 @@ export const Benefits = () => {
         imgSrc="./images/breakfast.jpg"
         headline="Healthy recipies & more "
         text="Search among our recipies & get inspired for a healthy inside." />
-      <Button bg="#DCD2F1" color="#222322">Download app</Button>
+      <FlexColumnCenter>
+        <Button bg="#DCD2F1" color="#222322">Download app</Button>
+      </FlexColumnCenter>
     </>
   )
 }

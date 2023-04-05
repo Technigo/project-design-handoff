@@ -4,6 +4,16 @@ export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 `
 
+export const H1 = styled.h1`
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 131%;
+    letter-spacing: -0.022em;
+    color: ${({ color }) => color};
+`
+
 export const H2 = styled.h2`
     font-family: "Karla", sans-serif;
     font-style: normal;
@@ -45,6 +55,7 @@ export const H5 = styled.h5`
     line-height: 131%;
     letter-spacing: -0.022em;
     text-align: center;
+    margin-top: 0;
     color: ${({ color }) => color};
 `
 
@@ -69,5 +80,7 @@ export const TagLine = styled.p`
     letter-spacing: -0.022em;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 0;
     color: ${({ color }) => color};
 `

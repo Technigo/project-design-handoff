@@ -10,7 +10,5 @@ export const Image = styled.img`
 `
 
 export const BgImg = styled(Image)`
-    object-fit: scale-down;
-    object-position: -50% 50%;
-
+    margin-bottom: 16px;
 `
