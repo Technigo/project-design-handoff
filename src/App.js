@@ -3,6 +3,7 @@ import Header from './sections/Header'
 import Hero from './sections/Hero'
 import About from './components/About'
 import Classes from './components/Classes'
+import SignUp from './components/SignUp'
 import Footer from './sections/Footer'
 
 import './index.css'
@@ -22,8 +23,10 @@ const App = () => {
       <Hero />
       <About />
       <Classes screenSize={screenSize} />
+      <SignUp />
       <Footer screenSize={screenSize} />
     </div>
-  )
-}
+  );
+};
+
 export default App;
