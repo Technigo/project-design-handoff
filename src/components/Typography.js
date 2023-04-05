@@ -80,6 +80,12 @@ font-weight: 400;
 line-height: 21px;
 letter-spacing: 1px;
 `
+export const P12 = styled.p`
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 1px;
+`
 
 // Caption (questions)
 export const Caption1 = styled.p`

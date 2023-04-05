@@ -52,7 +52,7 @@ export const HeroSite = () => {
         <SubHeadLine3>
           Unleash your inner acrobat with our exhilarating full-body workout.
         </SubHeadLine3>
-        <Button>Sign up today</Button>
+        <Button textBtn>Sign up today</Button>
       </HeroItem>
     </StyledHeader>
 
