@@ -19,6 +19,9 @@ export const App = () => {
       <section className="wellbeing-container">
         <Wellbeing />
       </section>
+      <div className="free-button-container">
+        <FreeTrialButton />
+      </div>
     </>
   )
 }
