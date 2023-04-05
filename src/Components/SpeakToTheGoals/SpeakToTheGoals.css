@@ -1,0 +1,11 @@
+.speak-to-the-goals-container {
+    background-color: #181818;
+    width: 69%;
+    height: 500px;
+    padding: 15%;
+}
+
+.speak-to-the-goals-container h1{
+   color: white;
+   font-size: 40px;
+}
