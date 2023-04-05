@@ -1,10 +1,10 @@
 .main-content-container {
-    width: 75%;
+    width: 60%;
     margin: auto;
-    background-color: rgba(149, 166, 181, 0.5);
+    background-color: rgba(149, 166, 181, 0.6);
     border-radius: 8px 80px;
-    height: 50%;
-    padding: 20px;
+    height: 60%;
+    padding: 40px;
     color: white;
 }
 .main-text {
@@ -29,7 +29,8 @@
 
 .main-text p {
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
+    font-style: italic;
 } 
 
 

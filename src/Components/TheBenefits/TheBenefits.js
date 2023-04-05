@@ -10,7 +10,7 @@ export const TheBenefits = () => {
   return (
     <div className="thebenefits-box">
       <h2>BUILD HEALTHY HABITS</h2>
-      <h2>FOR YOU AND YOUR DOG</h2>
+      <h2 className="thebenefit-title-bold">FOR YOU AND YOUR DOG</h2>
       <ul>
         <div className="check-text">
           <img className="checkmark" src={checkmark} alt="checkmark" />

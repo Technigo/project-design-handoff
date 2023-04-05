@@ -9,3 +9,9 @@
    color: white;
    font-size: 40px;
 }
+
+.slider {
+     width: 30em;
+    overflow-x: auto;
+    white-space: nowrap;
+}

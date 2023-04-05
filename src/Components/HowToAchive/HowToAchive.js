@@ -2,26 +2,41 @@
 
 import React from 'react';
 import './HowToAchive.css';
+import styled from 'styled-components';
 import { StartButton } from 'Components/StartButton/StartButton';
-import phonepicture from './image116.svg';
 
 // /////////////// COMPONENT //////////////////////// //
+
+const BoldBigItalic = styled.h2`
+font-size: 1.8rem;
+font-weight: bold;
+font-style: italic;
+color: white;
+`
+const SmallNarrowItalic = styled.h2`
+font-size: 1.1rem;
+font-weight: narrow;
+font-style: italic;
+color: white;
+`
 
 export const HowToAchive = () => {
   return (
     <div className="how-to-achive-container">
-      <h1>WORKOUT WHERE</h1>
-      <h1>YOU ARE</h1>
+      <h2>
+        <SmallNarrowItalic>WORKOUT WHERE</SmallNarrowItalic>
+        <BoldBigItalic>YOU ARE</BoldBigItalic>
+      </h2>
       <div className="how-to-achive-picture">
-        <img className="phone-picture" src={phonepicture} alt="phonepicture" />
+        <img className="phone-picture" src="./Pictures/image116.svg" alt="phonepicture" />
       </div>
       <h2>
-        SCHEDULE WORKOUTS
-        GET REMINDERS
-        TRACK YOUR PROGRESS
-        BE SPONTANEOUS
-        SAVE YOUR FAVOURITES
-        CELEBRATE YOUR GOALS
+        <BoldBigItalic>SCHEDULE</BoldBigItalic><SmallNarrowItalic>WORKOUTS</SmallNarrowItalic>
+        GET <BoldBigItalic>REMINDERS</BoldBigItalic>
+        <BoldBigItalic>TRACK</BoldBigItalic><SmallNarrowItalic>YOUR PROGRESS</SmallNarrowItalic>
+        <SmallNarrowItalic>BE</SmallNarrowItalic> <BoldBigItalic>SPONTANEOUS</BoldBigItalic>
+        <BoldBigItalic>SAVE</BoldBigItalic><SmallNarrowItalic>YOUR FAVOURITES</SmallNarrowItalic>
+        <SmallNarrowItalic>CELEBRATE YOUR</SmallNarrowItalic> <BoldBigItalic>GOALS</BoldBigItalic>
       </h2>
       <StartButton outlined>Download App</StartButton>
     </div>

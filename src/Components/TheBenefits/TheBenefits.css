@@ -1,8 +1,7 @@
 .thebenefits-box {
     background-color: #95A6B5;
-    height: 80%;
+    height: 90%;
     color: white;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     padding: 12%;
@@ -10,8 +9,14 @@
 }
 
 .thebenefits-box h2 {
-    font-size: 40px;
+    font-size: 18px;
+    font-style: italic;
+}
 
+.thebenefit-title-bold {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
 }
 
 .check-text {

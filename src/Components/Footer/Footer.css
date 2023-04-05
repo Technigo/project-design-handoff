@@ -27,6 +27,8 @@ color: white;
 .links {
   text-decoration: none;
   color: white;
+  font-style: Italic;
+  font-weight: 800;
 }
 
 .footer-buttons {
