@@ -57,7 +57,16 @@ margin-bottom: 100px;
 
   .title-text {
     font-size: 88px; 
-    font-weight:500; 
+    font-weight:500;;
+    margin: 100px 32px 0px 32px 
+  }
+  .hero-text-and-button h4 {
+    width: 80%; 
+    font-size: 24px;
+}  
+  .hero-text-and-button {
+    margin-top: 176px; 
+    margin-bottom: 30px; 
   }
 
 }
@@ -85,10 +94,22 @@ margin-bottom: 100px;
     margin-bottom: 30px; 
   }
 
+  .pitch-title {
+    margin: 24px; 
+  }
+
   /* .button {
     width: 80%; 
   }   */
 
+}
 
+@media (max-width: 375px) {
+  h1 {
+    font-size: 16px; 
+  }
 
+  .hamburger-menu {
+    width: 50%; 
+  }
 }
