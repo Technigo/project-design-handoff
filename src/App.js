@@ -1,16 +1,12 @@
 import React from 'react'
-import { createGlobalStyle } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-body {
-  font-family: ´Permanent Marker´;
-}``
+import Header from 'components/styles/Header.styled'
+import GlobalStyle from 'components/styles/GlobalStyle'
 
 export const App = () => {
   return (
     <>
-    <GlobalStyle />
-      Find me in src/app.js!
+      <GlobalStyle />
+      <Header />
     </>
   )
 }
