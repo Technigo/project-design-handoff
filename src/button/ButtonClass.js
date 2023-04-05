@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ButtonPurple = styled.buttonPurple`
+export const ButtonClass = styled.class`
 color: var(--main-dark-color);
 background-color: #E1D2E9;
 padding: 8px 16px;

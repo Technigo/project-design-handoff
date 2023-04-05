@@ -2,7 +2,6 @@ import React from 'react'
 import SilkTop from '../silk/SilkTop'
 import SilkBottom from '../silk/SilkBottom'
 import BeginnerImg from '../assets/images/Beginner.png'
-import { ButtonPurple } from '../button/ButtonPurple'
 // import IntermediateImg from '../assets/images/Intermediate.png'
 import './Classes.css'
 
@@ -14,7 +13,7 @@ const Classes = ({ screenSize }) => {
         <div className="classes">
           <h3>Our Classes</h3>
           <img src={BeginnerImg} alt="beginner-img" />
-          <ButtonPurple>See more</ButtonPurple>
+          See more
           <p>Beginner</p>
 
           <p>Intermediate</p>
