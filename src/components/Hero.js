@@ -6,11 +6,14 @@ import { Navbar } from 'components/Navbar'
 
 const HeroWrapper = styled.div`
 display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 15px;
-
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+  background-image: url(${HeroImage});
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 `
 
 const Heading = styled.h1`
@@ -29,7 +32,6 @@ color: #025323;
 const Text = styled.p`
 width: 528px;
 height: 111px;
-
 font-family: 'Libre Franklin';
 font-style: normal;
 font-weight: 500;
@@ -64,7 +66,6 @@ export const Hero = () => {
     <>
       <HeroWrapper>
         <Navbar />
-        <img className="hero-img" src={HeroImage} alt="Person doing yoga" />
         <Text><Heading>Breath in breath out</Heading>
           <p>Yogistudio offers an overall concept in self-healing with a
               focus on calm and therapeutic forms of yoga.
