@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledTrialBtn = styled.button`
-  max-width: 390px; 
+  width: 390px; 
   height: 84px; 
   background: #DBFE62;
   border-radius: 47px;
@@ -10,6 +10,7 @@ export const StyledTrialBtn = styled.button`
   font-size: 24px; 
   font-weight: 600; 
   border: none;
+  margin-bottom:20px; 
 
   @media (min-width:667px) and (max-width:1024px){
     width: 334px; 
