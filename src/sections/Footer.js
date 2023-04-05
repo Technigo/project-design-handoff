@@ -14,14 +14,6 @@ const Footer = ({ screenSize }) => {
   const isMobile = screenSize <= 640;
   const isDesktop = screenSize >= 1025;
 
-  /*
-  useEffect(() => {
-    const handleResize = () => setScreenSize(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-  */
-
   return (
     <div className="footer">
       {isMobile && (<img src={LogoMini} alt="" />)}
