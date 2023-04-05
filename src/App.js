@@ -9,8 +9,8 @@ export const App = () => {
   return (
     <div className="main-container">
       <Header />
-      <PickYourPosition />
       <Benefits />
+      <PickYourPosition />
       <QuestionCorner />
       <Footer />
     </div>

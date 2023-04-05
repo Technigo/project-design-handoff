@@ -1,15 +1,17 @@
 import React from 'react';
+import MobileLogo from 'Images/MobileLogo.svg';
+import Hamburger from 'Components/Hamburger';
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>This</li>
-        <li>is</li>
-        <li>the</li>
-        <li>Navbar</li>
-      </ul>
-    </nav>
+    <section className="navbar">
+      <img src={MobileLogo} alt="Fit2Derby-logo" />
+      <div className="menu">
+        <Hamburger />
+        <button type="button" className="login-button">Log in</button>
+      </div>
+    </section>
+
   )
 };
 
