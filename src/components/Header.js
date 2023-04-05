@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Button'
+import { TopRightButton, BottomCenterButton } from './Button'
 import heroImage from '../assets/hero.jpg';
 
 const HeroContainer = styled.div`
@@ -11,7 +11,8 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 500px;
+  position: relative; /* Add position relative to the container */
 `;
 
 const Hero = ({ title, description }) => {
@@ -21,6 +22,8 @@ const Hero = ({ title, description }) => {
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
+      <TopRightButton>Try for Free</TopRightButton>
+      <BottomCenterButton>Try for Free</BottomCenterButton>
     </HeroContainer>
   );
 };
@@ -28,11 +31,9 @@ const Hero = ({ title, description }) => {
 const Header = () => {
   return (
     <div>
-      <Button>Try for Free</Button>
       <Hero
         title="Online Healthy Diet Strong Body"
         description="Level up your life to the happier and healthier with help of the certified personal trainers and nutrition coaches based on your personal circumstance" />
-      <Button>Try for Free</Button>
     </div>
   );
 };
