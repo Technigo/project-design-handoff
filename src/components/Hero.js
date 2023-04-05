@@ -43,11 +43,21 @@ const Title = styled.h2`
 font-size: 3rem;
 font-weight: bold;
 `
-const SmallText = styled.p`
+export const SmallText = styled.p`
 font-size: 1rem; 
-color: white; 
-padding-top: 8px;
+color: white;
+max-width: ${(props) => (props.w310 ? '310px' : '591px')};
+text-align: center;
+font-weight: ${(props) => (props.fw500 ? 500 : 600)};
+word-wrap: break-word;
+padding: ${(props) => (props.p20 ? '20px' : '0px')};
 `
+
+const ButtonTextWrapper = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center; 
+gap: 8px;`
 
 export const Hero = () => {
   return (
@@ -59,13 +69,16 @@ export const Hero = () => {
         </HeaderContainer>
 
         <HeroTextContainer>
-          <SmallText>Santulan Power Yoga Stockholm</SmallText>
+          <SmallText fw500>Santulan Power Yoga Stockholm</SmallText>
           <Title>Move your body</Title>
           <Title>Rest your mind</Title>
         </HeroTextContainer>
 
-        <SignUpButton>Sign up for a class</SignUpButton>
-        <SmallText>Want to know more about us?</SmallText>
+        <ButtonTextWrapper>
+          <SignUpButton>Sign up for a class</SignUpButton>
+          <SmallText fw500>Want to know more about us?</SmallText>
+        </ButtonTextWrapper>
+
       </HeroImageContainer>
     </HeroWrapper>
   );
