@@ -1,5 +1,6 @@
 import React from 'react'
 import { Benefits } from 'components/Benefits'
+import { Navbar } from 'components/Navbar'
 import { createGlobalStyle } from 'styled-components';
 
 export const App = () => {
@@ -10,6 +11,7 @@ export const App = () => {
   return (
     <>
       <GlobalStyle />
+      <Navbar />
       <Benefits />
     </>
   )
