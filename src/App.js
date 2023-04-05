@@ -1,6 +1,7 @@
 import React from 'react'
 import { Benefits } from 'components/Benefits'
 import { Navbar } from 'components/Navbar'
+import { Contacts } from 'components/Contact';
 import { createGlobalStyle } from 'styled-components';
 
 export const App = () => {
@@ -13,6 +14,7 @@ export const App = () => {
       <GlobalStyle />
       <Navbar />
       <Benefits />
+      <Contacts />
     </>
   )
 }

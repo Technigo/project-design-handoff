@@ -39,7 +39,7 @@ const Text = styled.div`
     margin-left: 2rem;
     height: auto;
     width: 50%;
-    text-align: left;
+    text-align: center;
 
     p {
       font-size: 1.25rem;
@@ -57,7 +57,6 @@ const Heading = styled.h1`
 
 const ImageDiv = styled.div`
   position: relative;
-  background-image: url(${YogaPic});
   background-size: cover;
   background-position: center;
   display: flex;
@@ -65,15 +64,16 @@ const ImageDiv = styled.div`
   align-items: center;
   border-radius: 20px;
   margin-top: 1rem;
-  height: 20rem;
+  height: 50%; 
+  width: 50%; 
 
   @media (min-width: 768px) {
     margin-top: 0;
     margin-right: 2rem;
-    height: 30rem;
-    width: 50%;
+    height: auto;
+    width: 50%; 
   }
-`
+`;
 
 const Overlay = styled.div`
   position: relative; 
@@ -82,9 +82,10 @@ const Overlay = styled.div`
   height: 100%;
 `
 
-const YogaPicWrapper = styled.img`
-  max-width: 80%;
+const YogaWrapper = styled.img`
+  max-width: 90%;
   height: auto;
+  border-radius: 20px;
 `
 
 const VectorWrapper = styled.img`
@@ -111,7 +112,7 @@ export const Benefits = () => {
       </Text>
       <ImageDiv>
         <Overlay>
-          <YogaPicWrapper src={YogaPic} alt="yoga" />
+          <YogaWrapper src={YogaPic} alt="yoga" />
           <VectorWrapper src={Vector} alt="vector" />
         </Overlay>
       </ImageDiv>
