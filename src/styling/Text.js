@@ -20,6 +20,7 @@ export const Headline2 = styled.h2`
 export const Headline3 = styled.h3`
     font-size: 36px;
     font-weight: 700;
+    margin-bottom: 20px;
 
     @media (min-width: 667px) {
         font-size: 48px;
@@ -64,7 +65,7 @@ export const Body = styled.p`
 
 export const Error = styled.p`
     font-size: 12px;
-    color: red;
+    color: #E36363;
 
     @media (min-width: 667px) {
         font-size: 14px;

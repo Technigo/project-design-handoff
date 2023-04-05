@@ -18,6 +18,15 @@ code {
   margin-top: 128px;
  }
 
+ .sectionHero {
+  height: 815px;
+  margin: 16px 0;
+  padding: 40px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+ }
+
 /* CARDS */
 .cardWrapper, .videoCard, .smallCard, .mediumCard, .communityCard {
   margin: 16px 0;
@@ -28,6 +37,29 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+/* HERO SECTION */
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-style: italic;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.burgerMenu {
+  filter: invert(100%);
+}
+
+.navBar button, .menuBarTop, .menuBarScroll {
+  display: none;
 }
 
 /* BENEFITS SECTION */
@@ -103,6 +135,10 @@ code {
   margin: 0 auto;
 }
 
+form {
+  min-width: 80%;
+}
+
 fieldset {
   border: 1px solid black;
   border-radius: 10px;
@@ -143,7 +179,7 @@ input:focus {
 
 .line {
   border-bottom: 1px solid black;
-  width: 148px;
+  width: 40%;
 }
 
 .signInBtn, .orText {
@@ -157,8 +193,59 @@ input:focus {
   margin: 20px 0;
 }
 
+.signInBtnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 85%;
+}
+
 /* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
 @media (min-width: 667px) {
+  .burgerMenu {
+    display: none;
+  }
+  
+  .navBar button, .menuBarTop, .menuBarScroll {
+    display: block;
+  }
+
+  .navBar button {
+    font-size: 12px;
+  }
+  
+  .menuBarTop, .menuBarScroll {
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .menuBarTop {
+    background-color: white;
+  }
+  
+  .menuBarTop a {
+    color: black;
+  }
+  
+  .menuBarScroll {
+    background-color: black;
+    width:fit-content;
+    position: fixed;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .menuBarScroll a {
+    color: white;
+  }
+  
+  a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
   .textBtnWrapper {
     display: flex;
     flex-direction: row;
@@ -182,20 +269,12 @@ input:focus {
     margin: 64px auto;
   }
 
-  form, .signInBtnWrapper {
-    min-width: 667px;
-  }
-
   legend {
     font-size: 16px;
   }
 
   .name {
     width: 100%;
-  }
-
-  .line {
-    width: 318px;
   }
 
   .nameInput, .signInBtnWrapper {
@@ -207,6 +286,10 @@ input:focus {
 
 /* RESPONSIVE DESIGN FOR TABLET ONLY */
 @media (min-width: 667px) and (max-width: 1024px) {
+  .navBar button, .menuBarTop, .menuBarScroll {
+    padding: 14px 28px;
+  }
+
   .sectionBenefits {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -227,6 +310,14 @@ input:focus {
 
 /* RESPONSIVE DESIGN FOR DESKTOP ONLY */
 @media (min-width: 1024px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .menuBarTop, .menuBarScroll {
+    padding: 18px 36px;
+  }
+
   .sectionBenefits {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -266,7 +357,7 @@ input:focus {
     align-items: center;
   }
 
-  .introActivity {
+  .introActivity, .introCommunity {
     grid-column: 1 / span 2;
   }
 
@@ -282,5 +373,10 @@ input:focus {
   .scrollWrapper {
     flex-direction: column;
     overflow: hidden;
+  }
+
+  .sectionCommunity {
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 }

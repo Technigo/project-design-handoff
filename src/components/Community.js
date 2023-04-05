@@ -2,7 +2,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { PrimaryBtn, OutlinedBtn2 } from 'styling/Button';
-import { Tagline, Headline5, Error } from '../styling/Text';
+import { Tagline, Headline5, Error, Headline3 } from '../styling/Text';
 
 const Community = () => {
   const {
@@ -20,10 +20,13 @@ const Community = () => {
 
   return (
     <section className="sectionCommunity">
-      <Tagline>Community</Tagline>
-      <Headline5>Sign up & join our community to get started today</Headline5>
+      <div className="introCommunity">
+        <Tagline>Community</Tagline>
+        <Headline5>Sign up & join our community to get started today</Headline5>
+      </div>
       <div className="communityCard" style={{ backgroundImage: 'linear-gradient(6deg, #DCD2F1 7%, rgba(255, 255, 255, 0) 50%), url("../images/longstretch.jpg")' }} />
       <div className="signUpWrapper">
+        <Headline3>Create account</Headline3>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="nameInput">
             <fieldset className="name">
@@ -56,10 +59,10 @@ const Community = () => {
         <span className="orText"><p className="line" /><p>Or</p><p className="line" /></span>
         <div className="signInBtnWrapper">
           <OutlinedBtn2 type="button">
-            <span className="signInBtn"><img alt="apple icon" src="../images/apple-logo.png" />Sign in with Apple</span>
+            <span className="signInBtn"><img alt="apple icon" src="../images/icons/apple-logo.png" />Sign in with Apple</span>
           </OutlinedBtn2>
           <OutlinedBtn2 type="button">
-            <span className="signInBtn"><img alt="google icon" src="../images/google-logo.png" />Sign in with Google</span>
+            <span className="signInBtn"><img alt="google icon" src="../images/icons/google-logo.png" />Sign in with Google</span>
           </OutlinedBtn2>
         </div>
       </div>
