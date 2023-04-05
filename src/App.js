@@ -4,12 +4,15 @@ import { Section } from './components/Section'
 import { TextBox } from './components/TextBox'
 import { Location } from './components/Location'
 import { SignUpForm } from './components/SignUpForm'
+import { Header } from './components/Header'
+import { Welcome } from './components/Welcome'
 
 export const App = () => {
   return (
     <div>
       <Section image>
-        Top section: Mount header and into/sign-up div here.
+        <Header />
+        <Welcome />
       </Section>
       <Section brown removeOnMobile>
         <TextBox
@@ -30,7 +33,7 @@ export const App = () => {
       <Section blue halfWidth>
         Contact section
       </Section>
-      <Section white halfWidth>
+      <Section white halfWidth id="sign-up-section">
         <SignUpForm />
       </Section>
       <Section brown>

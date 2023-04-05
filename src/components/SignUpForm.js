@@ -85,7 +85,10 @@ cursor: pointer;
 `
 
 const RadioButton = styled.input`
-// something here to style radio buttons
+position: absolute;
+opacity: 0;
+displaY: inline-block;
+// Missing something to make the checked button change color to #66A1AE
 `
 
 export const SignUpForm = () => {

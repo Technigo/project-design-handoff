@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 
 export const Section = styled.section`
   display: block;
-  color: blue;
+  color: white;
   /*background-color: ${(colour) => (colour.white ? 'white' : colour.blue ? 'blue' : 'brown')}  
   This does't seem to allow for hex colors*/
   background-color: white;
@@ -15,8 +15,6 @@ export const Section = styled.section`
     background: #2E160E url('../images/hero-image.png');
     background-size: cover;
     background-position: center;
-    /*transform: scaleX(-1);*/
-    color: red;
     height: 982px;
   `}
   /* Background-colours for the different sections */
