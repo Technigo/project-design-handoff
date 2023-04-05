@@ -36,6 +36,21 @@
     letter-spacing: 1px;
 }
 
+.select {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+    background-color: #F9F6FB;
+    color: #524858;
+    border: 1px solid #7B6C83;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
 .select, input {
     background-color: #F9F6FB;
     color: #524858;
