@@ -16,6 +16,18 @@
     display: flex;
     gap: 80px;
   }
+
+  .menu-text p {
+    cursor: pointer;
+  }
+
+  .search-text {
+    cursor: pointer;
+  }
+
+  .icons img {
+    cursor: pointer;
+  }
   
   @media (min-width: 641px) {
     .Header {

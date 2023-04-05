@@ -26,7 +26,7 @@ const Signup = () => {
         <label htmlFor="dropdown"><span>Please choose a class</span>
           <br />
           <select id="dropdown" name="dropdown" className="inputfield">
-            <option value="classes" disabled selected>Classes..</option>
+            <option value="classes" className="optionselected" disabled selected>Classes..</option>
             <option value="beginner">Beginner Class</option>
             <option value="intermediate">Intermediate Class</option>
             <option value="expert">Expert Class</option>

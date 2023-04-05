@@ -19,10 +19,14 @@ hr {
 
 .linkfield {
     display: flex;
-
     flex-direction: row;
     gap: 20px;
 }
+
+.linkfield p {
+    cursor: pointer;
+}
+
 
 .iconfield {
     display: flex;
@@ -33,6 +37,7 @@ hr {
 
 .iconfield img {
     scale: 0.9;
+    cursor: pointer;
 }
 
   
