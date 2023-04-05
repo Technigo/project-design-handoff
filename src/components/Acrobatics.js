@@ -1,17 +1,19 @@
 import React from 'react';
+import Carousel from './carousel';
+import { CarouselData } from './carouselData';
 import './css/info.css'
 import Man from './images/tobias-nii-kwatei-quartey-eGdGkZAI6h4-unsplash 2.png'
-// import Carousel from './carousel';
-// import { CarouselData } from './carouselData';
 
 export const Acrobatics = () => {
   return (
     <div className="acrobatics-container">
       <div className="image-container">
-        <img src={Man} alt="Woman Start" className="man" />
-        <div className="stripe1" />
-        <div className="stripe2" />
-        <div className="stripe3" />
+        <img src={Man} alt="man" className="man" />
+        <div className="Stripe">
+          <div className="stripe1" />
+          <div className="stripe2" />
+          <div className="stripe3" />
+        </div>
       </div>
       <div className="acrobatics">
         <h2 className="title">But, what is acrobatics?</h2>
@@ -28,7 +30,7 @@ export const Acrobatics = () => {
         </p>
       </div>
       <div>
-        här kommer karusellen
+        <Carousel slides={CarouselData} />
       </div>
 
     </div>

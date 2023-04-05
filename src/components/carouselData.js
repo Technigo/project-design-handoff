@@ -1,13 +1,17 @@
-import Rings from './images/rings.png'
+
+import Circ from './images/CircStudios 1.png'
 
 export const CarouselData = [
   {
-    image: Rings
+    image: Circ
   },
   {
-    image: Rings
+    image: Circ
   },
   {
-    image: Rings
+    image: Circ
+  },
+  {
+    image: Circ
   }
 ]
