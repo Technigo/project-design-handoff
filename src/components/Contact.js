@@ -31,6 +31,9 @@ width: 244px;
 height: 59px;
 border: none;
 border-radius: 15px;
+&:hover {
+  cursor: pointer;
+}
 @media (min-width: 380px) {
     font-size: 22px;
 }
@@ -71,6 +74,9 @@ height: 39px;
 border: none;
 border-radius: 10px;
 margin-top: 1rem;
+&:hover {
+  cursor: pointer;
+}
 `
 const FormTextContainer = styled.div`
 display: flex;

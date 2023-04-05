@@ -26,6 +26,9 @@ const Text = styled.div`
   margin-top: 1rem;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   p {
     font-size: 1rem;
@@ -85,6 +88,7 @@ const Overlay = styled.div`
 const YogaWrapper = styled.img`
   max-width: 90%;
   height: auto;
+  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.25);
   border-radius: 20px;
 `
 
