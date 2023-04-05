@@ -7,7 +7,7 @@ background-color: white;
 
 const SignUpInput = () => {
   return (
-    <Input></Input>
+    <Input />
   )
 }
 

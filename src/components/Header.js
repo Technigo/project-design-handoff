@@ -9,7 +9,8 @@ justify-content: center;
 align-items: center;
 `
 const HeaderImg = styled.img`
-height: 982px;
+height: 100%;
+width: auto;
 background-size: cover;
 `
 const HeaderText = styled.p`
