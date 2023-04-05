@@ -3,9 +3,11 @@ import styled from 'styled-components';
 export const Headline1 = styled.h1`
     font-size: 56px;
     font-weight: 700;
+    line-height: 86px;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 667px) {
         font-size: 96px;
+        line-height: 100px;
     }
 `;
 
@@ -50,7 +52,6 @@ export const Headline5 = styled.h5`
 export const Tagline = styled.p`
     font-size: 18px;
     text-transform: uppercase;
-    text-align: center;
     margin: 10px;
 `;
 

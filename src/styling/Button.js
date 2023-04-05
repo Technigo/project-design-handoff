@@ -33,6 +33,7 @@ export const OutlinedBtn1 = styled.button`
     background-color: transparent;
     border: 1px solid white;
     border-radius: 20px;
+    padding: 18px 36px;
     color: #FFFFFF;
     font-size: 18px;
 
@@ -50,15 +51,7 @@ export const OutlinedBtn2 = styled.button`
     font-size: 14px;
     width: 100%;
 
-    &:hover {
-        font-size: 13px;
-    }
-
     @media (min-width: 667px) {
         font-size: 16px;
-
-        &:hover {
-            font-size: 15px;
-        }
     }
 `;

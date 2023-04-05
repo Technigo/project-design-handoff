@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { PrimaryBtn } from 'styling/Button';
+import { PrimaryBtn, OutlinedBtn1 } from 'styling/Button';
+import { Body, Headline2, Tagline } from 'styling/Text';
 
 const HeroSection = () => {
   const [visible, setVisible] = useState(false);
@@ -28,6 +29,21 @@ const HeroSection = () => {
         <PrimaryBtn>Download app</PrimaryBtn>
         <img alt="menu icon" className="burgerMenu" src="../images/icons/menu.png" />
       </nav>
+      <div className="heroWrapper">
+        <Tagline className="heroTagline">Feel the difference</Tagline>
+        <Headline2 className="heroHeadline">Healthy made easy</Headline2>
+        <Body>Join us now and try out our 5-30 min workouts that will get you motivated.</Body>
+        <div className="btnWrapper">
+          <PrimaryBtn>Download app</PrimaryBtn>
+          <OutlinedBtn1>Create account</OutlinedBtn1>
+        </div>
+      </div>
+      <div className="compatibleWrapper">
+        <Body>Compatible with</Body>
+        <img alt="apple tv logo" className="compatibleLogo" src="../images/icons/apple-tv-logo.png" />
+        <img alt="roku logo" className="compatibleLogo" src="../images/icons/roku-logo.png" />
+        <img alt="chromecast logo" className="compatibleLogo" src="../images/icons/chromecast-logo.png" />
+      </div>
     </header>
   )
 };
