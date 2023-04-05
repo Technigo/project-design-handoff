@@ -10,14 +10,13 @@ color: #FF9F0A;
 display:flex;
 align-items: center;
 gap: 5px; 
+padding-bottom: 16px;
 `
 const ClassesWrapper = styled.div`
 background-color: white;
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 16px; 
-height: 538px;
 padding-top: 16px; 
 `
 

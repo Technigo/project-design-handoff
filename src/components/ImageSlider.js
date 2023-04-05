@@ -24,8 +24,8 @@ const SliderItemContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  width: ${(props) => (props.w200 ? '200px' : '185px')};
-  height: ${(props) => (props.h200 ? '200px' : '192px')};
+  width: 200px; 
+  height: 200px;
   object-fit: cover;
 `;
 
@@ -69,7 +69,7 @@ export const ImageSlider = () => {
       </ArrowButton>
       <SliderItemContainer>
         <Header>{items[currentIndex].header}</Header>
-        <Image w200 src={items[currentIndex].image} alt="carousel item" />
+        <Image src={items[currentIndex].image} alt="carousel item" />
       </SliderItemContainer>
       <ArrowButton onClick={handleNextClick}>
         <svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
