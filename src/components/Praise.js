@@ -1,4 +1,5 @@
 import React from 'react';
+import './Praise.css';
 
 export default Praise
 //<h2> Why Students Love Our Barre Classes </h2>
