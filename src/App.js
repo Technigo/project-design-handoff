@@ -6,7 +6,7 @@ import Advantages from './components/Advantages';
 import ClientReviews from './components/ClientReviews';
 import Coaches from './components/Coaches';
 import FAQ from './components/FAQ';
-// import TrialForm from './TrialForm';
+import TrialForm from './components/TrialForm';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
       <ClientReviews />
       <Coaches />
       <FAQ />
-      {/* <TrialForm /> */}
+      <TrialForm />
       <Footer />
     </div>
   );
