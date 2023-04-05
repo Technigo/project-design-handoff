@@ -8,3 +8,9 @@ export const Image = styled.img`
     border: none;
     display: block ;
 `
+
+export const BgImg = styled(Image)`
+    object-fit: scale-down;
+    object-position: -50% 50%;
+
+`

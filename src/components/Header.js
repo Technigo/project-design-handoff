@@ -20,7 +20,7 @@ export const Header = () => {
         <Button bg="#DCD2F1" color="#222322">Download app</Button>
         <ButtonOutline color="#fff">Create account</ButtonOutline>
       </FlexColumn>
-      <Image src="https://images.unsplash.com/photo-1633707744005-7a84dbe0035a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
+      <Image src="./images/childpose.jpg" />
     </>
   )
 }
