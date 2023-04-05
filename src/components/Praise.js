@@ -1,5 +1,6 @@
-import React from "react"; 
+import React from 'react';
 
+export default Praise
 //<h2> Why Students Love Our Barre Classes </h2>
 //<p> “The Instructors are amazing, the atmosphere is supportive, and the workouts are challenging yet fun!” </p>
 //<p> -Robyn Andersson, <i>Barre Basic Student</i> </p>

@@ -1,5 +1,6 @@
-import React from "react"; 
+import React from 'react';
 
+export default Footer
 //logo
 //Vallgatan 6
 //223 61, Lund

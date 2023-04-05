@@ -1,4 +1,6 @@
-import React from "react"; 
+import React from 'react';
+
+export default Classes 
 
 //img
 //<h2> Come Sweat It Out at the Barre </h2>

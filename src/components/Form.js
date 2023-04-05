@@ -1,5 +1,6 @@
-import React from "react"; 
+import React from 'react';
 
+export default Form
 /*<Div className=Register> 
 <h2>Register at Raise Studio </h2>
 <h4>Create an Account to Book Barre Classes and Buy Credits.</h4>
