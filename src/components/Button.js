@@ -13,13 +13,13 @@ const Button = styled.button`
 `
 export const TopRightButton = styled(Button)`
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 1.25rem;
+  right: 1.25rem;
 `;
 
 export const BottomCenterButton = styled(Button)`
   position: absolute;
-  bottom: 20px;
+  bottom: 0.625rem;
   left: 50%;
   transform: translateX(-50%);
 `;
