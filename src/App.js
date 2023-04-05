@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 import './global.css';
-import Menu from 'components/Menu'
-import Footer from 'components/Footer'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import SignUpForm from './components/SignUpForm';
 
 export const App = () => {
   return (
-    <>
-      <div>
-        <Menu />
-      </div>
+    <div className="app-container">
+      <Header />
+      <SignUpForm />
       <Footer />
-    </>
-  )
-}
+    </div>
+  );
+};

@@ -8,11 +8,14 @@
   
   html, body {
     margin: 0;
-    overflow-x: hidden;
-    height: 100vh;
+    height: 100%;
   }
   
   body {
     background-color: #fbf3f2;
-    height: 100%;
+    display: flex;
+  flex-direction: column;
+  min-height: 100%;
   }
+
+ 

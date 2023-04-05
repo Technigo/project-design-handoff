@@ -15,7 +15,7 @@
     "parser": "@babel/eslint-parser",
     "requireConfigFile": false,
     "sourceType": "module",
-    "ecmaVersion": 2017,
+    "ecmaVersion": 2018,
     "ecmaFeatures": {
       "jsx": true,
       "experimentalObjectRestSpread": true,
@@ -23,7 +23,8 @@
     }
   },
   "plugins": [
-    "react-hooks"
+    "react-hooks",
+    "jsx-a11y"
   ],
   "rules": {
     "react/function-component-definition": [
@@ -126,6 +127,14 @@
     "react/jsx-indent": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "controlComponents": [],
+        "depth": 25,
+        "assert": "either"
+      }
+    ],
     "semi": "off"
   }
 }

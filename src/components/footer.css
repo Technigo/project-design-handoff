@@ -1,5 +1,7 @@
 
 .footer-container {
+top:880px;
+position: relative;
 width:100%;
 background-color: #42403C;
 }
@@ -11,7 +13,6 @@ background-color: #42403C;
   justify-content: center;
   color: white;
   background-color: #42403C;
-  margin-top: 800px;
   height: 300px;
   font-family: 'sora';
   font-weight: 600;

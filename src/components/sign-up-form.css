@@ -1,0 +1,112 @@
+
+  /* sign-up form rules   - starts here  */ 
+
+  .sign-up-form {
+    top: 880px;
+    position: relative;
+    font-family: sora;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    background-color: #333366;
+    padding: 3em 0 3em 0;
+    --bs-gutter-x: 1.6rem;
+    --bs-gutter-y: 0;
+    padding-right: calc(var(--bs-gutter-x)*5);
+    padding-left: calc(var(--bs-gutter-x)*5);
+    width: 100%;
+    color: #ffcccc;
+  }
+
+
+.sign-up-list {
+margin:0.4em 34% 0.6em 40%;
+}
+
+#fname {
+  padding: 0.4em;
+  border-radius: 2em;
+  border: none;
+  display: block;
+  align-items: center;
+
+  margin-top: 0.2em;
+}
+#lname {
+  padding: 0.4em;
+  border-radius: 2em;
+  border: none;
+  display: block;
+  align-items: center;
+  margin-top: 0.2em;
+
+}
+#email {
+  padding: 0.4em;
+  border-radius: 2em;
+  border: none;
+  display: block;
+  align-items: center;
+  margin-top: 0.2em;
+
+}
+#checkbox {
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 3em;
+  border: none;
+    background-color: #fbf3f2;
+    color: #ff6666;
+    outline: none;
+    cursor: pointer;
+  margin-top: 1.4em;
+  accent-color: #ff6666;
+}
+
+#checkbox label{
+ border-top: 2em;
+}
+
+#submitbutton {
+
+  font-family: sora;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  width: 9em;
+  border-radius: 2em;
+  margin-top: 1.4em;
+  padding:0.4em;
+  color: #032539;
+  background-color:#ff6666;
+}
+
+#submitbutton:hover {
+  background-color: #ffcccc;
+  transition: 1.5s;
+}
+
+input[name=fname] {
+ margin-top:1em;
+}
+
+label {
+  display: block;
+  text-transform:uppercase;
+}
+
+input, textarea{
+  display:block;
+  width:100%;
+  border:2px solid #333366;
+  padding:1rem;
+  color: #333366;
+  font-size:18px;
+  border-radius:5px;
+    background-color: #fbf3f2;
+    
+}
+
+/* sign-up form rules   - ends here  */ 
+

@@ -1,0 +1,22 @@
+body {
+    background-color: #fbf3f2;
+  }
+  
+  a:link, a:visited {
+    color: #ff6666;
+    text-decoration: none;
+    font-family: Sora;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  
+  a:hover, a:active {
+    color:#ff6666;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 4px;
+    text-align: center;
+    font-family: Sora;
+    font-weight: 800;
+    font-size: 18px;
+  }
