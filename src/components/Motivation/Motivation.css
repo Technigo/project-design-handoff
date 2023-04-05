@@ -1,0 +1,50 @@
+.motivation {
+background-image: url('/public/images/motivation.png');
+background-color: #28282B;
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+flex-direction: column; /* Add this to stack items vertically */
+}
+
+.motivation h1 {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+color: #FBEDDE;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 48px;
+margin-bottom: 20px; /* Add a margin bottom to create space between the h1 and images */
+}
+
+.motivation-columns {
+display: flex;
+justify-content: center;
+}
+
+.motivation-column {
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+margin: 10px;
+}
+
+.motivation-columns img {
+max-width: 100%;
+height: auto;
+max-height: 300px; /* Set a maximum height for the images to prevent them from getting too large */
+margin: 10px;
+}
+
+.motivation-columns p {
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+font-size: 24px;
+margin-top: 10px;
+text-align: center;
+}

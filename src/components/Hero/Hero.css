@@ -19,6 +19,7 @@
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     line-height: 1.2;
+    margin-bottom: 5px;
   }
 
   .hero p {
@@ -37,4 +38,14 @@
     font-weight: 600;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+  }
+
+  .hero button:hover {
+    box-shadow: 0px 4px 8px rgba(14, 14, 16, 0.5);
+  }
+
+  .hero button:active {
+    background-color: #C6FF00;
+    box-shadow: 0px 8px 10px #0E0E10;
   }
