@@ -3,4 +3,17 @@
     background-color: white;
     width: 360px;
     height: 1600px;
+    margin-left: 23px;
   }
+  
+.custom-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  padding-left: 1.5em;
+  background-image: url('/public/img/list-ball.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
