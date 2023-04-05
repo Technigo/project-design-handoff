@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
+import Header from './components/Header/Header';
+import Hero from './components/Header/Hero';
 import Why from './components/Why';
 import Classes from './components/Classes/Classes';
 import Signup from './components/Signup';

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logos/Vector.png';
-import logoMedium from '../assets/logos/Vector-medium.png';
+import logo from '../../assets/logos/Vector.png';
+import logoMedium from '../../assets/logos/Vector-medium.png';
 // import logoSmall from '../assets/logos/Vector-small.png';
-import logoMini from '../assets/logos/Vector-mini.png';
-import menuicon from '../assets/icons/Menu.png';
-import searchicon from '../assets/icons/Search.png';
+import logoMini from '../../assets/logos/Vector-mini.png';
+import menuicon from '../../assets/icons/Menu.png';
+import searchicon from '../../assets/icons/Search.png';
 import './Header.css';
 
 const Header = () => {

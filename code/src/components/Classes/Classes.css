@@ -34,9 +34,15 @@
     }
 
     .classes-container h3 {
+        text-align: center;
+    }
+
+    /*
+    .classes-container h3 {
         text-align: right;
         margin: 0 32px 0 0;
     }
+    */
 
 }
     
