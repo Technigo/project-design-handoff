@@ -1,0 +1,74 @@
+.top-silk {
+    position: relative;
+    top: 45px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bottom-silk {
+    position: relative;
+    bottom: 40px;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.top-silk img {
+    width: 115%;
+    margin: 0;
+}
+
+.bottom-silk img {
+    width: 115%;
+    transform: rotate(180deg);
+    margin: 0;
+}
+
+@media (min-width: 641px) {
+    
+.top-silk {
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bottom-silk {
+    position: relative;
+    bottom: 70px;
+    margin: 0;
+}
+
+.top-silk img {
+    width: 120%;
+}
+
+.bottom-silk img {
+    width: 120%;
+}
+    
+  }
+
+  @media (min-width: 1025px) {
+
+    .top-silk {
+        position: relative;
+        top: 110px;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    .bottom-silk {
+        position: relative;
+        bottom: 110px;
+        margin: 0;
+    }
+
+    .top-silk img {
+        width: 105%;
+    }
+    
+    .bottom-silk img {
+        width: 105%;
+    }
+  }
