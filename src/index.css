@@ -1,13 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Kulim Park', sans-serif;
+  font-style: italic;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1 {
+  font-size: 110px;
+  font-weight: 600;
+  color: #B9F615;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #B9F615;
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #B9F615;
+}
+
+h4 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #B9F615;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+.header {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header-img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.header-logo {
+  color: #FFF;
+  width: 55px;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 15px;
+}
+
+.header-menu {
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  top: 15px;
+  width: 38px;
+  height: 36px;
+}
+
+.header-text {
+  z-index: 1;
+  position: absolute;
+  top: 220px;
+  left: 0px;
+  line-height: 0;
+}
+
+.header-text h1 {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+}
+
+.header-text h4 {
+  position: absolute;
+  top: 220px;
+  left: 15px;
+}
+
+.header-text h3 {
+  position: absolute;
+  top: 270px;
+  left: 65px;
+}
+
+.header-text h2 {
+  position: absolute;
+  top: 262px;
+  left: 150px;
+}
+
+.header-btn {
+  width: 133px;
+  position: absolute;
+  top: 325px;
+  z-index: 1;
+  right: 0px;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../public/images/large-parkour-background.png);
+  width: 100vw;
+  height: 3915px;
+}
+
+.blue-txt {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #0962CF;
+  width: 70vw;
+  line-height: 21px;
+}
+
+.left {
+  width: 46px;
+  position: absolute;
+  top: 390px;
+  transform: rotate(90deg);
+  left: 0px;
+}
+
+.right {
+  width: 46px;
+  position: absolute;
+  top: 390px;
+  right: 2px;
+  transform: rotate(270deg);
+}
+
+.about-tag {
+  width: 290px;
+  position: absolute;
+  left: 0px;
+  top: 740px;
+  z-index: 2;
+}
+
+.about-img {
+  width: 320px;
+  position: absolute;
+  top: 776px;
+  z-index: 1;
+}
+
+.about-stripes {
+  width: 280px;
+  position: absolute;
+  top: 790px;
+  z-index: 0;
+  object-fit: scale-down;
+  right: 0px;
+}
+
+.about-txt {
+  text-align: justify;
+  width: 84vw;
+  position: absolute;
+  top: 1160px;
+  line-height: 25px;
+}
+
+.our-classes-tag {
+  position: absolute;
+  top: 1600px;
+  left: 0px;
+}
+
+.classes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 1700px;
+  gap: 140px;
+}
+
+.classes-container p {
+  font-size: 28px;
+  width: 170px;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+}
+
+.classes-items {
+  width: 296px;
+  display: grid;
+  grid-template-columns: auto;
+  z-index: 0;
+  height: 307px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.classes-tag {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  z-index: 1;
+  width: 143px;
+  margin-top: -45px;
+}
+
+.classes-tag-reverse {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  z-index: 1;
+  width: 143px;
+  margin-top: -45px;
+}
+
+.classes {
+  width: 274px;
+}
+
+.classes-booking {
+  width: 275px;
+  margin-top: -30px;
 }

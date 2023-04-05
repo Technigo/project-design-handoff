@@ -1,9 +1,12 @@
-import React from 'react'
+import { About } from 'components/About';
+import { Header } from 'components/Header';
+import React from 'react';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <section className="main">
+      <Header />
+      <About />
+    </section>
   )
 }
