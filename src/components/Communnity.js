@@ -22,12 +22,12 @@ export const Form = () => {
   console.log(watch('example')); // watch input value by passing the name of it
 
   return (
-      <FlexColumn>
+    <>
+    <FlexColumn>
         <H3 color="#222322">Create account</H3>
           {/* "handleSubmit" will validate your inputs before invoking "onSubmit" */}
           <form onSubmit={handleSubmit(onSubmit)}>
             {/* register your input into the hook by invoking the "register" function */}
-            <FormStyle>
             <label>First name</label>
             <input
               {...register('firstName', {
@@ -65,7 +65,7 @@ export const Form = () => {
               )}
 
                <label>Email</label>
-            <input
+            <input type="email"
               {...register('email', {
                 required: true,
               })}
@@ -73,16 +73,16 @@ export const Form = () => {
             {errors?.email?.type === 'required'&& <Error>This field is required</Error>}
 
             <label>Password</label>
-            <input
+            <input type="password"
               {...register('password', {
                 required: true,
               })}
             />
             {errors?.password?.type === 'required' && <Error>This field is required</Error>}
-            </FormStyle>
      
             <SubmitButton bg="#DCD2F1" color="##222322" type="submit">Create account</SubmitButton>
           </form>
           </FlexColumn>
+          </>
   );
 }

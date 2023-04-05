@@ -12,8 +12,14 @@ export const FlexColumn = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 32px;
     position: absolute;
     padding: 32px;
+`
+
+export const FlexColumnNoPosition = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 `

@@ -5,5 +5,6 @@ export const Image = styled.img`
     width: 358px;
     object-fit: cover;
     height: 100vh;
-    
+    border: none;
+    display: block ;
 `
