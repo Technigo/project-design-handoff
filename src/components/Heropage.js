@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import logofirstpage from '../assets/logofirspage.svg'
 import ListEBlue from '../assets/Listelippsisblue.svg'
 import ListEGreen from '../assets/Listelippsisgreen.svg'
+import { BtnJoin } from './BtnJoin'
+import { Slogan } from './Slogan'
 import { Parentdiv, Logo, TopWrapper, Navbar, HambMenuBtn, HambMenuIcon, HambMenuList, HambMenuListOpen, HambMenuItem, HambMenuItemLink, HambMenuIconOpen, Lielipblue, Lielipgreen } from './HeropageCSS';
 
 export const Heropage = () => {
@@ -28,6 +30,8 @@ export const Heropage = () => {
           )}
         </Navbar>
       </TopWrapper>
+      <BtnJoin />
+      <Slogan />
     </Parentdiv>
   )
 }
