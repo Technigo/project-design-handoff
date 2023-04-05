@@ -36,7 +36,7 @@ margin-bottom: 100px;
   align-self: center; 
 
 }
-
+/* 
 .button {
   width: 390px; 
   padding: 32px 49px; 
@@ -46,7 +46,7 @@ margin-bottom: 100px;
   font-family: 'Poppins'; 
   font-size: 24px; 
   font-weight: 600; 
-}
+} */
 
 
 
@@ -85,9 +85,9 @@ margin-bottom: 100px;
     margin-bottom: 30px; 
   }
 
-  .button {
+  /* .button {
     width: 80%; 
-  }  
+  }   */
 
 
 
