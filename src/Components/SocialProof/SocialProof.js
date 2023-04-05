@@ -9,7 +9,7 @@ import { StartButton } from 'Components/StartButton/StartButton';
 export const SocialProof = () => {
   return (
     <div className="socialproof-content-container">
-      <div className="main-text">
+      <div className="social-main-text">
         <h1>
           CO-CREATED WITH 100+
           WORLD RENOWNED
