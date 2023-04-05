@@ -9,59 +9,53 @@ export const Button = styled.button`
   border-radius: 50px;
 
   &:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   ${(props) => props.headerCta && css`
-    background-color: #FAC65D;
-    color: black;
-    font-size: 32px;
+    background-color: var(--primary-color-2);
+    color: var(--neutral-dark);
+    font-size: 2rem;
     padding: 8px 55px;
-    gap: 30px;
-    width: 358px;
-    height: 67px;
 
     &:active {
-      background-color: #E39F49;
+      background-color: var(--secondary-color-2);
     }
   `}
 
   ${(props) => props.mainCta && css`
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 8px 55px;
-    gap: 30px;
-    width: 358px;
-    height: 48px;
-    background: #FAC75D;
+    margin-top: 16px;
+    background-color: var(--primary-color-2);
 
     &:active {
-      background-color: #E39F49;
+      background-color: var(--secondary-color-2);
     }
   `}
 
   ${(props) => props.cardCta && css`
-    font-size: 20px;
+    font-size: 1.25rem;
+    background: var(--primary-color-3);
+    color: var(--neutral-light);
+    padding: 10px;
     gap: 10px;
-    width: 138px;
-    height: 48px;
-    background: #4E80D5;
-    color: #FFFFFF;
 
     &:active {
-      background-color: #3253A8;
+      background-color: var(--secondary-color-3);
     }
   `}
 
   ${(props) => props.footerCta && css`
-    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 29px;
     padding: 12px 30px;
-    gap: 10px;
     width: 152px;
     height: 53px;
-    background: #FAC65D;
+    background: var(--primary-color-2);
 
     &:active {
-      background-color: #E39F49;
+      background-color: var(--secondary-color-2);
     }
   `}
 `;
