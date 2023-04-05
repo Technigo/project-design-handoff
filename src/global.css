@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+  }
+  
+  html, body {
+    margin: 0;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  
+  body {
+    background-color: #fbf3f2;
+    height: 100%;
+  }
