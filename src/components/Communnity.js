@@ -5,6 +5,7 @@ import { FlexColumn } from 'style/Flex';
 import { Container } from 'style/Container';
 import { FormStyle, Error } from 'style/FormStyle';
 import { H3 } from 'style/Texts';
+import '../style/form.css'
 
 export const Form = () => {
   const {
@@ -21,7 +22,6 @@ export const Form = () => {
   console.log(watch('example')); // watch input value by passing the name of it
 
   return (
-    <Container>
       <FlexColumn>
         <H3 color="#222322">Create account</H3>
           {/* "handleSubmit" will validate your inputs before invoking "onSubmit" */}
@@ -37,13 +37,13 @@ export const Form = () => {
               })}
             />
             {errors?.firstName?.type === 'required' && (
-              <Error>This field is required</Error>
+              <Error>⚠ This field is required</Error>
             )}
             {errors?.firstName?.type === 'maxLength' && (
-              <Error>First name cannot exceed 20 characters</Error>
+              <Error>⚠ First name cannot exceed 20 characters</Error>
             )}
             {errors?.firstName?.type === 'pattern' && (
-              <Error>Alphabetical characters only</Error>
+              <Error>⚠ Alphabetical characters only</Error>
             )}
             {/* include validation with required or other standard HTML validation rules */}
             <label>Last name</label>
@@ -55,13 +55,13 @@ export const Form = () => {
               })}
             />
             {errors?.lastName?.type === 'required' && (
-              <Error>This field is required</Error>
+              <Error>⚠ This field is required</Error>
             )}
             {errors?.lastName?.type === 'maxLength' && (
-              <Error>Last name cannot exceed 20 characters</Error>
+              <Error>⚠ Last name cannot exceed 20 characters</Error>
              )}
               {errors?.lastName?.type === 'pattern' && (
-                  <Error>Alphabetical characters only</Error>
+                  <Error>⚠ Alphabetical characters only</Error>
               )}
 
                <label>Email</label>
@@ -84,6 +84,5 @@ export const Form = () => {
             <SubmitButton bg="#DCD2F1" color="##222322" type="submit">Create account</SubmitButton>
           </form>
           </FlexColumn>
-          </Container>
   );
 }

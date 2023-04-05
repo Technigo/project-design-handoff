@@ -24,6 +24,27 @@ export const H3 = styled.h3`
     color: ${({ color }) => color};
 `
 
+export const H4 = styled.h4`
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.022em;
+    color: ${({ color }) => color};
+`
+
+export const H5 = styled.h5`
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 131%;
+    letter-spacing: -0.022em;
+    text-align: center;
+    color: ${({ color }) => color};
+`
+
 export const BodyText = styled.p`
     font-family: 'Karla', sans-serif;
     font-style: normal;
@@ -41,6 +62,7 @@ export const TagLine = styled.p`
     font-size: 12px;
     line-height: 118%;
     letter-spacing: -0.022em;
+    text-align: center;
     text-transform: uppercase;
     color: ${({ color }) => color};
 `
