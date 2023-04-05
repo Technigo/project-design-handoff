@@ -97,7 +97,7 @@ padding: 24px 24px 40px 24px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 8px 0px 8px 0px;
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@ padding: 24px 24px 40px 24px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 8px 0px 8px 0px;
   display: flex;
   flex-direction: column;
@@ -140,6 +140,29 @@ padding: 24px 24px 40px 24px;
   align-items: center;
   justify-content: center;
   padding: 30px 0px 30px 0px;
+}
+
+.yoga-container {
+  background-color: #02393f;
+  padding: 24px;
+}
+
+.yogis-header h1 {
+  color: #D0C4B8;
+  font-family: 'Libre Baskerville';
+}
+
+.yogi-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.yogi-card p {
+  color: #D0C4B8;
+  font-family: 'Libre Baskerville';
+  font-size: 16px;
+  line-height: 25,6px;
+  font-weight: 400;
 }
 
 /* Tablet */
@@ -182,18 +205,19 @@ padding: 24px 24px 40px 24px;
   .wellbeing-container {
     display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   }
 
-  .wellbeing-container h1 {
-    text-align: left;
-    padding-left: 0;
+  .wellbeing-header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 0;
   }
 
   .standing-man {
    height: 313px;
     width: 450px;
+    margin-top: 20px;
   }
 
   .sitting-man {
@@ -208,7 +232,7 @@ padding: 24px 24px 40px 24px;
 
 }
 
-
+/*Desktop*/
 @media only screen and (min-width: 1440px) {
 
 .start-container {
@@ -242,6 +266,45 @@ font-size: 50px;
     margin: 40px 0px 0px 0px;
   }
 
-  /* Add this style to move the MainText div */
+  .wellbeingcard-container {
+    display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 5%;
+  padding: 50px;
+  }
+
+  .wellbeing-header h1 {
+    font-size: 40px;
+    margin: 40px 0px 30px 30px;
+  }
+
+.standing-man {
+ width: 352px;
+ height: 345px;
+ margin: 0;
+
+ }
+
+ .sitting-man {
+  width: 352px;
+  height: 345px;
+  margin: 0;
+
+ }
+
+ .hand-heart {
+  width: 352px;
+  height: 345px;
+  margin: 0;
+ }
+
+ .free-button-container button{
+ width: 453px;
+height: 68px;
+display: flex;
+align-items: center;
+justify-content: center;
+ }
  
 }
