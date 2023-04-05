@@ -144,6 +144,10 @@ code {
   flex-direction: column;
 }
 
+.TextCards1, .TextCards2 {
+  display: none;
+}
+
 .phoneImg {
   width: 228px;
   height: 440px;
@@ -158,7 +162,7 @@ code {
 }
 
 .textCard {
-  min-width: 270px;
+  max-width: 270px;
   margin-left: 16px;
 }
 
@@ -370,7 +374,7 @@ input:focus {
   }
 
   .textCard {
-    min-width: 287px;
+    max-width: 287px;
   }
 }
 
@@ -424,31 +428,43 @@ input:focus {
 
   .sectionActivity {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    justify-items: center;
   }
 
-  .introActivity, .introCommunity {
-    grid-column: 1 / span 2;
+  .activitySlider {
+    display: none;
+  }
+
+  .TextCards1, .TextCards2 {
+    display: block;
+  }
+
+  .introActivity {
+    grid-column: 1 / span 3;
+  }
+
+  .TextCards1 {
+    grid-column: 1 / span 1;
+    grid-row: 2;
   }
 
   .phoneImg {
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
   }
 
   .textCard {
-    margin: 16px 0;
-    max-width: 80%;
-  }
-
-  .scrollWrapper {
-    flex-direction: column;
-    overflow: hidden;
+    margin: 40px 0;
   }
 
   .sectionCommunity {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+
+  .introCommunity {
+    grid-column: 1 / span 2;
   }
 
   .signUpWrapper {
