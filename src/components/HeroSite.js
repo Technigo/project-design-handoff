@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import { HeadLine3, SubHeadLine3 } from 'components/Typography'
 import { NavBar } from './NavBar'
 import BackgroundImg from '../images/Hero.png'
+import { Button } from './Button'
 
 const StyledHeader = styled.header`
 width: 100vw;
@@ -26,19 +28,15 @@ const StyledRightAside = styled.aside`
  `
 
 const HeroItem = styled.div`
-border: solid black 1px;
 position: absolute;
 top: 163px;
 left: 16px;
 width: 265px;
-font-size:
-`
-const StyledH1 = styled.h1`
-font-weight: 500px;
-`
+height: 232px;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
 
-const StyledP = styled.p`
-font-weight: 500px;
 `
 
 export const HeroSite = () => {
@@ -48,8 +46,13 @@ export const HeroSite = () => {
       <StyledRightAside />
       <NavBar />
       <HeroItem>
-        <StyledH1>See new height with Aerial Silks</StyledH1>
-        <StyledP>Unleash your inner acrobat with our exhilarating full-body workout.</StyledP>
+        <HeadLine3>
+          See new height with Aerial Silks
+        </HeadLine3>
+        <SubHeadLine3>
+          Unleash your inner acrobat with our exhilarating full-body workout.
+        </SubHeadLine3>
+        <Button>Sign up today</Button>
       </HeroItem>
     </StyledHeader>
 
