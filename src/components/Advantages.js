@@ -7,7 +7,7 @@ const Advantages = () => {
     <div className="advantages-container">
       <div className="coach">
         <h3>Personal Coach support and flexibility of Online Training</h3>
-        <h4>Your preferred workout and diet plan</h4>
+        <h4>Your Personal Coach</h4>
         <ul className="custom-list">
           <li>Monitor your progression and technique </li>
           <li>Keeps you accountable and motivated</li>
@@ -37,7 +37,7 @@ const Advantages = () => {
           <li>Diet plans are customised according to your health conditions and background </li>
         </ul>
         <img src={`${process.env.PUBLIC_URL}/img/adv-diet1.png`} alt="adv-diet1" />
-        <img src={`${process.env.PUBLIC_URL}/img/adv-diet2.png`} alt="adv-diet2" />
+        <img className="food-img" src={`${process.env.PUBLIC_URL}/img/adv-diet2.png`} alt="adv-diet2" />
       </div>
     </div>
   );
