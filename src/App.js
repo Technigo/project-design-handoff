@@ -1,9 +1,10 @@
 import React from 'react'
+import { Hero } from './Sections/Hero'
 
 export const App = () => {
   return (
     <div>
-      Find me in app.js!
+      <Hero />
     </div>
   )
 }
