@@ -1,13 +1,126 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+:root {
+  --primaryWhite: #f5f5f5;
+  --primaryYellow: #fac65d;
+  --primaryBlue: #4e80d5;
+  --primaryPink: #ff90d1;
+  --secondaryWhite: #d9d9d9;
+  --secondaryYellow: #e39f49;
+  --secondaryBlue: #3253a8;
+  --neutralBlack: #000;
+  --neutralWhite: #fff;
+  --neutralGrey: #525252;
+  --neutralRed: #f80a0a;
+}
+
+/* VIDEO BACKGROUND */
+#hero-video {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* for safari */
+  transform: scaleX(-1);
+  position: fixed;
+  width: 100%;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  color: var(--neutralBlack);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav a {
+  margin: 0 2rem;
+  color: var(--neutralBlack);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline var(--primaryPink) 2px;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 820px) {
+  /* VIDEO BACKGROUND */
+  #hero-video {
+    display: none;
+  }
+
+  /* NAVBAR */
+  header nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* NAVBAR */
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    color: var(--neutralBlack);
+  }
+
+  header nav {
+    color: var(--neutralBlack);
+    background-color: var(--primaryWhite);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 243px;
+    padding: 160px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 0.5s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav {
+    transform: none;
+    background-color: var(--primaryWhite);
+    text-transform: uppercase;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
 }
