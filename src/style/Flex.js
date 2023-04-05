@@ -4,7 +4,6 @@ export const FlexRow = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 32px;
     position: absolute;
     padding: 32px;
 `

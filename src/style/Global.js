@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body { 
     margin: 16px;
-    width: 100%;
+    width: 390px;
 }
 
 h2 {
