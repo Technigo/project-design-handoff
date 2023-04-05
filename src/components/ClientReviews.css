@@ -10,3 +10,44 @@
   flex-direction: row;
   align-items: center;
 }
+
+h2 {
+color: #03092E;
+width: 336px;
+height: 138px;
+left: 12px;
+top: 6px;
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 50px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -1px;
+}
+
+p1 {
+width: 262px;
+height: 168px;
+font-family: 'Helvetica Neue';
+font-style: italic;
+font-weight: 700;
+font-size: 15px;
+line-height: 28px;
+display: flex;
+align-items: center;
+color: #03092E;
+padding: 22px;
+margin-top: 41px;
+}
+
+.slider-container{
+  width: 320px;
+  margin: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  background-color: white;
+}
+
