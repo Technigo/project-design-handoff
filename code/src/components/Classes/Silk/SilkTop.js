@@ -1,7 +1,7 @@
 import React from 'react';
-import ribbonLarge from '../../assets/images/SilkLarge.png';
-import ribbonMedium from '../../assets/images/SilkMedium.png';
-import ribbonSmall from '../../assets/images/SilkSmall.png';
+import ribbonLarge from '../../../assets/images/SilkLarge.png';
+import ribbonMedium from '../../../assets/images/SilkMedium.png';
+import ribbonSmall from '../../../assets/images/SilkSmall.png';
 
 import './Silk.css';
 

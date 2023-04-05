@@ -8,7 +8,7 @@ const Introduction = () => {
       <h2>
         Unleash your inner acrobat with our exhilarating full-body workout.
       </h2>
-      <button type="button">Sign up today</button>
+      <button className="mainbutton" type="button">Sign up today</button>
     </div>
   );
 };

@@ -87,6 +87,56 @@ p .caption {
   font-weight: medium;
 }
 
+/* BUTTONS */
+
+button {
+  padding: 8px 16px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px 0px #00000040;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+  
+.mainbutton {
+  color: var(--main-dark-color);
+  background-color: var(--secondary-color);
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 2px solid var(--secondary-color);
+  box-shadow: 0px 2px 4px 0px #00000040;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.mainbutton:hover {
+  border: 2px solid var(--secondary-color-b);
+}
+
+.textbutton {
+  color: var(--main-dark-color);
+  background-color: #E1D2E9;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0px 2px 4px 0px #00000040;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.textbutton:hover {
+  background-color: #CDB4DB;
+}
+
+
 /* --------- TABLET --------- */
 
 @media (min-width: 641px) {

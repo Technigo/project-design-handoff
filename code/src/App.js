@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Why from './components/Why';
-import Classes from './components/Classes';
+import Classes from './components/Classes/Classes';
 import Signup from './components/Signup';
 import Footer from './components/Footer';
 import './index.css';
@@ -29,3 +29,21 @@ const App = () => {
 };
 
 export default App;
+
+/*
+  return (
+    <div className="App">
+      <div className="Header">
+        <Header screenSize={screenSize} />
+        <Hero />
+      </div>
+      <div className="Main">
+        <Why />
+        <Classes screenSize={screenSize} />
+        <Signup />
+      </div>
+      <Footer screenSize={screenSize} />
+    </div>
+  );
+};
+*/

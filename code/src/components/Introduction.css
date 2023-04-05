@@ -16,7 +16,7 @@
     z-index: 3;
   }
   
-  button {
+  .mainbutton {
     color: var(--main-dark-color);
     background-color: var(--secondary-color);
     padding: 8px 16px;
@@ -30,7 +30,7 @@
     margin-top: 10px;
   }
   
-  button:hover {
+  .mainbutton:hover {
     border: 2px solid var(--secondary-color-b);
   }
   
