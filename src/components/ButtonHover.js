@@ -2,15 +2,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-// const Button = styled.img`
-// position: absolute;
-// width: 41.2%;
-// left: 58.7%;
-// top: 57.3%;
-// `;
-
 const Button = styled.img`
 position: absolute;
+cursor: pointer;
 width: ${(props) => props.width};
 left: ${(props) => props.left};
 top: ${(props) => props.top};
