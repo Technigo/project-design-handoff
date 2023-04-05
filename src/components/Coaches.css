@@ -19,7 +19,6 @@
   
   .cards-coach {
     position: relative;
-    margin-top: 5px;
     border-radius: 30px;
     box-sizing: border-box;
     right:5%;
@@ -35,8 +34,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
   }
 
   .slider-coach .slick-dots li {
