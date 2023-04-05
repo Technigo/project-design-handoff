@@ -1,14 +1,16 @@
 import React from 'react';
 import { GlobalStyle } from 'components/GlobalStyle';
 import { HeroPage } from 'Sections/HeroPage';
-import { Acrobatics } from 'Sections/Acrobatics';
+import { BookClasses } from 'Sections/BookClasses';
+import { MemberForm } from 'Sections/MemberForm';
 
 export const App = () => {
   return (
     <div>
       <GlobalStyle />
       <HeroPage />
-      <Acrobatics />
+      <BookClasses />
+      <MemberForm />
     </div>
   )
 }

@@ -10,15 +10,16 @@ import classesBookBtnHover from '../assets/classes-book-hover.svg';
 import { ButtonHover } from '../components/ButtonHover';
 
 const AcrobaticsContainer = styled.div`
-  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  height: 1632px;
   width: 100vw;
   background-image: url(${acroBg});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  height: 3048.82px;
-  /* left: -836px;
-  top: 800px; */
+  background-position: center top;
+  border:solid red;
+  
 `;
 const AcrobaticsButton = styled.img`
   position: absolute;
@@ -30,9 +31,9 @@ const AcrobaticsButton = styled.img`
 
 const AcrobaticsImage = styled.img`
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 400.82px;
-  left: 18px;
+  left: 0.5%;
   top: 1018px;
 `;
 
@@ -56,10 +57,10 @@ const OurClassesButton = styled.img`
   position: relative;
   width: 165px;
   height: 37.24px;
-  top: 34.1%;
+  top: 58.1%;
 `;
 
-export const Acrobatics = () => {
+export const BookClasses = () => {
   return (
     <AcrobaticsContainer>
       <HeroText />
@@ -81,7 +82,7 @@ export const Acrobatics = () => {
         btn={classesBookBtn}
         width="67%"
         left="16.4%"
-        top="300%" />
+        top="280%" />
     </AcrobaticsContainer>
   );
 };
