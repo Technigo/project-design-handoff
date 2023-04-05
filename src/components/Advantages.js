@@ -19,6 +19,7 @@ const Advantages = () => {
           <li>Fit the sessions into your schedule</li>
           <li>Never boring</li>
         </ul>
+        <img src={`${process.env.PUBLIC_URL}/img/adv-coach.png`} alt="adv-coach" />
       </div>
 
       <div className="diet">
@@ -35,9 +36,10 @@ const Advantages = () => {
           <li>We offer different healthy diets</li>
           <li>Diet plans are customised according to your health conditions and background </li>
         </ul>
+        <img src={`${process.env.PUBLIC_URL}/img/adv-diet1.png`} alt="adv-diet1" />
+        <img src={`${process.env.PUBLIC_URL}/img/adv-diet2.png`} alt="adv-diet2" />
       </div>
     </div>
-
   );
 };
 
