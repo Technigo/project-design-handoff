@@ -16,8 +16,8 @@ const SignUp = () => {
             <option value="Intermediate class">Intermediate class</option>
             <option value="Expert class">Expert class</option>
           </select>
-          <h3 className="radio-text">Do you have any prior experience with aerial silks?</h3>
           <div className="radio-div">
+            <p>Do you have any prior experience with aerial silks?</p>
             <input type="radio" />
             <p>Yes</p>
             <input type="radio" />
@@ -25,7 +25,7 @@ const SignUp = () => {
             <input type="radio" />
             <p>I do not know</p>
           </div>
-          <h3 className="radio-text">Do you want us to contact you for any other inquiries?</h3>
+          <p>Do you want us to contact you for any other inquiries?</p>
           <div className="radio-div">
             <input type="radio" />
             <p>Yes</p>
