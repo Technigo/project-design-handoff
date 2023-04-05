@@ -26,7 +26,7 @@ const Logo = styled.img`
 
 const Search = styled.img`
   height: 23px;
-  padding-right: 2rem;
+  margin-right: 2rem;
 
   &:hover {
     cursor: pointer;
