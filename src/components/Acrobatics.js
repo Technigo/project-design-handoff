@@ -1,6 +1,8 @@
 import React from 'react';
 import './css/info.css'
 import Man from './images/tobias-nii-kwatei-quartey-eGdGkZAI6h4-unsplash 2.png'
+// import Carousel from './carousel';
+// import { CarouselData } from './carouselData';
 
 export const Acrobatics = () => {
   return (
@@ -25,6 +27,12 @@ export const Acrobatics = () => {
           slacklining and diving
         </p>
       </div>
+      <div>
+        här kommer karusellen
+      </div>
+
     </div>
   );
 }
+
+// <Carousel slides={CarouselData} />
