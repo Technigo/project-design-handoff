@@ -23,9 +23,6 @@ const LineStyle = {
   border: 'none'
 };
 
-const SoMeSection = styled.div`
-`
-
 export const Footer = () => {
   return (
     <FooterWrapper>
