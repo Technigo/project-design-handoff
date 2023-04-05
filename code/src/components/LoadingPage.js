@@ -10,7 +10,6 @@ const LoadingPage = () => {
         </p>
         <p>1250+ active users</p>
         <p>50+ personal trainers</p>
-        <button type="submit">Try for Free</button>
       </div>
     </section>
   )

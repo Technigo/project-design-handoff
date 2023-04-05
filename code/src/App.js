@@ -2,7 +2,7 @@ import React from 'react'
 import StickyMenu from './components/Header'
 import LoadingPage from './components/LoadingPage'
 import InfoPage from './components/InfoPage'
-import ClientReviews from './components/ClientReviews'
+import SwipeableCarouselClientReviews from './components/ClientReviews'
 // import styled from 'styled-components'
 
 export const App = () => {
@@ -11,7 +11,7 @@ export const App = () => {
       <StickyMenu />
       <LoadingPage />
       <InfoPage />
-      <ClientReviews />
+      <SwipeableCarouselClientReviews />
     </div>
   )
 }
