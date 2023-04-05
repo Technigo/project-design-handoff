@@ -12,6 +12,7 @@ const items = [
 ];
 
 const ImageSliderContainer = styled.div`
+  padding-top: 16px;
   display: flex;
   align-items: center;
   justify-content: center;

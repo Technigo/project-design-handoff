@@ -63,6 +63,7 @@ export const ReviewSlider = () => {
   flex-direction: column;
   background-color: #4796A8;
   border-radius: 20px;
+  height: 210px;
   `
   const ReviewId = styled.div`
   display:flex;
@@ -70,7 +71,7 @@ export const ReviewSlider = () => {
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
-  padding: 44px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   `
 
   return (
@@ -78,7 +79,7 @@ export const ReviewSlider = () => {
       <Slider {...settings} className="slider">
         {reviews.map((review) => (
           <ReviewDiv key={review.id}>
-            <SmallText p20 fw500>{review.text}</SmallText>
+            <SmallText p20 fw500 h78>{review.text}</SmallText>
             <ReviewId>
               <ReviewImg src={review.image} alt={review.name} />
               <SmallText fw500>{review.name}</SmallText>

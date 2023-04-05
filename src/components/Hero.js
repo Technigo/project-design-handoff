@@ -39,18 +39,22 @@ color: white;
 text-align: center;
 
 `
-const Title = styled.h2`
-font-size: 3rem;
-font-weight: bold;
+export const Title = styled.h2`
+font-size: ${(props) => (props.smallrem ? '2.5rem;' : '3rem;')}
+font-weight: 700;
+color: ${(props) => (props.black ? 'black' : 'white')}
+text-align: center;
 `
+
 export const SmallText = styled.p`
 font-size: 1rem; 
 color: white;
-max-width: ${(props) => (props.w310 ? '310px' : '591px')};
+height: ${(props) => (props.h78 ? '78px;' : '')};
+max-width: ${(props) => (props.w310 ? '310px;' : '591px;')};
 text-align: center;
 font-weight: ${(props) => (props.fw500 ? 500 : 600)};
 word-wrap: break-word;
-padding: ${(props) => (props.p20 ? '20px' : '0px')};
+padding: ${(props) => (props.p20 ? '20px;' : '0px;')};
 `
 
 const ButtonTextWrapper = styled.div`

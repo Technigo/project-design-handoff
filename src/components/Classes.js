@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import { ImageSlider } from './ImageSlider';
 import { FindUs } from './FindUs';
 
-const YellowText = styled.h2`
+export const YellowText = styled.h2`
 font-size: 1.5rem;
-font-weight: 500;
+font-weight: ${(props) => (props.fw600 ? '600;' : '500;')};
 color: #FF9F0A;
 display:flex;
 align-items: center;
 gap: 5px; 
-padding-bottom: 16px;
+line-height: ${(props) => (props.lh30 ? '30px;' : '27px;')};
 `
 const ClassesWrapper = styled.div`
 background-color: white;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SignUpButton = styled.button`
 background-color: #ff9f0a;
 color: black;
-border-radius: 20px;
+border-radius: 1.25rem;
 border: none;
 padding: 14px, 65px; 
 width: 300px;
