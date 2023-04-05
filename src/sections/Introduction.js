@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '../button/ButtonCss'
 import './Introduction.css';
 
 const Introduction = () => {
@@ -8,7 +9,8 @@ const Introduction = () => {
       <h2>
         Unleash your inner acrobat with our exhilarating full-body workout.
       </h2>
-      <button type="button">Sign up today</button>
+      <Button>Sign up today</Button>
+      {/* <button type="button">Sign up today</button> */}
     </div>
   );
 };

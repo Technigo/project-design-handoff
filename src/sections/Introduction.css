@@ -16,7 +16,7 @@
     z-index: 3;
   }
   
-  button {
+  /* button {
     color: var(--main-dark-color);
     background-color: var(--secondary-color);
     padding: 8px 16px;
@@ -32,7 +32,7 @@
   
   button:hover {
     border: 2px solid var(--secondary-color-b);
-  }
+  } */
   
 
   @media (min-width: 641px) {
