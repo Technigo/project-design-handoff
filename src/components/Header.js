@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from './Button'
+import { StyledButtonHeader } from './Button'
+import { Headline1, Headline2 } from './Typography'
 import HeroImage from '../images/header-image.jpg'
 import LogoPhone from '../images/phone-logo.svg'
 import NavPhone from '../images/hamburger-icon.svg'
@@ -23,12 +24,6 @@ nav {
   padding: 25px 16px 0 16px;
 }
 
-h1, h2 {
-  font-size: 3rem;
-  color: #FF90D1;
-  margin: 0;
-}
-
 section {
   width: 90%;
   display: flex;
@@ -36,13 +31,10 @@ section {
   gap: 42px;
   align-self: center;
   margin-bottom: 108px;
+  padding: 0 16px;
 }
 
 @media (min-width: 570px) {
-  h1, h2 {
-    font-size: 6rem;
-  }
-
   section {
     margin-left: 24px;
     align-self: unset;
@@ -53,14 +45,13 @@ section {
     background-image: none;
 
     section {
-      position: fixed;
+      position: absolute;
       bottom: 0;
     }
 
     nav {
-      position: fixed;
+      position: absolute;
       width: 100%;
-      justify-content: unset;
     }
   }
 `
@@ -94,8 +85,10 @@ const TabletNavList = styled.ul`
 }
 
 @media (min-width: 769px) {
-  width: 45%;
+  width: 65%;
   align-self: center;
+  margin: auto;
+  font-size: 1.5rem;
 }
 `
 const MediaDesktop = styled.video`
@@ -104,11 +97,11 @@ const MediaDesktop = styled.video`
 }
 
 @media (min-width: 769px) {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100vh;
+  min-height: 100vh;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
@@ -136,10 +129,16 @@ export const Header = () => {
       </nav>
       <section>
         <div>
-          <h1>OUTDOOR</h1>
-          <h2>WORKOUT</h2>
+          <Headline1>
+            OUTDOOR
+          </Headline1>
+          <Headline2>
+            WORKOUT
+          </Headline2>
         </div>
-        <Button />
+        <StyledButtonHeader>
+          <p>Join us today!</p>
+        </StyledButtonHeader>
       </section>
     </StyledHeader>
   )
