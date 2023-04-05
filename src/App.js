@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { Membership } from 'components/Membership';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <Membership />
   )
 }
