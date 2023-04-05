@@ -21,4 +21,19 @@ background-color: transparent;
 border: 1px solid white;
 color: white;
 `}
+
+${(props) => props.ctalong && css`
+background-color: #F35408;
+width: 262px;
+height: 30px;
+color: white;
+`}
+
+${(props) => props.outlinedlong && css`
+background-color: transparent;
+border: 1px solid white;
+width: 262px;
+height: 35px;
+color: white;
+`}
 `
