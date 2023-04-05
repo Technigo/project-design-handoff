@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Slogan } from 'components/Slogan';
-import { HeroText } from 'components/HeroText';
 import heroBg from '../assets/hero.svg'
 import logoHero from '../assets/logo-hero.svg';
 import { Hamburger } from '../components/Hamburger';
-import { ButtonJoin } from '../components/ButtonJoin';
+import { ButtonHover } from '../components/ButtonHover';
+import joinBtn from '../assets/button-join.svg';
+import joinBtnHover from '../assets/button-join-hover.svg';
 
 const HeroContainer = styled.div`
   height: 100vh;
@@ -35,9 +36,13 @@ export const HeroPage = () => {
         <Logo src={`${logoHero}`} alt="logo of the page" />
         <Hamburger />
       </Topwrapper>
-      <ButtonJoin />
+      <ButtonHover
+        btnOnHover={joinBtnHover}
+        btn={joinBtn}
+        width="41.2%"
+        left="58.7%"
+        top="57.3%" />
       <Slogan />
-      <HeroText />
     </HeroContainer>
   )
 }

@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { HeroText } from 'components/HeroText';
 import acroBtn from '../assets/button-acrobatics.svg';
 import acroImg from '../assets/acrobat.svg';
 import acroBg from '../assets/acrobatics-background.svg';
 import ourClassesBtn from '../assets/button-our-classes.svg';
+import classesBookBtn from '../assets/classes-book.svg';
+import classesBookBtnHover from '../assets/classes-book-hover.svg';
+import { ButtonHover } from '../components/ButtonHover';
 
-const ParentDiv = styled.div`
+const AcrobaticsContainer = styled.div`
   height: 100vh;
   width: 100vw;
   background-image: url(${acroBg});
@@ -13,8 +17,8 @@ const ParentDiv = styled.div`
   background-size: cover;
   background-position: center center;
   height: 3048.82px;
-  left: -836px;
-  top: 800px;
+  /* left: -836px;
+  top: 800px; */
 `;
 const AcrobaticsButton = styled.img`
   position: absolute;
@@ -34,29 +38,31 @@ const AcrobaticsImage = styled.img`
 
 const AcrobaticsText = styled.p`
   position: absolute;
-  width: 313px;
+  width: 85.9%;
   height: 334px;
   left: 30px;
   top: 1467px;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 155%;
   text-align: justify;
   letter-spacing: -0.022em;
   color: #000000;
+  margin:0;
 `;
 
 const OurClassesButton = styled.img`
   position: relative;
   width: 165px;
   height: 37.24px;
-  top: 35%;
+  top: 34.1%;
 `;
 
 export const Acrobatics = () => {
   return (
-    <ParentDiv>
+    <AcrobaticsContainer>
+      <HeroText />
       <AcrobaticsButton src={`${acroBtn}`} />
       <AcrobaticsImage src={`${acroImg}`} />
       <AcrobaticsText>
@@ -70,6 +76,12 @@ export const Acrobatics = () => {
         of performance, such as aerobatics.
       </AcrobaticsText>
       <OurClassesButton src={`${ourClassesBtn}`} />
-    </ParentDiv>
+      <ButtonHover
+        btnOnHover={classesBookBtnHover}
+        btn={classesBookBtn}
+        width="67%"
+        left="16.4%"
+        top="300%" />
+    </AcrobaticsContainer>
   );
 };
