@@ -10,7 +10,6 @@ const Introduction = () => {
         Unleash your inner acrobat with our exhilarating full-body workout.
       </h2>
       <Button>Sign up today</Button>
-      {/* <button type="button">Sign up today</button> */}
     </div>
   );
 };
