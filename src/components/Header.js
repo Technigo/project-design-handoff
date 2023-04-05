@@ -5,13 +5,14 @@ import HeroImage from '../images/header-image.jpg'
 import LogoPhone from '../images/phone-logo.svg'
 import NavPhone from '../images/hamburger-icon.svg'
 import LogoBig from '../images/logo-big.svg'
+import HeroVideo from '../images/hero-video.mp4'
 
 const StyledHeader = styled.header`
 
 display:flex;
 flex-direction: column;
 justify-content: space-between;
-height:100vh;
+height: 100vh;
 background-image: url(${HeroImage});
 background-size: cover;
 background-position: 75% 20%;
@@ -47,6 +48,21 @@ section {
     align-self: unset;
   }
 }
+
+  @media (min-width: 769px) {
+    background-image: none;
+
+    section {
+      position: fixed;
+      bottom: 0;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      justify-content: unset;
+    }
+  }
 `
 const PhoneNavMedia = styled.img`
   @media (min-width: 570px){
@@ -76,11 +92,32 @@ const TabletNavList = styled.ul`
   font-weight: 400;
   font-size: 1rem;
 }
+
+@media (min-width: 769px) {
+  width: 45%;
+  align-self: center;
+}
+`
+const MediaDesktop = styled.video`
+@media (max-width: 768px) {
+  display:none
+}
+
+@media (min-width: 769px) {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
 `
 
 export const Header = () => {
   return (
     <StyledHeader>
+      <MediaDesktop src={HeroVideo} autoPlay muted loop />
       <nav>
         <PhoneNavMedia
           src={LogoPhone}
