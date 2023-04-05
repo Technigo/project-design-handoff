@@ -1,0 +1,65 @@
+.videoCard {
+  height: 627px;
+}
+
+.mediumCard {
+  height: 420px;
+  justify-content: space-between;
+}
+
+.smallCard {
+  height: 140px;
+}
+
+.playIcon {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+.playIcon:hover {
+  transform: scale(0.9);
+}
+
+/* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
+@media (min-width: 667px) {
+  .smallCard {
+    width: 380px;
+  }
+
+  .smallCardWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .textBtnWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* RESPONSIVE DESIGN FOR DESKTOP ONLY */
+@media (min-width: 1024px) {
+  .sectionWorkouts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .introWorkouts {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .videoCard {
+    grid-row: 2 / span 2;
+    height: 672px;
+    margin-right: 20px;
+  }
+
+  .smallCardWrapper {
+    grid-column: 2 / span 1;
+  }
+}

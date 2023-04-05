@@ -3,6 +3,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { PrimaryBtn, OutlinedBtn2 } from 'styling/Button';
 import { Tagline, Headline5, Error, Headline3 } from '../styling/Text';
+import '../styling/Community.css';
 
 const Community = () => {
   const {

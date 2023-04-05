@@ -2,6 +2,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { Tagline, Headline5, Headline4, Body } from 'styling/Text';
+import '../styling/Activity.css';
 
 export const TextCard = ({ headlineTitle, bodyText }) => {
   return (

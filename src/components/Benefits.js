@@ -2,6 +2,7 @@
 import React from 'react';
 import { PrimaryBtn } from 'styling/Button';
 import { Tagline, Headline5, Headline4, Body } from '../styling/Text';
+import '../styling/Benefits.css';
 
 export const Card = ({ color, imgSrc, headlineTitle, bodyText }) => {
   return (

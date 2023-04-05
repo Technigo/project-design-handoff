@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PrimaryBtn, OutlinedBtn1 } from 'styling/Button';
 import { Body, Headline2, Tagline } from 'styling/Text';
+import '../styling/HeroSection.css';
 
 const HeroSection = () => {
   const [visible, setVisible] = useState(false);

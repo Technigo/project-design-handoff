@@ -2,6 +2,7 @@
 import React from 'react';
 import { SecondaryBtn } from 'styling/Button';
 import { Tagline, Headline5, Headline1, Headline4, Body } from '../styling/Text';
+import '../styling/Workouts.css';
 
 export const SmallCard = ({ color, headlineTitle, bodyText }) => {
   return (
