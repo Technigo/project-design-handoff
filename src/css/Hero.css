@@ -12,8 +12,8 @@ display: flex;
 flex-direction: column; 
 align-content: center;
 width: 100%; 
-height: 745px; 
 object-fit: cover;
+margin-bottom: 100px; 
 }
 
 .hero-text-and-button h4 {
@@ -48,6 +48,8 @@ object-fit: cover;
   font-weight: 600; 
 }
 
+
+
 @media (min-width: 667px) and (max-width: 1024px) {
   .hero-container {
     background-position: 75% 21%; 
@@ -57,13 +59,17 @@ object-fit: cover;
     font-size: 88px; 
     font-weight:500; 
   }
+
 }
 
 @media (max-width: 667px) {
   .title-text {
     font-size: 56px;
     font-weight: 500;  
-    width: 50%; 
+    width: 80%; 
+    justify-content: center; 
+    line-height: 56px; 
+    margin: 100px 32px 0px 32px; 
   }
 
   .hero-container {
@@ -71,10 +77,17 @@ object-fit: cover;
   }
 
   .hero-text-and-button h4 {
-    width: 50%; 
+    width: 80%; 
     font-size: 24px;
+}  
+  .hero-text-and-button {
+    margin-top: 176px; 
+    margin-bottom: 30px; 
+  }
 
-}    
+  .button {
+    width: 80%; 
+  }  
 
 
 

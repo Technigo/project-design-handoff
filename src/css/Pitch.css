@@ -1,17 +1,92 @@
 .pitch-container {
   display: flex; 
+  flex-direction:column; 
   justify-content: center; 
   background-image:url(../Images/Pitch.png); 
   background-repeat: no-repeat;
   background-size:cover; 
   background-position:25% 21%; 
-  height: 888px; 
+  border: 2px solid turquoise; 
 } 
 
 .pitch-title {
+  display:flex; 
+  flex-direction:row; 
   font-family: 'Poppins';
   font-weight: 500; 
   font-size: 48px; 
-  color: white; 
+  color: #FBEDDE; 
+  align-self: center; 
+}
+
+.pitch-cards {
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap;
   justify-content: center; 
+  gap: 24px; 
+  margin: 40px; 
+
+}
+
+.pitch-card {
+  display: flex; 
+  flex-direction: column; 
+  width: 30%; 
+  color: #FBEDDE; 
+}
+
+.pitch-card h3 {
+  font-family: 'Poppins';
+  font-size: 32px; 
+  font-weight: 700; 
+  margin: 30px 0px 0px;; 
+}
+
+.pitch-card p {
+  font-family: 'Poppins';
+  font-size: 26px; 
+  font-weight: 400; 
+  text-decoration:underline; 
+  margin:0; 
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .pitch-cards {
+    gap: 50px;   }
+  
+  .pitch-card {
+    justify-content: center; 
+    width: 70%;  
+  }
+
+  .pitch-title {
+    font-size: 40px; 
+    margin-top: 120px; 
+  }
+
+}
+@media (max-width: 667px) {
+  
+  .pitch-cards {
+    margin:0px; 
+    }
+  .pitch-card {
+    width: 100%; 
+    }
+  .pitch-title {
+    font-size: 32px; 
+    margin-top: 40px; 
+    }
+  .pitch-card h3 {
+    font-size: 28px; 
+    font-weight: 700;
+    margin: 24px 24px 0px 24px;  
+    }
+    
+  .pitch-card p {
+    font-size: 22px; 
+    font-weight: 400; 
+    margin: 0px 24px 24px 24px; 
+    }
 }
