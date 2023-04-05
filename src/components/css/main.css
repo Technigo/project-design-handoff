@@ -3,92 +3,260 @@
 p{
 font-family: 'Kulim Park', sans-serif;
 }
+@media only screen and (max-width: 768px){
+	.hero-container {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		height: 100vh;
+		background-image: url('./womanstart.png');
+		background-size: cover;
+	  }
+	  
+	  .goBeyond {
+		color: #B9F615;
+		position: absolute;
+		left: 53%;
+		top: 28%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .goBeyond1 {
+		color: #B9F615;
+		position: absolute;
+		left: 63%;
+		top: 38%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .goBeyond2 {
+		color: #B9F615;
+		position: absolute;
+		left: 73%;
+		top: 48%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .goBeyond3 {
+		color: #B9F615;
+		position: absolute;
+		left: 83%;
+		top: 58%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .hero-paragraph {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		background-color: rgba(0, 0, 0, 0.5);
+	  }
+	  
+	  
+	  
+
+}
 
 /*Tablet*/
-.goBeyond{
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+ {
+	.hero-container {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		height: 100vh;
+		background-image: url('./womanstart.png');
+		background-size: cover;
+	  }
+	  
+	  .goBeyond {
+		color: #B9F615;
+		position: absolute;
+		left: 53%;
+		top: 28%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .goBeyond1 {
+		color: #B9F615;
+		position: absolute;
+		left: 63%;
+		top: 38%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .goBeyond2 {
+		color: #B9F615;
+		position: absolute;
+		left: 73%;
+		top: 48%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .goBeyond3 {
+		color: #B9F615;
+		position: absolute;
+		left: 83%;
+		top: 58%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .hero-paragraph {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		background-color: rgba(0, 0, 0, 0.5);
+	  }
+
+}
+
+
+
+
+
+
+/*desktop*/
+@media screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1600px) 
+  { 
+
+.hero-container {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	height: 100vh;
+	background-image: url('./womanstart.png');
+	background-size: cover;
+  }
+  
+  .goBeyond {
 	color: #B9F615;
 	position: absolute;
 	left: 53%;
 	top: 28%;
 	transform: translate(-50%, -50%);
-	z-index: 2;		
+	z-index: 2;
 	width: 402px;
 	height: 326px;
 	font-family: 'Kulim Park';
 	font-style: italic;
-	font-weight: 600;
-	font-size: 90px;
-	line-height: 325px;
+	font-weight: bold;
+	font-size: 7rem;
   }
-
-  .goBeyond1{
+  
+  .goBeyond1 {
 	color: #B9F615;
 	position: absolute;
-	left: 50%;
-	top: 46%;
+	left: 63%;
+	top: 38%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
-	width: 352px;
-	height: 118px;
+	width: 402px;
+	height: 326px;
 	font-family: 'Kulim Park';
 	font-style: italic;
-	font-weight: 600;
-	font-size: 35px;
-	line-height: 117px;
+	font-weight: bold;
+	font-size: 7rem;
   }
-
-  .goBeyond2{
+  
+  .goBeyond2 {
 	color: #B9F615;
 	position: absolute;
-	left: 68%;
-	top: 50%;
+	left: 73%;
+	top: 48%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
-	width: 475px;
-	height: 206px;
+	width: 402px;
+	height: 326px;
 	font-family: 'Kulim Park';
 	font-style: italic;
-	font-weight: 600;
-	font-size: 35px;
-	line-height: 206px;
-	letter-spacing: -0.022em;
-
+	font-weight: bold;
+	font-size: 7rem;
   }
-  .goBeyond3{
+  
+  .goBeyond3 {
 	color: #B9F615;
 	position: absolute;
-	left: 82%;
-	top: 45%;
+	left: 83%;
+	top: 58%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
-	width: 475px;
-	height: 206px;
+	width: 402px;
+	height: 326px;
 	font-family: 'Kulim Park';
 	font-style: italic;
-	font-weight: 600;
-	font-size: 60px;
-	line-height: 206px;
-	letter-spacing: -0.022em;
-
+	font-weight: bold;
+	font-size: 7rem;
   }
- 
-.woman{
-	width: 100%;
-	position: relative;
-	z-index: -1;
-	top: 0;
-}
-
-.hero-paragraph{
-max-width: 300px;
-height: 413px;
-position: absolute;
-left: 50%;
-top: 35%;
-font-family: 'Kulim Park';
-font-style: normal;
-font-size: 17px;
-white-space: pre-wrap;
-color: white;
-
+  
+  .hero-paragraph {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
 }

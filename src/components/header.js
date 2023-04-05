@@ -7,7 +7,7 @@ import './css/header.css'
 export const Header = () => {
   return (
     <div className="header-container">
-      <img src={Logo} alt="Logo" className="Logo" />
+      <img src={Logo} alt="Logo" className="logo" />
       <div className="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
