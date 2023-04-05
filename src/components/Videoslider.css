@@ -1,0 +1,39 @@
+.video-card {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 6px;
+}
+
+.video-title {
+    font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 160%;
+color: #02393F;
+}
+
+.video-duration {
+    font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 160%;
+color: #02393F;
+}
+
+.video-card-text {
+    display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 8px 0px;
+gap: 20px;
+}
+
+.video-card-image {
+    width: 226px;
+    height: 189px;
+    border-radius: 12px;
+}
