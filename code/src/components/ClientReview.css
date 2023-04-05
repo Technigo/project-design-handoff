@@ -1,0 +1,45 @@
+.client-review-container {
+    background-color: #D7CBFF;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .client-review-container h1 {
+
+  color: #03092E;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:10px;
+  padding:10px;
+  }
+  
+  .client-review-container h3 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #03092E;
+  padding-left: 20px;
+  } 
+  
+  .client-review-container p {
+    font-size: 1rem;
+    color: #03092E;
+    } 
+  
+  .card {
+    box-shadow: 0px 5px 31px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    max-width: 40vw;
+    max-height: 40vw;
+    }
+    
+  
+  .card img {
+    margin: 20px;
+  
+  }
+  
