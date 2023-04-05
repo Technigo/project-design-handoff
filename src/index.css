@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 320px) {
+  .hero-img {
+    object-fit: cover; /* Scale the image while maintaining aspect ratio and covering the container */
+  }
 }
