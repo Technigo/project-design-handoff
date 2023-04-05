@@ -33,15 +33,13 @@ const Community = () => {
               <legend>First Name</legend>
               <input {...register('firstName', { required: true, pattern: /^[A-Za-z]+$/i })} />
             </fieldset>
-            {errors?.firstName?.type === 'required' && <Error>Please enter your name</Error>}
-            {errors?.firstName?.type === 'pattern' && (<Error>Alphabetical characters only</Error>)}
             <fieldset className="name">
               <legend>Last Name</legend>
-              <input {...register('lastName', { required: true, pattern: /^[A-Za-z]+$/i })} />
+              <input {...register('lastName', { required: true })} />
             </fieldset>
-            {errors?.lastName?.type === 'required' && <Error>Please enter your name</Error>}
-            {errors?.lastName?.type === 'pattern' && (<Error>Alphabetical characters only</Error>)}
           </div>
+          {errors?.firstName?.type === 'required' && <Error>Please enter your name</Error>}
+          {errors?.firstName?.type === 'pattern' && (<Error>Alphabetical characters only</Error>)}
           <fieldset>
             <legend>Email</legend>
             <input type="email" {...register('email', { required: true, pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i })} />

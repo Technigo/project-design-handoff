@@ -66,6 +66,7 @@ export const Body = styled.p`
 export const Error = styled.p`
     font-size: 12px;
     color: #E36363;
+    margin-bottom: 10px;
 
     @media (min-width: 667px) {
         font-size: 14px;
