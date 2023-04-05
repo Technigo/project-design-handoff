@@ -5,8 +5,8 @@ import heroImage from '../images/hero-image.png';
 export const HeroSection = () => {
   return (
     <Container>
-      <HeaderText>Header Text</HeaderText>
-      <SubText>Smaller Text Box</SubText>
+      <HeaderText>Online Healthy Diet Strong Body</HeaderText>
+      <SubText>Level up your life to be happier and healthier</SubText>
       <Button>Try for Free</Button>
     </Container>
   );
@@ -37,9 +37,10 @@ const SubText = styled.p`
 const Button = styled.button`
   font-size: 1.5rem;
   padding: 1rem 2rem;
-  border: none;
-  background-color: #f44336;
-  color: #fff;
+  border-color: orange;
+  border-radius: 10px ;
+  background-color: white;
+  color: orange;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 

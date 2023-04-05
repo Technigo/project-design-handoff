@@ -12,3 +12,69 @@ code {
     monospace;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px;
+  background-color: grey;
+}
+
+.navbar-logo img {
+  display: flex;
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: rgb(46, 85, 85);
+}
+
+.navbar-hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 668px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .navbar-logo {
+    margin-bottom: 20px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-hamburger-menu span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #333;
+  }
+}
