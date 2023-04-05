@@ -29,11 +29,10 @@ const TrialForm = () => {
             </label>
           </div>
 
-          <button type="submit">Submit</button>
         </form>
 
         <div className="trial-button">
-          <div>
+          <div type="submit">
             Get started free trial
           </div>
         </div>
