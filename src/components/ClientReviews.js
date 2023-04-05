@@ -16,7 +16,7 @@ const ClientReviews = () => {
   return (
     <div className="client-reviews-container">
       <h2>What our Clients say about their journey!</h2>
-      <div className="slider-container">
+      <div className="slider-container-client">
         <Slider {...settings}>
           <div className="cards">
             <p1>
