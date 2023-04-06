@@ -1,6 +1,8 @@
 .loading-page-wrapper h1{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-style: bold;
+    margin-left: 10px;
+    margin-top:15%;
 }
 
 .text-wrapper {
@@ -8,8 +10,31 @@
     padding-left:5px;
     margin-top:10px
   }
-  .text-wrapper p {
-  margin-top:30vh;
+  .loading-text {
+  margin-top:40vh;
   margin-right:20px;
   margin-left:10px;
+  margin-bottom:0px;
+  width:70vw;
+  font-weight: 800px;
+  }
+
+  .users {
+    color:#03092E;
+    font-size: 16px; 
+    line-height: 1.2; 
+  }
+  
+  .users > span {
+    font-size: 24px; 
+    font-weight: bold;
+  }
+  .trainers {
+    color:#03092E;
+    font-size: 16px; 
+    line-height: 1.2; 
+  }
+  .trainers > span {
+    font-size: 24px; 
+    font-weight: bold;
   }

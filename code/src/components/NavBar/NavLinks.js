@@ -9,30 +9,31 @@ const handleButtonClick = () => {
 
 const NavLinks = (props) => {
   return (
-    <><ul>
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <a className="menu-item" href="#services">Services</a>
-      </li>
+    <div>
+      <ul>
+        <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+          <a className="menu-item" href="#services">Services</a>
+        </li>
 
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <a className="menu-item" href="#about">Coaches</a>
-      </li>
+        <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+          <a className="menu-item" href="#about">Coaches</a>
+        </li>
 
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <a className="menu-item" href="#contact">About</a>
-      </li>
+        <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+          <a className="menu-item" href="#contact">About</a>
+        </li>
 
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <a className="menu-item" href="#shop">Shop</a>
-      </li>
+        <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+          <a className="menu-item" href="#shop">Shop</a>
+        </li>
 
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <a className="menu-item" href="#club">Club</a>
-      </li>
-    </ul>
+        <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+          <a className="menu-item" href="#club">Club</a>
+        </li>
+      </ul>
 
-    <button className="tryforfree" type="submit" onClick={handleButtonClick}>Try for Free</button>
-    </>
+      <button className="tryforfree" type="submit" onClick={handleButtonClick}>Try for Free</button>
+    </div>
   );
 }
 
