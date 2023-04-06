@@ -14,6 +14,18 @@
 	border-bottom: 5px solid pink;
 }
 
-.NavBar .Mobile{
-	display:none;
+.NavBar .MobileNavigation {
+	display: none;
+}
+
+@media (max-width: 990px){
+	.NavBar .Navigation{
+		display: none;
+	}
+
+	.NavBar .MobileNavigation{
+		display: flex;
+		background-color: red;
+
+	}
 }

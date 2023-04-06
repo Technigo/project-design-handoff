@@ -4,7 +4,7 @@ import Classes from './css/classes.module.css'
 
 const Mobile = () => {
   return (
-    <nav className={Classes.Mobile}>
+    <nav className={Classes.MobileNavigation}>
       <NavLinks />
     </nav>
   )
