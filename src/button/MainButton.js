@@ -1,19 +1,21 @@
 import styled from 'styled-components'
 
-export const ButtonClass = styled.class`
+export const MainButton = styled.main`
 color: var(--main-dark-color);
-background-color: #E1D2E9;
+background-color: var(--secondary-color);
 padding: 8px 16px;
 border-radius: 16px;
-border: 2px solid var(var(--primary-color-a: #e1d2e9);
-box-shadow: 0px 2px 24px 0px #00000040;
+border: 2px solid var(--secondary-color);
+box-shadow: 0px 2px 4px 0px #00000040;
 font-family: "Poppins", sans-serif;
 letter-spacing: 1px;
 font-size: 16px;
 font-weight: 400;
 margin-top: 10px;
+cursor: pointer;
 
 &:hover {
-    border: 2px solid var(--primary-color-d: #F9F6FB);
+border: 2px solid var(--secondary-color-b);    
 }
+
 `
