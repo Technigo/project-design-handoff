@@ -21,11 +21,15 @@ const Header = () => {
     setIsHovering(false);
   };
 
+  console.log(handleMouseLeave);
+
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  const iconClass = `search ${!isHovering ? 'hidden' : ''}`;
 
   return (
     <>
@@ -49,7 +53,7 @@ const Header = () => {
             <p>Contact</p>
           </div>
           <div className="searchfield" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            {isHovering && (<img src={searchicon} alt="search" className="search" />)}
+            <img src={searchicon} alt="search" className={iconClass} />
             <p className="search-text">Search</p>
           </div>
         </div>
@@ -59,3 +63,10 @@ const Header = () => {
 };
 
 export default Header;
+
+/*
+<div className="searchfield" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            {isHovering && (<img src={searchicon} alt="search" className="search" />)}
+            <p className="search-text">Search</p>
+          </div>
+          */
