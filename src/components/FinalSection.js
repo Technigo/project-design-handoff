@@ -23,20 +23,42 @@ const FinalSection = () => {
         </div>
       </div>
       <div className="bottomFormRegister">
-        <form>
-          <label htmlFor="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" required /><br />
-          <label htmlFor="newsletter">I want to receive Raise Studio%apos;s
-          Newsletter!
-          </label><br />
-          <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" />
-          <label htmlFor="termsAndConditions">I have read and understood the
-            <button type="button">Terms & Conditions</button> and
-            <button type="button">Privacy Policy</button>
+        <form className="registrationForm">
+          <label htmlFor="firstName">
+            <span>First Name</span>
+            <input type="text" id="firstName" name="firstName" required /><br />
           </label>
-          <input type="checkbox" id="termsAndConditions" name="termsAndConditions" value="termsAndConditions" />
+          <label htmlFor="lastName">
+            <span>Last Name</span>
+            <input type="text" id="lastName" name="lastName" required /><br />
+          </label>
+          <label htmlFor="phone">
+            <span>Phone number</span>
+            <input type="tel" id="phone" name="phone" required /><br />
+          </label>
+          <label htmlFor="email">
+            <span>Email (username) </span>
+            <input type="email" id="email" name="email" required /><br />
+          </label>
+          <label htmlFor="password">
+            <span>Password</span>
+            <input type="password" id="password" name="passoword" required /><br />
+          </label>
+          <label htmlFor="newsletter">
+            <span>I want to receive Raise Studio&apos;s
+          Newsletter!
+            </span>
+            <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" />
+          </label><br />
+          <label htmlFor="termsAndConditions">
+            <span>I have read and understood the
+              <button type="button">Terms & Conditions</button> and
+              <button type="button">Privacy Policy</button>
+            </span>
+            <input type="checkbox" id="termsAndConditions" name="termsAndConditions" value="termsAndConditions" />
+          </label>
           <input type="submit" value="Submit" />
-          <button type="submit" className="joinUsButton...">Join Raise Studio</button>
+          <button type="submit" className="joinUsButton">Join Raise Studio</button>
         </form>
       </div>
     </div>

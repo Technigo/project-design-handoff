@@ -17,6 +17,10 @@
 .testimonialsTitle {
     margin-bottom: 32px;
 }
+/* 
+.registerWrapper {
+    background-color: #9AD4D6;
+} */
 
 .topRegister {
     background-color: #F2FDFF;
@@ -38,4 +42,13 @@
     color: #252525;
     font-size: 12px;
     margin-top: 16px;
+}
+
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomFormRegister {
+    margin-bottom: 20px;
 }

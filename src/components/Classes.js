@@ -5,6 +5,7 @@ import BarreBasicCardTabletDesktop from '../assets/BarreBasicCardTabletDesktop.s
 
 const Classes = ({ screenSize }) => {
   const imgUrl = screenSize < 667 ? BarreBasicCardMobile : BarreBasicCardTabletDesktop;
+  console.log('Barre', screenSize)
 
   return (
     <div className="classesWrapper">
