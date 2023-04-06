@@ -1,11 +1,12 @@
 .NavBar{
     width: 100vw;
     height: 80px;
- 
     opacity: 0.9;
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
+    position:absolute;
+    top: 3%;
 }
 
 .NavBar nav ul {
@@ -16,16 +17,19 @@
 
 .NavBar nav ul li {
     display: inline-block;
-    margin: 1.5vw;
+    margin: 5vw;
 }
 
 .NavBar nav ul li a {
     text-decoration: none;
     color:white;
+    position: absolute;
+    right:5%;
+   
 }
 
 .NavBar a:hover {
-    border-bottom: 5px solid #8C1CD1;
+    border-bottom: 5px solid #D7CBFF;
 }
 
 .NavBar .MobileNavigation{
@@ -33,13 +37,23 @@
 }
 
 @media (max-width: 990px) {
+    .NavBar{
+        width: 30vw;
+        height: 80px;
+        opacity: 0.9;
+        display:flex;
+        justify-content: center;
+        align-items: right;
+        position:absolute;
+        right: 3%;
+    }
+
     .NavBar .Navigation {
         display:none
     }
 
     .NavBar .MobileNavigation{
         display:flex;
-        background-color: grey;
         align-items: center;
     }
     
@@ -54,9 +68,9 @@
     .NavBar nav ul{
         display:flex;
         flex-direction: column;
-    
         width:100%;
-        border-top: 2px solid #8C1CD1;
+        border-top: 2px solid #D7CBFF;
+        padding-top:9rem;
     }
 
     .NavBar nav ul li{

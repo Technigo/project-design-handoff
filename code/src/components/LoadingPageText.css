@@ -1,0 +1,15 @@
+.loading-page-wrapper h1{
+    font-size: 1.7rem;
+    font-style: bold;
+}
+
+.text-wrapper {
+    color: white;
+    padding-left:5px;
+    margin-top:10px
+  }
+  .text-wrapper p {
+  margin-top:30vh;
+  margin-right:20px;
+  margin-left:10px;
+  }

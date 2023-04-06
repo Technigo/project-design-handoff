@@ -1,23 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import heroImage from '../assets2/HeroImage.jpg';
-import NavBar from './NavBar/NavBar';
+import heroImage from '../assets2/croppedHero.jpg';
 import LoadingPageText from './LoadingPageText';
 
 const HeroPage = () => {
-  const handleButtonClick = () => {
-    alert('Thank you for trying Self Health!');
-  };
   return (
     <Header className="header-outer-wrapper">
       <Container className="header-inner-wrapper">
-        <img className="logo" src="../assets/Logo.svg" alt="Self Health Logo" />
-        <div>
-          <img src="../assets/magnifying-glass.png" alt="magnifying glass" />
-        </div>
-        <NavBar />
+        <img className="logo" src="../assets/Logo.svg" alt="Self Health Logo" style={{ marginTop: '10px', marginLeft: '10px', position: 'absolute' }} />
         <LoadingPageText />
-        <button className="tryforfree" type="submit" onClick={handleButtonClick}>Try for Free</button>
       </Container>
     </Header>
   )
@@ -33,6 +24,7 @@ const Header = styled.section`
 `;
 const Container = styled.section`
   width:100vw;
+
   display: flex;
   align-items: flex-start;
   
