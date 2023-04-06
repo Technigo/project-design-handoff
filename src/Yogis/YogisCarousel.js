@@ -5,7 +5,7 @@ import 'react-awesome-slider/dist/styles.css';
 const YogisCarousel = () => {
   return (
     <main>
-      <AwesomeSlider>
+      <AwesomeSlider organicArrows={false} bullets={false}>
         <div className="yogi-card">
           <img src="./images/pexels-cottonbro-studio-4056535 - Edited.png" alt="yoga woman" />
           <p>“This program has really helped me to be more grounded in the present moment.
