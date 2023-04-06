@@ -91,26 +91,26 @@ export const ClassCarousel = (props) => {
       arrows={false}
       partialVisible>
       <ClassCard
-        imgSrc={`${process.env.PUBLIC_URL}/assets/pexels-karolina-grabowska-4379000 1.png`}
+        imgSrc="https://images.pexels.com/photos/4379000/pexels-photo-4379000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         imgAlt="couple working out outside"
         title="MODERATE"
         description="Classes that everyone can participate in regardless of age, shape or athletic ability."
         shadow />
       <ClassCard
-        imgSrc={`${process.env.PUBLIC_URL}/assets/running-black-white.png`}
-        imgAlt="couple working out outside"
+        imgSrc="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        imgAlt="group of people working out outside"
         title="INTENSE"
         description="Vigorous exercises that pushes your body to the max."
         shadow />
       <ClassCard
-        imgSrc={`${process.env.PUBLIC_URL}/assets/running-black-white.png`}
+        imgSrc="https://images.pexels.com/photos/4853091/pexels-photo-4853091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         imgAlt="couple working out outside"
         title="HIIT"
         description="Intense interval exercises."
         shadow />
       <ClassCard
-        imgSrc={`${process.env.PUBLIC_URL}/assets/running-black-white.png`}
-        imgAlt="couple working out outside"
+        imgSrc="https://images.pexels.com/photos/8497646/pexels-photo-8497646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        imgAlt="two people running outside"
         title="CARDIO"
         description="Focuses on different cardio exercises such as jogging, running stairs, jump rope, uphill sprints and more."
         shadow />

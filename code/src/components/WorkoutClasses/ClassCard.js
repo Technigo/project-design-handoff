@@ -20,6 +20,7 @@ const StyledClassCard = styled.div`
 const ClassImg = styled.img`
   width: 100%;
   height: 50%;
+  object-fit: cover;
 `;
 
 const CardH3 = styled.h3`
