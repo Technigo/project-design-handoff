@@ -14,10 +14,12 @@
 	background-color: blue;
 }
 
-  .image-container {
+
+
+.stripes{
 	position: relative;
-	
-  }
+	width: 100%;
+}
   
 .man {
 width: 100%;
@@ -39,41 +41,26 @@ right: 0%;
 	
   }
 
-  .stripe1{
-	position: absolute;
-	top: 0%;
-	right: 0%;
-	height: 2px;
-  }
-  .stripe2{
-	position: absolute;
-	top: 0%;
-	right: 0%;
-	height: 2px;
-	
-		
-  }
-  .stripe3{
 
-	position: absolute;
-	top: -20%;
-	right: 0;
-	height: 2px;
-  }
-  .stripe4{
-position: absolute;
-	height: 2px;
-	top: 50%;
-	right: 0%;
-	z-index: -1;
-  }
-  .Vector1, .Vector2, .Vector3, .Vector4 {
-	width: 50%;
-	height: auto; /* maintain aspect ratio */
-  }
 
   .upp{
 	width: 100%;
+  }
+
+  .BookaClass{
+	background-color: #FA005B;
+	border: none;
+	color: white;
+	height: 36px;
+	width: 170px;
+	font-family: Kulim Park;
+font-size: 21px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: -0.022em;
+
+
+	;
   }
   
 }

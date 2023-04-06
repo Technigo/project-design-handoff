@@ -47,7 +47,7 @@ const Carousel = ({ slides }) => {
         ref={sliderRef}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}>
-        <img key={current} src={CarouselData[current].image} alt="rings" />
+        <img key={current} src={CarouselData[current].image} alt="rings" className="image" />
       </section>
       <button className="rightBtn" type="button" onClick={nextSlide}>
         <img src={arrowRight} className="arrowRight" alt="arrow right" />

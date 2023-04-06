@@ -9,9 +9,7 @@
 
 .image{
 	width: 100%;
-	height: 200px ;
-	border-radius: 10px;
-	border-color: pink 5px;
+transform: skew(-20deg);
 }
 .carousel-container {
   display: flex;
@@ -42,4 +40,5 @@ order: 1;
 	height: 100%;
 	object-fit: cover; /* Resize the image to cover the container while maintaining aspect ratio */
   }
+  
   

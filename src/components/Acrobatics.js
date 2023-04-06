@@ -1,34 +1,19 @@
 import React from 'react';
 import Carousel from './carousel';
 import { CarouselData } from './carouselData';
-import './css/info.css'
+import './css/acrobatics.css'
 import Man from './images/tobias-nii-kwatei-quartey-eGdGkZAI6h4-unsplash 2.png'
-import Vector1 from './images/Vector1.png'
-import Vector2 from './images/Vector-2.png'
-import Vector3 from './images/Vector-3.png'
-import Vector4 from './images/Vector-4.png'
+import Stripes from './images/lines.png'
 
 export const Acrobatics = () => {
   return (
     <div className="acrobatics-container">
       <h2 className="title">But, what is acrobatics?</h2>
+      <div className="Stripe">
+        <img src={Stripes} alt="stripes" className="stripes" />
+      </div>
       <div className="image-container">
         <img src={Man} alt="man" className="man" />
-        <div className="Stripe">
-          <div className="stripe1">
-            <img src={Vector1} alt="man" className="Vector1" />
-          </div>
-          <div className="stripe2">
-            <img src={Vector2} alt="man" className="Vector2" />
-          </div>
-          <div className="stripe3">
-            <img src={Vector3} alt="man" className="Vector3" />
-          </div>
-          <div className="stripe4">
-
-            <img src={Vector4} alt="man" className="Vector4" />
-          </div>
-        </div>
       </div>
       <div className="acrobatics">
 
@@ -47,7 +32,9 @@ export const Acrobatics = () => {
       <div className="Carousel">
         <Carousel slides={CarouselData} />
       </div>
-
+      <button className="BookaClass" type="button">
+      Book a class
+      </button>
     </div>
   );
 }

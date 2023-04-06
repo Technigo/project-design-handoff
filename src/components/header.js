@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './images/Vector.svg'
+import Logo from './images/VectorLogo.svg'
 import Mobile from './Mobile';
 import Navigation from './Navigation';
 import './css/header.css'
