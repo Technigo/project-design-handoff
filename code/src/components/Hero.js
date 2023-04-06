@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import heroImage from '../images/hero-image.png';
 
 export const HeroSection = () => {
   return (
@@ -18,9 +17,13 @@ const Container = styled.section`
   justify-content: center;
   widht: 100vw;
   height: 100vh;
-  background-image: url(${heroImage});
+  background-image: url('/images/hero-image-smaller.png');
   background-size: cover;
   background-position: center;
+
+  @media only screen and (max-width: 600px) {
+    background-image: url('/images/mobile-hero-image.png');
+  }
 `;
 
 const HeaderText = styled.h1`
