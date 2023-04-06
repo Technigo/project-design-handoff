@@ -8,20 +8,28 @@ const Header = () => {
   return (
     <div className="header">
       <Navbar />
-      <p>FEEL THE DIFFERENCE</p>
-      <h1>Healthy made easy</h1>
-      <p>
-        Join us now and try out our 5-30 min workouts that will get you
-        motivated.
-      </p>
-      <button type="button">Download App</button>
-      <button type="button">Create Account</button>
-      <div>
-        <h3>Compatible with</h3>
+      <div className="header-content">
+        <p className="title">FEEL THE DIFFERENCE</p>
+        <h1>Healthy made easy</h1>
+        <p>
+          Join us now and try out our 5-30 min workouts that will get you
+          motivated.
+        </p>
+        <div className="header-button-container">
+          <button type="button" className="download-button">
+            Download App
+          </button>
+          <button type="button" className="create -button">
+            Create Account
+          </button>
+        </div>
         <div>
-          <img src={appleLogo} alt="img" />
-          <img src={rukuLogo} alt="img" />
-          <img src={chromecastLogo} alt="img" />
+          <h3>Compatible with</h3>
+          <div>
+            <img src={appleLogo} alt="img" />
+            <img src={rukuLogo} alt="img" />
+            <img src={chromecastLogo} alt="img" />
+          </div>
         </div>
       </div>
     </div>
