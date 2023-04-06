@@ -1,0 +1,7 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    background-color: #F2FDFF;
+    font-family: 'Poppins', sans-serif;
+}
