@@ -9,7 +9,7 @@ import checkmark from './Vector26.svg';
 export const TheBenefits = () => {
   return (
     <div className="thebenefits-box">
-      <ul className="benefit-list1">
+      <div className="benefit-list1">
         <h2>BUILD HEALTHY HABITS</h2>
         <h2 className="thebenefit-title-bold">FOR YOU AND YOUR DOG</h2>
         <div className="check-text">
@@ -24,8 +24,8 @@ export const TheBenefits = () => {
           <img className="checkmark" src={checkmark} alt="checkmark" />
           <p>Levels from beginner to advanced dog owner/puppy to old dog.</p>
         </div>
-      </ul>
-      <ul className="benefit-list2">
+      </div>
+      <div className="benefit-list2">
         <div className="check-text">
           <img className="checkmark" src={checkmark} alt="checkmark" />
           <p>Online workouts and programs.</p>
@@ -38,7 +38,7 @@ export const TheBenefits = () => {
           <img className="checkmark" src={checkmark} alt="checkmark" />
           <p>Experienced coaches.</p>
         </div>
-      </ul>
+      </div>
     </div>
   )
 }

@@ -21,6 +21,9 @@ export const Hero = () => {
             to spare, we have you covered.
             Get started at your personal level.
         </p>
+        <div className="circle-box">
+          <img className="circle" src="./Pictures/Playbutton.svg" alt="circel" />
+        </div>
       </div>
       <div className="buttons-container">
         <StartButton cta>Get started</StartButton>

@@ -9,7 +9,7 @@
 } 
 
 .title {
-    align-items:  left;
+    align-items: left;
     display: flex;
     flex-direction: column;
 } 
