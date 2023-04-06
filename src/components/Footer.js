@@ -7,8 +7,11 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <div className="logo-section">
-        <img src="/assets/lotus.svg" alt="lotus logo" />
-        <p>Radiant Roots</p>
+        <div className="lotus-logo">
+          <img src="/assets/beige-hexagon.svg" alt="hexgon" className="hexagon" />
+          <img src="/assets/teal-lotus.svg" alt="lotus logo" className="lotus" />
+        </div>
+        <p className="radiant-roots">Radiant Roots</p>
       </div>
       <div className="links-section">
         <p>Affiliate Links</p>

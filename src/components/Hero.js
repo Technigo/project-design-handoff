@@ -7,9 +7,12 @@ import { CallButton } from './CallButton';
 export const Hero = () => {
   return (
     <StyledHero>
-      <div>
-        <img src="/assets/lotus.svg" alt="lotus logo" />
-        {/* <p>Radiant Roots</p> */}
+      <div className="nav-bar">
+        <div className="lotus-logo">
+          <img src="/assets/teal-hexagon.svg" alt="hexgon" className="hexagon" />
+          <img src="/assets/white-lotus.svg" alt="lotus logo" className="lotus" />
+          {/* <p>Radiant Roots</p> */}
+        </div>
         <FontAwesomeIcon icon={faBars} className="icon" />
       </div>
       <h1>The health revolution begins with you</h1>

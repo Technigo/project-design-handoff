@@ -1,6 +1,7 @@
 import React from 'react';
 import recipes from 'libraries/recipes';
 import { StyledNutrition } from 'styles/Nutrition.styles';
+// import { NutritionSlider } from './NutritionSlider';
 
 export const Nutrition = () => {
   return (
@@ -22,6 +23,7 @@ export const Nutrition = () => {
           </div>
         ))}
       </div>
+      {/* <NutritionSlider /> */}
     </StyledNutrition>
   )
 }

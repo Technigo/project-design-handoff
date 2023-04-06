@@ -7,18 +7,36 @@ export const StyledHero = styled.section`
     padding: 24px;
     background-image: url('/assets/ladytwisting.png');
     background-size: cover;
+    background-position: top;
 
-    div {
+    .nav-bar {
         display: flex;
-        /* height: 40vh; */
+        height: 70px;
         width: 100%;
         justify-content: space-between;
     }
 
-    img {
-        width: 73px;
-        align-self: flex-start;
+    .lotus-logo {
+        position: relative;
+        z-index: 0;
+        display: flex;
     }
+
+    .hexagon {
+        width: 70px;
+        /* align-self: flex-start; */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .lotus {
+        width: 40px;
+        position: absolute;
+        z-index: 2;
+        margin: 15px;
+    }
+
+
 
     h1 {
         font-size: 32px;

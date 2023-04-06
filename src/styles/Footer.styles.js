@@ -8,25 +8,42 @@ export const StyledFooter = styled.section`
     background-color: ${({ theme }) => (theme.colors.teal)};
 
     .logo-section {
+        display: grid;
+        grid-template-columns: 70px auto;
+      
+    }
+
+    .lotus-logo {
+        position: relative;
+        z-index: 0;
         display: flex;
-        flex-direction: row;
+        height: 70px; 
+        grid-column: 1 / 2;
     }
 
-    img {
-        width: 73px;
-        align-self: flex-start;
+    .hexagon {
+        width: 70px;
+        /* align-self: flex-start; */
+        position: absolute;
+        z-index: 1;
     }
 
-    .logo-section p {
+    .lotus {
+        width: 40px;
+        position: absolute;
+        z-index: 2;
+        margin: 15px;
+    }
+    .radiant-roots {
         align-self: center;
         margin: 10px;
         font-family: 'Abril Fatface', cursive;
         font-size: 20px;
-        color: ${({ theme }) => (theme.colors.beige)}
+        color: ${({ theme }) => (theme.colors.beige)};
     }
 
     .links-section p {
-        color: ${({ theme }) => (theme.colors.beige)}
+        color: ${({ theme }) => (theme.colors.beige)};
     }
 
     .icon-section {
@@ -36,7 +53,7 @@ export const StyledFooter = styled.section`
     }
 
     .icon {
-        font-size: 40px;
+        font-size: 30px;
         color: ${({ theme }) => (theme.colors.beige)}
     }
 

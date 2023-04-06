@@ -5,7 +5,7 @@ import { StyledPlans } from 'styles/Plans.styles';
 export const Plans = () => {
   return (
     <StyledPlans>
-      <h2>Choose your preferred pricing plan:</h2>
+      <h2 id="plans">Choose your preferred pricing plan:</h2>
       {plans.map((plan) => (
         <div key={plan.id} className="plan-card">
           <h3>{plan.title}</h3>
