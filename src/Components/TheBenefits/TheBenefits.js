@@ -9,9 +9,9 @@ import checkmark from './Vector26.svg';
 export const TheBenefits = () => {
   return (
     <div className="thebenefits-box">
-      <h2>BUILD HEALTHY HABITS</h2>
-      <h2 className="thebenefit-title-bold">FOR YOU AND YOUR DOG</h2>
-      <ul>
+      <ul className="benefit-list">
+        <h2>BUILD HEALTHY HABITS</h2>
+        <h2 className="thebenefit-title-bold">FOR YOU AND YOUR DOG</h2>
         <div className="check-text">
           <img className="checkmark" src={checkmark} alt="checkmark" />
           <p>Work your mind, body, have fun and develop amazing skills together. </p>

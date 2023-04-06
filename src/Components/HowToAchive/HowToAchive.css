@@ -1,12 +1,19 @@
 .how-to-achive-container {
     background-color: #181818;
-    width: 75%;
+    width: 100%;
     height: 800px;
-    padding: 12%;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.how-to-achive-container h1 {
+    justify-content: left;
+} 
 
 .phone-picture {
-    width: 100%;
+    width: 300px;
 }
 
 .how-to-Achive-text {
@@ -18,4 +25,8 @@
 .how-to-achive-buttons {
     justify-content: center;
     align-items: center;
+}
+
+.flex {
+    display: flex;
 }

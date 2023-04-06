@@ -3,7 +3,6 @@
 import React from 'react';
 import './SpeakToTheGoals.css'
 import { StartButton } from 'Components/StartButton/StartButton';
-import { MySlider } from 'Components/Slider/Slider';
 
 // /////////////// COMPONENT //////////////////////// //
 
@@ -12,11 +11,8 @@ export const SpeakToTheGoals = () => {
     <div className="speak-to-the-goals-container">
       <h1>FIND ACTIVITIES</h1>
       <h1>YOUR STYLE</h1>
-      <div className="slider">
-        <MySlider />
-      </div>
       <div className="speak-to-the-goals-button-container">
-        <StartButton cta>Get started</StartButton>
+        <StartButton ctalong>Get started</StartButton>
       </div>
     </div>
   )

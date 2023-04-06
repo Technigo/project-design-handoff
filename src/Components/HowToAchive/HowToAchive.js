@@ -32,26 +32,28 @@ export const HowToAchive = () => {
       </div>
       <div className="how-to-Achive-text">
         <h2>
-          <div>
+          <div className="flex">
             <BoldBigItalic>SCHEDULE</BoldBigItalic>
             <SmallNarrowItalic>WORKOUTS</SmallNarrowItalic>
           </div>
-          <div>
+          <div className="flex">
             <SmallNarrowItalic>GET</SmallNarrowItalic>
             <BoldBigItalic>REMINDERS</BoldBigItalic>
           </div>
-          <div>
+          <div className="flex">
             <BoldBigItalic>TRACK</BoldBigItalic>
             <SmallNarrowItalic>YOUR PROGRESS</SmallNarrowItalic>
           </div>
-          <div>
+          <div className="flex">
             <SmallNarrowItalic>BE</SmallNarrowItalic>
             <BoldBigItalic>SPONTANEOUS</BoldBigItalic>
           </div>
-          <div><BoldBigItalic>SAVE</BoldBigItalic>
+          <div className="flex">
+            <BoldBigItalic>SAVE</BoldBigItalic>
             <SmallNarrowItalic>YOUR FAVOURITES</SmallNarrowItalic>
           </div>
-          <div><SmallNarrowItalic>CELEBRATE YOUR</SmallNarrowItalic>
+          <div className="flex">
+            <SmallNarrowItalic>CELEBRATE YOUR</SmallNarrowItalic>
             <BoldBigItalic>GOALS</BoldBigItalic>
           </div>
         </h2>

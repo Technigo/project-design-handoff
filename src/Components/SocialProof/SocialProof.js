@@ -2,18 +2,34 @@
 
 import React from 'react';
 import './SocialProof.css';
+import styled from 'styled-components';
 import { StartButton } from 'Components/StartButton/StartButton';
 
 // /////////////// COMPONENT //////////////////////// //
+
+const BoldBigItalic = styled.h1`
+font-size: 1.8rem;
+font-weight: bold;
+font-style: italic;
+color: #95A6B5;
+padding-bottom: 15px;
+`
+const SmallNarrowItalic = styled.h2`
+font-size: 1.1rem;
+font-weight: narrow;
+font-style: italic;
+color: #95A6B5;
+`
 
 export const SocialProof = () => {
   return (
     <div className="socialproof-content-container">
       <div className="social-main-text">
         <h1>
-          CO-CREATED WITH 100+
-          WORLD RENOWNED
+          <SmallNarrowItalic>CO-CREATED WITH 100+</SmallNarrowItalic>
+          <BoldBigItalic>WORLD RENOWNED
           HEALTH EXPERTS
+          </BoldBigItalic>
         </h1>
         <p>
           Our concept and workouts have been developed to
