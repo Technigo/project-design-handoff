@@ -20,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
   html {
     font-size: var(--font-size);
     font-family: var(--font-family);
+    color: var(--neutral-dark);
   }
 
   body {

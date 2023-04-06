@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavBar } from 'components/NavBar';
+import { NavBar } from 'components/NavBar/NavBar';
 import { Button } from './Button';
 
 const StyledHeader = styled.header`
@@ -25,7 +25,7 @@ const HeaderTitle = styled.h1`
   font-weight: 800;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 30px;
-  padding-left: 50px;
+  padding-left: 5%;
 `;
 
 export const Header = ({ title }) => {

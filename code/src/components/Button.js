@@ -17,6 +17,7 @@ export const Button = styled.button`
     color: var(--neutral-dark);
     font-size: 2rem;
     padding: 8px 55px;
+    width: 100%;
 
     &:active {
       background-color: var(--secondary-color-2);
@@ -28,6 +29,8 @@ export const Button = styled.button`
     padding: 8px 55px;
     margin-top: 16px;
     background-color: var(--primary-color-2);
+    align-self: center;
+    width: 100%;
 
     &:active {
       background-color: var(--secondary-color-2);
@@ -50,8 +53,7 @@ export const Button = styled.button`
     font-size: 1.5rem;
     line-height: 29px;
     padding: 12px 30px;
-    width: 152px;
-    height: 53px;
+    width: 50%;
     background: var(--primary-color-2);
 
     &:active {

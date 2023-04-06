@@ -7,7 +7,7 @@ const IntroSection = styled.section`
 `;
 
 const IntroImg = styled.img`
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     transform: scaleX(-1);
 `;
