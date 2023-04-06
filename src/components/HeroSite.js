@@ -17,14 +17,12 @@ display: flex;
 .aside-left{
   background-color: #D7C3E2;
   width: 33vw;
-  // height: 577px;
   display: flex 1;
   padding-left: 16px;
 }
 
 .aside-right{
   background-image: url(${BackgroundImg});
-  // height: 577px;
   width: 67vw;
   background-size: cover;
   background-position: center;
@@ -45,12 +43,9 @@ display: flex;
  
   @media (min-width:641px) and (max-width:1024px) {
   .aside-left{
-   height: 1024px;
    padding-left: 32px;
   }
-  .aside-right{
-    height: 1024px;
-  }
+  
   .heroItem{
     top: 320px;
     left: 32px;

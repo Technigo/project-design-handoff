@@ -12,30 +12,44 @@ background-color: #D7C3E2;
 height: 694px;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
 align-items: center;
-padding-top: 32px;
 
 
 @media (min-width:641px) and (max-width:1024px) {
   height: 1176px;
+  align-items: flex-end;
+}
+
+@media (min-width: 1025px) {
+  padding-top: 32px;
 }
 `
 const TopSilk = styled.img`
-width: 100vw;
 height: 75px;
 margin-top: -86px;
+display: flex;
+align-self: stretch;
+
+@media (min-width:641px) and (max-width:1024px) {
+  height: 161px;
+  margin-top: -90px;
+}
 `
 const BottomSilk = styled.img`
 width: 100vw;
 height: 75px;
+margin-top: 200px;
+
+@media (min-width:641px) and (max-width:1024px) {
+  height: 160px;
+  margin-top: 145px;
 `
 
 export const OurClasses = () => {
   return (
     <StyledOurClasses>
       <TopSilk src={SilkImgTop} alt="topsilk" />
-      <Title style={{ justifySelf: 'flex-start' }}>Our classes</Title>
+      <Title style={{ paddingRight: '32px' }}>Our classes</Title>
       <OurClassesInfo />
       <BottomSilk src={SilkImgBottom} alt="bottomsilk" />
     </StyledOurClasses>

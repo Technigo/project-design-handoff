@@ -7,16 +7,30 @@ import InterImg from '../images/Intermediate.png'
 import ExpertImg from '../images/Expert.png'
 
 const Images = styled.img`
-width: 256px;
+max-width: 256px;
 height: 248px;
 object-fit: cover;
 border-radius: 13.8886px;
+
+@media (min-width: 1025px) {
+  max-width: 320px;
+  height: 248px;
 `
 const StyledClassesInfo = styled.div`
 display: flex;
 flex-direction: column;
-padding: 32px;
 gap: 24px;
+margin-top: 32px;
+padding: 0px 32px;
+
+@media (max-width: 690px) {
+display: none;
+}
+
+@media (min-width: 1025px) {
+  flex-direction: row;
+  padding: 0px 64px;
+}
 
 .img-and-text {
   border-top: solid 1px #131313;
@@ -30,7 +44,17 @@ gap: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
 }
+
+@media (min-width: 1025px){
+  .img-and-text{
+    flex-direction: column;
+    border-top: none;
+    
+  }
+}
+
 `
 
 export const OurClassesInfo = () => {

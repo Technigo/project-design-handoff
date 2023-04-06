@@ -14,6 +14,10 @@ top: 32px;
 `
 const StyledIcons = styled.div`
 display:flex;
+
+@media (min-width: 1025px) {
+  display: none;
+}
 `
 const Icon = styled.img`
 width: 40px;
@@ -30,6 +34,12 @@ width: 128px;
 height: 38px;
 padding-left: 32px;
 }
+
+@media (min-width: 1025px) {
+  width: 160px;
+  height: 48px;
+  padding-left: 64px;
+  }
 `
 
 export const NavBar = () => {

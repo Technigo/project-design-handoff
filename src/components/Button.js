@@ -15,6 +15,7 @@ background-color: ${(props) => (props.textBtn ? '#BDE0FE' : '#E1D2E9')};
     width: fit-content;
 
     &:hover {
-      border: solid 2px #97B3CB;
+      border: ${(props) => (props.textBtn ? 'solid 2px #97B3CB' : 'solid 2px #CDB4DB')};
+      background-color: ${(props) => (props.textBtn ? 'none' : '#CDB4DB')};
     }
     `

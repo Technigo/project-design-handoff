@@ -1,26 +1,42 @@
 import React from 'react'
 import styled from 'styled-components'
-import { P12, P20 } from './Typography'
+import { Button } from './Button'
+import { FormP, P20 } from './Typography'
 
 const StyledForm = styled.div`
 color: #524858;
 display: flex;
-// border: solid 1px black;
 flex-direction: column;
-font-size: 12px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 1px;
-padding: 32px 16px;
+align-items: center;
+padding: 40px 60px 36px 60px;
 background-color: #D7C3E2;
 gap: 32px;
-align-items: center;
+
+.big-form {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+@media (min-width:1025px){
+  border-radius: 16px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width:641px) and (max-width:1024px) {
+  border-radius: 16px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+ }
+
+ .big-form {
+  gap: 16px;
+ }
 
 form {
   display: flex;
   flex-direction: column;
-
 }
+
 input, select {
   background-color: #F9F6FB;
   color: #524858;
@@ -38,19 +54,37 @@ input, select {
     }
   }
 `
-const StyledRadio = styled.div`
-// border: solid 1px red;
+const StyledRadioForm = styled.div`
 display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+flex-direction: column;
+gap: 16px;
+
+.radio-form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button-section {
+  display:flex;
+  gap: 24px;
+}
+
+form{
+  display:flex;
+  flex-direction: row;
+  font-size: 11px;
+  gap: 10px;
+
+
+}
 
 input {
   width: 24px;
   height: 24px;
   padding: 8px;
-  border: 2px solid #131313;
   accent-color: #131313;
+  
 }
 `
 
@@ -60,49 +94,91 @@ export const Form = () => {
       <P20>
         Form for sign up
       </P20>
-      <form>
-        Name
-        <input type="text" placeholder="First Lastname" />
-        Email
-        <input type="text" placeholder="example@email.com" />
-        Phone number
-        <input type="text" placeholder="+46 123 456 789" />
-        Please choose a class
-        <select>
-          <option value="" selected>Classes..</option>
-          <option value="Beginner Class">Beginner Class</option>
-          <option value="Intermediate Class">Intermediate Class</option>
-          <option value="Expert Class">Expert Class</option>
-        </select>
-        <P12>Do you have any prior experience with aerial silks?
-          <StyledRadio>
-            <input type="radio" />
-            Yes
-            <input type="radio" />
-            No
-            <input type="radio" />
-            I don&apos;t know
-          </StyledRadio>
-          Do you have any injuries or medical
-          conditions that may affect your
-          ability to participate in aerial silks classes?
-          <StyledRadio>
-            <input type="radio" />
-            Yes
-            <input type="radio" />
-            No
-            <input type="radio" />
-            I don&apos;t know
-          </StyledRadio>
-          Do you want us to contact you for any other inquiries?
-          <StyledRadio>
-            <input type="radio" />
-            Yes
-            <input type="radio" />
-            No
-          </StyledRadio>
-        </P12>
-      </form>
+      <div className="big-form">
+        <form>
+          Name
+          <input type="text" placeholder="First Lastname" />
+        </form>
+        <form>
+          Email
+          <input type="text" placeholder="example@email.com" />
+        </form>
+        <form>
+          Phone number
+          <input type="text" placeholder="+46 123 456 789" />
+        </form>
+        <form>
+          Please choose a class
+          <select>
+            <option value="" selected>Classes..</option>
+            <option value="Beginner Class">Beginner Class</option>
+            <option value="Intermediate Class">Intermediate Class</option>
+            <option value="Expert Class">Expert Class</option>
+          </select>
+        </form>
+      </div>
+      <FormP>
+        <StyledRadioForm>
+          <div className="radio-form">
+            Do you have any prior experience with aerial silks?
+            <div className="button-section">
+              <form>
+                Yes
+                <input
+                  type="radio" />
+              </form>
+              <form>
+                No
+                <input
+                  type="radio" />
+              </form>
+              <form>
+                I don&apos;t know
+                <input
+                  type="radio" />
+              </form>
+            </div>
+          </div>
+          <div className="radio-form">
+            Do you have any injuries or medical
+            conditions that may affect your
+            ability to participate in aerial silks classes?
+            <div className="button-section">
+              <form>
+                Yes
+                <input
+                  type="radio" />
+              </form>
+              <form>
+                No
+                <input
+                  type="radio" />
+              </form>
+              <form>
+                I don&apos;t know
+                <input
+                  type="radio" />
+              </form>
+            </div>
+          </div>
+          <div className="radio-form">
+            Do you want us to contact you for any other inquiries?
+            <div className="button-section">
+              <form>
+                Yes
+                <input
+                  type="radio" />
+              </form>
+              <form>
+                No
+                <input
+                  type="radio" />
+              </form>
+            </div>
+          </div>
+        </StyledRadioForm>
+      </FormP>
+      <Button textBtn>Sign up today</Button>
     </StyledForm>
   )
 }
