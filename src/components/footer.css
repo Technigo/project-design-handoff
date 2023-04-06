@@ -2,6 +2,23 @@
 .footer-container {
   width:100%;
   background-color: #42403C;
+  margin-top: -2px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.footer_logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer_logo:hover {
+  transform: scale(1.06);
 }
 
 .text-container {
@@ -11,10 +28,76 @@
   justify-content: center;
   color: white;
   background-color: #42403C;
-  height: 300px;
+  height: 140px;
   font-family: 'sora';
   font-weight: 600;
   font-size: 1.1em;
   line-height: 1.6;
- 
+}
+
+  .social-media-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 26% 80px 26%;
+  }
+
+  .social_media_logo {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .social_media_logo:hover {
+    transform: scale(1.06);
+  }
+
+  .company_logo {
+    width: 90px; /* Adjust width */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .company-logo:hover {
+    transform: scale(1.06);
+    }
+
+ /* Center the logos vertically in the grid cell */
+.company-container img {
+  display: block;
+  margin: 10px auto;
+  padding-bottom: 0px;
+}
+
+.company-container img:hover {
+transform: scale(1.06);
+}
+
+/* Invert the colors of the image */
+img.inverted {
+  filter: invert(1); /* or use 'invert(100%)' */
+}
+
+/* Center the grid container horizontally on the page */
+.company-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center the logos vertically in the grid cell */
+
+.company-container img {
+  display: block;
+  margin: auto;
+}
+
+/* Center the grid container horizontally on the page */
+.company-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  height: 400px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }

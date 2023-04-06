@@ -8,6 +8,7 @@
   font-weight: 500;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #333366;
   padding: 3em 0 3em 0;
   --bs-gutter-x: 1.6rem;
@@ -50,9 +51,11 @@ margin:0.4em 34% 0.6em 40%;
   margin-top: 0.2em;
 
 }
-#checkbox {
-  width: 1.8em;
-  height: 1.8em;
+#newsletter-checkbox {
+  display: flex;
+  margin-left: 6px;
+  width: 1.4em;
+  height: 1.4em;
   border-radius: 3em;
   border: none;
     background-color: #fbf3f2;
