@@ -18,7 +18,7 @@ export const About = () => {
       <img className="about-img" src="./images/manhanging.png" alt="man on rings" />
       <img className="about-stripes" src="./icons/lines.png" alt="stripes" />
       <p className="about-txt">Acrobatics is is the performance of human feats of balance, agility, and motor coordination. Acrobatic skills are used in performing arts, sporting events, and martial arts. Extensive use of acrobatic skills are most often performed in acro dance, circus, gymnastics, and freerunning and to a lesser extent in other athletic activities including ballet, slacklining and diving. Although acrobatics is most commonly associated with human body performance, the term is used to describe other types of performance, such as aerobatics.</p>
-      <img className="our-classes-tag" src="./icons/our-classes.png" alt="our classes" />
+      <img className="our-classes-tag" src="./icons/our-classes.svg" alt="our classes" />
       <div className="classes-container">
         <div className="classes-items">
           <img className="classes" src="./images/acrobatics-color.png" alt="acrobatic gymnastics" />

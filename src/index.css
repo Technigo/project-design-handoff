@@ -1,3 +1,9 @@
+:root {
+/* Calculate the remaining height */
+  --remaining-height: calc((4500px - 100vh) - (100vh - 1000px));
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap');
 
 body {
@@ -58,60 +64,120 @@ p {
 
 .header-logo {
   color: #FFF;
-  width: 55px;
+  width: 60px;
   position: absolute;
   z-index: 1;
-  top: 15px;
-  left: 15px;
-}
-
-.header-menu {
-  position: absolute;
-  z-index: 1;
-  right: 15px;
-  top: 15px;
-  width: 38px;
-  height: 36px;
+  top: 3vh;
+  left: 5vw;
 }
 
 .header-text {
   z-index: 1;
   position: absolute;
-  top: 220px;
-  left: 0px;
+  top: 42vh;
+  left: 0vw;
   line-height: 0;
 }
 
 .header-text h1 {
   position: absolute;
-  top: 80px;
-  left: 10px;
+  top: 10vh;
+  left: 2vw;
 }
 
 .header-text h4 {
   position: absolute;
-  top: 220px;
-  left: 15px;
+  top: 35vh;
+  left: 5vw;
 }
 
 .header-text h3 {
   position: absolute;
-  top: 270px;
-  left: 65px;
+  top: 43.5vh;
+  left: 21vw;
 }
 
 .header-text h2 {
   position: absolute;
-  top: 262px;
-  left: 150px;
+  top: 42vh;
+  left: 45vw;
 }
 
 .header-btn {
   width: 133px;
   position: absolute;
-  top: 325px;
+  top: 57vh;
   z-index: 1;
-  right: 0px;
+  right: 0vw;
+}
+
+.burger-btn {
+  background-image: url('../public/icons/burger-menu.svg');
+  position: absolute;
+  z-index: 1;
+  right: 4vw;
+  top: 3vh;
+  border: none;
+  border-radius: 5px;
+  width: 44px;
+  height: 43px;
+  background-color: #0962CF;
+  cursor: pointer;
+}
+
+.close-btn {
+  background-image: url('../public/icons/open-menu.svg');
+  background-position: top center;
+  position: absolute;
+  z-index: 1;
+  right: 4vw;
+  top: 3vh;
+  border: none;
+  border-radius: 5px;
+  width: 44px;
+  height: 43px;
+  cursor: pointer;
+  box-shadow: 1px 4px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  width: 214px;
+  height: 344px;
+}
+
+ul {
+  list-style: none;
+  color: #0962CF;
+  line-height: 42px;
+  font-style: normal;
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+ul li::before {
+  content: "\2022";
+  width: 22px;
+  color: #0962CF;
+  display: inline-block;
+  font-size: 56px;
+  vertical-align: -12px;
+  margin-right: 10px;
+  text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.green-bullet::before {
+  content: "\2022";
+  width: 22px;
+  color: #B9F615;
+  display: inline-block;
+  font-size: 56px;
+  vertical-align: -12px;
+  margin-right: 10px;
+  text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 /* ABOUT */
@@ -119,13 +185,15 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../public/images/large-parkour-background.png);
+  background-image: url(../public/images/michael-perfecto-LRao1SLD8Ho-unsplash\ 2.png);
   width: 100vw;
-  height: 3915px;
-}
+  max-height: calc(100vh + var(--remaining-height) * 0.6);
+  min-height: calc(100vh + var(--remaining-height) * 0.4);
+}  
 
 .blue-txt {
-  margin-top: 40px;
+  position: absolute;
+  top: 104vh;
   text-align: center;
   font-size: 16px;
   color: #0962CF;
@@ -136,54 +204,56 @@ p {
 .left {
   width: 46px;
   position: absolute;
-  top: 390px;
+  top: 110vh;
   transform: rotate(90deg);
-  left: 0px;
+  left: -0.5vw;
+  height: 43px;
 }
 
 .right {
   width: 46px;
   position: absolute;
-  top: 390px;
-  right: 2px;
+  top: 110vh;
+  right: -0.5vw;
   transform: rotate(270deg);
+  height: 43px;
 }
 
 .about-tag {
   width: 290px;
   position: absolute;
-  left: 0px;
-  top: 740px;
+  left: 0vw;
+  top: 131vh;
   z-index: 2;
 }
 
 .about-img {
   width: 320px;
   position: absolute;
-  top: 776px;
+  top: 137vh;
   z-index: 1;
 }
 
 .about-stripes {
   width: 280px;
   position: absolute;
-  top: 790px;
+  top: 139vh;
   z-index: 0;
   object-fit: scale-down;
-  right: 0px;
+  right: 0vw;
 }
 
 .about-txt {
   text-align: justify;
   width: 84vw;
   position: absolute;
-  top: 1160px;
+  top: 200vh;
   line-height: 25px;
 }
 
 .our-classes-tag {
   position: absolute;
-  top: 1600px;
+  top: 276vh;
   left: 0px;
 }
 
@@ -192,7 +262,7 @@ p {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 1700px;
+  top: 300vh;
   gap: 140px;
 }
 
@@ -239,4 +309,40 @@ p {
 .classes-booking {
   width: 275px;
   margin-top: -30px;
+  margin-bottom: 40px;
+}
+
+/* FORM */
+
+.form {
+  background-color: #B9F615;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 275vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h2 {
+  color: black;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 85vw;
+  height: 60vh;
+  align-items: center;
+}
+
+.form-container p {
+  text-align: justify;
+  width: 75vw;
+  font-style: normal;
 }
