@@ -1,0 +1,77 @@
+.sectionActivity {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .TextCards1, .TextCards2 {
+    display: none;
+  }
+  
+  .phoneImg {
+    width: 228px;
+    height: 440px;
+    margin: 48px auto;
+  }
+  
+  .scrollWrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  .textCard {
+    max-width: 270px;
+    margin-left: 16px;
+  }
+
+  /* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
+@media (min-width: 667px) {
+    .phoneImg {
+        width: 325px;
+        height: 625px;
+        margin: 64px auto;
+      }
+}
+
+/* RESPONSIVE DESIGN FOR TABLET ONLY */
+@media (min-width: 667px) and (max-width: 1024px) {
+    .textCard {
+        max-width: 287px;
+      }
+}
+
+/* RESPONSIVE DESIGN FOR DESKTOP ONLY */
+@media (min-width: 1024px) {
+    .sectionActivity {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+      }
+    
+      .activitySlider {
+        display: none;
+      }
+    
+      .TextCards1, .TextCards2 {
+        display: block;
+      }
+    
+      .introActivity {
+        grid-column: 1 / span 3;
+      }
+    
+      .TextCards1 {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+      }
+    
+      .phoneImg {
+        grid-column: 2 / span 1;
+      }
+    
+      .textCard {
+        margin: 40px 0;
+      }
+}

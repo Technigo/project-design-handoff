@@ -1,0 +1,42 @@
+.sectionBenefits {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  .cardWrapper {
+    height: 810px;
+    color: white;
+  }
+
+  /* RESPONSIVE DESIGN FOR TABLET ONLY */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .sectionBenefits {
+      grid-template-columns: repeat(2, 1fr);
+  }
+      
+  .introBenefits, .benefitsBtn {
+      grid-column: 1 / span 2;
+  }
+  
+  .cardWrapper {
+    height: 504px;
+    margin: 16px;
+  }
+}
+
+/* RESPONSIVE DESIGN FOR DESKTOP ONLY */
+@media (min-width: 1024px) {
+  .sectionBenefits {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+  .introBenefits, .benefitsBtn {
+      grid-column: 1 / span 4;
+  }
+    
+  .cardWrapper {
+    height: 442px;
+    margin: 16px;
+  }
+}

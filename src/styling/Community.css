@@ -1,0 +1,127 @@
+.communityCard {
+  height: 627px;
+}
+
+.signUpWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+form {
+  min-width: 80%;
+}
+
+fieldset {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+fieldset:hover {
+  border: 1px solid #A99BD1;
+}
+
+legend {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+input {
+  margin: 2px 2px 2px 6px;
+  padding: 5px 0;
+  border: none;
+  width: 95%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.formBtn, .orText {
+  min-width: 100%;
+}
+
+.accountText {
+  margin-top: 20px;
+}
+
+.login {
+  font-weight: 600;
+}
+
+.line {
+  border-bottom: 1px solid black;
+  width: 40%;
+}
+
+.signInBtn, .orText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.orText {
+  margin: 20px 0;
+}
+
+.signInBtnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 85%;
+}
+
+/* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
+@media (min-width: 667px) {
+  .line {
+    width: 20%;
+  }
+
+  .orText {
+    margin: 40px 0;
+  }
+
+  .textBtnWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sectionCommunity {
+    margin-bottom: 8vh;
+  }
+
+  legend {
+    font-size: 16px;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .nameInput, .signInBtnWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* RESPONSIVE DESIGN FOR DESKTOP ONLY */
+@media (min-width: 1024px) {
+  .sectionCommunity {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .introCommunity {
+    grid-column: 1 / span 2;
+  }
+
+  .signUpWrapper {
+    width: 100%;
+  }
+}
