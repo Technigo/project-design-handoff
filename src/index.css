@@ -256,7 +256,7 @@ padding: 24px 24px 40px 24px;
 
 }
 /*Desktop*/
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1025px) {
 
 .start-container {
  padding: 50px 112px 0px 112px;

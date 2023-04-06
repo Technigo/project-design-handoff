@@ -7,7 +7,7 @@ import Yogis from 'Yogis/Yogis';
 import YogisCarousel from 'Yogis/YogisCarousel';
 
 export const App = () => {
-  const isMobile = window.innerWidth <= 768;
+  const isTablet = window.innerWidth > 768 && window.innerWidth <= 1024;
   return (
     <>
       <section className="start">
@@ -26,11 +26,11 @@ export const App = () => {
         <FreeTrialButton />
       </div>
       <section className="yoga-container">
-        {isMobile ? <Yogis /> : <YogisCarousel />}
+        {isTablet ? (<YogisCarousel />) : (<Yogis />)}
       </section>
       <div className="free-button-container">
         <FreeTrialButton />
       </div>
     </>
-  )
+  );
 }
