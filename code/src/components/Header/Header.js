@@ -11,6 +11,15 @@ const Header = () => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   const isMobile = screenSize <= 640;
   const isDesktop = screenSize >= 1025;
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -39,7 +48,10 @@ const Header = () => {
             <p>About</p>
             <p>Contact</p>
           </div>
-          <p className="search-text">Search</p>
+          <div className="searchfield" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            {isHovering && (<img src={searchicon} alt="search" className="search" />)}
+            <p className="search-text">Search</p>
+          </div>
         </div>
       )}
     </>
