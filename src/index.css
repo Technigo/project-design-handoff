@@ -230,6 +230,20 @@ padding: 24px 24px 40px 24px;
     width: 450px;
   }
 
+  .yogi-card {
+    height: 450px; /* Increase the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Adjust the height of the AwesomeSlider container */
+  .awesome-slider {
+    height: 500px; /* Increase the height as needed */
+  }
+
 }
 
 /*Desktop*/
@@ -306,5 +320,19 @@ display: flex;
 align-items: center;
 justify-content: center;
  }
+
+ .yogi-card {
+  height: 450px; /* Increase the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Adjust the height of the AwesomeSlider container */
+.awesome-slider {
+  height: 500px; /* Increase the height as needed */
+}
  
 }
