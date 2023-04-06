@@ -3,31 +3,34 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Calibri', sans-serif;
 }
 
 /* General styling (mobile first) */
 .main-container{
  text-align: center;
+ width: fit-content;
 }
-.header{
-  border: 3px solid black;
-}
+
 
 /* Header-styling */
 
 .header-section{
-  background-color: #096B78;
-  padding-bottom: 83px;
-  border-bottom: 5px solid #004852;
+  background-image: url('./Images/mobilehero.svg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
   width: 100%;
   padding: 8px 16px;
 }
@@ -147,20 +150,6 @@ button{
   background-color: #EDFDFF;
 }
 
-.benefits-div{
-  background: #004852;
-  border-radius: 8px;
-  width: 328px;
-  height: 364px;
-  color: #ffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 47px auto 0;
-}
-
 .benefits-header{
   font-size: 24px;
   color:#FFE600;
@@ -169,13 +158,27 @@ button{
   border-radius: 0px 0px 100px 13px;
   padding: 0px 86px 0px 16px;
   margin: 0;
-  width: 344px;
   height: 44px;
+  width: 344px;
   font-weight: 400;
   line-height: 113.5%;
   letter-spacing: -0.022em;
   text-align: left;
   padding: 8px 16px;
+}
+
+.benefits-div{
+  background: #004852;
+  border-radius: 8px;
+  height: 364px;
+  width: 312px;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 47px auto 0;
 }
 
 .examples-header{
@@ -202,4 +205,30 @@ button{
   border-radius: 13px;
   list-style-position: inside;
   text-align: left;
+}
+
+.exercise-card{
+  background-color:#096B78;
+  display: flex;
+}
+
+.endurance-container, .strength-container{
+  padding: 0px 24px;
+  gap: 16px;
+  width: 258px;
+  height: 256px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px 13px 13px 2px;
+}
+
+.agility-container, .prehab-container{
+  padding: 0px 24px;
+  gap: 16px;
+  width: 258px;
+  height: 256px;
+  left: 70px;
+  top: 0px;
+  background: #004852;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px 2px 2px 13px;
 }
