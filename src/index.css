@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   overflow-x: hidden;
+  background: #E2E2E2;
 }
 
 code {
@@ -14,14 +15,16 @@ code {
     monospace;
 }
 
-.hero-container {
+.hero-wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: 730px;
 }
 
 .hero-img {
-  width: 100%;
-  height: auto;
+  width: 147%;
+  height: 100%;
 }
 
 @media (min-width: 320px) {
