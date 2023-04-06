@@ -52,7 +52,6 @@ export const H5 = styled.h5`
     line-height: 131%;
     letter-spacing: -0.022em;
     text-align: center;
-    margin-top: 0;
     color: ${({ color }) => color};
 `
 
@@ -64,8 +63,6 @@ export const BodyText = styled.p`
     line-height: 21px;
     letter-spacing: -0.022em;
     color: ${({ color }) => color};
-    display: flex;
-    max-width: 80%;
 `
 
 export const TagLine = styled.p`
