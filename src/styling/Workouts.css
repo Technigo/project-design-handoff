@@ -4,6 +4,7 @@
 
 .mediumCard {
   height: 420px;
+  max-height: fit-content;
   justify-content: space-between;
 }
 
