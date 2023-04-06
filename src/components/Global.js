@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Button = styled.button`
+export const Button = styled.button`
   background: transparent;
   color: #FF8F3D;
   border: solid #FF8F3D;
@@ -10,7 +10,8 @@ const Button = styled.button`
   padding: 0.3rem 1.25rem;
   cursor: pointer;
   position: absolute;
-`
+`;
+
 export const TopRightButton = styled(Button)`
   position: absolute;
   top: 1.25rem;
@@ -23,5 +24,3 @@ export const BottomCenterButton = styled(Button)`
   left: 50%;
   transform: translateX(-50%);
 `;
-
-export default Button;
