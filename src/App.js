@@ -8,13 +8,13 @@ import React from 'react';
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Benefits />
       <Workout />
       <Application />
       <SignUpForm />
       <StickyNav />
-    </div>
+    </>
   );
 };
