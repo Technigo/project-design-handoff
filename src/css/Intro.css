@@ -1,0 +1,17 @@
+.image {
+    height: 50vh;
+    width:100vw;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    height: 20vh;
+    width: 100vw;
+    background-color: aqua;
+}
+.all-classes {
+    display: grid;
+}
