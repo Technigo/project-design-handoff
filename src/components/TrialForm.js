@@ -20,13 +20,14 @@ const TrialForm = () => {
           <input type="text" name="name" placeholder="Your name" />
           <input type="email" name="email" placeholder="E-mail" />
           <input type="tel" name="phone" placeholder="Phone" />
-          <input type="text" name="city" placeholder="Current city/town" />
+          <input type="text" name="city" placeholder="Your current location (city, town, etc.)" />
 
           <div className="checkbox-container">
             <label htmlFor="accept">
-              <input type="checkbox" name="accept" id="accept" />
-              <p>I am over 13 and accept the privacy policy, terms of service,
-                 and code of conduct
+              <input className="custom-checkbox" type="checkbox" name="accept" id="accept" />
+
+              <p> I am over 13 and accept the<span className="highlighted-text2"> privacy policy, terms of service,</span>
+              &nbsp;and<span className="highlighted-text2">code of conduct</span>
               </p>
             </label>
           </div>
