@@ -1,23 +1,24 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { PrimaryBtn, OutlinedBtn2 } from 'styling/Button';
 import { Tagline, Headline5, Error, Headline3 } from '../styling/Text';
 import '../styling/Community.css';
 
 const Community = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors }
-  } = useForm();
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const onSubmit = (data) => {
-    alert(JSON.stringify(data));
-  }; // your form submit function which will invoke after successful validation
-
-  console.log(watch('example')); // you can watch individual input by pass the name of the input
+  const onSubmit = () => {
+    alert('Thank you for joining our community!');
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setPassword('');
+  };
 
   return (
     <section className="sectionCommunity">
@@ -32,24 +33,24 @@ const Community = () => {
           <div className="nameInput">
             <fieldset className="name">
               <legend>First Name</legend>
-              <input {...register('firstName', { required: true, pattern: /^[A-Za-z]+$/i })} />
+              <input {...register('firstName', { required: true, pattern: /^[A-Za-z]+$/i })} onChange={(event) => setFirstName(event.target.value)} value={firstName} />
             </fieldset>
             <fieldset className="name">
               <legend>Last Name</legend>
-              <input {...register('lastName', { required: true })} />
+              <input {...register('lastName', { required: true })} onChange={(event) => setLastName(event.target.value)} value={lastName} />
             </fieldset>
           </div>
           {errors?.firstName?.type === 'required' && <Error>Please enter your name</Error>}
           {errors?.firstName?.type === 'pattern' && (<Error>Alphabetical characters only</Error>)}
           <fieldset>
             <legend>Email</legend>
-            <input type="email" {...register('email', { required: true, pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i })} />
+            <input type="email" {...register('email', { required: true, pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i })} onChange={(event) => setEmail(event.target.value)} value={email} />
           </fieldset>
           {errors?.email?.type === 'required' && <Error>Please enter your email</Error>}
           {errors?.lastName?.type === 'pattern' && (<Error>Please enter a valid email</Error>)}
           <fieldset>
             <legend>Password</legend>
-            <input type="password" {...register('password', { required: true, minLength: { value: 6 } })} />
+            <input type="password" {...register('password', { required: true, minLength: { value: 6 } })} onChange={(event) => setPassword(event.target.value)} value={password} />
           </fieldset>
           {errors.password && (<Error>Password must be six or more characters</Error>)}
           <PrimaryBtn className="formBtn" type="submit">Create account</PrimaryBtn>
