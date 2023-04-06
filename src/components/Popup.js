@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Trial } from "./Trial";
 
 const StyledPopup = styled.div`
 position: relative;
@@ -51,17 +52,27 @@ background: #FFFFFF;
 border: 1.5px solid #A8A8A8;
 box-shadow: 0px 0px 8px #A8A8A8;
 border-radius: 12px;
+padding: 16px;
 `
 
 const StyledButtonWrapper = styled.div`
 display: flex;
+width: 85%;
 gap: 1rem;
 justify-content: center;
+padding-bottom: 40px;
 `
 
 const SignUpBtn = styled.button`
-width: 8.5rem;
 font-family: 'Libre Baskerville', serif;
+width: 134px;
+font-weight: 700;
+font-size: 16px;
+border: 0.3px solid #000000;
+background: #F5F5F5;
+border-radius: 12px;
+padding: 12px 20px;
+color: #02393F;
 `
 
 const Popup = () => {
@@ -81,7 +92,9 @@ const Popup = () => {
         <SignUpBtn>Login</SignUpBtn>
         <SignUpBtn>Sign up</SignUpBtn>
       </StyledButtonWrapper>
+      <Trial />
     </StyledPopup>
+    
   );
 };
 
