@@ -9,7 +9,7 @@ export const StyledBenefits = styled.section`
     padding: 24px;
 
     div {
-        width: 80%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,6 +27,7 @@ export const StyledBenefits = styled.section`
 
     h2 {
         color: ${({ theme }) => (theme.colors.teal)};
+        width: 90%;
     }
 
     p {

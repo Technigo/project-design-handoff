@@ -22,14 +22,16 @@ export const StyledHero = styled.section`
 
     h1 {
         font-size: 32px;
-        color: ${({ theme }) => (theme.colors.white)}
+        color: ${({ theme }) => (theme.colors.white)};
+        line-height: 1.5em;
     }
 
     p {
         /* align-self: center;
         justify-self: flex-start; */
         font-size: 20px;
-        color: ${({ theme }) => (theme.colors.white)}
+        color: ${({ theme }) => (theme.colors.white)};
+        line-height: 1.5em;
     }
 
     .icon {

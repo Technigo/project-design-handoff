@@ -9,10 +9,12 @@ import { Yoga } from 'components/Yoga'
 import { theme } from 'libraries/theme'
 import React from 'react'
 import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from 'styles/Global'
 
 export const App = () => {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <Hero />
       <Benefits />
       <CallButton />
