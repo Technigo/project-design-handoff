@@ -24,7 +24,7 @@ export const SocialProof = () => {
         </p>
       </div>
       <div className="buttons-container">
-        <StartButton outlined>Default</StartButton>
+        <StartButton outlinedlong>Find out more</StartButton>
       </div>
     </div>
   )

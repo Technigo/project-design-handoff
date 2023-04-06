@@ -1,10 +1,21 @@
 .how-to-achive-container {
     background-color: #181818;
-    width: 100%;
+    width: 75%;
     height: 800px;
     padding: 12%;
 }
 
 .phone-picture {
-    width: 80%;
+    width: 100%;
+}
+
+.how-to-Achive-text {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+}
+
+.how-to-achive-buttons {
+    justify-content: center;
+    align-items: center;
 }

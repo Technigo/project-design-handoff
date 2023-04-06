@@ -30,15 +30,35 @@ export const HowToAchive = () => {
       <div className="how-to-achive-picture">
         <img className="phone-picture" src="./Pictures/image116.svg" alt="phonepicture" />
       </div>
-      <h2>
-        <BoldBigItalic>SCHEDULE</BoldBigItalic><SmallNarrowItalic>WORKOUTS</SmallNarrowItalic>
-        GET <BoldBigItalic>REMINDERS</BoldBigItalic>
-        <BoldBigItalic>TRACK</BoldBigItalic><SmallNarrowItalic>YOUR PROGRESS</SmallNarrowItalic>
-        <SmallNarrowItalic>BE</SmallNarrowItalic> <BoldBigItalic>SPONTANEOUS</BoldBigItalic>
-        <BoldBigItalic>SAVE</BoldBigItalic><SmallNarrowItalic>YOUR FAVOURITES</SmallNarrowItalic>
-        <SmallNarrowItalic>CELEBRATE YOUR</SmallNarrowItalic> <BoldBigItalic>GOALS</BoldBigItalic>
-      </h2>
-      <StartButton outlined>Download App</StartButton>
+      <div className="how-to-Achive-text">
+        <h2>
+          <div>
+            <BoldBigItalic>SCHEDULE</BoldBigItalic>
+            <SmallNarrowItalic>WORKOUTS</SmallNarrowItalic>
+          </div>
+          <div>
+            <SmallNarrowItalic>GET</SmallNarrowItalic>
+            <BoldBigItalic>REMINDERS</BoldBigItalic>
+          </div>
+          <div>
+            <BoldBigItalic>TRACK</BoldBigItalic>
+            <SmallNarrowItalic>YOUR PROGRESS</SmallNarrowItalic>
+          </div>
+          <div>
+            <SmallNarrowItalic>BE</SmallNarrowItalic>
+            <BoldBigItalic>SPONTANEOUS</BoldBigItalic>
+          </div>
+          <div><BoldBigItalic>SAVE</BoldBigItalic>
+            <SmallNarrowItalic>YOUR FAVOURITES</SmallNarrowItalic>
+          </div>
+          <div><SmallNarrowItalic>CELEBRATE YOUR</SmallNarrowItalic>
+            <BoldBigItalic>GOALS</BoldBigItalic>
+          </div>
+        </h2>
+      </div>
+      <div className="how-to-achive-buttons">
+        <StartButton outlinedlong>Download App</StartButton>
+      </div>
     </div>
   )
 }
