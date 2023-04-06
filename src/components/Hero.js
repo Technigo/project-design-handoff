@@ -17,7 +17,17 @@ export const Hero = () => {
     top: 82px;
     left: 23px;
     right: 53px;
-    width: 238px;`
+    width: 238px;
+    
+    @media (min-width: 668px) {
+      min-width: 455px;
+    }
+    @media (min-width: 1440px) {
+      font-size: 79px;
+      min-width: 748px;
+      left: 64px;
+      top: 302px;
+    }`
   const Text = styled.p`
     font-family: 'Libre Franklin';
     font-style: normal;
@@ -31,7 +41,15 @@ export const Hero = () => {
     right: 53px;
     min-width: 263px;
     max-width: 280px;
-    `
+    
+    @media (min-width: 668px) {
+      min-width: 442px;
+    }
+    @media (min-width: 1440px) {
+      min-width: 528px;
+      left: 64px;
+      top: 413px;
+    }`
   const Button = styled.button`
   font-family: 'Libre Franklin';
   font-style: normal;
@@ -47,7 +65,20 @@ export const Hero = () => {
   position: absolute;
   top: 419px;
   left: 42px;
-  margin-top: 16px;`
+  margin-top: 16px;
+  border: none;
+  
+  &:hover {
+    background-color: #EBEBEB;
+  }
+  
+  @media (min-width: 428px) {
+    left: 92px;
+  }
+  @media (min-width: 1440px) {
+    left: 64px;
+    top: 594px;
+  }`
   return (
     <div className="hero-wrapper">
       <img className="hero-img" src={heroImage} alt="Person doing yoga" />

@@ -25,10 +25,23 @@ code {
 .hero-img {
   width: 147%;
   height: 100%;
+  object-fit: cover;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 668px) {
+  .hero-wrapper {
+    height: 872px;
+  }
   .hero-img {
-    object-fit: cover; /* Scale the image while maintaining aspect ratio and covering the container */
+    width: 134%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero-wrapper {
+    height: 1022px;
+  }
+  .hero-img {
+    width: 100%;
   }
 }
