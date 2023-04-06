@@ -34,3 +34,24 @@
     left: calc(50% - 354px/2 + 2px);
     top: calc(50% - 277.77px/2 - 0.12px);
 } */
+
+@media (min-width: 641px) {
+    .classes {
+        flex-direction: column;
+    }
+
+    .classes-container h3 {
+        text-align: center;
+    }
+
+@media (min-width: 1025px) {
+    .classes {
+        flex-direction: row;
+    }
+
+    .classes-container h3 {
+        text-align: center;
+    }
+    
+}
+}

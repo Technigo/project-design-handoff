@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Header from './sections/Header'
 import Hero from './sections/Hero'
 import About from './components/About'
-import Classes from './components/Classes'
+import Classes from './class/Classes'
 import SignUp from './components/SignUp'
 import Footer from './sections/Footer'
 
