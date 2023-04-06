@@ -1,6 +1,5 @@
 .sectionHero {
-    height: 815px;
-    margin: 16px 0;
+    height: 810px;
     padding: 40px;
     border-radius: 20px;
     background-size: cover;
@@ -67,58 +66,62 @@
 
   /* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
 @media (min-width: 667px) {
-    .heroWrapper {
-        max-width: 410px;
-      }
-    
-      .btnWrapper {
-        flex-direction: row;
-        width: 100%;
-      }
-    
-      .compatibleLogo {
-        max-height: 44px;
-      }
-      
-      .burgerMenu {
-        display: none;
-      }
-      
-      .navBar button, .menuBarTop, .menuBarScroll {
-        display: block;
-      }
-    
-      .navBar button {
-        font-size: 12px;
-        width: 150px;
-      }
-      
-      .menuBarTop, .menuBarScroll {
-        border-radius: 20px;
-        font-size: 14px;
-      }
-      
-      .menuBarTop {
-        background-color: white;
-      }
-      
-      .menuBarTop a {
-        color: black;
-      }
-      
-      .menuBarScroll {
-        background-color: black;
-        width:fit-content;
-        position: fixed;
-        bottom: 1%;
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
-      
-      .menuBarScroll a {
-        color: white;
-      }
+  .sectionHero {
+    height: 910px;
+  }
+
+  .heroWrapper {
+    max-width: 410px;
+  }
+  
+  .btnWrapper {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .compatibleLogo {
+    max-height: 44px;
+  }
+  
+  .burgerMenu {
+    display: none;
+  }
+  
+  .navBar button, .menuBarTop, .menuBarScroll {
+    display: block;
+  }
+  
+  .navBar button {
+    font-size: 12px;
+    width: 150px;
+  }
+  
+  .menuBarTop, .menuBarScroll {
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .menuBarTop {
+    background-color: white;
+  }
+  
+  .menuBarTop a {
+    color: black;
+  }
+  
+  .menuBarScroll {
+    background-color: black;
+    width:fit-content;
+    position: fixed;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .menuBarScroll a {
+    color: white;
+  }
 }
 
 /* RESPONSIVE DESIGN FOR TABLET ONLY */
