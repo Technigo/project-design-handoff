@@ -1,7 +1,6 @@
 .client-review-container {
     background-color: #D7CBFF;
     width: 100vw;
-    height: 100vh;
   }
   
   .client-review-container h1 {
@@ -35,6 +34,7 @@
     border-radius: 30px;
     max-width: 40vw;
     max-height: 40vw;
+    justify-content: center;
     }
     
   
@@ -42,4 +42,26 @@
     margin: 20px;
   
   }
-  
+
+  .slick-track{
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+
+
+  }
+  .slick-track .slick-dots li button:before {
+  content: "";
+  position: absolute;
+  top: 74.5px ;
+  width: 25px; 
+  height: 25px; 
+  background-color: #62CABC; 
+  border-radius: 50%;
+  opacity: 0.8; 
+}
+
+.slick-track .slick-dots li.slick-active button:before {
+  background-color: #082824; 
+}

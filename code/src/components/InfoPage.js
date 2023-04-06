@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
-import CircleCheck from './CircleCheck';
+import CircleCheck from './NamedIcons/CircleCheck';
 
 const InfoPage = () => {
   return (
