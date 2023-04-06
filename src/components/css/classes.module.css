@@ -19,7 +19,7 @@
 }
 
 @media (max-width: 990px){
-	.NavBar .Navigation{
+	.NavBar .desktop{
 		display: none;
 	}
 
@@ -27,7 +27,6 @@
 		display: flex;
 		align-items: center;
 		background-color: red;
-
 	}
 
 	.NavBar .MobileNavigation .Hamburger {
@@ -35,6 +34,17 @@
 		right: 5%;
 		cursor: pointer;
 	}
+
+	.NavBar nav ul{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 10%;
+	    right: 5%;
+		width: 80px;
+		border: 2px solid pink;
+	}
+	
 
 
 }
