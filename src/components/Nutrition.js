@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Nutrition = () => {
-  return (
-    <section>
-        Nutrition
-    </section>
-  )
-}
+  return <section>Nutrition</section>;
+};
 
-export default Nutrition
+export default Nutrition;
