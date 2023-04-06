@@ -9,6 +9,7 @@
 
 .smallCard {
   height: 180px;
+  width: 100%;
 }
 
 .playIcon {
@@ -25,10 +26,6 @@
 @media (min-width: 667px) {
   .mediumCard {
     height: 420px;
-  }
-
-  .smallCard {
-    width: 380px;
   }
 
   .smallCardWrapper {
