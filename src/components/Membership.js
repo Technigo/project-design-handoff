@@ -16,6 +16,7 @@ const items = [
 
 const MemberShipContainer = styled.div`
   width: 100vw;
+  height: 700px;
   padding-top: 16px;
   display: flex;
   flex-direction: column;
@@ -43,6 +44,8 @@ const Title = styled.h1`
   line-height: 39px;
   text-align: center;
   color: #025323;
+  margin-top: 46px;
+  padding: 0 10px;
 `;
 
 const Content = styled.p`
@@ -53,6 +56,7 @@ const Content = styled.p`
   line-height: 167.5%;
   text-align: center;
   color: #025323;
+  padding: 0 50px;
 `;
 export const Image = styled.img`
   width: 288.54px;
@@ -77,7 +81,7 @@ const Access = styled.p`
   font-size: 9.25353px;
   line-height: 11px;
   color: #025323;
-  text-align: left;
+  margin:0px;
 `;
 const Price = styled.p`
   font-family: 'Libre Franklin';
@@ -86,6 +90,7 @@ const Price = styled.p`
   font-size: 12.2091px;
   line-height: 15px;
   color: #000000;
+  margin-right: 10px;
 
 `;
 const Button = styled.button`
@@ -94,15 +99,15 @@ const Button = styled.button`
   justify-content: center;
   align-items: center;
   padding: 15px 47px;
-  gap: 10px;
   background: #025323;
   border-radius: 15px;
   text-align: center;
   color: #FFFFFF;
-
 `;
 
 const ArrowButtonLeft = styled.button`
+  height: 19.28px;
+  width: 19.28px;
   background-color: transparent;
   border: none;
   display: flex;
@@ -110,11 +115,13 @@ const ArrowButtonLeft = styled.button`
   align-items: center;
   margin: auto;
   position:absolute;
-  top:56%;
-  left:-5px;
+  top: 60%;
+  left: 20px;
 `;
 
 const ArrowButtonRight = styled.button`
+  height: 19.28px;
+  width: 19.28px;
   background-color: transparent;
   border: none;
   display: flex;
@@ -122,9 +129,15 @@ const ArrowButtonRight = styled.button`
   align-items: center;
   margin: auto;
   position:absolute;
-  top:56%;
-  right:-5px;
+  top: 60%;
+  right: 20px;
 `;
+const Wrapper = styled.div`
+  align-items: left;
+  width: 288.54px;
+  padding-left: 16px;
+  margin-bottom: 25px;
+`
 
 export const Membership = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -144,8 +157,12 @@ export const Membership = () => {
       
       <SliderItemContainer>
         <Image src={items[currentIndex].image} alt="carousel item" />
-        <Header>{items[currentIndex].header}</Header>
-        <Access>{items[currentIndex].access}</Access>
+
+        <Wrapper>
+           <Header>{items[currentIndex].header}</Header>
+           <Access>{items[currentIndex].access}</Access>
+        </Wrapper>
+       
         <Price>{items[currentIndex].price}</Price>
         <Button type="button">Buy Now</Button>
       </SliderItemContainer>
