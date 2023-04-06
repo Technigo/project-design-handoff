@@ -9,18 +9,26 @@ export const Button = styled.button`
   font-weight: bold;
   padding: 0.3rem 1.25rem;
   cursor: pointer;
-  position: absolute;
 `;
 
 export const TopRightButton = styled(Button)`
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
+   top: 1.25rem; 
+   right: 0.25rem;
 `;
 
 export const BottomCenterButton = styled(Button)`
-  position: absolute;
-  bottom: 0.625rem;
-  left: 50%;
-  transform: translateX(-50%);
+  background-color: transparent;
+`;
+
+export const Logo = styled.img`
+  width: 15vh;
+`;
+
+export const TopLeftLogo = styled(Logo)`
+   top: 1.25rem; 
+   left: 0.25rem;
+`;
+
+export const BottomLeftLogo = styled(Logo)`
+  margin-top: 0;
 `;
