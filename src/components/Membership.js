@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import Flexable from '../images/1.png';
 import Basic from '../images/2.png';
 import Grow from '../images/3.jpg';
+import Leftarrow from '../images/left-arrow.png';
+import Rightarrow from '../images/right-arrow.png';
 
 const items = [
   { image: Flexable, header: 'BE FLEXABLE', access: 'PAY WHEN YOU PRACTICE', price: '2499 SEK/PER MONTH' },
@@ -19,6 +21,7 @@ const MemberShipContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #EBEBEB;
   position: relative;
 `;
 
@@ -100,35 +103,27 @@ const Button = styled.button`
 `;
 
 const ArrowButtonLeft = styled.button`
-// background-color: transparent;
-// border: none;
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// margin: auto;
-svg {
-  width: 24px;
-  height: 24px;
-}
-position:absolute;
-top:56%;
-left:10px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position:absolute;
+  top:56%;
+  left:-5px;
 `;
 
 const ArrowButtonRight = styled.button`
-// background-color: transparent;
-// border: none;
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// margin: auto;
-svg {
-  width: 24px;
-  height: 24px;
-}
-position:absolute;
-top:56%;
-right:10px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position:absolute;
+  top:56%;
+  right:-5px;
 `;
 
 export const Membership = () => {
@@ -156,15 +151,10 @@ export const Membership = () => {
       </SliderItemContainer>
 
       <ArrowButtonLeft onClick={handlePrevClick}>
-        <img src="/images/left-arrow.png" alt="left"></img>
-        {/* <svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.1591 0.942322L16.1644 3.94761L6.40254 13.7308L16.1644 23.514L13.1591 26.5192L0.370642 13.7308L13.1591 0.942322Z" fill="black" />
-        </svg> */}
+        <img src={Leftarrow} alt="left"/>
       </ArrowButtonLeft>
       <ArrowButtonRight onClick={handleNextClick}>
-        <svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3.84086 0.942322L0.835571 3.94761L10.5974 13.7308L0.835571 23.514L3.84086 26.5192L16.6293 13.7308L3.84086 0.942322Z" fill="black" />
-        </svg>
+        <img src={Rightarrow} alt="right"/>
       </ArrowButtonRight>
     </MemberShipContainer>
   );
