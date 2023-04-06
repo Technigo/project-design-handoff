@@ -22,6 +22,11 @@ export const Button = styled.button`
     &:active {
       background-color: var(--secondary-color-2);
     }
+
+    @media (min-width: 570px) {
+      padding: 14px 48px;
+      width: auto;
+    }
   `}
 
   ${(props) => props.mainCta && css`

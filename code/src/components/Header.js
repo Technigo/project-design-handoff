@@ -11,6 +11,10 @@ const StyledHeader = styled.header`
   background-position-x: 63%;
   background-repeat: no-repeat;
   height: 100vh;
+
+  @media (min-width: 570px) {
+    background-size: 300%;
+  }
 `;
 
 const StyledHeaderDiv = styled.div`
@@ -19,6 +23,12 @@ const StyledHeaderDiv = styled.div`
     align-items: center;
     align-self: flex-end;
     margin-bottom: 67px;
+
+  @media (min-width: 570px) {
+    margin-bottom: 222px;
+    align-items: flex-start;
+    padding-left: 24px;
+  }
 `;
 
 const HeaderTitle = styled.h1`
@@ -27,7 +37,11 @@ const HeaderTitle = styled.h1`
   font-weight: 800;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 30px;
-  padding-left: 5%;
+  padding-left: 0%;
+
+  @media (min-width: 570px) {
+    font-size: 6rem;
+  }
 `;
 
 export const Header = ({ title }) => {
