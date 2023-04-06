@@ -49,25 +49,26 @@ line-height: 60px;
 }
 `
 // Body texts
-export const P20 = styled.p`
-font-size: 20px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 1px;
-`
 
-export const P16 = styled.p`
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 1px;
-`
-
-export const P14 = styled.p`
+export const Body = styled.p`
 font-size: 14px;
 font-weight: 400;
 line-height: 21px;
 letter-spacing: 1px;
+
+@media (min-width:641px) and (max-width:1024px) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1025px) {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
 `
 export const FormP = styled.p`
 font-size: 12px;

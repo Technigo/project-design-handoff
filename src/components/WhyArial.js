@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title, P14 } from 'components/Typography'
+import { Title, Body } from 'components/Typography'
 import styled from 'styled-components'
 
 const StyledWhyArial = styled.section`
@@ -13,6 +13,10 @@ height: 577px;
   height: 602px;
 }
 
+@media (min-width:1025px) {
+  height:692px;
+}
+
 .textArea {
 height: 377px;
 width: 312px;
@@ -24,19 +28,18 @@ gap: 32px;
 @media (min-width:641px) and (max-width:1024px) {
   width: 577px;
 }
-`
 
-// @media (min-width:641px) and (max-width:1024px) {
-//   height: 234px;
-//   width: 577px;
-// }
+@media (min-width:1024px) {
+  width: 656px;
+}
+`
 
 export const WhyArial = () => {
   return (
     <StyledWhyArial>
       <div className="textArea">
         <Title>Why Aerial silks?</Title>
-        <P14>
+        <Body>
           Aerial silks is a graceful and effective form of
           exercise that involves performing acrobatic moves
           while suspended from fabric silks.
@@ -47,7 +50,7 @@ export const WhyArial = () => {
           and mental challenges which can boost confidence and leave
           you feeling empowered. Why not give aerial silks a try and
           experience the excitement for yourself?
-        </P14>
+        </Body>
       </div>
     </StyledWhyArial>
   )

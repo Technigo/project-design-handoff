@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
-import { FormP, P20 } from './Typography'
+import { FormP, Body } from './Typography'
 
 const StyledForm = styled.div`
 color: #524858;
@@ -26,6 +26,11 @@ gap: 32px;
 @media (min-width:641px) and (max-width:1024px) {
   border-radius: 16px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+ }
+
+ @media (min-width:1025px)  {
+  padding: 48px 128px 44px 128px;
+  max-width:736px;
  }
 
  .big-form {
@@ -75,8 +80,6 @@ form{
   flex-direction: row;
   font-size: 11px;
   gap: 10px;
-
-
 }
 
 input {
@@ -84,16 +87,15 @@ input {
   height: 24px;
   padding: 8px;
   accent-color: #131313;
-  
 }
 `
 
 export const Form = () => {
   return (
     <StyledForm>
-      <P20>
+      <Body>
         Form for sign up
-      </P20>
+      </Body>
       <div className="big-form">
         <form>
           Name
@@ -178,7 +180,7 @@ export const Form = () => {
           </div>
         </StyledRadioForm>
       </FormP>
-      <Button textBtn>Sign up today</Button>
+      <Button textBtn>Send form</Button>
     </StyledForm>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import LogoImg from '../images/Site-logo.png'
-import { P16 } from './Typography'
+import { Body } from './Typography'
 import FacebookIcon from '../icons/Facebook svg.png'
 import InstagramIcon from '../icons/Instagram svg.png'
 import TwitterIcon from '../icons/Twitter  svg.png'
@@ -20,7 +20,7 @@ justify-content: space-evenly;
 padding: 64px;
 
 .logo {
-  filter: brightness(5000%);
+  filter: brightness(1250%);
   width:128px;
   height: 38px;
 }
@@ -45,8 +45,7 @@ li{
 
 container {
   display: flex;
-  align-self: stretch;
-  justify-content: space-between;
+  gap: 48px;
 }
 
 container .icon1{
@@ -68,6 +67,19 @@ container .icon4{
     height: 328px;
   }
 
+  @media (min-width:1025px) {
+    height:476px;
+    
+    .logo {
+      width: 240px;
+      height: 72px;
+    }
+    li{
+      font-size: 24px;
+    }
+    }
+  }
+
 `
 
 export const Footer = () => {
@@ -76,14 +88,14 @@ export const Footer = () => {
       <EmptyDiv />
       <StyledFooter>
         <img className="logo" src={LogoImg} alt="logo" />
-        <P16>
+        <Body>
           <ul>
             <li>Classes</li>
             <li>About</li>
             <li>Contact</li>
           </ul>
           <div className="divider" />
-        </P16>
+        </Body>
         <container>
           <img className="icon1" src={InstagramIcon} alt="instagram" />
           <img className="icon1" src={FacebookIcon} alt="facebook" />

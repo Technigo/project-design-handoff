@@ -15,8 +15,15 @@ background-color: #D7C3E2;
   padding: 224px 80px 96px 80px;
   background-color: white;
 }
+
 @media (min-width:641px) {
 background-color: white;
+}
+
+@media (min-width:1025px) {
+  height:1240px;
+  justify-content: center;
+  padding: 0px 145px;
 }
 `
 const WhiteDiv = styled.div`
@@ -24,7 +31,8 @@ height: 120px;
 background-color: white;
 
 @media (min-width:641px) {
-  height: 0px;
+  display:none;
+}
 
 `
 

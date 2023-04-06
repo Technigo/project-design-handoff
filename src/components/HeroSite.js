@@ -14,6 +14,10 @@ display: flex;
   height: 1024px;
 }
 
+@media (min-width: 1024px) {
+  height: 1024px;
+}
+
 .aside-left{
   background-color: #D7C3E2;
   width: 33vw;
@@ -30,7 +34,7 @@ display: flex;
   padding-right: 16px;
 }
 
-.heroItem{
+.heroItem {
   position: absolute;
   top: 163px;
   left: 16px;
@@ -45,14 +49,22 @@ display: flex;
   .aside-left{
    padding-left: 32px;
   }
-  
-  .heroItem{
+  .heroItem {
     top: 320px;
     left: 32px;
     width: 384px;
     height: 352px;
   }
   }
+
+  @media (min-width:1025px) {
+    .heroItem {
+      width: 557px;
+      top: 320px;
+      left: 64px;
+    }
+  }
+
 `
 
 export const HeroSite = () => {

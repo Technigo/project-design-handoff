@@ -12,6 +12,34 @@ background-color: transparent;
 position: absolute;
 top: 32px;
 `
+const DesktopHeader = styled.header`
+display: flex;
+width: 65vw;
+justify-content: space-between;
+
+@media (max-width:1024px) {
+  display: none;
+}
+
+ul {
+  display:flex;
+  flex-direction: row;
+  gap: 56px;
+  list-style-type: none;
+}
+
+li,p {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+p {
+  margin-right: 47px;
+  display: flex;
+ justify-self: end;
+}
+`
+
 const StyledIcons = styled.div`
 display:flex;
 
@@ -50,6 +78,14 @@ export const NavBar = () => {
         <Icon src={MenuIcon} alt="menu" />
         <Icon src={SearchIcon} alt="search" />
       </StyledIcons>
+      <DesktopHeader>
+        <ul>
+          <li>Classes</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <p>Search</p>
+      </DesktopHeader>
     </StyledNavBar>
   )
 }
