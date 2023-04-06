@@ -4,8 +4,10 @@ import Hero from 'Body';
 import FreeTrialButton from 'Button';
 import Wellbeing from 'Wellbeing/Wellbeing';
 import Yogis from 'Yogis/Yogis';
+import YogisCarousel from 'Yogis/YogisCarousel';
 
 export const App = () => {
+  const isMobile = window.innerWidth <= 768;
   return (
     <>
       <section className="start">
@@ -24,7 +26,7 @@ export const App = () => {
         <FreeTrialButton />
       </div>
       <section className="yoga-container">
-        <Yogis />
+        {isMobile ? <Yogis /> : <YogisCarousel />}
       </section>
       <div className="free-button-container">
         <FreeTrialButton />
