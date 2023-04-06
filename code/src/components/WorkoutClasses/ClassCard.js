@@ -37,6 +37,7 @@ const CardP = styled.p`
 
 const CardButton = styled(Button)`
   position: absolute;
+  padding: 12px 30px;
   bottom: 16px;
   left: 10px;
 `;

@@ -10,6 +10,7 @@ const IntroImg = styled.img`
   width: 100%;
   height: 50vh;
   transform: scaleX(-1);
+  object-fit: cover;
 `;
 
 const IntroDiv = styled.div`

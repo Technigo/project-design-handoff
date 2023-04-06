@@ -41,7 +41,7 @@ export const Button = styled.button`
     font-size: 1.25rem;
     background: var(--primary-color-3);
     color: var(--neutral-light);
-    padding: 10px;
+    padding: 12px 30px;
     gap: 10px;
 
     &:active {
