@@ -36,7 +36,7 @@ export const NavbarLinkContainer = styled.div`
 display: flex;
 `;
 
-export const NavbarLink = styled(Link)`
+export const NavLink = styled(Link)`
 color: white;
 font-size: x-large;
 font-family: Roboto;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { ReactComponent as LogoImg } from 'assets/logos/logo4+2_fit_main.svg';
 import {
   LeftContainer,
   NavbarContainer,
@@ -6,8 +7,8 @@ import {
   NavbarInnerContainer,
   RightContainer,
   NavbarLinkContainer,
-  NavbarLink
-} from '../styles/Navbar.style';
+  NavLink
+} from './Navbar.style';
 
 const Navbar = () => {
   return (
@@ -15,13 +16,13 @@ const Navbar = () => {
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLinkContainer>
-            <NavbarLink to="/"> Home</NavbarLink>
-            <NavbarLink to="/"> Activities</NavbarLink>
-            <NavbarLink to="/"> Contact</NavbarLink>
+            <NavLink to="/"> Home</NavLink>
+            <NavLink to="/"> Activities</NavLink>
+            <NavLink to="/"> Contact</NavLink>
           </NavbarLinkContainer>
         </LeftContainer>
         <RightContainer>
-LOGO
+          <LogoImg height={100} />
         </RightContainer>
       </NavbarInnerContainer>
       <NavbarExtendedContainer />
