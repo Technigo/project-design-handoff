@@ -6,9 +6,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Outfit', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,5 +20,24 @@ code {
   background-image: url('/public/img/yoga1515x982.jpg');
   background-size: cover;
   background-position: center;
+  margin: 0;
 }
 
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FF9F0A;
+}
+
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.adress-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

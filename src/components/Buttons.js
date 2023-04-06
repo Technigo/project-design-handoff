@@ -10,6 +10,7 @@ const StyledBtn = styled.button`
     background-color: #FF9F0A;
     border-radius: 15px;
     border: none;
+    font-family: 'Outfit', sans-serif;
 `
 
 export const SignUpBtn = () => {

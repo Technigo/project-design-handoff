@@ -13,8 +13,8 @@ export const Header = () => {
   return (
     <section className="navbar-cont">
       <div className="logo-cont">
-        <Logo src="/logo/logo.svg" />
-        <Logo src="/logo/logo.svg" />
+        <Logo src="./logo/Logo.svg" />
+        <Logo src="./logo/Logo.svg" />
       </div>
       <secton className="intro-text">
         <p>Santulan Power Yoga Stockholm</p>
