@@ -13,3 +13,7 @@ Describe how you approached to problem, and what tools and techniques you used t
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 
 https://gracious-movement-matilda.netlify.app/
+
+Link to Figma design:
+
+https://www.figma.com/file/cIZhyKb4F8qR0pYeeieAFJ/Gracious-Movement---Elin?node-id=52%3A251&t=w3MKbFwAQjGVVfG5-1

@@ -7,7 +7,7 @@
     gap: 10px;
     border: 2px solid rgb(158, 158, 235);
     margin: 45% 16px;
-    max-width: 60%;
+    width: 60%;
     position: relative;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@
   @media (min-width: 641px) {
     .intro-box {
       margin: 30% 32px;
-      max-width: 50%;
+      width: 50%;
       position: relative;
       top: 0;
     }
@@ -47,7 +47,8 @@
   @media (min-width: 1025px) {
     .intro-box {
       margin: 20% 64px;
-      max-width: 50%;
+      width: 50%;
+      max-width: 555px;
       position: relative;
       top: 0;
     }
