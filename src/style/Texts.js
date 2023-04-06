@@ -84,3 +84,21 @@ export const TagLine = styled.p`
     margin-bottom: 0;
     color: ${({ color }) => color};
 `
+
+export const Link = styled.a`
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.022em;
+    color: ${({ color }) => color};
+    display: flex;
+    max-width: 80%;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:active {
+        color: #222322;
+        text-decoration: none;
+    }
+`

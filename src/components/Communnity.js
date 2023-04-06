@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { SubmitButton } from 'style/ButtonsStyle';
 import { FlexColumn } from 'style/Flex';
 import { Error } from 'style/FormStyle';
-import { H3, TagLine, H5 } from 'style/Texts';
+import { H3, TagLine, H5, BodyText, Link } from 'style/Texts';
 import '../style/form.css'
 import { Card } from './Cards';
 
@@ -27,7 +27,7 @@ export const Form = () => {
     <H5 color="#222322">Sign up & join our community to get started today</H5>
       <Card
         color="#DCBAF9"
-        imgSrc="./images/longstretch.jpg"
+        imgSrc="https://images.unsplash.com/photo-1552286450-4a669f880062?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
         headline=""
         text="" />
     <FlexColumn>
@@ -55,7 +55,11 @@ export const Form = () => {
           {errors?.password?.type === 'required' && <Error>⚠ This field is required</Error>}
         <SubmitButton bg="#DCD2F1" color="##222322" type="submit">Create account</SubmitButton>
       </form>
+     <BodyText>Already have an account? 
+      <a href='https://www.google.com/webhp?hl=sv&sa=X&ved=0ahUKEwiK8t7U7pT-AhUBSfEDHbflAIIQPAgI'>Login</a>
+     </BodyText>
     </FlexColumn>
+
     </>
   );
 }

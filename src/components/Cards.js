@@ -1,18 +1,29 @@
 import React from 'react';
 import { BodyText, H1, H4 } from 'style/Texts';
-import { BgImg } from 'style/ImageStyle';
 import { FlexColumn } from 'style/Flex';
+
+// const BgImg = styled.img`
+//     margin-bottom: 16px;
+//     repeat: no-repeat;
+//     overflow: hidden;
+//     width: 100vw;
+//     border-radius: 30px;
+//     object-fit: cover;
+//     height: 100vh;
+//     border: none;
+//     display: block;
+//     `
 
 export const Card = ({ color, imgSrc, headline, text }) => {
   return (
-    <>
-      <BgImg
-        style={{ backgroundImage: `linear-gradient(17deg, ${color} 16%, rgba(255, 255, 255, 0) 54%), url(${imgSrc})` }} />
+    <div
+      className="card"
+      style={{ backgroundImage: `linear-gradient(17deg, ${color} 16%, rgba(255, 255, 255, 0) 54%), url(${imgSrc})`, repeat: 'no-repeat' }}>
       <FlexColumn>
         <H4 color="#fff">{headline}</H4>
         <BodyText color="#fff">{text}</BodyText>
       </FlexColumn>
-    </>
+    </div>
   )
 }
 

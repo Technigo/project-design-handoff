@@ -4,6 +4,7 @@ import { Form } from 'components/Communnity'
 import { Benefits } from 'components/Benefits'
 import { Container } from 'style/Container'
 import { Workout } from 'components/Workouts'
+import { Activity } from 'components/Activity'
 import { Header } from './components/Header'
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
         <Header />
         <Benefits />
         <Workout />
+        <Activity />
         <Form />
       </Container>
     </>

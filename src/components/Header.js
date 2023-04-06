@@ -4,12 +4,14 @@ import { H2, TagLine, BodyText } from 'style/Texts';
 import { Image } from 'style/ImageStyle';
 import { FlexColumn, FlexRow } from 'style/Flex';
 import { Button, ButtonOutline } from 'style/ButtonsStyle';
+import childpose from '../images/childpose.jpg'
+import logo from '../images/EASYFITtablet_mobile.png'
 
 export const Header = () => {
   return (
     <>
       <FlexRow>
-        <Logo src="./images/EASYFITtablet_mobile.png" alt="logo" />
+        <Logo src={logo} alt="logo" />
       </FlexRow>
       <FlexColumn>
         <TagLine color="#fff">Feel the difference</TagLine>
@@ -21,7 +23,7 @@ export const Header = () => {
         <ButtonOutline color="#fff">Create account</ButtonOutline>
         <BodyText color="#fff">Compatible with</BodyText>
       </FlexColumn>
-      <Image src="./images/childpose.jpg" />
+      <Image src={childpose} />
     </>
   )
 }
