@@ -70,15 +70,14 @@ export const TestimonialCard = () => {
       {testimonalarray.map((testimonial) => {
         const description = showFullDescription
           ? testimonial.text
-          : testimonial.text.slice(0, 256);
+          : testimonial.text.slice(0, 257);
 
         return (
           <Card key={testimonial.id}>
             <Img src={testimonial.img} alt={testimonial.alt} />
             <p>{description}
-              {testimonial.text.length > 256 && (
-                <ReadMoreButton onClick={showFullDescriptionHandler}>
-                ... {showFullDescription ? "Less" : "More"}
+              {testimonial.text.length > 257 && (
+                <ReadMoreButton onClick={showFullDescriptionHandler}>{showFullDescription ? "Show less" : "..."}
                 </ReadMoreButton>
               )}
             </p> 
