@@ -28,6 +28,10 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
+  button {
+    color: var(--neutral-dark);
+  }
+
   header, section, footer {
     padding: 10px;
   }

@@ -22,6 +22,7 @@ const BookSelect = styled.select`
   padding: 13px 40px 13px 40px;
   border: solid black 1px;
   text-align: center;
+  border-radius: 0%; // To prevent default setting in Safari
 `;
 
 const BookCard = styled.div`
