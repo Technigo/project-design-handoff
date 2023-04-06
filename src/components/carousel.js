@@ -38,28 +38,21 @@ const Carousel = ({ slides }) => {
   }
 
   return (
-    <section
-      className="slider"
-      ref={sliderRef}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}>
+    <div className="carousel-container">
       <button className="leftBtn" type="button" onClick={prevSlide}>
         <img src={arrowLeft} className="arrowLeft" alt="arrow Left" />
       </button>
-
+      <section
+        className="slider"
+        ref={sliderRef}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}>
+        <img key={current} src={CarouselData[current].image} alt="rings" />
+      </section>
       <button className="rightBtn" type="button" onClick={nextSlide}>
         <img src={arrowRight} className="arrowRight" alt="arrow right" />
       </button>
-      {CarouselData.map((item, index) => {
-        return (
-          <div className={index === current ? 'slide active' : 'slide'} key={index.id}>
-            {index === current && (
-              <img key={index.id} src={item.image} alt="rings" />
-            )}
-          </div>
-        )
-      })}
-    </section>
+    </div>
   );
 };
 

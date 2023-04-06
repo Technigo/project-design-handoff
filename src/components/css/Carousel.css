@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	order: 2;
 }
 
 .image{
@@ -12,14 +13,21 @@
 	border-radius: 10px;
 	border-color: pink 5px;
 }
+.carousel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .rightBtn{
+	order: 3;
 background-color: white;
-border: none;
+	border: none;
 }
 .leftBtn{
 background-color: white;
 border: none;
+order: 1;
 }
 
 .slide {
