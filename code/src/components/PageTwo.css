@@ -1,0 +1,78 @@
+.page-two-container {
+    background-color: #D7CBFF;
+    width: 100vw;
+  }
+  
+  .page-two-container h2 {
+  width: 100vw;
+  color: #03092E;
+  font-size: 2rem;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  }
+  
+  .easy-steps-container h3 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #03092E;
+  padding-left: 20px;
+  } 
+  
+  
+  
+  .pt-cards {
+    margin-top: 20px;
+    box-shadow: 0px 5px 31px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    max-width:60vw;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+    
+  
+  .pt-cards img {
+    margin: 200px;
+  }
+  
+  .page-two-container p1 {
+    width: 275px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 34px;
+    display: flex;
+    align-items: left;
+    color: #03092E;
+    padding: 20px;
+   }
+  
+   .slider-container .slick-dots li {
+    margin-right: 60px;
+  }
+  
+  .slider-container .slick-dots li button:before {
+    content: "";
+    position: absolute;
+    top: 74.5px ;
+    width: 25px; 
+    height: 25px; 
+    background-color: #62CABC; 
+    border-radius: 50%;
+    opacity: 0.8; 
+  }
+  
+  .slider-container .slick-dots li.slick-active button:before {
+    background-color: #082824; 
+  }
+  
+  .slider-container{
+    width: 320px;
+    padding: 20px;
+  }
