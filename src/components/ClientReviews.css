@@ -11,6 +11,16 @@
   align-items: center;
 }
 
+h3 {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: #03092E; 
+}
+
 h2 {
 color: #03092E;
 width: 336px;

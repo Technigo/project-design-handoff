@@ -26,8 +26,8 @@ const TrialForm = () => {
             <label htmlFor="accept">
               <input className="custom-checkbox" type="checkbox" name="accept" id="accept" />
 
-              <p> I am over 13 and accept the<span className="highlighted-text2"> privacy policy, terms of service,</span>
-              &nbsp;and<span className="highlighted-text2">code of conduct</span>
+              <p> I am over 13 and accept the<span className="highlighted-text2">&nbsp;privacy policy, terms of service,</span>
+              &nbsp;and<span className="highlighted-text2">&nbsp;code of conduct</span>
               </p>
             </label>
           </div>
