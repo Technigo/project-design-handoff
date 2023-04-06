@@ -26,7 +26,7 @@ export const App = () => {
         <FreeTrialButton />
       </div>
       <section className="yoga-container">
-        {isTablet ? (<YogisCarousel />) : (<Yogis />)}
+        {isTablet ? <YogisCarousel /> : <Yogis />}
       </section>
       <div className="free-button-container">
         <FreeTrialButton />
