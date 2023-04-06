@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledPopup = styled.div`
+position: relative;
 margin: auto;
 width: 90%;
 background: #F5F5F5;
@@ -11,27 +12,28 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 1rem;
+padding-bottom: 48px;
 `
 const HeaderWrapper = styled.div`
 display: grid;
-grid-template-columns: repeat(4, 1fr)
-grid-template-rows: 1fr 1fr;
+width: 100%;
+grid-template-columns: 1fr 1fr 1fr 48px
+grid-template-rows: 48px 1fr;
 `
 
 const StyledHeader = styled.h1`
 font-size: 32;
+margin-left: 24px;
+margin-top: 32px;
 font-weight: 700;
 color: #02393F;
-padding-left: 1rem;
-grid-column: 1 / span 4;
-grid-row: 2;
+align-self: flex-start;
 `
 
 const ExitIcon = styled.img`
-width: 24px;
-grid-row: 1;
-grid-column: 4;
-margin: 24px;
+position: absolute;
+right: 3%;
+top: 3%;
 `
 
 const StyledForm = styled.form`
@@ -65,9 +67,9 @@ font-family: 'Libre Baskerville', serif;
 const Popup = () => {
   return (
     <StyledPopup>
+      <ExitIcon src="/icons/exitbtn.svg" alt =""/>
       <HeaderWrapper>
         <StyledHeader>Register here</StyledHeader>
-        <ExitIcon src="/icons/exitbtn.svg" alt =""/>
       </HeaderWrapper>
       <StyledForm>
         <StyledInput type="text" placeholder="First Name" />
