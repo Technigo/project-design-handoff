@@ -3,13 +3,12 @@
 }
 
 .mediumCard {
-  height: 420px;
-  max-height: fit-content;
+  height: 460px;
   justify-content: space-between;
 }
 
 .smallCard {
-  height: 140px;
+  height: 180px;
 }
 
 .playIcon {
@@ -24,6 +23,10 @@
 
 /* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
 @media (min-width: 667px) {
+  .mediumCard {
+    height: 420px;
+  }
+
   .smallCard {
     width: 380px;
   }
