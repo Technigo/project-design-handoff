@@ -11,7 +11,6 @@ const BgImg = styled.div`
     border-radius: 30px;
     object-fit: cover;
     border: none;
-    display: block;
     position: relative;
     `
 
