@@ -4,6 +4,10 @@ import Hero from 'Body';
 import FreeTrialButton from 'Button';
 import Wellbeing from 'Wellbeing/Wellbeing';
 import YogisCarousel from 'Yogis/YogisCarousel';
+import OnlineYoga from 'OnlineYoga';
+import PersonalisedMeal from 'PersonalisedMeal';
+import PricePlan from 'Priceplan';
+import Footer from 'Footer';
 import Yogis from './Yogis/Yogis';
 
 export const App = () => {
@@ -25,12 +29,25 @@ export const App = () => {
         <FreeTrialButton />
       </div>
       <section className="yoga-container">
-        <YogisCarousel />
-        <Yogis />
+        <div className="carousel-container">
+          <YogisCarousel />
+        </div>
+        <div className="yogis-container">
+          <Yogis />
+        </div>
       </section>
       <div className="free-button-container">
         <FreeTrialButton />
       </div>
+      <section className="online-yoga-container">
+        <OnlineYoga />
+      </section>
+      <div className="free-button-container">
+        <FreeTrialButton />
+      </div>
+      <PersonalisedMeal />
+      <PricePlan />
+      <Footer />
     </>
   );
 }

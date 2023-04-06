@@ -145,6 +145,7 @@ padding: 24px 24px 40px 24px;
 .yoga-container {
   background-color: #02393f;
   padding: 24px;
+
 }
 
 .yogis-header h1 {
@@ -165,8 +166,118 @@ padding: 24px 24px 40px 24px;
   font-weight: 400;
 }
 
-.carousel {
+#carousel {
   display: none;
+}
+
+.online-yoga-container {
+  background-color: #D0C4B8;
+padding-bottom: 24px;
+margin-top: -24px;
+}
+
+.online-yoga-container h1 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  padding: 24px;
+}
+
+.online-yoga-container p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 13px;
+  margin: 24px 24px 24px 24px;
+}
+
+.movie-card img {
+  height: 189px;
+  width: 226px;
+  object-fit: cover;
+  border-radius: 12px;
+ }
+
+.movie-card {
+  margin: 5px;
+}
+
+.movie-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.personalised-meal-container {
+  background-color: #D0C4B8;
+padding-bottom: 24px;
+padding: 24px;
+}
+
+.personalised-meal-container h1 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  padding: 24px;
+}
+
+.personalised-meal-container p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 13px;
+  margin: 24px 24px 24px 24px;
+}
+
+.meal-card img {
+  height: 189px;
+  width: 226px;
+  object-fit: cover;
+  border-radius: 12px;
+ }
+
+.meal-card {
+  margin: 5px;
+}
+
+.meal-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-plan-container {
+  background-color: #D69A2A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.price-plan-container h1 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  padding: 24px;
+}
+
+.price-plan-container p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 13px;
+  margin: 24px 24px 24px 24px;
+
+
+}
+.price-plan-card {
+  margin: 5px;
+background-color: #D0C4B8;
+width: 304px;
+height: 402px;
+border-radius: 12px;
+}
+
+.price-plan-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Tablet */
@@ -258,6 +369,7 @@ padding: 24px 24px 40px 24px;
   margin: 28px;
 }
 
+
 }
 /*Desktop*/
 @media only screen and (min-width: 1025px) {
@@ -334,7 +446,7 @@ align-items: center;
 justify-content: center;
  }
 
- .carousel {
+ #carousel {
   display: none;
 }
 
