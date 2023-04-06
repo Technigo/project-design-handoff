@@ -3,7 +3,34 @@ import styled from 'styled-components';
 import { Button } from './Button';
 
 const SignUpSection = styled.section`
-  padding: 132px 16px;
+  padding: 0;
+
+  button {
+      align-self: flex-start;
+    }
+`;
+
+const SignUpImg = styled.img`
+  @media (max-width: 569px) {
+    display: none;
+  }
+
+  @media (min-width: 570px) {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center 83%;
+    margin-bottom: 123px;
+    padding: 0;
+  }
+`;
+
+const SignUplogo = styled.img`
+  @media (min-width: 570px) {
+    display: flex;
+    align-self: center;
+    padding: 0 144px;
+  }
 `;
 
 const SignUpP = styled.p`
@@ -11,6 +38,10 @@ const SignUpP = styled.p`
   font-weight: 400;
   color: var(--neutral-dark);
   margin: 32px 0;
+
+  @media (min-width: 570px) {
+    padding: 0 144px;
+  }
 `;
 
 const SignUpForm = styled.form`
@@ -19,6 +50,10 @@ const SignUpForm = styled.form`
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
+
+  @media (min-width: 570px) {
+    padding: 40px 144px 100px 144px;
+  }
 `;
 
 const SignUpInput = styled.input`
@@ -35,7 +70,8 @@ const SignUpInput = styled.input`
 export const SignUp = () => {
   return (
     <SignUpSection className="signup">
-      <img
+      <SignUpImg src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="woman running up stairs" />
+      <SignUplogo
         src={`${process.env.PUBLIC_URL}/assets/sign-up-logo.png`}
         alt="Logo that says sign up" />
       <SignUpP>As a member you get access to all of our workouts

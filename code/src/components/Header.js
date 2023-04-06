@@ -14,6 +14,8 @@ const StyledHeader = styled.header`
 
   @media (min-width: 570px) {
     background-size: 300%;
+    padding: 0;
+    margin: 0;
   }
 `;
 

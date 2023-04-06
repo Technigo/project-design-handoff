@@ -11,18 +11,25 @@ const StyledNavBar = styled.nav`
 `;
 
 const HeaderLogo = styled.img`
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-
-  @media (min-width: 570px) {
-    display: none;
-  }
+  @media (max-width: 569px) {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    }
+    
+    @media (min-width: 570px) {
+      display: none;
+    }
 `;
 
 const HeaderLogoFull = styled.img`
+  @media (max-width: 569px) {
+    display: none;
+  }
+
   @media (min-width: 570px) {
     width: 180px;
     height: 77px;

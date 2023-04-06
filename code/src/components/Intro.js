@@ -20,6 +20,21 @@ const IntroDiv = styled.div`
   gap: 16px;
   margin-bottom: 140px;
   margin-top: 24px;
+
+  @media (min-width: 570px) {
+    margin-bottom: 109px;
+    align-items: flex-start;
+    padding-left: 24px;
+  }
+
+  button {
+      align-self: flex-start;
+    }
+`;
+
+const IntroH2 = styled.h2`
+  font-size: 1rem;
+  font-weight: 500;
 `;
 
 const IntroH3 = styled.h3`
@@ -35,6 +50,10 @@ const IntroH4 = styled.h4`
 const IntroP = styled.p`
     font-size: 1.125rem;
     line-height: 22px;
+
+    @media (min-width: 570px) {
+      width: 55%;
+  }
 `;
 
 export const Intro = () => {
@@ -42,7 +61,7 @@ export const Intro = () => {
     <IntroSection className="intro">
       <IntroImg src="https://images.pexels.com/photos/8692129/pexels-photo-8692129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="4 people high fiving each other" />
       <IntroDiv>
-        <h2>OUR GOAL IS TO PROMOTE</h2>
+        <IntroH2>OUR GOAL IS TO PROMOTE</IntroH2>
         <IntroH3>THE JOY OF EXERCISE</IntroH3>
         <IntroH4>Teamwork. Bodyweight. Fresh air</IntroH4>
         <IntroP>CrossPark is currently located in Stockholm, Göteborg and Malmö.

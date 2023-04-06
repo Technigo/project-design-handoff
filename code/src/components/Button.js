@@ -40,6 +40,11 @@ export const Button = styled.button`
     &:active {
       background-color: var(--secondary-color-2);
     }
+
+    @media (min-width: 570px) {
+      padding: 13px 30px;
+      width: auto;
+    }
   `}
 
   ${(props) => props.cardCta && css`
