@@ -1,32 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 /* import TopNav from 'components/header/navbar/Navbar'; */
-import logo from '../../Assets/LogoMobile.png';
-import herobackground from '../../Assets/herobackground.jpg';
-import jammerImg from '../../Assets/Jammer.png';
+import Button from 'components/Button'
+import HeaderContainer from 'components/Header-container';
+import logo from '../Assets/LogoMobile.png';
+import jammerImg from '../Assets/Jammer.png';
+import Menu from './HamburgerMenu';
 
-const HeaderContainer = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url( ${herobackground});
-  background-repeat: no-repeat;
-  background-size: cover;
-width: 100%;
-
-`;
-const HeaderButtons = styled.button`
-    border-radius: 18px;
-    height: 3rem;
-    background-color: yellow;
-    width: 28rem;
-
-`
 const Headline = styled.h1`
+margin-right: 50px;
 h1 {
    font-family: 'Permanent Marker', cursive;
    display: block;
    flex-direction: column;
+   margin-right: 50px;
 }
 `;
 
@@ -37,12 +24,12 @@ img {
 }`
 
 const Logo = styled.img`
-    margin-top: 5%;
-    margin-bottom: 44%;
-    margin-left: 5%;
+    margin-top: 
+    margin-bottom: 
+    margin-left: 
 `;
 
-const Navigation = styled.nav`
+/* const Navigation = styled.nav`
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -60,22 +47,17 @@ const NavItem = styled.a`
   &:hover {
     text-decoration: underline;
   }
-`;
+`; */
 
 const Header = () => {
   return (
     <HeaderContainer>
       <Logo src={logo} alt="Logo" />
-      <Navigation>
-        <NavItem href="#">Our Vision</NavItem>
-        <NavItem href="#">Our Programs</NavItem>
-        <NavItem href="#">Price Plans</NavItem>
-        <NavItem href="#">Contact Us</NavItem>
-      </Navigation>
+      <Button>SIGN IN</Button>
+      <Menu />
       <Headline>
         <h1>UP YOUR GAME WITH FIT2DERBY!</h1>
       </Headline>
-      <HeaderButtons />
       <JammerImg src={jammerImg} />
     </HeaderContainer>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from 'components/styles/Header.styled'
-import GlobalStyle from 'components/styles/GlobalStyle'
+import Header from 'components/Header.styled'
+import GlobalStyle from 'components/GlobalStyle'
 
 export const App = () => {
   return (
