@@ -1,30 +1,21 @@
 import React, { useState } from 'react'
-import styled from 'styled-components';
-import { Background } from '../Background'
+import { Background } from '../styledComponents/Background'
 import { Navbar, Logo, HamburgerIcon, NavbarOptions, NavbarOption, ContainerNavbar } from './Navbar'
-import { Hero, Title, SecondaryTitle, ButtonContainer, ParagraphContainer } from './Hero'
-import { Button } from '../Button'
-import { Highlight } from '../Highlight'
-import { Paragraph } from '../Paragraph'
-import { Image } from '../Image'
+import { Hero, Title, SecondaryTitle, ButtonContainer, ParagraphContainer, SecondaryTitleHidden } from './Hero'
+import { Button } from '../styledComponents/Button'
+import { Highlight } from '../styledComponents/Highlight'
+import { Paragraph, ParagraphHidden } from '../styledComponents/Texts'
+import { Image } from '../styledComponents/Image'
 import logo from '../../images/logo.svg'
 import headerBackground from '../../images/headerBackground.svg'
 import hero from '../../images/hero.svg'
 import hamburger from '../../images/hamburger.svg'
-
-const Header = styled.header`
-height:100%;
-width:100%;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-position:relative;
-`
+import { FlexContainer } from '../styledComponents/Containers'
 
 export const HeaderSection = () => {
   const [show, setShow] = useState(false)
   return (
-    <Header>
+    <FlexContainer background="#045661">
       <Background src={headerBackground} />
       <Navbar>
         <Logo src={logo} />
@@ -45,20 +36,20 @@ export const HeaderSection = () => {
       <Hero>
         <Image src={hero} />
         <Title>Up your game with fit2Derby!</Title>
-        <SecondaryTitle mobile>Customised online off skate programs
+        <SecondaryTitleHidden>Customised online off skate programs
           for roller derby players
-        </SecondaryTitle>
+        </SecondaryTitleHidden>
         <SecondaryTitle>Looking to put the Power in power jam?
         Land that apex? Brace for days? With fit2Derby’s
         <Highlight> customised online off skate programs for roller derby players, </Highlight>
         a full time jam will feel like a breeze!
         </SecondaryTitle>
-        <Paragraph mobile>Choose between our
+        <ParagraphHidden visible>Choose between our
           <Highlight> individual sign-up </Highlight> and
           <Highlight> Team sign-up </Highlight>
           with exclusive access to our
           <Highlight> Multiplayer Platform </Highlight>
-        </Paragraph>
+        </ParagraphHidden>
         <ParagraphContainer>
           <Paragraph> <Highlight> Sign up as an individual </Highlight> if you are looking
             to improve your skills on your own.
@@ -73,6 +64,6 @@ to track your own as well as your team’s progress.
           <Button fontSize="20px">Join with your team</Button>
         </ButtonContainer>
       </Hero>
-    </Header>
+    </FlexContainer>
   )
 }

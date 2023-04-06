@@ -4,10 +4,10 @@ export const Navbar = styled.div`
 display: flex;
 justify-content: space-between;
 height:63px;
+width: 90%;
 align-items:center;
 padding:10px 16px;
   @media (min-width: 1024px) {
-padding:8px 64px;
   }
 `;
 
