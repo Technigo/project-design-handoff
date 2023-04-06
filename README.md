@@ -1,13 +1,13 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Build a landing page following design given by UX student, using React and reusable components.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started with looking at the design and devided it into different sections (components), I then created two global styled components (one for text and one for buttons) that I could reuse in every section. I did one section at a time and always did mobile first.
+
+If I had more time I would implement styled components instead of vanilla CSS.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://easyfit-fictious-gym-byfanny.netlify.app/
