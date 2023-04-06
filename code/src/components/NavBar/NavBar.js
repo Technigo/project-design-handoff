@@ -33,13 +33,15 @@ const LiElements = styled.li`
     display: block;
     padding: 10px;
     color: var(--neutral-dark);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
     text-decoration: none;
-    font-weight: bold;
     text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid var(--neutral-dark);
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+      text-decoration: underline 3px var(--primary-color-4);
     }
   }
 `;
@@ -71,10 +73,11 @@ const MenuIcon = styled(FaBars)`
 
 const MenuNav = styled.div`
   @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
     position: fixed;
-    top: 60px;
     right: 0;
-    width: 35%;
+    width: 40%;
     min-height: 60vh;
     overflow: hidden;
     background-color: var(--neutral-light);
@@ -93,11 +96,16 @@ export const NavBar = ({ navOne, navTwo, navThree, navFour, navFive }) => {
         setIsOpen(false);
       }
     };
+    const handleScroll = () => {
+      setIsOpen(false);
+    };
 
     document.addEventListener('mousedown', handleOutsideClick);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [isOpen]);
 

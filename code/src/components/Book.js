@@ -15,11 +15,13 @@ const BookH2 = styled.h2`
 
 const BookSelect = styled.select`
   background-color: var(--primary-color-1);
+  color: var(--neutral-dark);
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 24px;
-  padding: 13px 61px 13px 46px;
+  padding: 13px 40px 13px 40px;
   border: solid black 1px;
+  text-align: center;
 `;
 
 const BookCard = styled.div`
@@ -56,8 +58,10 @@ export const Book = () => {
   return (
     <BookSection className="book">
       <BookH2>BOOK A WORKOUT TODAY</BookH2>
-      <BookSelect type="select" name="book-city">
+      <BookSelect name="book-city">
         <option value="malmo">MALMÖ</option>
+        <option value="stockholm">STOCKHOLM</option>
+        <option value="goteborg">GÖTEBORG</option>
       </BookSelect>
       <BookCard>
         <BookCardImg src={`${process.env.PUBLIC_URL}/assets/pexels-karolina-grabowska-4379000.png`} alt="couple working out outside" />
