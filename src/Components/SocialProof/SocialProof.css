@@ -13,3 +13,11 @@
     color: #95A6B5;
     padding-bottom: 35px;
 }
+    
+@media (min-width: 668px) {
+    .buttons-container {
+        display: flex;
+        align-items: left; 
+    }
+}
+

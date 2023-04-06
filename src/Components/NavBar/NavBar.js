@@ -18,11 +18,10 @@ export const NavBar = () => {
         <div className="menu-button" />
       </label>
       <ul className="menu">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-        <li>Four</li>
-        <li>Five</li>
+        <li>GIFT CARDS</li>
+        <li>PROMO CODES</li>
+        <li>ABOUT US</li>
+        <li>CONTACT US</li>
       </ul>
     </section>
   )

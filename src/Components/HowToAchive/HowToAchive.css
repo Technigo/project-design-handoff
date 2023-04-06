@@ -8,8 +8,10 @@
     flex-direction: column;
 } 
 
-.how-to-achive-container h1 {
-    justify-content: left;
+.title {
+    align-items:  left;
+    display: flex;
+    flex-direction: column;
 } 
 
 .phone-picture {

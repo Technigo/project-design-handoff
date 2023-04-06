@@ -7,13 +7,13 @@ import { StartButton } from 'Components/StartButton/StartButton';
 
 // /////////////// COMPONENT //////////////////////// //
 
-const BoldBigItalic = styled.h2`
+export const BoldBigItalic = styled.h2`
 font-size: 1.8rem;
 font-weight: bold;
 font-style: italic;
 color: white;
 `
-const SmallNarrowItalic = styled.h2`
+export const SmallNarrowItalic = styled.h2`
 font-size: 1.1rem;
 font-weight: narrow;
 font-style: italic;
@@ -23,10 +23,10 @@ color: white;
 export const HowToAchive = () => {
   return (
     <div className="how-to-achive-container">
-      <h2 className="title">
+      <h1 className="title">
         <SmallNarrowItalic>WORKOUT WHERE</SmallNarrowItalic>
         <BoldBigItalic>YOU ARE</BoldBigItalic>
-      </h2>
+      </h1>
       <div className="how-to-achive-picture">
         <img className="phone-picture" src="./Pictures/image116.svg" alt="phonepicture" />
       </div>

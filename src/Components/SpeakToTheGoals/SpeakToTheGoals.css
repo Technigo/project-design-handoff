@@ -9,6 +9,9 @@
     font-size: 15px;
     font-weight: 800;
     font-style: italic;
+    display: flex;
+    justify-content: right;
+    margin-right: 15px;
 }
 
 .speak-to-the-goals-container h1{
@@ -20,14 +23,11 @@
    font-style: italic;
 }
 
-.slider {
-    width: 280px;
-    height: 300px;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
 .speak-to-the-goals-button-container {
     display: flex;
     justify-content: center;
+}
+
+.speak-to-the-goals-title {
+    padding: 20px;
 }

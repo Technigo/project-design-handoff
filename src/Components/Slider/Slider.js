@@ -1,23 +1,44 @@
+/* eslint-disable no-useless-escape */
+/* eslint-disable indent */
 import React from 'react';
-import Slider from 'react-slick';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import './Slider.css';
 
-export const SliderApp = ({ images }) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
-
-  return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <Slider {...settings}>
-      {images.map((image) => (
-        <div key={image.id}>
-          <img src={image.url} alt={image.alt} />
-        </div>
-      ))}
-    </Slider>
-  );
+const Slider = () => {
+    return (
+        <Slide>
+            <div className="each-slide-effect">
+                <div className="sliderImg">
+                    <img src="./Pictures/CardActiveWalks.svg" alt="CardActiveWalks" />
+                </div>
+            </div>
+            <div className="each-slide-effect">
+                <div>
+                    <img src="./Pictures/CardBalance.svg" alt="CardActiveWalks" />
+                </div>
+            </div>
+            <div className="each-slide-effect">
+                <div>
+                    <img src="./Pictures/CardBallGames.svg" alt="CardActiveWalks" />
+                </div>
+            </div>
+            <div className="each-slide-effect">
+                <div>
+                    <img src="./Pictures/CardRun.svg" alt="CardActiveWalks" />
+                </div>
+            </div>
+            <div className="each-slide-effect">
+                <div>
+                    <img src="./Pictures/CardSwim.svg" alt="CardActiveWalks" />
+                </div>
+            </div>
+            <div className="each-slide-effect">
+                <div>
+                    <img src="./Pictures/CardYoga.svg" alt="CardActiveWalks" />
+                </div>
+            </div>
+        </Slide>
+    );
 };
+export default Slider;
