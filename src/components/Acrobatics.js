@@ -44,7 +44,7 @@ export const Acrobatics = () => {
           slacklining and diving
         </p>
       </div>
-      <div>
+      <div className="Carousel">
         <Carousel slides={CarouselData} />
       </div>
 

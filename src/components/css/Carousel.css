@@ -13,19 +13,13 @@
 	border-color: pink 5px;
 }
 
-.right-arrow{
-	position: absolute;
-	top: 50%;
-	right: 32px;
-	font-size: 3rem;
-	color: aqua;
+.rightBtn{
+background-color: white;
+border: none;
 }
-.left-arrow{
-	position: absolute;
-	top: 50%;
-	left: 32px;
-	font-size: 3rem;
-	color: aqua;
+.leftBtn{
+background-color: white;
+border: none;
 }
 
 .slide {
