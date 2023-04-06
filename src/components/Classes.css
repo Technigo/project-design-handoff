@@ -4,7 +4,7 @@
     background-color: #9AD4D6;
     position: relative;
     overflow: hidden;
-    padding-bottom: 500px; /* change the padding for media queries. maybe make the component above also move down*/
+    padding-bottom: 600px; /* change the padding for media queries. maybe make the component above also move down*/
 }
 
 .ribbonOnBarreImage {
@@ -69,4 +69,28 @@ p {
 
 .classesWrapper .ourClassesButton {
     display: none;
+}
+
+@media (min-width: 450px) and (max-width: 666px) {
+
+    .BarreBasicImage {
+        position: relative;
+        margin-top: 30px;
+}
+
+.classesWrapper {
+    padding-bottom: 500px;
+}
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+.BarreBasicImage {
+    position: relative;
+    margin-top: 50px;
+}
+
+.classesWrapper {
+    padding-bottom: 300px;
+}
 }

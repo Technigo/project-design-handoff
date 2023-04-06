@@ -3,6 +3,7 @@ import Header from 'components/Header.js';
 import Hero from 'components/Hero.js';
 import Classes from 'components/Classes.js';
 import Quiz from 'components/Quiz.js';
+import FinalSection from 'components/FinalSection.js';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       <Hero />
       <Classes />
       <Quiz />
+      <FinalSection />
     </div>
   )
 }

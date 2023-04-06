@@ -1,0 +1,41 @@
+.finalSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.testimonalsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 32px;
+    background-color: #9AD4D6;
+}
+
+.testimonialsTitle {
+    margin-bottom: 32px;
+}
+
+.topRegister {
+    background-color: #F2FDFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+}
+
+.registerText {
+    color: #252525;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.accountText {
+    color: #252525;
+    font-size: 12px;
+    margin-top: 16px;
+}
