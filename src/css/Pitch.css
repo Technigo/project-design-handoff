@@ -35,19 +35,40 @@
   color: #FBEDDE; 
 }
 
-.pitch-card h3 {
+.pitchtextbox {
   font-family: 'Poppins';
+}
+
+.pitch-card h3 {
   font-size: 32px; 
   font-weight: 700; 
   margin: 30px 0px 0px;; 
 }
 
 .pitch-card p {
-  font-family: 'Poppins';
   font-size: 26px; 
   font-weight: 400; 
   text-decoration:underline; 
   margin:0; 
+}
+
+.readmore {
+  display: flex; 
+  flex-direction: column;
+  align-items:center; 
+  margin-bottom: 40px; 
+  color: #FBEDDE; 
+  font-family: 'Poppins';
+  font-size: 16px; 
+  font-weight:500;
+
+}
+
+
+.readmore img{
+  width: 30px; 
+
+
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
@@ -55,8 +76,13 @@
     gap: 50px;   }
   
   .pitch-card {
-    justify-content: center; 
     width: 55%;  
+  }
+
+  .pitchtextbox {
+    text-align: center;
+    margin: 0px; 
+
   }
 
   .pitch-title {
@@ -65,7 +91,7 @@
   }
 
   .pitch-card img {
-    width: 505px; 
+    max-width: 505px; 
     height: 380px;
     object-fit: cover; 
     overflow:hidden; 

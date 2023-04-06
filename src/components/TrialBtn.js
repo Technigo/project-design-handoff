@@ -10,7 +10,7 @@ export const StyledTrialBtn = styled.button`
   font-size: 24px; 
   font-weight: 600; 
   border: none;
-  margin-bottom:20px; 
+  margin-bottom:60px; 
 
   @media (min-width:667px) and (max-width:1024px){
     width: 334px; 

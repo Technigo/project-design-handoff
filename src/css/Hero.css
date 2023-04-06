@@ -13,7 +13,7 @@ flex-direction: column;
 align-content: center;
 width: 100%; 
 object-fit: cover;
-margin-bottom: 100px; 
+margin: 100px 0px; 
 }
 
 .hero-text-and-button h4 {
@@ -22,7 +22,8 @@ margin-bottom: 100px;
   font-weight: 700; 
   font-size: 32px; 
   align-self: center; 
-  color: #FBEDDE; 
+  color: #FBEDDE;
+  line-height: 45px;  
 
 }
 
@@ -34,6 +35,9 @@ margin-bottom: 100px;
   font-size: 96px; 
   color: #FBEDDE; 
   align-self: center; 
+  line-height: 102px; 
+  margin-top: 157px; 
+  margin-bottom:0px; 
 
 }
 /* 
