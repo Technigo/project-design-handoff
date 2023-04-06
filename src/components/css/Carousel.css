@@ -1,5 +1,11 @@
+.carousel-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
 .slider{
-	position: relative;
+
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -11,11 +17,7 @@
 	width: 100%;
 transform: skew(-20deg);
 }
-.carousel-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .rightBtn{
 	order: 3;
@@ -41,4 +43,12 @@ order: 1;
 	object-fit: cover; /* Resize the image to cover the container while maintaining aspect ratio */
   }
   
-  
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+ {
+.carousel-container .slider{
+	display: none;
+	
+}
+ }

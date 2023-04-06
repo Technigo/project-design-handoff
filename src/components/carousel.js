@@ -38,21 +38,28 @@ const Carousel = ({ slides }) => {
   }
 
   return (
-    <div className="carousel-container">
-      <button className="leftBtn" type="button" onClick={prevSlide}>
-        <img src={arrowLeft} className="arrowLeft" alt="arrow Left" />
-      </button>
-      <section
-        className="slider"
-        ref={sliderRef}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}>
-        <img key={current} src={CarouselData[current].image} alt="rings" className="image" />
-      </section>
-      <button className="rightBtn" type="button" onClick={nextSlide}>
-        <img src={arrowRight} className="arrowRight" alt="arrow right" />
-      </button>
-    </div>
+    <>
+      <div className="carousel-container">
+        <button className="leftBtn" type="button" onClick={prevSlide}>
+          <img src={arrowLeft} className="arrowLeft" alt="arrow Left" />
+        </button>
+        <section
+          className="slider"
+          ref={sliderRef}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}>
+          <img key={current} src={CarouselData[current].image} alt="rings" className="image" />
+        </section>
+        <button className="rightBtn" type="button" onClick={nextSlide}>
+          <img src={arrowRight} className="arrowRight" alt="arrow right" />
+        </button>
+      </div>
+      <div>
+        <button className="BookaClass" type="button">
+      Book a class
+        </button>
+      </div>
+    </>
   );
 };
 

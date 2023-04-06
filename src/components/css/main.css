@@ -4,7 +4,7 @@ p {
   font-family: 'Kulim Park', sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+
   .hero-image {
 	background-image: url('./womanstart.png');
 background-size: cover;
@@ -90,7 +90,7 @@ background-size: cover;
 	background-color: #000;
 	color: #fff;
   }
-}
+
 
 /*Tablet*/
 @media only screen 
