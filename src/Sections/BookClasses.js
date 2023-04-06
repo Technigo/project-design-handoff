@@ -18,7 +18,6 @@ const AcrobaticsContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  border:solid red;
   
 `;
 const AcrobaticsButton = styled.img`

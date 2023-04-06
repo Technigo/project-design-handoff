@@ -1,0 +1,102 @@
+import React from 'react';
+import styled from 'styled-components';
+
+const HamburgerButton = styled.button`
+    
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #0962CF;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    span {
+        height: 4px;
+        background-color: #FFFFFF;
+        position: relative;
+        width: 38px;
+        margin: auto;
+        display: block;
+        border-radius: 15px;
+    }
+    span::before, span::after {
+        content: "";
+        height: 4px;
+        width: 38px;
+        background-color: #FFFFFF;
+        position: absolute;
+        display: block;
+        border-radius: 15px;
+    }
+    span::after {
+        top: calc(100% - 14px);
+    }
+    span::before {
+        top: 10px;
+    }
+    .active {
+        position:absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) rotate(45deg);
+    }
+    .active::before, .active::after {
+        position:absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) rotate(270deg);
+    }
+    @media (min-width: 1025px) {
+        display: none
+}
+`
+const MenuBackground = styled.div`
+    display: ${(props) => (props.isOpen ? 'block' : 'none')};
+    width: 66vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: tomato;
+    opacity: 85%;
+    height: 100vw;
+    @media (min-width: 1025px) {
+        width: auto;
+        height: auto;
+}
+`
+const StyledNav = styled.nav`
+    display: flex;
+    margin: 90px auto auto 45px;
+    flex-direction: column;
+    @media (min-width: 1025px) {
+        width: auto;
+        padding: 35px 60px;
+        flex-direction: row;
+        height: auto;
+        margin: 0;
+}
+`
+const Menu = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+
+  //   const toggleMenu = () => {
+  //     setIsOpen(!isOpen);
+  //   };
+  return (
+    <MenuBackground>
+      <HamburgerButton type="button">
+        <span />
+      </HamburgerButton>
+      <StyledNav>
+        <a>Link 1</a>
+        <a>Link 1</a>
+        <a>Link 1</a>
+        <a>Link 1</a>
+        <a>Link 1</a>
+      </StyledNav>
+    </MenuBackground>
+  )
+}
+
+export default Menu;
