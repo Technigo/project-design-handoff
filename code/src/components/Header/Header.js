@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 import logo from '../../assets/logos/Vector.png';
 import logoMedium from '../../assets/logos/Vector-medium.png';
@@ -12,6 +13,7 @@ const Header = () => {
   const isMobile = screenSize <= 640;
   const isDesktop = screenSize >= 1025;
   const [isHovering, setIsHovering] = useState(false);
+  // const [isClicked, setIsClicked] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -21,7 +23,16 @@ const Header = () => {
     setIsHovering(false);
   };
 
-  console.log(handleMouseLeave);
+  /*
+  const handleSearchSlide = () => {
+    if (setIsClicked) {
+      setIsClicked(true);
+    }
+    else {
+      setIsClicked(false);
+    }
+  }
+  */
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -29,7 +40,7 @@ const Header = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const iconClass = `search ${!isHovering ? 'hidden' : ''}`;
+  const iconClass = `searchicon ${!isHovering ? 'hidden' : ''}`;
 
   return (
     <>
@@ -53,8 +64,11 @@ const Header = () => {
             <p>Contact</p>
           </div>
           <div className="searchfield" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img src={searchicon} alt="search" className={iconClass} />
-            <p className="search-text">Search</p>
+            <button type="button">
+              <img src={searchicon} alt="search" className={iconClass} />
+              {/* <input className="searchInputBar" type="text" name="" placeholder="Searchbar" /> */}
+              <p className="search-text">Search</p>
+            </button>
           </div>
         </div>
       )}

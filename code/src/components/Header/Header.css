@@ -14,7 +14,7 @@
 
   .menu-text {
     display: flex;
-    gap: 80px;
+    gap: 2rem;
   }
 
   .menu-text p {
@@ -35,20 +35,62 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
 
-  .searchfield .search {
+  .searchfield button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: none;
+  }
+
+  .searchfield .searchicon {
     background-color: white;
     border-radius: 50%;
     height: 48px;
     padding: 8px;
+    z-index: 1;
   }
 
   .hidden {
     visibility: hidden;
   }
+
+  .searchInputBar {
+    position: relative;
+    padding-left: 20px;
+    right: 25px;
+    height: 48px;
+    border-radius: 16px;
+    border: none;
+    width: 0;
+    visibility: hidden;
+    transition: width 0.3s ease-in-out;
+  }
   
+  .searchfield button:focus-within .searchInputBar {
+    width: 200px;
+    visibility: visible;
+    transition: width 0.3s ease-in-out;
+  }
+
+  /*
+  .searchfield:focus-within .search-text {
+    display: none;
+    transition: width 0.3s ease-in-out;
+  }
+  */
+
+  .searchicon:focus-within {
+    visibility: visible;
+  }
   
   @media (min-width: 641px) {
     .Header {

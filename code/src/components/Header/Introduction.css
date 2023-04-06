@@ -10,11 +10,28 @@
     width: 60%;
     position: relative;
     top: 0;
+    z-index: 3;
+  }
+
+  /*
+  .intro-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border: 2px solid rgb(158, 158, 235);
+    margin: 45% 16px;
+    width: 60%;
+    position: relative;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 3;
   }
+  */
   
   .mainbutton {
     color: var(--main-dark-color);
