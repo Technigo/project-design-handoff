@@ -2,26 +2,26 @@ import React from 'react'
 
 const Selection = () => {
   return (
-    <div className="all-classes">
+    <div className="allClasses">
       <div>
-        <h1>tiiiitle</h1>
+        <h2>Barre Basic</h2>
         <p>kfshkjfsk</p>
-        <button type="button">read me</button>
+        <button type="button">Read More</button>
       </div>
       <div>
-        <h1>tiiiitle</h1>
+        <h2>Barre Strong</h2>
         <p>kfshkjfsk</p>
-        <button type="button">read me</button>
+        <button type="button">Read More</button>
       </div>
       <div>
-        <h1>tiiiitle</h1>
+        <h2>Barre Flex</h2>
         <p>kfshkjfsk</p>
-        <button type="button">read me </button>
+        <button type="button">Read More </button>
       </div>
       <div>
-        <h1>tiiiitle</h1>
+        <h2>Barre Dance</h2>
         <p>kfshkjfsk</p>
-        <button type="button">read me</button>
+        <button type="button">Read More</button>
       </div>
     </div>
   )

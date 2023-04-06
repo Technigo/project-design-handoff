@@ -3,11 +3,15 @@ import React from 'react'
 const Overview = () => {
   return (
     <div className="overview">
-      <div className="background">
+      <div className="overviewContainer">
+        <div className="imageOverlay" />
+        <img className="shape" src="../assets/ShapeLightBlue.svg" alt="Decorative element" />
+        <img className="overviewImage" src="../assets/RibbonsOnBarre.png" alt="Ribbons on barre" />
         <div>
-          <h1>hello h1</h1>
-          <p>med lite text</p>
-          <button type="button">I belong in desktop and tables:D</button>
+          <h2>Come Sweat It Out at the Barre</h2>
+          <p>Our Barre Classes are full-body workouts where we’ll pulse, plié, and sweat our way</p>
+          <p>through a series of exercises. No dance experience required!</p>
+          <button type="button" className="tabletDesktopBtn">Our Classes</button>
         </div>
       </div>
     </div>

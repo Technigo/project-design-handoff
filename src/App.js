@@ -1,18 +1,24 @@
-import React from 'react'
-import Header from './components/Header'
-import Intro from './components/Intro'
-import Overview from './components/Overview'
-import Selection from './components/Selection'
+import React from 'react';
+import Header from 'components/Header.js';
+import Intro from 'components/Intro.js';
+import Overview from 'components/Overview.js';
+import Selection from 'components/Selection.js';
+import Quiz from 'components/Quiz.js';
+import Reviews from 'components/Reviews.js';
+import Form from 'components/Form.js';
+import Footer from 'components/Footer.js';
 
-const App = () => {
+export const App = () => {
   return (
-    <div>
+    <div className="landingPage">
       <Header />
       <Intro />
       <Overview />
       <Selection />
+      <Quiz />
+      <Reviews />
+      <Form />
+      <Footer />
     </div>
   )
 }
-export default App
-
