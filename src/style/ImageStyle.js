@@ -9,10 +9,3 @@ export const Image = styled.img`
     display: block;
     margin: 0 auto;
 `
-
-export const BgImg = styled.Card`
-    margin-bottom: 16px;
-    repeat: no-repeat;
-    overflow: hidden;
-    width: 100vw;
-`

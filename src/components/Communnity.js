@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { SubmitButton } from 'style/ButtonsStyle';
 import { FlexColumn } from 'style/Flex';
 import { Error } from 'style/FormStyle';
-import { H3, TagLine, H5, BodyText, Link } from 'style/Texts';
+import { H3, TagLine, H5, BodyText } from 'style/Texts';
 import '../style/form.css'
 import { Card } from './Cards';
 
@@ -59,7 +59,6 @@ export const Form = () => {
       <a href='https://www.google.com/webhp?hl=sv&sa=X&ved=0ahUKEwiK8t7U7pT-AhUBSfEDHbflAIIQPAgI'>Login</a>
      </BodyText>
     </FlexColumn>
-
     </>
   );
 }

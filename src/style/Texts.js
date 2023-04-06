@@ -42,9 +42,6 @@ export const H4 = styled.h4`
     line-height: 100%;
     letter-spacing: -0.022em;
     color: ${({ color }) => color};
-    display: flex;
-    margin-left: 32px;
-    width: 80%;
 `
 
 export const H5 = styled.h5`

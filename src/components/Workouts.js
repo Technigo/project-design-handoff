@@ -23,7 +23,7 @@ export const Workout = () => {
         headline="AB workouts"
         text="For at home or the gym" />
       <CardTextSmall
-        color="##CAD7BA"
+        color="#CAD7BA"
         headline="Cardio workouts"
         text="And so much more..." />
     </FlexColumnCenter>
