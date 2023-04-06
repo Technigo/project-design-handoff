@@ -231,37 +231,30 @@ padding: 24px 24px 40px 24px;
   }
 
 
-  
-  /* Target the yogi-card element */
-  .yogis-carousel-slider .yogi-card {
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: -25%;
-    margin-left: -25%;
-    background-color: #02393F;
-    
+  .carousel {
+    width: 100%;
+    margin: 0 auto;
   }
   
-  .yogi-card img {
-    max-width: 20%;
-    height: 227px;
-    width: 352px;
-    object-fit: cover;
- 
+  .carousel .slick-slide {
+    margin: 0 20px;
   }
   
-  .yogi-card p {
-    max-width: 20%;
-    height: auto;
+  .carousel .slick-center {
+    margin: 0;
   }
+  
+ .yogi-card img {
+  height: 227px;
+  width: 352px;
+  object-fit: cover;
+ }
 
-  
-
+.yogi-card {
+  margin: 28px;
 }
 
+}
 /*Desktop*/
 @media only screen and (min-width: 1440px) {
 

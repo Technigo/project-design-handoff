@@ -1,16 +1,18 @@
 import React from 'react';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const YogisCarousel = () => {
   return (
     <main>
-      <AwesomeSlider
-        className="yogis-carousel-slider"
-        infinite
-        itemsToShow={1.5}
-        organicArrows={false}
-        bullets={false}>
+      <Carousel
+        infiniteLoop
+        showStatus={false}
+        showThumbs={false}
+        showArrows
+        centerMode
+        centerSlidePercentage={50}
+        showIndicators={false}>
         <div className="yogi-card">
           <img src="./images/pexels-cottonbro-studio-4056535 - Edited.png" alt="yoga woman" />
           <p>“This program has really helped me to be more grounded in the present moment.
@@ -44,7 +46,30 @@ const YogisCarousel = () => {
           -Laura, Vienna
           </p>
         </div>
-      </AwesomeSlider>
+        <div className="yogi-card">
+          <img src="./images/pexels-cottonbro-studio-4056535 - Edited.png" alt="yoga woman" />
+          <p>“This program has really helped me to be more grounded in the present moment.
+          I used to envy my dog, who always would finds joy in the little things and be
+          very present with what is. He truly is my meditation master!”
+          </p>
+          <p>
+          -Laura, Vienna
+          </p>
+        </div>
+        <div className="yogi-card">
+          <img src="./images/laura-vienna.png" alt="woman eating" />
+          <p>“I used to have a very troubled relationship with food...
+          I would constantly crave something sweet and I have NEVER enjoyed cooking.
+          I tried out this program because it combines nutrition with   mindfulness.
+          The meal plan is catered/personalized to your own lifestyle and habits,
+          and I was surprised how easy (and tasty) the recipes are. I feel so much
+          more energized, focused and I no longer eat sweets all the time!”
+          </p>
+          <p>
+          -Laura, Vienna
+          </p>
+        </div>
+      </Carousel>
     </main>
   );
 }
