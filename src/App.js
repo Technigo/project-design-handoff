@@ -3,7 +3,9 @@ import { Testimonials } from 'components/Testimonials';
 import { Header } from './components/Header';
 import { Benefits } from './components/Benefits';
 import { CTAsection } from './components/CTAsection';
-import { Carousel } from './components/Videoslider';
+import { Onlineyoga } from './components/Onlineyoga';
+import { Nutrition } from './components/Nutrition';
+import { Pricingplan } from './components/Pricingplan';
 
 export const App = () => {
   return (
@@ -13,7 +15,10 @@ export const App = () => {
       <CTAsection />
       <Testimonials />
       <CTAsection />
-      <Carousel />
+      <Onlineyoga />
+      <CTAsection />
+      <Nutrition />
+      <Pricingplan />
     </div>
   )
 }
