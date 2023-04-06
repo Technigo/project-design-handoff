@@ -59,8 +59,12 @@
 
   .videoCard {
     grid-row: 2 / span 2;
-    height: 635px;
+    height: 690px;
     margin-right: 20px;
+  }
+
+  .mediumCard {
+    height: 480px;
   }
 
   .smallCardWrapper {
