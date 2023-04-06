@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LoadingPage = () => {
+const LoadingPageText = () => {
   return (
     <section className="loading-page-wrapper">
       <div className="text-wrapper">
@@ -15,4 +15,4 @@ const LoadingPage = () => {
   )
 }
 
-export default LoadingPage;
+export default LoadingPageText;
