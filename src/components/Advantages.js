@@ -7,13 +7,13 @@ const Advantages = () => {
     <div className="advantages-container">
       <div className="coach">
         <h3>Personal Coach support and flexibility of Online Training</h3>
-        <h4>Your Personal Coach</h4>
+        <div className="sub">Your Personal Coach</div>
         <ul className="custom-list">
           <li>Monitor your progression and technique </li>
           <li>Keeps you accountable and motivated</li>
         </ul>
 
-        <h4>Online Workout</h4>
+        <div className="sub">Online Workout</div>
         <ul className="custom-list">
           <li>Save time and resources </li>
           <li>Fit the sessions into your schedule</li>
@@ -31,7 +31,7 @@ const Advantages = () => {
               personal needs
           </li>
         </ul>
-        <h4>Diet plan</h4>
+        <div className="sub">Diet plan</div>
         <ul className="custom-list">
           <li>We offer different healthy diets</li>
           <li>Diet plans are customised according to your health conditions and background </li>

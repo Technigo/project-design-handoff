@@ -19,7 +19,7 @@
   padding-left: 1.5em;
   background-image: url('/public/img/list-ball.png');
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left;
 }
 
 .advantages-container h3 {
@@ -31,14 +31,22 @@
   color: #03092E;
 }
 
-.advantages-container h4 {
+.sub {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
   font-size: 15px;
+  line-height: 34px;
+  display: flex;
+  color: #03092E;
+  
 }
 
 .advantages-container li {
   font-size: 15px;
   line-height: 25px;
   font-weight: 500;
+
 }
  .food-img {
   position: absolute;
