@@ -1,0 +1,45 @@
+import React from 'react';
+import AwesomeSlider from 'react-awesome-slider';
+import '../cardbox.css';
+
+const cardboxes = [
+  {
+    id: 1,
+    text: 'Fill the simple form',
+    logo: '/images/list.png'
+  },
+  {
+    id: 2,
+    text: 'Get matched with a certified coach',
+    logo: 'path to logo'
+  },
+  {
+    id: 3,
+    text: 'Enjoy your journey',
+    logo: 'path to logo'
+  }
+];
+
+const CarouselSection = ({ text, logo }) => (
+  <div className="carousel-section">
+    <img src={logo} alt="Logo" style={{ width: '50px' }} />
+    <p>{text}</p>
+  </div>
+);
+
+const Section = () => {
+  const renderSlide = ({ text, logo }) => <CarouselSection text={text} logo={logo} />;
+
+  return (
+    <div className="section">
+      <AwesomeSlider>
+        {cardboxes.map((cardbox) => (
+          <div key={cardbox.id}>{renderSlide(cardbox)}</div>
+        ))}
+      </AwesomeSlider>
+    </div>
+  );
+};
+
+export default Section;
+
