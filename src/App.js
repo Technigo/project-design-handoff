@@ -1,6 +1,6 @@
 import React from 'react'
 import { GlobalStyle } from 'style/Texts'
-import { Form } from 'components/Communnity'
+import { Community } from 'components/Communnity'
 import { Benefits } from 'components/Benefits'
 import { Container } from 'style/Container'
 import { Workout } from 'components/Workouts'
@@ -16,7 +16,7 @@ export const App = () => {
         <Benefits />
         <Workout />
         <Activity />
-        <Form />
+        <Community />
       </Container>
     </>
 

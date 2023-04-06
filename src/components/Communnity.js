@@ -7,7 +7,7 @@ import { H3, TagLine, H5, BodyText } from 'style/Texts';
 import '../style/form.css'
 import { Card } from './Cards';
 
-export const Form = () => {
+export const Community = () => {
   const {
     register,
     handleSubmit,

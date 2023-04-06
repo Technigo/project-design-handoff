@@ -3,26 +3,26 @@ import styled from 'styled-components';
 import { BodyText, H1, H4 } from 'style/Texts';
 
 const BgImg = styled.div`
-    margin-bottom: 16px;
+    margin: 16px;
     repeat: no-repeat;
     overflow: hidden;
-    width: 100vw;
+    width: 90vw;
+    height: 100vh;
     border-radius: 30px;
     object-fit: cover;
-    height: 100vh;
     border: none;
     display: block;
     position: relative;
     `
 
 const BgColor = styled.div`
-    margin-bottom: 16px;
+    margin: 16px;
     repeat: no-repeat;
     overflow: hidden;
+    height: 100%;
+    width: 80vw;
     border-radius: 30px;
     object-fit: cover;
-    height: 100%;
-    width: 80%;
     padding: 32px;
     border: none;
     display: block;
