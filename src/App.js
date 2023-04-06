@@ -11,34 +11,24 @@ import Popup from "components/Popup";
 import Footer from "components/Footer";
 
 export const App = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  console.log(isPopupOpen);
+  const [isShowing, setIsShowing] = useState(false);
+  console.log(isShowing);
 
   return (
     <div>
       <GlobalStyle />
       <Header />
-      <Popup />
       <Benefits />
-      <CTA alone>Start your 7-day FREE trial</CTA>
-      <CTA test onClick={() => setIsPopupOpen(true)}>
-        Start your 7-day FREE trial
+      <CTA onClick={() => setIsShowing(true)}>Start your 7-day FREE trial
       </CTA>
       <Testimonials />
-      <CTA alone>Start your 7-day FREE trial</CTA>
+      <CTA>Start your 7-day FREE trial</CTA>
       <OnlineYoga />
       <CTA alone>Start your 7-day FREE trial</CTA>
       <Nutrition />
       <Pricing />
+      {isShowing && <Popup setIsShowing={setIsShowing} />}
       <Footer />
-      {isPopupOpen && (
-        <Popup
-          close={() => {
-            setIsPopupOpen(false);
-            console.log("blur");
-          }}
-        />
-      )}
     </div>
   );
 };

@@ -2,10 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import { Trial } from "./Trial";
 
+const Overlay = styled.div`
+position: fixed;
+height: 100vh;
+width: 100vw;
+z-index: 0;
+top: 0;
+background-color: rgba(0, 0, 0, 0.2);
+`
+
 const StyledPopup = styled.div`
-position: relative;
-margin: auto;
-width: 90%;
+position: fixed;
+left: 50%;
+overflow-x: hidden;
+overflow-y: auto;
 background: #F5F5F5;
 box-shadow: 0px 0px 113px 775px rgba(0, 0, 0, 0.45);
 border-radius: 12px;
@@ -75,27 +85,31 @@ padding: 12px 20px;
 color: #02393F;
 `
 
-const Popup = () => {
+const Popup = ({ setIsShowing }) => {
   return (
-    <StyledPopup>
-      <ExitIcon src="/icons/exitbtn.svg" alt =""/>
-      <HeaderWrapper>
-        <StyledHeader>Register here</StyledHeader>
-      </HeaderWrapper>
-      <StyledForm>
-        <StyledInput type="text" placeholder="First Name" />
-        <StyledInput type="text" placeholder="Last Name" />
-        <StyledInput type="text" placeholder="Email Adress" />
-        <StyledInput type="text" placeholder="Password" />
-      </StyledForm>
-      <StyledButtonWrapper>
-        <SignUpBtn>Login</SignUpBtn>
-        <SignUpBtn>Sign up</SignUpBtn>
-      </StyledButtonWrapper>
-      <Trial />
-    </StyledPopup>
-    
-  );
-};
+    <Overlay onClick={() => setIsShowing(false)}>
+      <StyledPopup>
+        <ExitIcon 
+          src="/icons/exitbtn.svg" 
+          alt ="" 
+          onClick={() => setIsShowing(false)}/>
+        <HeaderWrapper>
+          <StyledHeader>Register here</StyledHeader>
+        </HeaderWrapper>
+        <StyledForm>
+          <StyledInput type="text" placeholder="First Name" />
+          <StyledInput type="text" placeholder="Last Name" />
+          <StyledInput type="text" placeholder="Email Adress" />
+          <StyledInput type="text" placeholder="Password" />
+        </StyledForm>
+        <StyledButtonWrapper>
+          <SignUpBtn>Login</SignUpBtn>
+          <SignUpBtn>Sign up</SignUpBtn>
+        </StyledButtonWrapper>
+        <Trial />
+      </StyledPopup>
+    </Overlay>
+  )
+}
 
 export default Popup;

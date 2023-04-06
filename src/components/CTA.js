@@ -16,7 +16,6 @@ export const CTA = styled.button`
         background-color: #AC7816;
     }
 
-
 ${props => props.choose && css`
     width: unset;
     background: #D0C4B8;
