@@ -25,24 +25,6 @@
     gap: 10px;
 }
 
-.beginner-img {
-    background-image: url(../assets//images/Beginner.png);
-    position: absolute;
-    width: 350px;
-    height: 277px;
-    left: calc(50% - 354px/2 + 2px);
-    top: calc(50% - 277.77px/2 - 0.12px);
-}
-
-/* .intermediate-img {
-    background-image: url(../assets//images/Intermediate.png);
-    position: absolute;
-    width: 350px;
-    height: 277px;
-    left: calc(50% - 354px/2 + 2px);
-    top: calc(50% - 277.77px/2 - 0.12px);
-} */
-
 @media (min-width: 641px) {
     .classes {
         flex-direction: column;
