@@ -1,5 +1,7 @@
 import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+
 import '../cardbox.css';
 
 const cardboxes = [
@@ -11,12 +13,12 @@ const cardboxes = [
   {
     id: 2,
     text: 'Get matched with a certified coach',
-    logo: 'path to logo'
+    logo: '/images/users.png'
   },
   {
     id: 3,
     text: 'Enjoy your journey',
-    logo: 'path to logo'
+    logo: '/images/yoga-pose.png'
   }
 ];
 
