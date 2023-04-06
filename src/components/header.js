@@ -1,23 +1,21 @@
 import React from 'react';
-
 import Logo from './images/Vector.svg'
-
+import Mobile from './Mobile';
+import Navigation from './Navigation';
 import './css/header.css'
+import Classes from './css/classes.module.css'
 
 export const Header = () => {
   return (
     <div className="header-container">
       <img src={Logo} alt="Logo" className="logo" />
-      <div className="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a className="active" href="#about">About</a></li>
-        </ul>
+      <div>
+        <nav className={Classes.NavBar}>
+          <Mobile />
+          <Navigation />
+        </nav>
       </div>
     </div>
   );
 }
 
-// A header section with a logotype and navigation

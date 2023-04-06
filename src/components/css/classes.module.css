@@ -1,0 +1,19 @@
+/*navbar*/
+.NavBar nav ul li{
+	display: inline-block;
+	margin: 1.5w;
+}
+
+.NavBar nav ul li a {
+	text-decoration: none;
+	color: white;
+
+}
+
+.NavBar a:hover {
+	border-bottom: 5px solid pink;
+}
+
+.NavBar .Mobile{
+	display:none;
+}

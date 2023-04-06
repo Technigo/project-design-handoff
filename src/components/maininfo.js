@@ -10,11 +10,13 @@ export const Hero = () => {
         <div className="hero-container">
           <p className="goBeyond">GO</p>
           <p className="goBeyond1">BEYOND</p>
-          <p className="goBeyond2">THE</p>
-          <p className="goBeyond3">LIMITS</p>
-
+          <div>
+            <p className="goBeyond2">THE</p>
+            <p className="goBeyond3">LIMITS</p>
+          </div>
         </div>
       </div>
+
       <div className="hero-paragraph">
         <p>
             Physical activity is vital for the body. Learn how to master

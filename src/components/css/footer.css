@@ -1,3 +1,26 @@
 .footer-container{
-	background-color: grey;
+	
+	background-color: #42403C;;
+}
+.footLogo{
+	display: grid;
+	grid-template-columns: 1fr;
+margin: 45px;
+	
+	justify-content: center;
+	justify-items: center;
+}
+.contact{
+	color: white;
+}
+
+.soMe{
+	display: flex;
+	justify-content: space-between;
+	margin: 100px;
+}
+
+.sponsor{
+	display: grid;
+
 }

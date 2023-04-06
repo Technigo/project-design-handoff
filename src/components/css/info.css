@@ -1,40 +1,79 @@
+@media only screen and (max-width: 768px) {
+
 .acrobatics-container{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #E1E5E8;
+
 }
 
 .title{
 	color: white;
 	padding-left: 20px;
+	background-color: blue;
 }
 
   .image-container {
 	position: relative;
-	margin-top: 10px;
-	margin-right: 10px;
+	
   }
   
-  .man {
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-	top: 0;
-	left: 70%;
+.man {
+width: 100%;
+top: 0;
+right: 0%;
   }
   
- 
   
   .acrobatics {
 	text-align: left;
 	margin-left: 0;
+	
   }
   
   .title {
 	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 10px;
+	
+  }
+
+  .stripe1{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	height: 2px;
+  }
+  .stripe2{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	height: 2px;
+	
+		
+  }
+  .stripe3{
+
+	position: absolute;
+	top: -20%;
+	right: 0;
+	height: 2px;
+  }
+  .stripe4{
+position: absolute;
+	height: 2px;
+	top: 50%;
+	right: 0%;
+	z-index: -1;
+  }
+  .Vector1, .Vector2, .Vector3, .Vector4 {
+	width: 50%;
+	height: auto; /* maintain aspect ratio */
+  }
+
+  .upp{
+	width: 100%;
   }
   
+}
