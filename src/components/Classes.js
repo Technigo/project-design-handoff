@@ -1,7 +1,11 @@
 import React from 'react';
 import './Classes.css';
+import BarreBasicCardMobile from '../assets/BarreBasicCardMobile.svg';
+import BarreBasicCardTabletDesktop from '../assets/BarreBasicCardTabletDesktop.svg';
 
-const Classes = () => {
+const Classes = ({ screenSize }) => {
+  const imgUrl = screenSize < 667 ? BarreBasicCardMobile : BarreBasicCardTabletDesktop;
+
   return (
     <div className="classesWrapper">
       <img className="ribbonOnBarreImage" src="../images/PictureFrameHalfPill.svg" alt="Ribbon on barre" />
@@ -15,6 +19,7 @@ const Classes = () => {
           </p>
           <p className="boldText">No dance experience required!</p>
           <button type="button" className="ourClassesButton">Our Classes</button>
+          <img className="BarreBasicImage" src={imgUrl} alt="Basic barre class" />
         </div>
       </div>
     </div>

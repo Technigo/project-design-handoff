@@ -3,7 +3,8 @@
     flex-direction: column;
     background-color: #9AD4D6;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
+    padding-bottom: 500px; /* change the padding for media queries. maybe make the component above also move down*/
 }
 
 .ribbonOnBarreImage {

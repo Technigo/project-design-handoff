@@ -2,6 +2,7 @@ import React from 'react';
 import Header from 'components/Header.js';
 import Hero from 'components/Hero.js';
 import Classes from 'components/Classes.js';
+import Quiz from 'components/Quiz.js';
 
 export const App = () => {
   return (
@@ -9,6 +10,7 @@ export const App = () => {
       <Header />
       <Hero />
       <Classes />
+      <Quiz />
     </div>
   )
 }

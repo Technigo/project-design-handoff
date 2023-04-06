@@ -47,7 +47,7 @@ body {
     margin-right: 20px;
   }
   
-  @media (min-width: 667px) and (max-width: 1023px) {
+  @media (min-width: 667px) and (max-width: 1024px) {
   
     .signUpButton {
       background-color: #FFD9BF;
@@ -71,7 +71,7 @@ body {
   
   }
   
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
   
     .signUpButton {
       background-color: #FFD9BF;
