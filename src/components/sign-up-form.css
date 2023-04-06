@@ -2,21 +2,20 @@
   /* sign-up form rules   - starts here  */ 
 
   .sign-up-form {
-    top: 880px;
-    position: relative;
+    margin-top: -8px;
     font-family: sora;
-    font-size: 18px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    background-color: #333366;
-    padding: 3em 0 3em 0;
-    --bs-gutter-x: 1.6rem;
-    --bs-gutter-y: 0;
-    padding-right: calc(var(--bs-gutter-x)*5);
-    padding-left: calc(var(--bs-gutter-x)*5);
-    width: 100%;
-    color: #ffcccc;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  background-color: #333366;
+  padding: 3em 0 3em 0;
+  --bs-gutter-x: 1.6rem;
+  --bs-gutter-y: 0;
+  padding-right: calc(var(--bs-gutter-x)*5);
+  padding-left: calc(var(--bs-gutter-x)*5);
+  width: 100%;
+  color: #ffcccc;
   }
 
 
