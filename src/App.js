@@ -2,6 +2,8 @@ import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 import { Header } from 'components/Header'
 import { Intro } from 'components/Intro'
+import { Classes } from 'components/Classes'
+import { SignUp } from 'components/SignUp'
 
 export const App = () => {
   return (
@@ -9,6 +11,8 @@ export const App = () => {
       <GlobalStyle />
       <Header />
       <Intro />
+      <Classes />
+      <SignUp />
     </div>
   )
 }

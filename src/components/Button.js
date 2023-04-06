@@ -28,11 +28,20 @@ height: 48px;
 p {
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1,5rem;
   line-height: 29px;
 } 
 
 @media (min-width: 570px) {
-  width: 30%;
+  width: 40%;
+}
+`
+export const CardButton = styled(IntroButton)`
+background-color: #4E80D5;
+color: #FFFFFF;
+width: 58%;
+
+p {
+  font-size: 1rem;
 }
 `
