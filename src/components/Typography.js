@@ -1,64 +1,53 @@
 import styled from 'styled-components'
 
-// Desktop typography
-export const HeadLine1 = styled.h1`
-font-size: 64px;
+export const HeadLine = styled.h1`
+font-size: 24px;
 font-weight: 500;
-line-height: 96px;
+line-height: 36px;
 letter-spacing: 1px;
-`
-export const SubHeadLine1 = styled.h2`
-font-size: 32px;
-font-weight: 500;
-line-height: 48px;
-letter-spacing: 1px;
-`
-export const Title1 = styled.h3`
-font-size: 40px;
-font-weight: 400;
-line-height: 60px;
-letter-spacing: 1px;
-`
 
-// Tablet typography
-export const HeadLine2 = styled.h1`
-font-size: 40px;
-font-weight: 500;
-line-height: 60px;
-letter-spacing: 1px;
+@media (min-width:641px) and (max-width: 1024px){
+  font-size: 40px;
+  line-height: 60px;
+}
+
+@media (min-width:1025px){
+font-size: 64px;
+line-height: 96px;
+}
 `
-export const SubHeadLine2 = styled.h2`
-font-size: 24px;
-font-weight: 500;
-line-height: 36px;
-letter-spacing: 1px;
-`
-export const Title2 = styled.h3`
-font-size: 32px;
-font-weight: 400;
-line-height: 48px;
-letter-spacing: 1px;
-`
-// Mobile typography
-export const HeadLine3 = styled.h1`
-font-size: 24px;
-font-weight: 500;
-line-height: 36px;
-letter-spacing: 1px;
-`
-export const SubHeadLine3 = styled.h2`
+export const SubHeadLine = styled.h2`
 font-size: 16px;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: 1px;
+
+@media (min-width:691px) and (max-width: 1024px){
+font-size: 24px;
+line-height: 36px;
+}
+
+@media (min-width:1025px){
+font-size: 32px;
+line-height: 48px;
+}
 `
-export const Title3 = styled.h3`
+export const Title = styled.h3`
 font-size: 24px;
 font-weight: 400;
 line-height: 36px;
 letter-spacing: 1px;
-`
 
+@media (min-width:691px) and (max-width: 1024px){
+font-size: 32px;
+line-height: 48px;
+}
+
+@media (min-width:1025px){
+font-size: 40px;
+line-height: 60px;
+}
+`
 // Body texts
 export const P20 = styled.p`
 font-size: 20px;

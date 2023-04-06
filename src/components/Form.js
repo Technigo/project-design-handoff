@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { P12 } from './Typography'
+import { P12, P20 } from './Typography'
 
 const StyledForm = styled.div`
 color: #524858;
@@ -11,13 +11,14 @@ font-size: 12px;
 font-weight: 400;
 line-height: 18px;
 letter-spacing: 1px;
-width: 100vw;
-padding: 32px 0px 16px 0px;
+padding: 32px 16px;
+background-color: #D7C3E2;
+gap: 32px;
+align-items: center;
 
 form {
   display: flex;
   flex-direction: column;
-  padding: 0px 16px;
 
 }
 input, select {
@@ -25,7 +26,7 @@ input, select {
   color: #524858;
   border: 1px solid #7B6C83;
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 8px;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -56,6 +57,9 @@ input {
 export const Form = () => {
   return (
     <StyledForm>
+      <P20>
+        Form for sign up
+      </P20>
       <form>
         Name
         <input type="text" placeholder="First Lastname" />

@@ -3,7 +3,6 @@ import { HeroSite } from 'components/HeroSite'
 import { WhyArial } from 'components/WhyArial'
 import { OurClasses } from 'components/OurClasses'
 import { createGlobalStyle } from 'styled-components'
-import { WhiteDiv } from 'components/WhiteDiv'
 import { FormSite } from 'components/FormSite'
 import { Footer } from 'components/Footer'
 
@@ -14,7 +13,6 @@ export const App = () => {
       <HeroSite />
       <WhyArial />
       <OurClasses />
-      <WhiteDiv />
       <FormSite />
       <Footer />
     </div>

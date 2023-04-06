@@ -30,6 +30,7 @@ ul {
   align-self: stretch;
   justify-content: space-between;
   list-style-type: none;
+  gap: 56px;
 
 }
 li{
@@ -61,6 +62,10 @@ container .icon3{
 container .icon4{
   width: 38.54px;
   height:31.37px;
+  }
+
+  @media (min-width:641px) and (max-width:1024px) {
+    height: 328px;
   }
 
 `

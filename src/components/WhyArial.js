@@ -1,27 +1,41 @@
 import React from 'react'
-import { Title3, P14 } from 'components/Typography'
+import { Title, P14 } from 'components/Typography'
 import styled from 'styled-components'
 
 const StyledWhyArial = styled.section`
 display:flex;
 flex-direction: column;
 justify-content: center;
-align-items:center;
+align-items: center;
 height: 577px;
-`
-const TextArea = styled.div`
+
+@media (min-width:641px) and (max-width:1024px) {
+  height: 602px;
+}
+
+.textArea {
 height: 377px;
 width: 312px;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+gap: 32px;
+
+@media (min-width:641px) and (max-width:1024px) {
+  width: 577px;
+}
 `
+
+// @media (min-width:641px) and (max-width:1024px) {
+//   height: 234px;
+//   width: 577px;
+// }
+
 export const WhyArial = () => {
   return (
     <StyledWhyArial>
-      <TextArea>
-        <Title3>Why Aerial silks?</Title3>
+      <div className="textArea">
+        <Title>Why Aerial silks?</Title>
         <P14>
           Aerial silks is a graceful and effective form of
           exercise that involves performing acrobatic moves
@@ -34,7 +48,7 @@ export const WhyArial = () => {
           you feeling empowered. Why not give aerial silks a try and
           experience the excitement for yourself?
         </P14>
-      </TextArea>
+      </div>
     </StyledWhyArial>
   )
 }

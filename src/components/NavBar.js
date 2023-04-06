@@ -24,6 +24,12 @@ const Logo = styled.img`
 width: 96px;
 height: 29px;
 padding-left: 16px;
+
+@media (min-width: 641px) and (max-width: 1024px){
+width: 128px;
+height: 38px;
+padding-left: 32px;
+}
 `
 
 export const NavBar = () => {
