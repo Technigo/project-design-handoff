@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HeroText } from 'components/HeroText';
+import Gallery from 'components/Carousel';
 import acroBtn from '../assets/button-acrobatics.svg';
 import acroImg from '../assets/acrobat.svg';
 import acroBg from '../assets/acrobatics-background.svg';
@@ -56,14 +57,20 @@ const OurClassesButton = styled.img`
   position: relative;
   width: 165px;
   height: 37.24px;
-  top: 58.1%;
+  top: 64%;
 `;
+
+const CarouselContainer = styled.div`
+display:flex;
+position:relative;
+top:69.6%;
+`
 
 export const BookClasses = () => {
   return (
     <AcrobaticsContainer>
       <HeroText />
-      <AcrobaticsButton src={`${acroBtn}`} />
+      <AcrobaticsButton src={acroBtn} />
       <AcrobaticsImage src={`${acroImg}`} />
       <AcrobaticsText>
         Acrobaticsis is the performance of human feats of balance, agility, and
@@ -76,12 +83,16 @@ export const BookClasses = () => {
         of performance, such as aerobatics.
       </AcrobaticsText>
       <OurClassesButton src={`${ourClassesBtn}`} />
+      <CarouselContainer>
+        <Gallery />
+      </CarouselContainer>
       <ButtonHover
         btnOnHover={classesBookBtnHover}
         btn={classesBookBtn}
+        position="relative"
         width="67%"
         left="16.4%"
-        top="280%" />
+        top="94.3%" />
     </AcrobaticsContainer>
   );
 };

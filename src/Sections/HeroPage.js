@@ -40,6 +40,7 @@ export const HeroPage = () => {
       <ButtonHover
         btnOnHover={joinBtnHover}
         btn={joinBtn}
+        position="absolute"
         width="41.2%"
         left="58.7%"
         top="57.3%" />

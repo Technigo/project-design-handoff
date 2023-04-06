@@ -26,8 +26,9 @@ const MemberFormContainer = styled.div`
 
 const MemberStripes = styled.img`
   position: absolute;
-  height: 35%;
-  left:30%;
+  width:232.6px;
+  height: 232.6px;
+  left:35.8%;
 `;
 
 const LogoTitleContainer = styled.div`
@@ -76,6 +77,7 @@ const FormWrapper = styled.form`
   background: rgba(255, 255, 255, 0.9);
   margin-top:32px;
   margin-right:0;
+  margin-bottom:10.5%;
  `;
 
 const FormText = styled.p`
@@ -143,6 +145,7 @@ export const MemberForm = () => {
           <ButtonHover
             btnOnHover={sendBtnHover}
             btn={sendBtn}
+            position="absolute"
             width="20.3%"
             top="85%" />
         </FormWrapper>
