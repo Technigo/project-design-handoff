@@ -40,6 +40,7 @@ const BookCard = styled.div`
 const BookCardImg = styled.img`
   width: 100%;
   height: 50%;
+  object-fit: cover;
 `;
 
 const BookCardH3 = styled.h3`
@@ -64,21 +65,21 @@ export const Book = () => {
         <option value="goteborg">GÖTEBORG</option>
       </BookSelect>
       <BookCard>
-        <BookCardImg src={`${process.env.PUBLIC_URL}/assets/pexels-karolina-grabowska-4379000.png`} alt="couple working out outside" />
+        <BookCardImg src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="2 people running in the sunset" />
         <BookCardH3>MAGISTRATPARKEN</BookCardH3>
-        <BookCardH4>17:30 INTENSE</BookCardH4>
+        <BookCardH4>07.00 MODERATE</BookCardH4>
         <Button cardCta>Book workout</Button>
       </BookCard>
       <BookCard>
-        <BookCardImg src={`${process.env.PUBLIC_URL}/assets/clique-images-hSB2HmJYaTo-unsplash.png`} alt="person running up stairs outside" />
+        <BookCardImg src="https://images.pexels.com/photos/8381747/pexels-photo-8381747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="People running in a group" />
         <BookCardH3>MAGISTRATPARKEN</BookCardH3>
-        <BookCardH4>17:30 INTENSE</BookCardH4>
+        <BookCardH4>12.00 CARDIO</BookCardH4>
         <Button cardCta>Book workout</Button>
       </BookCard>
       <BookCard>
-        <BookCardImg src={`${process.env.PUBLIC_URL}/assets/pexels-kampus-production-8381747.png`} alt="people running outside" />
+        <BookCardImg src="https://images.unsplash.com/photo-1500468756762-a401b6f17b46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="Man running up stairs outside" />
         <BookCardH3>MAGISTRATPARKEN</BookCardH3>
-        <BookCardH4>17:30 INTENSE</BookCardH4>
+        <BookCardH4>17.30 INTENSE</BookCardH4>
         <Button cardCta>Book workout</Button>
       </BookCard>
     </BookSection>
