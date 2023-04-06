@@ -230,19 +230,35 @@ padding: 24px 24px 40px 24px;
     width: 450px;
   }
 
-  .yogi-card {
-    height: 450px; /* Increase the height as needed */
+
+  
+  /* Target the yogi-card element */
+  .yogis-carousel-slider .yogi-card {
+    height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    margin-right: -25%;
+    margin-left: -25%;
+    background-color: #02393F;
+    
   }
   
-  /* Adjust the height of the AwesomeSlider container */
-  .awesome-slider {
-    height: 500px; /* Increase the height as needed */
+  .yogi-card img {
+    max-width: 20%;
+    height: 227px;
+    width: 352px;
+    object-fit: cover;
+ 
   }
+  
+  .yogi-card p {
+    max-width: 20%;
+    height: auto;
+  }
+
+  
 
 }
 
@@ -321,18 +337,7 @@ align-items: center;
 justify-content: center;
  }
 
- .yogi-card {
-  height: 450px; /* Increase the height as needed */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+ 
 
-/* Adjust the height of the AwesomeSlider container */
-.awesome-slider {
-  height: 500px; /* Increase the height as needed */
-}
  
 }
