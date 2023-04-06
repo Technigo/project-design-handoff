@@ -2,11 +2,12 @@
 .advantages-container {
     background-color: rgb(255, 255, 255);
     width: 315px;
-    height: 1600px;
+    height: 1520px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top:32px;
   }
   
 .custom-list {
@@ -41,7 +42,7 @@
 }
  .food-img {
   position: absolute;
-  top: 620px;
+  top: 560px;
   bottom: 0;
   right: 0; 
   z-index: 1; 

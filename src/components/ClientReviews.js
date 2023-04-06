@@ -2,15 +2,46 @@
 import React from 'react';
 import './ClientReviews.css';
 import Slider from 'react-slick';
+
 // eslint-disable-next-line no-useless-escape
+const leftArrow = `${process.env.PUBLIC_URL}/img/client-ar-lef.png`;
+const rightArrow = `${process.env.PUBLIC_URL}/img/client-ar-rig.png`;
+
+const SamplePrevArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <button
+      type="button"
+      className={className}
+      onClick={onClick}
+      style={{ position: 'absolute', top: '105%', left: '50px', zIndex: 1, background: 'transparent', border: 'none' }}>
+      <img src={leftArrow} alt="left-arrow" />
+    </button>
+  );
+}
+
+const SampleNextArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <button
+      type="button"
+      className={className}
+      onClick={onClick}
+      style={{ position: 'absolute', top: '105%', right: '150px', zIndex: 1, background: 'transparent', border: 'none' }}>
+      <img src={rightArrow} alt="right-arrow" />
+    </button>
+  );
+}
 
 const ClientReviews = () => {
   const settings = {
-    dots: true,
+    dots: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false
+    arrows: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
   };
 
   return (

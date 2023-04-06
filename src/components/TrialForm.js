@@ -7,9 +7,9 @@ const TrialForm = () => {
       <div className="color-overlay" />
       <img src={`${process.env.PUBLIC_URL}/img/trial.png`} alt="trial" />
 
-      <div className="trial-padding">
-        <div className="trial-text-h2">
-          <h2 className="title">Book a free trial</h2>
+      <div className="trial-content">
+        <div className="title">
+          <h2><span className="highlighted-text">Book </span>&nbsp;a free trial.</h2>
         </div>
         <div className="trial-text-p3">
           <p3>Tell us about your preferences and we offer
@@ -25,7 +25,9 @@ const TrialForm = () => {
           <div className="checkbox-container">
             <label htmlFor="accept">
               <input type="checkbox" name="accept" id="accept" />
-            I am over 13 and accept the privacy policy, terms of service, and code of conduct
+              <p>I am over 13 and accept the privacy policy, terms of service,
+                 and code of conduct
+              </p>
             </label>
           </div>
 

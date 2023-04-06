@@ -40,7 +40,8 @@ display: flex;
 align-items: center;
 color: #03092E;
 padding: 22px;
-margin-top: 41px;
+margin-top: 33px;
+margin-bottom: 60px;
 }
 
 .slider-container-client{
@@ -50,4 +51,12 @@ margin-top: 41px;
   border-radius: 30px;
   background-color: white;
 }
+
+/*----- hide default arrows ----- */
+
+.slider-container-client .slick-prev:before,
+.slider-container-client .slick-next:before {
+  content: none;
+}
+
 
