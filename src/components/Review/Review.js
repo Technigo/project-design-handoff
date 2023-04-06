@@ -10,16 +10,16 @@ const ComeJoin = styled.div`
   h3 {
     font-size: 30px;
     font-weight: 700;
-    padding: 20px;
+    padding: 20px 20px;
   }
 
   p {
     font-size: 16px;
     font-weight: 500;
     line-height: 130%;
-    padding: 28px;
     align-self: center;
     color: #fff;
+    max-width: 310px;
   }
 `;
 
@@ -28,9 +28,10 @@ const Reviews = styled.div`
   flex-wrap: wrap;
   align-items: center;
   height: 150px;
+  max-width: 330px;
   background-color: #4796A8;
   margin: 25px;
-  padding: 0 20px;
+  padding: 10px 30px;
   border-radius: 13px;
 
   img {
@@ -62,7 +63,9 @@ export const ReviewTemp = () => {
             Become a part of our amazing community!
         </p>
         <Reviews>
-          <h5>Anyone who thinks of joining a class, do it!
+          <h5>Anyone who thinks of joining a class,
+             do it! Its such a great mix of physical
+              exercise and a calm break from the everyday life.
           </h5>
           <img src="/img/adress.png" alt="Profilepicture" />
           <p>Bob M.Great
