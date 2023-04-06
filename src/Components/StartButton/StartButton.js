@@ -19,7 +19,7 @@ font-style: italic;
 
 ${(props) => props.outlined && css`
 background-color: transparent;
-border: 1px solid white;
+border: 2px solid white;
 color: white;
 `}
 
@@ -32,9 +32,17 @@ color: white;
 
 ${(props) => props.outlinedlong && css`
 background-color: transparent;
-border: 1px solid white;
+border: 2px solid white;
 width: 262px;
 height: 35px;
 color: white;
+`}
+
+${(props) => props.outlinedlongFindOut && css`
+background-color: transparent;
+border: 2px solid #95A6B5;
+width: 262px;
+height: 35px;
+color: #95A6B5;
 `}
 `

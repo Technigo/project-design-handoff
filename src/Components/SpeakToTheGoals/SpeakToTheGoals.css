@@ -4,9 +4,16 @@
     height: 500px;
 }
 
+.speak-to-the-goals-container p {
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    font-style: italic;
+}
+
 .speak-to-the-goals-container h1{
    color: white;
-   font-size: 40px;
+   font-size: 30px;
    padding-left: 40px;
    padding-top: 40px;
    font-weight: 800;
@@ -18,4 +25,9 @@
     height: 300px;
     overflow-x: auto;
     white-space: nowrap;
+}
+
+.speak-to-the-goals-button-container {
+    display: flex;
+    justify-content: center;
 }

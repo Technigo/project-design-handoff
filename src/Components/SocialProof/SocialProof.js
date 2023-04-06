@@ -40,7 +40,7 @@ export const SocialProof = () => {
         </p>
       </div>
       <div className="buttons-container">
-        <StartButton outlinedlong>Find out more</StartButton>
+        <StartButton outlinedlongFindOut>Find out more</StartButton>
       </div>
     </div>
   )

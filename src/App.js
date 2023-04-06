@@ -5,6 +5,7 @@ import { Hero } from 'Components/Hero/Hero';
 import { TheBenefits } from 'Components/TheBenefits/TheBenefits';
 import { SpeakToTheGoals } from 'Components/SpeakToTheGoals/SpeakToTheGoals';
 import { HowToAchive } from 'Components/HowToAchive/HowToAchive';
+import { Numbers } from 'Components/Numbers/Numbers';
 import { SocialProof } from 'Components/SocialProof/SocialProof';
 import { Footer } from 'Components/Footer/Footer';
 
@@ -19,6 +20,7 @@ export const App = () => {
       <SpeakToTheGoals />
       <HowToAchive />
       <SocialProof />
+      <Numbers />
       <Footer />
     </div>
   )

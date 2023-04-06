@@ -23,7 +23,7 @@ color: white;
 export const HowToAchive = () => {
   return (
     <div className="how-to-achive-container">
-      <h2>
+      <h2 className="title">
         <SmallNarrowItalic>WORKOUT WHERE</SmallNarrowItalic>
         <BoldBigItalic>YOU ARE</BoldBigItalic>
       </h2>
