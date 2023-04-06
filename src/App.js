@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from 'components/Header/Header';
 import { Classes } from './components/Classes/Classes';
 import { Adress } from './components/Adress';
+import { ReviewTemp } from './components/Review/Review';
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       <main>
         <Classes />
         <Adress />
+        <ReviewTemp />
       </main>
     </>
   );

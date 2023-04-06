@@ -25,15 +25,13 @@ const AdressImg = styled.div`
 export const Adress = () => {
   return (
     <div className="adress-container">
-      <div>
-        <AdressImg>
-          <img src="/img/adress.png" alt="Location" />
-          <p>Find us at:
+      <AdressImg>
+        <img src="/img/adress.png" alt="Location" />
+        <p>Find us at:
             Fridhemsplansgatan No.10
             Stockholm, Sweden
-          </p>
-        </AdressImg>
-      </div>
+        </p>
+      </AdressImg>
     </div>
   )
 }
