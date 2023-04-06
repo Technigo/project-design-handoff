@@ -2,7 +2,7 @@ import React from 'react';
 import { CTA } from './CTA';
 import '../style/hero.css'
 
-const Hero = () => {
+const Header = () => {
   return (
     <header>
       <div className="header-wrapper">
@@ -29,4 +29,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Header

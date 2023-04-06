@@ -75,9 +75,13 @@ export const TestimonialCard = () => {
         return (
           <Card key={testimonial.id}>
             <Img src={testimonial.img} alt={testimonial.alt} />
-            <p>{description}<ReadMoreButton onClick={showFullDescriptionHandler}>
-        ... {showFullDescription ? "Less" : "More"}
-            </ReadMoreButton></p> 
+            <p>{description}
+              {testimonial.text.length > 256 && (
+                <ReadMoreButton onClick={showFullDescriptionHandler}>
+                ... {showFullDescription ? "Less" : "More"}
+                </ReadMoreButton>
+              )}
+            </p> 
             <Name>{testimonial.name}</Name>
           </Card>
         );
