@@ -8,46 +8,39 @@ import jammerImg from '../Assets/Jammer.png';
 import Menu from './HamburgerMenu';
 
 const Headline = styled.h1`
-margin-right: 50px;
+
 h1 {
    font-family: 'Permanent Marker', cursive;
    display: block;
    flex-direction: column;
-   margin-right: 50px;
+   margin-right: auto;
+   margin-left: 20%;
+   font-size: 40px;
 }
 `;
+
+const Headertext = styled.p`
+//add styleing to yellow test section
+//add Headertext in header
+
+`
 
 const JammerImg = styled.img`
 img {
     display: flex;
     width: 30%;
+       margin-right: auto;
+   margin-left: auto;
+    @media (min-width: 1025px) {
+    width: 400px;
+  padding: 5px 50px 5px 50px;
+  margin: 20%;
+    }
 }`
 
 const Logo = styled.img`
-    margin-top: 
-    margin-bottom: 
-    margin-left: 
-`;
-
-/* const Navigation = styled.nav`
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 2;
-    right: 0;
-`;
-
-const NavItem = styled.a`
-  text-decoration: none;
-  color: white;
-  display: flex;
-  margin-bottom: 90%;
-  margin-right: 20%;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`; */
+    margin: 30px;
+    `;
 
 const Header = () => {
   return (

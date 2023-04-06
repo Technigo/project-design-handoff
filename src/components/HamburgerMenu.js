@@ -6,8 +6,9 @@ const HamburgerButton = styled.button`
     border-radius: 5px;
     height: 50px;
     width: 50px;
-    background-color: #0962CF;
+    background-color: black;
     position: absolute;
+    margin-top: 20px;
     top: 16px;
     right: 16px;
     span {
@@ -35,13 +36,13 @@ const HamburgerButton = styled.button`
         top: 10px;
     }
     .active {
-        position:absolute;
+        /* position:absolute; */
        /*  top: 50%;
         right: 50%;
         transform: translate(50%, -50%) rotate(45deg); */
     }
-    .active::before, .active::after {
-        position:absolute;
+ /*    .active::before, .active::after {
+        position:absolute; */
         /* top: 50%;
         right: 50%;
         transform: translate(50%, -50%) rotate(270deg); */
@@ -51,12 +52,10 @@ const HamburgerButton = styled.button`
 }
 `
 const MenuBackground = styled.div`
-    width: 66vw;
     position: absolute;
     top: 0;
+    margin-top: 0%;
     right: 0;
-    background-color: #FFFFFF;
-    opacity: 30%;
     height: 100vw;
     @media (min-width: 1025px) {
         width: auto;
@@ -64,20 +63,20 @@ const MenuBackground = styled.div`
 }
 `
 const Navigation = styled.nav`
-    display: flex;
-    margin: 90px auto auto 45px;
-    flex-direction: column;
+  /*   margin: 90px auto auto 45px; */
+/*     flex-direction: column; */
      display: flex;
     justify-content: flex-end;
-    position: absolute;
-    top: 2;
+    /* position: absolute; */
+    /* top: 2; */
     right: 0;
     @media (min-width: 1025px) {
         width: auto;
         padding: 35px 60px;
         flex-direction: row;
         height: auto;
-        margin: 0;
+        
+        margin-top: 20px;
 }
 `
 const NavItem = styled.a`
@@ -85,11 +84,16 @@ const NavItem = styled.a`
   color: white;
   display: flex;
   margin-bottom: 90%;
-  margin-right: 20%;
+  margin-right: 30%;
+  margin-top: 40px;
+  
 
   &:hover {
     text-decoration: underline;
   }
+      @media (max-width: 1025px) {
+   display: none;
+}
 `;
 const Menu = () => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NavItem = styled.a`
-  margin-left: 60%;
+  margin-left: 80%;
   text-decoration: none;
   color: white;
   display: flex;

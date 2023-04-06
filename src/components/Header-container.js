@@ -4,7 +4,8 @@ import herobackground from '../Assets/herobackground.jpg';
 
 const HeaderContainer = styled.header`
 width: 100%;
-padding-left: 50px;
+
+
 display: block;
   justify-content: space-between;
   align-items: center;
@@ -13,9 +14,9 @@ overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
     @media (min-width: 1025px) {
-    width: 100vw;
  padding: 10vw;
  display: flex;
+ width: 100%;
 }
 `;
 export default HeaderContainer;
