@@ -165,6 +165,10 @@ padding: 24px 24px 40px 24px;
   font-weight: 400;
 }
 
+.carousel {
+  display: none;
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
 
@@ -330,7 +334,9 @@ align-items: center;
 justify-content: center;
  }
 
- 
+ .carousel {
+  display: none;
+}
 
  
 }
