@@ -71,7 +71,7 @@ li {
 const Navbar = () => {
   return (
     <Nav>
-      <Logo src="..//images/Logo.png" alt="logo" />
+      <Logo src="../images/Logo.png" alt="logo" />
       <StyledList>
         <li>Home</li>
         <li>About</li>
@@ -80,8 +80,8 @@ const Navbar = () => {
         <li>Membership</li>
       </StyledList>
       <NavContainer>
-        <Search src="..//images/search.svg" alt="looking glass" />
-        <Hamburger src="..//images/Hamburger Menu.svg" alt="hamburger menu icon" />
+        <Search src="../images/search.svg" alt="looking glass" />
+        <Hamburger src="../images/Hamburger Menu.svg" alt="hamburger menu icon" />
       </NavContainer>
     </Nav>
   )
