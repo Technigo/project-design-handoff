@@ -1,6 +1,7 @@
 .nav-bar {
   display: flex; 
   position: sticky; 
+  top:0; 
 }
 
 .nav-container {
