@@ -18,9 +18,10 @@ export const App = () => {
     <div>
       <GlobalStyle />
       <Header />
+      <Popup />
       <Benefits />
       <CTA alone>Start your 7-day FREE trial</CTA>
-      <CTA test onClick={() => setIsPopupOpen(!isPopupOpen)}>
+      <CTA test onClick={() => setIsPopupOpen(true)}>
         Start your 7-day FREE trial
       </CTA>
       <Testimonials />
