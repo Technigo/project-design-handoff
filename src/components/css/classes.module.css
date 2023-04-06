@@ -25,7 +25,16 @@
 
 	.NavBar .MobileNavigation{
 		display: flex;
+		align-items: center;
 		background-color: red;
 
 	}
+
+	.NavBar .MobileNavigation .Hamburger {
+		position: absolute;
+		right: 5%;
+		cursor: pointer;
+	}
+
+
 }
