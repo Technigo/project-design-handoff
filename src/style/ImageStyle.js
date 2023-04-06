@@ -9,3 +9,10 @@ export const Image = styled.img`
     display: block;
     margin: 0 auto;
 `
+
+export const ImageSmall = styled.img`
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        height: 100%;
+`
