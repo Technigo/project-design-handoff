@@ -1,24 +1,31 @@
 import React from 'react';
+import {
+  HeroContainer,
+  HeroMainText,
+  ButtonsContainer
+} from './Hero/Hero.style';
+import { StartButton } from './StartButton';
 
 export const Hero = () => {
   return (
-    <div className="main-content-container">
-      <div className="main-text">
+    <HeroContainer>
+      {/* <div className="main-content-container"> */}
+      <HeroMainText>
         <p>YOUR</p>
         <p>WORKOUT</p>
         <p>YOUR</p>
         <p>TIME</p>
         <p>TOGETHER</p>
-        <p> Find the activity that suits you and buddy.
+      </HeroMainText>
+      <p> Find the activity that suits you and buddy.
               No matter the amount of time you have
               to spare, we have you covered.
               Get started at your personal level.
-        </p>
-      </div>
-      <div className="buttons-container">
+      </p>
+      <ButtonsContainer>
         <StartButton cta>Get started</StartButton>
         <StartButton outlined>Default</StartButton>
-      </div>
-    </div>
+      </ButtonsContainer>
+    </HeroContainer>
   )
 }

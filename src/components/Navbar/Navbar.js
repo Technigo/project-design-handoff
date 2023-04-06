@@ -3,7 +3,7 @@ import { ReactComponent as LogoImg } from 'assets/logos/logo4+2_fit_main.svg';
 import {
   LeftContainer,
   NavbarContainer,
-  NavbarExtendedContainer,
+  // NavbarExtendedContainer,
   NavbarInnerContainer,
   RightContainer,
   NavbarLinkContainer,
@@ -15,24 +15,19 @@ const Navbar = () => {
     <NavbarContainer>
       <NavbarInnerContainer>
         <LeftContainer>
-          <NavbarLinkContainer>
-            <NavLink to="/"> Home</NavLink>
-            <NavLink to="/"> Activities</NavLink>
-            <NavLink to="/"> Contact</NavLink>
-          </NavbarLinkContainer>
+          <LogoImg height={100} />
         </LeftContainer>
         <RightContainer>
-          <LogoImg height={100} />
+          <NavbarLinkContainer>
+            <NavLink to="/"> GIFT CARDS</NavLink>
+            <NavLink to="/"> JOIN US</NavLink>
+          </NavbarLinkContainer>
         </RightContainer>
       </NavbarInnerContainer>
-      <NavbarExtendedContainer />
-      {/* OUTCOMMENTED FOR NOW
-      <NavbarExtendedContainer>
-      </NavbarExtendedContainer> */}
-      <ul>
-        <li>Hello</li>
-        <li>You</li>
-      </ul>
+      {/* <NavbarExtendedContainer>
+        { /* OUTCOMMENTED FOR NOW
+      <NavbarExtendedContainer> */}
+      {/* </NavbarExtendedContainer> */}
     </NavbarContainer>
   )
 }
