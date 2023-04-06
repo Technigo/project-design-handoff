@@ -5,8 +5,10 @@ import { Button } from './Button';
 
 const StyledHeader = styled.header`
   display: flex;
-  background-image: url(${process.env.PUBLIC_URL}/assets/running-black-white.png);
-  background-position: right; 
+  background-image: url(${process.env.PUBLIC_URL}./assets/woman-running-black-white.png);
+  background-position: center; 
+  background-size: 380%;
+  background-position-x: 63%;
   background-repeat: no-repeat;
   height: 100vh;
 `;
