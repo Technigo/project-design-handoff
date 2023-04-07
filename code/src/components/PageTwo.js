@@ -1,25 +1,38 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import Slider from 'react-slick';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import './PageTwo.css';
 import ChecklistIcon from './NamedIcons/ChecklistIcon';
 import TwoHeadsIcon from './NamedIcons/TwoHeadsIcon';
 import StretchingPersonIcon from './NamedIcons/StretchingPersonIcon';
 
 const PageTwo = () => {
-  const settings = {
-    dots: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false
+  const responsiveTwo = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
   };
 
   return (
     <div className="page-two-container">
       <h2>Take easy steps to your desired lifestyle</h2>
       <div className="slide">
-        <Slider {...settings}>
+        <Carousel responsive={responsiveTwo}>
           <div className="pt-cards">
             <ChecklistIcon style={{ marginTop: '10px' }} />
             <h3>Fill the simple form</h3>
@@ -46,7 +59,7 @@ const PageTwo = () => {
             happier and healthier
             </p>
           </div>
-        </Slider>
+        </Carousel>
       </div>
     </div>
   );

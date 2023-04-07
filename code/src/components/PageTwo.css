@@ -1,13 +1,9 @@
 .page-two-container {
     background-color: #D7CBFF;
     width: 100vw;
-    position:relative;
-    overflow: hidden;
+    height: 70vh;
   }
-  .slide{
-    margin-left: 8%;
-    
-  }
+ 
   .page-two-container h2 {
   width: 100vw;
   color: #03092E;
@@ -17,28 +13,28 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   margin-top:0;
-  padding-top:10px;
+  padding-top:15px;
   }
   
-  .easy-steps-container h3 {
-  margin-top: 30px;
-  font-size: 30px;
+  .pt-cards h3 {
+  font-size: 2rem;
   font-weight: 500;
-  color: #03092E;
-  padding-left: 20px;
+  color:#03092E;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top:20px;
+
   } 
   
-  
-  
   .pt-cards {
-    margin-top: 20px;
+    margin: 20px;
     box-shadow: 0px 5px 31px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
     max-width:75vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:15px;
+    flex-direction: column;
+    align-items: left;
+    padding:20px;
     }
 
   .page-two-container p {
@@ -52,30 +48,6 @@
     align-items: left;
     color: #03092E;
     padding: 20px;
+    margin-top:0;
    }
   
-   .slider-container .slick-dots li {
-    margin-right: 60px;
-  }
-  
-  .slick-dots li button:before {
-    content: "";
-    position: absolute;
-    top: 74.5px ;
-    width: 25px; 
-    height: 25px; 
-    background-color: #62CABC; 
-    border-radius: 50%;
-    opacity: 0.8; 
-    border:red solid 2px;
-  }
-  
-  .slider-container .slick-dots li.slick-active button:before {
-    background-color: #082824; 
-    border: green solid 2px;
-  }
-  
-  .slider-container{
-    width: 320px;
-    padding: 20px;
-  }
