@@ -8,19 +8,28 @@ import Coaches from './components/Coaches';
 import FAQ from './components/FAQ';
 import TrialForm from './components/TrialForm';
 import Footer from './components/Footer';
+import HeroImgDesktop from './components/HeroImgDesktop';
+// ...
 
 const App = () => {
   return (
     <div>
       <StickyMenu />
-      <HeroImg />
-      <EasySteps />
-      <Advantages />
-      <ClientReviews />
-      <Coaches />
-      <FAQ />
-      <TrialForm />
-      <Footer />
+      <div className="container">
+        <div className="heroimg-mobile">
+          <HeroImg />
+        </div>
+        <div className="heroimg-desktop">
+          <HeroImgDesktop />
+        </div>
+        <EasySteps />
+        <Advantages />
+        <ClientReviews />
+        <Coaches />
+        <FAQ />
+        <TrialForm />
+        <Footer />
+      </div>
     </div>
   );
 };
