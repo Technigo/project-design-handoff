@@ -38,28 +38,37 @@ const ClassCarousel = () => {
   return (
     <Carousel
       additionalTransfrom={0}
-      arrows
+      arrows={false}
       autoPlaySpeed={30000}
       centerMode={false}
       className=""
       containerClass="container-with-dots"
-      dotListClass=""
+      dotListClass="dot-list"
+      dotStyle={{
+        backgroundColor: 'gray',
+        border: 'none',
+        borderRadius: 0,
+        height: 8,
+        width: 8
+      }}
       draggable
       focusOnSelect={false}
       infinite
       itemClass=""
       keyBoardControl
       minimumTouchDrag={80}
+      customTransition="transform 800ms ease"
+      transitionDuration={1000}
       pauseOnHover
       renderArrowsWhenDisabled={false}
       renderButtonGroupOutside={false}
-      renderDotsOutside={false}
+      renderDotsOutside
       responsive={responsive}
       rewind={false}
       rewindWithAnimation={false}
       rtl={false}
       shouldResetAutoplay
-      showDots={false}
+      showDots
       sliderClass=""
       slidesToSlide={1}
       swipeable>

@@ -7,7 +7,7 @@
 
 .classes-title {
     position: relative;
-    top: 100px;
+    top: 50px;
     text-align: center;
 }
 
@@ -41,6 +41,12 @@
         text-align: center;
     }
 
+    .classes-title {
+        position: relative;
+        top: 100px;
+        text-align: center;
+    }
+
     /*
     .classes-container h3 {
         text-align: right;
@@ -53,6 +59,12 @@
 @media (min-width: 1025px) {
     .classes-section {
         flex-direction: row;
+    }
+
+    .classes-title {
+        position: relative;
+        top: 100px;
+        text-align: center;
     }
 
     .classes-container h3 {
