@@ -18,6 +18,7 @@ const ComeJoin = styled.div`
     font-weight: 500;
     line-height: 130%;
     align-self: center;
+    text-align: center;
     color: #fff;
     max-width: 310px;
   }
