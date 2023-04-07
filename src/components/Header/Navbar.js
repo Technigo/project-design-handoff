@@ -6,10 +6,11 @@ const HamburgerButton = styled.button`
     border-radius: 2px;
     height: 30px;
     width: 30px;
-    background-color: #000;
+    background-color: transparent;
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 20px;
+    z-index: 999;
     span {
         height: 3px;
         background-color: #FFFFFF;
@@ -46,47 +47,60 @@ const HamburgerButton = styled.button`
         right: 50%;
         transform: translate(50%, -50%) rotate(270deg);
     }
-    @media (min-width: 1025px) {
-        display: none
+    @media (min-width: 895px) {
+        display: none;
 }
 `
 const MenuBackground = styled.div`
+    display: ${({ open }) => { return open ? 'block' : 'none' }};
     width: 66vw;
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 0;
     background-color: #000;
-    opacity: 75%;
+    opacity: 85%;
     height: 100vw;
-    @media (min-width: 1025px) {
+    z-index: 1;
+
+    @media (min-width: 895px) {
         width: auto;
         height: auto;
+        background-color: transparent;
 }
 `
 const StyledNav = styled.nav`
     display: flex;
-    margin: 90px auto auto 45px;
+    margin: 70px auto auto 40px;
     flex-direction: column;
-    @media (min-width: 1025px) {
+    color: white;
+
+    a {
+        padding: 18px;
+    }
+    @media (min-width: 895px) {
         width: auto;
-        padding: 35px 60px;
+        padding: 15px 180px;
         flex-direction: row;
+        gap: 5rem;
         height: auto;
         margin: 0;
-}
-`
+    }`;
 export const Menu = () => {
+  const [open, toggleOpen] = useState(false);
+
   return (
-    <MenuBackground>
-      <HamburgerButton type="button">
-        <span className="poooop" />
+    <>
+      <HamburgerButton type="button" onClick={() => toggleOpen(!open)}>
+        <span />
       </HamburgerButton>
-      <StyledNav>
-        <a>Our Gym</a>
-        <a>Workout</a>
-        <a>About us</a>
-        <a>Contact</a>
-      </StyledNav>
-    </MenuBackground>
+      <MenuBackground open={open}>
+        <StyledNav>
+          <a>Our Gym</a>
+          <a>Workout</a>
+          <a>About us</a>
+          <a>Contact</a>
+        </StyledNav>
+      </MenuBackground>
+    </>
   )
 }

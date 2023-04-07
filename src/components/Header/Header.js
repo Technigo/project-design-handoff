@@ -9,6 +9,18 @@ const Logo = styled.div`
     flex-direction: row;
     justify-content: space-between;
     margin: 15px;
+
+    i {
+      font-size: 20px;
+      margin-right: 80px;
+      padding-top: 18px
+    }
+    @media (min-width: 895px) {
+      i {
+      margin-right: 40px;
+      padding-top: 20px
+      }
+    }
 `
 const Navigation = styled.div`
     display: flex;
