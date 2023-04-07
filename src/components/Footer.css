@@ -3,3 +3,7 @@
     background-color: #F2FDFF;
     color: #210440;
 }
+
+.rubberband {
+    border-radius: 80px 0px 0px 80px;
+}

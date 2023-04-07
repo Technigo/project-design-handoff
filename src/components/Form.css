@@ -1,3 +1,39 @@
 .register {
     background-color: #F2FDFF;
+    border-radius: 8px 8px 0px 0px;
 }
+
+.h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #252525;
+}
+
+.login {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form {
+    background-color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.joinBtn2 {
+    background-color: #FFD9BF;
+    color: #210440;
+    border-radius: 30px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    width: 221px;
+    height: 46px;
+    border: none;
+}
+
+/*.name {
+    width: 328px;
+    height: 48px;
+    border-radius: 4px;
+}*/
