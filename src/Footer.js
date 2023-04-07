@@ -13,17 +13,25 @@ width: 32px;
 
 const Footer = () => {
   return (
-    <>
-      <Logo src="/icons/footer-vector.png" />
-      <h>Radiant roots</h>
-      <li>Affiliate links</li>
-      <li>FAQ</li>
-      <li>Terms & Conditions</li>
-      <li>Contact</li>
-      <SocialMediaIcons src="/icons/instagram.png" />
-      <SocialMediaIcons src="/icons/socialicon.png" />
-      <SocialMediaIcons src="/icons/twitter.png" />
-    </>
+    <div className="footer-container">
+      <div className="logo-roots-container">
+        <Logo className="roots-logo" src="/icons/footer-vector.png" />
+        <h1>Radiant roots</h1>
+      </div>
+      <div className="footer-links-container">
+        <ul>
+          <li>Affiliate links</li>
+          <li>FAQ</li>
+          <li>Terms & Conditions</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div className="icons-container">
+        <SocialMediaIcons src="/icons/instagram.png" />
+        <SocialMediaIcons src="/icons/socialicon.png" />
+        <SocialMediaIcons src="/icons/twitter.png" />
+      </div>
+    </div>
   )
 }
 

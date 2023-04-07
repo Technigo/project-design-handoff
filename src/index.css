@@ -280,6 +280,51 @@ border-radius: 12px;
   justify-content: center;
 }
 
+.footer-container {
+  background-color: #02393F;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.logo-roots-container {
+  display: flex;
+  align-items: center;
+
+}
+
+.roots-logo {
+  margin: 24px 24px 24px 0px;
+}
+
+.logo-roots-container h1 {
+color: #D0C4B8;
+font-size: 20px;
+font-family: 'Abril Fatface';
+font-weight: 400;
+}
+
+.footer-links-container {
+margin: 0px 0px 30px -35px;
+
+}
+
+.footer-container li {
+  color: #D0C4B8;
+font-size: 20px;
+font-family: 'Abril Fatface';
+list-style: none;
+font-size: 16px;
+font-weight: 400;
+}
+
+.icons-container {
+ display: flex;
+  gap: 48px;
+}
+
+
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
 

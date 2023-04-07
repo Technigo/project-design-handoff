@@ -13,7 +13,6 @@ height: 40px;
   border-radius: 12px;
   border: 1px solid #02393F;
   box-shadow: none;
-  margin: 0;
 `;
 
 const PricePlanButton = () => {
