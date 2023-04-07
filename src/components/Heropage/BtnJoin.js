@@ -5,10 +5,10 @@ import joinBtn from '../../assets/button-join.svg';
 import joinBtnHover from '../../assets/button-join-hover.svg';
 
 const ButtonImage = styled.img`
-position: absolute;
-width: 41.2%;
-left: 58.7%;
-top: 57.3%;
+position: relative;
+width: 132px;
+top: 49.5%;
+left: 64%;
 `;
 
 export const BtnJoin = () => {

@@ -1,59 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
 import { TopDescription } from './TopDescription'
 import ParkourImgBkgrnd from '../../assets/ParkourImgBkgrnd.svg'
 import { ButWhatBanner } from './ButWhatBanner'
 import { RingAcroArt } from './RingAcroArt'
 import { OurClassesBtn } from './OurClassesBtn'
 import { ClassCarousel } from './ClassCarousel'
-import BookClassBtnImg from '../../assets/BookClassBtn.svg'
-
-const BCPageWrapper = styled.div`
-display: flex;
-flex-direction: column;
-width: 100vw;
-`
-
-const ParkourIMG = styled.img`
-  position: absolute;
-  height: 458vw;
-  opacity: 0.5;
-  left: 50%;
-  transform: translate(-50%, 0%);
-`;
-
-const AcroPromoText = styled.p`
-font-family: 'Kulim Park';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 25px;
-text-align: justify;
-letter-spacing: -0.022em;
-color: #000000;
-padding-left: 23.5px;
-padding-right: 23.5px;
-margin-top: 450px;
-margin-bottom: 0;
-`
-
-const BookClassBtn = styled.button`
-width:241px;
-height:36px;
-background-color: transparent;
-border-style: none;
-background-image: url(${BookClassBtnImg});
-background-size: 100% auto;
-position: relative;
-left: 17%;
-margin-top: 27%;
-margin-bottom: 20%;
-`
+import { BCPageWrapper, ParkourIMG, AcroPromoText, BookClassBtn } from './BookClassPageCSS';
 
 export const BookClassPage = () => {
   return (
     <BCPageWrapper>
-      <div><ParkourIMG src={`${ParkourImgBkgrnd}`} /></div>
+      <div style={{ overflow: 'hidden' }}><ParkourIMG src={`${ParkourImgBkgrnd}`} /></div>
       <TopDescription />
       <ButWhatBanner />
       <RingAcroArt />

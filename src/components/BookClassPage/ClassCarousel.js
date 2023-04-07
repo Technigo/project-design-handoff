@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -17,7 +16,7 @@ import TrampolineIMGhover from '../../assets/Trampolinehover.svg'
 import TumbleIMG from '../../assets/Tumble.svg'
 import TumbleIMGhover from '../../assets/Tumblehover.svg'
 import SingleLogoABlue from '../../assets/SingleLogoABlue.svg'
-import BlueBtnBkgrndImg from '../../assets/BlueBtnBkgrnd.svg'
+import { SliderContainer, LogoLeft, ClassDiv, ClassId, ClassImgContainer, ClassImg, LearnBtn, NameText, LogoRight } from './BookClassPageCSS'
 
 export const ClassCarousel = () => {
   const settings = {
@@ -75,95 +74,6 @@ export const ClassCarousel = () => {
       name: 'Trampoline'
     }
   ]
-
-  const SliderContainer = styled.div`
-  position: relative;
-width: 100vw;;
-height: 322px;
-
-.slick-dots li {
-  margin-right: -5px; /* Increase or decrease the value to adjust the space between dots */
-}
-.slick-dots li button:before {
- color: white; /*changes the color of the dots to white*/
-}`;
-
-  const NameText = styled.p`
-  font-family: 'Kulim Park';
-  font-style: italic;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: -0.022em;
-  color: #000000;
-`
-  const ClassImgContainer = styled.div`
-height: 324px;
-overflow: hidden;
-transform: skew(10deg) rotate(0deg);
-width: 61vw;
-`;
-
-  const ClassImg = styled.img`
-  transform: skew(-12deg) rotate(0deg) translate(-12%, 0%);
-  object-fit: cover;
-  width: 130%;
-`;
-
-  const ClassDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  height: 324px;
-  width: 100vw;
-  `
-
-  const ClassId = styled.div`
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 322px;
-  flex-wrap: wrap;
-    align-content: center;
-    position:relative;
-`
-
-  const LogoLeft = styled.img`
-transform: rotate(270deg);
-width: 7%;
-position: absolute;
-top: 45%;
-z-index: 1;
-`
-
-  const LogoRight = styled.img`
-transform: rotate(90deg);
-width: 7%;
-position: absolute;
-bottom: 45%;
-left: 93%;
-`
-
-  const LearnBtn = styled.button`
-  width: 148.8px;
-  height: 40.49px;
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-  top: 85%;
-  left: 53.85%;
-  background-image: url(${BlueBtnBkgrndImg});
-  color: white;
-  font-family: 'Kulim Park';
-  font-style: italic;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 27px;
-  text-align: justify;
-  padding-left: 12px;
-  `
 
   return (
     <SliderContainer>
