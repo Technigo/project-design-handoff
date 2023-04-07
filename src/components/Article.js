@@ -60,6 +60,17 @@ const Button = styled.button`
   color: #FFFFFF;
   margin-bottom:61px;
 `;
+const ImgBox = styled.div`
+  width: 378.84px;
+  height: 258.8px;
+  border: 0.58px solid #025323;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+`
 const Image = styled.img`
   width: 351.82px;
   height: 234.34px;
@@ -68,6 +79,7 @@ const Image = styled.img`
   border: 6px solid #025323;
   border-radius: 12.5651px;
 `;
+
 export const Article = () => {
   return (
     <>
@@ -77,7 +89,9 @@ export const Article = () => {
           <Paragraf>{article[0].paragraf}</Paragraf>
         </ContentBox>
         <Button type="button">Read more</Button>
-        <Image src={Readme1} alt="readme" />
+        <ImgBox>
+          <Image src={Readme1} alt="readme" />
+        </ImgBox>
       </ArticleContainer1>
 
       <ArticleContainer2>
@@ -86,7 +100,9 @@ export const Article = () => {
           <Paragraf>{article[1].paragraf}</Paragraf>
         </ContentBox>
         <Button type="button">Read more</Button>
-        <Image src={Readme2} alt="readme" />
+        <ImgBox>
+          <Image src={Readme2} alt="readme" />
+        </ImgBox>
       </ArticleContainer2>
     </>
   )
