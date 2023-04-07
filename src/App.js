@@ -4,7 +4,7 @@ import Header from 'components/Header';
 import Hero from 'components/Hero';
 import Join from 'components/Join';
 import Classes from 'components/Classes';
-//import Quiz from 'components/Quiz';
+import Quiz from 'components/Quiz';
 //import Praise from 'components/Praise';
 //import Form from 'components/Form';
 
@@ -15,6 +15,7 @@ export const App = () => {
       <Hero />
       <Join />
       <Classes />
+      <Quiz />
       <Footer />
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react';
-import './Classes.css';
+//import './Classes.css';
+import Slider from 'react-slick';
 
 const Classes = () => {
   return (
@@ -10,15 +11,13 @@ const Classes = () => {
         <p>Our Barre Classes are full-body workouts where we’ll pulse, plié, and sweat our way through a series of exercises.</p>
         <p><strong> No dance experience required!</strong></p>
       </div>
-      <div className="carousel">
-        
+      <div className="carousel-container">
       </div>
     </section>
   );
 }
 
 export default Classes
-
 
 //carousel
 
