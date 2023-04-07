@@ -24,6 +24,18 @@ code {
   background: #210440;
 }
 
+/* TODO: Add white overlay */
+.hero-section {
+  height: 528px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../public/assets/hero-image.jpg");
+  background-size: cover;
+}
+
 .register-form-text {
   background: #f2fdff;
   border-radius: 8px 8px 0px 0px;

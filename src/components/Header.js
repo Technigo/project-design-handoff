@@ -14,11 +14,6 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 margin: auto 16px;
-
-.svg {
-padding: 12px 16px;
-}
-
 `
 
 const Header = () => {

@@ -1,16 +1,21 @@
 import React from 'react'
-import Button from '../components/Button';
+import styled from 'styled-components'
+
+const StyledHeroTitle = styled.h1`
+font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  margin-left: 20px;
+  color: #210440;
+  margin-top: 168px;
+`
 
 const HeroSection = () => {
   return (
     <section className="hero-section">
-      <h1 className="hero-title">Raise the Barre With Us!</h1>
-      <div className="hero-text-container">
-        <p className="hero-text-content">Join our full-body workout inspired
-by Ballet, Pilates, and Yoga.
-        </p>
-        <Button text="Join us!" />
-      </div>
+      <StyledHeroTitle>Raise the Barre With Us!</StyledHeroTitle>
     </section>
 
   )

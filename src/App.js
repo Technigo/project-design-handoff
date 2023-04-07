@@ -1,4 +1,5 @@
 import React from 'react'
+import JoinSection from 'sections/JoinSection'
 import Header from './components/Header'
 import HeroSection from './sections/HeroSection'
 import AboutSection from './sections/AboutSection'
@@ -12,6 +13,7 @@ export const App = () => {
     <div className="app-container">
       <Header />
       <HeroSection />
+      <JoinSection />
       <AboutSection />
       <QuizSection />
       <SocialProofSection />
