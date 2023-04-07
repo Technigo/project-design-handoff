@@ -5,6 +5,7 @@ import { Button } from './Button';
 const BookSection = styled.section`
   background-color: var(--primary-color-1);
   padding: 133px 16px;
+
   @media (min-width: 668px) {
    background-color: var(--neutral-light);
    padding: 0 114px;
@@ -47,6 +48,11 @@ const BookCard = styled.div`
   height: 443px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 40px;
+
+  @media (min-width: 1024px) {
+    max-width: 384px;
+    height: 468px;
+  }
 `;
 
 const BookCardImg = styled.img`
