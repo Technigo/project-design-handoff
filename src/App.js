@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from 'components/NavBar'
+import { Button } from './components/Button'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <Navbar />
+      <h1>Welcoem</h1>
+      <Button> ORDER </Button>
+    </>
+
   )
 }
