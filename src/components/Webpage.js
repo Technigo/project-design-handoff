@@ -22,7 +22,7 @@ const WebPage = () => {
       <Hero
         // heroImage={heroImage}
         title="Becoming a fit parent"
-        subtitle="Say goodbye to Excuses and Hello to Results with Our Online Fitness Program for Busy Parents."
+        subtitle="Say Goodbye to Excuses and Hello to Results with Our Online Fitness Program for Busy Parents."
         buttonText="Start trial"
         onClick={() => console.log('Button clicked!')} />
       <Motivation
@@ -36,7 +36,7 @@ const WebPage = () => {
         img3Title="Push it but with caution"
         img1Subtitle="Read more about our science-backed hacks"
         img2Subtitle="With our science-proofed hacks you will not stay behind"
-        img3Subtitle="Our experienced teat knows everything about Rectus stasis, C-section and..."
+        img3Subtitle="Our experienced team knows everything about Rectus stasis, C-section and..."
         shortText="Choose your program" />
       {/* icon="https://example.com/icon.jpg" */}
       <Program
