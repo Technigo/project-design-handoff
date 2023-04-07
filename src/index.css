@@ -1,5 +1,6 @@
 :root {
   --main-bg-color: #9ad4d6;
+  --secondary-bg-color: #f2fdff;
 }
 
 body {
@@ -19,17 +20,23 @@ code {
   display: grid;
 }
 
-.header-container {
+.quiz-section {
+  background: #210440;
+}
+
+.register-form-text {
+  background: #f2fdff;
+  border-radius: 8px 8px 0px 0px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0px;
 }
 
 .footer-section {
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: var(--secondary-bg-color);
 }
 
 .footer-container {
