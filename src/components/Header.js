@@ -5,54 +5,33 @@ import { TopRightButton, BottomCenterButton, TopLeftLogo } from './Global'
 import heroImage from '../assets/hero.jpg';
 import logo from '../assets/logo.svg';
 import { Nav, NavItem } from './Navbar';
+/* <FontAwesomeIcon icon="fa-sharp fa-regular fa-magnifying-glass" /> */
+/* <FontAwesomeIcon icon="fa-sharp fa-light fa-xmark" /> */
 
 const HeroContainer = styled.div`
   background-image: url(${(props) => props.image});
   background-size: cover;
   background-position: center;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: flex-end; Align items to the bottom */
   object-fit: cover;
   position: relative; /* Add position relative to the container */
   padding-bottom: 4rem; /* Add padding to adjust the spacing */
-  height: 90vh;
+  min-height: 90vh;
 `;
 
-// export const ParentContainer = styled.div`
-// display:flex;
-// align-items: flex-start;
-// position: relative;
-// height: 100%;
-// `;
-
 const TitleContainer = styled.div`
-/* display:flex;
-flex-direction: row;
-justify-content: space-around; */
-/*align-items: center;  Align items vertically */
 position: absolute;
 width: 15%;
-/*padding: 0 2 rem;  Add padding to adjust the spacing */
-/* margin-top: -3rem; */
 margin-left: 6rem;
-/* margin-top: 38rem; */
-margin-top: 55%;
+margin-top: 45%;
 color: #03092E;
 padding-left: 2rem;
-border: solid red 1px;
 `;
 
 const DescriptionContainer = styled.div`
-/* display:flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;  */
 width: 35%;
-/* padding: 0 2 rem; Add padding to adjust the spacing */
-margin-top: 68%;
+margin-top: 55%;
 margin-left: 25rem;
-border: solid blue 1px;
 position: absolute;
 `
 
@@ -74,21 +53,29 @@ margin-top: 0; /* Reset top margin */
 
 const ButtonAndTextContainer = styled.div`
 display: flex;
+width: 100%;
 gap: 20px;
+font-weight: bold;
 `
 const UserText = styled.p`
 font-size: 20px;
-font-weight: bold;
 `;
 
 const TrainerText = styled.p`
 font-size: 20px;
-font-weight: bold;
+flex-grow: 1;
 `;
 
 const ActiveUsers = styled.span`
  display: block;
  font-size: 22px;
+ flex-grow: 1;
+`;
+
+const ActiveTrainers = styled.span`
+ display: block;
+ font-size: 22px;
+ flex-grow: 1;
 `;
 
 const Header = () => {
@@ -119,7 +106,7 @@ const Header = () => {
               <ActiveUsers>1250+</ActiveUsers> active users
             </UserText>
             <TrainerText>
-              <ActiveUsers>50+</ActiveUsers>personal trainers
+              <ActiveTrainers>50+</ActiveTrainers>personal trainers
             </TrainerText>
           </ButtonAndTextContainer>
         </DescriptionContainer>

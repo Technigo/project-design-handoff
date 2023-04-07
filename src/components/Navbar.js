@@ -1,11 +1,8 @@
-/* <FontAwesomeIcon icon="fa-sharp fa-regular fa-magnifying-glass" /> */
-/* <FontAwesomeIcon icon="fa-sharp fa-light fa-xmark" /> */
-
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #03092E;
   color: #fff;

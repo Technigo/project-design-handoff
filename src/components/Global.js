@@ -21,7 +21,8 @@ export const BottomCenterButton = styled(Button)`
 `;
 
 export const Logo = styled.img`
-  width: 15vh;
+  width: 10vh;
+  margin-right: 1rem;
 `;
 
 export const TopLeftLogo = styled(Logo)`
