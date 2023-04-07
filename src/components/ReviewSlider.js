@@ -5,19 +5,52 @@ import styled from 'styled-components';
 import YogaGirlImg from '../images/yoga-girl.jpg'
 import YogaGuyImg from '../images/yoga-guy.jpg'
 import YogaGirl2Img from '../images/yoga-girl-2.jpg'
-import { SmallText } from './Hero';
 
 const SliderContainer = styled.div`
-  padding-top: 24px;
-  width: 320px;
-  height: 232px;
+    max-width: 100vw;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+
 
   .slick-dots li {
     margin-right: -5px; /* Increase or decrease the value to adjust the space between dots */
   }
+
+  .slick-dots {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@media (max-width: 767px) {
+  .slick-dots {
+    bottom: -20px;
+  }
+  
+  .slick-dots li {
+    margin: 0 2px;
+  }
+}
+
  .slick-dots li button:before {
    color: white;
  }
+
+ @media (min-width: 668px){
+  width: 50%;
+ }
+
+@media (min-width: 1024px) {
+  width: 60%;
+}
 
 `;
 
@@ -59,6 +92,8 @@ export const ReviewSlider = () => {
   const ReviewDiv = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #4796A8;
   border-radius: 20px;
   `
@@ -68,7 +103,24 @@ export const ReviewSlider = () => {
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
-  padding: 20px 20px 20px 20px;
+  padding: 5%;
+  `
+  const ReviewText = styled.p`
+  font-size: 1rem; 
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  word-wrap: break-word;
+  line-height: 26px;
+  padding: 5%;
+`
+  const IDText = styled.p`
+ font-size: 1rem; 
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  word-wrap: break-word;
+  line-height: 26px;
   `
 
   return (
@@ -76,10 +128,10 @@ export const ReviewSlider = () => {
       <Slider {...settings} className="slider">
         {reviews.map((review) => (
           <ReviewDiv key={review.id}>
-            <SmallText p20 fw500 h78>{review.text}</SmallText>
+            <ReviewText>{review.text}</ReviewText>
             <ReviewId>
               <ReviewImg src={review.image} alt={review.name} />
-              <SmallText fw500>{review.name}</SmallText>
+              <IDText>{review.name}</IDText>
             </ReviewId>
           </ReviewDiv>
         ))}

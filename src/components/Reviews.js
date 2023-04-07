@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
-import { SmallText } from './Hero';
 import { ReviewSlider } from './ReviewSlider.js';
 
 const ReviewWrapper = styled.div`
@@ -9,12 +8,14 @@ const ReviewWrapper = styled.div`
   display: flex;
   flex-direction: column; 
   align-items: center;
-  height: 100%;
   width: 100%;
-  flex-basis: 50%;
-  flex: 1;
+  gap: 20px;
+  padding: 20px;
 
-`;
+@media (min-width: 1024px) {
+  width: 50%;
+
+}`
 
 const ReviewHeader = styled.h1`
 font-size: 1.5rem;
@@ -23,15 +24,34 @@ text-align: center;
 padding-top: 8px;
 padding-bottom: 16px;
 
+@media (min-width: 1024px) {
+  font-size: 2.5rem;
+
+}
+
+`
+export const ReviewParagraph = styled.p`
+font-size: 1rem; 
+color: white;
+max-width: 60%;
+text-align: center;
+font-weight: 500;
+word-wrap: break-word;
+
+@media (min-width: 1024px) {
+  font-size: 1.5rem;
+  padding-bottom: 30%;
+}
+
 `
 
 export const Reviews = () => {
   return (
     <ReviewWrapper>
       <ReviewHeader>Come join us!</ReviewHeader>
-      <SmallText w310 fw500>
+      <ReviewParagraph fw500>
       Discover all the benefits of Power Yoga and become part of our amazing community!
-      </SmallText>
+      </ReviewParagraph>
       <ReviewSlider />
     </ReviewWrapper>
   )

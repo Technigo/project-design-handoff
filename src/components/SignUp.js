@@ -5,24 +5,32 @@ import { YellowText } from './Classes'
 import { SignUpButton } from './SignUpButton';
 
 const SignUpWrapper = styled.div`
-  background-color: #FFFFFF;
-  border: 4px solid #66A1AE;
-  display: flex; 
+background-color: #ffffff;
+border: 4px solid #66A1AE;
+display: flex; 
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 45px;
-  height: 100vh;
-  width: 100%;
-  padding: 45px 45px 0px 45px;
-  flex-basis: 50%;
-  flex: 1;
-`;
+  padding: 45px 45px;
+
+  @media (min-width: 1024px) {
+  width: 50%;
+
+}`
+
+const SignUpSection = styled.div`
+display: flex;
+flex-direction: column; 
+justify-content: center;
+gap: 8px;
+`
+
 const PersonalInput = styled.input`
 background-color: #FFFFFF;
 border: 2px solid #888585;
 border-radius: 1.25rem;
-width: 285px;
+width: 200px;
 height: 55px;
 display: flex;
 flex-direction: row;
@@ -33,12 +41,7 @@ font-weight: 600;
 font-size: 1rem;
 padding: 0 10px;
 `
-const SignUpSection = styled.div`
-display: flex;
-flex-direction: column; 
-justify-content: center;
-gap: 8px;
-`
+
 const ClassButton = styled.button`
 background-color: #888585;
 color: white;
@@ -53,13 +56,13 @@ display: flex;
 justify-content: center;
 align-items: center; 
 font-family: 'Outfit', sans-serif;
-font-weight: 600;
-`
+font-weight: 600;`
 
 export const SignUp = () => {
   return (
     <SignUpWrapper>
       <Title smallrem black>Sign up for a class</Title>
+
       <SignUpSection>
         <YellowText fw600 lh30>Enter personal details*</YellowText>
         <PersonalInput placeholder="Name" />

@@ -4,25 +4,22 @@ import { Reviews } from './Reviews';
 import { SignUp } from './SignUp';
 
 const ReviewSignUpWrapper = styled.div`
-  display: flex; 
-  align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+
 
   @media (min-width: 1024px) {
-    display: flex; 
-    flex-direction: row;
-    height: auto;
+    flex-direction: row-reverse;
+
   }
 `;
 
 export const ReviewSignUp = () => {
   return (
     <ReviewSignUpWrapper>
-      <Reviews />
       <SignUp />
+      <Reviews />
     </ReviewSignUpWrapper>
   )
 }

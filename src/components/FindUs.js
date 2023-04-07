@@ -14,7 +14,14 @@ font-size: 1;
 font-weight: 500;
 color: #FFFFFF;
 line-height: 20.88px;
-padding: 8px;
+padding: 18px;
+
+@media (min-width: 1024px) {
+  font-size: 1.5rem;
+  line-height: 30px;
+  padding: 30px;
+}
+
 
 `
 
@@ -22,6 +29,12 @@ const Image = styled.img`
   width: 185px; 
   height: 192px;
   object-fit: cover;
+
+  @media (min-width: 1024px) {
+    width: 314px; 
+  height: 326px;
+  object-fit: cover;
+  }
 `;
 
 export const FindUs = () => {
