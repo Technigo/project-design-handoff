@@ -16,7 +16,7 @@ const items = [
 
 const MemberShipContainer = styled.div`
   width: 100vw;
-  height: 700px;
+  height: auto;
   padding-top: 16px;
   display: flex;
   flex-direction: column;
@@ -34,6 +34,7 @@ const SliderItemContainer = styled.div`
   align-items: center;
   border: 2.52369px solid #025323;
   border-radius: 16.8246px;
+  margin-bottom: 46px;
 `;
 
 const Title = styled.h1`
@@ -64,7 +65,12 @@ export const Image = styled.img`
   object-fit: cover;
   border-radius: 16.8246px;
 `;
-
+const Wrapper = styled.div`
+  align-items: left;
+  width: 288.54px;
+  padding-left: 16px;
+  margin-bottom: 25px;
+`
 const Header = styled.h2`
   font-family: 'Libre Franklin';
   font-style: normal;
@@ -132,12 +138,6 @@ const ArrowButtonRight = styled.button`
   top: 60%;
   right: 15px;
 `;
-const Wrapper = styled.div`
-  align-items: left;
-  width: 288.54px;
-  padding-left: 16px;
-  margin-bottom: 25px;
-`
 
 export const Membership = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

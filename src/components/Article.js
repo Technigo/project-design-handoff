@@ -1,13 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-// import Readme1 from '../images/readme1.png';
+import Readme1 from '../images/readme1.png';
 import Readme2 from '../images/readme2.png';
 
-const article = [
-  { header1: 'Inside auto layout', paragraf2: 'helllllllvvvvvlllllll' },
-  { header2: 'Inside auto layout', paragraf2: 'helllllllllllllllllll' }
+export const article = [
+  { header: 'Guide for beginners', paragraf: 'Join our growing community and let us support your well-being. If you are a beginner and do not dare to try yoga because you think you are too stiff and immobile for some of the positions, then you have come to the right place!' },
+  { header: 'Yoga retreat ', paragraf: 'This is not just a yoga retreat, meditation course or wellness trip – it is a complete experience for body and soul. Our concept is designed to, togetherwith yoga and meditation and other exciting spiritual tools, allow you to explore movement, emotions, stillness and above all – yourself.' }
 ]
-const ArticleContainer = styled.div`
+const ArticleContainer1 = styled.div`
+  width: 100vw;
+  height: auto;
+  margin-top:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+`;
+const ArticleContainer2 = styled.div`
+  margin-top:30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,10 +26,27 @@ const ArticleContainer = styled.div`
   background-color: #FFFFFF;
 `;
 const ContentBox = styled.div`
+  padding:
 `;
 const Header = styled.h1`
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #025323;
 `;
 const Paragraf = styled.p`
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.127905px;
+  color: #025323;
+  padding: 0 50px;
 `;
 const Button = styled.button`
   display: flex;
@@ -30,20 +58,36 @@ const Button = styled.button`
   border-radius: 15px;
   text-align: center;
   color: #FFFFFF;
+  margin-bottom:61px;
 `;
-const Image = styled.img`´
+const Image = styled.img`
+  width: 351.82px;
+  height: 234.34px;
+  left: 33.82px;
+  top: 907.13px;
+  border: 6px solid #025323;
+  border-radius: 12.5651px;
 `;
 export const Article = () => {
   return (
-    <ArticleContainer>
+    <>
+      <ArticleContainer1>
+        <ContentBox>
+          <Header>{article[0].header}</Header>
+          <Paragraf>{article[0].paragraf}</Paragraf>
+        </ContentBox>
+        <Button type="button">Read more</Button>
+        <Image src={Readme1} alt="readme" />
+      </ArticleContainer1>
 
-      <ContentBox>
-        <Header>{article.header2}</Header>
-        <Paragraf>{article.paragraf2}</Paragraf>
-      </ContentBox>
-      <Button type="button">Read more</Button>
-      <Image src={Readme2} alt="readme" />
-
-    </ArticleContainer>
+      <ArticleContainer2>
+        <ContentBox>
+          <Header>{article[1].header}</Header>
+          <Paragraf>{article[1].paragraf}</Paragraf>
+        </ContentBox>
+        <Button type="button">Read more</Button>
+        <Image src={Readme2} alt="readme" />
+      </ArticleContainer2>
+    </>
   )
 }
