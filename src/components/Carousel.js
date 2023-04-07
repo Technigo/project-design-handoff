@@ -37,7 +37,7 @@ const Carousel = (props) => {
   }
 
   const handleTouchStart = (e) => {
-    const touchDown = e.touches[0].clientX
+    const touchDown = e.touches ? e.touches[0].clientX : e.clientX
     setTouchPosition(touchDown)
   }
 
@@ -48,7 +48,7 @@ const Carousel = (props) => {
       return
     }
   
-    const currentTouch = e.touches[0].clientX
+    const currentTouch = e.touches ? e.touches[0].clientX : e.clientX
     const diff = touchDown - currentTouch
 
     if (diff > 5) {
