@@ -26,6 +26,17 @@ ${props => props.choose && css`
     border: 0.5px solid #000000;
     border-radius: 12px
 `}
+
+${props => props.chosen && css`
+    width: unset;
+    font-weight: 700;
+    background: #02393F;
+    font-size: 16px;
+    padding: 8px 36px;
+    color: #F5F5F5;
+    border: none;
+    border-radius: 12px
+`}
 `
 
 export default CTA
