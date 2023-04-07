@@ -1,31 +1,62 @@
 import React from 'react';
+import styled from 'styled-components'
 import { CTA } from './CTA';
-import '../style/hero.css'
+
+const StyledHeader = styled.header`
+margin: 1.5rem;
+background-image: url(/public/img/dane-wetton-t1NEMSm1rgI-unsplash.png);
+background-position: center;
+background-size: cover;
+font-weight: 700;
+color: #F5F5F5;
+padding-bottom: 5rem;
+`
+const StyledHeaderWrapper = styled.div`
+margin: 1.5rem;
+`
+
+const StyledLogoWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+const StyledLogo = styled.img`
+width: 64px;
+`
+const StyledBurger = styled.img`
+height: 40px;
+`
+
+const StyledOverlayWrapper = styled.div`
+margin-top: 10rem;
+`
+const StyledH1 = styled.h1`
+font-size: 2rem;
+`
 
 const Header = () => {
   return (
-    <header>
-      <div className="header-wrapper">
-        <div className="logo-hero-wrapper">
-          <img
-            className="logo-hero"
+    <StyledHeader>
+      <StyledHeaderWrapper>
+        <StyledLogoWrapper>
+          <StyledLogo
             src="../icons/logo.svg"
             alt="" />
-          <img
-            className="burger"
+          <StyledBurger
             src="../icons/hamburger.svg"
             alt="" />
-        </div>
-        <div className="hero-overlay">
-          <h1>The health revolution starts with you</h1>
+        </StyledLogoWrapper>
+        <StyledOverlayWrapper>
+          <StyledH1>The health revolution starts with you</StyledH1>
           <p>Access 100+ yoga classes and receive a personalized nutrition
              plan - for holistic health anytime, anywhere.  Achieve optimal health and
              balance through our comprehensive wellness program.
           </p>
           <CTA test>Start your 7-day FREE trial</CTA>
-        </div>
-      </div>
-    </header>
+        </StyledOverlayWrapper>
+      </StyledHeaderWrapper>
+    </StyledHeader>
   )
 }
 
