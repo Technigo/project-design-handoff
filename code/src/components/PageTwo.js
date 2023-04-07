@@ -18,10 +18,10 @@ const PageTwo = () => {
   return (
     <div className="page-two-container">
       <h2>Take easy steps to your desired lifestyle</h2>
-      <div className="page-two-container">
+      <div className="slide">
         <Slider {...settings}>
           <div className="pt-cards">
-            <ChecklistIcon />
+            <ChecklistIcon style={{ marginTop: '10px' }} />
             <h3>Fill the simple form</h3>
             <p>
             Fill the primary questionnaire and we will contact you to know more
