@@ -1,11 +1,18 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable indent */
+// /////////////// IMPORT //////////////////////// //
+
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import './Slider.css';
 
-const Slider = () => {
+// /////////////// COMPONENT //////////////////////// //
+
+// This component returns a picture slider. Each picture has its own div.
+// Its made with the react npm package slideshow-image
+
+export const Slider = () => {
     return (
         <Slide>
             <div className="each-slide-effect">
@@ -41,4 +48,4 @@ const Slider = () => {
         </Slide>
     );
 };
-export default Slider;
+

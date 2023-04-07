@@ -6,6 +6,10 @@ import { StartButton } from 'Components/StartButton/StartButton';
 
 // /////////////// COMPONENT //////////////////////// //
 
+// This code displays a hero section with a main text area and two buttons.
+// The main text area includes a title, a short paragraph, and an image.
+// The two buttons are imported from "StartButton" component, and used with props.
+
 export const Hero = () => {
   return (
     <div className="main-content-container">

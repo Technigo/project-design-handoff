@@ -1,3 +1,5 @@
+/* /////////////// MOBILE //////////////////////// */
+
 .master-number {
     background-color: hsl(0, 0%, 9%);
     display: flex;
@@ -24,6 +26,9 @@
     .blue-box {
         scale: 80%;
     }
+
+/* /////////////// TABLET //////////////////////// */
+
 @Media (min-width: 668px) {
         .blue-box-container {
             flex-direction: column;
@@ -32,13 +37,14 @@
         }
         .numbers-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
         }
         .master-number {
             justify-content: center;
         }
 
-        hr {
+        .line {
             margin: 0px;
+            padding: 0px;
         }
       }

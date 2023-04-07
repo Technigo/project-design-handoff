@@ -5,6 +5,8 @@ import './Grid.css';
 
 // /////////////// COMPONENT //////////////////////// //
 
+// This component returns a grid of images that displays in tablet and desktop view.
+
 export const Grid = () => {
   return (
     <div className="grid-container">

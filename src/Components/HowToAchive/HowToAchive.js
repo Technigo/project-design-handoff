@@ -7,6 +7,12 @@ import { StartButton } from 'Components/StartButton/StartButton';
 
 // /////////////// COMPONENT //////////////////////// //
 
+// This component returns a div that contains a title, an image and some styled text.
+// It also includes a download button created with the imported StartButton component.
+
+// Here are 2 styled-components:
+// BoldBigItalic and SmallNarrowItalic, which are used to create the styled text part.
+
 export const BoldBigItalic = styled.h2`
 font-size: 1.8rem;
 font-weight: bold;

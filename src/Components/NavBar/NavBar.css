@@ -1,3 +1,5 @@
+/* /////////////// MOBILE //////////////////////// */
+
 .logo-picture {
   display: flex;
   scale: 55%;
@@ -78,7 +80,7 @@
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 668px) {
   .menu-button-container {
     display: flex;
   }

@@ -6,9 +6,13 @@ import './SpeakToTheGoals.css'
 import { StartButton } from 'Components/StartButton/StartButton';
 import { Grid } from 'Components/Grid/Grid';
 import { BoldBigItalic, SmallNarrowItalic } from 'Components/HowToAchive/HowToAchive';
-import Slider from 'Components/Slider/Slider';
+import { Slider } from 'Components/Slider/Slider';
 
 // /////////////// COMPONENT //////////////////////// //
+
+// This functional component returns a title, a button, a slider, a grid and some text.
+// It imports the components: "StartButton", "Grid", "Slider", "HowToAchieve"
+// I also import the styled-components: "BoldBigItalic" and "SmallNarrowItalic".
 
 export const SpeakToTheGoals = () => {
   return (

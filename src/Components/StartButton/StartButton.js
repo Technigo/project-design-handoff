@@ -4,6 +4,10 @@ import styled, { css } from 'styled-components';
 
 // /////////////// COMPONENT //////////////////////// //
 
+// Above Im importing styled-components library and css from it.
+// The StartButton is created with different stylings to it. These are the props!
+// The props is: outlined, ctalong, outlinedlong, outlinedlongFindOut and outlinedtablet.
+
 export const StartButton = styled.button`
 background-color: ${(props) => (props.cta ? '#F35408' : '#C94E13')};
 border-radius: 8px 8px;

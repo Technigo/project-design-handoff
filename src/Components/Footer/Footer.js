@@ -6,6 +6,11 @@ import { StartButton } from 'Components/StartButton/StartButton'
 
 // /////////////// COMPONENT //////////////////////// //
 
+// This component returns a div element that contains three child elements.
+// The first child element is a div that contains two "StartButton" components with different props.
+// The second element is a div that contains four anchor elements linking to social media websites.
+// The third child element is libnks to a different pages of the website.
+
 export const Footer = () => {
   return (
     <div className="footer-box">

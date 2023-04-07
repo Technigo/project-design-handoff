@@ -7,6 +7,11 @@ import './NavBar.css';
 
 // /////////////// COMPONENT //////////////////////// //
 
+// This is a simple component that represents a navigation bar.
+// It contains a logo, a menu button, and a menu with two items.
+// There is also an input element with the menu-toggle.
+// The menu div displays the things in the menu.
+
 export const NavBar = () => {
   return (
     <section className="top-nav">

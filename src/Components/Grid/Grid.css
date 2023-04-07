@@ -1,9 +1,13 @@
+/* /////////////// TABLET //////////////////////// */
+
 .grid-container {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
 }
-  
+
+/* /////////////// LAPTOP //////////////////////// */
+
   @media (min-width: 1023px) {
     .grid-container {
         display: grid;
@@ -11,4 +15,3 @@
         grid-template-columns: repeat(3, 1fr);
     }
   }
-  

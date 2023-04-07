@@ -1,3 +1,5 @@
+/* /////////////// MOBILE //////////////////////// */
+
 .socialproof-content-container {
     background-color: #F0EAE1;
     padding: 15%;
@@ -13,7 +15,9 @@
     color: #95A6B5;
     padding-bottom: 35px;
 }
-    
+
+/* /////////////// TABLET //////////////////////// */
+
 @media (min-width: 668px) {
     .buttons-container {
         display: flex;

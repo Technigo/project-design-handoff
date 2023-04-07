@@ -5,6 +5,8 @@ import './Numbers.css';
 
 // /////////////// COMPONENT //////////////////////// //
 
+// This component returns a page with 4 pictures.
+
 export const Numbers = () => {
   return (
     <div className="master-number">
@@ -20,7 +22,9 @@ export const Numbers = () => {
             <img src="./Pictures/Component3.svg" alt="Numbers" />
           </div>
         </div>
-        <hr />
+        <div className="line">
+          <hr />
+        </div>
         <div className="big-box">
           <img src="./Pictures/review.svg" alt="review" />
         </div>

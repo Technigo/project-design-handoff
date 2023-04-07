@@ -7,6 +7,9 @@ import { StartButton } from 'Components/StartButton/StartButton';
 
 // /////////////// COMPONENT //////////////////////// //
 
+// This component returns a page with styled text
+// First we create the 2 different styles of the text with styled-components.
+
 const BoldBigItalic = styled.h1`
 font-size: 1.8rem;
 font-weight: bold;

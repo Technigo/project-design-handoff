@@ -1,3 +1,5 @@
+/* /////////////// MOBILE //////////////////////// */
+
 .main-content-container {
     width: 60%;
     margin: auto;
@@ -48,6 +50,8 @@
     height: 80px
 }
 
+/* /////////////// BIG MOBILE //////////////////////// */
+
 @media (min-width: 370px) {
     .main-content-container {
         height: 40%;
@@ -61,7 +65,9 @@
     height: 100px
 }
 }
-    
+
+/* /////////////// TABLET //////////////////////// */
+
 @media (min-width: 668px) {
     .main-content-container {
         height: 30%;
@@ -77,6 +83,8 @@
     height: 100px
 }
 }
+
+/* /////////////// LAPTOP //////////////////////// */
 
 @media (min-width: 1023px) {
     .main-content-container {

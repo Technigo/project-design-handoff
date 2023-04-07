@@ -1,3 +1,5 @@
+/* /////////////// MOBILE //////////////////////// */
+
 .speak-to-the-goals-container {
     background-color: #181818;
     width: 100%;
@@ -45,6 +47,8 @@
         display: none;
     }
 
+/* /////////////// TABLET //////////////////////// */
+
 @media (min-width: 668px) {
     .slider {
         display: none;
@@ -54,7 +58,7 @@
     }
     .speak-to-the-goals-container {
         background-color: #181818;
-        height: 1400px;
+        height: 900px;
     }
 
     .get-started-button-title {
