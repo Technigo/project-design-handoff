@@ -6,10 +6,10 @@ const BgImg = styled.div`
     margin: 16px;
     repeat: no-repeat;
     overflow: hidden;
-    width: 90vw;
+    width: 100%;
     height: 100vh;
     border-radius: 30px;
-    object-fit: cover;
+    object-fit: fill§1  x;
     border: none;
     position: relative;
     `
