@@ -9,17 +9,24 @@ font-family: "Poppins";
   font-size: 18px;
   line-height: 160%;
   text-align: center;
+  color: #252525;
+`
+
+const StyledContainer = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
 `
 
 const JoinSection = () => {
   return (
 
-    <div className="join-text-container">
+    <StyledContainer>
       <StyledText>Join our full-body workout inspired
 by Ballet, Pilates, and Yoga.
       </StyledText>
       <Button text="Join us!" />
-    </div>
+    </StyledContainer>
   );
 }
 
