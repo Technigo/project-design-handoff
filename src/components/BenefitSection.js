@@ -1,6 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* const BenefitsContainer = styled.div`
+background-color: #004852;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+
+`; */
+
 export const GreenYellowHeader = styled.div`
   font-family: 'Permanent Marker', cursive;
   color: #FFE600;
@@ -16,9 +24,11 @@ padding: 3px 73px 7px 34px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
-export const BenefitSection = () => {
+const BenefitSection = () => {
   return (
+
     <GreenYellowHeader>Benefits</GreenYellowHeader>
+
   )
 }
 

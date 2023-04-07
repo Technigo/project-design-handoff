@@ -6,7 +6,6 @@ const HamburgerButton = styled.button`
     border-radius: 5px;
     height: 50px;
     width: 50px;
-    background-color: black;
     position: absolute;
     margin-top: 20px;
     top: 16px;

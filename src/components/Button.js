@@ -1,29 +1,39 @@
 
 import styled from 'styled-components';
 
-const Button = styled.button` 
-   padding: 15px 7px 13px 6px;
-    text-align: center;
+export const Button = styled.button` 
+   padding: 12px 24px;
     font-size: 17px;
     font-family: 'Calibri';
     box-shadow: 0px 2.24635px 2.24635px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-    margin-top: 0px;
+ border-radius: 50px;
+width: ${(props) => props.login || '90%'};
+font-size: ${(props) => props.fontSize || '16px'};
+    margin: 10px;
     cursor: pointer;
-  width: 90px;
  background-color: rgb(255, 230, 0);
 
 
    &:hover {
     background-color: grey;
 }
- @media (min-width: 1025px) {
-    width: 200px;
-  padding: 5px 50px 5px 50px;
- font-size: 24px;
- text-align: center;
-
-}
+ @media (min-width: 1024px) {
+    width: ${(props) => (props.login ? '50%' : '212px')};
+    font-size: ${(props) => (props.login ? '16px' : '20px')};
+  }
 `;
 
-export default Button
+export const ButtonContainer = styled.div`
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items:center;
+width:100%;
+margin: 50px 0;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+  }
+`;
