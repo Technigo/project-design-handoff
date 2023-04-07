@@ -50,7 +50,7 @@ margin-left: 25rem;
 position: absolute;
 `
 
-const Title = styled.h1`
+const StyledTitle = styled.h1`
 font-size:2.5rem;
 font-weight: bold;
 flex: 0.4;
@@ -58,7 +58,7 @@ word-break: break-word;
 margin-top: 0;  /*Reset top margin */
 `;
 
-const Description = styled.p`
+const StyledDescription = styled.p`
 font-size: 1.25rem;
 line-height: 1.5;
 flex: 0.6;
@@ -93,6 +93,18 @@ const ActiveTrainers = styled.span`
  flex-grow: 1;
 `;
 
+const Title = ({ text }) => {
+  return (
+    <StyledTitle>{text}</StyledTitle>
+  );
+};
+
+const Description = ({ text }) => {
+  return (
+    <StyledDescription>{text}</StyledDescription>
+  );
+};
+
 const Header = () => {
   const { sticky, stickyRef } = useSticky();
   return (
@@ -110,12 +122,11 @@ const Header = () => {
       </StickyNav>
       <HeroContainer image={heroImage}>
         <TitleContainer>
-          <Title>Online Healthy Diet Strong Body</Title>
+          <Title text="Online Healthy Diet Strong Body" />
         </TitleContainer>
         <DescriptionContainer>
-          <Description>Level up your life to the happier and healthier with help of the
-          certified personal trainers and nutrition coaches based on your personal circumstance
-          </Description>
+          <Description text="Level up your life to the happier and healthier with help of the
+          certified personal trainers and nutrition coaches based on your personal circumstance" />
           <ButtonAndTextContainer>
             <BottomCenterButton>Try for Free</BottomCenterButton>
             <UserText>
