@@ -3,20 +3,38 @@ import styled from 'styled-components';
 export const StyledForm = styled.section`
     display: flex;
     flex-direction: column;
-    background-color: ${({ theme }) => (theme.colors.white)};
-    margin: 24px;
-    padding: 0 24px;
-    border-radius: 12px;
+    background-color: rgb(0,0,0, 0.3);
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .form-header {
+        display: flex;
+        justify-content: space-between;
+
+    }
 
     h2 {
         color: ${({ theme }) => (theme.colors.teal)};
     }
 
+    .icon {
+        font-size: 18px;
+        color: ${({ theme }) => (theme.colors.teal)};
+        margin: 14px 0 14px 14px;
+    }
+
     form {
-        width: 100%;
+        /* width: 100%; */
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-color: ${({ theme }) => (theme.colors.white)};
+        margin: 24px;
+        padding: 0 24px 12px 24px;
+        border-radius: 12px;
     }
 
     input {

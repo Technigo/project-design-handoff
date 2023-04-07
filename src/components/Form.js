@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { StyledForm } from 'styles/Form.styles';
 import plans from 'libraries/plans';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
 
-export const Form = ({ id }) => {
+export const Form = ({ id, setShowForm }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -18,13 +20,19 @@ export const Form = ({ id }) => {
     event.preventDefault()
   }
 
+  const handleFormClose = () => {
+    setShowForm(false)
+  }
   // eslint-disable-next-line eqeqeq
   const planMatch = plans.find((plan) => plan.id == id);
 
   return (
     <StyledForm>
-      <h2>Register Here</h2>
       <form onSubmit={handleSubmit}>
+        <div className="form-header">
+          <h2>Register Here</h2>
+          <FontAwesomeIcon icon={faCircleXmark} className="icon" onClick={handleFormClose} />
+        </div>
         <input type="text" className="first-name" placeholder="First Name" />
         <input type="text" placeholder="Last Name" />
         <input type="email" onChange={handleEmailChange} value={email} placeholder="Email Address" />

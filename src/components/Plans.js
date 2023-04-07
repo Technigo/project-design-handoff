@@ -5,9 +5,11 @@ import { Form } from 'components/Form'
 
 export const Plans = () => {
   const [id, setId] = useState(0)
+  const [showform, setShowForm] = useState(false)
 
   const handleClick = (event) => {
     setId(event.target.value)
+    setShowForm(true);
   }
   return (
     <>
@@ -28,7 +30,7 @@ export const Plans = () => {
           </div>
         ))}
       </StyledPlans>
-      <Form id={id} />
+      {showform && (<Form id={id} setShowForm={setShowForm} />)}
     </>
 
   )
