@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Slogan } from 'components/Slogan';
-import Menu from 'components/Menu';
+import Navbar from 'components/Menu';
 import heroBg from '../assets/hero.svg'
 import logoHero from '../assets/logo-hero.svg';
 // import { Hamburger } from '../components/Hamburger';
@@ -28,6 +28,9 @@ const Topwrapper = styled.div`
   display:flex;
   flex-direction:row;
   justify-content:space-between;
+  padding-right:7.4%;
+  padding-top:4.7%;
+  border:solid red;
 `
 
 export const HeroPage = () => {
@@ -35,7 +38,7 @@ export const HeroPage = () => {
     <HeroContainer>
       <Topwrapper>
         <Logo src={`${logoHero}`} alt="logo of the page" />
-        <Menu />
+        <Navbar />
       </Topwrapper>
       <ButtonHover
         btnOnHover={joinBtnHover}

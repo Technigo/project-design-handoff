@@ -1,102 +1,128 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/alt-text */
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import ellipseBlue from '../assets/ellipse-blue.svg';
+import ellipseGreen from '../assets/ellipse-green.svg';
 
-const HamburgerButton = styled.button`
-    
-    border: none;
-    border-radius: 5px;
-    height: 50px;
-    width: 50px;
-    background-color: #0962CF;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    span {
-        height: 4px;
-        background-color: #FFFFFF;
-        position: relative;
-        width: 38px;
-        margin: auto;
-        display: block;
-        border-radius: 15px;
-    }
-    span::before, span::after {
-        content: "";
-        height: 4px;
-        width: 38px;
-        background-color: #FFFFFF;
-        position: absolute;
-        display: block;
-        border-radius: 15px;
-    }
-    span::after {
-        top: calc(100% - 14px);
-    }
-    span::before {
-        top: 10px;
-    }
-    .active {
-        position:absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%) rotate(45deg);
-    }
-    .active::before, .active::after {
-        position:absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%) rotate(270deg);
-    }
-    @media (min-width: 1025px) {
-        display: none
-}
-`
-const MenuBackground = styled.div`
-    display: ${(props) => (props.isOpen ? 'block' : 'none')};
-    width: 66vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: tomato;
-    opacity: 85%;
-    height: 100vw;
-    @media (min-width: 1025px) {
-        width: auto;
-        height: auto;
-}
-`
-const StyledNav = styled.nav`
-    display: flex;
-    margin: 90px auto auto 45px;
-    flex-direction: column;
-    @media (min-width: 1025px) {
-        width: auto;
-        padding: 35px 60px;
-        flex-direction: row;
-        height: auto;
-        margin: 0;
-}
-`
-const Menu = () => {
-//   const [isOpen, setIsOpen] = useState(false);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  //   const toggleMenu = () => {
-  //     setIsOpen(!isOpen);
-  //   };
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <MenuBackground>
-      <HamburgerButton type="button">
+    <Nav>
+      <Hamburger onClick={toggle}>
         <span />
-      </HamburgerButton>
-      <StyledNav>
-        <a>Link 1</a>
-        <a>Link 1</a>
-        <a>Link 1</a>
-        <a>Link 1</a>
-        <a>Link 1</a>
-      </StyledNav>
-    </MenuBackground>
-  )
-}
+        <span />
+        <span />
+      </Hamburger>
+      <Menu isOpen={isOpen}>
+        <Link href="/"><img src={ellipseBlue} /> Classes </Link>
+        <Link href="/"><img src={ellipseGreen} />Membership</Link>
+        <Link href="/about">About Us</Link>
+        <Link href="/contact">Contact</Link>
+        <Link href="/services">More</Link>
+      </Menu>
+    </Nav>
+  );
+};
 
-export default Menu;
+export default Navbar;
+
+const Nav = styled.nav`
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  z-index: 10;
+  position: relative;
+`;
+
+// const Logo = styled.a`
+//   color: #141414;
+//   font-size: 2rem;
+//   display: flex;
+//   align-items: center;
+//   text-decoration: none;
+//   cursor: pointer;
+// `;
+
+const Hamburger = styled.div`
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background:#0962CF;
+  width: 44px;
+  height: 42.86px;
+  border-radius: 4.6px;
+  z-index:99;
+  position:absolute;
+  right:7.4%;
+  margin-top:4.7%;
+
+
+  span {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
+const Menu = styled.div`
+  display: flex;
+  align-items: center;
+  width:59.4%;
+  
+
+  @media (max-width: 768px) {
+    display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+    position: relative;
+    width:214px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.85);
+    /* left: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; */
+    transition: all 0.3s ease-in-out;
+  }
+`;
+
+const Link = styled.a`
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 1rem;
+  position: relative;
+  /* left: 32.24%;
+  right: 44.86%;
+  top: 23.84%;
+  bottom: 72.67%; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 75%;
+  letter-spacing: -0.022em;
+  color: #0962CF;
+
+  &:hover {
+    color: #ff4040;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+`;
