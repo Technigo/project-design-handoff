@@ -5,7 +5,7 @@ import { BecomeMemberPage } from 'components/BecomeMemberPage/BecomeMemberPage'
 
 export const App = () => {
   return (
-    <div>
+    <div style={{ width: '100vw', overflow: 'hidden' }}>
       <div>
         <Heropage />
         <BookClassPage />

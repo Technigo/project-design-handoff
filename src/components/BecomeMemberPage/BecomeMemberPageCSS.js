@@ -9,7 +9,6 @@ background-color: #B9F615;
 export const SingleLogoBlack = styled.img`
 width: 54.88px;
 transform: rotate(90deg);
-margin-top: 17%;
 `
 
 export const BecomeHeader = styled.h1`
@@ -21,16 +20,20 @@ line-height: 98%;
 text-align: center;
 letter-spacing: -0.022em;
 color: #000000;
-position: relative;
-bottom: 17%;
 `
 
 export const Stripes = styled.img`
-position: absolute;
-top: 300%;
 width: 65%;
-right: -3%;
 `
+
+export const TopWrapper = styled.div`
+display: flex;
+justify-content: space-between;
+height: 24%;
+`
+
+export const StripesDiv = styled.div`
+width: 16.3%;`
 
 export const MemberForm = styled.form`
 `

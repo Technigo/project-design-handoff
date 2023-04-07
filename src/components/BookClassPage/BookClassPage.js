@@ -1,16 +1,14 @@
 import React from 'react';
 import { TopDescription } from './TopDescription'
-import ParkourImgBkgrnd from '../../assets/ParkourImgBkgrnd.svg'
 import { ButWhatBanner } from './ButWhatBanner'
 import { RingAcroArt } from './RingAcroArt'
 import { OurClassesBtn } from './OurClassesBtn'
 import { ClassCarousel } from './ClassCarousel'
-import { BCPageWrapper, ParkourIMG, AcroPromoText, BookClassBtn } from './BookClassPageCSS';
+import { BCPageWrapper, AcroPromoText, BookClassBtn } from './BookClassPageCSS';
 
 export const BookClassPage = () => {
   return (
     <BCPageWrapper>
-      <div style={{ overflow: 'hidden' }}><ParkourIMG src={`${ParkourImgBkgrnd}`} /></div>
       <TopDescription />
       <ButWhatBanner />
       <RingAcroArt />

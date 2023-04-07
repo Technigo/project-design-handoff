@@ -5,11 +5,14 @@ import joinBtn from '../../assets/button-join.svg';
 import joinBtnHover from '../../assets/button-join-hover.svg';
 
 const ButtonImage = styled.img`
-position: relative;
 width: 132px;
-top: 49.5%;
-left: 64%;
 `;
+
+const ButtonDiv = styled.div`
+display: flex;
+height: 54.4%;
+align-items: flex-end;
+justify-content: flex-end;`
 
 export const BtnJoin = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -23,9 +26,11 @@ export const BtnJoin = () => {
   };
 
   return (
-    <ButtonImage
-      src={isHovered ? `${joinBtnHover}` : `${joinBtn}`}
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut} />
+    <ButtonDiv>
+      <ButtonImage
+        src={isHovered ? `${joinBtnHover}` : `${joinBtn}`}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut} />
+    </ButtonDiv>
   );
 }

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import BlueBtnBkgrndImg from '../../assets/BlueBtnBkgrnd.svg'
 import BookClassBtnImg from '../../assets/BookClassBtn.svg'
+import ParkourImgBkgrnd from '../../assets/ParkourImgBkgrnd.svg'
 
 export const SliderContainer = styled.div`
 position: relative;
@@ -23,6 +24,7 @@ line-height: 30px;
 text-align: center;
 letter-spacing: -0.022em;
 color: #000000;
+margin-top: 0;
 `
 export const ClassImgContainer = styled.div`
 height: 324px;
@@ -95,6 +97,10 @@ export const BCPageWrapper = styled.div`
 display: flex;
 flex-direction: column;
 width: 100vw;
+align-items: center;
+background-image: url(${ParkourImgBkgrnd});
+background-size: cover;
+background-repeat: no-repeat;
 `
 
 export const ParkourIMG = styled.img`
@@ -114,7 +120,7 @@ letter-spacing: -0.022em;
 color: #000000;
 padding-left: 23.5px;
 padding-right: 23.5px;
-margin-top: 450px;
+margin-top: 0px;
 margin-bottom: 0;
 `
 
@@ -125,22 +131,24 @@ background-color: transparent;
 border-style: none;
 background-image: url(${BookClassBtnImg});
 background-size: 100% auto;
-position: relative;
-left: 17%;
 margin-top: 27%;
 margin-bottom: 20%;
 `
 
 export const AcroArtWrapper = styled.div`
 position: relative;
+height: 60vh;
+width: 100vw;
+overflow-x: hidden;
+overflow-y: visible;
 `
 
 export const RingAcrobat = styled.img`
-position: absolute;
-width: 372.1px;
-height: 369.21px;
-z-index: 1;
-left: 20px;
+position: inherit;
+    width: 93%;
+    z-index: 1;
+    left: 3%;
+    top: -7%;
 `
 
 export const Acrostripe1 = styled.img`
@@ -161,10 +169,9 @@ top: 12.5px;
 
 export const Acrostripe3 = styled.img`
 position: absolute;
-width: 367.11px;
-height: 347.38px;
-left: 64px;
-top: 12.5px;
+width: 100%;
+right: -21%;
+top: 3.2%;
 z-index: 2;
 `
 
@@ -206,3 +213,9 @@ color: #0962CF;
 width: 66%;
 margin: 0;
 `
+
+export const Lines = styled.img`
+position: absolute;
+width: 82%;
+right: -3%;
+top: 3.2%;`

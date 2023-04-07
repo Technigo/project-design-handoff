@@ -17,10 +17,15 @@ const OCimg = styled.img`
 width: 100%;
 `
 
+const ButtonWrapper = styled.div`
+width: 100%;`
+
 export const OurClassesBtn = () => {
   return (
-    <OCBtn>
-      <OCimg src={`${OurClassesImg}`} />
-    </OCBtn>
+    <ButtonWrapper>
+      <OCBtn>
+        <OCimg src={`${OurClassesImg}`} />
+      </OCBtn>
+    </ButtonWrapper>
   )
 }

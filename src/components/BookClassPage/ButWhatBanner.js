@@ -6,9 +6,13 @@ const ButWhatBannerHolder = styled.img`
 width: 80.5%;
 margin-top: 42.5px;
 `
+const BWBWrapper = styled.div`
+display: flex;`
 
 export const ButWhatBanner = () => {
   return (
-    <ButWhatBannerHolder src={`${ButWhatBannerImg}`} />
+    <BWBWrapper>
+      <ButWhatBannerHolder src={`${ButWhatBannerImg}`} />
+    </BWBWrapper>
   )
 }

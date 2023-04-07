@@ -125,15 +125,17 @@ export const HambMenuList = styled.ul`
     z-index: 1;
     `
 export const HambMenuListOpen = styled.ul`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.85);
-    width: 214px;
-    height: 344px;
-    position: relative;
-    top: -19%;
-    right: -7%;
+display: flex;
+flex-direction: column;
+-moz-box-pack: center;
+justify-content: center;
+background: rgba(255, 255, 255, 0.85);
+width: 214px;
+height: 344px;
+position: relative;
+top: -57%;
+right: -41%;
+position: absolute;
 `
 
 export const HambMenuItem = styled.li`
@@ -169,34 +171,26 @@ width: 100vw;
 justify-content: center;
 flex-wrap: wrap;
 flex-direction: column;
-position: relative;
-    top: 55%;
 `
 
 export const Go = styled.h1`
-font-family: 'Kulim Park';
+font-family: "Kulim Park";
 font-style: italic;
 font-weight: 600;
 font-size: 142.936px;
-line-height: 169px;
+line-height: 99px;
 letter-spacing: -0.022em;
-color: #B9F615;
-margin: 0;
-position: absolute;
-right: 37%;`
+color: rgb(185, 246, 21);
+margin: 0px 0px 0px 3.5%;`
 
 export const Beyond = styled.h3`
 font-family: 'Kulim Park';
 font-style: italic;
 font-weight: 600;
 font-size: 39.9506px;
-line-height: 47px;
 letter-spacing: -0.022em;
 color: #B9F615;
-margin: 0;
-position: absolute;
-left: 5%;
-top: 79%;
+margin: 8% 0px 0px 5%;
 `
 
 export const The = styled.h3`
@@ -207,10 +201,7 @@ font-size: 44.0651px;
 line-height: 52px;
 letter-spacing: -0.022em;
 color: #B9F615;
-margin: 0;
-position: absolute;
-left: 24%;
-top: 84%;
+margin: 0% 5% 9% 23%;
 `
 
 export const Limits = styled.h2`
@@ -221,8 +212,11 @@ font-size: 55.0281px;
 line-height: 65px;
 letter-spacing: -0.022em;
 color: #B9F615;
-margin: 0;
-position: absolute;
-left: 53%;
-top: 83%;
+margin: 0px 4% 9% 6%;
 `
+
+export const SloganSubWrapper = styled.div`
+display: flex;
+align-items: flex-end;
+-webkit-box-pack: end;
+justify-content: flex-start;`
