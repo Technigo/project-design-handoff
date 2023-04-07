@@ -6,6 +6,27 @@ import Johan from './images/christian-buehner-DItYlc26zVI-unsplash.jpg'
 import Emelie from './images/freestocks-9UVmlIb0wJU-unsplash.jpg'
 import Ewa from './images/sk-jeEedhJXoR0-unsplash.jpg'
 
+const reviews = [
+  {
+    id: 1,
+    name: 'Johan',
+    image: Johan,
+    review: 'Meditation helps me to handle stressful situations in everyday life'
+  },
+  {
+    id: 2,
+    name: 'Emelie',
+    image: Emelie,
+    review: 'Meditation helps me to handle stressful situations in everyday life'
+  },
+  {
+    id: 3,
+    name: 'Ewa',
+    image: Ewa,
+    review: 'Meditation helps me to handle stressful situations in everyday life'
+  }
+];
+
 export const ImageSlider = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
@@ -62,41 +83,23 @@ export const ImageSlider = () => {
               width: '100%',
               centerMode: true,
               justifyItems: 'space-evenly',
-              display: 'flex, flex-wrap: no-wrap, flex-flow: no-wrap',
-              gap: '5px'
+              display: 'flex',
+              flexWrap: 'nowrap',
+              gap: '20px',
+              paddingRight: '20px'
             }
           ]}
           speed={400}
           easing="linear">
           {/* here you can also pass any other element attributes.
          Also, you can use your custom components as slides */}
-          <ReviewContainer>
-
-            <img src={Johan} alt="johan" style={{ width: 125, height: 125, borderRadius: 200, objectFit: 'cover' }} />
-            <NameReview>
-            Johan
-            </NameReview>
-            <Review> Meditation helps me to handle stressful situations in everyday life</Review>
-
-          </ReviewContainer>
-          <ReviewContainer>
-
-            <img src={Emelie} alt="johan" style={{ width: 125, height: 125, borderRadius: 200, objectFit: 'cover' }} />
-            <NameReview>
-            Emelie
-            </NameReview>
-            <Review> Meditation helps me to handle stressful situations in everyday life</Review>
-
-          </ReviewContainer>
-          <ReviewContainer>
-
-            <img src={Ewa} alt="johan" style={{ width: 125, height: 125, borderRadius: '50%', objectFit: 'cover' }} />
-            <NameReview>
-              Ewa
-            </NameReview>
-            <Review> Meditation helps me to handle stressful situations in everyday life</Review>
-
-          </ReviewContainer>
+          {reviews.map((slider) => (
+            <ReviewContainer key={slider.id}>
+              <img src={slider.image} alt={slider.name} />
+              <h2>{slider.name}</h2>
+              <p>{slider.review}</p>
+            </ReviewContainer>
+          ))}
         </ReactSimplyCarousel>
       </CarouselContainer>
     </ReviewSection>
@@ -121,36 +124,34 @@ color: #025323;
 
 export const CarouselContainer = styled.div`
 display: flex;
-flex-wrap: no-wrap;
-align-items: center;
-justify-self: space-evenly;
+flex-wrap: wrap;
+overflow: hidden;
 `
 
-export const ReviewContainer = styled.div`
-display: flex;
-margin: 5px;
-flex: nowrap;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-background: #F4F4F4;
-box-shadow: 0px 0px 14.5722px rgba(203, 203, 203, 0.25);
-border-radius: 21.2852px;
-width: 286px;
-`
+const ReviewContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-export const NameReview = styled.h3`
-display: flex;
-font-size: 20px;
-text-align: center;
-display: flex;
-flex-direction: column;
-`
-export const Review = styled.p`
-display: flex;
-font-size: 14px;
-text-align: center;
-display: flex;
-flex-direction: column;
-`
+  justify-content: space-evenly;
+  align-self: space-evenly;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
+  img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+`;
