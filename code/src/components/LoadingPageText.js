@@ -9,8 +9,10 @@ const LoadingPageText = () => {
         <p className="loading-text">Level up your life to the happier and healthier with help of the certified personal
         trainers and nutrition coaches based on your personal circumstance
         </p>
-        <p className="users"><span>1250+</span><br />active users</p>
-        <p className="trainers"><span>50+ </span><br />personal trainers</p>
+        <div className="users-trainers">
+          <p className="users"><span>1250+</span><br />active users</p>
+          <p className="trainers"><span>50+ </span><br />personal trainers</p>
+        </div>
       </div>
     </section>
   )

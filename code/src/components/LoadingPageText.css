@@ -11,10 +11,10 @@
     margin-top:10px
   }
   .loading-text {
-  margin-top:40vh;
+  margin-top:50vh;
   margin-right:20px;
   margin-left:10px;
-  margin-bottom:0px;
+  margin-bottom:20px;
   width:70vw;
   font-weight: 800px;
   }
@@ -23,18 +23,34 @@
     color:#03092E;
     font-size: 16px; 
     line-height: 1.2; 
+    margin-left:10px;
+    width:150px;
+    margin:0;
   }
   
   .users > span {
     font-size: 24px; 
-    font-weight: bold;
+    font-weight: bolder;
   }
   .trainers {
     color:#03092E;
     font-size: 16px; 
     line-height: 1.2; 
+    width:150px;
+    margin:0;
   }
   .trainers > span {
     font-size: 24px; 
-    font-weight: bold;
+    font-weight: bolder;
+  }
+
+  .users-trainers{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .users-trainers{
+    display:flex;
+    flex-direction: row;
+    margin:20px;
   }
