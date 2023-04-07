@@ -1,0 +1,4 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Here We decide how many columns we want in mobile-first view */
+}

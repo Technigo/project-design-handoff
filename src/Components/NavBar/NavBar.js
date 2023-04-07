@@ -19,9 +19,7 @@ export const NavBar = () => {
       </label>
       <ul className="menu">
         <li>GIFT CARDS</li>
-        <li>PROMO CODES</li>
-        <li>ABOUT US</li>
-        <li>CONTACT US</li>
+        <li>JOIN US</li>
       </ul>
     </section>
   )

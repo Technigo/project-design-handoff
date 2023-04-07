@@ -3,6 +3,7 @@
 import React from 'react';
 import './SpeakToTheGoals.css'
 import { StartButton } from 'Components/StartButton/StartButton';
+import { Grid } from 'Components/Grid/Grid';
 import { BoldBigItalic, SmallNarrowItalic } from 'Components/HowToAchive/HowToAchive';
 import Slider from 'Components/Slider/Slider';
 
@@ -15,7 +16,12 @@ export const SpeakToTheGoals = () => {
         <SmallNarrowItalic>FIND ACTIVITIES</SmallNarrowItalic>
         <BoldBigItalic>YOUR STYLE</BoldBigItalic>
       </div>
-      <Slider />
+      <div className="slider">
+        <Slider />
+      </div>
+      <div className="grid">
+        <Grid />
+      </div>
       <p>WORKOUTS</p>
       <p>RANGE FROM</p>
       <p>5-45 MIN</p>
