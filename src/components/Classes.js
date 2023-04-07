@@ -26,15 +26,15 @@ display: flex;
 flex-direction: column;
 gap: 24px;
 margin-bottom: 32px;
-margin-top: 131.5px;
+margin-top: 50px;
 `
 
 export const Classes = () => {
   const settings = {
     dots: true,
     speed: 500,
-    slidesToShow: window.innerWidth <= 569 ? 1 : 2,
-    slidesToScroll: window.innerWidth <= 569 ? 1 : 2,
+    slidesToShow: window.innerWidth <= 667 ? 1 : 2,
+    slidesToScroll: window.innerWidth <= 667 ? 1 : 2,
     arrows: true
   };
 

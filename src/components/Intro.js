@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import IntroImage from '../images/intro-image.jpg'
 import { IntroButton } from './Button'
-import { Detailtext, Subtitle, Pbold, Pregular } from './Typography'
+import { Detailtext, Subtitle, Pbold, Pregular, IntroButtonP } from './Typography'
 
 const Section = styled.section`
 height: 100vh; 
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
 padding: 0 64px;
 }`
 
@@ -16,7 +16,7 @@ display: flex;
 flex-flow: column;
 height: 100%;
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
 flex-direction: row;
 gap: 65px;
 align-items: center;
@@ -29,11 +29,11 @@ object-fit: cover;
 width: 100%;
 height: 40.1%;
 
-@media (min-width: 570px) {
+@media (min-width: 667px) {
   height: 51%;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   width: 50%;
   }
 `
@@ -45,7 +45,7 @@ padding: 24px 16px;
 height: 50vh;
 width: 90%;
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   width: 50%;
   padding: 0;
   }
@@ -65,7 +65,7 @@ export const Intro = () => {
           With our fun, simple and effective exercises we train strength,
           fitness, balance and agility.
           </Pregular>
-          <IntroButton><p>Read more!</p></IntroButton>
+          <IntroButton><IntroButtonP>Read more!</IntroButtonP></IntroButton>
         </Article>
       </DivIntro>
     </Section>

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StyledButtonHeader } from './Button'
-import { Headline1, Headline2 } from './Typography'
+import { Headline1, Headline2, HeaderButtonP } from './Typography'
 import HeroImage from '../images/header-image.jpg'
 import LogoPhone from '../images/phone-logo.svg'
 import NavPhone from '../images/hamburger-icon.svg'
@@ -34,14 +34,14 @@ section {
   padding: 0 16px;
 }
 
-@media (min-width: 570px) {
+@media (min-width: 667px) {
   section {
     margin-left: 24px;
     align-self: unset;
   }
 }
 
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     background-image: none;
 
     section {
@@ -56,26 +56,26 @@ section {
   }
 `
 const PhoneNavMedia = styled.img`
-  @media (min-width: 570px){
+  @media (min-width: 667px){
     display: none;
 }
 `
 
 const TabletNavMedia = styled.img`
-@media (max-width: 569px){
+@media (max-width: 666px){
   display: none;
 }
 
-@media (min-width: 570px) {
+@media (min-width: 667px) {
   width: 159px;
 }
 `
 const TabletNavList = styled.ul`
-@media (max-width: 569px){
+@media (max-width: 666px){
   display: none;
 }
 
-@media (min-width: 570px) {
+@media (min-width: 667px) {
   display: flex;
   width: 80%;
   justify-content: space-around;
@@ -84,7 +84,7 @@ const TabletNavList = styled.ul`
   font-size: 1rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   width: 65%;
   align-self: center;
   margin: auto;
@@ -92,11 +92,11 @@ const TabletNavList = styled.ul`
 }
 `
 const MediaDesktop = styled.video`
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   display:none
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -137,7 +137,7 @@ export const Header = () => {
           </Headline2>
         </div>
         <StyledButtonHeader>
-          <p>Join us today!</p>
+          <HeaderButtonP>Join us today!</HeaderButtonP>
         </StyledButtonHeader>
       </section>
     </StyledHeader>
