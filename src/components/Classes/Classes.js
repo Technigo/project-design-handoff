@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import './classes.css';
 
 const ArrowDown = styled.i`
-    font-size: 20px;
-    color: #FF9F0A; 
     margin-left: 1rem;
     padding-top: 6px;
+
+    i {
+      color: #FF9F0A;
+      font-size: 20px;
+    }
 `
 
 export const Classes = () => {
