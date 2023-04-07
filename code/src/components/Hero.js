@@ -16,7 +16,7 @@ const Container = styled.section`
   align-items: center;
   justify-content: center;
   widht: 100vw;
-  height: 200vh;
+  height: 150vh;
   background-image: url('/images/hero-image-smaller.png');
   background-size: cover;
   background-position: center;

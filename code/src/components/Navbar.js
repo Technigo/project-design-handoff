@@ -3,9 +3,8 @@ import '../index.css'
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen(!menuOpen)
   }
   const handleKeyDown = (event) => {
     if (event.keyCode === 13 || event.keyCode === 32) {
@@ -18,7 +17,7 @@ export const Navbar = () => {
       <div className="navbar-logo">
         <img src="/images/logo.png" alt="Logo" />
       </div>
-      <ul className={`navbar-links ${menuOpen ? 'navbar-links-open' : ''}`}>
+      <ul className={`navbar-links ${menuOpen && 'navbar-links-open'}`}>
         <li><a href="#">Services</a></li>
         <li><a href="#">Coaches</a></li>
         <li><a href="#">About</a></li>
