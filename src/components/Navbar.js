@@ -26,7 +26,6 @@ export const StickyNav = styled(Nav)`
 
 export const NavItem = styled.a`
   font-size: 1.2rem;
-  font-weight: bold;
   text-decoration: none;
   color: #fff;
   margin-right: 2rem;
