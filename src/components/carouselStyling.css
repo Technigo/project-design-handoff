@@ -1,0 +1,14 @@
+.carousel .slide img {
+    max-height: 318px; 
+}
+
+p{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 141%;
+    text-align: center;
+    letter-spacing: -0.022em;
+    color: #000000;
+    margin:0;
+}

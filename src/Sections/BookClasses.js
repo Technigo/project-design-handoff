@@ -92,7 +92,7 @@ export const BookClasses = () => {
         position="relative"
         width="67%"
         left="16.4%"
-        top="94.3%" />
+        top="72.3%" />
     </AcrobaticsContainer>
   );
 };
