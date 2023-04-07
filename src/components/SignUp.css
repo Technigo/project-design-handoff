@@ -48,6 +48,13 @@
     letter-spacing: 1px;
 }
 
+form{
+    display:flex;
+    flex-direction: row;
+    font-size: 11px;
+    gap: 10px;
+  }
+
 .select {
     display: flex;
     flex-direction: column;
