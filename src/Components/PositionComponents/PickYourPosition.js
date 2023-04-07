@@ -17,14 +17,14 @@ const PickYourPosition = () => {
         <p>
           <span className="bold">Pick a position to access programs tailored
           to your favoured role on the track.
-          </span>
-          Programs vary in focus, such as more endurance for jammers and strength for blockers.
+          </span> Programs vary in focus,
+          such as more endurance for jammers and strength for blockers.
           All programs prioritize safety and success on and off the track.
         </p>
       </div>
 
       <div className="about-text2">
-        <p><span className="bold">Referee, NSO or new to the game? Try FRENeSO. </span>
+        <p><span className="bold">Referee, NSO or new to the game? </span> Try FRENeSO.
           A well-rounded program to prevent injuries and prepare you for the track's intensity.
         </p>
       </div>
