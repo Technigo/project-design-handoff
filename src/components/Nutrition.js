@@ -17,6 +17,7 @@ const StyledH2 = styled.h2`
 font-weight: 700;
 color: #02393F;
 font-size: 25px;
+line-height: 160%;
 `
 
 const StyledP = styled.p`

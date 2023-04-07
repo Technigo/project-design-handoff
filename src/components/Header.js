@@ -39,11 +39,6 @@ display: flex;
 justify-content: center;
 `
 
-const StyledA = styled.a`
-text-decoration: none;
-color: #F5F5F5;
-`
-
 // onClick is the prop for opening the Popup
 const Header = ({ onClick }) => {
   return (
@@ -64,7 +59,7 @@ const Header = ({ onClick }) => {
              balance through our comprehensive wellness program.
           </p>
           <StyledBtnWrapper>
-            <CTA onClick={onClick}><StyledA href="#pricing">Start your 7-day FREE trial</StyledA></CTA>
+            <CTA onClick={onClick}>Start your 7-day FREE trial</CTA>
           </StyledBtnWrapper>
         </StyledOverlayWrapper>
       </StyledHeaderWrapper>

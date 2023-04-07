@@ -13,7 +13,7 @@ const testimonalarray = [
   {
     id: 2,
     text:
-      "“I used to have a very troubled relationship with food... I would constantly crave something sweet and I have NEVER enjoyed cooking. I tried out this program because it combines nutrition with   mindfulness. The meal plan is catered/personalized to your own lifestyle and habits, and I was surprised how easy (and tasty) the recipes are. I feel so much more energized, focused and I no longer eat sweets all the time!”",
+      "“I used to have a very troubled relationship with food... I would constantly crave something sweet and I have NEVER enjoyed cooking. I tried out this program because it combines nutrition with mindfulness. The meal plan is catered/personalized to your own lifestyle and habits, and I was surprised how easy (and tasty) the recipes are. I feel so much more energized, focused and I no longer eat sweets all the time!”",
     img: "/img/benjamin-suter-eWeH0gonEkI-unsplash.png",
     alt: "a happy woman eating salad alone",
     name: "-Laura, Vienna",
