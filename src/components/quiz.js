@@ -12,6 +12,3 @@ const Quiz = () => {
 }
 
 export default Quiz
-
-//<p>Take Our Quiz to see which Class that Fits You!</p>
-//Button "Barre Quiz"

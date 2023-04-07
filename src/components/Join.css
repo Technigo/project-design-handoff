@@ -1,3 +1,14 @@
-.Join {
+.join {
     border: 2px black solid;
+}
+
+.joinBtn {
+    background-color: #FFD9BF;
+    color: #210440;
+    border-radius: 30px;
+    width: 328px;
+    height: 46px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
 }

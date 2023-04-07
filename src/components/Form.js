@@ -1,9 +1,17 @@
 import React from 'react';
 import './Form.css';
 
+const Form = () => {
+  return (
+    <div className="register">
+      <h2>Register at Raise Studio </h2>
+    </div>
+  )
+}
+
 export default Form
+
 /*<Div className=Register> 
-<h2>Register at Raise Studio </h2>
 <h4>Create an Account to Book Barre Classes and Buy Credits.</h4>
 <p>Already have an account? <span id="underline">Login</span> Calling the span text-decoration:underline in CSS.
 </>

@@ -5,8 +5,8 @@ import Hero from 'components/Hero';
 import Join from 'components/Join';
 import Classes from 'components/Classes';
 import Quiz from 'components/Quiz';
-//import Praise from 'components/Praise';
-//import Form from 'components/Form';
+import Praise from 'components/Praise';
+import Form from 'components/Form';
 
 export const App = () => {
   return (
@@ -16,6 +16,8 @@ export const App = () => {
       <Join />
       <Classes />
       <Quiz />
+      <Praise />
+      <Form />
       <Footer />
     </div>
   )
