@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
@@ -47,6 +49,7 @@ export const Header = () => {
       <a href="mailto:acrogym@sportsorg.se">
         <img className="header-btn" src="./icons/header-btn.png" alt="button" />
       </a>
+      <p>Physical activity is vital for the body. Learn how to master unique skills where you’ll develop strength, confidence and you'll defy yourself.</p>
     </section>
   )
 }
