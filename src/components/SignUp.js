@@ -22,8 +22,8 @@ const SignUp = () => {
         </form>
         <form>
           <p>Please choose class</p>
-          <select>
-            <option value="" selected>Classes</option>
+          <select id="dropdown" name="dropdown" className="inputfield">
+            <option value="classes" className="optionselected" disabled selected>Classes..</option>
             <option value="Beginner class">Beginner class</option>
             <option value="Intermediate class">Intermediate class</option>
             <option value="Expert class">Expert class</option>
