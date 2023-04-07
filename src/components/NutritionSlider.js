@@ -63,7 +63,7 @@ export const NutritionSlider = () => {
         freeMode
         loop
         breakpoints={{
-          640: {
+          768: {
             slidesPerView: 2.5,
           },
           1025: {
@@ -71,7 +71,7 @@ export const NutritionSlider = () => {
           },
         }}
         modules={[FreeMode]}
-        className="YogaSwiper">
+        className="NutritionSwiper">
         <SwiperSlide>
           <StyledCardContainer>
             <StyledDescriptionWrapper>

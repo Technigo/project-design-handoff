@@ -90,6 +90,11 @@ export const YogaSlider = () => {
         freeMode
         loop
         modules={[FreeMode]}
+        breakpoints={{
+          768: {
+            slidesPerView: 2.5,
+          },
+        }}
         className="YogaSwiper">
         <SwiperSlide>
           <StyledVideoContainer>
