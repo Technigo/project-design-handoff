@@ -6,11 +6,11 @@ export const Wrapper = styled.div`
     box-sizing: border-box;
     position: ${(props) => (props.relative ? 'relative' : '')};
 
-    @media (min-width: 668px) and (max-width: 1440px) {
+    @media (min-width: 768px) and (max-width: 1440px) {
     height: ${(props) => (props.height || '100vh')};
     }
 
-    @media (min-width: 668px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
       height: ${(props) => (props.height || '100vh')};
         padding: 24px;
     }
@@ -80,6 +80,7 @@ export const TextContainer = styled.div`
     flex-direction: ${(props) => (props.flexcolumn ? 'column' : '')};
     gap: ${(props) => (props.gap || '20px')};
     max-width: ${(props) => (props.maxwidth ? '328px' : '')};
+    overflow-wrap: break-word;
 `
 
 export const TextBlock = styled(TextContainer)`
