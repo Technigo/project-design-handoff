@@ -5,6 +5,9 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './ClientReview.css';
+import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const ClientReviewsCarousel = () => {
   const settings = {
@@ -34,6 +37,10 @@ const ClientReviewsCarousel = () => {
           <p>“Thanks to my coach, I could finally stick to the lifestyle always looking for. Making customized eating diet and training based on my routine helps me to keep motivated  and easy to follow!”</p>
           <img src="../assets/Sara.png" alt="picture of Sara" />
           <h3>Sara Jones</h3>
+        </div>
+        <div className="arrow-container">
+          <BsFillArrowLeftCircleFill />
+          <BsFillArrowRightCircleFill />
         </div>
       </Slider>
     </div>
