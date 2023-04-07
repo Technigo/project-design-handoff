@@ -31,6 +31,7 @@
     /* border: red solid 2px; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* justify-content: center; */
     top: 290px;
     /* left: 1%;
@@ -61,15 +62,14 @@ p {
     text-align: center;
     /* padding: 20px auto; */
     z-index: 2;
-}
+} 
 
 .boldText {
     font-weight: bold;
+    margin-bottom: 31px; 
+
 }
 
-.classesWrapper .ourClassesButton {
-    display: none;
-}
 
 @media (min-width: 450px) and (max-width: 666px) {
 

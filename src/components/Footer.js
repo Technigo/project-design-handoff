@@ -10,7 +10,7 @@ const Footer = ({ screenSize }) => {
 
   return (
     <div className="footerWrapper">
-      <img className="logo" src={logoUrl} alt="Logo for Raise Studio" />
+      <img className="logoFooter" src={logoUrl} alt="Logo for Raise Studio" />
       <p>Vallgatan 6</p>
       <p>223 61, Lund</p>
       <div className="company">
@@ -26,7 +26,7 @@ const Footer = ({ screenSize }) => {
         <p>Schedule</p>
         <p>Instructors</p>
         <p>About Barre</p>
-        <p>Follow Us</p>
+        <p className="followUs">Follow Us</p>
       </div>
       <div className="iconWrapper">
         <img className="facebook" src="../images/Facebook.svg" alt="Facebook" />

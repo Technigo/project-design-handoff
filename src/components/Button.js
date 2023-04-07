@@ -1,12 +1,19 @@
-// import React from 'react';
-// import './Button.css';
+import React, { useState } from 'react';
+import './Button.css';
 
-// const Button = (props) => {
-//   return (
-//     <button className="Button" onClick={props.onClick}>
-//       {props.text}
-//     </button>
-//   )
-// }
+const Button = ({ buttonText }) => {
+  const [disabled, setDisabled] = useState(false);
 
-// export default Button;
+  const onClick = () => {
+    setDisabled(true);
+    console.log('Button clicked!');
+  };
+
+  return (
+    <button type="button" className="button" onClick={onClick} disabled={disabled}>
+      {buttonText}
+    </button>
+  )
+}
+
+export default Button;
