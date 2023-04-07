@@ -22,7 +22,7 @@ const StyledHeader = styled.header`
   }
 
   @media (min-width: 668px) {
-    background-size: 200%;
+    background-size: 230%;
     background-position-x: 52%;
     padding: 0;
     margin: 0;

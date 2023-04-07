@@ -130,6 +130,12 @@ const SignUpInput = styled.input`
   &::placeholder {
       color: var(--neutral-dark);
     }
+
+  &:focus {
+    outline: none;
+    border: none;
+    border-bottom: black solid 1px;
+  }
 `;
 
 const SignUpButton = styled(Button)`

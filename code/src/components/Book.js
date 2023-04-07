@@ -65,6 +65,11 @@ const BookCard = styled.div`
   @media (min-width: 1024px) {
     max-width: 384px;
     height: 468px;
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: none;
+    }
   }
 `;
 

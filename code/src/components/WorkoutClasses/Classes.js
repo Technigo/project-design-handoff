@@ -7,20 +7,32 @@ const ClassesSection = styled.section`
   padding: 132px 0 132px 16px;
 
   @media (min-width: 668px) {
-    padding: 183px 0 183px 16px;
+    padding: 0 0 0 16px;
+    height: 100vh;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 668px) {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
-`;
 
-const ClassesContainer = styled.div`
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+`;
+
+const ClassesContainer = styled.div`
+  @media (min-width: 668px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
     max-width: 1010px;
   }
 `;

@@ -3,8 +3,16 @@ import styled from 'styled-components';
 import { Button } from '../Button';
 
 const ClassCardContainer = styled.div`
-  margin-right: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 16px 5px 5px;
+
+  @media (min-width: 1024px) {
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
 `;
 
 const StyledClassCard = styled.div`
@@ -17,20 +25,21 @@ const StyledClassCard = styled.div`
   overflow: hidden;
 
   @media (min-width: 1024px) {
-  height: 400px;
-  background-color: var(--primary-color-1);
-  border: none;
-  box-shadow: none;
-  filter: grayscale(100%);
-  
-  &:focus {
+    height: 400px;
+    background-color: var(--primary-color-1);
+    border: none;
+    box-shadow: none;
     outline: none;
-  }
+    filter: grayscale(100%);
+    
+    &:focus {
+      outline: none;
+    }
 
-  &:hover {
-    filter: none;
+    &:hover {
+      filter: none;
+    }
   }
-}
 `;
 
 const ClassImg = styled.img`

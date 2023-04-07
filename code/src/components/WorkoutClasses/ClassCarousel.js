@@ -50,11 +50,7 @@ const ButtonGroupContainer = styled.div`
   margin-right: 2px;
 
   @media (min-width: 1024px) {
-    filter: grayscale(100%);
-
-    &:hover {
-      filter: none;
-    }
+    display: none;
   }
 `;
 

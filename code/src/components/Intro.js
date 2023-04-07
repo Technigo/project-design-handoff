@@ -5,6 +5,10 @@ import { Button } from './Button';
 const IntroSection = styled.section`
   padding: 0;
 
+  @media (min-width: 668px) {
+    height: 100vh;
+  }
+
   @media (min-width: 1024px) {
     display: flex;
     justify-content: center;

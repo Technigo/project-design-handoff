@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import { FaBars, FaTimes } from 'react-icons/fa';
 
 const StyledNavBar = styled.nav`
   position: absolute;
@@ -46,7 +45,7 @@ const UlElements = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 
   @media (min-width: 668px) {
@@ -115,11 +114,11 @@ const ToggleButton = styled.button`
   }
 `;
 
-const CloseIcon = styled(FaTimes)`
+const CloseIcon = styled.img`
   color: var(--neutral-dark);
 `;
 
-const MenuIcon = styled(FaBars)`
+const MenuIcon = styled.img`
   color: var(--neutral-dark);
 `;
 
@@ -186,7 +185,14 @@ export const NavBar = ({ navOne, navTwo, navThree, navFour, navFive }) => {
         src={`${process.env.PUBLIC_URL}/assets/Logo.png`}
         alt="Logo for Cross Park" />
       <ToggleButton onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <CloseIcon /> : <MenuIcon />}
+        {isOpen ? <CloseIcon
+          src={`${process.env.PUBLIC_URL}/assets/x.png`}
+          alt="Logo that says sign up" />
+          : <MenuIcon
+            // eslint-disable-next-line react/jsx-indent-props
+            src={`${process.env.PUBLIC_URL}/assets/Hamburger_icon.png`}
+            // eslint-disable-next-line react/jsx-indent-props
+            alt="Logo that says sign up" />}
       </ToggleButton>
       <MenuNav ref={navRef} isOpen={isOpen}>
         <UlElements>
