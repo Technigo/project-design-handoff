@@ -74,10 +74,9 @@ code {
     right: 0;
     width: 100%;
     background-color: grey;
-    border: 1px solid grey;
     padding: 10px;
-    justify-content: flex-start;
-    width: 20%;
+    align-items: center;
+    width: 40%;
     
   }
 
