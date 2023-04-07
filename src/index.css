@@ -1,9 +1,16 @@
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Libre Baskerville', serif;
+  overflow-x: hidden;
 }
 
 code {
   font-family: 'Libre Baskerville', serif;
 }
+

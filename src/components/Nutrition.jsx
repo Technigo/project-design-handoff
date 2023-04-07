@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Nutrition.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -19,10 +19,6 @@ export const Nutrition = () => {
     arrows: true,
     className: 'nutrition-slick-carousel'
   };
-
-  useEffect(() => {
-    import('slick-carousel').then(() => {});
-  }, []);
 
   return (
     <div className="nutrition-background">

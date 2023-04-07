@@ -1,0 +1,17 @@
+.mybutton {
+    display: flex;
+align-items: center;
+justify-content: center;
+padding: 15px 40px;
+text-decoration: none;
+background: #D69A2A;
+border-radius: 12px;
+color: #f5f5f5;
+font-size: 16px;
+font-weight: 700;
+transition: .3s ease;
+}
+
+.mybutton:hover {
+    background: #926004;
+}
