@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Trial } from "./Trial";
 
@@ -14,8 +14,10 @@ background-color: rgba(0, 0, 0, 0.2);
 const StyledPopup = styled.div`
 position: fixed;
 left: 50%;
-overflow-x: hidden;
-overflow-y: auto;
+top: 50%;
+transform: translate(-50%, -50%);
+height: 80vh;
+width: 80vw;
 background: #F5F5F5;
 box-shadow: 0px 0px 113px 775px rgba(0, 0, 0, 0.45);
 border-radius: 12px;
@@ -24,6 +26,7 @@ flex-direction: column;
 align-items: center;
 gap: 1rem;
 padding-bottom: 48px;
+overflow-y: scroll;
 `
 const HeaderWrapper = styled.div`
 display: grid;
@@ -86,13 +89,42 @@ color: #02393F;
 `
 
 const Popup = ({ setIsShowing }) => {
+
+  const [isOpen, setIsOpen] = useState(true);
+
+  // Locking scrolling under the popup.
+  // Could be done with CSS classes
+  // but since I'm stubborn this is a styled component
+  // so I'm solving it like this
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
+  // Handling clicking outside of the popup (the overlay)
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      setIsShowing(false);
+    }
+  };
+
   return (
-    <Overlay onClick={() => setIsShowing(false)}>
+    <Overlay onMouseDown={handleOverlayClick}>
       <StyledPopup>
         <ExitIcon 
           src="/icons/exitbtn.svg" 
           alt ="" 
-          onClick={() => setIsShowing(false)}/>
+          onClick={() => {
+            setIsOpen(false)
+            setIsShowing(false)
+          }}/>
         <HeaderWrapper>
           <StyledHeader>Register here</StyledHeader>
         </HeaderWrapper>

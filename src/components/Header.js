@@ -35,8 +35,8 @@ margin-top: 10rem;
 const StyledH1 = styled.h1`
 font-size: 2rem;
 `
-
-const Header = () => {
+// onClick is the prop for opening the Popup
+const Header = ({ onClick }) => {
   return (
     <StyledHeader>
       <StyledHeaderWrapper>
@@ -54,7 +54,7 @@ const Header = () => {
              plan - for holistic health anytime, anywhere.  Achieve optimal health and
              balance through our comprehensive wellness program.
           </p>
-          <CTA test>Start your 7-day FREE trial</CTA>
+          <CTA onClick={onClick}>Start your 7-day FREE trial</CTA>
         </StyledOverlayWrapper>
       </StyledHeaderWrapper>
     </StyledHeader>

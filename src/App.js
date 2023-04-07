@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import GlobalStyle from "style/Global";
-import { CTA } from "components/CTA";
 import Header from "components/Header";
 import Benefits from "components/Benefits";
 import Testimonials from "components/Testimonials";
@@ -9,22 +8,26 @@ import Nutrition from "components/Nutrition";
 import Pricing from "components/Pricing";
 import Popup from "components/Popup";
 import Footer from "components/Footer";
+import CTADiv from "components/CTADiv";
 
 export const App = () => {
   const [isShowing, setIsShowing] = useState(false);
   console.log(isShowing);
 
+  const handleCTAClick = () => {
+    setIsShowing(true);
+  };
+
   return (
     <div>
       <GlobalStyle />
-      <Header />
+      <Header onClick={() => setIsShowing(true)} />
       <Benefits />
-      <CTA onClick={() => setIsShowing(true)}>Start your 7-day FREE trial
-      </CTA>
+      <CTADiv onClick={handleCTAClick} />
       <Testimonials />
-      <CTA>Start your 7-day FREE trial</CTA>
+      <CTADiv onClick={handleCTAClick} />
       <OnlineYoga />
-      <CTA alone>Start your 7-day FREE trial</CTA>
+      <CTADiv onClick={handleCTAClick} />
       <Nutrition />
       <Pricing />
       {isShowing && <Popup setIsShowing={setIsShowing} />}

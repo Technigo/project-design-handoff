@@ -11,6 +11,7 @@ export const CTA = styled.button`
     border: none;
     width: 345px;
     height: 56px;
+    scroll-behavior: smooth;
 
     &:active {
         background-color: #AC7816;

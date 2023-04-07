@@ -19,21 +19,23 @@ export const YogaSlider = () => {
   const StyledDescriptionWrapper = styled.p`
   display: flex;
   justify-content: space-between;
+  margin-right: 8px;
   overflow: hidden;
+  width: 220px;
   `
 
   const StyledVideo = styled.video`
-object-fit: cover;
-width: 226px;
-height: 189px;
-object-position: center;
-border-radius: 12px;
- `
+  object-fit: cover;
+  width: 226px;
+  height: 189px;
+  object-position: center;
+  border-radius: 12px;
+  `
 
   const StyledVideoContainer = styled.div`
- display: block;
- overflow: hidden;
- `
+  position: relative;
+  display: block;
+  `
 
   return (
     <SliderContainer>
@@ -43,8 +45,18 @@ border-radius: 12px;
         slidesPerView={1.5}
         freeMode
         loop
+
         modules={[FreeMode]}
         className="YogaSwiper">
+        <SwiperSlide>
+          <StyledVideoContainer>
+            <StyledDescriptionWrapper>
+              <StyledP>Yinyoga to calm down</StyledP>
+              <StyledP>15 min</StyledP>
+            </StyledDescriptionWrapper>
+            <StyledVideo controls src="video/video.mp4" poster="img/videoposter.png"/>
+          </StyledVideoContainer>
+        </SwiperSlide>
         <SwiperSlide>
           <StyledVideoContainer>
             <StyledDescriptionWrapper>
@@ -56,20 +68,23 @@ border-radius: 12px;
         </SwiperSlide>
         <SwiperSlide>
           <StyledVideoContainer>
-            <div>
+            <StyledDescriptionWrapper>
               <StyledP>Yinyoga to calm down</StyledP>
               <StyledP>15 min</StyledP>
-            </div>
+            </StyledDescriptionWrapper>
             <StyledVideo src="video/video.mp4" poster="img/videoposter.png"/>
           </StyledVideoContainer>
         </SwiperSlide>
         <SwiperSlide>
           <StyledVideoContainer>
-            <StyledP>Yinyoga to calm down</StyledP>
+            <StyledDescriptionWrapper>
+              <StyledP>Yinyoga to calm down</StyledP>
+              <StyledP>15 min</StyledP>
+            </StyledDescriptionWrapper>
             <StyledVideo src="video/video.mp4" poster="img/videoposter.png"/>
           </StyledVideoContainer>
         </SwiperSlide>
-
+        
       </Swiper>
     </SliderContainer>
   );
