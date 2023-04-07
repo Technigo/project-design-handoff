@@ -8,6 +8,16 @@ const StyledDiv = styled.div`
     align-items: center;
     justify-content: center;
     height: 144px;
+
+    @media(min-width: 768px) and (max-width: 1024px) {
+      max-height: 190px;
+      width: 100%;
+      padding: 185px 64px;
+    }
+
+    @media(min-width: 1025px) {
+      height: 192px;
+    }
 `
 
 const StyledA = styled.a`

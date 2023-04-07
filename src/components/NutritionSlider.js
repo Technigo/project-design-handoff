@@ -9,7 +9,6 @@ import styled from 'styled-components'
 export const NutritionSlider = () => {
   const SliderContainer = styled.div`
   display: flex;
-  align-items: flex-start;
 
   @media (min-width: 768px) {
     width: 768px;
