@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Faq/FaqText.css';
-import FAQ from '../Faqfunc'
+import './FaqPage2/FaqText2.css';
+import FAQ from './FaqPage2/FaqFunction';
 
 const FAQuestions = () => {
   const [faqs] = useState([
