@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable max-len */
 import React from 'react';
@@ -34,6 +35,15 @@ const responsive = {
   }
 };
 
+const CustomDot = ({ onClick, active }) => {
+  return (
+    <button
+      type="button"
+      className={active ? 'custom-dot-active' : 'custom-dot-inactive'}
+      onClick={onClick} />
+  );
+};
+
 const ClassCarousel = () => {
   return (
     <Carousel
@@ -44,13 +54,6 @@ const ClassCarousel = () => {
       className=""
       containerClass="container-with-dots"
       dotListClass="dot-list"
-      dotStyle={{
-        backgroundColor: 'gray',
-        border: 'none',
-        borderRadius: 0,
-        height: 8,
-        width: 8
-      }}
       draggable
       focusOnSelect={false}
       infinite
@@ -69,6 +72,7 @@ const ClassCarousel = () => {
       rtl={false}
       shouldResetAutoplay
       showDots
+      customDot={<CustomDot />}
       sliderClass=""
       slidesToSlide={1}
       swipeable>
