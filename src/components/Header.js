@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
 import { CTA } from './CTA';
+import Img from '../dane-wetton-t1NEMSm1rgI-unsplash.png';
 
 const StyledHeader = styled.header`
 margin: 1.5rem;
-background-image: url(/public/img/dane-wetton-t1NEMSm1rgI-unsplash.png);
+background-image: url(${Img});
 background-position: center;
 background-size: cover;
 font-weight: 700;
