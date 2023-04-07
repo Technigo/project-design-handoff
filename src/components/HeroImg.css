@@ -1,19 +1,27 @@
-.heroimg-container {
+.heroimg-background img {
     position: relative;
     display: inline-block;
-  }
-
+    height: 806px;
+    width: 360px;
+    overflow: hidden;
+}
+.Ham-menu {
+  position: absolute;
+  padding: 14px;
+  margin-top: -794px;
+  margin-left: 298px;
+}
 .hero-logo{
   position: absolute;
   padding: 14px;
-  margin-top: -770px;
+  margin-top: -800px;
 }
 
 .lupa {
   position: absolute;
   padding: 14px;
-  margin-top: -770px;
-  margin-left: 265px;
+  margin-top: -803px;
+  margin-left: 255px;
 }
 .hero-padding {
    margin: 30px; 
@@ -82,3 +90,5 @@
     align-items: center;
   }
 
+
+  
