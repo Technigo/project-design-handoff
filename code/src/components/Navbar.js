@@ -25,7 +25,13 @@ export const Navbar = () => {
         <li><a href="#">Shop</a></li>
         <li><a href="#">Club</a></li>
       </ul>
-      <div className="navbar-hamburger-menu" role="button" aria-expanded={menuOpen} onClick={toggleMenu} onKeyDown={handleKeyDown} tabIndex="0">
+      <div
+        className="navbar-hamburger-menu"
+        role="button"
+        aria-expanded={menuOpen}
+        onClick={toggleMenu}
+        onKeyDown={handleKeyDown}
+        tabIndex="0">
         <span> </span>
         <span> </span>
         <span> </span>
