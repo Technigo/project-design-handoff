@@ -11,6 +11,11 @@
     margin: 15px;
 }
 
+i {
+    font-size: 12px;
+    color: #fff;
+  }
+
 .intro-text {
     display: flex;
     flex-direction: column;

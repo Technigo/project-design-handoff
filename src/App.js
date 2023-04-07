@@ -4,6 +4,7 @@ import { Classes } from './components/Classes/Classes';
 import { Adress } from './components/Adress';
 import { ReviewTemp } from './components/Review/Review';
 import { SignUp } from './components/SignUp';
+import { Foot } from './components/Footer/Footer';
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
         <ReviewTemp />
         <SignUp />
       </main>
+      <Foot />
     </>
   );
 }

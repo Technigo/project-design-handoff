@@ -14,7 +14,7 @@ export const Header = () => {
     <section className="navbar-cont">
       <div className="logo-cont">
         <Logo src="./logo/Logo.svg" />
-        <Logo src="./logo/Logo.svg" />
+        <i className="fa-sharp fa-regular fa-magnifying-glass" />
       </div>
       <section className="intro-text">
         <p>Santulan Power Yoga Stockholm</p>

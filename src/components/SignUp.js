@@ -19,7 +19,7 @@ const Inputs = styled.div`
   padding: 10px 30px;
 
   h2 {
-    padding: 20px
+    padding: 20px;
   }
 
   h4 {
@@ -47,7 +47,7 @@ export const SignUp = () => {
       <Inputs>
         <h2>Sign up for a class!</h2>
         <h4>Enter personal details*</h4>
-        <div className="content-container">
+        <div>
           <input
             aria-label="name-input"
             type="text"
