@@ -11,6 +11,12 @@ const NewsH2 = styled.h2`
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 10px;
+
+  @media (min-width: 668px) {
+    font-size: 1rem;
+    line-height: 19px;
+    margin: 0 0 24px 0;
+  }
 `;
 
 const NewsH3 = styled.h3`

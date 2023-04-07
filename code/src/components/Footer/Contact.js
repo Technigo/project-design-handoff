@@ -10,6 +10,10 @@ const StyledContact = styled.div`
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: 1024px) {
+    gap: 85px;
+  }
 `;
 
 const FollowUsDiv = styled.div`
@@ -27,6 +31,12 @@ const FollowUsP = styled.p`
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
+  }
+
+  @media (min-width: 1024px) {
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 19px;
   }
 `;
 
@@ -66,6 +76,12 @@ const ContactH4 = styled.h4`
     line-height: 29px;
     text-transform: none;
     margin: 0 0 24px 0;
+  }
+
+  @media (min-width: 1024px) {
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 19px;
   }
 `;
 

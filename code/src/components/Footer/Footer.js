@@ -19,6 +19,11 @@ const FooterInfoDiv = styled.div`
   @media (min-width: 668px) {
     flex-direction: column-reverse;
   }
+
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+    gap: 85px;
+  }
 `;
 
 const FooterLogo = styled.img`
