@@ -32,7 +32,7 @@ const cards = [
 const Benefits = () => {
   return (
     <div className="benefits">
-      <div>
+      <div className="title-container">
         <h3>BENEFITS</h3>
         <h2>Healthy doesn’t have to be hard. We make it easy</h2>
       </div>
