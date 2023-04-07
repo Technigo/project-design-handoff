@@ -6,14 +6,27 @@ const ReviewSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--neutral-light);
+
+  @media (min-width: 570px) {
+   background-color: var(--primary-color-1);
+   flex-direction: column-reverse;
+   padding-top: 53px;
+   padding-bottom: 53px;
+  }
 `;
 
 const ReviewH2 = styled.h2`
 color: var(--primary-color-4);
   font-weight: 800;
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
   padding: 97px 16px 40px 16px;
+
+  @media (min-width: 570px) {
+    padding: 0 163px;
+    font-size: 2.25rem;
+  }
 `;
 
 const Quotation = styled.img`
@@ -24,6 +37,10 @@ const Quotation = styled.img`
 
 const ReviewImg = styled.img`
   margin-bottom: 40px;
+
+  @media (min-width: 570px) {
+    margin-bottom: 48px;
+  }
 `;
 
 export const Review = () => {

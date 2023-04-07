@@ -13,6 +13,10 @@ const ConnectText = styled.h2`
   font-weight: 800;
   margin: 102px 68px 0 68px;
   text-align: center;
+
+  @media (min-width: 570px) {
+    margin: 128px 68px 0 68px;
+  }
 `;
 
 const IconsDiv = styled.div`
@@ -21,6 +25,11 @@ const IconsDiv = styled.div`
   margin-top: 10px;
   margin-bottom: 218px;
   gap: 10px;
+
+  @media (min-width: 570px) {
+    margin-top: 24px;
+    margin-bottom: 128px;
+  }
 `;
 
 export const Connect = () => {

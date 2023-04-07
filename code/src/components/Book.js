@@ -5,6 +5,12 @@ import { Button } from './Button';
 const BookSection = styled.section`
   background-color: var(--primary-color-1);
   padding: 133px 16px;
+
+  @media (min-width: 570px) {
+   background-color: var(--neutral-light);
+   padding: 0 114px;
+   padding-bottom: 197px;
+  }
 `;
 
 const BookH2 = styled.h2`
