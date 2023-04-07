@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-closing-tag-location */
 import React from 'react';
 import './SignUp.css'
+import { MainButton } from 'button/MainButton';
 
 const SignUp = () => {
   return (
@@ -54,6 +55,7 @@ const SignUp = () => {
             <form>
               <p>No</p>
               <input type="radio" />
+              <MainButton>Send now</MainButton>
             </form>
           </div>
         </div>
