@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ClassBtn, SignUpBtn } from './Buttons'
 
 const SignUpFun = styled.div`
   display: flex;
@@ -24,22 +25,16 @@ const Inputs = styled.div`
   h4 {
     font-weight: 600;
     font-size: 20px;
-  }
-
-  p {
-    font-size: 12px;
-    font-weight: 600;
-    align-self: center;
-    padding: 0 10px; 
-    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 8px;
   }
 
   input {
-    border-radius: 30px;
+    border-radius: 15px;
     border: solid 1px #888585; 
-    height: 20px;
+    height: 18px;
     width: 230px;
-    margin: 10px 0;
+    margin: 0 0 8px 0 ;
     padding: 12px;
     font-family: 'Outfit', sans-serif;
   }
@@ -65,6 +60,9 @@ export const SignUp = () => {
           aria-label="phone-input"
           type="number"
           placeholder="Phonenumber" />
+        <h4>Choose a class*</h4>
+        <ClassBtn />
+        <SignUpBtn />
       </Inputs>
     </SignUpFun>
   )
