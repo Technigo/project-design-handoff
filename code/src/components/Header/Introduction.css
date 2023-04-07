@@ -1,4 +1,4 @@
-.intro-box {
+.Introduction {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +53,7 @@
   
 
   @media (min-width: 641px) {
-    .intro-box {
+    .Introduction {
       margin: 30% 32px;
       width: 50%;
       position: relative;
@@ -62,7 +62,7 @@
   }
 
   @media (min-width: 1025px) {
-    .intro-box {
+    .Introduction {
       margin: 20% 64px;
       width: 50%;
       max-width: 555px;

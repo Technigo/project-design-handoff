@@ -23,7 +23,7 @@ const Footer = ({ screenSize }) => {
   */
 
   return (
-    <div className="footer">
+    <div className="Footer">
       {isMobile && (<img src={logoSmall} alt="" />)}
       {isDesktop && (<img src={logo} alt="" />)}
       {!isDesktop && !isMobile && (<img src={logoMedium} alt="" />)}

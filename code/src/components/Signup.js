@@ -10,7 +10,7 @@ const Signup = () => {
   }
 
   return (
-    <div className="signup-container">
+    <div className="Signup">
       <form className="signupform">
         <h3>Form for signup</h3>
         <label htmlFor="name"><span>Name</span>
