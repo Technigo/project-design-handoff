@@ -3,7 +3,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
-import heroImage from './heroImage.jpg';
+import heroImage from './Hero.jpg';
 
 export const Hero = () => {
   const Heading = styled.h1`

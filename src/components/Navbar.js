@@ -1,6 +1,9 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
 import styled from 'styled-components';
+import logoImage from './Logo.png';
+import lookingGlass from './search.svg';
+import hamburgerMenu from './hamburger.svg';
 
 const Nav = styled.nav`
   display: flex; 
@@ -60,7 +63,7 @@ li {
 export const Navbar = () => {
   return (
     <Nav>
-      <Logo src="../images/Logo.png" alt="logo" />
+      <Logo src={logoImage} alt="logo" />
       <StyledList>
         <li>Home</li>
         <li>About</li>
@@ -69,8 +72,8 @@ export const Navbar = () => {
         <li>Membership</li>
       </StyledList>
       <NavContainer>
-        <Search src="../images/search.svg" alt="looking glass" />
-        <Hamburger src="../images/Hamburger Menu.svg" alt="hamburger menu icon" />
+        <Search src={lookingGlass} alt="looking glass" />
+        <Hamburger src={hamburgerMenu} alt="hamburger menu icon" />
       </NavContainer>
     </Nav>
   )
