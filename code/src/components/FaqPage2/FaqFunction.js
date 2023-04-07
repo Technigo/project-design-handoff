@@ -1,20 +1,20 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-import React from 'react';
+import React, { useState } from 'react';
 
-const FAQ = ({ faq, index, toggleFAQ }) => {
+const FAQItem = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div
-      className={`faq${faq.open ? 'open' : ''}`}
-      key={index}
-      onClick={() => { toggleFAQ(index) }}>
-      <div className="faq-question">
-        {faq.question}
-      </div>
-      <div className="faq-answer">
-        {faq.answer}
-      </div>
+    <div className="faq-item">
+      <button type="button" className="faq-question" onClick={toggleOpen}>
+        {question}
+      </button>
+      {isOpen && <div className="faq-answer">{answer}</div>}
     </div>
-  )
-}
-export default FAQ
+  );
+};
+
+export default FAQItem;
