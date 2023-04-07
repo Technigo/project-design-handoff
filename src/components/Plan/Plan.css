@@ -1,0 +1,149 @@
+.plan {
+    display: flex;
+    flex-direction: column; /* add this line */
+    height: 100vh;
+    background-image: url('/public/images/plan.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.plan-heading {
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 48px;
+margin-bottom: 20px;
+color: #FBEDDE;
+margin-bottom: 20px;
+}
+
+.plan-buttons {
+display: flex;
+margin: 20px;
+}
+
+.plan-button {
+display: flex;
+font-family: "Poppins", sans-serif;
+align-items: center;
+font-weight: 400;
+font-size: 24px;
+color: #FBEDDE;
+background-color: transparent;
+border: 2px solid #FBEDDE;
+border-radius: 24px;
+padding: 16px 32px;
+margin: 0 8px;
+width: 231.5px;
+height: 115px;
+cursor: pointer;
+
+}
+
+.plan-button:active {
+background-color: #FBEDDE;
+color: #28282B;
+}
+
+.selected-button {
+background-color: #DBFE62;
+color: #28282B;
+border: none;
+}
+
+.plan h2 {
+font-family: "Poppins", sans-serif;
+color: #FBEDDE;
+font-weight: 500;
+font-size: 28px;
+text-align: center;
+margin-top: 20px;
+}
+
+.signup-form form {
+display: flex;
+flex-direction: column;
+}
+  
+.form-group {
+display: flex;
+flex-direction: row;
+margin-bottom: 10px;
+justify-content: space-between;
+}
+  
+.name-group {
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-bottom: 10px;
+}
+  
+label {
+display: block;
+width: 100px;
+font-weight: bold;
+text-align: right;
+margin-right: 10px;
+font-family: "Poppins", sans-serif;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+color: #FFFFFF;
+}
+  
+input {
+flex: 1;
+padding: 8px;
+font-size: 16px;
+border: 1px solid #FFFFFF;
+border-radius: 8px;
+background-color: transparent;
+}
+
+.create-account {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #7034E4;
+color: #FBEDDE;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-size: 24px;
+margin-top: 20px;
+}
+
+.button-container {
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: center;
+margin-top: 30px;
+}
+  
+.create-account-text {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: #FBEDDE;
+margin-top: 16px;
+text-align: center;
+display: block;
+}
+
+.create-account-text a {
+text-decoration: underline;
+color: #FBEDDE
+}
+
+.create-account:hover {
+filter: drop-shadow(0px 4px 8px rgba(14, 14, 16, 0.5));
+}
+
+.create-account::selection {
+color: #5F12F3;
+filter: drop-shadow(0px 10px 8px rgba(14, 14, 16, 0.5));
+}
