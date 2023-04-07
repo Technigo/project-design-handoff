@@ -1,7 +1,7 @@
 import React from 'react'
 import { HeroSite } from 'components/HeroSite'
 import { WhyArial } from 'components/WhyArial'
-import { OurClasses } from 'components/OurClasses'
+import { ClassesSite } from 'components/ClassesSite'
 import { createGlobalStyle } from 'styled-components'
 import { FormSite } from 'components/FormSite'
 import { Footer } from 'components/Footer'
@@ -12,7 +12,7 @@ export const App = () => {
       <GlobalStyle />
       <HeroSite />
       <WhyArial />
-      <OurClasses />
+      <ClassesSite />
       <FormSite />
       <Footer />
     </div>
