@@ -26,6 +26,7 @@ export const StickyNav = styled(Nav)`
 
 export const NavItem = styled.a`
   font-size: 1.2rem;
+
   text-decoration: none;
   color: #fff;
   margin-right: 2rem;
@@ -37,5 +38,33 @@ export const NavItem = styled.a`
 
   &:hover {
     text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const MobileNavIcon = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+`;
+
+export const MobileNavItem = styled.a`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 2rem;
+    cursor: pointer;
   }
 `;

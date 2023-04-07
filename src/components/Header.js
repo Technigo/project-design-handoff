@@ -2,12 +2,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import classNames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import useSticky from './useSticky';
 import { TopRightButton, BottomCenterButton, TopLeftLogo } from './Global';
-import { StickyNav, NavItem } from './Navbar';
+import { StickyNav, NavItem, MobileNavIcon, MobileNavItem } from './Navbar';
 import heroImage from '../assets/hero.jpg';
 import logo from '../assets/logo.svg';
-
 /* <FontAwesomeIcon icon="fa-sharp fa-regular fa-magnifying-glass" /> */
 /* <FontAwesomeIcon icon="fa-sharp fa-light fa-xmark" /> */
 
@@ -21,11 +22,16 @@ const HeroContainer = styled.div`
   padding-bottom: 4rem; /* Add padding to adjust the spacing */
   min-height: 60vh;
 
- @media screen and (min-width: 1400px) {
+  @media screen and (max-width: 768px) {
+  min-height: 100vh;
+  width: 100%;
+}
+
+ @media screen and (min-width: 1440px) {
     min-height: 90vh;
   }
 
-   @media screen and (min-width: 1400px) {
+   @media screen and (min-width: 1632px) {
     min-height: 100vh;
   }
 
@@ -38,9 +44,18 @@ const TitleContainer = styled.div`
 position: absolute;
 width: 15%;
 margin-left: 6rem;
-margin-top: 45%;
+margin-top: 15%;
 color: #03092E;
 padding-left: 2rem;
+
+@media screen and (max-width: 768px) {
+    width: 80%; /* Adjust width to fit the screen */
+    margin-left: auto; /* Center the container horizontally */
+    padding: 0 1rem; /* Add padding to adjust the spacing */
+    flex-direction: column; /* Display as a column */
+    align-items: flex-end;
+    color: #E3F7FC;
+  }
 `;
 
 const DescriptionContainer = styled.div`
@@ -48,7 +63,17 @@ width: 35%;
 margin-top: 60%;
 margin-left: 25rem;
 position: absolute;
-`
+bottom: 0;
+
+@media screen and (max-width: 768px) {
+    width: 80%; /* Adjust width to fit the screen */
+    margin-left: auto; /* Center the container horizontally */
+    padding: 0 1rem; /* Add padding to adjust the spacing */
+    flex-direction: column; /* Display as a column */
+    align-items: flex-end;
+    color: #E3F7FC;
+  }
+`;
 
 const StyledTitle = styled.h1`
 font-size:2.5rem;
@@ -64,6 +89,7 @@ line-height: 1.5;
 flex: 0.6;
 word-break: break-word;
 margin-top: 0; /* Reset top margin */
+
 `;
 
 const ButtonAndTextContainer = styled.div`
@@ -112,12 +138,18 @@ const Header = () => {
       <StickyNav ref={stickyRef} className={classNames({ sticky })}>
         <div>
           <TopLeftLogo src={logo} alt="logo" />
+          <MobileNavIcon>
+            <FontAwesomeIcon icon={faBars} />
+          </MobileNavIcon>
           <NavItem href="#">Services</NavItem>
           <NavItem href="#">Coaches</NavItem>
           <NavItem href="#">About</NavItem>
           <NavItem href="#">Shop</NavItem>
           <NavItem href="#">Club</NavItem>
           <TopRightButton>Try for Free</TopRightButton>
+          <MobileNavItem>About</MobileNavItem>
+          <MobileNavItem>Services</MobileNavItem>
+          <MobileNavItem>Contact</MobileNavItem>
         </div>
       </StickyNav>
       <HeroContainer image={heroImage}>
