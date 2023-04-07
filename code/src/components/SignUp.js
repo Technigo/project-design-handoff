@@ -3,7 +3,11 @@ import styled from 'styled-components';
 import { Button } from './Button';
 
 const SignUpSection = styled.section`
-  padding: 0;
+  padding: 133px 16px;
+
+  @media (min-width: 570px) {
+    padding: 0;
+  }
 
   button {
       align-self: flex-start;
@@ -52,7 +56,20 @@ const SignUpForm = styled.form`
   gap: 16px;
 
   @media (min-width: 570px) {
-    padding: 40px 144px 100px 144px;
+    padding: 0 144px 100px 144px;
+  }
+`;
+
+const NameInputDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @media (min-width: 570px) {
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
   }
 `;
 
@@ -67,6 +84,21 @@ const SignUpInput = styled.input`
     }
 `;
 
+const SignUpButton = styled(Button)`
+  @media (max-width: 569px) {
+    &::before {
+      content: "Continue to sign up!";
+    }
+  }
+
+  @media (min-width: 570px) {
+    padding: 12px 30px;
+    &::before {
+      content: "Continue";
+    }
+  }
+`;
+
 export const SignUp = () => {
   return (
     <SignUpSection className="signup">
@@ -78,12 +110,14 @@ export const SignUp = () => {
     and can make reservations to our workout session.
       </SignUpP>
       <SignUpForm>
-        <SignUpInput type="text" placeholder="FIRST NAME" />
-        <SignUpInput type="text" placeholder="LAST NAME" />
+        <NameInputDiv>
+          <SignUpInput type="text" placeholder="FIRST NAME" />
+          <SignUpInput type="text" placeholder="LAST NAME" />
+        </NameInputDiv>
         <SignUpInput type="email" placeholder="E-MAIL" />
         <SignUpInput type="password" placeholder="PASSWORD" />
         <SignUpInput type="password" placeholder="CONFIRM PASSWORD" />
-        <Button mainCta>Continue to sign up!</Button>
+        <SignUpButton mainCta />
       </SignUpForm>
     </SignUpSection>
   )
