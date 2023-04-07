@@ -116,7 +116,7 @@ const ArrowButtonLeft = styled.button`
   margin: auto;
   position:absolute;
   top: 60%;
-  left: 20px;
+  left: 15px;
 `;
 
 const ArrowButtonRight = styled.button`
@@ -130,7 +130,7 @@ const ArrowButtonRight = styled.button`
   margin: auto;
   position:absolute;
   top: 60%;
-  right: 20px;
+  right: 15px;
 `;
 const Wrapper = styled.div`
   align-items: left;
