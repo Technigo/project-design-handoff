@@ -23,40 +23,44 @@ color: white;
 export const HowToAchive = () => {
   return (
     <div className="how-to-achive-container">
-      <h1 className="title">
-        <SmallNarrowItalic>WORKOUT WHERE</SmallNarrowItalic>
-        <BoldBigItalic>YOU ARE</BoldBigItalic>
-      </h1>
-      <div className="how-to-achive-picture">
-        <img className="phone-picture" src="./Pictures/image116.svg" alt="phonepicture" />
+      <div className="title-box">
+        <h1 className="title">
+          <SmallNarrowItalic>WORKOUT WHERE</SmallNarrowItalic>
+          <BoldBigItalic>YOU ARE</BoldBigItalic>
+        </h1>
       </div>
-      <div className="how-to-Achive-text">
-        <h2>
-          <div className="flex">
-            <BoldBigItalic>SCHEDULE</BoldBigItalic>
-            <SmallNarrowItalic>WORKOUTS</SmallNarrowItalic>
-          </div>
-          <div className="flex">
-            <SmallNarrowItalic>GET</SmallNarrowItalic>
-            <BoldBigItalic>REMINDERS</BoldBigItalic>
-          </div>
-          <div className="flex">
-            <BoldBigItalic>TRACK</BoldBigItalic>
-            <SmallNarrowItalic>YOUR PROGRESS</SmallNarrowItalic>
-          </div>
-          <div className="flex">
-            <SmallNarrowItalic>BE</SmallNarrowItalic>
-            <BoldBigItalic>SPONTANEOUS</BoldBigItalic>
-          </div>
-          <div className="flex">
-            <BoldBigItalic>SAVE</BoldBigItalic>
-            <SmallNarrowItalic>YOUR FAVOURITES</SmallNarrowItalic>
-          </div>
-          <div className="flex">
-            <SmallNarrowItalic>CELEBRATE YOUR</SmallNarrowItalic>
-            <BoldBigItalic>GOALS</BoldBigItalic>
-          </div>
-        </h2>
+      <div className="how-to-achive-picture-text">
+        <div className="how-to-achive-picture">
+          <img className="phone-picture" src="./Pictures/image116.svg" alt="phonepicture" />
+        </div>
+        <div className="how-to-achive-text">
+          <h2>
+            <div className="flex">
+              <BoldBigItalic>SCHEDULE</BoldBigItalic>
+              <SmallNarrowItalic>WORKOUTS</SmallNarrowItalic>
+            </div>
+            <div className="flex">
+              <SmallNarrowItalic>GET</SmallNarrowItalic>
+              <BoldBigItalic>REMINDERS</BoldBigItalic>
+            </div>
+            <div className="flex">
+              <BoldBigItalic>TRACK</BoldBigItalic>
+              <SmallNarrowItalic>YOUR PROGRESS</SmallNarrowItalic>
+            </div>
+            <div className="flex">
+              <SmallNarrowItalic>BE</SmallNarrowItalic>
+              <BoldBigItalic>SPONTANEOUS</BoldBigItalic>
+            </div>
+            <div className="flex">
+              <BoldBigItalic>SAVE</BoldBigItalic>
+              <SmallNarrowItalic>YOUR FAVOURITES</SmallNarrowItalic>
+            </div>
+            <div className="flex">
+              <SmallNarrowItalic>CELEBRATE YOUR</SmallNarrowItalic>
+              <BoldBigItalic>GOALS</BoldBigItalic>
+            </div>
+          </h2>
+        </div>
       </div>
       <div className="how-to-achive-buttons">
         <StartButton outlinedlong>Download App</StartButton>

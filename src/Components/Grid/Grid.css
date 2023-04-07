@@ -1,4 +1,14 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Here We decide how many columns we want in mobile-first view */
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
 }
+  
+  @media (min-width: 1023px) {
+    .grid-container {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
