@@ -36,6 +36,7 @@ const Inputs = styled.div`
     width: 230px;
     margin: 0 0 8px 0 ;
     padding: 12px;
+    font-size: 16px;
     font-family: 'Outfit', sans-serif;
   }
 `;
