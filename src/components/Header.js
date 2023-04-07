@@ -10,7 +10,7 @@ const HeaderWrapper = styled.header`
   @media (min-width: 545px) {
     height: 80px;
   }
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     height: 138px;
   } 
 `
@@ -35,7 +35,7 @@ const Navbar = styled.nav`
   align-items: center;
   justify-content: space-around;
   flex-grow: 2;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
    display: flex;
 
   }
@@ -65,7 +65,7 @@ const DropdownMenu = styled.img`
   width: 33px;
   cursor: pointer;
   margin-left: 34px;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     display: none;
   } 
 `

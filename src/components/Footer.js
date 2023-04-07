@@ -14,7 +14,7 @@ const LogoWrapper = styled.div`
   @media (min-width: 545px) {
     visibility: visible;
     margin-top: 26px;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     margin-top: 50px;
   } 
   }
@@ -29,7 +29,7 @@ const Navbar = styled.nav`
   margin: auto auto 24px auto;
   @media (min-width: 545px) {
     margin: 20px auto 26px auto;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     margin: 20px auto 48px auto;
   } 
   }
@@ -41,7 +41,7 @@ const NavbarItem = styled.a`
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     font-size: 24px;
   } 
 `
@@ -67,7 +67,7 @@ const LinksInnerWrapper = styled.div`
   @media (min-width: 545px) {
     margin: 24px auto 26px auto;
   }
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     margin: 48px auto 50px auto;
   } 
 `
@@ -76,7 +76,7 @@ const LinkIcon = styled.img`
 width: 22px;
 height: 22px;
 cursor: pointer;
-@media (min-width: 686px) {
+@media (min-width: 685px) {
   width: 32px;
   height: 32px;
 } 
@@ -89,9 +89,9 @@ export const Footer = () => {
         <Logo />
       </LogoWrapper>
       <Navbar>
-        <NavbarItem>Classes</NavbarItem>
-        <NavbarItem>About</NavbarItem>
-        <NavbarItem>Contact</NavbarItem>
+        <NavbarItem href="">Classes</NavbarItem>
+        <NavbarItem href="">About</NavbarItem>
+        <NavbarItem href="">Contact</NavbarItem>
       </Navbar>
       <LinksOuterWrapper>
         <LinksInnerWrapper>

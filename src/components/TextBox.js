@@ -28,7 +28,8 @@ const Paragraph = styled.p`
   text-align: center;
   font-weight: 400;
 `
-
+/* Text Box component, in which the styled components aboce are mounted
+The text is passed as props from App.js */
 export const TextBox = ({ heading, text }) => {
   return (
     <Wrapper>

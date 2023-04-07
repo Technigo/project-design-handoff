@@ -7,6 +7,8 @@ import { SignUpForm } from './components/SignUpForm'
 import { Header } from './components/Header'
 import { Welcome } from './components/Welcome'
 import { Footer } from './components/Footer'
+import { Reviews } from './components/Reviews'
+import { Classes } from './components/Classes'
 
 export const App = () => {
   return (
@@ -21,7 +23,7 @@ export const App = () => {
           text="Power yoga is a fast-paced style of yoga that's focused on building strength and endurance. Whilst practising this form of yoga, you will feel the tension and toxins leaving your body and your posture and back pain getting better." />
       </Section>
       <Section white>
-        Classes section
+        <Classes />
       </Section>
       <Section brown removeOnMobile>
         <TextBox
@@ -32,7 +34,7 @@ export const App = () => {
         <Location />
       </Section>
       <Section blue halfWidth>
-        Contact section
+        <Reviews />
       </Section>
       <Section white halfWidth id="sign-up-section">
         <SignUpForm />

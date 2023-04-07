@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     margin: 26px auto 20px auto;
   }
 
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     width: 680px;
     max-width: 680px;
     height: 326px;
@@ -27,7 +27,7 @@ const Image = styled.img`
   height: 192px;
   object-fit: cover;
 
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     height: 100%;
     width: 314px;
   }
@@ -41,7 +41,7 @@ const FindUsWrapper = styled.div`
   justify-content: center;
   flex-grow: 2;
 
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     width: 365px;
   }
 `
@@ -53,7 +53,7 @@ const FindUs = styled.p`
   width: 90%;
   font-size: 16px;
 
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     font-size: 24px;
   }
 `

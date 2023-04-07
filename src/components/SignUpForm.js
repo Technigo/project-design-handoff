@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   @media (min-width: 545px) {
     height: 622px;
   }
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     height: 722px;
   }
 `
@@ -124,7 +124,7 @@ export const SignUpForm = () => {
             </RadioButtonLabel>
           ))}
         </RadioButtonWrapper>
-        <Button>Sign up for class</Button>
+        <Button type="submit">Sign up for class</Button>
       </Form>
     </Wrapper>
   )

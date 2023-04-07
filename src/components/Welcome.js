@@ -4,13 +4,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
 
-// @media (min-width: 545px) {
-//     height: 80px;
-//   }
-//   @media (min-width: 686px) {
-//     height: 138px;
-//   }
-
 const WelcomeOuterWrapper = styled.div`
 width: 100%;
 height: 100%;
@@ -18,7 +11,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-@media (min-width: 686px) {
+@media (min-width: 685px) {
   align-items: start;
   justify-content: start;
  } 
@@ -29,7 +22,7 @@ const WelcomeInnerWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     width: 522px;
     margin-top: 140px; /* Maybe change this */
     margin-left: 80px;
@@ -52,7 +45,7 @@ const Heading = styled.h2`
   line-height: 51px;
   margin-bottom: 56px;
   text-align: center;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     margin-bottom: 24px;
  } 
 `
@@ -66,7 +59,7 @@ const Description = styled.p`
   text-align: center;
   display: none;
   margin-bottom: 48px;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
   display: block;
  } 
 `
@@ -74,7 +67,7 @@ const Description = styled.p`
 const ButtonWrapper = styled.div`
  width: 324px;
  cursor: pointer;
- @media (min-width: 686px) {
+ @media (min-width: 685px) {
   width: 522px;
  } 
 `
@@ -86,7 +79,7 @@ const Question = styled.h2`
   line-height: 18px;
   margin-top: 15px;
   text-align: center;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     margin-top: 24px;
  } 
 `

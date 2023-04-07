@@ -38,7 +38,7 @@ export const Section = styled.section`
     `}
   }
   /* Changes layout on larger screens/desktop */
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     border: none;
     ${(size) => size.halfWidth && css`
       width: 50%;

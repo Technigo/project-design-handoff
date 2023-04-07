@@ -10,7 +10,7 @@ const LogoWrapper = styled.div`
 const LogoImage = styled.img`
   height: 48px;
   width: 35px;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
     width: 68px;
     height: 85px;
   }
@@ -22,7 +22,7 @@ const LogoText = styled.h1`
   font-size: 24px;
   margin: 10px;
   display: none;
-  @media (min-width: 686px) {
+  @media (min-width: 685px) {
   display: inline-block;
   }
   `
