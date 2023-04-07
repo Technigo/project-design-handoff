@@ -3,8 +3,8 @@ import Footer from 'components/Footer';
 import Header from 'components/Header';
 import Hero from 'components/Hero';
 import Join from 'components/Join';
-//import Classes from 'components/classes';
-//import Quiz from 'components/quiz';
+import Classes from 'components/Classes';
+//import Quiz from 'components/Quiz';
 //import Praise from 'components/Praise';
 //import Form from 'components/Form';
 
@@ -14,6 +14,7 @@ export const App = () => {
       <Header />
       <Hero />
       <Join />
+      <Classes />
       <Footer />
     </div>
   )

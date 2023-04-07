@@ -1,10 +1,24 @@
 import React from 'react';
 import './Classes.css';
 
-export default Classes 
+const Classes = () => {
+  return (
+    <section className="classes-container">
+      <div className="sweat">
+        <img className="rubberband" src="./images/people/rubberband.svg" alt="rubberband on barre" />
+        <h5 className="classes-header">Come Sweat It Out at the Barre</h5>
+        <p>Our Barre Classes are full-body workouts where we’ll pulse, plié, and sweat our way through a series of exercises.</p>
+        <p><strong> No dance experience required!</strong></p>
+      </div>
+      <div className="carousel">
+        
+      </div>
+    </section>
+  );
+}
 
-//img
-//<h2> Come Sweat It Out at the Barre </h2>
-//<p> Our Barre Classes are full-body workouts where we’ll pulse, plié, and sweat our way through a series of exercises. <strong> No dance experience required!</strong></p>
+export default Classes
+
+
 //carousel
 
