@@ -16,14 +16,14 @@ const PersonalisedMeal = () => {
         infiniteLoop
         showStatus={false}
         showThumbs={false}
-        showArrows
         centerMode
-        centerSlidePercentage={77}
+        swipeable
+        showArrows={false}
+        centerSlidePercentage={33}
         showIndicators={false}>
         <div className="meal-card">
-          <div className="meal-text">
-            <p>Buddhabowl 15 min
-            </p>
+          <div className="meal-text-buddha">
+            <p>Buddhabowl 15 min</p>
           </div>
           <img src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="Buddhabowl" />
         </div>

@@ -12,7 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+@media only screen and (max-width: 767px) {
 
 /* Mobile */
 .navbar-container {
@@ -166,9 +166,6 @@ padding: 24px 24px 40px 24px;
   font-weight: 400;
 }
 
-#carousel {
-  display: none;
-}
 
 .online-yoga-container {
   background-color: #D0C4B8;
@@ -187,6 +184,10 @@ margin-top: -24px;
   font-family: 'Libre Baskerville';
   font-size: 13px;
   margin: 24px 24px 24px 24px;
+}
+
+.carousel-container {
+  display: none;
 }
 
 .movie-card img {
@@ -235,6 +236,7 @@ padding: 24px;
 
 .meal-card {
   margin: 5px;
+  vertical-align: top;
 }
 
 .meal-text {
@@ -325,12 +327,20 @@ font-weight: 400;
 
 
 
+}
+
 /* Tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
 
   .start-container {
     padding: 15px 32px 0px 32px;
   height: 1024px;
+    background-image: url('/public/images/hero-image.png');
+    background-size: cover;
+    background-position: center;
+   padding: 24px;
+   height: 100vh;
    }
 
   .navbar-container {
@@ -341,18 +351,23 @@ font-weight: 400;
       }
 
       .text-container {
-        padding: 250px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
         width: 60%;
       }
 
       .text-container h1 {
         font-size: 50px;
         line-height: 80px;
-        weight: 700;
+        font-weight: 700;
+        color: #F5F5F5;
+        font-family: 'Libre Baskerville';
         }
         
         .text-container p {
           font-size: 21px;
+          color: #F5F5F5;
+            font-family: 'Libre Baskerville';
+            
           }
 
   .button-container {
@@ -365,135 +380,734 @@ font-weight: 400;
   .wellbeing-container {
     display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #D0C4B8;
   }
+
+
 
   .wellbeing-header {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    margin-left: 0;
+    margin-left: 32px;
+
+  }
+
+  .wellbeing-container h1 {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 40px;
   }
 
   .standing-man {
    height: 313px;
     width: 450px;
     margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px 8px 0px;
   }
+
+  .standing-man p {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 32px;
+    margin: 24px 24px 0px 24px;
+  }
+  
 
   .sitting-man {
     height: 313px;
     width: 450px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 8px 0px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sitting-man p {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 32px;
+    margin: 24px 24px 0px 24px;
   }
 
   .hand-heart {
     height: 313px;
     width: 450px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom: 128px;
+    padding: 8px 0px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hand-heart p {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 32px;
+    margin: 24px 24px 0px 24px;
+  }
+
+  .free-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+  }
+
+  .yogis-container {
+    display: none;
+  }
+
+  .yoga-container {
+    background-color: #02393f;
+
+  
   }
 
 
-  .carousel {
-    width: 100%;
-    margin: 0 auto;
+  .yogis-header h1 {
+    color: #D0C4B8;
+    font-family: 'Libre Baskerville';
+  }
+
+  .yogi-card {
+   margin-left: 48px;
+
   }
   
-  .carousel .slick-slide {
-    margin: 0 20px;
+  .yogi-card img {
+    width: 352px;
+    height: 227px;
+    border-radius: 12px;
+ object-fit: cover;
+ margin: 152px 0 0 0;
   }
   
-  .carousel .slick-center {
-    margin: 0;
+  .yogi-card p {
+    color: #D0C4B8;
+    font-family: 'Libre Baskerville';
+    font-size: 16px;
+    line-height: 25,6px;
+    font-weight: 400;
   }
-  
- .yogi-card img {
-  height: 227px;
-  width: 352px;
+
+.online-yoga-container img {
+  width: 226px;
+  height: 189px;
   object-fit: cover;
- }
-
-.yogi-card {
-  margin: 28px;
+  border-radius: 12px;
+  margin-right: 24px;
+}
+ 
+.movie-card {
+ margin-right: 24px;
+ 
 }
 
+  
+  .online-yoga-container {
+    background-color: #D0C4B8;
+  padding-bottom: 24px;
+  margin-top: -24px;
+
+  }
+  
+  .online-yoga-container h1 {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    padding: 24px;
+  }
+  
+  .online-yoga-container p {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    font-size: 13px;
+    margin: 24px 24px 24px 24px;
+  }
+
+  .online-yoga-carousel-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .online-yoga-container .carousel .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personalised-meal-container {
+  background-color: #D0C4B8;
+  padding-bottom: 24px;
+  margin-top: -24px;
+  }
+  
+  .personalised-meal-container .carousel .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personalised-meal-container h1 {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    padding: 24px;
+  }
+  
+  .personalised-meal-container p {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    font-size: 13px;
+    margin: 24px 24px 24px 24px;
+  }
+  
+  .meal-card img {
+    width: 226px;
+    height: 189px;
+    object-fit: cover;
+    border-radius: 12px;
+
+   }
+  
+  .meal-card {
+    margin-right: 24px;
+  }
+  
+  .meal-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meal-text-buddha {
+    padding-top: 15px;
+  }
+
+  .price-plan-container {
+    background-color: #D69A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .price-plan-container h1 {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    padding: 24px;
+  }
+  
+  .price-plan-container p {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    font-size: 13px;
+    margin: 24px 24px 24px 24px;
+  
+  
+  }
+  .price-plan-card {
+    margin: 5px;
+  background-color: #D0C4B8;
+  width: 304px;
+  height: 402px;
+  border-radius: 12px;
+  }
+  
+  .price-plan-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-container {
+    background-color: #02393F;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+  }
+  
+  .logo-roots-container {
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  }
+  
+  .roots-logo {
+    margin: 24px 24px 24px 0px;
+  }
+  
+  .logo-roots-container h1 {
+  color: #D0C4B8;
+  font-size: 20px;
+  font-family: 'Abril Fatface';
+  font-weight: 400;
+  }
+  
+  .footer-links-container {
+  margin: 0px 0px 30px -35px;
+  
+  }
+  
+  .footer-container li {
+    color: #D0C4B8;
+  font-size: 20px;
+  font-family: 'Abril Fatface';
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  text-align: center;
+  padding-right: 44px;
+  }
+  
+  .icons-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    gap: 48px;
+    
+  }
 
 }
 /*Desktop*/
 @media only screen and (min-width: 1025px) {
 
-.start-container {
- padding: 50px 112px 0px 112px;
-height: 100vh;
-}
 
-  .navbar-container {
-display: flex;
+ .start-container {
+  padding: 15px 32px 0px 32px;
+height: 1024px;
+  background-image: url('/public/images/hero-image.png');
+  background-size: cover;
+  background-position: center;
+ height: 100vh;
+ padding: 50px 112px 0px 112px;
+ height: 100vh;
+ }
+
+.navbar-container {
+  display: flex;
 align-items: center;
 justify-content: space-between;
+    }
 
+    .text-container {
+      padding: 20px 0px 0px 0px;
+      width: 600px;
+      margin: 248px 0 0 0;
+    }
+
+    .text-container h1 {
+      font-size: 50px;
+      line-height: 80px;
+      font-weight: 700;
+      color: #F5F5F5;
+      font-family: 'Libre Baskerville';
+      }
+      
+      .text-container p {
+        font-size: 21px;
+        color: #F5F5F5;
+          font-family: 'Libre Baskerville';
+       
+        }
+.free-button-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px 30px 0px;
+}
+
+
+.free-button-container button{
+  width: 453px;
+ height: 68px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
   }
 
-  .text-container {
-    width: 600px;
-  }
+.button-container {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  margin: 40px 0px 0px 0px;
+}
 
-  .text-container h1 {
-font-size: 50px;
-  }
 
-  .text-container p {
-    font-size: 21px;
-  }
+.wellbeing-container {
+  display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #D0C4B8;
+}
 
-  .button-container {
-    display: flex;
-    align-items: left;
-    justify-content: flex-start;
-    margin: 40px 0px 0px 0px;
-  }
-
-  .wellbeingcard-container {
-    display: flex;
+.wellbeingcard-container {
+  display: flex;
   justify-content: flex-start;
   flex-direction: row;
   gap: 5%;
   padding: 50px;
-  }
+}
 
-  .wellbeing-header h1 {
-    font-size: 40px;
-    margin: 40px 0px 30px 30px;
-  }
+.wellbeing-header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 32px;
+
+}
+
+
+.wellbeing-header h1 {
+  font-size: 40px;
+  margin: 40px 0px 30px 30px;
+}
+
+.wellbeing-container h1 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+}
 
 .standing-man {
- width: 352px;
- height: 345px;
- margin: 0;
-
- }
-
- .sitting-man {
   width: 352px;
   height: 345px;
-  margin: 0;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px 8px 0px;
+}
 
- }
 
- .hand-heart {
+ 
+
+
+
+.standing-man p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 32px;
+  margin: 24px 24px 0px 24px;
+}
+
+
+.sitting-man {
   width: 352px;
-  height: 345px;
-  margin: 0;
- }
+   height: 345px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  margin-top: 30px;
+  padding: 8px 0px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
- .free-button-container button{
- width: 453px;
-height: 68px;
-display: flex;
-align-items: center;
-justify-content: center;
- }
+.sitting-man p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 32px;
+  margin: 24px 24px 0px 24px;
+}
 
- #carousel {
+.hand-heart {
+  width: 352px;
+   height: 345px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-bottom: 128px;
+  padding: 8px 0px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand-heart p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 32px;
+  margin: 24px 24px 0px 24px;
+}
+
+.free-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px 30px 0px;
+}
+
+.carousel-container {
   display: none;
 }
 
- 
+.yoga-container {
+  background-color: #02393f;
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+
+.yogis-container {
+  justify-content: center;
+}
+
+.wellbeing-cards {
+  padding: 50px;
+}
+
+.yoga-review {
+  background-color: #02393f;
+}
+
+.yogis-header h1 {
+  color: #D0C4B8;
+  font-family: 'Libre Baskerville';
+  padding: 52px 0px 0px 112px;
+  font-size: 40px;
+}
+
+.yogi-card {
+  margin-left: 48px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -148px;
+}
+
+.yogi-card img {
+  width: 367px;
+  height: 245px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 152px 0 0 0;
+}
+
+.yogi-card p {
+  color: #D0C4B8;
+  font-family: 'Libre Baskerville';
+  font-size: 16px;
+  line-height: 25,6px;
+  font-weight: 400;
+  width: 367px;
+}
+
+.online-yoga-container img {
+  width: 226px;
+  height: 189px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 24px;
+}
+
+.movie-card {
+  margin-right: 24px;
+}
+
+
+
+.online-yoga-container {
+  background-color: #D0C4B8;
+padding-bottom: 24px;
+margin-top: -24px;
+
+}
+
+.online-yoga-container h1 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  padding: 24px;
+}
+
+.online-yoga-container p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 13px;
+  margin: 24px 24px 24px 24px;
+}
+
+.online-yoga-carousel-container {
+  display: flex;
+  justify-content: center;
+}
+
+.online-yoga-container .carousel .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personalised-meal-container {
+background-color: #D0C4B8;
+padding-bottom: 24px;
+margin-top: -24px;
+}
+
+.personalised-meal-container .carousel .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personalised-meal-container h1 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  padding: 24px;
+}
+
+.personalised-meal-container p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 13px;
+  margin: 24px 24px 24px 24px;
+}
+
+.meal-card img {
+  width: 226px;
+  height: 189px;
+  object-fit: cover;
+  border-radius: 12px;
+
+ }
+
+.meal-card {
+  margin-right: 24px;
+}
+
+.meal-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-text-buddha {
+  padding-top: 15px;
+}
+
+.price-plan-container {
+  background-color: #D69A2A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.price-plan-container h1 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  padding: 24px;
+}
+
+.price-plan-container p {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  font-size: 13px;
+  margin: 24px 24px 24px 24px;
+
+
+}
+.price-plan-card {
+  margin: 5px;
+background-color: #D0C4B8;
+width: 304px;
+height: 402px;
+border-radius: 12px;
+}
+
+.price-plan-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  background-color: #02393F;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  text-align: center;
+}
+
+.logo-roots-container {
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+
+.roots-logo {
+  margin: 24px 24px 24px 0px;
+}
+
+.logo-roots-container h1 {
+color: #D0C4B8;
+font-size: 20px;
+font-family: 'Abril Fatface';
+font-weight: 400;
+}
+
+.footer-links-container {
+margin: 0px 0px 30px -35px;
+
+}
+
+.footer-container li {
+  color: #D0C4B8;
+font-size: 20px;
+font-family: 'Abril Fatface';
+list-style: none;
+font-size: 16px;
+font-weight: 400;
+display: inline-block;
+text-align: center;
+padding-right: 44px;
+}
+
+.icons-container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  gap: 48px;
+  
+}
+
+
 }

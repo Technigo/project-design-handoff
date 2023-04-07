@@ -7,8 +7,10 @@ const Yogis = () => {
       <div className="yogis-header">
         <h1>What our yogis say:</h1>
       </div>
-      <div className="wellbeing-cards">
-        <YogisCards />
+      <div className="yoga-container">
+        <div className="wellbeing-cards">
+          <YogisCards />
+        </div>
       </div>
     </>
   )

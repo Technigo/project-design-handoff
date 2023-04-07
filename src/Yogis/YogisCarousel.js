@@ -5,14 +5,18 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const YogisCarousel = () => {
   return (
     <main>
+      <div className="yogis-header">
+        <h1>What our yogis say:</h1>
+      </div>
       <Carousel
         infiniteLoop
         showStatus={false}
         showThumbs={false}
-        showArrows
         centerMode
         centerSlidePercentage={50}
-        showIndicators={false}>
+        showIndicators={false}
+        swipeable
+        showArrows={false}>
         <div className="yogi-card">
           <img src="./images/pexels-cottonbro-studio-4056535 - Edited.png" alt="yoga woman" />
           <p>“This program has really helped me to be more grounded in the present moment.

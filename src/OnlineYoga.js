@@ -15,9 +15,10 @@ const OnlineYoga = () => {
         infiniteLoop
         showStatus={false}
         showThumbs={false}
-        showArrows
         centerMode
-        centerSlidePercentage={77}
+        swipeable
+        showArrows={false}
+        centerSlidePercentage={33}
         showIndicators={false}>
         <div className="movie-card">
           <div className="movie-text">
@@ -33,6 +34,13 @@ const OnlineYoga = () => {
           </div>
           <img src="./images/laura-vienna.png" alt="woman eating" />
 
+        </div>
+        <div className="movie-card">
+          <div className="movie-text">
+            <p>Yinyoga to calm down 15 min
+            </p>
+          </div>
+          <img src="./images/yoga-woman.png" alt="yoga woman" />
         </div>
         <div className="movie-card">
           <div className="movie-text">
