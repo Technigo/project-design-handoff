@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import styled from 'styled-components';
 
 export const Button = styled.button`
@@ -17,3 +18,4 @@ font-weight: 700;
 line-height: 24px;
 letter-spacing: 0em;
     `;
+

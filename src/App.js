@@ -6,6 +6,7 @@ import { CTAsection } from './components/CTAsection';
 import { Onlineyoga } from './components/Onlineyoga';
 import { Nutrition } from './components/Nutrition';
 import { Pricingplan } from './components/Pricingplan';
+import { Footer } from './components/Footer';
 
 export const App = () => {
   return (
@@ -19,6 +20,7 @@ export const App = () => {
       <CTAsection />
       <Nutrition />
       <Pricingplan />
+      <Footer />
     </div>
   )
 }
