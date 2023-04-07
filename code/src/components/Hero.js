@@ -16,7 +16,7 @@ const Container = styled.section`
   align-items: center;
   justify-content: center;
   widht: 100vw;
-  height: 100vh;
+  height: 200vh;
   background-image: url('/images/hero-image-smaller.png');
   background-size: cover;
   background-position: center;
@@ -42,8 +42,8 @@ const Button = styled.button`
   padding: 1rem 2rem;
   border-color: orange;
   border-radius: 10px ;
-  background-color: white;
-  color: orange;
+  background-color: transparent;
+  color: #FF8F3D;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 

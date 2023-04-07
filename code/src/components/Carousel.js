@@ -2,7 +2,7 @@ import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
-import '../cardbox.css';
+import '../carousel.css';
 
 const cardboxes = [
   {
@@ -23,9 +23,11 @@ const cardboxes = [
 ];
 
 const CarouselSection = ({ text, logo }) => (
-  <div className="carousel-section">
-    <img src={logo} alt="Logo" style={{ width: '50px' }} />
-    <p>{text}</p>
+  <div className="carousel-wrapper" style={{ backgroundColor: '#D7CBFF' }}>
+    <div className="carousel-box">
+      <img src={logo} alt="Logo" style={{ width: '50px' }} />
+      <p>{text}</p>
+    </div>
   </div>
 );
 

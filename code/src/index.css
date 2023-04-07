@@ -64,6 +64,9 @@ code {
   .navbar-links {
     display: none;
   }
+  .navbar-links-open {
+    display: flex;
+  }
 
   .navbar-hamburger-menu {
     display: block;
