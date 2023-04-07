@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IoIosArrowForward } from 'react-icons/io'
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,8 @@ const FAQItem = ({ question, answer }) => {
   return (
     <div className="faq-item">
       <button type="button" className="faq-question" onClick={toggleOpen}>
-        {question}
+        <span className="question-text">{question}</span>
+        <span className="arrow-icon"><IoIosArrowForward /></span>
       </button>
       {isOpen && <div className="faq-answer">{answer}</div>}
     </div>

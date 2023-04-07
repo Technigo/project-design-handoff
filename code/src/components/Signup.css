@@ -1,0 +1,17 @@
+.signup-outer-wrapper{
+  width:100vw;
+  background-image: url("../assets/forminput.jpg");
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.signup-outer-wrapper h1{
+    text-align: center;
+    color:white;
+}
+
+.signup-bgimage{
+    opacity: 0.5;
+    object-fit: cover; 
+}

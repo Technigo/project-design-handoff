@@ -6,6 +6,7 @@ import HeroPage from './components/HeroPage'
 import NavBar from './components/NavBar/NavBar'
 import CoachesCarousel from './components/Coaches'
 import FAQuestions from './components/FaqPage2/FaqText2'
+import SignupPage from './components/Signup'
 // import styled from 'styled-components'
 
 export const App = () => {
@@ -18,6 +19,7 @@ export const App = () => {
       <ClientReviewsCarousel />
       <CoachesCarousel />
       <FAQuestions />
+      <SignupPage />
     </div>
   )
 }

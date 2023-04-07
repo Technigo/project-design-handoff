@@ -29,6 +29,13 @@
     text-align: left;
   }
 
+  .arrow-icon{
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+  
+  }
+
   
 
 
