@@ -12,7 +12,7 @@ const StyledContact = styled.div`
   }
 
   @media (min-width: 1024px) {
-    gap: 85px;
+    gap: 50px;
   }
 `;
 

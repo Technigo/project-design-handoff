@@ -10,6 +10,11 @@ const StyledFooter = styled.section`
     align-items: center;
     padding: 0 114px;
   }
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const FooterInfoDiv = styled.div`
@@ -22,7 +27,7 @@ const FooterInfoDiv = styled.div`
 
   @media (min-width: 1024px) {
     flex-direction: row-reverse;
-    gap: 85px;
+    gap: 50px;
   }
 `;
 

@@ -63,6 +63,7 @@ const HeaderTitle = styled.h1`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 30px;
   padding-left: 0%;
+  max-width: 400px;
 
   @media (min-width: 668px) {
     font-size: 6rem;

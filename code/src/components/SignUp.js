@@ -11,8 +11,9 @@ const SignUpSection = styled.section`
   }
 
   @media (min-width: 1024px) {
-    padding-top: 133px;
-    padding-bottom: 133px;
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
     display: flex;
     justify-content: center;
   }
@@ -27,6 +28,8 @@ const SignUpWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1000px;
+    gap: 112px;
   }
 `;
 
@@ -34,6 +37,8 @@ const SignUpContentDiv = styled.div`
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: 500px;
+    padding: 0 60px 0 0;
   }
 `;
 
@@ -52,8 +57,8 @@ const SignUpImg = styled.img`
   }
 
   @media (min-width: 1024px) {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 450px;
     margin-bottom: 0;
   }
 `;
@@ -63,6 +68,11 @@ const SignUplogo = styled.img`
     display: flex;
     align-self: center;
     padding: 0 144px;
+  }
+
+  @media (min-width: 1024px) {
+    align-self: flex-start;
+    padding: 0;
   }
 `;
 
@@ -74,6 +84,10 @@ const SignUpP = styled.p`
 
   @media (min-width: 668px) {
     padding: 0 144px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0;
   }
 `;
 
