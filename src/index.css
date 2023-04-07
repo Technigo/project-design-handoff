@@ -275,10 +275,6 @@ button{
   padding: 16px;
 }
 
-.position-header{
-
-}
-
 .about-box{
   background-color:#EDFDFF;
   text-align: left;
@@ -292,10 +288,6 @@ button{
 
 .bold{
   font-weight: bold;
-}
-
-.about-header{
-
 }
 
 .about-text2{
@@ -343,6 +335,74 @@ button{
   color: #EDFDFF;
 }
 
-.cards-div{
+.cards-span {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   background-color: #128F9F;
+  padding: 20px 60px;
+  gap: 28px;
+  border: 2px solid #128F9F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  margin-bottom: 38px;
+}
+
+.cards-span img {
+  width: 100%;
+  height: auto;
+  scroll-snap-align: center;
+  margin-right: 10px;
+}
+
+
+/**** Review-section *****/
+
+.review-section {
+  position: relative;
+  background-color: #EDFDFF;
+  z-index: -2;
+}
+
+.review-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 146px;
+  background-color:#FFE600;
+  z-index: -1;
+}
+
+.review-div{
+  background-color:#096B78;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 16px 8px;
+  width: 328px;
+  height: 225px;
+  box-shadow: 0px 2.80716px 2.80716px rgba(0, 0, 0, 0.25);
+  border-radius: 0 10px 10px 10px;
+  margin-left: 9px;
+;
+}
+
+.review-text{
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+
+width: 247px;
+height: 169px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 0px 8px 8px 8px;
+font-size: 14px;
 }

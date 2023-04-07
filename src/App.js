@@ -4,6 +4,7 @@ import Footer from 'Components/FooterComponents/Footer';
 import QuestionCorner from 'Components/QuestionComponents/QuestionCorner';
 import Benefits from 'Components/BenefitsComponents/Benefits';
 import PickYourPosition from 'Components/PositionComponents/PickYourPosition';
+import TeamReviews from 'Components/ReviewComponents/TeamReviews';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       <Header />
       <Benefits />
       <PickYourPosition />
+      <TeamReviews />
       <QuestionCorner />
       <Footer />
     </div>

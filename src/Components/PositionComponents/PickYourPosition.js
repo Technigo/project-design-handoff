@@ -34,7 +34,7 @@ const PickYourPosition = () => {
         <p className="sub-header">Check out our deck of program cards below!</p>
       </div>
 
-      <span className="cards-div">
+      <span className="cards-span">
         <img src={pivotcard} alt="Pivot" />
         <img src={jammercard} alt="Jammer" />
         <img src={blockercard} alt="Blocker" />
