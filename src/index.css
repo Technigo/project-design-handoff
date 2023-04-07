@@ -410,3 +410,29 @@ button{
   line-height: 113.5%;
   text-align: left;
 }
+
+/* Question-section */
+
+.question-section{
+ background-color:#004852;
+ ;
+}
+
+.qa-div{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25.3233px;
+  gap: 12px;
+  background-color: #EDFDFF;
+  border: 5.27569px solid #FFE600;
+  box-shadow: 0px 4.22056px 4.22056px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  margin: 16px; 
+}
+
+.question-form{
+  background-color: #EDFDFF;
+  
+}
