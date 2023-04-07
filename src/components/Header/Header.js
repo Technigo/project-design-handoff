@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SignUpBtn } from '../Buttons'
-// import { Navbar } from './Navbar'
+import { Menu } from './Navbar'
 import './Header.css';
 
 const Logo = styled.div`
@@ -22,6 +22,7 @@ export const Header = () => {
       <Logo>
         <img src="./logo/Logo.svg" alt="Logo" />
         <i className="fa-sharp fa-solid fa-magnifying-glass" />
+        <Menu />
       </Logo>
       <section className="intro-text">
         <p>Santulan Power Yoga Stockholm</p>
@@ -29,7 +30,7 @@ export const Header = () => {
           Rest your mind
         </h1>
         <SignUpBtn />
-        <p>Want to know more about us?</p>
+        <a>Want to know more about us?</a>
       </section>
     </Navigation>
   )
