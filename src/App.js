@@ -6,6 +6,7 @@ import { Location } from './components/Location'
 import { SignUpForm } from './components/SignUpForm'
 import { Header } from './components/Header'
 import { Welcome } from './components/Welcome'
+import { Footer } from './components/Footer'
 
 export const App = () => {
   return (
@@ -37,7 +38,7 @@ export const App = () => {
         <SignUpForm />
       </Section>
       <Section brown>
-        Footer section
+        <Footer />
       </Section>
     </div>
   )

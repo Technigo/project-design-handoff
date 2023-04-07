@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
+import { Logo } from './Logo'
 
 const HeaderWrapper = styled.header`
   height: 60px;
@@ -26,31 +27,6 @@ const HeaderInnerWrapper = styled.div`
     padding-top: 20px;
   }
  
-`
-
-const LogoWrapper = styled.div`
-  display: flex;
-  align-items: center;
-`
-
-const Logo = styled.img`
-  height: 48px;
-  width: 35px;
-  @media (min-width: 686px) {
-    width: 68px;
-    height: 85px;
-  }
-`
-
-const LogoText = styled.h1`
-  font-family: 'Outfit', sans-Serif;
-  font-weight: 500;
-  font-size: 24px;
-  margin: 10px;
-  display: none;
-  @media (min-width: 686px) {
-  display: inline-block;
-  }
 `
 
 const Navbar = styled.nav`
@@ -98,12 +74,7 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderInnerWrapper>
-        <LogoWrapper>
-          <a href="">
-            <Logo src="./images/icons/logo.svg" />
-            <LogoText>Santulan<br />Power Yoga<br />Stockholm</LogoText>
-          </a>
-        </LogoWrapper>
+        <Logo />
         <Navbar>
           <NavbarItem href="">Our Gym</NavbarItem>
           <NavbarItem href="">Workout</NavbarItem>
