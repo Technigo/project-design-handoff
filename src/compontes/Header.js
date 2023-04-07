@@ -23,9 +23,9 @@ const Header = () => {
             Create Account
           </button>
         </div>
-        <div>
+        <div className="compatible-container">
           <h3>Compatible with</h3>
-          <div>
+          <div className="logo-container">
             <img src={appleLogo} alt="img" />
             <img src={rukuLogo} alt="img" />
             <img src={chromecastLogo} alt="img" />

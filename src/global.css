@@ -142,3 +142,11 @@ button {
   font-weight: 700;
   font-size: 1.1rem;
 }
+
+.logo-container {
+  display: flex;
+}
+
+.logo-container * {
+  padding: 1rem;
+}
