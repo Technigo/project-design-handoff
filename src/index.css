@@ -1,7 +1,12 @@
 #root,
+#root>div {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-#root,
-#root>div,
 body,
 html {
   height: 100%;

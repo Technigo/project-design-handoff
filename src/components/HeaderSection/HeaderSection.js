@@ -41,27 +41,27 @@ export const HeaderSection = () => {
         </SecondaryTitleHidden>
         <SecondaryTitle>Looking to put the Power in power jam?
         Land that apex? Brace for days? With fit2Derby’s
-        <Highlight> customised online off skate programs for roller derby players, </Highlight>
+        <Highlight color="#FFE600"> customised online off skate programs for roller derby players, </Highlight>
         a full time jam will feel like a breeze!
         </SecondaryTitle>
         <ParagraphHidden visible>Choose between our
-          <Highlight> individual sign-up </Highlight> and
-          <Highlight> Team sign-up </Highlight>
+          <Highlight color="#FFE600"> individual sign-up </Highlight> and
+          <Highlight color="#FFE600"> Team sign-up </Highlight>
           with exclusive access to our
-          <Highlight> Multiplayer Platform </Highlight>
+          <Highlight color="#FFE600"> Multiplayer Platform </Highlight>
         </ParagraphHidden>
         <ParagraphContainer>
-          <Paragraph> <Highlight> Sign up as an individual </Highlight> if you are looking
+          <Paragraph> <Highlight color="#FFE600"> Sign up as an individual </Highlight> if you are looking
             to improve your skills on your own.
           </Paragraph>
-          <Paragraph> Or, <Highlight> sign up as a team </Highlight>
-           to access our <Highlight> Multiplayer Platform </Highlight>
+          <Paragraph> Or, <Highlight color="#FFE600"> sign up as a team </Highlight>
+           to access our <Highlight color="#FFE600"> Multiplayer Platform </Highlight>
 to track your own as well as your team’s progress.
           </Paragraph>
         </ParagraphContainer>
         <ButtonContainer>
-          <Button fontSize="20px">Individual sign-up</Button>
-          <Button fontSize="20px">Join with your team</Button>
+          <Button fontSize="1.25em">Individual sign-up</Button>
+          <Button fontSize="1.25em">Join with your team</Button>
         </ButtonContainer>
       </Hero>
     </FlexContainer>

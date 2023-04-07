@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Hero = styled.section`
-position:realitive;
+position:relative;
 display: flex;
 flex-direction:column;
 justify-content: flex-start;
