@@ -12,7 +12,7 @@ I started developing the web by trying to use styled components, however, as at 
 
 I used the React library and downloaded Fa Icons to use for the purposes of the hamburger menu ( note - the menu does not work, is NOT activated, as that was not the purpose of the project ).
 
-It's a great experience to elaborate on a project with a designer, especially as I could see the other side of web creation and find the best way of communciationl.
+It's a great experience to elaborate on a project with a designer, especially as I could see the other side of web creation and find the best way of communciation.
 
 ## View it live
 
