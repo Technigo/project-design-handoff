@@ -1,18 +1,6 @@
-.navbar-cont {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.logo-cont {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 15px;
-}
 
 i {
-    font-size: 12px;
+    font-size: 15px;
     color: #fff;
   }
 
