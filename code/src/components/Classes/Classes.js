@@ -19,19 +19,19 @@ const Classes = ({ screenSize }) => {
     <div className="Classes">
       <SilkTop screenSize={screenSize} />
       <div className="classes-container">
-        <h3>Our Classes</h3>
-        <div className="classes-section">
-          {isMobile && (
+        <h3 className="classes-title">Our Classes</h3>
+        {isMobile && (
+          <div className="classes-section-carousel">
             <ClassCarousel />
-          )}
-          {!isMobile && (
-            <>
-              <Class screenSize={screenSize} level="Beginner" img={BeginnerImg} description={beginnerdescription} />
-              <Class screenSize={screenSize} level="Intermediate" img={IntermediateImg} description={intermediatedescription} />
-              <Class screenSize={screenSize} level="Expert" img={ExpertImg} description={expertdescription} />
-            </>
-          )}
-        </div>
+          </div>
+        )}
+        {!isMobile && (
+          <div className="classes-section">
+            <Class screenSize={screenSize} level="Beginner" img={BeginnerImg} description={beginnerdescription} />
+            <Class screenSize={screenSize} level="Intermediate" img={IntermediateImg} description={intermediatedescription} />
+            <Class screenSize={screenSize} level="Expert" img={ExpertImg} description={expertdescription} />
+          </div>
+        )}
       </div>
       <SilkBottom screenSize={screenSize} />
     </div>
