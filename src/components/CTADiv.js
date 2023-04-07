@@ -9,12 +9,18 @@ const StyledDiv = styled.div`
     justify-content: center;
     height: 144px;
 `
+
+const StyledA = styled.a`
+text-decoration: none;
+color: #F5F5F5;
+`
+
 // Exporting the entire component that is reused, div and all.
 // Sending onClick with it so the button keeps functionality
 export const CTADiv = ({ onClick }) => {
   return (
     <StyledDiv>
-      <CTA onClick={onClick}><a href="#pricing">Start your 7-day FREE trial</a></CTA>
+      <CTA onClick={onClick}><StyledA href="#pricing">Start your 7-day FREE trial</StyledA></CTA>
     </StyledDiv>
   )
 }

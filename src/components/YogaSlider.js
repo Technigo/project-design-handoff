@@ -16,7 +16,7 @@ export const YogaSlider = () => {
   font-size: 13px;
   overflow: hidden;
   `
-  const StyledDescriptionWrapper = styled.p`
+  const StyledDescriptionWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-right: 8px;
