@@ -6,7 +6,6 @@ export const CTA = styled.button`
     color: #F5F5F5;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
-    width: ${props => (props.own ? '90%' : '290px')};
     padding: 1rem;
     border: none;
     width: 345px;
@@ -28,7 +27,7 @@ ${props => props.choose && css`
 `}
 
 ${props => props.chosen && css`
-    width: unset;
+    width: 212px;
     font-weight: 700;
     background: #02393F;
     font-size: 16px;
