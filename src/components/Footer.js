@@ -24,6 +24,12 @@ export const Footer = () => {
         <FontAwesomeIcon icon={faTiktok} className="icon" />
         <FontAwesomeIcon icon={faTwitter} className="icon" />
       </div>
+      <div className="credits">
+        <p>Created by <a href="https://bridgetmailley.com/" target="blank" rel="noreferrer">Bridget Mailley</a>.</p>
+        <p>Designed by <a href="https://www.linkedin.com/in/hanna-jonsson-/" target="blank" rel="noreferrer">Hanna Jonsson</a>.</p>
+        <p>Images from <a href="https://unsplash.com/" target="blank" rel="noreferrer">Unsplash</a>.</p>
+        <p>Video from <a href="https://www.videvo.net" target="blank" rel="noreferrer">videvo.net</a></p>
+      </div>
     </StyledFooter>
   )
 }

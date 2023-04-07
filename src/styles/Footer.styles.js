@@ -58,6 +58,13 @@ export const StyledFooter = styled.section`
         color: ${({ theme }) => (theme.colors.beige)}
     }
 
+    .credits, .credits a {
+        color: ${({ theme }) => (theme.colors.beige)};
+        font-size: 14px;
+        text-align: right;
+        margin: 48px 0 0 0;
+    }
+
     @media (min-width: 768px) and (max-width: 1024px) {
         padding: 32px;
         align-items: center;
@@ -71,6 +78,12 @@ export const StyledFooter = styled.section`
     .icon-section {
         /* justify-content: space-evenly; */
         margin: 16px 0 0 0;
+        padding: 0 0 16px 0;
+        border-bottom: 1px solid ${({ theme }) => (theme.colors.beige)};
+    }
+
+    .credits, .credits a {
+        text-align: center;
     }
     }
 
@@ -87,6 +100,12 @@ export const StyledFooter = styled.section`
     .icon-section {
         /* justify-content: space-evenly; */
         margin: 16px 0 0 0;
+        padding: 0 0 16px 0;
+        border-bottom: 1px solid ${({ theme }) => (theme.colors.beige)};
+    }
+
+    .credits, .credits a {
+        text-align: center;
     }
     }
 
