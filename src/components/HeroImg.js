@@ -5,6 +5,11 @@ const HeroImg = () => {
   return (
     <div className="heroimg-container">
       <img src={`${process.env.PUBLIC_URL}/img/heroimg-mobile.png`} alt="hero" />
+      <div>
+        <img className="hero-logo" src={`${process.env.PUBLIC_URL}/img/Logo .png`} alt="logo" />
+        <img className="lupa" src={`${process.env.PUBLIC_URL}/img/lupa.png`} alt="lupa" />
+
+      </div>
       <div className="hero-padding">
         <div className="hero-text-h1">
           <div>Online</div>

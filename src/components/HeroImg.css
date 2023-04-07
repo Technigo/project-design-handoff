@@ -2,6 +2,19 @@
     position: relative;
     display: inline-block;
   }
+
+.hero-logo{
+  position: absolute;
+  padding: 14px;
+  margin-top: -770px;
+}
+
+.lupa {
+  position: absolute;
+  padding: 14px;
+  margin-top: -770px;
+  margin-left: 265px;
+}
 .hero-padding {
    margin: 30px; 
 }
