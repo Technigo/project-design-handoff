@@ -3,13 +3,17 @@ import styled from 'styled-components';
 export const StyledBenefits = styled.section`
     background-color: ${({ theme }) => (theme.colors.beige)};
     max-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 24px;
 
-    div {
-        width: 95%;
+    .benefits-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .each-benefit {
+        width: 100%;
+        max-width: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -33,6 +37,29 @@ export const StyledBenefits = styled.section`
     p {
         color: ${({ theme }) => (theme.colors.teal)};
         font-size: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+        padding: 32px;
+    }
+
+    @media (min-width: 1001px) {
+        padding: 40px 72px 72px 72px;
+        flex-direction: row;
+
+        .benefits-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .each-benefit {
+            height: 300px;
+            width: 300px;
+        }
+
+
     }
 
 `

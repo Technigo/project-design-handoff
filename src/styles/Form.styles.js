@@ -9,6 +9,9 @@ export const StyledForm = styled.section`
     top: 0;
     left: 0;
     right: 0;
+    overflow-y: scroll;
+    height: 100vh;
+
 
     .form-header {
         display: flex;
@@ -27,7 +30,7 @@ export const StyledForm = styled.section`
     }
 
     form {
-        /* width: 100%; */
+        /* max-width: 550px; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,6 +38,13 @@ export const StyledForm = styled.section`
         margin: 24px;
         padding: 0 24px 12px 24px;
         border-radius: 12px;
+        align-self: center
+    }
+
+    .form-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     input {
@@ -139,4 +149,17 @@ export const StyledForm = styled.section`
         margin: 15px 0 0 0; 
         color: ${({ theme }) => (theme.colors.teal)};
     }
+
+    /* @media (min-width: 1025px) {
+        
+        form {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .form-top, .form-bottom {
+            width: 45%;
+        }
+    } */
+
 `

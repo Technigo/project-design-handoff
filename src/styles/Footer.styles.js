@@ -48,13 +48,46 @@ export const StyledFooter = styled.section`
 
     .icon-section {
         width: 60%;
+        max-width: 440px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .icon {
         font-size: 30px;
         color: ${({ theme }) => (theme.colors.beige)}
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 32px;
+        align-items: center;
+
+    .links-section {
+        display: flex;
+        gap: 20px;
+        border-bottom: 1px solid ${({ theme }) => (theme.colors.beige)};
+    }
+
+    .icon-section {
+        /* justify-content: space-evenly; */
+        margin: 16px 0 0 0;
+    }
+    }
+
+    @media (min-width: 1025px) {
+        padding: 40px 72px 72px 72px;
+        align-items: center;
+
+    .links-section {
+        display: flex;
+        gap: 20px;
+        border-bottom: 1px solid ${({ theme }) => (theme.colors.beige)};
+    }
+
+    .icon-section {
+        /* justify-content: space-evenly; */
+        margin: 16px 0 0 0;
+    }
     }
 
 `

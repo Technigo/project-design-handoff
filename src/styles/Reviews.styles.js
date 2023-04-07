@@ -3,17 +3,21 @@ import styled from 'styled-components';
 export const StyledReviews = styled.section`
     background-color: ${({ theme }) => (theme.colors.teal)};
     max-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 24px;
-   
-    div {
-        width: 95%;
+
+    .review-wrapper {
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
-        /* margin: 10px 0; */
+        align-items: center;
+    }
+   
+    .each-review {
+        width: 100%;
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
     }
 
     img {
@@ -43,5 +47,41 @@ export const StyledReviews = styled.section`
         font-style: italic;
         margin: 3em 0 1em 0;
 
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 32px 0;
+
+        h2 {
+            padding: 0 32px;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        padding: 40px 72px 72px 72px;
+
+        .review-wrapper {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            max-width: 1450px;
+        }
+
+        .each-review {
+            height: 550px;
+            width: 300px;
+        }
+
+        .review-body {
+            height: 220px;
+        }
+
+        .review-by {
+            align-self: flex-end;
+            margin: 1em 0 1em 0;
+          }
     }
 `

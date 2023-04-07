@@ -9,6 +9,7 @@ justify-content: center;
 
 button {
   width: 85vw;
+  max-width: 400px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: bold;
@@ -21,5 +22,10 @@ button {
 
 button:active {
   background-color: ${({ theme }) => (theme.colors.darkyellow)};
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* align-items: flex-start; */
+  
 }
 `

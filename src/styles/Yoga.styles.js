@@ -25,12 +25,18 @@ export const StyledYoga = styled.section`
 
     .yoga-intro {
         width: 90%;
+        max-width: 550px;
         align-self: flex-start;
     }
 
     .yoga-video {
         display: flex;
         flex-direction: column;
+        max-width: 450px;
+    }
+
+    .yoga-video-desktop {
+        display: none;
     }
 
     .video-labels {
@@ -47,5 +53,27 @@ export const StyledYoga = styled.section`
     video {
         width: 100%;
         border-radius: 12px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 32px;
+    }
+
+    @media (min-width: 1025px) {
+        padding: 40px 72px 72px 72px;
+
+        .desktop-wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            max-width: 1450px;
+        }
+
+        .yoga-video-desktop, .yoga-video {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+        
     }
 `

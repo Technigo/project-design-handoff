@@ -12,11 +12,14 @@ export const StyledNutrition = styled.section`
         color: ${({ theme }) => (theme.colors.teal)};
         align-self: flex-start;
         width: 90%;
+        max-width: 550px;
     }
 
     p {
         color: ${({ theme }) => (theme.colors.teal)};
         font-size: 16px;
+        max-width: 550px;
+        align-self: flex-start;
     }
 
     .recipe-section {
@@ -26,6 +29,7 @@ export const StyledNutrition = styled.section`
         width: 100%;
         height: 100%;
         position: relative;
+        /* justify-content: center; */
     }
 
     .recipe-card {
@@ -85,5 +89,18 @@ export const StyledNutrition = styled.section`
     .left-arrow, .right-arrow {
         display: none;
     }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 32px;
+    }
+
+    @media (min-width: 1025px) {
+        padding: 40px 72px 72px 72px;
+
+        .recipe-section {
+            justify-content: center;
+        }
+    }
+
     }
     `

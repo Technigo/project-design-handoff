@@ -9,6 +9,10 @@ export const StyledPlans = styled.section`
     padding: 24px;
     color: ${({ theme }) => (theme.colors.cream)};
 
+    h2 {
+        align-self: flex-start;
+    }
+
     h3 {
         font-size: 32px;
         margin: 0;
@@ -38,43 +42,66 @@ export const StyledPlans = styled.section`
     }
 
     .plan-card {
-    background-color: ${({ theme }) => (theme.colors.beige)};
-    color: ${({ theme }) => (theme.colors.teal)};
-    width: 90%;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 0 15px 5px #AC7816;
-    margin: 15px 0;
-    display: flex;
-    flex-direction: column;
-}
+        background-color: ${({ theme }) => (theme.colors.beige)};
+        color: ${({ theme }) => (theme.colors.teal)};
+        width: 100%;
+        max-width: 290px;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 0 15px 5px #AC7816;
+        margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+    }
 
-.plan-card:hover {
-    background-color: ${({ theme }) => (theme.colors.cream)};
-    transform: scale(1.05);
-    transition: transform 0.1s ease-in-out;
-    font-weight: bold;
-}
+    .plan-card:hover {
+        background-color: ${({ theme }) => (theme.colors.cream)};
+        transform: scale(1.05);
+        transition: transform 0.1s ease-in-out;
+        font-weight: bold;
+    }
 
-.plan-card:hover > button {
-    background-color: ${({ theme }) => (theme.colors.teal)};
-    color: ${({ theme }) => (theme.colors.white)};
-}
+    .plan-card:hover > button {
+        background-color: ${({ theme }) => (theme.colors.teal)};
+        color: ${({ theme }) => (theme.colors.white)};
+    }
 
-button {
-    width: 170px;
-    height: 2em;
-    align-self: flex-start;
-    background: transparent;
-    border-radius :12px;
-    border: 1px solid #02393F;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 16px;
-    margin: 15px 0 0 0; 
-}
+    button {
+        width: 170px;
+        height: 2em;
+        align-self: flex-start;
+        background: transparent;
+        border-radius :12px;
+        border: 1px solid #02393F;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 16px;
+        margin: 15px 0 0 0; 
+    }
 
-button:active {
-    transform: scale(.9);
-}
+    button:active {
+        transform: scale(.9);
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 32px;
+
+        .plan-wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        padding: 40px 72px 72px 72px;
+
+        .plan-wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            max-width: 1450px;
+        }
+    
+    }
 
 `

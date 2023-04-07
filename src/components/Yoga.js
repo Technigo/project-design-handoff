@@ -12,15 +12,37 @@ export const Yoga = () => {
         from beginner to advanced, with clear and easy-to-follow instructions.
         </p>
       </div>
-      <div className="yoga-video">
-        <div className="video-labels">
-          <p>Yin yoga to calm down</p>
-          <p>15 min</p>
-        </div>
-        <video muted controls>
-          <source src="/assets/yoga.mp4" type="video/mp4" />
+      <div className="desktop-wrapper">
+        <div className="yoga-video-desktop">
+          <div className="video-labels">
+            <p>Yin yoga to calm down</p>
+            <p>15 min</p>
+          </div>
+          <video muted controls>
+            <source src="/assets/yoga.mp4" type="video/mp4" />
         Your browser does not support video.
-        </video>
+          </video>
+        </div>
+        <div className="yoga-video">
+          <div className="video-labels">
+            <p>Yin yoga to calm down</p>
+            <p>15 min</p>
+          </div>
+          <video muted controls>
+            <source src="/assets/yoga.mp4" type="video/mp4" />
+        Your browser does not support video.
+          </video>
+        </div>
+        <div className="yoga-video-desktop">
+          <div className="video-labels">
+            <p>Yin yoga to calm down</p>
+            <p>15 min</p>
+          </div>
+          <video muted controls>
+            <source src="/assets/yoga.mp4" type="video/mp4" />
+        Your browser does not support video.
+          </video>
+        </div>
       </div>
     </StyledYoga>
   )
