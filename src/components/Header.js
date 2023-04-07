@@ -1,10 +1,13 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
-import { TopRightButton, BottomCenterButton, TopLeftLogo } from './Global'
+import classNames from 'classnames';
+import useSticky from './useSticky';
+import { TopRightButton, BottomCenterButton, TopLeftLogo } from './Global';
+import { StickyNav, NavItem } from './Navbar';
 import heroImage from '../assets/hero.jpg';
 import logo from '../assets/logo.svg';
-import { Nav, NavItem } from './Navbar';
+
 /* <FontAwesomeIcon icon="fa-sharp fa-regular fa-magnifying-glass" /> */
 /* <FontAwesomeIcon icon="fa-sharp fa-light fa-xmark" /> */
 
@@ -16,7 +19,19 @@ const HeroContainer = styled.div`
   object-fit: cover;
   position: relative; /* Add position relative to the container */
   padding-bottom: 4rem; /* Add padding to adjust the spacing */
-  min-height: 90vh;
+  min-height: 60vh;
+
+ @media screen and (min-width: 1400px) {
+    min-height: 90vh;
+  }
+
+   @media screen and (min-width: 1400px) {
+    min-height: 100vh;
+  }
+
+  @media screen and (max-width: 1024px) {
+    min-height: 80vh;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -30,7 +45,7 @@ padding-left: 2rem;
 
 const DescriptionContainer = styled.div`
 width: 35%;
-margin-top: 55%;
+margin-top: 60%;
 margin-left: 25rem;
 position: absolute;
 `
@@ -79,9 +94,10 @@ const ActiveTrainers = styled.span`
 `;
 
 const Header = () => {
+  const { sticky, stickyRef } = useSticky();
   return (
     <div>
-      <Nav>
+      <StickyNav ref={stickyRef} className={classNames({ sticky })}>
         <div>
           <TopLeftLogo src={logo} alt="logo" />
           <NavItem href="#">Services</NavItem>
@@ -91,7 +107,7 @@ const Header = () => {
           <NavItem href="#">Club</NavItem>
           <TopRightButton>Try for Free</TopRightButton>
         </div>
-      </Nav>
+      </StickyNav>
       <HeroContainer image={heroImage}>
         <TitleContainer>
           <Title>Online Healthy Diet Strong Body</Title>
