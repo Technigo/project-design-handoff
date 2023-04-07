@@ -150,3 +150,14 @@ button {
 .logo-container * {
   padding: 1rem;
 }
+
+/* ----Card Container---- */
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  border-radius: 30px;
+  background-color: beige;
+}
