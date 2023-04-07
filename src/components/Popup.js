@@ -6,7 +6,7 @@ const Overlay = styled.div`
 position: fixed;
 height: 100vh;
 width: 100vw;
-z-index: 0;
+z-index: 2;
 top: 0;
 background-color: rgba(0, 0, 0, 0.2);
 `
@@ -27,6 +27,7 @@ align-items: center;
 gap: 1rem;
 padding-bottom: 48px;
 overflow-y: scroll;
+z-index: 3;
 `
 const HeaderWrapper = styled.div`
 display: grid;
