@@ -25,7 +25,7 @@ export const Logo = styled.img`
 `;
 
 export const TopLeftLogo = styled(Logo)`
-   top: 0.5rem; 
+   top: 0.8rem; 
    margin-right: 30rem;
    position: relative;
 `;
