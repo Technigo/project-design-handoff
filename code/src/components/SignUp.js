@@ -15,7 +15,6 @@ const SignUpSection = styled.section`
     padding-bottom: 133px;
     display: flex;
     justify-content: center;
-    max-width: 800px;
   }
 
   button {
@@ -28,7 +27,6 @@ const SignUpWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 800px;
   }
 `;
 
