@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Paragraph = styled.p`
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 color: ${(props) => props.color || 'black'};
 max-width:84%;
 padding:2%;
@@ -33,18 +34,17 @@ text-shadow: 0px 3.13103px 3.13103px rgba(0, 0, 0, 0.25);
 export const SectionTitle = styled.h1`
 font-family: Permanent Marker;
 font-size: 40px;
-border-bottom: 5px solid #19737F;
 border-radius: 0px 0px 100px 13px;
-border-bottom: 5px solid #004852;
-background: #096B78;
+border-bottom: ${(props) => props.border || '5px solid #004852'};
 width:90%;
-background: ${(props) => props.background};
+background: ${(props) => props.background || '#096B78'};
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-color: ${(props) => props.color || '#FFE600'};
+color: ${(props) => (props.color || '#FFE600')};
 font-size: 1.5em;
 padding: 7px 10px;
-box-shadow: 0px 4px 4px 0px #00000040;
+box-shadow:${(props) => (props.shadow || '0px 4px 4px 0px #00000040')};
 align-self:${(props) => props.alignSelf};
+z-index: 10;
 `
 
 export const ListItem = styled.li`
@@ -70,6 +70,7 @@ font-weight: 600;
 font-size: 1.2em;
 padding:10px;
 line-height:20px;
+align-self: flex-start;
 `
 
 export const CardText = styled.p`
@@ -83,5 +84,26 @@ background:${(props) => props.background};
 border-radius: 22.7727px 22.7727px 0px 22.7727px;
 align-self:${(props) => props.alignSelf};
 line-height:18px;
+z-index:1;
+a{
+  color:rgb(39, 54, 61);
+}
 `
 
+export const Input = styled.input`
+width: 261px;
+height: ${(props) => props.height || '44px'};
+background: #FFFFFF;
+border: 1.5px solid #CBD5E1;
+border-radius: 4px;
+font-family: 'Public Sans', sans-serif;
+color: #070A13;
+z-index:1;
+`
+
+export const Label = styled.label`
+font-family: 'Public Sans', sans-serif;
+color: #070A13;
+padding: 7px;
+z-index:1;
+`

@@ -1,15 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-
-// import { Highlight } from 'components/styledComponents/Highlight';
+import { BackgroundYellow } from 'components/styledComponents/Background'
 import { SectionTitle, CardText } from '../styledComponents/Texts'
 import { FlexContainer } from '../styledComponents/Containers'
-// import { Carousel } from './Carousel'
-// import ProgramDeck from '../../images/ProgramDeck.png'
-// import { PositionImage, PositionImageContainer } from './Positions';
-// import DesktopcardsPivot from '../../images/DesktopcardsPivot.png'
-// import DesktopcardsJammer from '../../images/DesktopcardsJammer.png'
-// import DesktopcardsBlocker from '../../images/DesktopcardsBlocker.png'
 import reviewLogo1 from '../../images/reviewLogo1.png'
 import reviewLogo2 from '../../images/reviewLogo2.png'
 import reviewLogo3 from '../../images/reviewLogo3.png'
@@ -17,7 +10,8 @@ import reviewLogo3 from '../../images/reviewLogo3.png'
 export const ReviewSection = () => {
   return (
     <FlexContainer background="#EDFDFF" gap="20px" maxWidth="500px">
-      <SectionTitle>Team reviews</SectionTitle>
+      <BackgroundYellow />
+      <SectionTitle background="#004852">Team reviews</SectionTitle>
       <FlexContainer background="#096B78" flexDirection="row" alignItems="flex-start" padding="4%" gap="5px" borderRadius="0px 10px 10px 10px">
         <img src={reviewLogo1} alt="name" />
         <FlexContainer alignItems="flex-end" borderRadius="0px 8px 8px 8px" background="#EDFDFF">

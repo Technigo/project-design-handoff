@@ -10,3 +10,14 @@ top:0;
 left: 0px;
 `
 
+export const BackgroundYellow = styled.div`
+background:#FFE600;
+display:flex;
+align-items:center;
+width:33%;
+/* order:2; */
+z-index:-1;
+height:100%;
+position:absolute;
+top:0;
+`

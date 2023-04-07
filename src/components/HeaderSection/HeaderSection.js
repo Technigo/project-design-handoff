@@ -15,7 +15,7 @@ import { FlexContainer } from '../styledComponents/Containers'
 export const HeaderSection = () => {
   const [show, setShow] = useState(false)
   return (
-    <FlexContainer background="#045661">
+    <FlexContainer background="#045661" zIndex="-1">
       <Background src={headerBackground} />
       <Navbar>
         <Logo src={logo} />

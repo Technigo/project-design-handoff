@@ -14,3 +14,17 @@ z-index:-1;
   }
 
 `
+
+export const Icon = styled.a`
+svg{
+width:2.9em;
+height:2.9em;
+fill:#FFE600;
+}
+
+
+  @media (min-width: 1024px) {
+
+  }
+
+`

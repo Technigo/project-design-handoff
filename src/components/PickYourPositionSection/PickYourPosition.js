@@ -15,11 +15,11 @@ import DesktopcardsFreneso from '../../images/DesktopcardsFreneso.png'
 
 export const PickYourPositionSection = () => {
   return (
-    <FlexContainer background="#045661" maxWidth="500px">
-      <SectionTitle>Pick your position</SectionTitle>
+    <FlexContainer background="#045661" maxWidth="500px" gap="1em">
+      <SectionTitle background="#EDFDFF" color="#002A30">Pick your position</SectionTitle>
       <FlexContainer gap="20px">
         <FlexContainer borderRadius="0px 23px 23px 23px" background="#EDFDFF" width="91%" padding="0px 8px 8px 0px">
-          <SectionTitle alignSelf="flex-start">About the programs</SectionTitle>
+          <SectionTitle alignSelf="flex-start" background="#004852">About the programs</SectionTitle>
           <CardText>
             <Highlight>Pick a position to access programs tailored to
             your favoured role on the track.
