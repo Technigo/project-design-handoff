@@ -67,7 +67,7 @@ const LiElements = styled.li`
     padding: 10px;
     color: var(--neutral-dark);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 24px;
     text-decoration: none;
     text-transform: uppercase;
@@ -76,11 +76,26 @@ const LiElements = styled.li`
     &:hover {
       text-decoration: underline 3px var(--primary-color-4);
     }
+
+    @media (min-width: 668px) {
+      text-transform: none;
+      border-bottom: none;
+      margin-top: 30px;
+
+      &:active {
+      color: var(--primary-color-4);
+    }
   }
+
 
   @media (min-width: 668px) {
     display: flex;
   }
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+}
 `;
 
 const ToggleButton = styled.button`
@@ -109,9 +124,11 @@ const MenuIcon = styled(FaBars)`
 `;
 
 const MenuNav = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (max-width: 667px) {
-    display: flex;
-    justify-content: center;
     position: fixed;
     right: 0;
     width: 40%;
@@ -119,11 +136,21 @@ const MenuNav = styled.div`
     overflow: hidden;
     background-color: var(--neutral-light);
     z-index: 9;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+    ${(props) => !props.isOpen && `
+      display: none;
+    `}
   }
 
   @media (min-width: 668px) {
-    display: none;
+    justify-content: flex-end;
+    margin-right: 25px;
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: center;
+    margin-right: 0;
   }
 `;
 
@@ -161,27 +188,25 @@ export const NavBar = ({ navOne, navTwo, navThree, navFour, navFive }) => {
       <ToggleButton onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <CloseIcon /> : <MenuIcon />}
       </ToggleButton>
-      {isOpen && (
-        <MenuNav ref={navRef}>
-          <UlElements>
-            <LiElements>
-              <a href="#!">{navOne}</a>
-            </LiElements>
-            <LiElements>
-              <a href="#!">{navTwo}</a>
-            </LiElements>
-            <LiElements>
-              <a href="#!">{navThree}</a>
-            </LiElements>
-            <LiElements>
-              <a href="#!">{navFour}</a>
-            </LiElements>
-            <LiElements>
-              <a href="#!">{navFive}</a>
-            </LiElements>
-          </UlElements>
-        </MenuNav>
-      )}
+      <MenuNav ref={navRef} isOpen={isOpen}>
+        <UlElements>
+          <LiElements>
+            <a href="#!">{navOne}</a>
+          </LiElements>
+          <LiElements>
+            <a href="#!">{navTwo}</a>
+          </LiElements>
+          <LiElements>
+            <a href="#!">{navThree}</a>
+          </LiElements>
+          <LiElements>
+            <a href="#!">{navFour}</a>
+          </LiElements>
+          <LiElements>
+            <a href="#!">{navFive}</a>
+          </LiElements>
+        </UlElements>
+      </MenuNav>
     </StyledNavBar>
   );
 };

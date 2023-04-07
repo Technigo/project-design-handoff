@@ -5,7 +5,6 @@ import { Button } from './Button';
 const BookSection = styled.section`
   background-color: var(--primary-color-1);
   padding: 133px 16px;
-
   @media (min-width: 668px) {
    background-color: var(--neutral-light);
    padding: 0 114px;
@@ -29,11 +28,9 @@ const BookSelect = styled.select`
   border: solid black 1px;
   text-align: center;
   border-radius: 0%; // To prevent default setting in Safari
-
   &:focus {
     outline: none;
   }
-
   @media (min-width: 668px) {
    background-color: var(--neutral-light);
   }

@@ -9,6 +9,20 @@ const ClassesSection = styled.section`
   @media (min-width: 668px) {
     padding: 183px 0 183px 16px;
   }
+
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+const ClassesContainer = styled.div`
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1010px;
+  }
 `;
 
 const ClassesH2 = styled.h2`
@@ -20,6 +34,11 @@ const ClassesH3 = styled.h3`
   font-size: 2.5rem;
   font-weight: 800;
   margin: 24px 0;
+
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+    max-width: 380px;
+  }
 `;
 
 const ClassesH4 = styled.h4`
@@ -31,12 +50,14 @@ const ClassesH4 = styled.h4`
 export const Classes = () => {
   return (
     <ClassesSection className="classes">
-      <div>
-        <ClassesH2>OUR CLASSES</ClassesH2>
-        <ClassesH3>WE HAVE SOMETHING FOR EVERYONE</ClassesH3>
-        <ClassesH4>Three different levels. Read more</ClassesH4>
-      </div>
-      <ClassCarousel />
+      <ClassesContainer>
+        <div>
+          <ClassesH2>OUR CLASSES</ClassesH2>
+          <ClassesH3>WE HAVE SOMETHING FOR EVERYONE</ClassesH3>
+          <ClassesH4>Three different levels. Read more</ClassesH4>
+        </div>
+        <ClassCarousel />
+      </ClassesContainer>
     </ClassesSection>
   )
 }

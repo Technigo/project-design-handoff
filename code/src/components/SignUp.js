@@ -3,15 +3,40 @@ import styled from 'styled-components';
 import { Button } from './Button';
 
 const SignUpSection = styled.section`
-  padding: 133px 16px;
-
+  padding-top: 133px;
+  padding-bottom: 100px;
+  
   @media (min-width: 668px) {
     padding: 0;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 133px;
+    padding-bottom: 133px;
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
   }
 
   button {
       align-self: flex-start;
     }
+`;
+
+const SignUpWrapper = styled.div`
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+  }
+`;
+
+const SignUpContentDiv = styled.div`
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const SignUpImg = styled.img`
@@ -21,11 +46,17 @@ const SignUpImg = styled.img`
 
   @media (min-width: 668px) {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     object-fit: cover;
     object-position: center 83%;
     margin-bottom: 123px;
     padding: 0;
+  }
+
+  @media (min-width: 1024px) {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 0;
   }
 `;
 
@@ -57,6 +88,11 @@ const SignUpForm = styled.form`
 
   @media (min-width: 668px) {
     padding: 0 144px 100px 144px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0px;
+    margin: 0;
   }
 `;
 
@@ -102,23 +138,27 @@ const SignUpButton = styled(Button)`
 export const SignUp = () => {
   return (
     <SignUpSection className="signup">
-      <SignUpImg src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="woman running up stairs" />
-      <SignUplogo
-        src={`${process.env.PUBLIC_URL}/assets/sign-up-logo.png`}
-        alt="Logo that says sign up" />
-      <SignUpP>As a member you get access to all of our workouts
+      <SignUpWrapper>
+        <SignUpImg src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="woman running up stairs" />
+        <SignUpContentDiv>
+          <SignUplogo
+            src={`${process.env.PUBLIC_URL}/assets/sign-up-logo.png`}
+            alt="Logo that says sign up" />
+          <SignUpP>As a member you get access to all of our workouts
     and can make reservations to our workout session.
-      </SignUpP>
-      <SignUpForm>
-        <NameInputDiv>
-          <SignUpInput type="text" placeholder="FIRST NAME" />
-          <SignUpInput type="text" placeholder="LAST NAME" />
-        </NameInputDiv>
-        <SignUpInput type="email" placeholder="E-MAIL" />
-        <SignUpInput type="password" placeholder="PASSWORD" />
-        <SignUpInput type="password" placeholder="CONFIRM PASSWORD" />
-        <SignUpButton mainCta />
-      </SignUpForm>
+          </SignUpP>
+          <SignUpForm>
+            <NameInputDiv>
+              <SignUpInput type="text" placeholder="FIRST NAME" />
+              <SignUpInput type="text" placeholder="LAST NAME" />
+            </NameInputDiv>
+            <SignUpInput type="email" placeholder="E-MAIL" />
+            <SignUpInput type="password" placeholder="PASSWORD" />
+            <SignUpInput type="password" placeholder="CONFIRM PASSWORD" />
+            <SignUpButton mainCta />
+          </SignUpForm>
+        </SignUpContentDiv>
+      </SignUpWrapper>
     </SignUpSection>
   )
 }
