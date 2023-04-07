@@ -44,4 +44,12 @@ border: 2px solid #95A6B5;
 width: 262px;
 height: 35px;
 color: #95A6B5;
+`}
+
+${(props) => props.outlinedtablet && css`
+background-color: transparent;
+border: 2px solid #95A6B5;
+width: 140px;
+height: 35px;
+color: white;
 `}`

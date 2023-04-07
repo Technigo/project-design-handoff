@@ -14,7 +14,7 @@ export const Footer = () => {
                 <StartButton ctalong>Get started</StartButton>
                 <StartButton outlinedlong>Download app</StartButton>
             </div>
-            <div className="socialMedia">
+            <div className="social-media">
                 <a className="socialIcon" href="https://www.facebook.com" target="_blank" rel="noreferrer"><img src="/images/Facebook.svg" alt="icon" /></a>
                 <a className="socialIcon" href="https://www.instagram.com" target="_blank" rel="noreferrer"><img src="/images/Instagram.svg" alt="icon" /></a>
                 <a className="socialIcon" href="https://www.youtube.com" target="_blank" rel="noreferrer"><img src="/images/Youtube.svg" alt="icon" /></a>

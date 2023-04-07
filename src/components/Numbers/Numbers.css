@@ -2,31 +2,46 @@
     background-color: hsl(0, 0%, 9%);
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 600px;
     width: 100%;
     align-items: center;
     }
     .blue-box-container {
+        padding-top: 50px;
         display: flex;
         justify-content: center;
         color: white;
     }
     .numbers-container {
-width: 100%;
+        width: 100%;
     }
     .big-box {
-        width: 100%;
-        margin: auto;
-        border-radius: 8px 80px;
-        height: 600px;
-        color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
     .blue-box {
         scale: 80%;
-        
     }
+    
+@Media
+ (min-width: 668px) {
+        .blue-box-container {
+            flex-direction: column;
+            padding-top: 0;
+            scale: 110%;
+        }
+        .numbers-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .master-number {
+            justify-content: center;
+        }
+        
+        hr {
+            margin: 0;
+        }
+      }
