@@ -9,7 +9,7 @@ import { SmallText } from './Hero';
 
 const SliderContainer = styled.div`
   padding-top: 24px;
-  width:320px;
+  width: 320px;
   height: 232px;
 
   .slick-dots li {
@@ -61,7 +61,6 @@ export const ReviewSlider = () => {
   flex-direction: column;
   background-color: #4796A8;
   border-radius: 20px;
-  height: 210px;
   `
   const ReviewId = styled.div`
   display:flex;

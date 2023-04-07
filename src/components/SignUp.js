@@ -5,15 +5,19 @@ import { YellowText } from './Classes'
 import { SignUpButton } from './SignUpButton';
 
 const SignUpWrapper = styled.div`
-background-color: #FFFFFF;
-border: 4px solid #66A1AE;
-display: flex; 
-flex-direction: column;
-align-items: center;
-text-align: center;
-gap: 45px;
-padding: 45px 0px;
-`
+  background-color: #FFFFFF;
+  border: 4px solid #66A1AE;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 45px;
+  height: 100vh;
+  width: 100%;
+  padding: 45px 45px 0px 45px;
+  flex-basis: 50%;
+  flex: 1;
+`;
 const PersonalInput = styled.input`
 background-color: #FFFFFF;
 border: 2px solid #888585;
@@ -44,7 +48,7 @@ padding: 14px, 65px;
 width: 300px;
 height: 55px;
 font-size: 1rem;
-weight: 500;
+font-weight: 500;
 display: flex; 
 justify-content: center;
 align-items: center; 

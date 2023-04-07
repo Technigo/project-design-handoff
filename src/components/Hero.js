@@ -40,9 +40,9 @@ text-align: center;
 
 `
 export const Title = styled.h2`
-font-size: ${(props) => (props.smallrem ? '2.5rem;' : '3rem;')}
+font-size: ${(props) => (props.smallrem ? '2.5rem;' : '3rem;')};
 font-weight: 700;
-color: ${(props) => (props.black ? 'black' : 'white')}
+color: ${(props) => (props.black ? 'black;' : 'white;')};
 text-align: center;
 `
 
