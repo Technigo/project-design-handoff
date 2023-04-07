@@ -9,6 +9,7 @@ const Logo = styled.div`
     flex-direction: row;
     justify-content: space-between;
     margin: 15px;
+    cursor: pointer;
 
     i {
       font-size: 20px;
@@ -42,7 +43,7 @@ export const Header = () => {
           Rest your mind
         </h1>
         <SignUpBtn />
-        <a>Want to know more about us?</a>
+        <p>Want to know more about us?</p>
       </section>
     </Navigation>
   )
