@@ -6,7 +6,7 @@ const ClassesSection = styled.section`
   background-color: var(--primary-color-1);
   padding: 132px 0 132px 16px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     padding: 183px 0 183px 16px;
   }
 `;

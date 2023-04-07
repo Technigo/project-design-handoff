@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
   background-repeat: no-repeat;
   height: 100vh;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     background-size: 300%;
     padding: 0;
     margin: 0;
@@ -26,7 +26,7 @@ const StyledHeaderDiv = styled.div`
     align-self: flex-end;
     margin-bottom: 67px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     margin-bottom: 222px;
     align-items: flex-start;
     padding-left: 24px;
@@ -41,7 +41,7 @@ const HeaderTitle = styled.h1`
   margin-bottom: 30px;
   padding-left: 0%;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     font-size: 6rem;
   }
 `;

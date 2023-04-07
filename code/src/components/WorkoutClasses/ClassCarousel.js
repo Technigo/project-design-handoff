@@ -6,17 +6,17 @@ import { ClassCard } from './ClassCard';
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 768 },
+    breakpoint: { max: 3000, min: 1024 },
     items: 3,
     partialVisibilityGutter: 40
   },
   tablet: {
-    breakpoint: { max: 767, min: 570 },
+    breakpoint: { max: 1023, min: 668 },
     items: 2,
     partialVisibilityGutter: 30
   },
   mobile: {
-    breakpoint: { max: 569, min: 0 },
+    breakpoint: { max: 667, min: 0 },
     items: 1,
     partialVisibilityGutter: 30
   }

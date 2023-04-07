@@ -21,7 +21,7 @@ const IntroDiv = styled.div`
   margin-bottom: 140px;
   margin-top: 24px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     margin-bottom: 109px;
     align-items: flex-start;
     padding-left: 24px;
@@ -51,7 +51,7 @@ const IntroP = styled.p`
     font-size: 1.125rem;
     line-height: 22px;
 
-    @media (min-width: 570px) {
+  @media (min-width: 668px) {
       width: 55%;
   }
 `;

@@ -6,7 +6,7 @@ const BookSection = styled.section`
   background-color: var(--primary-color-1);
   padding: 133px 16px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
    background-color: var(--neutral-light);
    padding: 0 114px;
    padding-bottom: 197px;
@@ -34,7 +34,7 @@ const BookSelect = styled.select`
     outline: none;
   }
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
    background-color: var(--neutral-light);
   }
 `;

@@ -6,7 +6,7 @@ const StyledContact = styled.div`
   flex-direction: column;
   margin-bottom: 80px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -15,7 +15,7 @@ const StyledContact = styled.div`
 const FollowUsDiv = styled.div`
   display: none;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -23,7 +23,7 @@ const FollowUsDiv = styled.div`
 `;
 
 const FollowUsP = styled.p`
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
@@ -33,21 +33,21 @@ const FollowUsP = styled.p`
 const FollowUsIconsDiv = styled.div`
   display: none;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     display: flex;
     gap: 3px;
   }
 `;
 
 const FollowUsIcons = styled.img`
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     width: 77px;
     height: 77px;
   }
 `;
 
 const ContactInfoDiv = styled.div`
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     display: flex;
     flex-direction: column;
   }
@@ -60,7 +60,7 @@ const ContactH4 = styled.h4`
   margin: 52px 0 10px 0;
   text-transform: uppercase;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;

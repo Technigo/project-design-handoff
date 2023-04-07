@@ -5,7 +5,7 @@ import { Button } from './Button';
 const SignUpSection = styled.section`
   padding: 133px 16px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     padding: 0;
   }
 
@@ -15,11 +15,11 @@ const SignUpSection = styled.section`
 `;
 
 const SignUpImg = styled.img`
-  @media (max-width: 569px) {
+  @media (max-width: 667px) {
     display: none;
   }
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     width: 100%;
     height: 30vh;
     object-fit: cover;
@@ -30,7 +30,7 @@ const SignUpImg = styled.img`
 `;
 
 const SignUplogo = styled.img`
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     display: flex;
     align-self: center;
     padding: 0 144px;
@@ -43,7 +43,7 @@ const SignUpP = styled.p`
   color: var(--neutral-dark);
   margin: 32px 0;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     padding: 0 144px;
   }
 `;
@@ -55,7 +55,7 @@ const SignUpForm = styled.form`
   padding: 0px;
   gap: 16px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     padding: 0 144px 100px 144px;
   }
 `;
@@ -65,7 +65,7 @@ const NameInputDiv = styled.div`
   flex-wrap: wrap;
   gap: 16px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between;
@@ -85,13 +85,13 @@ const SignUpInput = styled.input`
 `;
 
 const SignUpButton = styled(Button)`
-  @media (max-width: 569px) {
+  @media (max-width: 667px) {
     &::before {
       content: "Continue to sign up!";
     }
   }
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     padding: 12px 30px;
     &::before {
       content: "Continue";

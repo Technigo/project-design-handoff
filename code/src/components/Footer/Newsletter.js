@@ -30,6 +30,7 @@ const NewsInput = styled.input`
   line-height: 19px;
   padding: 10px 0 10px 10px;
   margin: 32px 0;
+  max-width: 450px;
 
   &::placeholder {
       color: var(--neutral-dark);
@@ -37,13 +38,13 @@ const NewsInput = styled.input`
 `;
 
 const SendButton = styled(Button)`
-  @media (max-width: 569px) {
+  @media (max-width: 667px) {
     &::before {
       content: "Sign up!";
     }
   }
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     padding: 12px 30px;
     width: 30%;
     margin-bottom: 74px;

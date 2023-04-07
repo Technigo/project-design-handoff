@@ -23,7 +23,7 @@ export const Button = styled.button`
       background-color: var(--secondary-color-2);
     }
 
-    @media (min-width: 570px) {
+    @media (min-width: 668px) {
       padding: 14px 48px;
       width: auto;
     }
@@ -41,7 +41,7 @@ export const Button = styled.button`
       background-color: var(--secondary-color-2);
     }
 
-    @media (min-width: 570px) {
+    @media (min-width: 668px) {
       padding: 13px 30px;
       width: auto;
     }

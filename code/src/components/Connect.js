@@ -14,7 +14,7 @@ const ConnectText = styled.h2`
   margin: 102px 68px 0 68px;
   text-align: center;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     margin: 128px 68px 0 68px;
   }
 `;
@@ -26,7 +26,7 @@ const IconsDiv = styled.div`
   margin-bottom: 218px;
   gap: 10px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     margin-top: 24px;
     margin-bottom: 128px;
   }

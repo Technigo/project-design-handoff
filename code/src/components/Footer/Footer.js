@@ -6,7 +6,7 @@ import { Contact } from './Contact';
 const StyledFooter = styled.section`
   background-color: var(--primary-color-3);
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     align-items: center;
     padding: 0 114px;
   }
@@ -16,7 +16,7 @@ const FooterInfoDiv = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     flex-direction: column-reverse;
   }
 `;

@@ -11,7 +11,7 @@ const StyledNavBar = styled.nav`
 `;
 
 const HeaderLogo = styled.img`
-  @media (max-width: 569px) {
+  @media (max-width: 667px) {
     display: flex;
     width: 40px;
     height: 40px;
@@ -19,18 +19,18 @@ const HeaderLogo = styled.img`
     top: 20px;
     left: 20px;
     }
-    
-    @media (min-width: 570px) {
+
+    @media (min-width: 668px) {
       display: none;
     }
 `;
 
 const HeaderLogoFull = styled.img`
-  @media (max-width: 569px) {
+  @media (max-width: 667px) {
     display: none;
   }
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     width: 180px;
     height: 77px;
     position: absolute;
@@ -42,14 +42,14 @@ const HeaderLogoFull = styled.img`
 const UlElements = styled.ul`
   display: flex;
 
-  @media (max-width: 569px) {
+  @media (max-width: 667px) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     flex-direction: row;
   }
 
@@ -78,7 +78,7 @@ const LiElements = styled.li`
     }
   }
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     display: flex;
   }
 `;
@@ -86,7 +86,7 @@ const LiElements = styled.li`
 const ToggleButton = styled.button`
   display: none;
 
-  @media (max-width: 569px) {
+  @media (max-width: 667px) {
     display: block;
     position: absolute;
     top: 20px;
@@ -109,7 +109,7 @@ const MenuIcon = styled(FaBars)`
 `;
 
 const MenuNav = styled.div`
-  @media (max-width: 569px) {
+  @media (max-width: 667px) {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -122,7 +122,7 @@ const MenuNav = styled.div`
     transition: all 0.3s ease-in-out;
   }
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     display: none;
   }
 `;

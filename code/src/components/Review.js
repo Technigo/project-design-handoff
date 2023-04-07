@@ -8,7 +8,7 @@ const ReviewSection = styled.section`
   justify-content: center;
   background-color: var(--neutral-light);
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
    background-color: var(--primary-color-1);
    flex-direction: column-reverse;
    padding-top: 53px;
@@ -23,7 +23,7 @@ color: var(--primary-color-4);
   text-align: center;
   padding: 97px 16px 40px 16px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     padding: 0 163px;
     font-size: 2.25rem;
   }
@@ -38,7 +38,7 @@ const Quotation = styled.img`
 const ReviewImg = styled.img`
   margin-bottom: 40px;
 
-  @media (min-width: 570px) {
+  @media (min-width: 668px) {
     margin-bottom: 48px;
   }
 `;
