@@ -45,6 +45,7 @@ const Benefits = () => {
           </div>
         ))}
       </div>
+      <button type="button">Download App</button>
     </div>
   );
 };
