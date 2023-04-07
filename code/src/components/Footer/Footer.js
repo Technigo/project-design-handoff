@@ -5,6 +5,20 @@ import { Contact } from './Contact';
 
 const StyledFooter = styled.section`
   background-color: var(--primary-color-3);
+
+  @media (min-width: 570px) {
+    align-items: center;
+    padding: 0 114px;
+  }
+`;
+
+const FooterInfoDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 570px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const FooterLogo = styled.img`
@@ -19,8 +33,10 @@ export const Footer = () => {
       <FooterLogo
         src={`${process.env.PUBLIC_URL}/assets/Logo.png`}
         alt="Logo for Cross Park" />
-      <Newsletter />
-      <Contact />
+      <FooterInfoDiv>
+        <Newsletter />
+        <Contact />
+      </FooterInfoDiv>
     </StyledFooter>
   )
 }

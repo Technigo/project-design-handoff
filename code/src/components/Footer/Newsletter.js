@@ -36,6 +36,24 @@ const NewsInput = styled.input`
     }
 `;
 
+const SendButton = styled(Button)`
+  @media (max-width: 569px) {
+    &::before {
+      content: "Sign up!";
+    }
+  }
+
+  @media (min-width: 570px) {
+    padding: 12px 30px;
+    width: 30%;
+    margin-bottom: 74px;
+
+    &::before {
+      content: "Send";
+    }
+  }
+`;
+
 export const Newsletter = () => {
   return (
     <StyledNewsletter>
@@ -43,7 +61,7 @@ export const Newsletter = () => {
       <NewsH3>JOIN OUR NEWSLETTER</NewsH3>
       <NewsP>Subscribe to our newsletter to receive the latest news.</NewsP>
       <NewsInput type="email" placeholder="YOUR E-MAIL" />
-      <Button footerCta>Sign up!</Button>
+      <SendButton footerCta />
     </StyledNewsletter>
   )
 };

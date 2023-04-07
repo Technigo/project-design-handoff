@@ -33,6 +33,10 @@ const BookSelect = styled.select`
   &:focus {
     outline: none;
   }
+
+  @media (min-width: 570px) {
+   background-color: var(--neutral-light);
+  }
 `;
 
 const BookCard = styled.div`
