@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css'
+import PrimaryButtonLarge from 'components/PrimaryButtonLarge.js'
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
       <div className="welcomeSection">
         <h1 className="tabletDesktopTitle">Raise the Barre With Us!</h1>
         <p>Join our fully-body workout inspired by Ballet, Pilates and Yoga.</p>
-        <button type="button" className="joinUsButton">Join us!</button>
+        <PrimaryButtonLarge className="primaryButtonLarge" buttonText="Join Us!" />
       </div>
 
     </div>

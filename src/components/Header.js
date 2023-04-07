@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import PrimaryButtonSmall from './PrimaryButtonSmall.js';
 
 import LogoSmallOnLightBackground from '../assets/LogoSmallOnLightBackground.svg';
 import LogoLargeOnLightBackground from '../assets/LogoLargeOnLightBackground.svg';
@@ -12,7 +13,7 @@ const Header = ({ screenSize }) => {
     <div className="headerWrapper">
       <img className="logo" src={logoUrl} alt="Logo for Raise Studio" />
       <div className="navBar">
-        <button type="button" className="signUpButton">Sign up!</button>
+        <PrimaryButtonSmall className="primaryButtonSmall" buttonText="Sign Up!" />
         <img className="hamburgerMenu" src="../images/HamburgerMenu.svg" alt="Menu icon - click to expand navigation menu" />
       </div>
     </div>

@@ -4,6 +4,7 @@
     background-color: #210440;
     justify-content: space-evenly;
     padding: 32px 0;
+    align-items: center;
 }
 
 .quizTitle {

@@ -1,5 +1,6 @@
 import React from 'react';
 import './FinalSection.css';
+import PrimaryButtonLarge from './PrimaryButtonLarge.js';
 
 const FinalSection = () => {
   return (
@@ -44,21 +45,23 @@ const FinalSection = () => {
             <span>Password</span>
             <input type="password" id="password" name="passoword" required /><br />
           </label>
-          <label htmlFor="newsletter">
-            <span>I want to receive Raise Studio&apos;s
+          <div className="checkboxContainer">
+            <label htmlFor="newsletter">
+              <span>I want to receive Raise Studio&apos;s
           Newsletter!
-            </span>
-            <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" />
-          </label><br />
-          <label htmlFor="termsAndConditions">
-            <span>I have read and understood the
-              <button type="button">Terms & Conditions</button> and
-              <button type="button">Privacy Policy</button>
-            </span>
-            <input type="checkbox" id="termsAndConditions" name="termsAndConditions" value="termsAndConditions" />
-          </label>
-          <input type="submit" value="Submit" />
-          <button type="submit" className="joinUsButton">Join Raise Studio</button>
+              </span>
+              <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" />
+            </label><br />
+            <label htmlFor="termsAndConditions">
+              <span>I have read and understood the
+                <button type="button" className="registrationButton"> Terms & Conditions</button> and
+                <button type="button" className="registrationButton"> Privacy Policy</button>
+              </span>
+              <input type="checkbox" id="termsAndConditions" name="termsAndConditions" value="termsAndConditions" />
+            </label>
+          </div>
+          {/* <input type="submit" value="Submit" /> */}
+          <PrimaryButtonLarge className="primaryButtonLarge" buttonText="Join Raise Studio" />
         </form>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Button.css';
+import './PrimaryButtonLarge.css';
 
-const Button = ({ buttonText }) => {
+const PrimaryButtonLarge = ({ buttonText }) => {
   const [disabled, setDisabled] = useState(false);
 
   const onClick = () => {
@@ -10,10 +10,10 @@ const Button = ({ buttonText }) => {
   };
 
   return (
-    <button type="button" className="button" onClick={onClick} disabled={disabled}>
+    <button type="button" className="primaryButtonLarge" onClick={onClick} disabled={disabled}>
       {buttonText}
     </button>
   )
 }
 
-export default Button;
+export default PrimaryButtonLarge;

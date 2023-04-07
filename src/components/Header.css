@@ -22,11 +22,11 @@ body {
     flex-direction: row;
   }
   
-  .signUpButton {
+  .headerWrapper .primaryButtonSmall {
     display: none;
   }
 
-  .signUpButton:hover {
+  /* .signUpButton:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -38,7 +38,7 @@ body {
     background-color: #F3F4F8;
     color: #5B5D6B;
 
-  }
+  } */
   
   .hamburgerMenu {
     height: 24px;
@@ -49,7 +49,8 @@ body {
   
   @media (min-width: 667px) and (max-width: 1024px) {
   
-    .signUpButton {
+    /*can't get css to add placement to PrimaryButtonSmall.css*/
+    .headerWrapper .primaryButtonSmall { 
       background-color: #FFD9BF;
       color: #210440;
       border-radius: 30px;
@@ -67,14 +68,14 @@ body {
       margin-top: 16px;
       margin-bottom: 16px;
       padding: 8px, 16px, 8px, 16px;
-    
     }
-  
+    
+   
   }
-  
+      /*can't get css to add placement to PrimaryButtonSmall.css*/
   @media (min-width: 1025px) {
   
-    .signUpButton {
+    .headerWrapper .primaryButtonSmall {
       background-color: #FFD9BF;
       color: #210440;
       border-radius: 30px;
@@ -91,7 +92,7 @@ body {
       margin-right: 100px;
       margin-top: 16px;
       margin-bottom: 16px;
-    }
+    } 
 
     .hamburgerMenu {
         display: none;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Classes.css';
-import Button from 'components/Button.js';
+import PrimaryButtonLarge from 'components/PrimaryButtonLarge.js';
 
 import BarreBasicCardMobile from '../assets/BarreBasicCardMobile.svg';
 import BarreBasicCardTabletDesktop from '../assets/BarreBasicCardTabletDesktop.svg';
@@ -22,7 +22,7 @@ const Classes = ({ screenSize }) => {
           </p>
           <p className="boldText">No dance experience required!</p>
           {/* <button type="button" className="ourClassesButton">Our Classes</button> */}
-          <Button className="button" buttonText="Our Classes" />
+          <PrimaryButtonLarge className="primaryButtonLarge" buttonText="Our Classes" />
           <img className="BarreBasicImage" src={imgUrl} alt="Basic barre class" />
         </div>
       </div>
