@@ -1,9 +1,10 @@
+/* eslint-disable array-callback-return */
 import React, { useState } from 'react';
-import './FaqPage2/FaqText2.css';
-import FAQ from './FaqPage2/FaqFunction';
+import './FaqText2.css';
+import FAQ from './FaqFunction';
 
 const FAQuestions = () => {
-  const [faqs] = useState([
+  const [faqs, setfaqs] = useState([
     {
       question: 'What device do I need to join the program?',
       answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing eli',
@@ -41,12 +42,22 @@ const FAQuestions = () => {
     }
 
   ]);
-  return (
-    <div className="faqs">
-      {faqs.map((faq, i) => (
-        <FAQ faq={faq} index={i} />
-      ))}
 
+  const toggleFAQ = (index) => {
+    setfaqs(faqs.map((faq, i) => {
+      if (i === index) { faq.open = !faq.open } else {
+        faq.open = false;
+      }
+    }))
+  }
+  return (
+    <div className="faq-wrapper">
+      <h1>FAQs</h1>
+      <div className="faqs">
+        {faqs.map((faq, i) => (
+          <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
+        ))}
+      </div>
     </div>
 
   )
