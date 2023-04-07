@@ -10,7 +10,7 @@ export const theme = {
   inputs: {
     passive: '#A8A8A8',
     active: '#7786BA',
-    accepted: '#419B60',
-    error: '#C92A2A'
+    valid: '#419B60',
+    invalid: '#C92A2A'
   }
 }

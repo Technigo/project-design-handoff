@@ -73,5 +73,8 @@ button {
     margin: 15px 0 0 0; 
 }
 
+button:active {
+    transform: scale(.9);
+}
 
 `
