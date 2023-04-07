@@ -20,6 +20,7 @@ export const Numbers = () => {
             <img src="./Pictures/Component3.svg" alt="Numbers" />
           </div>
         </div>
+        <hr />
         <div className="big-box">
           <img src="./Pictures/review.svg" alt="review" />
         </div>

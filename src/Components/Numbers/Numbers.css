@@ -16,8 +16,6 @@
         width: 100%;
     }
     .big-box {
-        width: 100%;
-        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -26,3 +24,21 @@
     .blue-box {
         scale: 80%;
     }
+@Media (min-width: 668px) {
+        .blue-box-container {
+            flex-direction: column;
+            padding-top: 0px;
+            scale: 110%;
+        }
+        .numbers-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .master-number {
+            justify-content: center;
+        }
+
+        hr {
+            margin: 0px;
+        }
+      }

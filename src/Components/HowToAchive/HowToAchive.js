@@ -28,7 +28,11 @@ export const HowToAchive = () => {
           <SmallNarrowItalic>WORKOUT WHERE</SmallNarrowItalic>
           <BoldBigItalic>YOU ARE</BoldBigItalic>
         </h1>
+        <div className="title-box-button">
+          <StartButton outlinedtablet>Download App</StartButton>
+        </div>
       </div>
+      <hr className="line" />
       <div className="how-to-achive-picture-text">
         <div className="how-to-achive-picture">
           <img className="phone-picture" src="./Pictures/image116.svg" alt="phonepicture" />

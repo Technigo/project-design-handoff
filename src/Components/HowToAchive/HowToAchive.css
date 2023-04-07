@@ -19,6 +19,8 @@
     padding-top: 27px;
     padding-bottom: 50px;
     scale: 100%;
+    display: flex;
+    justify-content: center;
 }
 .how-to-achive-buttons {
     justify-content: center;
@@ -52,6 +54,10 @@
     display: none;
 }
 
+.title-box-button {
+    display: none;
+}
+
 @media (min-width: 668px) {
     .how-to-achive-picture-text {
         display: flex;
@@ -62,5 +68,27 @@
     .line {
         display: flex;
         width: 80%;
+    }
+
+    .title-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 25%;
+    }
+
+    .how-to-achive-buttons {
+        display: none;
+    }
+
+    .how-to-achive-container {
+        height: 600px;
+    }
+
+    .how-to-achive-picture-text {
+        padding-bottom: 30px;
+        padding-top: 30px;
+
     }
   }
