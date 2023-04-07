@@ -1,28 +1,35 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable max-len */
 
 import React from 'react';
-import Slider from 'react-slick';
 import './ClientReview.css';
-import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 const ClientReviewsCarousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
   };
-
   return (
     <div className="client-review-container">
       <h1>What our Clients say about their journey!</h1>
-      <Slider {...settings}>
+      <Carousel responsive={responsive}>
         <div className="card">
           <p>“Arranging the free trial and signing up for a package afterward was quick and easy. My trainer Lola is AMAZING! I absolutely hate exercise and have not been able to stick to an exercise routine since school. But Lola makes my workouts fun and keeps me sessions!”</p>
           <img src="../assets/Liana.jpg" alt="picture of Liana" />
@@ -38,11 +45,7 @@ const ClientReviewsCarousel = () => {
           <img src="../assets/Sara.png" alt="picture of Sara" />
           <h3>Sara Jones</h3>
         </div>
-        <div className="arrow-container">
-          <BsFillArrowLeftCircleFill />
-          <BsFillArrowRightCircleFill />
-        </div>
-      </Slider>
+      </Carousel>
     </div>
   );
 };
