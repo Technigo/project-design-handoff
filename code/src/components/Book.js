@@ -8,7 +8,7 @@ const BookSection = styled.section`
 
   @media (min-width: 668px) {
    background-color: var(--neutral-light);
-   padding: 0 114px;
+   padding: 0 90px;
    padding-bottom: 197px;
   }
 `;
@@ -29,11 +29,24 @@ const BookSelect = styled.select`
   border: solid black 1px;
   text-align: center;
   border-radius: 0%; // To prevent default setting in Safari
+
   &:focus {
     outline: none;
   }
+  
   @media (min-width: 668px) {
    background-color: var(--neutral-light);
+  }
+`;
+
+const BookCardsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 
@@ -71,6 +84,10 @@ const BookCardH4 = styled.h4`
   font-size: 2rem;
   font-weight: 800;
   margin: 24px;
+
+  @media (min-width: 1024px) {
+    margin: 0;
+  }
 `;
 
 export const Book = () => {
@@ -84,7 +101,7 @@ export const Book = () => {
     switch (selectedCity) {
       case 'malmo':
         return (
-          <>
+          <BookCardsContainer>
             <BookCard>
               <BookCardImg src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="2 people running in the sunset" />
               <BookCardH3>MAGISTRATPARKEN</BookCardH3>
@@ -93,7 +110,7 @@ export const Book = () => {
             </BookCard>
             <BookCard>
               <BookCardImg src="https://images.pexels.com/photos/8381747/pexels-photo-8381747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="People running in a group" />
-              <BookCardH3>MAGISTRATPARKEN</BookCardH3>
+              <BookCardH3>PILDAMSPARKEN</BookCardH3>
               <BookCardH4>12.00 CARDIO</BookCardH4>
               <Button cardCta>Book workout</Button>
             </BookCard>
@@ -103,20 +120,20 @@ export const Book = () => {
               <BookCardH4>17.30 INTENSE</BookCardH4>
               <Button cardCta>Book workout</Button>
             </BookCard>
-          </>
+          </BookCardsContainer>
         );
       case 'stockholm':
         return (
-          <>
+          <BookCardsContainer>
             <BookCard>
               <BookCardImg src="https://images.pexels.com/photos/8381747/pexels-photo-8381747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="People running in a group" />
-              <BookCardH3>VASAPARKEN</BookCardH3>
+              <BookCardH3>HAGAPARKEN</BookCardH3>
               <BookCardH4>07.00 CARDIO</BookCardH4>
               <Button cardCta>Book workout</Button>
             </BookCard>
             <BookCard>
               <BookCardImg src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="2 people running in the sunset" />
-              <BookCardH3>VASAPARKEN</BookCardH3>
+              <BookCardH3>HAGAPARKEN</BookCardH3>
               <BookCardH4>11.00 MODERATE</BookCardH4>
               <Button cardCta>Book workout</Button>
             </BookCard>
@@ -126,11 +143,11 @@ export const Book = () => {
               <BookCardH4>18.00 INTENSE</BookCardH4>
               <Button cardCta>Book workout</Button>
             </BookCard>
-          </>
+          </BookCardsContainer>
         );
       case 'goteborg':
         return (
-          <>
+          <BookCardsContainer>
             <BookCard>
               <BookCardImg src="https://images.pexels.com/photos/8381747/pexels-photo-8381747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="People running in a group" />
               <BookCardH3>SLOTTSSKOGEN</BookCardH3>
@@ -145,10 +162,11 @@ export const Book = () => {
             </BookCard>
             <BookCard>
               <BookCardImg src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="2 people running in the sunset" />
+              <BookCardH3>SLOTTSSKOGEN</BookCardH3>
               <BookCardH4>16.30 MODERATE</BookCardH4>
               <Button cardCta>Book workout</Button>
             </BookCard>
-          </>
+          </BookCardsContainer>
         );
       default:
         return null;
