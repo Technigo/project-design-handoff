@@ -8,3 +8,11 @@
 .coaches-card{
   margin-left:50px;
 }
+
+@media (min-width:641px){
+  .coaches-card{
+    margin-left:20px;
+  }
+  
+
+}

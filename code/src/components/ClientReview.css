@@ -52,4 +52,17 @@
     border-radius: 50%;
   }
 
-  
+  @media (min-width:641px){
+    .client-review-container {
+      height: 55vh;
+    }
+    
+    .card
+  {
+    height: 35vh;
+  }
+  .client-review-container h1 {
+    margin-top:20px;
+  }
+
+}

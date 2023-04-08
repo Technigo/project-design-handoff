@@ -10,7 +10,9 @@
 .image-wrapper {
 position:relative;
 }
-
+#man-stretching{
+  max-width: 80vw;
+}
 @media (min-width: 380px)
 {
   .info-page-wrapper{
@@ -18,11 +20,23 @@ position:relative;
   }
 }
 
-@media (min-width:770px)
+@media (min-width:760px)
 {
   .info-page-wrapper{
     height:140vh;
+    display: flex;
   }
+.coach-support{
+  display: flex;
+  flex-direction: column;
+  border: red 2px solid;
+}
+
+#man-stretching{
+  width: 40vw;
+}
+
+
 }
 
 @media (min-width:900px)
@@ -31,7 +45,7 @@ position:relative;
     height:130vh;
   }
 }
-@media (min-width:900px)
+@media (min-width:1024px)
 {
   .info-page-wrapper{
     height:200vh;
