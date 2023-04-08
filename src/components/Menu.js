@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <Nav>
-      <Hamburger onClick={toggle}>
+      <Hamburger onClick={toggle} isOpen={isOpen}>
         <span />
         <span />
         <span />
@@ -62,7 +62,22 @@ const Hamburger = styled.div`
     background: #fff;
     margin-bottom: 4px;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    transform-origin: 4px;
+
+    &:nth-child(1) {
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
+    }
+
+    &:nth-child(2) {
+      opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
+    }
+
+    &:nth-child(3) {
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
+    }
   }
+  
 
   @media (max-width: 768px) {
     display: flex;
