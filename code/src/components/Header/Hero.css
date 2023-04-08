@@ -1,6 +1,9 @@
 .Background {
   display: flex;
   position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .hero-img {
@@ -25,7 +28,7 @@
     min-height: 700px;
     width: 30%;
     background-color: var(--primary-color);
-    opacity: 0.5;
+    opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
