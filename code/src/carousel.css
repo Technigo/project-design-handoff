@@ -12,6 +12,13 @@
     justify-content: space-evenly;
     
   }
+
+  .carousel-section {
+    display: flex;
+    height: 800px;
+    
+  }
+
   .carousel-wrapper {
     position: absolute;
     top: 0;
@@ -35,4 +42,8 @@
     line-height: 1.2em;
   }
   
+  .awssld__content {
+    background-color: #D7CBFF;
+    height: 800px;
+  }
   

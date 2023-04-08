@@ -26,11 +26,13 @@ const cardboxes = [
 ];
 
 const CarouselSection = ({ text, text2, logo }) => (
-  <div className="carousel-wrapper" style={{ backgroundColor: '#D7CBFF' }}>
-    <div className="carousel-box">
-      <img src={logo} alt="Logo" style={{ width: '50px' }} />
-      <p style={{ fontWeight: 'bold' }}>{text}</p>
-      <p>{text2}</p>
+  <div className="carousel-section">
+    <div className="carousel-wrapper" style={{ backgroundColor: '#D7CBFF' }}>
+      <div className="carousel-box">
+        <img src={logo} alt="Logo" style={{ width: '50px' }} />
+        <p style={{ fontWeight: 'bold' }}>{text}</p>
+        <p>{text2}</p>
+      </div>
     </div>
   </div>
 );
