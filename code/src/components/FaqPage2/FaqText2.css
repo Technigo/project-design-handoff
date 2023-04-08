@@ -36,6 +36,13 @@
   
   }
 
+  @media (min-width:641px){
+    
+.faq-question{
+  width:80vw;
+}
+}
+
   
 
 
