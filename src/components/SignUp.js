@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Title } from './Hero'
 import { YellowText } from './Classes'
@@ -43,7 +43,7 @@ padding: 0 10px;
 `
 
 const ClassButton = styled.button`
-background-color: #888585;
+background-color: ${({ clicked }) => (clicked ? '#66A1AE' : '#888585')};
 color: white;
 border-radius: 1.25rem;
 border: none;
@@ -59,6 +59,18 @@ font-family: 'Outfit', sans-serif;
 font-weight: 600;`
 
 export const SignUp = () => {
+  const [selectedButtonIndex, setSelectedButtonIndex] = useState(null);
+
+  const handleButtonClick = (buttonIndex) => {
+    setSelectedButtonIndex(buttonIndex);
+  };
+
+  const ClassAlert = () => {
+    return (
+      alert('You have signed up!')
+    )
+  }
+
   return (
     <SignUpWrapper>
       <Title smallrem black>Sign up for a class</Title>
@@ -71,11 +83,20 @@ export const SignUp = () => {
       </SignUpSection>
       <SignUpSection>
         <YellowText fw600 lh30>Choose a class*</YellowText>
-        <ClassButton>Power Yoga 60</ClassButton>
-        <ClassButton>Power Yoga 75</ClassButton>
-        <ClassButton>Yoga Strong</ClassButton>
+        <ClassButton
+          clicked={selectedButtonIndex === 0}
+          onClick={() => handleButtonClick(0)}>Power Yoga 60
+        </ClassButton>
+        <ClassButton
+          clicked={selectedButtonIndex === 1}
+          onClick={() => handleButtonClick(1)}>Power Yoga 75
+        </ClassButton>
+        <ClassButton
+          clicked={selectedButtonIndex === 2}
+          onClick={() => handleButtonClick(2)}>Yoga Strong
+        </ClassButton>
       </SignUpSection>
-      <SignUpButton>Sign up for a class</SignUpButton>
+      <SignUpButton onClick={ClassAlert}>Sign up for a class</SignUpButton>
     </SignUpWrapper>
   )
 }

@@ -98,6 +98,12 @@ padding-bottom: 48px;
 }`
 
 export const Hero = () => {
+  const ClassAlert = () => {
+    return (
+      alert('You have signed up!')
+    )
+  }
+
   return (
     <HeroWrapper>
       <HeroImageContainer>
@@ -117,7 +123,7 @@ export const Hero = () => {
           whilst in a calm and serene studio, tucked away in Kungsholmen, Stockholm.
           </BlueText>
           <ButtonTextWrapper>
-            <SignUpButton>Sign up for a class</SignUpButton>
+            <SignUpButton onClick={ClassAlert}>Sign up for a class</SignUpButton>
             <SmallText fw500>Want to know more about us?</SmallText>
           </ButtonTextWrapper>
         </HeaderTextButtonContainer>

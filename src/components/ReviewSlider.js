@@ -11,6 +11,7 @@ const SliderContainer = styled.div`
     width: 60%;
     height: 100%;
     overflow: hidden;
+    margin: 24px;
 
 
   .slick-dots li {
@@ -30,7 +31,7 @@ const SliderContainer = styled.div`
   margin: 0 5px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 1024px) {
   .slick-dots {
     bottom: -20px;
   }

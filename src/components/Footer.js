@@ -5,7 +5,7 @@ import LogoBig from '../images/logobig.svg';
 
 const FooterWrapper = styled.div`
 background-color: #2E160E;
-height: 230px;
+height: 130px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -13,7 +13,12 @@ gap: 24px;
 padding-top: 24px;
 padding-bottom: 24px;
 
+@media (min-width: 668px){
+  height: 230px;
+}
+
 `
+
 const LogoContainer = styled.div`
 display: none;
 padding-top: 50px;
