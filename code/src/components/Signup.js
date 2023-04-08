@@ -9,6 +9,7 @@ const SignupPageForm = () => {
 
   const handleButtonClick = (e) => {
     e.preventDefault();
+    alert('Thank you for trying Self Health!');
   }
 
   return (
@@ -17,8 +18,7 @@ const SignupPageForm = () => {
       style={{ backgroundImage: "url('./assets/forminput.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: '100vh',
-        position: 'absolute' }}>
+        height: '100vh' }}>
 
       <h1><span className="highlighted-text">Book </span>&nbsp;a free trial</h1>
       <h3>Tell us about your preferences and we offer you a tailored plan for healthier life </h3>

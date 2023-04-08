@@ -7,7 +7,7 @@ import NavBar from './components/NavBar/NavBar'
 import CoachesCarousel from './components/Coaches'
 import FAQuestions from './components/FaqPage2/FaqText2'
 import SignupPage from './components/Signup'
-// import styled from 'styled-components'
+import FooterPage from './components/Footer'
 
 export const App = () => {
   return (
@@ -20,6 +20,7 @@ export const App = () => {
       <CoachesCarousel />
       <FAQuestions />
       <SignupPage />
+      <FooterPage />
     </div>
   )
 }
