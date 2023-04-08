@@ -9,9 +9,15 @@ flex-direction: column;
 height: 100vh;
 gap: 2.4rem;
 align-items: center;
-padding-bottom: 1em;
+@media (min-width: 480px) {
+  padding-bottom: 7em;
+}
+@media (min-width: 744px) {
+  padding-bottom: 15em;
+}
 @media (min-width: 968px) {
     flex-direction: row;
+    padding-bottom: 15em;
 }
 `
 
