@@ -11,6 +11,7 @@ width: 132px;
 const ButtonDiv = styled.div`
 display: flex;
 height: 54.4%;
+max-height: 500px;
 align-items: flex-end;
 justify-content: flex-end;`
 

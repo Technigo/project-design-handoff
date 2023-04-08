@@ -2,6 +2,7 @@ import React from 'react'
 import { Heropage } from 'components/Heropage/Heropage'
 import { BookClassPage } from 'components/BookClassPage/BookClassPage'
 import { BecomeMemberPage } from 'components/BecomeMemberPage/BecomeMemberPage'
+import { Footer } from 'components/Footer/Footer'
 
 export const App = () => {
   return (
@@ -10,6 +11,7 @@ export const App = () => {
         <Heropage />
         <BookClassPage />
         <BecomeMemberPage />
+        <Footer />
       </div>
     </div>
   )

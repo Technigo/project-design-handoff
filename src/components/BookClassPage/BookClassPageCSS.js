@@ -145,10 +145,10 @@ overflow-y: visible;
 
 export const RingAcrobat = styled.img`
 position: inherit;
-    width: 93%;
-    z-index: 1;
-    left: 3%;
-    top: -7%;
+width: 99%;
+z-index: 1;
+left: 9%;
+top: 0%;
 `
 
 export const Acrostripe1 = styled.img`

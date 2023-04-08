@@ -12,7 +12,7 @@ background-position: left 45% center
 `
 
 export const Logo = styled.img`
-height: 6%;
+max-height: 166px;
 width: 21.5%;
 margin-top: 4%;
 `
