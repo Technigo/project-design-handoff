@@ -8,7 +8,11 @@ const Hero = () => {
     <>
       <div className="Background">
         <div className="block-color" />
-        <div className="hero-img" style={{ backgroundImage: `url(${Heroimg})` }} />
+        <div
+          className="hero-img"
+          alt="woman doing aerial silk"
+          aria-label="background image of woman doing aerial silk"
+          style={{ backgroundImage: `url(${Heroimg})` }} />
       </div>
       <Introduction />
     </>
@@ -16,25 +20,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-/*
-import Heroimg from "/assets/Hero.png";
-
-<div className="hero">
-<img src={Heroimg} alt="woman doing aerial silk" />
-</div>
-
-const Hero = () => {
-  return (
-    <>
-      <div className="Background">
-        <div className="block-color" />
-        <div className="hero-img" />
-      </div>
-      <Introduction />
-    </>
-  );
-};
-
-export default Hero;
-*/
