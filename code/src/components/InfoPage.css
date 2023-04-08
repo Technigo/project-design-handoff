@@ -13,6 +13,17 @@ position:relative;
 #man-stretching{
   max-width: 80vw;
 }
+#workout-equipment{
+  max-width: 80vw;
+}
+
+#healthy-dinner{
+  max-width: 50vw;
+  position: absolute;
+  top:50%;
+  left:45%;
+}
+
 @media (min-width: 380px)
 {
   .info-page-wrapper{
@@ -22,32 +33,62 @@ position:relative;
 
 @media (min-width:760px)
 {
-  .info-page-wrapper{
-    height:140vh;
-    display: flex;
+.info-page-wrapper{
+  height:55vh;
+  margin:2rem;
   }
+
+.info-page-wrapper p{
+  margin:0;
+  }
+.info-page-wrapper h3{
+  margin:10px;
+  }
+  .info-page-wrapper h1{
+    margin:20px;
+    }
 .coach-support{
-  display: flex;
-  flex-direction: column;
-  border: red 2px solid;
+  position: relative; 
+}
+.coach-support-text{
+  width:300px;
+}
+.coach-support-text h1{
+  font-size: 1.25rem;
 }
 
 #man-stretching{
   width: 40vw;
+  position:absolute;
+  top:25%;
+  right: 0%;
 }
 
+.workout-plan{
+  position: relative;
+}
+
+.workout-plan-text{
+  width:300px;
+  position:absolute;
+  right:0;
+}
+.workout-plan-text h1{
+  font-size: 1.25rem;
+}
+
+#workout-equipment{
+  width:40vw;
+  margin-top:40px;
+}
+#healthy-dinner{
+  width:20vw;
+  left:30%;
+}
 
 }
 
-@media (min-width:900px)
+@media (min-width:1025px)
 {
-  .info-page-wrapper{
-    height:130vh;
+  
   }
-}
-@media (min-width:1024px)
-{
-  .info-page-wrapper{
-    height:200vh;
-  }
-}
