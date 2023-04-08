@@ -40,8 +40,17 @@ top: 21px;
 
 @media (min-width: 540px) {
     width: 665%;
-    position: absolute;
     right: -277%;
+}
+
+@media (min-width: 800px) {
+    width: 772%;
+    right: -465%;
+}
+
+@media (min-width: 1024px) {
+    width: 800%;
+    right: -249%;
 }
 `
 
@@ -118,7 +127,16 @@ color: #000000;
 `
 export const BottomFlexboxDiv = styled.div`
 display: flex;
-flex-direction: column;`
+flex-direction: column;
+
+@media (min-width: 1024px) {
+    flex-direction: row-reverse;
+}
+`
 
 export const BottomGymnast = styled.img`
+@media (min-width: 1024px) {
+    width: 41.5%;
+    object-fit: cover;
+}
 `

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterWrapper, StripesWrapper, StripesBottom, FooterChildWrapper, LogoAg, Contact, ContactUs, MailUs, CallUs, SocialMediaWrapper, Instagram, Facebook, Twitter, CollabWrapper, BrandWrapper, BrandLogo, PoweradeLogo } from './FooterCSS';
+import { FooterWrapper, StripesWrapper, StripesBottom, FooterChildWrapper, LogoAg, Contact, ContactUs, MailUs, CallUs, SocialMediaWrapper, Instagram, Facebook, Twitter, CollabWrapper, BrandWrapper, BrandLogo, PoweradeLogo, LogoContactMediaWrapper } from './FooterCSS';
 import StripesIMG from '../../assets/multicolorstripes.svg'
 import LogoAgIMG from '../../assets/LogoAGblackwhite.svg'
 import InstagramIMG from '../../assets/InsagramGreen.svg'
@@ -17,17 +17,19 @@ export const Footer = () => {
         <StripesBottom src={`${StripesIMG}`} />
       </StripesWrapper>
       <FooterChildWrapper>
-        <LogoAg src={`${LogoAgIMG}`} />
-        <Contact>
-          <ContactUs>Contact us:</ContactUs>
-          <MailUs href="mailto:acrogym@sportsorg.se">acrogym@sportsorg.se</MailUs>
-          <CallUs href="tel:+46786524532">078 652 45 32</CallUs>
-        </Contact>
-        <SocialMediaWrapper>
-          <Instagram src={`${InstagramIMG}`} />
-          <Facebook src={`${FacebookIMG}`} />
-          <Twitter src={`${TwitterIMG}`} />
-        </SocialMediaWrapper>
+        <LogoContactMediaWrapper>
+          <LogoAg src={`${LogoAgIMG}`} />
+          <Contact>
+            <ContactUs>Contact us:</ContactUs>
+            <MailUs href="mailto:acrogym@sportsorg.se">acrogym@sportsorg.se</MailUs>
+            <CallUs href="tel:+46786524532">078 652 45 32</CallUs>
+          </Contact>
+          <SocialMediaWrapper>
+            <Instagram src={`${InstagramIMG}`} />
+            <Facebook src={`${FacebookIMG}`} />
+            <Twitter src={`${TwitterIMG}`} />
+          </SocialMediaWrapper>
+        </LogoContactMediaWrapper>
         <CollabWrapper>
           <BrandWrapper><BrandLogo src={`${ReebokIMG}`} /></BrandWrapper>
           <BrandWrapper><PoweradeLogo src={`${PoweradeIMG}`} /></BrandWrapper>

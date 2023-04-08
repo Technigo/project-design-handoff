@@ -1,25 +1,8 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import joinBtn from '../../assets/button-join.svg';
 import joinBtnHover from '../../assets/button-join-hover.svg';
-
-const ButtonImage = styled.img`
-width: 132px;
-
-@media (min-width: 800px) {
-  width: 282px;
-  height: 96px;
-}
-`;
-
-const ButtonDiv = styled.div`
-display: flex;
-height: 54.4%;
-max-height: 500px;
-align-items: flex-end;
-justify-content: flex-end;
-`
+import { ButtonDiv, ButtonImage } from './HeropageCSS';
 
 export const BtnJoin = () => {
   const [isHovered, setIsHovered] = useState(false);

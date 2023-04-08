@@ -13,7 +13,12 @@ margin-right: -5px; /* Increase or decrease the value to adjust the space betwee
 }
 .slick-dots li button:before {
 color: white; /*changes the color of the dots to white*/
-}`;
+}
+
+@media (min-width: 1024px) {
+  display: none;
+}
+`;
 
 export const NameText = styled.p`
 font-family: 'Kulim Park';
@@ -29,6 +34,13 @@ margin-top: 0;
 @media (min-width: 540px) {
   margin-top: 16%;
 }
+
+@media (min-width: 1024px) {
+  margin-top: -7%;
+  font-size: 56px;
+  position: relative;
+  right: 34%;
+}
 `
 export const ClassImgContainer = styled.div`
 height: 324px;
@@ -40,12 +52,23 @@ width: 61vw;
   height: 148%;
   width: 61vw;
 }
+
+@media (min-width: 800px) {
+  height: 179%;
+  width: 60vw;
+}
 `;
 
 export const ClassImg = styled.img`
 transform: skew(-12deg) rotate(0deg) translate(-12%, 0%);
 object-fit: cover;
-width: 130%;
+width: 127%;
+height: 115%;
+
+@media (min-width: 1024px) {
+  height: 478px;
+  width: 338px;
+}
 `;
 
 export const ClassDiv = styled.div`
@@ -63,8 +86,8 @@ justify-content: center;
 align-items: center;
 height: 322px;
 flex-wrap: wrap;
-  align-content: center;
-  position:relative;
+align-content: center;
+position:relative;
 `
 
 export const LogoLeft = styled.img`
@@ -105,6 +128,24 @@ padding-left: 12px;
   top: 111%;
   left: 66.85%;
 }
+
+@media (min-width: 800px) {
+  top: 121%;
+  left: 70.85%;
+  scale: 1.2;
+}
+
+@media (min-width: 1024px) {
+  top: -9%;
+    left: 26.85%;
+    position: relative;
+    scale: 1;
+    width: 222px;
+    height: 60.7px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 34px;
+}
 `
 
 export const BCPageWrapper = styled.div`
@@ -131,6 +172,11 @@ margin-top: 42.5px;
   width: 60.5%;
   margin-top: 12%;
 }
+
+@media (min-width: 1024px) {
+  width: 67%;
+  margin-top: 10%;
+}
 `
 export const BWBWrapper = styled.div`
 display: flex;`
@@ -155,6 +201,12 @@ margin-bottom: 0;
   margin-right: 44%;
   margin-left: 2%;
 }
+
+@media (min-width: 1024px) {
+  margin: 6% 46% 0px 2%;
+  font-size: 26px;
+  line-height: 142%;
+}
 `
 
 export const BookClassBtn = styled.button`
@@ -166,6 +218,18 @@ background-image: url(${BookClassBtnImg});
 background-size: 100% auto;
 margin-top: 27%;
 margin-bottom: 20%;
+
+@media (min-width: 800px) {
+  scale: 1.4;
+}
+
+@media (min-width: 1024px) {
+  scale: 1.0;
+  margin-top: -187px;
+  margin-bottom: 12%;
+  width: 596px;
+  height: 96px;
+}
 `
 
 export const AcroArtWrapper = styled.div`
@@ -184,8 +248,8 @@ overflow-y: visible;
 
 @media (min-width: 800px) {
   height: 680px;
-  width: 71vw;
-  left: 39%;
+  width: 63vw;
+  left: 37%;
   overflow: hidden;
   position: absolute;
 }
@@ -205,6 +269,12 @@ top: 0%;
   top: 10%;
   left: 24%;
   width: 80%;
+}
+
+@media (min-width: 1024px) {
+  top: 0%;
+  left: 34%;
+  width: 88%;
 }
 `
 
@@ -259,4 +329,57 @@ export const Lines = styled.img`
 position: absolute;
 width: 82%;
 right: -3%;
-top: 3.2%;`
+top: 3.2%;
+
+@media (min-width: 1024px) {
+  right: -16%;
+  width: 73%;
+}
+`
+
+export const PromoSubText = styled.p`
+  font-family: "Kulim Park";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: -0.022em;
+  color: rgb(0, 0, 0);
+  padding-left: 23.5px;
+  padding-right: 23.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  @media (min-width: 800px) {
+    margin: 0% 44% 0px 2%
+  }
+  
+  @media (min-width: 1024px) {
+    visibility: hidden;
+  }
+`
+
+export const ImagesWrapper = styled.div`
+`
+
+export const DesktopImages = styled.div`
+display: hidden;
+
+@media (min-width: 1024px) {
+  display: flex;
+  width: 90%;
+  height: 2686px;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: 21%;
+}
+`
+
+export const ClassDivDesktop = styled.div`
+
+`
+
+export const DesktopWrapper = styled.div`
+transform: skew(0deg) rotate(0deg);`

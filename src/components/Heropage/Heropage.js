@@ -4,7 +4,7 @@ import ListEBlue from '../../assets/Listelippsisblue.svg'
 import ListEGreen from '../../assets/Listelippsisgreen.svg'
 import { BtnJoin } from './BtnJoin'
 import { Slogan } from './Slogan'
-import { Parentdiv, Logo, TopWrapper, Navbar, HambMenuBtn, HambMenuIcon, HambMenuList, HambMenuListOpen, HambMenuItem, HambMenuItemLink, HambMenuIconOpen, LiElipblue, LiElipgreen } from './HeropageCSS';
+import { Parentdiv, Logo, TopWrapper, Navbar, HambMenuBtn, HambMenuIcon, HambMenuList, HambMenuListOpen, HambMenuItem, HambMenuItemLink, HambMenuIconOpen, LiElipblue, LiElipgreen, AcroPromoText } from './HeropageCSS';
 
 export const Heropage = () => {
   const [open, setOpen] = useState(false);
@@ -32,6 +32,11 @@ export const Heropage = () => {
       </TopWrapper>
       <BtnJoin />
       <Slogan />
+      <AcroPromoText>
+          Physical activity is vital for the body. Learn how to master
+          unique skills where you&apos;ll develop strength,
+          confidence and you&apos;ll defy yourself.
+      </AcroPromoText>
     </Parentdiv>
   )
 }

@@ -16,7 +16,7 @@ import TrampolineIMGhover from '../../assets/Trampolinehover.svg'
 import TumbleIMG from '../../assets/Tumble.svg'
 import TumbleIMGhover from '../../assets/Tumblehover.svg'
 import SingleLogoABlue from '../../assets/SingleLogoABlue.svg'
-import { SliderContainer, LogoLeft, ClassDiv, ClassId, ClassImgContainer, ClassImg, LearnBtn, NameText, LogoRight } from './BookClassPageCSS'
+import { SliderContainer, LogoLeft, ClassDiv, ClassId, ClassImgContainer, ClassImg, LearnBtn, NameText, LogoRight, ImagesWrapper, DesktopImages, ClassDivDesktop, DesktopWrapper } from './BookClassPageCSS'
 
 export const ClassCarousel = () => {
   const settings = {
@@ -76,24 +76,39 @@ export const ClassCarousel = () => {
   ]
 
   return (
-    <SliderContainer>
-      <LogoLeft src={`${SingleLogoABlue}`} />
-      <Slider {...settings} className="slider">
-        {Class.map((classes) => (
-          <ClassDiv key={classes.id}>
-            <ClassId>
-              <ClassImgContainer>
-                <ClassImg src={classes.image} alt={classes.name} />
-              </ClassImgContainer>
-              <LearnBtn>
+    <ImagesWrapper>
+      <SliderContainer>
+        <LogoLeft src={`${SingleLogoABlue}`} />
+        <Slider {...settings} className="slider">
+          {Class.map((classes) => (
+            <ClassDiv key={classes.id}>
+              <ClassId>
+                <ClassImgContainer>
+                  <ClassImg src={classes.image} alt={classes.name} />
+                </ClassImgContainer>
+                <LearnBtn>
                 Learn more
-              </LearnBtn>
-            </ClassId>
+                </LearnBtn>
+              </ClassId>
+              <NameText>{classes.name}</NameText>
+            </ClassDiv>
+          ))}
+        </Slider>
+        <LogoRight src={`${SingleLogoABlue}`} />
+      </SliderContainer>
+      <DesktopImages>
+        {Class.map((classes) => (
+          <DesktopWrapper>
+            <ClassDivDesktop key={classes.id}>
+              <ClassImg src={classes.image} alt={classes.name} />
+            </ClassDivDesktop>
+            <LearnBtn>
+                Learn more
+            </LearnBtn>
             <NameText>{classes.name}</NameText>
-          </ClassDiv>
+          </DesktopWrapper>
         ))}
-      </Slider>
-      <LogoRight src={`${SingleLogoABlue}`} />
-    </SliderContainer>
+      </DesktopImages>
+    </ImagesWrapper>
   );
 }

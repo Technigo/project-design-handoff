@@ -13,8 +13,8 @@ padding: 0;
 margin-bottom: 59px;
 
 @media (min-width: 800px) {
-  width: 412px;
-    height: 82px;
+  scale: 1.4;
+  margin-left: 32px;
 }
 `
 

@@ -4,7 +4,7 @@ import { ButWhatBanner } from './ButWhatBanner'
 import { RingAcroArt } from './RingAcroArt'
 import { OurClassesBtn } from './OurClassesBtn'
 import { ClassCarousel } from './ClassCarousel'
-import { BCPageWrapper, AcroPromoText, BookClassBtn } from './BookClassPageCSS';
+import { BCPageWrapper, AcroPromoText, BookClassBtn, PromoSubText } from './BookClassPageCSS';
 
 export const BookClassPage = () => {
   return (
@@ -19,10 +19,13 @@ export const BookClassPage = () => {
       Extensive use of acrobatic skills are most often performed
       in acro dance, circus, gymnastics, and freerunning and to
       a lesser extent in other athletic activities including ballet,
-      slacklining and diving. Although acrobatics is most commonly
+      slacklining and diving.
+      </AcroPromoText>
+      <PromoSubText>
+        Although acrobatics is most commonly
       associated with human body performance, the term is used to
       describe other types of performance, such as aerobatics.
-      </AcroPromoText>
+      </PromoSubText>
       <OurClassesBtn />
       <ClassCarousel />
       <BookClassBtn />
