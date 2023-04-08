@@ -2,6 +2,7 @@
 /* eslint-disable max-len */
 import React from 'react'
 import styled from 'styled-components'
+import { ClassSlider } from './ClassSlider'
 
 const ClassesWrapper = styled.div`
 padding-top: 24px;
@@ -43,13 +44,16 @@ const ClassCarouselWrapper = styled.div`
 border: pink dotted 5px;
 height: 240px;
 width: 80%;
+color: black;
 `
 
 export const Classes = () => {
   return (
     <ClassesWrapper>
       <Heading>Our Classes <Arrow src="./images/icons/arrow.svg" /></Heading>
-      <ClassCarouselWrapper />
+      <ClassCarouselWrapper>
+        <ClassSlider />
+      </ClassCarouselWrapper>
     </ClassesWrapper>
   )
 }
