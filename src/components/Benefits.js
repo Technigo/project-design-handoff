@@ -25,7 +25,7 @@ const Text = styled.div`
   color: green;
   margin-top: 1rem;
   padding: 1rem;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;

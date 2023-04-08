@@ -5,7 +5,7 @@ import HeroImage from 'assets/HeroImage.png';
 import { Navbar } from 'components/Navbar'
 
 const HeroWrapper = styled.div`
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
@@ -38,6 +38,8 @@ font-weight: 500;
 font-size: 22px;
 line-height: 168.52%;
 
+margin-left: 2em;
+
 color: #025323;
 `
 const BookButton = styled.button`
@@ -48,12 +50,10 @@ align-items: center;
 padding: 15px 47px;
 gap: 10px;
 
-position: absolute;
-width: 244px;
-height: 59px;
-left: 0px;
-top: 292px;
+margin-left: 2em;
 
+color: white;
+font-weight: 600;
 background: #025323;
 border-radius: 15px;
 
@@ -63,17 +63,15 @@ border-radius: 15px;
 `
 export const Hero = () => {
   return (
-    <>
-      <HeroWrapper>
-        <Navbar />
-        <Text><Heading>Breath in breath out</Heading>
-          <p>Yogistudio offers an overall concept in self-healing with a
+    <HeroWrapper>
+      <Navbar />
+      <Text><Heading>Breath in breath out</Heading>
+        <p>Yogistudio offers an overall concept in self-healing with a
               focus on calm and therapeutic forms of yoga.
-          </p>
-        </Text>
-      </HeroWrapper>
-      <BookButton type="button" id="bookAClass">Book a class
-      </BookButton>
-    </>
+        </p>
+        <BookButton type="button" id="bookAClass">Book a class
+        </BookButton>
+      </Text>
+    </HeroWrapper>
   )
 }
