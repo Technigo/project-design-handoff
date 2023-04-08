@@ -15,10 +15,11 @@ export const Footer = () => {
       <div className="footLogo">
         <img src={Logo} alt="logo" />
       </div>
-      <p className="contact">Contact us:
+      <p className="contactUs">Contact us:</p>
+      <p className="contact">
 acrogym@sportsorg.se
-078 652 45 32.
       </p>
+      <p className="phone">078 652 45 32</p>
       <div className="soMe">
         <img src={Insta} alt="logo" />
         <img src={Face} alt="logo" />

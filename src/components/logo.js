@@ -3,14 +3,14 @@ import Logo from './images/VectorLogo.svg'
 import Mobile from './Mobile';
 import Navigation from './Navigation';
 import './css/header.css'
-import Classes from './css/classes.module.css'
+import Hamburger from './css/hamburger.module.css'
 
 export const Header = () => {
   return (
     <div className="header-container">
       <img src={Logo} alt="Logo" className="logo" />
       <div>
-        <nav className={Classes.NavBar}>
+        <nav className={Hamburger.NavBar}>
           <Mobile />
           <Navigation />
         </nav>

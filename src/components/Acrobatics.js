@@ -2,12 +2,17 @@ import React from 'react';
 import './css/acrobatics.css'
 import Man from './images/tobias-nii-kwatei-quartey-eGdGkZAI6h4-unsplash 2.png'
 import Stripes from './images/lines.png'
+import Title from './images/Whats acrobatics main button.png'
+import OurClasses from './images/classes-button.png'
 
 export const Acrobatics = () => {
   return (
     <div className="acrobatics-container">
       <div className="tabletDesktop-container">
-        <h2 className="title">But, what is acrobatics?</h2>
+        <div className="Title">
+          <img src={Title} alt="Title" className="Title" />
+        </div>
+
         <div className="picture-container">
           <img src={Stripes} alt="stripes" className="stripes" />
           <div className="image-container">
@@ -28,7 +33,9 @@ export const Acrobatics = () => {
           </p>
         </div>
       </div>
-
+      <a href="mailto:acrogym@sportsorg.se">
+        <img className="Ourclasses" src={OurClasses} alt="button" />
+      </a>
     </div>
   );
 }

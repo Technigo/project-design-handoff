@@ -4,14 +4,22 @@ p {
   font-family: 'Kulim Park', sans-serif;
 }
 
-
-  .hero-image {
-	background-image: url('./womanstart.png');
-background-size: cover;
-
-
-
+.hero-wrapper {
+display: flex;
+flex-direction: column;
   }
+
+.Header{
+position: absolute;
+}
+.startPicture{
+	width: 100%;
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+	
   .hero-container{
 	display: flex;
 	flex-direction: column;
@@ -19,36 +27,45 @@ background-size: cover;
   }
   .goBeyond {
     color: #B9F615;
-    /*margins and paddings*/
     font-family: 'Kulim Park';
     font-style: italic;
     font-weight: bold;
     font-size: 8rem;
-
-
+	position: absolute;
+	top: 52%;
+	left: 22%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
   }
 
   .goBeyond1 {
     color: #B9F615;
     z-index: 2;
- 
-    font-family: 'Kulim Park';
+ font-family: 'Kulim Park';
     font-style: italic;
     font-weight: bold;
     font-size: 2rem;
+	position: absolute;
+    top: 77%;
+    left: 21%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 
   }
-
+.Thelimits{
+	display: flex;
+}
   .goBeyond2 {
 	display: inline;
     color: #B9F615;
-    z-index: 2;
     font-family: 'Kulim Park';
     font-style: italic;
     font-weight: bold;
     font-size: 2rem;
-	
-
+	position: absolute;
+	top: 82%;
+    left: 25%;
+	transform: translate(-50%, -50%);
   }
 
   .goBeyond3{
@@ -61,13 +78,17 @@ background-size: cover;
     font-size: 2rem;
 	margin-top: 0;
 	margin-left: 40px;
+	position: absolute;
+	top: 86.9%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 
   }
   
   .hero-paragraph {
-	padding: 20px;
+	padding: 60px;
 	text-align: center;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   }
   
   .hero-paragraph p {
@@ -76,20 +97,16 @@ background-size: cover;
   }
   
   .joinButton {
-	background-color: #B9F615;
-	color: #000;
 	font-size: 1rem;
-	padding: 10px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	transition: all 0.3s ease-in-out;
+	width: 6.6rem;
+  position: absolute;
+  top: 57vh;
+
   }
   
-  .joinButton:hover {
-	background-color: #000;
-	color: #fff;
-  }
 
 
 /*Tablet*/
@@ -100,10 +117,7 @@ background-size: cover;
 	.hero-container {
 		display: flex;
 		justify-content: flex-end;
-		position: relative;
-		height: 100vh;
-		background-image: url('./womanstart.png');
-		background-size: cover;
+		
 	  }
 	  
 	  .goBeyond {
@@ -190,10 +204,7 @@ background-size: cover;
 .hero-container {
 	display: flex;
 	justify-content: flex-end;
-	position: relative;
-	height: 100vh;
-	background-image: url('./womanstart.png');
-	background-size: cover;
+	
   }
   
   .goBeyond {

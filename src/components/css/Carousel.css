@@ -6,7 +6,7 @@
 
 .slider{
 
-	height: 100vh;
+margin-bottom: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,7 +15,6 @@
 
 .image{
 	width: 100%;
-transform: skew(-20deg);
 }
 
 
@@ -41,6 +40,11 @@ order: 1;
 	width: 100%;
 	height: 100%;
 	object-fit: cover; /* Resize the image to cover the container while maintaining aspect ratio */
+  }
+
+  .Book{
+	margin-top: 70px;
+	margin-left: 60px;
   }
   
   @media only screen 

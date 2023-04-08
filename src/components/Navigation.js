@@ -1,10 +1,10 @@
 import React from 'react'
 import NavLinks from './NavLinks';
-import Classes from './css/classes.module.css'
+import Hamburger from './css/hamburger.module.css'
 
 const Navigation = () => {
   return (
-    <nav className={Classes.desktop}>
+    <nav className={Hamburger.desktop}>
       <NavLinks />
     </nav>
   )

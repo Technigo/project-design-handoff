@@ -3,6 +3,7 @@ import { CarouselData } from './carouselData';
 import './css/Carousel.css'
 import arrowRight from './images/slider/arrowRight.svg'
 import arrowLeft from './images/slider/arrowLeft.svg'
+import BookAClass from './images/Book-a-class.png'
 
 const Carousel = ({ slides }) => {
   const [current, setCurrent] = useState(0)
@@ -54,9 +55,9 @@ const Carousel = ({ slides }) => {
           <img src={arrowRight} className="arrowRight" alt="arrow right" />
         </button>
       </div>
-      <div>
-        <button className="BookaClass" type="button">
-      Book a class
+      <div className="Book">
+        <button type="button">
+          <img src={BookAClass} className="BookAClass" alt="BookAClass" />
         </button>
       </div>
     </>

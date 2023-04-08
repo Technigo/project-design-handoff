@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Kulim+Park&display=swap');
 
-@media only screen and (max-width: 768px){
 	.header-container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		z-index: 1;
+
 	  }
 	  
 	  .navbar {
@@ -15,11 +14,10 @@
 	  }
 	  
 	  .logo {
-		
-		padding: 20px;
-		color: #0962CF;
-		font-family: 'Kulim Park', sans-serif;
-		font-weight: 600;
+		width: 3rem;
+		position: absolute;
+		top: 3vh;
+		left: 5vw;
 	  }
 	
 	  
@@ -28,7 +26,6 @@
 		color: #0962CF;
 		font-family: 'Kulim Park', sans-serif;
 	  }
-	}
 
 
 	/*tablet!!!*/
