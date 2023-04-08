@@ -20,7 +20,7 @@ const SingleSlideWrapper = styled.div`
   width:100vw;
 `
 
-const Button = styled.img`
+const ButtonLearn = styled.img`
   cursor: pointer;
   width: 148.46px;
   height: 40.49px;
@@ -40,37 +40,37 @@ class Gallery extends React.Component {
 
           <SingleSlideWrapper>
             <img src={acrobatics} alt="" />
-            <Button src={learnMoreBtn} />
+            <ButtonLearn src={learnMoreBtn} />
             <p>Acrobatics</p>
           </SingleSlideWrapper>
 
           <SingleSlideWrapper>
             <img src={cheerleading} alt="" />
-            <Button src={learnMoreBtn} />
+            <ButtonLearn src={learnMoreBtn} />
             <p>Cheerleading</p>
           </SingleSlideWrapper>
 
           <SingleSlideWrapper>
             <img src={trampoline} alt="" />
-            <Button src={learnMoreBtn} />
+            <ButtonLearn src={learnMoreBtn} />
             <p>Trampoline</p>
           </SingleSlideWrapper>
 
           <SingleSlideWrapper>
             <img src={aerialCircus} alt="" />
-            <Button src={learnMoreBtn} />
+            <ButtonLearn src={learnMoreBtn} />
             <p>Aerial Circus</p>
           </SingleSlideWrapper>
 
           <SingleSlideWrapper>
             <img src={tumble} alt="" />
-            <Button src={learnMoreBtn} />
+            <ButtonLearn src={learnMoreBtn} />
             <p>Tumble</p>
           </SingleSlideWrapper>
 
           <SingleSlideWrapper>
             <img src={parkour} alt="" />
-            <Button src={learnMoreBtn} />
+            <ButtonLearn src={learnMoreBtn} />
             <p>Parkour</p>
           </SingleSlideWrapper>
         </Carousel>

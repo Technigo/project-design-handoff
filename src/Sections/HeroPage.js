@@ -30,8 +30,7 @@ const Topwrapper = styled.div`
   justify-content:space-between;
   padding-right:7.4%;
   padding-top:4.7%;
-  border:solid red;
-`
+ `
 
 export const HeroPage = () => {
   return (

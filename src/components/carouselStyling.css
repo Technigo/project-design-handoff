@@ -15,25 +15,20 @@ p{
 
 .carousel .control-arrow, .carousel.carousel-slider .control-arrow{
     position:relative;
-}
-
-.carousel .control-arrow, .carousel.carousel-slider .control-arrow{
     opacity:1;
-    
 }
 
 .carousel .control-prev.control-arrow{
     background:blue;
+    top:184px;
     left:0;
+    z-index:99;
+    
 }
 
 .carousel .control-next.control-arrow {
     background:red;
     top:-200px;
-    right:0;
+    right:-330px;
     z-index:99;
-}
-
-.carousel.carousel-slider .control-arrow{
-   
 }

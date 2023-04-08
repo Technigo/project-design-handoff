@@ -57,13 +57,13 @@ const OurClassesButton = styled.img`
   position: relative;
   width: 165px;
   height: 37.24px;
-  top: 64%;
+  top: 63%;
 `;
 
 const CarouselContainer = styled.div`
 display:flex;
 position:relative;
-top:69.6%;
+top:65.6%;
 `
 
 export const BookClasses = () => {
@@ -92,7 +92,7 @@ export const BookClasses = () => {
         position="relative"
         width="67%"
         left="16.4%"
-        top="72.3%" />
+        top="65.3%" />
     </AcrobaticsContainer>
   );
 };

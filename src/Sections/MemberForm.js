@@ -16,7 +16,7 @@ const ImageAndFormWrapper = styled.div`
 `;
 
 const MemberFormContainer = styled.div`
-  height: 656px;
+  height: fit-content;
   width: 100%;
   background-color:#B9F615;
   display: flex;
@@ -24,20 +24,32 @@ const MemberFormContainer = styled.div`
   align-items:center;
 `;
 
-const MemberStripes = styled.img`
-  position: absolute;
-  width:232.6px;
+const MemberStripesDiv = styled.div`
+  display:flex;
+  position:absolute;
+  border:solid blue;
   height: 232.6px;
-  left:35.8%;
+  right:0;
+
+`
+
+const MemberStripes = styled.img`
+  width:100%;
+  height: inherit;
+  border:solid red;
+  position:relative;
+  right:0;
 `;
 
 const LogoTitleContainer = styled.div`
-  position:relative;
   display: flex;
+  justify-content: center;
+  position:relative;
   height: 98px;
   width: 100vw;
-  top: 7%;
+  margin-top: 7%;
   z-index:99;
+  left:0;
  `;
 
 const MemberLogoA = styled.img`
@@ -46,9 +58,7 @@ const MemberLogoA = styled.img`
   height: 50.96px;
   left: 0px;
   top:25%;
-  left: ${(props) => (props.left)};
-  right: ${(props) => (props.right)};
-  transform: ${(props) => (props.transform)};
+  transform: rotate(90deg);
 `;
 
 const MemberTitle = styled.h1`
@@ -58,7 +68,7 @@ const MemberTitle = styled.h1`
   left: 62px;
   font-style: italic;
   font-weight: 600;
-  font-size: 49.5098px;
+  font-size: 3rem;
   line-height: 98%;
   text-align: center;
   letter-spacing: -0.022em;
@@ -71,13 +81,14 @@ const FormWrapper = styled.form`
   flex-direction: column;
   align-items:center;
   position: relative;
-  width: 324px;
-  height: 428px;
-  top:5%;
   background: rgba(255, 255, 255, 0.9);
+  width: 90%;
+  max-width:814px;
+  height: 65.2%;
+  top:5%;
   margin-top:32px;
-  margin-right:0;
   margin-bottom:10.5%;
+  padding:0.3rem;
  `;
 
 const FormText = styled.p`
@@ -123,9 +134,11 @@ export const MemberForm = () => {
   return (
     <ImageAndFormWrapper>
       <MemberFormContainer>
-        <MemberStripes src={`${memberStripes}`} alt="diagonal blue stripes" />
+        <MemberStripesDiv>
+          <MemberStripes src={`${memberStripes}`} alt="diagonal blue stripes" />
+        </MemberStripesDiv>
         <LogoTitleContainer>
-          <MemberLogoA src={`${logoABlack}`} transform="rotate(90deg)" />
+          <MemberLogoA src={`${logoABlack}`} />
           <MemberTitle>Become a member</MemberTitle>
         </LogoTitleContainer>
         <FormWrapper>
