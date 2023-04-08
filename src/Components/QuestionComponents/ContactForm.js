@@ -18,7 +18,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form-div" onSubmit={handleSubmit}>
       <label htmlFor="email">
         Enter your email address
         <input

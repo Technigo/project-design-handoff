@@ -9,8 +9,11 @@ body {
 
 /* General styling (mobile first) */
 .main-container{
- text-align: center;
- width: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -166,6 +169,7 @@ button{
 /* Benefits-section styling */
 .benefits-section{
   background-color: #EDFDFF;
+  width: 100vw;
 }
 
 .benefits-header{
@@ -369,6 +373,7 @@ button{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100vw;
 }
 
 .review-section::before {
@@ -434,5 +439,57 @@ button{
 
 .question-form{
   background-color: #EDFDFF;
-  
+  padding: 24px;
+gap: 16px;
+
+width: 329px;
+height: 589px;
+
+background: #EDFDFF;
+border: 5px solid #045661;
+box-shadow: 0px 4.22056px 4.22056px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+}
+
+.form-div{
+  padding: 10px;
+  gap: 10px;
+  width: 281px;
+  height: 410px;
+  background: #EDFDFF;
+  border: 2px solid #FFE600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/****Footer-section ****/
+.footer-section{
+  background-image: url('./Images/mobilefoot.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 328px;
+  color: #F7FEFF;
+  text-align: center;
+  width: 100vw;
+}
+
+.footer-list{
+  display: flex;
+}
+
+.footer-list ul {
+  list-style: none;
+}
+
+.some-links{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-section a{
+  color: inherit;
 }
