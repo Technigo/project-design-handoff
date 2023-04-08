@@ -109,7 +109,7 @@ export const ImageSlider = () => {
 export const ReviewSection = styled.section`
 display: flex;
 flex-direction: column;
-
+height: auto;
 background: #EBEBEB;
 
 `
@@ -124,15 +124,22 @@ color: #025323;
 
 export const CarouselContainer = styled.div`
 display: flex;
-flex-wrap: wrap;
-overflow: hidden;
+flex-wrap: no-wrap;
+align-items: center;
+justify-self: space-evenly;
 `
 
 const ReviewContainer = styled.section`
   display: flex;
+  margin: 5px;
+  flex: nowrap;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-
+  background: #F4F4F4;
+  box-shadow: 0px 0px 14.5722px rgba(203, 203, 203, 0.25);
+  border-radius: 21.2852px;
+  width: 286px;
   justify-content: space-evenly;
   align-self: space-evenly;
   border-radius: 10px;
