@@ -12,8 +12,10 @@ export const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Navbar />
-      <Hero />
+      <section className="parent-container">
+        <Navbar />
+        <Hero />
+      </section>
     </>
   )
 }

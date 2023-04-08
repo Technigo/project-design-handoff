@@ -28,12 +28,20 @@ code {
   object-fit: cover;
 }
 
-@media (min-width: 668px) {
+@media (min-width: 744px) {
   .hero-wrapper {
     height: 872px;
   }
   .hero-img {
-    width: 134%;
+    /*width: 134%;*/
+    display: none;
+  }
+  .parent-container {
+    background-image: url(./components/Hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1.5rem;
+    /*background-position: center center;*/
   }
 }
 

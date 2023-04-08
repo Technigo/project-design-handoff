@@ -15,7 +15,7 @@ const Nav = styled.nav`
   background-color: white;
   @media (min-width: 744px) {
     background-color: transparent;
-    margin-top: 1.5rem;
+    /*margin-top: 1.5rem;*/
 }
 `;
 const Logo = styled.img`
