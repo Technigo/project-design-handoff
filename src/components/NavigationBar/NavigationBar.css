@@ -1,12 +1,14 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #7034E4;
-    color: #FBEDDE;
-    padding: 8px 48px;
-    gap: 1px;
-    position: relative;
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: #7034E4;
+color: #FBEDDE;
+padding: 8px 48px;
+position: fixed; 
+top:0; 
+width: 100%;
+
   }
   
   .navbar-logo {

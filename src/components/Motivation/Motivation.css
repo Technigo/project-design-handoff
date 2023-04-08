@@ -5,7 +5,7 @@ background-size: cover;
 background-position: center;
 height: 100vh;
 display: flex;
-flex-direction: column; /* Add this to stack items vertically */
+flex-direction: column;
 }
 
 .motivation h1 {
@@ -17,7 +17,7 @@ color: #FBEDDE;
 font-family: "Poppins", sans-serif;
 font-weight: 500;
 font-size: 48px;
-margin-bottom: 20px; /* Add a margin bottom to create space between the h1 and images */
+margin-bottom: 20px;
 }
 
 .motivation-columns {
@@ -71,7 +71,7 @@ color: #FBEDDE;
   .motivation-bottom p {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
-    color: black;
+    color: #FBEDDE;
     margin-right: 10px;
   }
 

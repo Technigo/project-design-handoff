@@ -41,7 +41,7 @@ export const Plan = () => {
             <label htmlFor="password">Password:</label>
             <input type="password" id="password" name="password" required />
           </div>
-          <div className="button-container">
+          <div className="button-container-plan">
             <button className="create-account" type="submit">Create Account</button>
             <p className="create-account-text">Already have an account? <a href="#">Login</a></p>
           </div>

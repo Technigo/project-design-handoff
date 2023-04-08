@@ -5,7 +5,8 @@ import { Hero } from './components/Hero/Hero';
 import { Motivation } from './components/Motivation/Motivation';
 import { Program } from './components/Program/Program';
 import { Plan } from './components/Plan/Plan';
-import { Methods } from './components/Methods/Methods'
+import { Methods } from './components/Methods/Methods';
+import { Footer } from './components/Footer/Footer';
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
       <Plan />
       <Testimonials />
       <Methods />
+      <Footer />
     </div>
   )
 }

@@ -20,7 +20,7 @@ export const Testimonials = () => {
           <p>“It was a match from the <br /> very first training!” <br /><strong>Selma Whale</strong></p>
         </div>
       </div>
-      <div className="button-container">
+      <div className="button-container-testimonials">
         <button type="submit">Start trial</button>
       </div>
     </div>
