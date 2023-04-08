@@ -3,9 +3,11 @@ import styled from 'styled-components'
 export const Headline1 = styled.h1`
   font-size: 3rem;
   color: #FF90D1;
-  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 99.52%;
 
-  media (min-width: 667px) {
+  @media (min-width: 667px) {
       font-size: 6rem;
     }
 
@@ -19,7 +21,7 @@ export const Headline2 = styled.h2`
   color: #FF90D1;
   margin: 0;
 
-  media (min-width: 667px) {
+  @media (min-width: 667px) {
       font-size: 6rem;
     }
 
@@ -29,6 +31,16 @@ export const Headline2 = styled.h2`
 `
 export const Subtitle = styled(Headline2)`
 color: #000001;
+
+@media (min-width: 1024px) {
+  font-size: 4rem;
+}
+`
+export const IntroSubtitle = styled.h2`
+font-style: normal;
+font-weight: 800;
+font-size: 3rem;
+line-height: 99.52%;
 
 @media (min-width: 1024px) {
   font-size: 4rem;

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import IntroImage from '../images/intro-image.jpg'
 import { IntroButton } from './Button'
-import { Detailtext, Subtitle, Pbold, Pregular, IntroButtonP } from './Typography'
+import { Detailtext, IntroSubtitle, Pbold, Pregular, IntroButtonP } from './Typography'
 
 const Section = styled.section`
 height: 100vh; 
@@ -58,7 +58,7 @@ export const Intro = () => {
         <IntroMedia src={IntroImage} alt="People stretching" />
         <Article>
           <Detailtext>OUR GOAL IS TO PROMOTE</Detailtext>
-          <Subtitle>THE JOY OF EXERCISE</Subtitle>
+          <IntroSubtitle>THE JOY OF EXERCISE</IntroSubtitle>
           <Pbold>Teamwork. Bodyweight. Fresh air</Pbold>
           <Pregular>CrossPark is currently located in Stockholm, Göteborg and Malmö.
           We offer outdoor training sessions where nature and your body are the only tools needed.

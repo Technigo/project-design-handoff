@@ -52,9 +52,11 @@ section {
     nav {
       position: absolute;
       width: 100%;
+      justify-content: unset;
     }
   }
 `
+
 const PhoneNavMedia = styled.img`
   @media (min-width: 667px){
     display: none;
@@ -85,10 +87,15 @@ const TabletNavList = styled.ul`
 }
 
 @media (min-width: 1024px) {
-  width: 65%;
+  width: 60%;
   align-self: center;
-  margin: auto;
   font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+
+  li {
+    width: 123px;
+  }
 }
 `
 const MediaDesktop = styled.video`
