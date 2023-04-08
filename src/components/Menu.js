@@ -19,11 +19,11 @@ const Navbar = () => {
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <Link href="/"><img src={ellipseBlue} /> Classes </Link>
-        <Link href="/"><img src={ellipseGreen} />Membership</Link>
-        <Link href="/about">About Us</Link>
-        <Link href="/contact">Contact</Link>
-        <Link href="/services">More</Link>
+        <Link href="/">{(isOpen ? <img src={ellipseBlue} /> : '')}Classes </Link>
+        <Link href="/">{(isOpen ? <img src={ellipseGreen} /> : '')}Membership</Link>
+        <Link href="/about">{(isOpen ? <img src={ellipseBlue} /> : '')}About Us</Link>
+        <Link href="/contact">{(isOpen ? <img src={ellipseGreen} /> : '')}Contact</Link>
+        <Link href="/services">{(isOpen ? <img src={ellipseBlue} /> : '')}More</Link>
       </Menu>
     </Nav>
   );
@@ -39,15 +39,6 @@ const Nav = styled.nav`
   z-index: 10;
   position: relative;
 `;
-
-// const Logo = styled.a`
-//   color: #141414;
-//   font-size: 2rem;
-//   display: flex;
-//   align-items: center;
-//   text-decoration: none;
-//   cursor: pointer;
-// `;
 
 const Hamburger = styled.div`
   display: none;
@@ -111,6 +102,9 @@ const Link = styled.a`
   line-height: 75%;
   letter-spacing: -0.022em;
   color: #0962CF;
+  display:flex;
+  gap:8.4%;
+  
 
   &:hover {
     color: #ff4040;
@@ -119,7 +113,7 @@ const Link = styled.a`
   @media (max-width: 768px) {
     padding: 2rem;
     width: 100%;
-    display: table;
+    
 
     &:hover {
       background-color: #ccc;
