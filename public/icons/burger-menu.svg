@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="44"
+   height="43"
+   viewBox="0 0 44 43"
+   fill="none"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="burger-menu.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs58" />
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="23.883721"
+     inkscape:cx="13.377313"
+     inkscape:cy="18.569133"
+     inkscape:window-width="1390"
+     inkscape:window-height="1205"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg54" />
+  <rect
+     width="37.599998"
+     height="36.623341"
+     rx="3.9064949"
+     fill="#0962cf"
+     id="rect46"
+     x="3.2"
+     y="3.1168802"
+     style="stroke-width:0.854545" />
+  <line
+     x1="9.99986"
+     y1="11.7143"
+     x2="33.9999"
+     y2="11.7143"
+     stroke="white"
+     stroke-width="2.85714"
+     stroke-linecap="round"
+     id="line48" />
+  <line
+     x1="9.99986"
+     y1="20.2858"
+     x2="33.9999"
+     y2="20.2858"
+     stroke="white"
+     stroke-width="2.85714"
+     stroke-linecap="round"
+     id="line50" />
+  <line
+     x1="9.99986"
+     y1="28.8571"
+     x2="33.9999"
+     y2="28.8571"
+     stroke="white"
+     stroke-width="2.85714"
+     stroke-linecap="round"
+     id="line52" />
+</svg>
