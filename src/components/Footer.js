@@ -37,7 +37,7 @@ const IconsSection = styled.section`
   align-items: center;
   justify-content: center;
   gap: 15.53px;
-  margin-top: 4em;
+  padding-top:2em;
 
   @media (max-width: 768px) {
     margin-top: 2em; 

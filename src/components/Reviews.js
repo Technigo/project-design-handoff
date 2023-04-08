@@ -99,6 +99,7 @@ display: flex;
 flex-direction: column;
 height: auto;
 background: #EBEBEB;
+padding: 3em;
 `
 
 export const ReviewHeader = styled.h1`

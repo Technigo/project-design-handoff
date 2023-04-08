@@ -2,17 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ContactsWrapper = styled.div`
-background-color: #EBEBEB;
-display: flex;
-flex-direction: column;
-height: 100vh;
-gap: 2.4rem;
-align-items: center;
-padding-bottom: 6em;
-@media (min-width: 968px) {
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+  padding-bottom: 2em;
+
+  @media (min-width: 968px) {
     flex-direction: row;
-}
-`
+  }
+`;
 
 const HeadlineContainer = styled.div`
 text-align: center;
