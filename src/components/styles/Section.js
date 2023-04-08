@@ -35,6 +35,8 @@ export const OuterContainer = styled.div`
 
     @media (max-width: 768px) {
         left: ${(props) => (props.hero ? '40px' : '0')};
+        top: ${(props) => (props.hero ? '150px' : '0')};
+        gap: ${(props) => (props.hero ? '30px' : '')};
   }
 `
 
@@ -65,8 +67,8 @@ export const InnerContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-        display:  ${(props) => (props.workoutsbox ? 'flex' : '')};
-        grid-template-columns: ${(props) => (props.benefitsgrid ? 'repeat(1,1fr)' : '')};
+      display:  ${(props) => (props.workoutsbox ? 'flex' : '')};
+      grid-template-columns: ${(props) => (props.benefitsgrid ? 'repeat(1,1fr)' : '')};
        grid-template-rows: ${(props) => (props.benefitsgrid ? 'repeat(4,1fr)' : '')};
        flex-direction: ${(props) => (props.workoutscolumn ? 'column' : '')};
   }
@@ -87,6 +89,10 @@ export const TextContainer = styled.div`
     gap: ${(props) => (props.gap || '20px')};
     max-width: ${(props) => (props.maxwidth ? '328px' : '')};
     overflow-wrap: break-word;
+
+      @media (max-width: 768px) {
+        max-width: ${(props) => (props.maxwidth ? '70%' : '')};
+  }
 `
 
 export const TextBlock = styled(TextContainer)`
