@@ -76,7 +76,7 @@ padding:10px;
 export const CardSubTitle = styled.h3`
 color: #002A30;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: ${(props) => props.color || 'black'};
+color: ${(props) => props.color || '#002A30'};
 font-weight: 600;
 font-size: 1.2em;
 padding: 5px 10px;
@@ -89,7 +89,7 @@ font-weight: 300;
 font-size:1em;
 color:${(props) => props.color || '#27363D'};
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: ${(props) => props.color || 'black'};
+color: ${(props) => props.color || '#002A30'};
 width:${(props) => props.width};
 padding:5px 10px;
 background:${(props) => props.background};

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const Button = styled.button`
 box-sizing:border-box;
 background: #FFE600;
+color: #002A30;
 box-shadow: 0px 2.24635px 2.24635px rgba(0, 0, 0, 0.25);
 border-radius: 50px;
 width: ${(props) => props.width || '90%'};
