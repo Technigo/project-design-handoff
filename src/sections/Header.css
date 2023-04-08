@@ -1,0 +1,43 @@
+.Header {
+  width: calc(100% - 32px);
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 16px;
+  padding: 0;
+}
+
+.menu-text {
+  display: flex;
+  gap: 80px;
+}
+
+.menu-text p {
+  cursor: pointer;
+}
+
+.search-text {
+  cursor: pointer;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+@media (min-width: 641px) {
+  .Header {
+    width: calc(100% - 64px);
+    margin: 32px 32px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Header {
+    width: calc(100% - 128px);
+    margin: 32px 64px;
+  }
+}

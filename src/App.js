@@ -1,9 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import Header from './sections/Header'
+import Hero from './sections/Hero'
+import About from './components/About'
+import Classes from './class/Classes'
+import SignUp from './components/SignUp'
+import Footer from './sections/Footer'
 
-export const App = () => {
+import './index.css'
+
+const App = () => {
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setScreenSize(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div>
-      Find me in src/app.js!
+    <div className="App">
+      <Header screenSize={screenSize} />
+      <Hero />
+      <About />
+      <Classes screenSize={screenSize} />
+      <SignUp />
+      <Footer screenSize={screenSize} />
     </div>
-  )
-}
+  );
+};
+
+export default App;

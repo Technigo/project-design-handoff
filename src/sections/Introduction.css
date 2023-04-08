@@ -1,0 +1,35 @@
+.intro-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 45% 16px;
+    max-width: 60%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+  
+
+  @media (min-width: 641px) {
+    .intro-box {
+      margin: 30% 32px;
+      max-width: 50%;
+      position: relative;
+      top: 0;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .intro-box {
+      margin: 20% 64px;
+      max-width: 50%;
+      position: relative;
+      top: 0;
+    }
+  }
