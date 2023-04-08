@@ -5,11 +5,22 @@
 
 .signInBtn {
     background-color: #F2FDFF;
+    color: #252525;
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
     border: none;
+    text-decoration: underline;
 }
+
+.signInBtn:hover {
+    color: #3C0774;
+}
+
+.signInBtn:active {
+    color: #210440;
+}
+
 
 .signUpBtn {
     background-color: #FFD9BF;
