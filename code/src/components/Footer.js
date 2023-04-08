@@ -1,6 +1,11 @@
 /* eslint-disable max-len */
 import React from 'react';
 import './Footer.css';
+import TwitterIcon from './NamedIcons/Twitter';
+import FacebookIcon from './NamedIcons/Facebook';
+import InstagramIcon from './NamedIcons/Instagram';
+import YoutubeIcon from './NamedIcons/Youtube';
+import PinterestIcon from './NamedIcons/Pinterest';
 
 const FooterPage = () => {
   return (
@@ -38,9 +43,11 @@ const FooterPage = () => {
       </div>
 
       <div className="icons-wrapper">
-        <i className="fab fa-twitter" />
-        <i className="fab fa-facebook-f" />
-        <i className="fab fa-instagram" />
+        <FacebookIcon className="icon" />
+        <TwitterIcon className="icon" />
+        <InstagramIcon className="icon" />
+        <YoutubeIcon className="icon" />
+        <PinterestIcon className="icon" />
       </div>
 
       <div className="policy-links-container">
