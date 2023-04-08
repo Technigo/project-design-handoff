@@ -5,7 +5,7 @@ const HeaderWrapper = styled.header`
 display: flex;
 justify-content: space-between; 
 position: relative;
-margin: 16px;
+margin: 55px 72px;
 
 `
 

@@ -10,6 +10,7 @@ const ReviewWrapper = styled.div`
   align-items: center;
   width: 100%;
   gap: 20px;
+  padding-top: 45px;
 
 @media (min-width: 1024px) {
   width: 50%;
@@ -21,7 +22,7 @@ font-size: 1.5rem;
 font-weight: 700;
 text-align: center;
 padding-top: 8px;
-padding-bottom: 16px;
+padding-bottom: 8px;
 
 @media (min-width: 1024px) {
   font-size: 2.5rem;
@@ -39,7 +40,7 @@ word-wrap: break-word;
 
 @media (min-width: 1024px) {
   font-size: 1.5rem;
-  padding-bottom: 30%;
+  padding-bottom: 25%;
 }
 
 `

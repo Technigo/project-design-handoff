@@ -38,14 +38,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-padding-top: 30rem; 
 padding-bottom: 3.5rem;
 color: white; 
 text-align: center;
 
-@media (min-width:1024px) {
-  margin-top: -15rem;
-  padding-left: 120px;
+@media (min-width: 1024px) {
+  padding-bottom: 24px;
 }`
 
 export const Title = styled.h2`
@@ -71,8 +69,32 @@ display: flex;
 flex-direction: column;
 align-items: center; 
 gap: 8px;
-@media (min-width:1024px) {
-  padding-left: 45px;
+`
+
+const HeaderTextButtonContainer = styled.div`
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center; 
+padding-top: 30rem;
+
+
+@media (min-width: 1024px) {
+  padding-left: 72px;
+  margin-top: -200px;
+}`
+
+const BlueText = styled.p`
+color: #89D6E8;
+font-size: 1.5rem;
+text-align:center;
+line-height: 27px;
+max-width: 522px;
+padding-bottom: 48px;
+
+@media (max-width: 1023px) {
+  display: none;
+  
 }`
 
 export const Hero = () => {
@@ -84,17 +106,21 @@ export const Hero = () => {
           <Header />
         </HeaderContainer>
 
-        <HeroTextContainer>
-          <SmallText fw500>Santulan Power Yoga Stockholm</SmallText>
-          <Title>Move your body</Title>
-          <Title>Rest your mind</Title>
-        </HeroTextContainer>
-
-        <ButtonTextWrapper>
-          <SignUpButton>Sign up for a class</SignUpButton>
-          <SmallText fw500>Want to know more about us?</SmallText>
-        </ButtonTextWrapper>
-
+        <HeaderTextButtonContainer>
+          <HeroTextContainer>
+            <SmallText fw500>Santulan Power Yoga Stockholm</SmallText>
+            <Title>Move your body</Title>
+            <Title>Rest your mind</Title>
+          </HeroTextContainer>
+          <BlueText>
+          Build strength, agility and endurance
+          whilst in a calm and serene studio, tucked away in Kungsholmen, Stockholm.
+          </BlueText>
+          <ButtonTextWrapper>
+            <SignUpButton>Sign up for a class</SignUpButton>
+            <SmallText fw500>Want to know more about us?</SmallText>
+          </ButtonTextWrapper>
+        </HeaderTextButtonContainer>
       </HeroImageContainer>
     </HeroWrapper>
   );
