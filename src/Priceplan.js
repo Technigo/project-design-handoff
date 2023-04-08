@@ -6,7 +6,7 @@ const PricePlan = () => {
     <div className="price-plan-container">
       <h1>Choose your preferred pricing plan:</h1>
       <div className="price-plan-card">
-        <p>7-day trial<br />$0.00</p>
+        <h2>7-day trial $0.00</h2>
         <p>Trial automatically upgrades to a monthly subscription after 7 days</p>
         <p>
           Unlimited recipe options<br />
@@ -18,7 +18,7 @@ const PricePlan = () => {
         </p>
       </div>
       <div className="price-plan-card">
-        <p>Annual<br />$89.99</p>
+        <h2>Annual<br />$89.99</h2>
         <p>Charged every 12 months</p>
         <p>
           You save 25% of monthly cost
@@ -33,7 +33,7 @@ const PricePlan = () => {
         </p>
       </div>
       <div className="price-plan-card">
-        <p>Monthly<br />$9.99</p>
+        <h2>Monthly<br />$9.99</h2>
         <p>Full flexibility. Cancel anytime</p>
         <p>
           20 new recipes a month<br />

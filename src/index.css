@@ -156,6 +156,7 @@ padding: 24px 24px 40px 24px;
 .yogi-card img {
   width: 100%;
   border-radius: 12px;
+
 }
 
 .yogi-card p {
@@ -172,6 +173,8 @@ padding: 24px 24px 40px 24px;
 padding-bottom: 24px;
 margin-top: -24px;
 }
+
+
 
 .online-yoga-container h1 {
   color: #02393F;
@@ -255,6 +258,12 @@ padding: 24px;
 }
 
 .price-plan-container h1 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  padding: 24px;
+}
+
+.price-plan-container h2 {
   color: #02393F;
   font-family: 'Libre Baskerville';
   padding: 24px;
@@ -620,6 +629,12 @@ font-weight: 400;
     font-family: 'Libre Baskerville';
     padding: 24px;
   }
+
+  .price-plan-container h2 {
+    color: #02393F;
+    font-family: 'Libre Baskerville';
+    padding: 24px;
+  }
   
   .price-plan-container p {
     color: #02393F;
@@ -902,7 +917,7 @@ justify-content: center;
 .yogis-header h1 {
   color: #D0C4B8;
   font-family: 'Libre Baskerville';
-  padding: 52px 0px 0px 112px;
+  padding: 78px 0px 0px 112px;
   font-size: 40px;
 }
 
@@ -936,10 +951,14 @@ justify-content: center;
   object-fit: cover;
   border-radius: 12px;
   margin-right: 24px;
+  width: 375px;
+  height: 250px;
 }
 
 .movie-card {
+
   margin-right: 24px;
+ margin-bottom: 48px;
 }
 
 
@@ -948,20 +967,21 @@ justify-content: center;
   background-color: #D0C4B8;
 padding-bottom: 24px;
 margin-top: -24px;
-
 }
 
 .online-yoga-container h1 {
   color: #02393F;
   font-family: 'Libre Baskerville';
-  padding: 24px;
+  font-size: 40px;
+  padding: 40px 0px 0px 108px;
 }
 
 .online-yoga-container p {
   color: #02393F;
   font-family: 'Libre Baskerville';
-  font-size: 13px;
-  margin: 24px 24px 24px 24px;
+  font-size: 20px;
+  padding: 40px 0px 0px 108px;
+  width: 45%;
 }
 
 .online-yoga-carousel-container {
@@ -990,19 +1010,21 @@ margin-top: -24px;
 .personalised-meal-container h1 {
   color: #02393F;
   font-family: 'Libre Baskerville';
-  padding: 24px;
+  font-size: 40px;
+  padding: 40px 0px 0px 108px;
 }
 
 .personalised-meal-container p {
   color: #02393F;
   font-family: 'Libre Baskerville';
-  font-size: 13px;
-  margin: 24px 24px 24px 24px;
+  font-size: 20px;
+  padding: 40px 0px 0px 108px;
+  width: 45%;
 }
 
 .meal-card img {
-  width: 226px;
-  height: 189px;
+  width: 375px;
+  height: 250px;
   object-fit: cover;
   border-radius: 12px;
 
@@ -1010,6 +1032,7 @@ margin-top: -24px;
 
 .meal-card {
   margin-right: 24px;
+  margin-bottom: 48px;
 }
 
 .meal-text {
@@ -1037,13 +1060,19 @@ margin-top: -24px;
   padding: 24px;
 }
 
+.price-plan-container h2 {
+  color: #02393F;
+  font-family: 'Libre Baskerville';
+  padding: 24px;
+}
+
 .price-plan-container p {
   color: #02393F;
   font-family: 'Libre Baskerville';
   font-size: 13px;
   margin: 24px 24px 24px 24px;
-
-
+padding: 5px;
+line-height: 20px;
 }
 .price-plan-card {
   margin: 5px;
