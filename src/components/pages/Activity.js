@@ -14,7 +14,7 @@ export const Activity = () => {
       <InnerContainer flexcolumn alignscenter>
         <Tagline>ACTIVITY</Tagline>
         <Headline2>Track you activity & celebrate your progress</Headline2>
-        <InnerContainer grid grid3 workoutsbox flexcolumn>
+        <InnerContainer grid columns="repeat(3,1fr)" workoutsbox flexcolumn alignscenter>
           {isDesktopOrLaptop && (
             <InnerContainer flexcolumn maxwidth="287px" justifyself="flex-end" center>
               <TextContainer flexcolumn>
@@ -36,7 +36,8 @@ export const Activity = () => {
                 </BodyText>
               </TextContainer>
             </InnerContainer>)}
-          <PhoneImage src="./assets/phone.svg" />
+          <PhoneImage
+            src="./assets/phone.svg" />
           {isDesktopOrLaptop && (
             <InnerContainer flexcolumn maxwidth="287px" center>
               <TextContainer flexcolumn>

@@ -14,7 +14,6 @@ export const Button = styled.button`
         align-items: center;
         cursor: pointer;
 
-    
         &:hover {
             background: ${(props) => (props.secondary ? '#FFFFFF' : '#A99BD1')};
             font-size: ${(props) => (props.secondary ? '17px' : '')};
@@ -46,7 +45,12 @@ export const ButtonCommunity = styled.button`
         font-size: ${(props) => (props.iconBtn ? '16px' : '18px')};
         gap: ${(props) => (props.iconBtn ? '10px' : '')};
         cursor: pointer;
-        padding: 0;  
+        padding: 0;
+        
+        @media (max-width: 768px) {
+                
+       width: ${(props) => (props.iconBtn ? '100%' : '')};
+  }  
 `;
 
 export const ButtonCommunityLogin = styled.button`

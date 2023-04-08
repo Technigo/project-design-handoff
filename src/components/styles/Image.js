@@ -16,6 +16,17 @@ export const Logo = styled.img`
 export const PhoneImage = styled.img`
     object-fit: cover;
     justify-self: center;
+     
+    @media (min-width: 668px) and (max-width: 1023px) {
+       width: 325px;
+       height: 625px;
+    }
+
+    @media (max-width: 668px) {
+        height: 440px;
+        width: 228.8px;
+
+  }
 `
 
 export const ImageBackground = styled.div`

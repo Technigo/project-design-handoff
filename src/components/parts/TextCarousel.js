@@ -1,37 +1,58 @@
 import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Headline3, BodyText } from 'components/styles/Text'
 // Import Swiper styles
 
 import 'swiper/swiper.min.css'
-
-// import required modules
-import { Pagination, Navigation } from 'swiper';
+import 'swiper/swiper-bundle.min.css'
 
 export const TextCarousel = () => {
   return (
     <Swiper
-      slidesPerView={1}
-      spaceBetween={30}
+      slidesPerView="auto"
+      spaceBetween={20}
       // eslint-disable-next-line react/jsx-boolean-value
       loop={true}
-      pagination={{
-        clickable: true
-      }}
-      // eslint-disable-next-line react/jsx-boolean-value
-      navigation
-      modules={[Pagination, Navigation]}
       className="swiper-container">
-      <SwiperSlide className="slide">Slide 1</SwiperSlide>
-      <SwiperSlide className="slide">Slide 2</SwiperSlide>
-      <SwiperSlide className="slide">Slide 3</SwiperSlide>
-      <SwiperSlide className="slide">Slide 4</SwiperSlide>
-      <SwiperSlide className="slide">Slide 5</SwiperSlide>
-      <SwiperSlide className="slide">Slide 6</SwiperSlide>
-      <SwiperSlide className="slide">Slide 7</SwiperSlide>
-      <SwiperSlide className="slide">Slide 8</SwiperSlide>
-      <SwiperSlide className="slide">Slide 9</SwiperSlide>
+      <SwiperSlide
+        width={287}
+        className="slide">
+        <Headline3 workoutsh3>
+          Milestones
+        </Headline3>
+        <BodyText>
+          Don&apos;t have any personal goals yet?
+          Challenge yourself by completing our pre-made
+          milestones that definitley will keep you motivated
+        </BodyText>
+      </SwiperSlide>
+      <SwiperSlide width={287} className="slide">
+        <Headline3 workoutsh3>
+          Stats
+        </Headline3>
+        <BodyText>
+          View your general stats and keep track of your achievments
+        </BodyText>
+      </SwiperSlide>
+      <SwiperSlide width={287} className="slide">
+        <Headline3 workoutsh3>
+          Schedule
+        </Headline3>
+        <BodyText>
+          Schedule and monitor all your workouts in the calender
+          and set up a personal reminder to keep you going
+        </BodyText>
+      </SwiperSlide>
+      <SwiperSlide width={287} className="slide">
+        <Headline3 workoutsh3>
+          Personal
+        </Headline3>
+        <BodyText>
+          Track any personal fitness activities you
+          accomplish by adding them you your calender
+        </BodyText>
+      </SwiperSlide>
     </Swiper>
   );
 }

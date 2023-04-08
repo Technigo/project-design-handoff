@@ -36,6 +36,10 @@ export const OrText = styled.p`
     font-size: 16px;
     font-weight: 500;
     margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
   &:after {
     content:" ";

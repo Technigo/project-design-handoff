@@ -1,7 +1,6 @@
 import React from 'react'
-import { Wrapper, InnerContainer, TextOnImageContainer, TextBlock, Gradient1, ImgContainer, TextContainer } from 'components/styles/Section'
+import { Wrapper, InnerContainer, TextOnImageContainer, TextBlock, ImgCardLarge, TextContainer } from 'components/styles/Section'
 import { Tagline, Headline2, Headline3, BodyText, LineBreak } from 'components/styles/Text'
-import { ImageWorkouts } from 'components/styles/Image'
 import { Button } from 'components/styles/Button'
 
 export const Workouts = () => {
@@ -11,9 +10,12 @@ export const Workouts = () => {
         <Tagline>WORKOUTS</Tagline>
         <Headline2>One 5 min workout is better than none.</Headline2>
         <InnerContainer grid gridrow="652.281px" workoutsbox wrap>
-          <ImgContainer workoutsbox>
-            <ImageWorkouts />
-            <Gradient1 />
+          <ImgCardLarge
+            workoutsbox
+            relative
+            style={{ background: 'linear-gradient(6.64deg, #DCBAF9 2.22%, rgba(255, 255, 255, 0) 45.49%), url("./images/workout-yoga.jpg")',
+              backgroundPosition: 'center',
+              backgroundSize: 'cover' }}>
             <TextOnImageContainer alignscenter workoutstext>
               <TextContainer flexcolumn gap="8px">
                 <Headline3 workoutsh3>5 min warm up
@@ -24,7 +26,7 @@ export const Workouts = () => {
               </TextContainer>
               <Button secondary>View more</Button>
             </TextOnImageContainer>
-          </ImgContainer>
+          </ImgCardLarge>
           <InnerContainer flexcolumn workoutsbox>
             <TextBlock large grey flexcolumn>
               <Headline2 workoutsh2>Healthy
@@ -37,8 +39,8 @@ export const Workouts = () => {
                 and video to help you understand and perfect each move.
               </BodyText>
             </TextBlock>
-            <InnerContainer>
-              <TextBlock purple flexcolumn half>
+            <InnerContainer workoutscolumn>
+              <TextBlock purple flexcolumn half workoutscolumn>
                 <Headline3 workoutsh3>
                   <LineBreak>AB</LineBreak>
                   workouts
@@ -47,7 +49,7 @@ export const Workouts = () => {
                   For at home or the gym
                 </BodyText>
               </TextBlock>
-              <TextBlock green flexcolumn half>
+              <TextBlock green flexcolumn half workoutscolumn>
                 <Headline3 workoutsh3>
                   <LineBreak>Cardio</LineBreak>
                   workouts

@@ -40,7 +40,7 @@ export const OuterContainer = styled.div`
 
 export const InnerContainer = styled.div`
     display: ${(props) => (props.grid ? 'grid' : 'flex')};
-    grid-template-columns: ${(props) => (props.grid3 ? 'repeat(3,1fr)' : 'repeat(2,1fr)')};
+    grid-template-columns: ${(props) => (props.columns || 'repeat(2,1fr)')};
     grid-template-rows: ${(props) => (props.gridrow || '')};
     flex-direction: ${(props) => (props.flexcolumn ? 'column' : '')};
     gap: ${(props) => (props.gap || '20px')};
@@ -59,10 +59,16 @@ export const InnerContainer = styled.div`
         
     @media (min-width: 668px) and (max-width: 1023px) {
        display:  ${(props) => (props.workoutsbox ? 'flex' : '')};
+       grid-template-columns: ${(props) => (props.benefitsgrid ? 'repeat(2,1fr)' : '')};
+       grid-template-rows: ${(props) => (props.benefitsgrid ? 'repeat(2,1fr)' : '')};
+
     }
 
     @media (max-width: 768px) {
         display:  ${(props) => (props.workoutsbox ? 'flex' : '')};
+        grid-template-columns: ${(props) => (props.benefitsgrid ? 'repeat(1,1fr)' : '')};
+       grid-template-rows: ${(props) => (props.benefitsgrid ? 'repeat(4,1fr)' : '')};
+       flex-direction: ${(props) => (props.workoutscolumn ? 'column' : '')};
   }
 `
 
@@ -70,7 +76,7 @@ export const TextOnImageContainer = styled(InnerContainer)`
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 40px;
+    padding: 20px;
     gap: 8px;
     justify-content: ${(props) => (props.workoutstext ? 'space-between' : '')};
 `
@@ -93,6 +99,12 @@ export const TextBlock = styled(TextContainer)`
     gap: ${(props) => (props.large ? '40px' : '8px')};
     width: ${(props) => (props.half && '50%')};
     align-items: stretch;
+
+        @media (max-width: 768px) {
+        width: ${(props) => (props.workoutscolumn ? '100%' : '')};
+        gap: ${(props) => (props.large ? '51px' : '8px')};
+  }
+            
 `
 
 export const ButtonContainer = styled.div`
@@ -116,16 +128,55 @@ export const IconContainer = styled.div`
 
 export const ImgContainer = styled.div`
     height: ${(props) => (props.height || '100%')};
-    position: relative;
+    height: ${(props) => (props.position || '')};
    
     @media (min-width: 768px) and (max-width: 1023px) {
-       height: ${(props) => (props.workoutsbox ? '672px' : '')};
+       height: ${(props) => (props.workoutsbox ? '672px' : '726px')};
        width: ${(props) => (props.workoutsbox ? '100%' : '')};
+        width: 100%;
+        background-size: cover;
+        background-position: top;
+         border-radius: 30px;
     }
 
     @media (max-width: 768px) {
         height: ${(props) => (props.workoutsbox ? '672px' : '')};
         width: ${(props) => (props.workoutsbox ? '100%' : '')};
+  }
+`
+
+export const ImgCardSmall = styled.div`
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    border-radius: 30px;
+    position: relative;
+    height: 442px;
+   
+    @media (min-width: 768px) and (max-width: 1023px) {
+        height: 100vh;
+    }
+
+    @media (max-width: 768px) {
+        height: 100vh;
+  }
+`
+
+export const ImgCardLarge = styled.div`
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    border-radius: 30px;
+    position: ${(props) => (props.relative ? 'relative' : '')};
+   
+    @media (min-width: 768px) and (max-width: 1023px) {
+        height: 100vh;
+    }
+
+    @media (max-width: 768px) {
+        height: 100vh;
   }
 `
 

@@ -21,6 +21,11 @@ export const Headline2 = styled.h2`
         color: #222322;
         margin:0;
         text-align: ${(props) => (props.workoutsh2 ? 'left' : 'center')};
+
+    @media (max-width: 768px) {
+       font-size: ${(props) => (props.workoutsh2 ? '56px' : '24px')};
+       line-height: ${(props) => (props.workoutsh2 ? '73.36px' : '28.32px')};
+  }
 `
 
 export const Headline3 = styled.h3`
@@ -29,7 +34,7 @@ export const Headline3 = styled.h3`
         line-height: ${(props) => (props.workoutsh3 ? '33.3px' : '32px')};
         color: ${(props) => (props.workoutsh3 ? '#222322' : '#FFFFFF')};
         margin:0;
-        text-align:left;
+        text-align: left;
 `
 
 export const Tagline = styled.h4`
