@@ -16,8 +16,8 @@ export const App = () => {
       <Benefits />
       <Membership />
       <Article />
-      <Contacts />
       <ImageSlider />
+      <Contacts />
     </>
   )
 }
