@@ -5,6 +5,8 @@
     justify-content: space-evenly;
     padding: 32px 0;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .quizTitle {

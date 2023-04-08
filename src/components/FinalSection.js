@@ -2,9 +2,46 @@ import React from 'react';
 import './FinalSection.css';
 import PrimaryButtonLarge from './PrimaryButtonLarge.js';
 
+// import PurpleBackgroundMobile from '../assets/PurpleBackgroundMobile.svg';
+// import PurpleBackgroundTabletOne from '../assets/PurpleBackgroundTabletOne.svg';
+// import PurpleBackgroundTabletTwo from '../assets/PurpleBackgroundTabletTwo.svg';
+// import PurpleBackgroundTabletThree from '../assets/PurpleBackgroundTabletThree.svg';
+// import PurpleBackgroundDesktopOne from '../assets/PurpleBackgroundDesktopOne.svg';
+// import PurpleBackgroundDesktopTwo from '../assets/PurpleBackgroundDesktopTwo.svg'
+// import PurpleBackgroundDesktopThree from '../assets/PurpleBackgroundDesktopThree.svg'
+// import PurpleBackgroundDesktopFour from '../assets/PurpleBackgroundDesktopFour.svg'
+
 const FinalSection = () => {
+//   let purpleBackgroundUrl = '';
+//   if (screenSize < 667) {
+//     purpleBackgroundUrl = PurpleBackgroundMobile;
+//   } else if (screenSize >= 667 && screenSize < 1024) {
+//     purpleBackgroundUrl = PurpleBackgroundTabletOne + ',' +
+//     PurpleBackgroundTabletTwo + ',' PurpleBackgroundTabletThree;
+//   } else {
+//     purpleBackgroundUrl = PurpleBackgroundDesktopOne
+//     PurpleBackgroundDesktopTwo, PurpleBackgroundDesktopThree, PurpleBackgroundDesktopFour;
+//   }
+//   console.log('background', screenSize)
+
   return (
     <div className="finalSection">
+      {/* <img className="purpleBackground" src={purpleBackgroundUrl}
+        alt="Purple background shape" /> */}
+      <div className="purpleBackgroundContainerMobile">
+        <img className="purpleBackground" src="../images/PurpleBackgroundMobile.svg" alt="Purple background shape" />
+      </div>
+      <div className="purpleBackgroundContainerTablet">
+        <img className="purpleBackgroundT1" src="../images/PurpleBackgroundTabletOne.svg" alt="Purple background shape" />
+        <img className="purpleBackgroundT2" src="../images/PurpleBackgroundTabletTwo.svg" alt="Purple background shape" />
+        <img className="purpleBackgroundT3" src="../images/PurpleBackgroundTabletThree.svg" alt="Purple background shape" />
+      </div>
+      <div className="purpleBackgroundContainerDesktop">
+        <img className="purpleBackgroundD1" src="../images/PurpleBackgroundDesktopOne.svg" alt="Purple background shape" />
+        <img className="purpleBackgroundD2" src="../images/PurpleBackgroundDesktopTwo.svg" alt="Purple background shape" />
+        <img className="purpleBackgroundD3" src="../images/PurpleBackgroundDesktopThree.svg" alt="Purple background shape" />
+        <img className="purpleBackgroundD4" src="../images/PurpleBackgroundDesktopFour.svg" alt="Purple background shape" />
+      </div>
       <div className="testimonalsWrapper">
         <h2 className="testimonialsTitle">Why Students Love Our Barre Classes</h2>
         <p style={{ marginBottom: '16px' }}>&quot;The instructors are amazing, the atmosphere is supportive,
@@ -61,7 +98,9 @@ const FinalSection = () => {
             </label>
           </div>
           {/* <input type="submit" value="Submit" /> */}
-          <PrimaryButtonLarge className="primaryButtonLarge" buttonText="Join Raise Studio" />
+          <div className="formButtonWrapper">
+            <PrimaryButtonLarge className="primaryButtonLarge" buttonText="Join Raise Studio" />
+          </div>
         </form>
       </div>
     </div>

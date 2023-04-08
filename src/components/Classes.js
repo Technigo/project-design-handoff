@@ -23,7 +23,7 @@ const Classes = ({ screenSize }) => {
           <p className="boldText">No dance experience required!</p>
           {/* <button type="button" className="ourClassesButton">Our Classes</button> */}
           <PrimaryButtonLarge className="primaryButtonLarge" buttonText="Our Classes" />
-          <img className="BarreBasicImage" src={imgUrl} alt="Basic barre class" />
+          <img className="barreBasicImage" src={imgUrl} alt="Basic barre class" />
         </div>
       </div>
     </div>
