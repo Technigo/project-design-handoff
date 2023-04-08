@@ -1,8 +1,10 @@
 import React from 'react';
+
 import SilkTop from './Silk/SilkTop.js';
 import SilkBottom from './Silk/SilkBottom.js';
 import Class from './Class.js';
 import ClassCarousel from './ClassCarousel.js';
+
 import BeginnerImg from '../../assets/images/Beginner.png';
 import IntermediateImg from '../../assets/images/Intermediate.png';
 import ExpertImg from '../../assets/images/Expert.png';
@@ -28,11 +30,11 @@ const Classes = ({ screenSize }) => {
         {!isMobile && (
           <div className="classes-section">
             <hr className="first-line" />
-            <Class screenSize={screenSize} level="Beginner" img={BeginnerImg} description={beginnerdescription} />
+            <Class level="Beginner" img={BeginnerImg} description={beginnerdescription} />
             <hr className="class-divider" />
-            <Class screenSize={screenSize} level="Intermediate" img={IntermediateImg} description={intermediatedescription} />
+            <Class level="Intermediate" img={IntermediateImg} description={intermediatedescription} />
             <hr className="class-divider" />
-            <Class screenSize={screenSize} level="Expert" img={ExpertImg} description={expertdescription} />
+            <Class level="Expert" img={ExpertImg} description={expertdescription} />
           </div>
         )}
       </div>
@@ -42,23 +44,3 @@ const Classes = ({ screenSize }) => {
 };
 
 export default Classes;
-
-//       <SilkBottom />
-
-/*
-const classes = [
-  { name: 'beginner',
-    description: 'beginner bla bla bla',
-    image: 'url' },
-  { name: 'intermediate',
-    description: 'intermediate bla bla bla',
-    image: 'url' },
-  { name: 'expert',
-    description: 'expert bla bla bla',
-    image: 'url' }
-] data={classes}
-
-  // const beginner = 'beginner';
-  // const intermediate = 'intermediate';
-  // const expert = 'expert';
-*/

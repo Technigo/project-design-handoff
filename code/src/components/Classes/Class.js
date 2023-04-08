@@ -2,19 +2,16 @@ import React from 'react';
 
 import './Class.css';
 
-const Class = ({ screenSize, img, level, description }) => {
-  console.log(screenSize);
-  console.log(level)
-  console.log(description)
+const Class = ({ img, level, description }) => {
   return (
     <div className="class-card">
       <div className="class-img">
-        <img src={img} alt="" />
+        <img src={img} alt="woman doing aerial silk" />
       </div>
       <div className="class-text">
         <h2>{level}</h2>
         <p>{description}</p>
-        <button className="textbutton" type="button">See more</button>
+        <button className="textbutton" type="button" aria-label="button to read more about the class">See more</button>
       </div>
     </div>
   );

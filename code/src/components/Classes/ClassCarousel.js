@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable max-len */
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+
 import ClassCard from './ClassCard.js';
+
 import BeginnerImg from '../../assets/images/Beginner.png';
 import IntermediateImg from '../../assets/images/Intermediate.png';
 import ExpertImg from '../../assets/images/Expert.png';
@@ -39,6 +40,7 @@ const CustomDot = ({ onClick, active }) => {
   return (
     <button
       type="button"
+      aria-label="dots indicating more content available off screen"
       className={active ? 'custom-dot-active' : 'custom-dot-inactive'}
       onClick={onClick} />
   );

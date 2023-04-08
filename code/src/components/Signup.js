@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-// import logo from '../assets/logos/Vector.png';
 import './Signup.css';
 
 const Signup = () => {
