@@ -56,7 +56,7 @@ const Content = styled.p`
   line-height: 167.5%;
   text-align: center;
   color: #025323;
-  padding: 0 50px;
+  padding: 20px 50px;
 `;
 const Image = styled.img`
   width: 288.54px;

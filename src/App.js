@@ -6,6 +6,7 @@ import { Benefits } from 'components/Benefits';
 import { Membership } from 'components/Membership';
 import { Footer } from 'components/Footer';
 import { Contacts } from 'components/Contacts';
+import { Article } from 'components/Article';
 import { Hero } from './components/Hero';
 import { ReviewsSlider } from './components/ReviewsSlider';
 
@@ -22,6 +23,7 @@ export const App = () => {
         <Hero />
       </section>
       <Benefits />
+      <Article />
       <Membership />
       <ReviewsSlider />
       <Contacts />

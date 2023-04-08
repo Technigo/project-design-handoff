@@ -37,7 +37,7 @@ code {
     display: none;
   }
   .parent-container {
-    background-image: url(./components/Hero.jpg);
+    background-image: url(.//assets/Hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 1.5rem;

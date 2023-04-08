@@ -9,7 +9,7 @@ flex-direction: column;
 height: 100vh;
 gap: 2.4rem;
 align-items: center;
-padding-bottom: 6em;
+padding-bottom: 1em;
 @media (min-width: 968px) {
     flex-direction: row;
 }
@@ -108,7 +108,8 @@ width: clamp(160px, 24vw, 288px);
   height: clamp(39px, 8vw, 67px);
 border: none;
 border-radius: 10px;
-margin-top: 1rem;
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
 line-height: 29px;
 @media (min-width: 744px) {
     font-size: 24px;
@@ -131,6 +132,7 @@ justify-content: flex-start;
 const StyledInput = styled.input`
 width: 80%;
 height: clamp(36px, 10vw, 60px);
+margin-top: 0.2rem;
 margin-bottom: 0.5rem;
 border-radius: 7px;
     &::placeholder {
