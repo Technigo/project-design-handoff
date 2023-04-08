@@ -16,7 +16,6 @@ export const HeaderSection = () => {
   const [show, setShow] = useState(false)
   return (
     <FlexContainer background="#045661" padding="5%" main>
-      {/* <Background src={headerBackground} /> */}
       <Image src={hero} />
       <Navbar>
         <Logo src={logo} />

@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Highlight } from 'components/styledComponents/Highlight';
 import { BackgroundColor } from 'components/styledComponents/Backgrounds';
 import { SectionTitle, CardText } from '../styledComponents/Texts'
-import { FlexContainer, ContainerForMobile, ContainerForBiggerScreens, Container } from '../styledComponents/Containers'
+import { FlexContainer, ContainerForMobile, ContainerForBiggerScreens, PickYourPositionContainer } from '../styledComponents/Containers'
 import { Carousel } from './Carousel'
 import ProgramDeck from '../../images/ProgramDeck.png'
 import { PositionImage, PositionImageContainer } from './Positions';
@@ -16,10 +16,10 @@ import DesktopcardsFreneso from '../../images/DesktopcardsFreneso.png'
 
 export const PickYourPositionSection = () => {
   return (
-    <FlexContainer gap="1em" padding="0px 8px 40px 8px">
+    <FlexContainer gap="1em" padding="0px 8px 40px 8px" pickPosition>
       <BackgroundColor background="#045661" width="100vw" />
-      <SectionTitle background="#EDFDFF" color="#002A30">Pick your position</SectionTitle>
-      <Container gap="20px">
+      <SectionTitle absolute background="#EDFDFF" color="#002A30">Pick your position</SectionTitle>
+      <PickYourPositionContainer>
         <FlexContainer borderRadius="0px 23px 23px 23px" background="#EDFDFF" width="91%" padding="0px 8px 8px 0px">
           <SectionTitle alignSelf="flex-start" background="#004852">About the programs</SectionTitle>
           <CardText>
@@ -30,13 +30,15 @@ export const PickYourPositionSection = () => {
             All programs prioritize safety and success on and off the track.
           </CardText>
         </FlexContainer>
-        <CardText background="#EDFDFF" width="77%" alignSelf="stretch">
-          <Highlight color="#002A30">Referee, NSO or new to the game?
-          </Highlight>
+        <FlexContainer borderRadius="0px 23px 23px 23px" background="#EDFDFF" width="91%" padding="0px 8px 8px 0px">
+          <CardText background="#EDFDFF" width="77%" alignSelf="stretch">
+            <Highlight color="#002A30">Referee, NSO or new to the game?
+            </Highlight>
             Try FRENeSO. A well-rounded program to prevent injuries
             and prepare you for the track's intensity.
-        </CardText>
-      </Container>
+          </CardText>
+        </FlexContainer>
+      </PickYourPositionContainer>
       <ContainerForMobile mobile flexDirection="row" background="#128F9F" borderRadius="8px" border="1px solid #128F9F">
         <img src={ProgramDeck} alt="name" />
         <CardText color="#EDFDFF">Check out our <Highlight color="#FFE600"> deck of program cards </Highlight>below!</CardText>

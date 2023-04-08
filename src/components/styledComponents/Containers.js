@@ -22,19 +22,18 @@ border-color:${(props) => props.borderColor || ''};
 
   @media (min-width: 1024px) {
     align-self:${(props) => (props.review ? 'flex-start' : 'center')};
-    margin-bottom:${(props) => (props.marginBottom || '0')}
+    margin-bottom:${(props) => (props.plankPositioning ? '200px' : '0')}
   }
 
-`
+  @media (min-width: 1440px) {
+    align-self:${(props) => (props.review ? 'flex-start' : 'center')};
+    margin-bottom:${(props) => (props.plankPositioning ? '50px' : '0')};
+    margin-top:${(props) => (props.plankPositioning ? '200px' : '0')};
+    flex-direction:${(props) => (props.pickPosition ? 'row' : '')};
+    justify-content:center;
+    padding:${(props) => (props.pickPosition ? '50px' : '')};
+  }
 
-export const GridContainer = styled.div`
-height:100%;
-width:100%;
-display: grid;
-flex-direction: column;
-justify-content: flex-start;
-position:relative;
-align-items: center;
 `
 
 export const UnorderedList = styled.ul`
@@ -78,6 +77,12 @@ padding:${(props) => props.padding || '0px 8px 8px 8px'};
 align-items: center;
   @media (min-width: 1024px) {
       display:flex;
+  }
+    @media (min-width: 1440px) {
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      max-width:380px;
   }
 `
 
@@ -125,14 +130,14 @@ box-sizing: border-box;
     @media (min-width: 1440px) {
     flex-direction:row;
     flex-wrap:wrap;
-    gap: 20px 400px;
+    gap: 20px 520px;
     padding: 20px 0px;
     width: 1400px;
 
   }
   `
 // column->row->column
-export const Container = styled.div`
+export const PickYourPositionContainer = styled.div`
 display:flex;
 position:relative;
 flex-direction:column;
@@ -147,18 +152,38 @@ border-radius:${(props) => props.borderRadius || '0'};
 background:${(props) => props.background};
 
 @media (min-width: 1024px) {
-flex-direction:${(props) => (props.question ? 'row-reverse' : 'row')};
+flex-direction:row;
 max-width:960px;
 }
 @media (min-width: 1440px) {
-flex-direction:${(props) => (props.benefit ? 'column' : 'row reverse')};
-max-width:${(props) => (props.benefit ? '300px' : '960px')};
-position:${(props) => (props.benefit ? 'absolute' : 'relative')};
-top:${(props) => (props.benefit ? '53%' : 'auto')};
-left: ${(props) => (props.benefit ? '50%' : 'auto')};
-transform:${(props) => (props.benefit ? 'translate(-50%, -50%)' : 'auto')}; ;
+    flex-direction:column;
+    max-width:550px;
+    height:100%;
 }
 `
+export const QuestionsContainer = styled.div`
+display:flex;
+position:relative;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:max-content;
+gap:20px;
+width:92%;
+max-width:328px;
+box-sizing: border-box;
+border-radius:${(props) => props.borderRadius || '0'};
+background:${(props) => props.background};
+
+@media (min-width: 1024px) {
+flex-direction:row-reverse;
+max-width:960px;
+}
+@media (min-width: 1440px) {
+
+}
+`
+
 export const BenefitContainer = styled.div`
 display:flex;
 position:relative;

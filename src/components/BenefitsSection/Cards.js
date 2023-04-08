@@ -60,4 +60,9 @@ text-align:${(props) => (props.reversed ? 'left' : 'right')};
 left:${(props) => (props.reversed ? '-40px' : 'auto')};
 width: 300px;
   }
+  @media (min-width: 1440px) {
+    right:${(props) => (props.reversed ? 'auto' : '-100px')};
+left:${(props) => (props.reversed ? '-100px' : 'auto')};
+width: 350px;
+  }
 `

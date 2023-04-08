@@ -49,13 +49,17 @@ max-width:440px;
   @media (min-width: 1024px) {
       max-width:501px;
   }
+   @media (min-width: 1440px) {
+      position:${(props) => (props.absolute ? 'absolute' : 'relative')};
+      top:${(props) => (props.absolute ? '0' : 'auto')};
+  }
 
 `
 
 export const ListItem = styled.li`
-padding: 2% 0;
+padding:10px 15px;
 font-weight: 300;
-font-size: 1.25em;
+font-size: 1em;
 list-style-type: circle;
 display: list-item;
   `
@@ -86,11 +90,12 @@ color:${(props) => props.color || '#27363D'};
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 color: ${(props) => props.color || 'black'};
 width:${(props) => props.width};
-padding:10px;
+padding:20px;
 background:${(props) => props.background};
-border-radius: 22.7727px 22.7727px 0px 22.7727px;
+border-radius: 23px 23px 0px 23px;
 align-self:${(props) => props.alignSelf};
 z-index:1;
+line-height: 113.5%;
 a{
   color:rgb(39, 54, 61);
 }

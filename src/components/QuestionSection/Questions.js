@@ -5,7 +5,7 @@ import { BackgroundColor } from 'components/styledComponents/Backgrounds'
 import { ImagePlank } from 'components/styledComponents/Images'
 import { Button } from '../styledComponents/Button'
 import { SectionTitle, CardText, CardSubTitle, Input, Label } from '../styledComponents/Texts'
-import { FlexContainer, Form, Container, QuestionContainer } from '../styledComponents/Containers'
+import { FlexContainer, Form, QuestionContainer, QuestionsContainer } from '../styledComponents/Containers'
 import PlankBalance from '../../images/PlankBalance.png'
 
 export const QuestionSection = () => {
@@ -19,13 +19,13 @@ export const QuestionSection = () => {
   return (
     <FlexContainer
       gap="20px"
-      marginBottom="200px">
+      plankPositioning>
       <BackgroundColor background="#004852" width="100vw" />
-      <ImagePlank review src={PlankBalance} />
+      <ImagePlank src={PlankBalance} />
       <SectionTitle>
        Question corner
       </SectionTitle>
-      <Container question>
+      <QuestionsContainer question>
         <QuestionContainer border="5px solid #FFE600">
           <SectionTitle background="#EDFDFF" color="#002A30" border="0px" shadow="0px">Frequently asked questions</SectionTitle>
           <FlexContainer>
@@ -96,7 +96,7 @@ export const QuestionSection = () => {
           </Form>
           <FlexContainer />
         </QuestionContainer>
-      </Container>
+      </QuestionsContainer>
     </FlexContainer>
   )
 }

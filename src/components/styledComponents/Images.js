@@ -7,11 +7,14 @@ bottom: 0;
 max-width: 100%;
 z-index:-1;
 
-  @media (min-width: 1024px) {
-  height:${(props) => (props.review ? '120%' : '571px')};
-  left:${(props) => (props.review ? '800px' : 'calc(50% - 593px/2 + 200.5px)')} ;
-    bottom:${(props) => (props.review ? '-10%' : '0')};
-  }
+@media (min-width: 1024px) {
+height:${(props) => (props.review ? '120%' : '571px')};
+left:${(props) => (props.review ? '800px' : 'calc(50% - 593px/2 + 200.5px)')} ;
+bottom:${(props) => (props.review ? '-10%' : '0')};
+}
+@media (min-width: 1440px) {
+display:${(props) => (props.review ? 'none' : '')};
+}
 `
 
 export const ImagePlank = styled.img`
@@ -23,6 +26,14 @@ display:none;
     height: 200px;
     bottom: -210px;
     right: 10%;
+  }
+    @media (min-width: 1440px) {
+    top: -190px;
+    right: 10%;
+  }
+      @media (min-width: 1440px) {
+    height: 300px;
+       top: -278px;
   }
 
 `

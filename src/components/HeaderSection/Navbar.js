@@ -13,7 +13,7 @@ align-items:center;
 export const Logo = styled.img`
 width:5.5em;
 height:2.8em;
-filter: drop-shadow(0px 3.08772px 3.08772px rgba(0, 0, 0, 0.25));
+/* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25)); */
   @media (min-width: 1024px) {
   width:7.5em;
   height:3.6em;
