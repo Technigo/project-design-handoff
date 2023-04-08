@@ -9,9 +9,20 @@ z-index:-1;
 
   @media (min-width: 1024px) {
   height:${(props) => (props.review ? '120%' : '571px')};
-  left:${(props) => (props.review ? '900px' : 'calc(50% - 593px/2 + 200.5px)')} ;
-   /* right:${(props) => (props.review ? '20%' : 'auto')}; */
+  left:${(props) => (props.review ? '800px' : 'calc(50% - 593px/2 + 200.5px)')} ;
     bottom:${(props) => (props.review ? '-10%' : '0')};
+  }
+`
+
+export const ImagePlank = styled.img`
+display:none;
+  @media (min-width: 1024px) {
+    display:block;
+    position:absolute;
+    z-index:-1;
+    height: 200px;
+    bottom: -210px;
+    right: 10%;
   }
 
 `
@@ -22,10 +33,7 @@ width:2.9em;
 height:2.9em;
 fill:#FFE600;
 }
-
-
   @media (min-width: 1024px) {
 
   }
-
 `

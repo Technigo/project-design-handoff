@@ -21,8 +21,8 @@ z-index:${(props) => props.zIndex || '0'};
 border-color:${(props) => props.borderColor || ''};
 
   @media (min-width: 1024px) {
-    align-self:${(props) => (props.review ? 'flex-start' : 'center')}
-     margin-bottom:${(props) => (props.marginBottom ? '200px' : '0')}
+    align-self:${(props) => (props.review ? 'flex-start' : 'center')};
+    margin-bottom:${(props) => (props.marginBottom || '0')}
   }
 
 `

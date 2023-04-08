@@ -2,9 +2,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react'
 import { BackgroundColor } from 'components/styledComponents/Backgrounds'
+import { ImagePlank } from 'components/styledComponents/Images'
 import { Button } from '../styledComponents/Button'
 import { SectionTitle, CardText, CardSubTitle, Input, Label } from '../styledComponents/Texts'
 import { FlexContainer, Form, Container, QuestionContainer } from '../styledComponents/Containers'
+import PlankBalance from '../../images/PlankBalance.png'
 
 export const QuestionSection = () => {
   const [text, setText] = useState('');
@@ -19,6 +21,7 @@ export const QuestionSection = () => {
       gap="20px"
       marginBottom="200px">
       <BackgroundColor background="#004852" width="100vw" />
+      <ImagePlank review src={PlankBalance} />
       <SectionTitle>
        Question corner
       </SectionTitle>
