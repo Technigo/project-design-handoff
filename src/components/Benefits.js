@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import YogaPic from 'assets/yogaPic.jpg';
 import Blob from 'assets/Blob.png';
-import Vector from 'assets/Vector.svg'
+import Vector from 'assets/Vector.svg';
 
 const BenefitsWrapper = styled.div`
   display: flex;
@@ -10,12 +10,14 @@ const BenefitsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin-top: 3em;
+  margin-bottom: 3em;
 
   @media (min-width: 768px) {
     flex-direction: row;
     padding: 2rem;
   }
-`
+`;
 
 const Text = styled.div`
   background-image: url(${Blob});
@@ -35,6 +37,7 @@ const Text = styled.div`
     line-height: 1.5;
     color: #025323;
     margin-top: 1rem;
+    font-family: 'Libre Franklin';
   }
 
   @media (min-width: 768px) {
@@ -51,12 +54,18 @@ const Text = styled.div`
       margin-top: 2rem;
     }
   }
-`
+`;
+
 const Heading = styled.h1`
   color: #025323;
   text-align: center;
   margin-top: 1rem;
-`
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+`;
 
 const ImageDiv = styled.div`
   position: relative;
@@ -67,39 +76,42 @@ const ImageDiv = styled.div`
   align-items: center;
   border-radius: 20px;
   margin-top: 1rem;
-  height: 50%; 
-  width: 50%; 
+  height: 50%;
+  width: 50%;
 
   @media (min-width: 768px) {
     margin-top: 0;
     margin-right: 2rem;
     height: auto;
-    width: 50%; 
+    width: 50%;
   }
 `;
 
 const Overlay = styled.div`
-  position: relative; 
-  z-index: 1; 
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
-`
+`;
 
 const YogaWrapper = styled.img`
-  max-width: 90%;
+  max-width: 70%;
   height: auto;
-  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-`
+  position: relative;
+  left: 1.5rem; 
+`;
 
 const VectorWrapper = styled.img`
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: auto;
   object-fit: cover;
-`
+`;
 
 export const Benefits = () => {
   return (

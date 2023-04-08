@@ -49,29 +49,30 @@ const IconsSection = styled.section`
 `;
 
 const FacebookLogo = styled.img`
-  max-width: 100px;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-    
-  }
+  max-width: 100%;
+  
+  &:hover path {
+   
+    opacity: 0.8; 
+}
 `;
 
 const InstagramLogo = styled.img`
-  max-width: 100px;
-  cursor: pointer;
+  max-width: 100%;
+  
   &:hover {
-    
+    cursor: pointer;
     opacity: 0.8;
   }
 `;
 
 const LinkedInLogo = styled.img`
-  max-width: 100px;
-  cursor: pointer;
+  max-width: 100%;
+  
   &:hover {
     opacity: 0.8;
-    
+    cursor: pointer;
+}
 `;
 
 const SubscribeText = styled.h5`

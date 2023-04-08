@@ -12,6 +12,7 @@ const Nav = styled.nav`
   height: 85px;
   width: 100vw;
   background-color: white;
+  font-family: 'Libre Franklin';
   @media (min-width: 744px) {
     background-color: transparent;
     margin-top: 1.5rem;

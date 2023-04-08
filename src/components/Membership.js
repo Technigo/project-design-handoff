@@ -1,5 +1,3 @@
-/* eslint-disable  */
-
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Flexable from '../assets/1.png';
@@ -9,13 +7,13 @@ import Leftarrow from '../assets/left-arrow.png';
 import Rightarrow from '../assets/right-arrow.png';
 
 const items = [
-  { image: Flexable, header: 'BE FLEXABLE', access: 'PAY WHEN YOU PRACTICE', price: '2499 SEK/PER MONTH' },
+  { image: Flexable, header: 'BE FLEXIBLE', access: 'PAY WHEN YOU PRACTICE', price: '2499 SEK/PER MONTH' },
   { image: Basic, header: 'BASIC', access: 'ACCESS ALL OUR IN-STUDIO', price: '899 SEK/PER MONTH' },
   { image: Grow, header: 'GROW', access: 'ACCESS ALL OUR IN-STUDIO AND ONLINE CLASSES', price: '1899 SEK/PER MONTH' }
 ];
 
 const MemberShipContainer = styled.div`
-  width: 100vw;
+  width: auto;
   height: auto;
   padding-top: 16px;
   display: flex;
@@ -24,17 +22,18 @@ const MemberShipContainer = styled.div`
   justify-content: center;
   background-color: #EBEBEB;
   position: relative;
+  padding: 2em;
 `;
 
 const SliderItemContainer = styled.div`
-  width: 288.54px;
+  width: auto;
   height: 427.34px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 2.52369px solid #025323;
   border-radius: 16.8246px;
-  margin-bottom: 46px;
+  margin-bottom: 2em;
 `;
 
 const Title = styled.h1`
@@ -47,6 +46,7 @@ const Title = styled.h1`
   color: #025323;
   margin-top: 46px;
   padding: 0 10px;
+  margin-bottom: 25px;
 `;
 
 const Content = styled.p`
@@ -58,16 +58,18 @@ const Content = styled.p`
   text-align: center;
   color: #025323;
   padding: 0 50px;
+  margin-bottom: 25px;
 `;
 export const Image = styled.img`
   width: 288.54px;
-  height: 201.05px;
+  height: auto;
   object-fit: cover;
-  border-radius: 16.8246px;
+  border-top-left-radius: 16.8246px;
+  border-top-right-radius: 16.8246px;
 `;
 const Wrapper = styled.div`
   align-items: left;
-  width: 288.54px;
+  width: auto;
   padding-left: 16px;
   margin-bottom: 25px;
 `
@@ -78,6 +80,7 @@ const Header = styled.h2`
   font-size: 18.5071px;
   line-height: 22px;
   color: #025323;
+  margin-top: 1em;
 `;
 const Access = styled.p`
   font-family: 'Libre Franklin';
@@ -107,6 +110,9 @@ const Button = styled.button`
   border-radius: 15px;
   text-align: center;
   color: #FFFFFF;
+  margin-top: 1em;
+  width: 244px;
+  cursor:pointer;
 `;
 
 const ArrowButtonLeft = styled.button`
@@ -120,7 +126,7 @@ const ArrowButtonLeft = styled.button`
   margin: auto;
   position:absolute;
   top: 60%;
-  left: 15px;
+  left: 25px;
 `;
 
 const ArrowButtonRight = styled.button`
@@ -134,7 +140,7 @@ const ArrowButtonRight = styled.button`
   margin: auto;
   position:absolute;
   top: 60%;
-  right: 15px;
+  right: 25px;
 `;
 
 export const Membership = () => {
@@ -151,25 +157,23 @@ export const Membership = () => {
   return (
     <MemberShipContainer>
       <Title>Sign up for membership</Title>
-      <Content>Most classes are 30 minutes and serivel of them can been taken online</Content>
-      
+      <Content>Most classes are 30 minutes and several of them can been taken online</Content>
       <SliderItemContainer>
         <Image src={items[currentIndex].image} alt="carousel item" />
 
         <Wrapper>
-           <Header>{items[currentIndex].header}</Header>
-           <Access>{items[currentIndex].access}</Access>
+          <Header>{items[currentIndex].header}</Header>
+          <Access>{items[currentIndex].access}</Access>
         </Wrapper>
-       
         <Price>{items[currentIndex].price}</Price>
         <Button type="button">Buy Now</Button>
       </SliderItemContainer>
 
       <ArrowButtonLeft onClick={handlePrevClick}>
-        <img src={Leftarrow} alt="left"/>
+        <img src={Leftarrow} alt="left" />
       </ArrowButtonLeft>
       <ArrowButtonRight onClick={handleNextClick}>
-        <img src={Rightarrow} alt="right"/>
+        <img src={Rightarrow} alt="right" />
       </ArrowButtonRight>
     </MemberShipContainer>
   );

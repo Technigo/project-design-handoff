@@ -16,17 +16,46 @@ const ArticleContainer1 = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
+
+  @media (min-width: 900px) {
+    display:flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  })
+  
 `;
 const ArticleContainer2 = styled.div`
   margin-top:30px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
+
+  @media (min-width: 900px) {
+    display:flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  })
 `;
 const ContentBox = styled.div`
-  padding:
+@media (min-width: 768px) {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+})
+
+@media (min-width: 1024px) {
+  /* Styles for desktop view */
+  width: 30em;
+}
+
 `;
 const Header = styled.h1`
   font-family: 'Libre Franklin';
@@ -36,6 +65,8 @@ const Header = styled.h1`
   line-height: 39px;
   text-align: center;
   color: #025323;
+  margin-bottom: 10px;
+  margin-top: 20px;
 `;
 const Paragraf = styled.p`
   font-family: 'Libre Franklin';
@@ -47,6 +78,10 @@ const Paragraf = styled.p`
   letter-spacing: 0.127905px;
   color: #025323;
   padding: 0 50px;
+
+  @media (min-width: 768px) {
+    width: 30em;
+  })
 `;
 const Button = styled.button`
   display: flex;
@@ -58,11 +93,23 @@ const Button = styled.button`
   border-radius: 15px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom:61px;
+  margin-bottom:15px;
+  margin-top: 10px;
+  border: none;
+  font-family: 'Libre Franklin';
+  font-size: 22px;
+  line-height: 29px;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 const ImgBox = styled.div`
-  width: 378.84px;
-  height: 258.8px;
+  width: 603px;
+  height: 411.94px;
   border: 0.58px solid #025323;
   border-radius: 12px;
   display: flex;
@@ -70,14 +117,20 @@ const ImgBox = styled.div`
   align-items: center;
   padding: 0;
   margin: 0;
+  @media (max-width: 768px) {
+    width:auto;
+    height:250px;
+  }
 `
 const Image = styled.img`
-  width: 351.82px;
-  height: 234.34px;
-  left: 33.82px;
-  top: 907.13px;
+  width: 560px;
+  height: 374px;
   border: 6px solid #025323;
   border-radius: 12.5651px;
+  @media (max-width: 768px) {
+    width:auto;
+    height:230px;
+  }
 `;
 
 export const Article = () => {
@@ -87,8 +140,8 @@ export const Article = () => {
         <ContentBox>
           <Header>{article[0].header}</Header>
           <Paragraf>{article[0].paragraf}</Paragraf>
+          <Button type="button">Read more</Button>
         </ContentBox>
-        <Button type="button">Read more</Button>
         <ImgBox>
           <Image src={Readme1} alt="readme" />
         </ImgBox>
@@ -98,8 +151,8 @@ export const Article = () => {
         <ContentBox>
           <Header>{article[1].header}</Header>
           <Paragraf>{article[1].paragraf}</Paragraf>
+          <Button type="button">Read more</Button>
         </ContentBox>
-        <Button type="button">Read more</Button>
         <ImgBox>
           <Image src={Readme2} alt="readme" />
         </ImgBox>

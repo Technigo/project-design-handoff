@@ -8,6 +8,9 @@ const ContactsWrapper = styled.div`
   gap: 2.4rem;
   align-items: center;
   padding-bottom: 2em;
+  font-family: 'Libre Franklin';
+  color: #025323;
+  padding-top: 6em;
 
   @media (min-width: 968px) {
     flex-direction: row;
@@ -30,6 +33,8 @@ font-size: 28px;
 font-weight: 600;
 padding-left: 2.4rem;
 padding-right: 1rem;
+padding-bottom: 1rem;
+
 @media (min-width: 744px) {
     font-size: 52px;
 }
@@ -171,6 +176,7 @@ const Paragraph = styled.p`
 font-size: ${(props) => (props.bigSize && '20px') || (props.secondSize && '11px') || '9px'};
 margin-top: ${(props) => (props.secondSize ? '0' : 'default')};
 max-width: 364px;
+margin-bottom: 2em;
 margin-left: auto;
 margin-right: auto;
 @media (min-width: 500px) {

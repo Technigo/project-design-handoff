@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import styled from 'styled-components';
 import HeroImage from 'assets/HeroImage.png';
@@ -26,6 +25,8 @@ font-weight: 600;
 font-size: 79px;
 line-height: 96px;
 
+margin-top: 7rem;
+
 color: #025323;
 
 @media (max-width: 768px) {
@@ -40,7 +41,6 @@ color: #025323;
   width: 334px;
   height: 334px;
 }
-
 `
 
 const Text = styled.p`
@@ -51,8 +51,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 22px;
 line-height: 168.52%;
-
-margin-left: 2em;
+margin-left: 4em;
 
 color: #025323;
 
@@ -78,13 +77,16 @@ justify-content: center;
 align-items: center;
 padding: 15px 47px;
 gap: 10px;
-
-margin-left: 2em;
-
+margin-top: 2em;
 color: white;
 font-weight: 600;
 background: #025323;
 border-radius: 15px;
+border: none;
+font-weight: 600;
+font-size: 22px;
+line-height: 29px;
+
 
 &:hover {
     cursor: pointer;
