@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import BegImg from '../images/Beginner.png'
 // import InterImg from '../images/Intermediate.png'
 // import ExpImg from '../images/Expert.png'
-import { Body } from './Typography'
+import { ClassesHead } from './Typography'
 import { Button } from './Button'
 
 const CardImg = styled.img`
@@ -41,7 +41,7 @@ export const CardClasses = () => {
     <StyledCard>
       <CardImg src={BegImg} alt="beginner" />
       <div className="card-info">
-        <Body style={{ fontSize: '20px' }}>Beginner</Body>
+        <ClassesHead>Beginner</ClassesHead>
         <p className="card-text">
           Beginner classes for aerial silks teach you the foundational
           moves and techniques, and is led by experienced instructors

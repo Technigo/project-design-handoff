@@ -39,7 +39,7 @@ margin-top: -50px;
 
 @media (min-width:1025px) {
   height:276px;
-  margin-top: -65px;
+  margin-top: -200px;
 }
 `
 const BottomSilk = styled.img`
@@ -56,7 +56,7 @@ bottom: -40px;
 }
   @media (min-width:1025px) {
     height: 276px;
-   bottom: -20px;
+   bottom: -170px;
   }
 }
 `

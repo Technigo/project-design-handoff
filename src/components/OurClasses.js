@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Body } from 'components/Typography'
+import { Body, ClassesHead } from 'components/Typography'
 import { Button } from './Button'
 import BeginnerImg from '../images/Beginner.png'
 import InterImg from '../images/Intermediate.png'
@@ -28,7 +28,6 @@ padding: 0px 32px;
   display: none;
 }
 
-
 @media (min-width: 1025px) {
   flex-direction: row;
 }
@@ -40,7 +39,6 @@ padding: 0px 32px;
   gap: 32px;
   padding-top: 24px;
   padding: 40px 64px;
-
 
 .info-text{
   display: flex;
@@ -74,7 +72,7 @@ export const OurClasses = () => {
       <div className="img-and-text">
         <Images src={BeginnerImg} alt="beginner" />
         <div className="info-text">
-          <Body>Beginner</Body>
+          <ClassesHead>Beginner</ClassesHead>
           <Body>
             Beginner classes for aerial silks
             teach you the foundational moves and techniques,
@@ -87,7 +85,7 @@ export const OurClasses = () => {
       <div className="img-and-text">
         <Images src={InterImg} alt="beginner" />
         <div className="info-text">
-          <Body>Intermediate</Body>
+          <ClassesHead>Intermediate</ClassesHead>
           <Body>
             Intermediate classes build on foundational moves and introduce
             complex techniques, led by experienced instructors.
@@ -99,7 +97,7 @@ export const OurClasses = () => {
       <div className="img-and-text">
         <Images src={ExpertImg} alt="beginner" />
         <div className="info-text">
-          <Body>Expert</Body>
+          <ClassesHead>Expert</ClassesHead>
           <Body>
             Expert classes are for the experienced aerialists,
             which offer a challenging workout with advanced techniques.

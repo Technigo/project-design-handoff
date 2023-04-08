@@ -1,13 +1,15 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
-import { FormP, Body } from './Typography'
+import { FormP, Body, SlimForm, BoldForm } from './Typography'
 
 const StyledForm = styled.div`
 color: #524858;
 display: flex;
 flex-direction: column;
 align-items: center;
+
 padding: 40px 60px 36px 60px;
 background-color: #D7C3E2;
 gap: 32px;
@@ -53,7 +55,11 @@ input, select {
   line-height: 18px;
   letter-spacing: 1px;
 
-  select {
+  @media (min-width:641px) {
+      font-size: 16px;
+    }
+
+  select{
     &:hover{
       color: #7B6C83;
     }
@@ -88,6 +94,16 @@ input {
   padding: 8px;
   accent-color: #131313;
 }
+
+label {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+&:hover input {
+  background-color: #CDB4DB66;
+}
 `
 
 export const Form = () => {
@@ -98,21 +114,21 @@ export const Form = () => {
       </Body>
       <div className="big-form">
         <form>
-          Name
+          <SlimForm>Name</SlimForm>
           <input type="text" placeholder="First Lastname" />
         </form>
         <form>
-          Email
+          <SlimForm>Email</SlimForm>
           <input type="text" placeholder="example@email.com" />
         </form>
         <form>
-          Phone number
+          <SlimForm>Phone number</SlimForm>
           <input type="text" placeholder="+46 123 456 789" />
         </form>
         <form>
-          Please choose a class
+          <SlimForm>Please choose a class</SlimForm>
           <select>
-            <option value="" selected>Classes..</option>
+            <option value="" disabled selected>Classes..</option>
             <option value="Beginner Class">Beginner Class</option>
             <option value="Intermediate Class">Intermediate Class</option>
             <option value="Expert Class">Expert Class</option>
@@ -122,60 +138,65 @@ export const Form = () => {
       <FormP>
         <StyledRadioForm>
           <div className="radio-form">
-            Do you have any prior experience with aerial silks?
+            <label htmlFor="question1">
+              <BoldForm>
+                Do you have any prior experience with aerial silks?
+              </BoldForm>
+            </label>
+
             <div className="button-section">
-              <form>
-                Yes
-                <input
-                  type="radio" />
-              </form>
-              <form>
-                No
-                <input
-                  type="radio" />
-              </form>
-              <form>
-                I don&apos;t know
-                <input
-                  type="radio" />
-              </form>
+              <label htmlFor="yes1">Yes
+                <input type="radio" name="button1" value="yes" />
+              </label>
+
+              <label htmlFor="no1">No
+                <input type="radio" name="button1" value="no" />
+              </label>
+
+              <label htmlFor="dontknow1">I don’t know
+                <input type="radio" name="button1" value="dontknow" />
+              </label>
             </div>
           </div>
+
           <div className="radio-form">
-            Do you have any injuries or medical
-            conditions that may affect your
-            ability to participate in aerial silks classes?
+            <label htmlFor="question2">
+              <BoldForm>
+                Do you have any injuries or medical conditions that may
+                affect your ability to participate in aerial silks classes?
+              </BoldForm>
+            </label>
+
             <div className="button-section">
-              <form>
-                Yes
-                <input
-                  type="radio" />
-              </form>
-              <form>
-                No
-                <input
-                  type="radio" />
-              </form>
-              <form>
-                I don&apos;t know
-                <input
-                  type="radio" />
-              </form>
+              <label htmlFor="yes2">Yes
+                <input type="radio" name="button2" value="yes" />
+              </label>
+
+              <label htmlFor="no2">No
+                <input type="radio" name="button2" value="no" />
+              </label>
+
+              <label htmlFor="dontknow2">I don’t know
+                <input type="radio" name="button2" value="dontknow" />
+              </label>
             </div>
           </div>
+
           <div className="radio-form">
-            Do you want us to contact you for any other inquiries?
+            <label htmlFor="question3">
+              <BoldForm>
+                Do you want us to contact you for any other inquiries?
+              </BoldForm>
+            </label>
+
             <div className="button-section">
-              <form>
-                Yes
-                <input
-                  type="radio" />
-              </form>
-              <form>
-                No
-                <input
-                  type="radio" />
-              </form>
+              <label htmlFor="yes3">Yes
+                <input type="radio" name="question3" value="yes" />
+              </label>
+
+              <label htmlFor="no3">No
+                <input type="radio" name="question3" value="no" />
+              </label>
             </div>
           </div>
         </StyledRadioForm>
