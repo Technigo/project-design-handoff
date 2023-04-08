@@ -32,7 +32,7 @@ const ClientReviewsCarousel = () => {
       <Carousel responsive={responsive}>
         <div className="card">
           <p>“Arranging the free trial and signing up for a package afterward was quick and easy. My trainer Lola is AMAZING! I absolutely hate exercise and have not been able to stick to an exercise routine since school. But Lola makes my workouts fun and keeps me sessions!”</p>
-          <img src="../assets/Liana.jpg" alt="picture of Liana" />
+          <img src="../assets/Liana.jpg" alt="picture of Liana" className="Liana" />
           <h3>Liana Kelly</h3>
         </div>
         <div className="card">

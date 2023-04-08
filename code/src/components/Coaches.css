@@ -1,0 +1,13 @@
+.coaches-container h1{
+    color:#03092E;
+    text-align: center;
+    font-size: 2rem;
+    margin:1rem;
+}
+
+.coaches-inner-wrapper{
+ display:flex;   
+}
+.coaches-card{
+  margin-left:50px;
+}

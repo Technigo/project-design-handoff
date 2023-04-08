@@ -1,11 +1,10 @@
 .client-review-container {
     background-color: #D7CBFF;
     width: 100vw;
-    height: 65vh;
+    height: 80vh;
   }
   
   .client-review-container h1 {
-
   color: #03092E;
   font-style: normal;
   font-weight: 700;
@@ -39,17 +38,18 @@
   .card {
     box-shadow: 0px 5px 31px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
-    max-width: 80vw;
-    height: 90vw;
     justify-content: center;
     background-color: white;
     margin-right:20px;
-    margin-left:35px;
+    margin-left:20px;
     }
   
   .card img {
     margin: 10px;
-  
+  }
+
+  .Liana{
+    border-radius: 50%;
   }
 
   

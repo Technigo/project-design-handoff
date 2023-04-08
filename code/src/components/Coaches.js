@@ -26,23 +26,25 @@ const CoachesCarousel = () => {
   return (
     <div className="coaches-container">
       <h1>Get to know our coaches</h1>
-      <Carousel responsive={responsiveCoaches}>
-        <div className="coaches-card">
-          <img src="../assets/Maggi.jpg" alt="picture of Maggi" />
-        </div>
-        <div className="coaches-card">
-          <img src="../assets/Helia.jpg" alt="picture of Helia" />
-        </div>
-        <div className="coaches-card">
-          <img src="../assets/Viggo.jpg" alt="picture of Viggo" />
-        </div>
-        <div className="coaches-card">
-          <img src="../assets/Lili.jpg" alt="picture of Lili" />
-        </div>
-        <div className="coaches-card">
-          <img src="../assets/Liz.jpg" alt="picture of Liz" />
-        </div>
-      </Carousel>
+      <div className="coaches-inner-wrapper">
+        <Carousel responsive={responsiveCoaches}>
+          <div className="coaches-card">
+            <img src="../assets/Maggi.jpg" alt="picture of Maggi" />
+          </div>
+          <div className="coaches-card">
+            <img src="../assets/Helia.jpg" alt="picture of Helia" />
+          </div>
+          <div className="coaches-card">
+            <img src="../assets/Viggo.jpg" alt="picture of Viggo" />
+          </div>
+          <div className="coaches-card">
+            <img src="../assets/Lili.jpg" alt="picture of Lili" />
+          </div>
+          <div className="coaches-card">
+            <img src="../assets/Liz.jpg" alt="picture of Liz" />
+          </div>
+        </Carousel>
+      </div>
     </div>
   );
 };
