@@ -9,19 +9,19 @@ const cardboxes = [
     id: 1,
     text: 'Fill the simple form',
     text2: 'Fill the primary questionnaire and we will contact you to know more about your health condition, fitness background and your special needs. ',
-    logo: '/images/list.png'
+    logo: '../images/list.png'
   },
   {
     id: 2,
     text: 'Get matched with a certified coach',
     text2: 'You then try our free 1-1 service to meet a coach who matched with your preferences and requirements ',
-    logo: '/images/users.png'
+    logo: '../images/users.png'
   },
   {
     id: 3,
     text: 'Enjoy your journey',
     text2: 'Your personal coach design a training plan and diet tailored to your individual needs, push, motivate and support you to make your life happier and healthier ',
-    logo: '/images/yoga-pose.png'
+    logo: '../images/yoga-pose.png'
   }
 ];
 

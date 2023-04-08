@@ -1,22 +1,24 @@
 import React from 'react';
+import backgroundImage from '../images/image-woman-waterbottle.png'
 import '../contact.css';
 
 const Contact = () => {
+  const backgroundStyle = {
+    backgroundImage: `url(${backgroundImage})`
+  };
   return (
-    <div className="contact" style={{ backgroundImage: 'url("./images/image-woman-waterbottle.png")' }}>
+    <div className="contact" style={backgroundStyle}>
       <div className="contact-content">
         <h2>Book a free trial</h2>
         <p>Tell us about your preferences and we offer you a tailored plan for a healthier life</p>
         <form>
-          <div>
-            <label className="nameinput" htmlFor="name">Name:
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required />
-            </label>
-          </div>
+          <label className="nameinput" htmlFor="name">Name:
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required />
+          </label>
           <label className="emailinput" htmlFor="email">Email:
             <input
               type="email"

@@ -12,11 +12,12 @@
   .contact-content {
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(223, 202, 202, 0.7);
     border-radius: 10px;
-    padding: 50px;
+    padding: 0;
     text-align: center;
     height: 700px;
+    width: 100%;
     
   }
   
