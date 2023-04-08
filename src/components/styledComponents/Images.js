@@ -8,9 +8,10 @@ max-width: 100%;
 z-index:-1;
 
   @media (min-width: 1024px) {
-    max-width:593px;
-    max-height: 50%;
-    align-self: flex-end;
+  height:${(props) => (props.review ? '120%' : '571px')};
+  left:${(props) => (props.review ? '900px' : 'calc(50% - 593px/2 + 200.5px)')} ;
+   /* right:${(props) => (props.review ? '20%' : 'auto')}; */
+    bottom:${(props) => (props.review ? '-10%' : '0')};
   }
 
 `

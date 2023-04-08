@@ -8,7 +8,7 @@ import { Footer } from './components/Footer/Footer'
 
 export const App = () => {
   return (
-    <div style={{ height: 'max-content' }}>
+    <div style={{ height: 'max-content', background: '#EDFDFF', alignItems: 'flex-start' }}>
       <HeaderSection />
       <BenefitsSection />
       <PickYourPositionSection />

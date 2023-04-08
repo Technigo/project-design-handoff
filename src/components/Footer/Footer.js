@@ -11,11 +11,11 @@ import { FlexContainer } from '../styledComponents/Containers'
 // import DesktopcardsPivot from '../../images/DesktopcardsPivot.png'
 // import DesktopcardsJammer from '../../images/DesktopcardsJammer.png'
 // import DesktopcardsBlocker from '../../images/DesktopcardsBlocker.png'
-import { Icon } from '../styledComponents/Image'
+import { Icon } from '../styledComponents/Images'
 
 export const Footer = () => {
   return (
-    <FlexContainer background="#EDFDFF" gap="20px" maxWidth="500px">
+    <FlexContainer background="#045661" gap="20px" maxWidth="100%">
       <FlexContainer flexDirection="row" justifyContent="center" padding="20px">
         <Icon href="https://www.facebook.com/" target="_blank" alt="facebook icon" aria-label="facebook icon" rel="noreferrer"><ImFacebook /></Icon>
         <Icon href="https://www.instagram.com/" target="_blank" alt="instagram icon" aria-label="instagram icon" rel="noreferrer"><BsInstagram /></Icon>

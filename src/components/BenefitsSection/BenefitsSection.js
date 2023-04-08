@@ -7,7 +7,7 @@ import React from 'react'
 // import { Button } from '../styledComponents/Button'
 import { Highlight } from '../styledComponents/Highlight'
 import { SectionTitle, ListItem, CardText, CardTitle } from '../styledComponents/Texts'
-import { FlexContainer, UnorderedList } from '../styledComponents/Containers'
+import { FlexContainer, UnorderedList, CardsFlexContainer, Container } from '../styledComponents/Containers'
 import { CardContainer, CardImageContainer, CardImage, CardTextContainer } from './Cards'
 // import logo from '../../images/logo.svg'
 // import hero from '../../images/hero.svg'
@@ -19,11 +19,11 @@ import Prehabphoto from '../../images/Prehabphoto.png'
 export const BenefitsSection = () => {
 //   const [show, setShow] = useState(false)
   return (
-    <FlexContainer background="#EDFDFF" gap="20px" maxWidth="500px">
+    <FlexContainer gap="20px" wrap>
       <SectionTitle>Benefits of fit2Derby</SectionTitle>
-      <FlexContainer background="#004852" width="92%" height="max-content" borderRadius="8px" gap="20px" justifyContent="center">
+      <Container background="#004852" borderRadius="8px">
         <CardText color="#F7FEFF">All our programs includes
-          <Highlight>exercises to increase your endurance and
+          <Highlight cta>exercises to increase your endurance and
             agility as well as strengthening
             your neck muscles, core and lower body
           </Highlight>,
@@ -42,59 +42,62 @@ export const BenefitsSection = () => {
             </ListItem>
           </UnorderedList>
         </FlexContainer>
-      </FlexContainer>
-      <CardContainer>
-        <CardImageContainer>
-          <CardImage src={Endurancephoto} />
-        </CardImageContainer>
-        <CardTextContainer>
-          <CardTitle>Endurance</CardTitle>
-          <CardText>Endurance training is essential for roller derby players
+      </Container>
+      <CardsFlexContainer>
+        <CardContainer>
+          <CardImageContainer>
+            {/* <BackgroundColor background="#004852" width="100%" height="40%" /> */}
+            <CardImage src={Endurancephoto} />
+          </CardImageContainer>
+          <CardTextContainer>
+            <CardTitle>Endurance</CardTitle>
+            <CardText>Endurance training is essential for roller derby players
             as it builds stamina for long games,
             aids in faster recovery,
             reduces fatigue-related injuries and ensures
             a high level of performance throughout the game
-          </CardText>
-        </CardTextContainer>
-      </CardContainer>
-      <CardContainer>
-        <CardImageContainer reversed>
-          <CardImage reversed src={Agilityphoto} />
-        </CardImageContainer>
-        <CardTextContainer reversed>
-          <CardTitle>Agility</CardTitle>
-          <CardText>Agility training is crucial for roller derby athletes.
+            </CardText>
+          </CardTextContainer>
+        </CardContainer>
+        <CardContainer reversed>
+          <CardImageContainer reversed>
+            <CardImage reversed src={Agilityphoto} />
+          </CardImageContainer>
+          <CardTextContainer reversed>
+            <CardTitle>Agility</CardTitle>
+            <CardText>Agility training is crucial for roller derby athletes.
             It improves speed, balance, coordination, and reaction time on skates.
             It reduces the risk of injury and prepares players for the demands of the sport
-          </CardText>
-        </CardTextContainer>
-      </CardContainer>
-      <CardContainer>
-        <CardImageContainer>
-          <CardImage src={strengthphoto} />
-        </CardImageContainer>
-        <CardTextContainer>
-          <CardTitle>Strength</CardTitle>
-          <CardText>Strength training is equally crucial, as it
+            </CardText>
+          </CardTextContainer>
+        </CardContainer>
+        <CardContainer>
+          <CardImageContainer>
+            <CardImage src={strengthphoto} />
+          </CardImageContainer>
+          <CardTextContainer>
+            <CardTitle>Strength</CardTitle>
+            <CardText>Strength training is equally crucial, as it
             improves muscle strength, balance, stability, and resilience.
             It helps players hit harder, block better, and prevent injuries.
             It's essential for becoming a stronger, more agile athlete
-          </CardText>
-        </CardTextContainer>
-      </CardContainer>
-      <CardContainer>
-        <CardImageContainer reversed>
-          <CardImage reversed src={Prehabphoto} />
-        </CardImageContainer>
-        <CardTextContainer reversed>
-          <CardTitle>Prehab</CardTitle>
-          <CardText>Often overlooked as it focuses on smaller muscles and sometimes
+            </CardText>
+          </CardTextContainer>
+        </CardContainer>
+        <CardContainer reversed>
+          <CardImageContainer reversed>
+            <CardImage reversed src={Prehabphoto} />
+          </CardImageContainer>
+          <CardTextContainer reversed>
+            <CardTitle>Prehab</CardTitle>
+            <CardText>Often overlooked as it focuses on smaller muscles and sometimes
             “boring” exercises, but crucial to avoid common injuries such as concussions,
             twisted knees, broken ankles,
             dislocated shoulders and torn ligaments
-          </CardText>
-        </CardTextContainer>
-      </CardContainer>
+            </CardText>
+          </CardTextContainer>
+        </CardContainer>
+      </CardsFlexContainer>
     </FlexContainer>
   )
 }

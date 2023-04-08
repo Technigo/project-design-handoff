@@ -1,18 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-import { BackgroundYellow } from 'components/styledComponents/Background'
+import { BackgroundColor } from 'components/styledComponents/Backgrounds'
 import { SectionTitle, CardText } from '../styledComponents/Texts'
-import { FlexContainer } from '../styledComponents/Containers'
+import { FlexContainer, ContainerForBiggerScreens } from '../styledComponents/Containers'
 import reviewLogo1 from '../../images/reviewLogo1.png'
 import reviewLogo2 from '../../images/reviewLogo2.png'
 import reviewLogo3 from '../../images/reviewLogo3.png'
+import BenefitsStarpass from '../../images/BenefitsStarpass.png'
+import { Image } from '../styledComponents/Images'
 
 export const ReviewSection = () => {
   return (
-    <FlexContainer background="#EDFDFF" gap="20px" maxWidth="500px">
-      <BackgroundYellow />
+    <FlexContainer gap="20px" maxWidth="1000px" review>
+      <BackgroundColor />
       <SectionTitle background="#004852">Team reviews</SectionTitle>
-      <FlexContainer background="#096B78" flexDirection="row" alignItems="flex-start" padding="4%" gap="5px" borderRadius="0px 10px 10px 10px">
+      <ContainerForBiggerScreens>
+        <Image review src={BenefitsStarpass} />
+      </ContainerForBiggerScreens>
+      <FlexContainer background="#096B78" flexDirection="row" alignItems="flex-start" padding="2%" gap="5px" borderRadius="0px 10px 10px 10px" maxWidth="700px">
         <img src={reviewLogo1} alt="name" />
         <FlexContainer alignItems="flex-end" borderRadius="0px 8px 8px 8px" background="#EDFDFF">
           <CardText>"Fit2Derby has helped us see quick improvements on the track.
@@ -24,7 +29,7 @@ export const ReviewSection = () => {
           <cite>-Bear city Roller Derby</cite>
         </FlexContainer>
       </FlexContainer>
-      <FlexContainer background="#096B78" flexDirection="row" alignItems="flex-start" padding="4%" gap="5px" borderRadius="0px 10px 10px 10px">
+      <FlexContainer background="#096B78" flexDirection="row" alignItems="flex-start" padding="2%" gap="5px" borderRadius="0px 10px 10px 10px" maxWidth="700px">
         <img src={reviewLogo2} alt="name" />
         <FlexContainer alignItems="flex-end" borderRadius="0px 8px 8px 8px" background="#EDFDFF">
           <CardText>"Using a team platform to track our progress has been an excellent
@@ -40,7 +45,7 @@ export const ReviewSection = () => {
           <cite>-London Roller Derby</cite>
         </FlexContainer>
       </FlexContainer>
-      <FlexContainer background="#096B78" flexDirection="row" alignItems="flex-start" padding="4%" gap="5px" borderRadius="0px 10px 10px 10px">
+      <FlexContainer background="#096B78" flexDirection="row" alignItems="flex-start" padding="2%" gap="5px" borderRadius="0px 10px 10px 10px" maxWidth="700px">
         <img src={reviewLogo3} alt="name" />
         <FlexContainer alignItems="flex-end" borderRadius="0px 8px 8px 8px" background="#EDFDFF">
           <CardText>"Fit2Derby is a game-changer for our league.

@@ -47,6 +47,8 @@ text-shadow: 0px 3.13103px 3.13103px rgba(0, 0, 0, 0.25);
       display:inline-block;
       font-weight: 300;
       color:#ffffff;
+      font-size:3vh;
+      max-width: 55%;
   }
 `;
 
@@ -82,13 +84,12 @@ margin: 50px 0;
 
 export const ParagraphContainer = styled.div`
 display:none;
-width:100%;
 
   @media (min-width: 1024px) {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* gap:30px; */
+    max-width: 55%;
   }
 
 `;

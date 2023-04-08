@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const FlexContainer = styled.div`
 box-sizing: border-box;
 height:${(props) => props.height || '100%'};
+min-height:${(props) => (props.main ? '100vh' : '')};
 width:${(props) => props.width || '100%'};
 max-width:${(props) => props.maxWidth || '100%'};
 display:${(props) => (props.visible ? 'none' : 'flex')};
@@ -17,9 +18,11 @@ border-radius:${(props) => props.borderRadius || 'none'};
 padding:${(props) => props.padding || '0px 8px 8px 8px'};
 gap:${(props) => props.gap || '0px'};
 z-index:${(props) => props.zIndex || '0'};
+border-color:${(props) => props.borderColor || ''};
 
-  @media (min-width: 1024px): {
-   display:${(props) => (props.nomobile ? 'flex' : 'none')};
+  @media (min-width: 1024px) {
+    align-self:${(props) => (props.review ? 'flex-start' : 'center')}
+     margin-bottom:${(props) => (props.marginBottom ? '200px' : '0')}
   }
 
 `
@@ -79,7 +82,7 @@ align-items: center;
 `
 
 export const Form = styled.form`
-width: 100%;
+width: 90%;
 box-sizing: border-box;
 display: flex;
 flex-direction: column;
@@ -93,8 +96,72 @@ border: 2px solid #FFE600;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 
-  @media (min-width: 1024px): {
- 
+  @media (min-width: 1024px) {
+
   }
 
 `
+
+export const CardsFlexContainer = styled.div`
+display:flex;
+position:relative;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:20px;
+padding:20px 0;
+width: 300px;
+align-items:flex-start;
+box-sizing: border-box;
+
+  @media (min-width: 1024px) {
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap: 20px 120px;
+    padding: 20px 0px;
+    width: 1000px;
+
+  }
+  `
+// column->row->column
+export const Container = styled.div`
+display:flex;
+position:relative;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:max-content;
+gap:20px;
+width:92%;
+max-width:328px;
+box-sizing: border-box;
+border-radius:${(props) => props.borderRadius || '0'};
+background:${(props) => props.background};
+
+  @media (min-width: 1024px) {
+    flex-direction:${(props) => (props.question ? 'row-reverse' : 'row')};
+    max-width:960px;
+  }
+  `
+
+export const QuestionContainer = styled.div`
+box-sizing: border-box;
+height:100%;
+width:100%;
+max-width:100%;
+display:flex;
+flex-direction:column;
+justify-content: center;
+position:relative;
+align-items:center;
+background:#EDFDFF;
+border:${(props) => props.border || ''};
+border-radius:13px;
+
+
+  @media (min-width: 1024px) {
+    align-self:stretch;
+    height:auto;
+    width:${(props) => (props.form ? '70%' : '100%')};
+  }
+  `
