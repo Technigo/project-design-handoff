@@ -59,7 +59,7 @@ max-width:440px;
 
 export const ListItem = styled.li`
 padding:10px 15px;
-font-weight: 300;
+font-weight: 200;
 font-size: 1em;
 list-style-type: circle;
 display: list-item;
@@ -91,7 +91,7 @@ color:${(props) => props.color || '#27363D'};
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 color: ${(props) => props.color || 'black'};
 width:${(props) => props.width};
-padding: 10px;
+padding:5px 10px;
 background:${(props) => props.background};
 border-radius: 23px 23px 0px 23px;
 align-self:${(props) => props.alignSelf};

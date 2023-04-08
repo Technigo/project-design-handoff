@@ -38,9 +38,7 @@ border-color:${(props) => props.borderColor || ''};
 export const UnorderedList = styled.ul`
 color:#F7FEFF;
 display: list-item;
-padding:10px 0;
 text-align:center;
-width:70%;
 `
 export const ContainerForMobile = styled.div`
 overflow: visible;
@@ -193,7 +191,7 @@ max-width:328px;
 box-sizing: border-box;
 border-radius:8px;
 background:#004852;
-
+padding:20px;
 @media (min-width: 1024px) {
 flex-direction:row;
 max-width:800px;
