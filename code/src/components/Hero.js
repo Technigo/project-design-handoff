@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import heroImage from '../images/hero-image-smaller.png';
-import mobileHeroImage from '../images/mobile-hero-image.png'
+import mobileHeroImage from '../images/mobile-hero-image.png';
 
 export const HeroSection = () => {
   return (
@@ -23,7 +23,7 @@ const Container = styled.section`
   justify-content: center;
   width: 100%;
   height: 80vh;
-  background-image: url(${heroImage})
+  background-image: url(${heroImage}); 
   background-size: cover;
   background-position: center;
 
