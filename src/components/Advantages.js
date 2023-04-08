@@ -31,7 +31,7 @@ const Advantages = () => {
               personal needs
           </li>
         </ul>
-        <div className="sub">Diet plan</div>
+        <div>Diet plan</div>
         <ul className="custom-list">
           <li>We offer different healthy diets</li>
           <li>Diet plans are customised according to your health conditions and background </li>
