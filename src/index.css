@@ -28,4 +28,12 @@ code {
   line-height: 320px;
   background: #364d79;
   overflow: hidden;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

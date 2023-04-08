@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive'
 import { Wrapper, InnerContainer, TextContainer } from 'components/styles/Section'
 import { Tagline, Headline2, BodyText } from 'components/styles/Text'
 import { PhoneImage } from 'components/styles/Image'
-import { TextCaousel } from 'components/parts/TextCarousel'
+import { TextCarousel } from 'components/parts/TextCarousel'
 
 export const Activity = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1023px)' })
@@ -58,7 +58,7 @@ export const Activity = () => {
                 </BodyText>
               </TextContainer>
             </InnerContainer>)}
-          {isTabletOrMobile && <TextCaousel />}
+          {isTabletOrMobile && <TextCarousel />}
         </InnerContainer>
       </InnerContainer>
     </Wrapper>
