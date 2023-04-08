@@ -122,6 +122,14 @@ box-sizing: border-box;
     width: 1000px;
 
   }
+    @media (min-width: 1440px) {
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap: 20px 400px;
+    padding: 20px 0px;
+    width: 1400px;
+
+  }
   `
 // column->row->column
 export const Container = styled.div`
@@ -138,10 +146,52 @@ box-sizing: border-box;
 border-radius:${(props) => props.borderRadius || '0'};
 background:${(props) => props.background};
 
-  @media (min-width: 1024px) {
-    flex-direction:${(props) => (props.question ? 'row-reverse' : 'row')};
-    max-width:960px;
-  }
+@media (min-width: 1024px) {
+flex-direction:${(props) => (props.question ? 'row-reverse' : 'row')};
+max-width:960px;
+}
+@media (min-width: 1440px) {
+flex-direction:${(props) => (props.benefit ? 'column' : 'row reverse')};
+max-width:${(props) => (props.benefit ? '300px' : '960px')};
+position:${(props) => (props.benefit ? 'absolute' : 'relative')};
+top:${(props) => (props.benefit ? '53%' : 'auto')};
+left: ${(props) => (props.benefit ? '50%' : 'auto')};
+transform:${(props) => (props.benefit ? 'translate(-50%, -50%)' : 'auto')}; ;
+}
+`
+export const BenefitContainer = styled.div`
+display:flex;
+position:relative;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:max-content;
+gap:20px;
+width:92%;
+max-width:328px;
+box-sizing: border-box;
+border-radius:8px;
+background:#004852;
+
+@media (min-width: 1024px) {
+flex-direction:row;
+max-width:800px;
+p, div{
+    width:50%;
+};
+};
+@media (min-width: 1440px) {
+flex-direction:column;
+max-width:300px;
+position:absolute;
+top:53%;
+left:50%;
+transform:translate(-50%, -50%);
+p, div{
+    width:100%;
+    box-sizing:border-box;
+}
+}
   `
 
 export const QuestionContainer = styled.div`

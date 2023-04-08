@@ -7,7 +7,7 @@ import React from 'react'
 // import { Button } from '../styledComponents/Button'
 import { Highlight } from '../styledComponents/Highlight'
 import { SectionTitle, ListItem, CardText, CardTitle } from '../styledComponents/Texts'
-import { FlexContainer, UnorderedList, CardsFlexContainer, Container } from '../styledComponents/Containers'
+import { FlexContainer, UnorderedList, CardsFlexContainer, BenefitContainer } from '../styledComponents/Containers'
 import { CardContainer, CardImageContainer, CardImage, CardTextContainer } from './Cards'
 // import logo from '../../images/logo.svg'
 // import hero from '../../images/hero.svg'
@@ -17,11 +17,10 @@ import strengthphoto from '../../images/strengthphoto.png'
 import Prehabphoto from '../../images/Prehabphoto.png'
 
 export const BenefitsSection = () => {
-//   const [show, setShow] = useState(false)
   return (
     <FlexContainer gap="20px" wrap>
       <SectionTitle>Benefits of fit2Derby</SectionTitle>
-      <Container background="#004852" borderRadius="8px">
+      <BenefitContainer>
         <CardText color="#F7FEFF">All our programs includes
           <Highlight cta>exercises to increase your endurance and
             agility as well as strengthening
@@ -42,7 +41,7 @@ export const BenefitsSection = () => {
             </ListItem>
           </UnorderedList>
         </FlexContainer>
-      </Container>
+      </BenefitContainer>
       <CardsFlexContainer>
         <CardContainer>
           <CardImageContainer>
