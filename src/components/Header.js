@@ -6,11 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import useSticky from './useSticky';
 import { TopRightButton, BottomCenterButton, TopLeftLogo } from './Global';
-import { StickyNav, NavItem, MobileNavIcon, MobileNavItem } from './Navbar';
+import { StickyNav, NavItem, MobileNavIcon } from './Navbar';
 import heroImage from '../assets/hero.jpg';
 import logo from '../assets/logo.svg';
 /* <FontAwesomeIcon icon="fa-sharp fa-regular fa-magnifying-glass" /> */
 /* <FontAwesomeIcon icon="fa-sharp fa-light fa-xmark" /> */
+
+const HeaderContainer = styled.div`
+width: 100%;
+box-sizing: border-box; 
+`;
 
 const HeroContainer = styled.div`
   background-image: url(${(props) => props.image});
@@ -19,18 +24,17 @@ const HeroContainer = styled.div`
   display: flex;
   object-fit: cover;
   position: relative; /* Add position relative to the container */
-  padding: 4rem; /* Add padding to adjust the spacing */
-  width: 100%;
   min-height: 100vh;
 
   @media screen and (max-width: 768px) {
   min-height: 100vh;
   width: 100%;
   background-position: left;
+  padding: 6rem; 
 }
 
  @media screen and (min-width: 1440px) {
-    min-height: 95vh;
+    min-height: 80vh;
   }
 
    @media screen and (min-width: 1632px) {
@@ -58,7 +62,6 @@ padding-left: 2rem;
     align-items: flex-end;
     color: #E3F7FC;
     transform: translateX(-40%);
-    margin-top: 3%;
     font-size: 0.5rem;
     text-align: left;
   }
@@ -86,26 +89,24 @@ color: #E3F7FC;
 `;
 
 const StyledTitle = styled.h1`
-font-size:2.5rem;
+font-size:2rem;
 font-weight: bold;
 word-break: break-word;
 margin-bottom: 4rem;
 
 @media screen and (max-width: 768px) {
-    margin-top: 0;
     margin-left: 6rem;
-    margin-bottom: 2rem;
     word-wrap: break-word;
     font-size:2rem;
   }
 
  @media screen and (min-width: 1440px) {
-    margin-top: 22rem;
+    margin-top: 2rem;
     flex: 0.4;
   }
 
    @media screen and (min-width: 1632px) {
-    margin-top: 90%;
+     margin-top: 20rem;
   }
 `;
 
@@ -118,7 +119,6 @@ margin-top: 1rem;
 
 @media screen and (max-width: 768px) { 
   margin-left: 0;
-  line-height: 1;
 }
 `;
 
@@ -171,7 +171,7 @@ const Description = ({ text }) => {
 const Header = () => {
   const { sticky, stickyRef } = useSticky();
   return (
-    <div>
+    <HeaderContainer>
       <StickyNav ref={stickyRef} className={classNames({ sticky })}>
         <div>
           <TopLeftLogo src={logo} alt="logo" />
@@ -184,9 +184,6 @@ const Header = () => {
           <NavItem href="#">Shop</NavItem>
           <NavItem href="#">Club</NavItem>
           <TopRightButton>Try for Free</TopRightButton>
-          <MobileNavItem>About</MobileNavItem>
-          <MobileNavItem>Services</MobileNavItem>
-          <MobileNavItem>Contact</MobileNavItem>
         </div>
       </StickyNav>
       <HeroContainer image={heroImage}>
@@ -207,7 +204,7 @@ const Header = () => {
           </ButtonAndTextContainer>
         </DescriptionContainer>
       </HeroContainer>
-    </div>
+    </HeaderContainer>
   );
 };
 

@@ -59,16 +59,3 @@ export const MobileNavIcon = styled.div`
     cursor: pointer;
   }
 `;
-
-export const MobileNavItem = styled.a`
-  display: none;
-
-  @media (max-width: 768px) {
-    display: block;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 2rem;
-    cursor: pointer;
-  }
-`;
