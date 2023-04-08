@@ -4,7 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Carousel from '../components/Carousel'
 import AboutPicture from '../assets/about-picture.png'
-import ShapeOne from '../assets/shape1.png'
+import ShapeOne from '../assets/shape1.svg'
 
 const StyledPicture = styled.div`
 background: url(${AboutPicture});
@@ -48,27 +48,33 @@ text-align: center;
 `
 
 const StyledBackgroundShape = styled.div`
-background-image: url(${ShapeOne});
+
+img {
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: -1;
+}
 `
 
 const AboutSection = () => {
   return (
     <section className="about-section">
       <StyledPicture />
-      <StyledBackgroundShape>
+      <StyledContainer>
+        <StyledBackgroundShape>
+          <img src={ShapeOne} alt="background shape" />
+        </StyledBackgroundShape>
 
-        <StyledContainer>
-          <StyledTitle>Come Sweat It Out<br />
+        <StyledTitle>Come Sweat It Out<br />
     at the Barre
-          </StyledTitle>
-          <StyledText>Our Barre Classes are full-body workouts where we’ll pulse, plié, and sweat our way through a series of exercises.<br />
-            <b>
+        </StyledTitle>
+        <StyledText>Our Barre Classes are full-body workouts where we’ll pulse, plié, and sweat our way through a series of exercises.<br />
+          <b>
 
 No dance experience required!
-            </b>
-          </StyledText>
-        </StyledContainer>
-      </StyledBackgroundShape>
+          </b>
+        </StyledText>
+      </StyledContainer>
       <Carousel />
     </section>
   )
