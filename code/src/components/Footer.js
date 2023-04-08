@@ -14,6 +14,7 @@ const FooterPage = () => {
       <div className="logo-wrapper">
         <img className="logo" src="../assets/Logo.svg" alt="Self Health Logo" id="footer-logo" />
         <h3>FOR A HEALTHEIR AND FITTER PLANET</h3>
+        <p>We are on a mission to improve quality of life for humans by sticking to the healthier and more active habits by online support and services.</p>
       </div>
 
       <div className="About-us">

@@ -4,6 +4,11 @@
     color:white;
     padding-top:15px;
 }
+
+.footer-page-outer-wrapper p{
+    display:none;
+}
+
 .footer-page-inner-wrapper{
     display:flex;
     flex-direction: column;
@@ -108,4 +113,50 @@ display: flex;
 flex-direction: column;
 margin-top:10px;
 margin-bottom:10px;
+}
+
+@media (min-width: 640px){
+.footer-page-outer-wrapper{
+  height:30vh;
+}
+
+.logo-wrapper{
+  text-align: left;
+  margin-left:1rem;
+  position: absolute;
+}
+
+.About-us{
+  width:100vw;
+  margin:0;
+  text-align:center;
+}
+.footer-page-outer-wrapper h3{
+    margin-left:1rem;
+}
+.footer-page-outer-wrapper p{
+    display:flex;
+    width:30vw;
+    margin-left:1rem;
+    margin-right:0;
+}
+.contact-us-footer{
+ margin-bottom: 50px;
+ margin-top:10px;
+}
+
+.footer-page-inner-wrapper{
+  margin-left:55%;
+}
+
+.policy-links-container{
+    display:flex;
+    flex-direction: row;
+    width:60vw;
+    gap:5px;
+    margin-top:3rem;
+}
+.policy-links{
+  font-size: 0.8rem;
+}
 }
