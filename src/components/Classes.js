@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ImageSlider } from './ImageSlider';
-import { FindUs } from './FindUs';
 
 export const YellowText = styled.h2`
 font-size: ${(props) => (props.rem2 ? '2rem' : '1.5rem;')};
@@ -29,7 +28,6 @@ export const Classes = () => {
         </svg>
       </YellowText>
       <ImageSlider />
-      <FindUs />
     </ClassesWrapper>
   )
 }

@@ -18,6 +18,11 @@ const HeroImageContainer = styled.div`
   flex-direction: column; 
   align-items: center; 
 
+@media (min-width: 1024px) {
+  flex-direction: column; 
+  align-items: flex-start; 
+  align-content: flex-start;
+}
 `;
 
 const HeaderContainer = styled.div`
@@ -38,7 +43,11 @@ padding-bottom: 3.5rem;
 color: white; 
 text-align: center;
 
-`
+@media (min-width:1024px) {
+  margin-top: -15rem;
+  padding-left: 120px;
+}`
+
 export const Title = styled.h2`
 font-size: ${(props) => (props.smallrem ? '2.5rem;' : '3rem;')};
 font-weight: 700;
@@ -61,7 +70,10 @@ const ButtonTextWrapper = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center; 
-gap: 8px;`
+gap: 8px;
+@media (min-width:1024px) {
+  padding-left: 45px;
+}`
 
 export const Hero = () => {
   return (

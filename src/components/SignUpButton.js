@@ -13,4 +13,7 @@ display:flex;
 justify-content: center;
 align-items: center; 
 font-family: 'Outfit', sans-serif;
-`
+
+@media (min-width: 1024px) {
+    width: 500px;
+}`

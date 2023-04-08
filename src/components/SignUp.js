@@ -30,7 +30,7 @@ const PersonalInput = styled.input`
 background-color: #FFFFFF;
 border: 2px solid #888585;
 border-radius: 1.25rem;
-width: 200px;
+width: 300px;
 height: 55px;
 display: flex;
 flex-direction: row;

@@ -10,7 +10,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 24px;
-padding: 24px;
+padding-top: 24px;
+padding-bottom: 24px;
 `
 const LogoContainer = styled.div`
 display: none;

@@ -10,7 +10,6 @@ const ReviewWrapper = styled.div`
   align-items: center;
   width: 100%;
   gap: 20px;
-  padding: 20px;
 
 @media (min-width: 1024px) {
   width: 50%;
