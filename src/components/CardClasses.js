@@ -15,6 +15,13 @@ width: 100%;
 .slick-list {
   height: 100%;
 }
+
+@media (min-width: 667px) {
+  .slick-initialized .slick-slide {
+    margin-right: 10px;
+    margin-left: -5px;
+  }
+}
 `
 export const BookCardsWrapper = styled(SliderWrapper)`
 height: 45vh;
@@ -34,12 +41,13 @@ gap: 40px;
 `
 
 export const CardDiv = styled.div`
-height: 100%;
+height: 50vh;
 width: 81%;
 background-color: #FFFFFF;
 
 @media (min-width: 667px) {
   width: 50%;
+  margin-right: 10px;
 }
 
 @media (min-width: 1024px) {
@@ -60,7 +68,7 @@ width: 100%;
 `
 
 export const Imagewrapper = styled.div`
-height: 50%;
+height: 25vh;
 width: 100%;
 `
 

@@ -51,7 +51,7 @@ section {
 
     nav {
       position: absolute;
-      width: 100%;
+      width: 95%;
       justify-content: unset;
     }
   }
