@@ -142,7 +142,12 @@ margin-bottom:10px;
 }
 .contact-us-footer{
  margin-bottom: 50px;
- margin-top:10px;
+
+}
+
+.contact-us-footer h2{
+margin-top:10px;
+margin-bottom:10px;
 }
 
 .footer-page-inner-wrapper{
