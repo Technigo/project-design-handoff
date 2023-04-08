@@ -25,12 +25,21 @@ text-align: center;
 letter-spacing: -0.022em;
 color: #000000;
 margin-top: 0;
+
+@media (min-width: 540px) {
+  margin-top: 16%;
+}
 `
 export const ClassImgContainer = styled.div`
 height: 324px;
 overflow: hidden;
 transform: skew(10deg) rotate(0deg);
 width: 61vw;
+
+@media (min-width: 540px) {
+  height: 148%;
+  width: 61vw;
+}
 `;
 
 export const ClassImg = styled.img`
@@ -91,6 +100,11 @@ font-size: 21px;
 line-height: 27px;
 text-align: justify;
 padding-left: 12px;
+
+@media (min-width: 540px) {
+  top: 111%;
+  left: 66.85%;
+}
 `
 
 export const BCPageWrapper = styled.div`
@@ -109,6 +123,18 @@ export const ParkourIMG = styled.img`
   width: 100vw;
 `;
 
+export const ButWhatBannerHolder = styled.img`
+width: 80.5%;
+margin-top: 42.5px;
+
+@media (min-width: 800px) {
+  width: 60.5%;
+  margin-top: 12%;
+}
+`
+export const BWBWrapper = styled.div`
+display: flex;`
+
 export const AcroPromoText = styled.p`
 font-family: 'Kulim Park';
 font-style: normal;
@@ -122,6 +148,13 @@ padding-left: 23.5px;
 padding-right: 23.5px;
 margin-top: 0px;
 margin-bottom: 0;
+
+@media (min-width: 800px) {
+  margin-top: 6%;
+  margin-bottom: 0px;
+  margin-right: 44%;
+  margin-left: 2%;
+}
 `
 
 export const BookClassBtn = styled.button`
@@ -141,6 +174,21 @@ height: 60vh;
 width: 100vw;
 overflow-x: hidden;
 overflow-y: visible;
+
+@media (min-width: 540px) {
+  height: 55vh;
+  width: 71vw;
+  left: 14%;
+  overflow: hidden;
+}
+
+@media (min-width: 800px) {
+  height: 680px;
+  width: 71vw;
+  left: 39%;
+  overflow: hidden;
+  position: absolute;
+}
 `
 
 export const RingAcrobat = styled.img`
@@ -149,22 +197,15 @@ width: 99%;
 z-index: 1;
 left: 9%;
 top: 0%;
-`
 
-export const Acrostripe1 = styled.img`
-position: absolute;
-width: 288.15px;
-height: 264.4px;
-left: 225.54px;
-top: 12.5px;
-`
-
-export const Acrostripe2 = styled.img`
-position: absolute;
-width: 329.42px;
-height: 305.86px;
-left: 142.98px;
-top: 12.5px;
+@media (min-width: 540px) {
+  top: -14%;
+}
+@media (min-width: 800px) {
+  top: 10%;
+  left: 24%;
+  width: 80%;
+}
 `
 
 export const Acrostripe3 = styled.img`
@@ -173,14 +214,10 @@ width: 100%;
 right: -21%;
 top: 3.2%;
 z-index: 2;
-`
 
-export const Acrostripe4 = styled.img`
-position: absolute;
-width: 199.26px;
-height: 199.26px;
-left: 192.56px;
-top: 201.5px;
+@media (min-width: 800px) {
+  display: none;
+}
 `
 
 export const TopWrapper = styled.div`
@@ -189,6 +226,10 @@ width: 100vw;
 align-items: center;
 justify-content: space-between;
 margin-top: 51px;
+
+@media (min-width: 800px) {
+  display:none
+}
 `
 
 export const LogoLeftTop = styled.img`

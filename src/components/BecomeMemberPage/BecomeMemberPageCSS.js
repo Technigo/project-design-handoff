@@ -37,6 +37,12 @@ width: 573%;
 position: absolute;
 left: -387%;
 top: 21px;
+
+@media (min-width: 540px) {
+    width: 665%;
+    position: absolute;
+    right: -277%;
+}
 `
 
 export const TopWrapper = styled.div`

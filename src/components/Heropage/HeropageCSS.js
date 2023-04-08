@@ -181,7 +181,21 @@ font-size: 142.936px;
 line-height: 99px;
 letter-spacing: -0.022em;
 color: rgb(185, 246, 21);
-margin: 0px 0px 0px 3.5%;`
+margin: 0px 0px 0px 3.5%;
+
+@media (min-width: 540px) {
+  margin: 0;
+  position: absolute;
+  bottom: 23%;
+  left: 7%;
+}
+
+@media (min-width: 800px) {
+  bottom: 32%;
+  font-size: 204px;
+  left: 13%;
+}
+`
 
 export const Beyond = styled.h3`
 font-family: 'Kulim Park';
@@ -191,6 +205,19 @@ font-size: 39.9506px;
 letter-spacing: -0.022em;
 color: #B9F615;
 margin: 8% 0px 0px 5%;
+
+@media (min-width: 540px) {
+  margin: 0;
+  position: absolute;
+  left: 8%;
+  bottom: 17%;
+}
+
+@media (min-width: 800px) {
+  left: 14%;
+  bottom: 19%;
+  font-size: 71px;
+}
 `
 
 export const The = styled.h3`
@@ -202,6 +229,20 @@ line-height: 52px;
 letter-spacing: -0.022em;
 color: #B9F615;
 margin: 0% 5% 9% 23%;
+
+
+@media (min-width: 540px) {
+margin: 0;
+position: absolute;
+left: 30%;
+bottom: 11%;
+}
+
+@media (min-width: 800px) {
+  left: 27%;
+  bottom: 12%;
+  font-size: 71px;
+}
 `
 
 export const Limits = styled.h2`
@@ -213,6 +254,19 @@ line-height: 65px;
 letter-spacing: -0.022em;
 color: #B9F615;
 margin: 0px 4% 9% 6%;
+
+@media (min-width: 540px) {
+  margin: 0;
+  position: absolute;
+  left: 51%;
+  bottom: 11%;
+}
+
+@media (min-width: 800px) {
+  left: 50%;
+  bottom: 13%;
+  font-size: 99px;
+}
 `
 
 export const SloganSubWrapper = styled.div`

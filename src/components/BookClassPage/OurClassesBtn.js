@@ -11,6 +11,11 @@ border-style: none;
 background-color: transparent;
 padding: 0;
 margin-bottom: 59px;
+
+@media (min-width: 800px) {
+  width: 412px;
+    height: 82px;
+}
 `
 
 const OCimg = styled.img`

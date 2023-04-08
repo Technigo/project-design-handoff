@@ -6,6 +6,11 @@ import joinBtnHover from '../../assets/button-join-hover.svg';
 
 const ButtonImage = styled.img`
 width: 132px;
+
+@media (min-width: 800px) {
+  width: 282px;
+  height: 96px;
+}
 `;
 
 const ButtonDiv = styled.div`
@@ -13,7 +18,8 @@ display: flex;
 height: 54.4%;
 max-height: 500px;
 align-items: flex-end;
-justify-content: flex-end;`
+justify-content: flex-end;
+`
 
 export const BtnJoin = () => {
   const [isHovered, setIsHovered] = useState(false);
