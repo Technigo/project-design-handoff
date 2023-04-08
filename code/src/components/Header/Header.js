@@ -23,17 +23,6 @@ const Header = () => {
     setIsHovering(false);
   };
 
-  /*
-  const handleSearchSlide = () => {
-    if (setIsClicked) {
-      setIsClicked(true);
-    }
-    else {
-      setIsClicked(false);
-    }
-  }
-  */
-
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
     window.addEventListener('resize', handleResize);
@@ -84,3 +73,14 @@ export default Header;
             <p className="search-text">Search</p>
           </div>
           */
+
+/*
+  const handleSearchSlide = () => {
+    if (setIsClicked) {
+      setIsClicked(true);
+    }
+    else {
+      setIsClicked(false);
+    }
+  }
+  */
