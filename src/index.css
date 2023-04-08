@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.swiper-container {
+  list-style: none;
+  width: 100%;
+}
+
+.pagination {
+  bottom: 0;
+  padding-bottom: 4px;
+}
+
+.slide {
+  text-align: center;
+  height: 100px;
+  line-height: 320px;
+  background: #364d79;
+  overflow: hidden;
+}
