@@ -50,4 +50,21 @@
     padding: 20px;
     margin-top:0;
    }
-  
+
+   @media (min-width: 640px) and (max-width: 1024px) {
+   .page-two-container{
+    height: 50vh;
+   }
+   .pt-cards{
+    height: 30vh;
+   }
+  }
+
+  @media (min-width: 1025px) {
+    .page-two-container{
+     height: 65vh;
+    }
+    .pt-cards{
+     height: 40vh;
+    }
+   }
