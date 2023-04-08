@@ -27,6 +27,20 @@ font-size: 79px;
 line-height: 96px;
 
 color: #025323;
+
+@media (max-width: 768px) {
+  font-size: 48px;
+  line-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 334px;
+  height: 334px;
+}
+
 `
 
 const Text = styled.p`
@@ -41,6 +55,21 @@ line-height: 168.52%;
 margin-left: 2em;
 
 color: #025323;
+
+@media (max-width: 768px) {
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 334px;
+  height: 334px;
+}
 `
 const BookButton = styled.button`
 display: flex;
@@ -60,6 +89,10 @@ border-radius: 15px;
 &:hover {
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    padding: 10px 30px;
+    margin-left: 0;
 `
 export const Hero = () => {
   return (

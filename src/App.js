@@ -1,4 +1,5 @@
 import React from 'react'
+import './reset.css';
 import { Hero } from 'components/Hero'
 import { Benefits } from 'components/Benefits'
 import { Membership } from 'components/Membership';
