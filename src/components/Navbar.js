@@ -53,6 +53,7 @@ export const MobileNavIcon = styled.div`
 
   @media (max-width: 768px) {
     display: block;
+    position: absolute;
     font-size: 1.2rem;
     color: #fff;
     margin-right: 2rem;
