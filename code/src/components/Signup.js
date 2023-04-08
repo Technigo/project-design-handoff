@@ -17,7 +17,7 @@ const SignupPageForm = () => {
       style={{ backgroundImage: "url('./assets/forminput.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: '80vh',
+        height: '100vh',
         position: 'absolute' }}>
 
       <h1><span className="highlighted-text">Book </span>&nbsp;a free trial</h1>
