@@ -1,6 +1,8 @@
 import React from 'react';
 import { Header } from 'components/Header/Header';
+import { PowYoga } from './components/Infotainer/PowerYoga';
 import { Classes } from './components/Classes/Classes';
+import { SpyStudio } from './components/Infotainer/Spys';
 import { Adress } from './components/Adress';
 import { ReviewTemp } from './components/Review/Review';
 import { SignUp } from './components/SignUp';
@@ -13,7 +15,9 @@ export const App = () => {
         <Header />
       </header>
       <main>
+        <PowYoga />
         <Classes />
+        <SpyStudio />
         <Adress />
         <ReviewTemp />
         <SignUp />
