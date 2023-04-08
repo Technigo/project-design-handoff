@@ -22,6 +22,10 @@ export const StickyNav = styled(Nav)`
     position: fixed;
     top: 0;
   }
+
+    @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled.a`
