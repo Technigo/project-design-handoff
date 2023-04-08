@@ -4,13 +4,13 @@ import styled from 'styled-components';
 const AdressImg = styled.div`
   display: flex;
   max-width: 422px;
-  height: 192px;
+  height: 182px;
   background-color: #66A1AE;
   margin: 8px 8px;
 
   img {
-    height: 192px;
-    width: 185px;
+    height: 182px;
+    width: 175px;
   }
 
   p {
