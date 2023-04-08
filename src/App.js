@@ -2,6 +2,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { Navbar } from 'components/Navbar';
+import { Benefits } from 'components/Benefits';
 import { Hero } from './components/Hero';
 
 export const App = () => {
@@ -16,6 +17,7 @@ export const App = () => {
         <Navbar />
         <Hero />
       </section>
+      <Benefits />
     </>
   )
 }
