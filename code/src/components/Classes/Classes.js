@@ -27,8 +27,11 @@ const Classes = ({ screenSize }) => {
         )}
         {!isMobile && (
           <div className="classes-section">
+            <hr className="first-line" />
             <Class screenSize={screenSize} level="Beginner" img={BeginnerImg} description={beginnerdescription} />
+            <hr className="class-divider" />
             <Class screenSize={screenSize} level="Intermediate" img={IntermediateImg} description={intermediatedescription} />
+            <hr className="class-divider" />
             <Class screenSize={screenSize} level="Expert" img={ExpertImg} description={expertdescription} />
           </div>
         )}

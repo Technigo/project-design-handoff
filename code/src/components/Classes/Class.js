@@ -8,7 +8,9 @@ const Class = ({ screenSize, img, level, description }) => {
   console.log(description)
   return (
     <div className="class-card">
-      <img src={img} alt="" />
+      <div className="class-img">
+        <img src={img} alt="" />
+      </div>
       <div className="class-text">
         <h2>{level}</h2>
         <p>{description}</p>
