@@ -53,6 +53,8 @@ img {
   position: absolute;
   transform: rotate(45deg);
   z-index: -1;
+  left: -40px;
+  object-fit: cover;
 }
 `
 
