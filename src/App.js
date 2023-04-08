@@ -3,7 +3,11 @@ import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { Navbar } from 'components/Navbar';
 import { Benefits } from 'components/Benefits';
+import { Membership } from 'components/Membership';
+import { Footer } from 'components/Footer';
+import { Contacts } from 'components/Contacts';
 import { Hero } from './components/Hero';
+import { ReviewsSlider } from './components/ReviewsSlider';
 
 export const App = () => {
   const GlobalStyle = createGlobalStyle`
@@ -18,6 +22,10 @@ export const App = () => {
         <Hero />
       </section>
       <Benefits />
+      <Membership />
+      <ReviewsSlider />
+      <Contacts />
+      <Footer />
     </>
   )
 }

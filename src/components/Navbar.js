@@ -1,9 +1,9 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
 import styled from 'styled-components';
-import logoImage from './Logo.png';
-import lookingGlass from './search.svg';
-import hamburgerMenu from './hamburger.svg';
+import logoImage from '../assets/Logo.png';
+import lookingGlass from '../assets/Search.svg';
+import hamburgerMenu from '../assets/Hamburger.svg';
 
 const Nav = styled.nav`
   display: flex; 

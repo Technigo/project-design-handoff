@@ -1,9 +1,9 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
-import YogaPic from './yogaPic.png';
-import Blob from './Blob.png';
-import Vector from './Vector.png'
+import yogaPic from '../assets/YogaPic.png';
+import Blob from '../assets/Blob.png';
+import Vector from '../assets/Vector.png'
 
 const BenefitsWrapper = styled.div`
   display: flex;
@@ -117,7 +117,7 @@ export const Benefits = () => {
       </Text>
       <ImageDiv>
         <Overlay>
-          <YogaWrapper src={YogaPic} alt="yoga" />
+          <YogaWrapper src={yogaPic} alt="yoga" />
           <VectorWrapper src={Vector} alt="vector" />
         </Overlay>
       </ImageDiv>
