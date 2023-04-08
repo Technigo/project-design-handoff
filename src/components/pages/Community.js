@@ -13,7 +13,7 @@ export const Community = () => {
         <Headline2>Sign up & join our community to get started today</Headline2>
         <InnerContainer grid workoutsbox flexcolumn>
           <ImgCardLarge style={{ backgroundImage: 'linear-gradient(6.08deg, #DCD2F1 7.04%, rgba(255, 255, 255, 0)  50.17%), url("./images/community-yoga.jpg")' }} workouts />
-          <InnerContainer flexcolumn padding="0 44px">
+          <InnerContainer flexcolumn padding="0 44px" formpadding>
             <Headline2>Create account</Headline2>
             <Form>
               <TextInputBox>

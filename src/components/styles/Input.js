@@ -23,6 +23,10 @@ export const TextInput = styled.input`
     height: 64px;
     width: 100%;
     box-sizing: border-box;
+
+     @media (max-width: 768px) {
+       height: 48px;
+  }
 `
 export const TextInputBox = styled.div`
     position: relative;

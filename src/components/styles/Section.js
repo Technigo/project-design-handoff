@@ -36,7 +36,7 @@ export const OuterContainer = styled.div`
     @media (max-width: 768px) {
         left: ${(props) => (props.hero ? '40px' : '0')};
         top: ${(props) => (props.hero ? '150px' : '0')};
-        gap: ${(props) => (props.hero ? '30px' : '')};
+        gap: ${(props) => (props.hero ? '40px' : '')};
   }
 `
 
@@ -71,6 +71,7 @@ export const InnerContainer = styled.div`
       grid-template-columns: ${(props) => (props.benefitsgrid ? 'repeat(1,1fr)' : '')};
        grid-template-rows: ${(props) => (props.benefitsgrid ? 'repeat(4,1fr)' : '')};
        flex-direction: ${(props) => (props.workoutscolumn ? 'column' : '')};
+       padding: ${(props) => (props.formpadding ? '16px' : '')};
   }
 `
 

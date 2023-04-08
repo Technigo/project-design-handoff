@@ -48,7 +48,7 @@ export const ButtonCommunity = styled.button`
         padding: 0;
         
         @media (max-width: 768px) {
-                
+        height: 48px;
        width: ${(props) => (props.iconBtn ? '100%' : '')};
   }  
 `;
