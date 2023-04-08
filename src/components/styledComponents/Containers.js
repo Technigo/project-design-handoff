@@ -33,7 +33,6 @@ border-color:${(props) => props.borderColor || ''};
     justify-content:center;
     padding:${(props) => (props.pickPosition ? '50px' : '')};
   }
-
 `
 
 export const UnorderedList = styled.ul`
@@ -43,13 +42,12 @@ padding:10px 0;
 text-align:center;
 width:70%;
 `
-
 export const ContainerForMobile = styled.div`
 overflow: visible;
 box-sizing: border-box;
 height:${(props) => props.height || '100%'};
 width:${(props) => props.width || '100%'};
-max-width:${(props) => props.maxWidth || '100%'};
+max-width:${(props) => props.maxWidth || '300px'};
 display:${(props) => (props.visible ? 'none' : 'flex')};
 flex-direction:${(props) => props.flexDirection || 'column'};
 justify-content: ${(props) => props.justifyContent || 'flex-start'};
@@ -59,7 +57,6 @@ background:${(props) => props.background};
 border:${(props) => props.border || ''};
 border-radius:${(props) => props.borderRadius || 'none'};
 padding:${(props) => props.padding || '0px 8px 8px 8px'};
-
   @media (min-width: 1024px) {
     display:none;
     overflow: hidden;
@@ -136,7 +133,6 @@ box-sizing: border-box;
 
   }
   `
-// column->row->column
 export const PickYourPositionContainer = styled.div`
 display:flex;
 position:relative;

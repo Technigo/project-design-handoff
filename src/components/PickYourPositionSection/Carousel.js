@@ -15,10 +15,12 @@ export const Carousel = () => {
     slidesToShow: 2,
     slidesToScroll: 2,
     arrows: false,
-    swipe: true
+    swipe: true,
+    useKeyboardArrows: true,
+    infiniteLoop: true
   };
   return (
-    <Slider {...settings} style={{ width: '100vw', background: '#19737F' }}>
+    <Slider {...settings} style={{ width: '375px', background: '#19737F' }}>
       <PositionImageContainer>
         <PositionImage src={DesktopcardsPivot} />
       </PositionImageContainer>

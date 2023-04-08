@@ -11,11 +11,8 @@ align-items:center;
 `;
 
 export const Logo = styled.img`
-width:5.5em;
 height:2.8em;
-/* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25)); */
   @media (min-width: 1024px) {
-  width:7.5em;
   height:3.6em;
   }
 `;
@@ -28,18 +25,25 @@ align-self:center;
   @media (min-width: 1024px) {
   height:2.5em;
   }
-   @media (min-width: 1444px) {
+   @media (min-width: 1440px) {
   display:none;
   }
 `;
 
 export const NavbarOptions = styled.div`
-display:${(props) => (props.show ? 'flex' : 'none')};
-flex-direction:column;
+/* display:${(props) => (props.show ? 'flex' : 'none')}; */
+display:none;
+@media (min-width: 1440px) {
+display:flex;
+flex-direction:row;
+color: #F7FEFF;
+gap:3em;
+}
+
 `;
 
-export const NavbarOption = styled.div`
-font-size:0.8rem;
+export const NavbarOption = styled.a`
+font-size:1.3rem;
 `;
 
 export const ContainerNavbar = styled.div`

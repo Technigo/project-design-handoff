@@ -22,7 +22,7 @@ export const BenefitsSection = () => {
       <SectionTitle>Benefits of fit2Derby</SectionTitle>
       <BenefitContainer>
         <CardText color="#F7FEFF">All our programs includes
-          <Highlight cta>exercises to increase your endurance and
+          <Highlight cta> exercises to increase your endurance and
             agility as well as strengthening
             your neck muscles, core and lower body
           </Highlight>,

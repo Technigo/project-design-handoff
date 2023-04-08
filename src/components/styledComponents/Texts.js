@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Paragraph = styled.p`
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: ${(props) => props.color || 'black'};
+color:#F7FEFF;
 max-width:84%;
 padding:2%;
 font-size: 2vh;
@@ -12,7 +12,7 @@ display:inline-block;
 box-sizing: border-box;
 text-shadow: 0px 3.13103px 3.13103px rgba(0, 0, 0, 0.25);
   @media (min-width: 1024px) {
-      color:#ffffff;
+      color:#F7FEFF;
       font-weight: 300;
       font-size:2.5vh;
   }
@@ -20,6 +20,7 @@ text-shadow: 0px 3.13103px 3.13103px rgba(0, 0, 0, 0.25);
 
 export const ParagraphHidden = styled.p`
 max-width:84%;
+color:#F7FEFF;
 font-size: 1.25em;
 line-height: 1.2em;
 font-weight: 500;
@@ -78,7 +79,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 color: ${(props) => props.color || 'black'};
 font-weight: 600;
 font-size: 1.2em;
-padding:10px;
+padding: 5px 10px;
 line-height:20px;
 align-self: flex-start;
 `
@@ -90,7 +91,7 @@ color:${(props) => props.color || '#27363D'};
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 color: ${(props) => props.color || 'black'};
 width:${(props) => props.width};
-padding:20px;
+padding: 10px;
 background:${(props) => props.background};
 border-radius: 23px 23px 0px 23px;
 align-self:${(props) => props.alignSelf};

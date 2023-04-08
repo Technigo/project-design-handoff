@@ -25,16 +25,15 @@ export const PickYourPositionSection = () => {
           <CardText>
             <Highlight color="#002A30">Pick a position to access programs tailored to
             your favoured role on the track.
-            </Highlight>
-            Programs vary in focus, such as more endurance for jammers and strength for blockers.
+            </Highlight> Programs vary in focus, such as more endurance for
+            jammers and strength for blockers.
             All programs prioritize safety and success on and off the track.
           </CardText>
         </FlexContainer>
         <FlexContainer borderRadius="0px 23px 23px 23px" background="#EDFDFF" width="91%" padding="0px 8px 8px 0px">
           <CardText background="#EDFDFF" width="77%" alignSelf="stretch">
             <Highlight color="#002A30">Referee, NSO or new to the game?
-            </Highlight>
-            Try FRENeSO. A well-rounded program to prevent injuries
+            </Highlight> Try FRENeSO. A well-rounded program to prevent injuries
             and prepare you for the track's intensity.
           </CardText>
         </FlexContainer>

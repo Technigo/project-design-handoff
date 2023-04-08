@@ -29,7 +29,6 @@ export const HeaderSection = () => {
             <NavbarOption>Price plans</NavbarOption>
             <NavbarOption>Contact us</NavbarOption>
           </NavbarOptions>
-
           <Button fontSize="0.8em" width="80px" login>Log in</Button>
         </ContainerNavbar>
       </Navbar>
