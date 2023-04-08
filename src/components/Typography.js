@@ -45,6 +45,11 @@ media (min-width: 667px) {
   font-size: 3rem;
 }
 `
+export const TitleFooter = styled(TitleSection)`
+font-size: 2.25rem;
+line-height: 36px;
+`
+
 export const Detailtext = styled.h5`
 font-style: normal;
 font-weight: 500;
@@ -66,7 +71,6 @@ width: 91.8%;
   height: 20.5%;
 }
 `
-
 export const Pbold = styled.p`
 font-style: normal;
 font-weight: 800;
@@ -75,6 +79,9 @@ line-height: 99.52%;
 `
 export const Pregular = styled(Pbold)`
 font-weight: 400;
+line-height: 19px;
+`
+export const Pfooter = styled(Pbold)`
 line-height: 19px;
 `
 
@@ -93,4 +100,9 @@ line-height: 29px;
 `
 export const BookButtonP = styled(IntroButtonP)`
 font-size: 1.25rem;
+line-height: 24px;
+`
+export const FooterContactSubtitles = styled(BookButtonP)`
+font-weight: 800;
+line-height: 24px;
 `

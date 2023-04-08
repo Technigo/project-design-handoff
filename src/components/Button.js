@@ -24,6 +24,11 @@ height: 48px;
   width: 40%;
 }
 `
+export const FooterButton = styled(StyledButtonHeader)`
+height: 53px;
+width: 38.97%;
+`
+
 export const CardButton = styled(IntroButton)`
 height: 53px;
 background-color: #4E80D5;
