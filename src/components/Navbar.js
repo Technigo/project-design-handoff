@@ -1,16 +1,25 @@
 import styled from 'styled-components';
 
+export const DesktopNavItems = styled.div`
+display:block;
+`;
+
+export const MobileQuery = styled(DesktopNavItems)`
+ @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
 export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #03092E; */
-  background-color: transparent;
-  color: #fff;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: #E3F7FC;
   height: 5rem;
   padding: 0 2rem;
-  width: 100%;
   z-index: 1;
+  width: 90%;
 `;
 
 export const StickyNav = styled(Nav)`
@@ -22,17 +31,12 @@ export const StickyNav = styled(Nav)`
     position: fixed;
     top: 0;
   }
-
-    @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const NavItem = styled.a`
   font-size: 1.2rem;
-
   text-decoration: none;
-  color: #fff;
+  color: #E3F7FC;
   margin-right: 2rem;
   cursor: pointer;
 
@@ -55,8 +59,8 @@ export const MobileNavIcon = styled.div`
     display: block;
     position: absolute;
     font-size: 1.2rem;
-    color: #fff;
-    margin-right: 2rem;
+    color: #E3F7FC;
     cursor: pointer;
+    margin-right: -15rem;
   }
 `;

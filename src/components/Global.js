@@ -14,6 +14,7 @@ export const Button = styled.button`
 export const TopRightButton = styled(Button)`
    top: 1.25rem; 
    right: 0.25rem;
+   margin-left: 2rem;
 `;
 
 export const BottomCenterButton = styled(Button)`
@@ -22,14 +23,40 @@ export const BottomCenterButton = styled(Button)`
 
 export const Logo = styled.img`
   width: 15vh;
+  margin-right: auto;
 `;
 
 export const TopLeftLogo = styled(Logo)`
+   margin-right: 20rem;
+   position: relative;
+
+   @media screen and (max-width: 768px) {
+   margin-left: 5rem;
+   width: 15vh;
+  }
+`;
+
+export const TopLogo = styled(Logo)`
    top: 0.8rem; 
-   margin-right: 30rem;
+   margin: auto;
    position: relative;
 `;
 
 export const BottomLeftLogo = styled(Logo)`
-  margin-top: 0;
+  margin: 0;
 `;
+
+// export const SocialIcons = styled.img`
+//   position:relative;
+//   margin-top: -190px;
+//   margin-left: 160px;
+//   display: flex;
+//   width: 30px;
+//   height: 30px;
+//   gap: 8px;
+// `;
+
+// export const facebookIcon = styled(SocialIcons)`
+//   width: 30px;
+//   height: 30px;
+// `;

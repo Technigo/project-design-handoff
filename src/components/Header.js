@@ -2,15 +2,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import classNames from 'classnames';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass, faBars } from '@fortawesome/free-solid-svg-icons';
 import useSticky from './useSticky';
 import { TopRightButton, BottomCenterButton, TopLeftLogo } from './Global';
-import { StickyNav, NavItem, MobileNavIcon } from './Navbar';
+import { MobileQuery, StickyNav, NavItem, MobileNavIcon } from './Navbar';
 import heroImage from '../assets/hero.jpg';
 import logo from '../assets/logo.svg';
-/* <FontAwesomeIcon icon="fa-sharp fa-regular fa-magnifying-glass" /> */
-/* <FontAwesomeIcon icon="fa-sharp fa-light fa-xmark" /> */
 
 const HeaderContainer = styled.div`
 width: 100%;
@@ -28,9 +26,7 @@ const HeroContainer = styled.div`
 
   @media screen and (max-width: 768px) {
   min-height: 100vh;
-  width: 100%;
   background-position: left;
-  padding: 2rem;
 }
  @media screen and (min-width: 1440px) {
     min-height: 80vh;
@@ -46,12 +42,12 @@ const HeroContainer = styled.div`
 const TitleContainer = styled.div`
 position: absolute;
 width: 15%;
-margin-top: 15%;
+margin-top: 20%;
 color: #E3F7FC;
 padding-left: 2rem;
 
 @media screen and (max-width: 768px) {
-    width: 65%;
+    width: 100%;
     padding: 0 3rem; /* Add padding to adjust the spacing */
     flex-direction: column; /* Display as a column */
     align-items: flex-end;
@@ -59,6 +55,7 @@ padding-left: 2rem;
     transform: translateX(-40%);
     font-size: 0.5rem;
     text-align: left;
+    margin: 6rem 4rem;
   }
 `;
 
@@ -71,9 +68,9 @@ bottom: 0;
 color: #E3F7FC;
 
 @media screen and (max-width: 768px) {
-    width: 60%; 
+    width: 80%; 
+    max-width: 100%;
     margin-left: 5%;
-    margin-top: 5%;
     flex-direction: column;
     color: #E3F7FC;
     text-align: left;
@@ -92,7 +89,7 @@ margin-bottom: 4rem;
 @media screen and (max-width: 768px) {
     margin-left: 7rem;
     word-wrap: break-word;
-    font-size:2rem;
+    font-size:1.5rem;
     line-height: 1;
   }
  @media screen and (min-width: 1440px) {
@@ -113,11 +110,10 @@ margin-top: 1rem;
 `;
 
 const ButtonAndTextContainer = styled.div`
-display: flex;
-width: 100%;
-gap: 20px;
-font-weight: bold;
-margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 6rem;
 
 @media screen and (max-width: 768px) {
   gap: 0;
@@ -128,22 +124,25 @@ margin-bottom: 2rem;
 `
 
 const UserAndTrainerText = styled.div`
-display: flex;
+    display: flex;
+    gap: 20px;
+
 @media screen and (max-width: 768px) {
   display: flex;
+  font-size: 1rem;
 }
 `
 const UserText = styled.p`
-font-size: 20px;
+font-size: 1rem;
 
 @media screen and (max-width: 768px) {
   font-weight: normal;
-  margin-right: 0.47rem;
+  gap: 20px;
 }
 `;
 
 const TrainerText = styled.p`
-font-size: 20px;
+font-size: 1rem;
 flex-grow: 1;
 
 @media screen and (max-width: 768px) {
@@ -153,13 +152,13 @@ flex-grow: 1;
 
 const ActiveUsers = styled.span`
  display: block;
- font-size: 22px;
+ font-size: 1rem;
  flex-grow: 1;
 `;
 
 const ActiveTrainers = styled.span`
  display: block;
- font-size: 22px;
+ font-size: 1rem;
  flex-grow: 1;
 `;
 
@@ -180,20 +179,21 @@ const Header = () => {
   return (
     <HeaderContainer>
       <StickyNav ref={stickyRef} className={classNames({ sticky })}>
-        <div>
-          <TopLeftLogo src={logo} alt="logo" />
-          <MobileNavIcon>
-            {/* <FontAwesomeIcon icon={faBars} /> */}
-          </MobileNavIcon>
+        <TopLeftLogo src={logo} alt="logo" />
+        <MobileNavIcon>
+          <FontAwesomeIcon icon={faBars} />
+        </MobileNavIcon>
+        <MobileQuery>
           <NavItem href="#">Services</NavItem>
           <NavItem href="#">Coaches</NavItem>
           <NavItem href="#">About</NavItem>
           <NavItem href="#">Shop</NavItem>
           <NavItem href="#">Club</NavItem>
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
           <TopRightButton>Try for Free</TopRightButton>
-        </div>
+        </MobileQuery>
       </StickyNav>
-      <HeroContainer image={heroImage}>
+      <HeroContainer image={heroImage} alt="background image">
         <TitleContainer>
           <Title text="Online Healthy Diet Strong Body" />
         </TitleContainer>
