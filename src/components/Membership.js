@@ -50,6 +50,14 @@ const Title = styled.h1`
   color: #025323;
   margin-top: 46px;
   padding: 0 10px;
+  @media (min-width: 992px){
+    font-size: 54px;
+    line-height: 65px;
+  }
+  @media (min-width: 600px){
+    font-size: 42px;
+    line-height: 51px;
+  }
 `;
 
 const Content = styled.p`
@@ -59,6 +67,12 @@ const Content = styled.p`
   font-size: 18px;
   line-height: 167.5%;
   text-align: center;
+  @media (min-width: 992px){
+    font-size: 22px;
+    line-height: 167.5%; 
+
+  }
+
 
 `;
 export const Image = styled.img`
@@ -81,33 +95,57 @@ const Wrapper = styled.div`
   width: 288.54px;
   padding-left: 16px;
   margin-bottom: 25px;
+  @media (min-width: 992px){
+    padding-left: 35px;
+  }
+  @media (min-width: 600px){
+    padding-left: 30px;
+    
+  }
 `
 const Header = styled.h2`
   font-family: 'Libre Franklin';
   font-style: normal;
   font-weight: 600;
-  font-size: 18.5071px;
+  font-size: 18px;
   line-height: 22px;
   color: #025323;
+  @media (min-width: 992px){
+    font-size: 22px;
+    line-height: 27px;  
+  }
 
 `;
 const Access = styled.p`
   font-family: 'Libre Franklin';
   font-style: normal;
   font-weight: 500;
-  font-size: 9.25353px;
+  font-size: 9px;
   line-height: 11px;
   color: #025323;
   margin:0px;
+  @media (min-width: 992px){
+    font-size: 11px;
+    line-height: 13px;
+    
+  }
+  @media (min-width: 600px){
+    font-size: 10px;
+    line-height: 12px;
+  }
 `;
 const Price = styled.p`
   font-family: 'Libre Franklin';
   font-style: normal;
   font-weight: 500;
-  font-size: 12.2091px;
+  font-size: 12px;
   line-height: 15px;
   color: #000000;
   margin-right: 10px;
+  @media (min-width: 992px){
+    font-size: 16px;
+    line-height: 19px;
+  }
 
 `;
 const Button = styled.button`
@@ -120,6 +158,21 @@ const Button = styled.button`
   border-radius: 15px;
   text-align: center;
   color: #FFFFFF;
+
+  @media (min-width: 600px){
+    width: 244px;
+    height: 55px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px; 
+  }
+  @media (min-width: 992px){
+    width: 244px;
+    height: 59px; 
+    margin-bottom :7px;
+  }
 `;
 
 const ArrowButtonLeft = styled.button`
@@ -134,6 +187,11 @@ const ArrowButtonLeft = styled.button`
   position:absolute;
   top: 60%;
   left: 15px;
+  @media (min-width: 600px){}
+  @media (min-width: 992px){
+    top: 40%;
+    left: 25%;
+  }
 `;
 
 const ArrowButtonRight = styled.button`
@@ -145,9 +203,14 @@ const ArrowButtonRight = styled.button`
   justify-content: center;
   align-items: center;
   margin: auto;
-  position:absolute;
+  position: absolute;
   top: 60%;
   right: 15px;
+  @media (min-width: 600px){}
+  @media (min-width: 992px){
+    top: 40%;
+    right: 25%;
+  }
 `;
 const OptionalContainer = styled.div`
   @media (min-width: 992px){
@@ -166,12 +229,13 @@ const OptionalContainer = styled.div`
 const ClassWrapper = styled.div`
    display: flex;
    flex-direction: row;
+   position: relative;
    
 `
 const Class = styled.div`
   @media (min-width: 992px){
-  Width: 311.13px;
-  Height: 460.8px;
+    Width: 311.13px;
+    Height: 460.8px;
   }
   @media (min-width: 600px){
     width: 262.64px;
@@ -232,26 +296,38 @@ export const Membership = () => {
        <ClassWrapper>
           <Class>
             <Image src={items[0].image} alt="carousel item" />
-            <Header>{items[0].header}</Header>
-            <Access>{items[0].access}</Access>
+            <Wrapper>
+              <Header>{items[0].header}</Header>
+              <Access>{items[0].access}</Access>
+            </Wrapper>
             <Price>{items[0].price}</Price>
             <Button type="button">Buy Now</Button>
         </Class>
         <Class>
             <Image src={items[1].image} alt="carousel item" />
-            <Header>{items[1].header}</Header>
-            <Access>{items[1].access}</Access>
+            <Wrapper>
+              <Header>{items[1].header}</Header>
+              <Access>{items[1].access}</Access>
+            </Wrapper>
             <Price>{items[1].price}</Price>
             <Button type="button">Buy Now</Button>
         </Class>
         <Class>
             <Image src={items[2].image} alt="carousel item" />
-            <Header>{items[2].header}</Header>
-            <Access>{items[2].access}</Access>
+            <Wrapper>
+              <Header>{items[2].header}</Header>
+              <Access>{items[2].access}</Access>
+            </Wrapper>
             <Price>{items[2].price}</Price>
             <Button type="button">Buy Now</Button>
           </Class>
        </ClassWrapper> 
+       <ArrowButtonLeft onClick={handlePrevClick}>
+        <img src={Leftarrow} alt="left"/>
+       </ArrowButtonLeft>
+       <ArrowButtonRight onClick={handleNextClick}>
+        <img src={Rightarrow} alt="right"/>
+       </ArrowButtonRight>
     </OptionalContainer>
     </>
   );
