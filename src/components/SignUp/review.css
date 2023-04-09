@@ -1,24 +1,19 @@
 
 .review-container{
-    width: 380px;
+    width: 310px;
     padding-top: 20px; 
     margin-bottom: 50px;
 }
-
-.react-awesome-slider {
-    background-color: #f0f0f0;
-  }
   
 
 .review-card {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 190px;
-  max-width: 330px;
+  height: 230px;
+  max-width: 310px;
   background-color: #4796A8;
   padding: 10px 30px;
-  border-radius: 13px;
 }
 
   img {
