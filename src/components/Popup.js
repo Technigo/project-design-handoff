@@ -82,6 +82,12 @@ align-items: center;
   }
 `
 const SecondRow = styled.div`
+display: flex;
+width: 100%;
+flex-direction: column;
+gap: 1rem;
+margin-bottom: 1rem;
+
   @media (min-width: 768px) {
     grid-row: 2;
     grid-column: 1 / span 2;
