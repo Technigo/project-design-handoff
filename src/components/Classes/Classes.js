@@ -23,7 +23,6 @@ export const Classes = () => {
         </ArrowDown>
       </div>
       <div className="yoga-container">
-        <h3>Power yoga 60</h3>
         <Slider />
       </div>
     </>

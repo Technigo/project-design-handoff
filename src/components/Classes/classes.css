@@ -13,6 +13,33 @@
     padding-bottom: 10px;
   }
 
-  .yoga-container h3{
+.yoga-container h3{
     padding-bottom: 8px;
-  }
+    text-align: center;
+}
+
+.yoga-style img {
+  width: 200px;
+  height: 200px;
+}
+
+.awssld__content {
+  background-color: transparent;
+}
+
+.awssld {
+  --organic-arrow-thickness: 3px;
+  --organic-arrow-height: 13px;
+  --slider-height-percentage: 60%;
+  --loader-bar-color: #fff;
+  --loader-bar-height: 1px;
+  --organic-arrow-color: #000;
+}
+
+.awssld__controls__arrow-right {
+  left: -50px;
+}
+
+.awssld__controls__arrow-left {
+  right: -50px;
+}
