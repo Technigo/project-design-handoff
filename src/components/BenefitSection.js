@@ -1,34 +1,51 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
+import { GreenYellowHeader, SectionHeadlines } from './SectionHeadlines';
+import { TextOnGreen, Highlight } from './Header.styled';
 
-/* const BenefitsContainer = styled.div`
-background-color: #004852;
+const BenefitsContainer = styled.div`
 width: 90%;
+height: 100%;
+background: #045661;
+border: 3px solid black;
+padding: 1rem;
+background-color: #045661;
 margin-left: auto;
 margin-right: auto;
+border-radius: rem;
 
-`; */
 
-export const GreenYellowHeader = styled.div`
-  font-family: 'Permanent Marker', cursive;
-  color: #FFE600;
-padding: 3px 73px 7px 34px;
- margin: 0 2rem 5rem 0px;
-  height: 58px;
-  background: #096B78;
-  border-bottom: 5px solid #004852;
-  border-top: 5px solid #004852;
-  border-radius: 0px 0px 100px 13px;
-  font-size: 40px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// Tablet (between 1024px and 1440px)
+@media(min-width: 1024px) {
+    display: flex;
+    align-items: baseline;
+
+}
+
+// Desktop (1440px and larger) 
+@media(min-width: 1441px) {
+
+}
 `;
 
+const ExampleWrapper = styled.div`
+border: 2px solid whithe;
+margin: 2rem;
+max-width: 90%;
+`
 const BenefitSection = () => {
   return (
+    <>
+      <GreenYellowHeader>Benefits</GreenYellowHeader>
+      <BenefitsContainer>
+        <TextOnGreen>All our programs includes <Highlight>exercises to increase your endurance and agility as well as strengthening your neck muscles, core and lower body</Highlight>, all to prevent injuries and optimise your skating, blocking, juking and overall playing skills</TextOnGreen>
+        <ExampleWrapper>
+          <SectionHeadlines>EXAMPLES OF EXERCISES</SectionHeadlines><TextOnGreen><span> * </span> <strong>High Intensity Interval Training (HIIT)<br /><br /> <span> * </span> Mobility training </strong>such as yoga movements for stretching and stability <br /><br /><span> * </span><strong>Recommendations</strong> on gym classes and exercises involving gym equipment</TextOnGreen>
+        </ExampleWrapper>
+      </BenefitsContainer>
 
-    <GreenYellowHeader>Benefits</GreenYellowHeader>
-
+    </>
   )
 }
 

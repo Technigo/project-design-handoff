@@ -18,9 +18,9 @@ align-items: center;
 gap: 15px;
 height: 100%;
     @media (min-width: 1025px) {
- padding: 10vw;
- display: flex;
- width: 100%;
+
+ 
+ 
 }
 `;
 export default HeaderContainer;

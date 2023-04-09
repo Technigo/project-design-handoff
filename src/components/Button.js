@@ -18,7 +18,8 @@ font-size: ${(props) => props.fontSize || '16px'};
     background-color: grey;
 }
  @media (min-width: 1024px) {
-    width: ${(props) => (props.login ? '50%' : '212px')};
+ 
+    width: ${(props) => (props.login ? '10%' : '212px')};
     font-size: ${(props) => (props.login ? '16px' : '20px')};
   }
 `;

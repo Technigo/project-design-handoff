@@ -47,16 +47,17 @@ display:${(props) => (props.mobile ? 'flex' : 'none')};
 }
 `;
 
-const TextOnGreen = styled.p`
-max-width: 360px;
+export const TextOnGreen = styled.p`
+max-width: ${(props) => (props.mobile ? '360px' : 'none')};
 padding: 0 24px;
 font-size: 16px;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: -0.022em;
-display:${(props) => (props.mobile ? 'inline-block' : 'none')};
+/* display:${(props) => (props.mobile ? 'inline-block' : 'none')}; */
 box-sizing: border - box;
 text-shadow: 0px 3.13103px 3.13103px rgba(0, 0, 0, 0.25);
+color: white;
 
 @media(min-width: 1024px) {
   display:${(props) => (props.mobile ? 'none' : 'block')};
@@ -67,7 +68,7 @@ text-shadow: 0px 3.13103px 3.13103px rgba(0, 0, 0, 0.25);
 }
 `;
 
-const Highlight = styled.span`
+export const Highlight = styled.span`
 color:#FFE600;
 font-weight:500;
 `;
