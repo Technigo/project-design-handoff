@@ -1,13 +1,17 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The first ever colab with our fellow UX-students. We were handed over a design from them for us to make a landing page.
+Here is the design in figma: https://www.figma.com/file/cIZhyKb4F8qR0pYeeieAFJ/Gracious-Movement---Elin?node-id=52-251&t=TjSw0IlDRwu4HTUc-0
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started with the mind-set of creating one component at a time and make them all responsive at first, but I forgot about that and did almost the entire mobile-site. That was not a big problem.
+
+New for this project was working entirely with Styled components witch was a bit challenging at first, but when I got a hang of it it floated smooth.
+
+I had real trouble with the carousel-part and fixed it with a side-scroll instead. My lack of energy made me take the easy way out this time.
+There are still some animations that are left to be done, but for some other time.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://tbl-gracious-movement.netlify.app/
