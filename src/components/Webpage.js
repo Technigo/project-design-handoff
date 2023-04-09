@@ -59,7 +59,8 @@ const WebPage = () => {
         buttonText="Load more"
         onClick={() => console.log('Button clicked!')} />
       <Plan
-        title="Choose your plan"
+        title1="Choose your plan"
+        title2="Become a fit parent"
         buttonsTexts={planButtonsTexts}
         buttonText="Create account"
         finishingText="Already have an account? Login"

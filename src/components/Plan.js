@@ -2,10 +2,10 @@
 import React from 'react';
 import '../index.css'
 
-const Plan = ({ title, buttonsTexts, buttonText, finishingText, onClick }) => {
+const Plan = ({ title1, title2, buttonsTexts, buttonText, finishingText, onClick }) => {
   return (
     <section className="plan-section">
-      <h2>{title}</h2>
+      <h2>{title1}</h2>
       <div className="plan-buttons">
         {buttonsTexts.map((text) => (
           <button type="button" key={text} className="plan-button">
@@ -15,6 +15,7 @@ const Plan = ({ title, buttonsTexts, buttonText, finishingText, onClick }) => {
         ))}
       </div>
       <form className="plan-form">
+        <h3>{title2}</h3>
         <div className="plan-form-name">
           <label htmlFor="firstName">First name</label>
           <input type="text" id="firstName" />
