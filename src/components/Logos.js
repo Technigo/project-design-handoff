@@ -12,7 +12,7 @@ const Logo = styled.div`
 
     img {
         height: 48px;
-        padding-top: 10px;
+        padding-top: 13px;
     }
     @media (max-width: 894px) {
         display: flex;

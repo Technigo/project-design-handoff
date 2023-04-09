@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const AdressImg = styled.div`
   display: flex;
-  max-width: 422px;
+  width: 95vw;
+  max-width: 424px;
   height: 182px;
   background-color: #66A1AE;
   margin: 8px 8px;
@@ -23,10 +24,10 @@ const AdressImg = styled.div`
     color: #fff;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     height: 226px;
     width: 760px;
-    margin: 22px 0;
+    margin: 18px 0;
 
     img {
     height: 226px;

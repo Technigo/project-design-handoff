@@ -5,10 +5,11 @@ import { LogoIcon, LogoText } from '../Logos'
 const Logo = styled.div`
     background-color: #2E160E;
     color: #fff;
+    padding-top: 20px;
 
     img {
         height: 48px;
-        padding-top: 20px;
+        padding-top: 0;
     }
 
     hr {
@@ -24,7 +25,7 @@ const NavFoot = styled.div`
       display: flex;
       gap: 3rem;
       list-style: none;
-      margin: 10px 0 0;
+      margin: 20px 0  0 10px;
     }
 
     a {
