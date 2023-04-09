@@ -18,6 +18,7 @@
   font-weight: 500; 
   font-size: 48px; 
   color: #E4A195;
+  margin-bottom: 100px; 
 }
 
 .testimonial-cards {
@@ -73,10 +74,13 @@
   }
 
   .testimonial-card img {
-    width: 505px; 
+    width: auto; 
     height: 380px;
     object-fit: cover; 
     overflow:hidden; 
+  }
+  .testimonial-text-card {
+    margin: 0; 
   }
 
 }
@@ -112,4 +116,8 @@
     overflow:hidden; 
     object-fit: cover;
   }
+
+.testimonial-text-card {
+  margin: 0; 
+}
 }

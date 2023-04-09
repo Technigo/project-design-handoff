@@ -6,7 +6,7 @@ export const NavBar = () => {
       <div className="nav-container">
         <div className="logo-and-title">
           <img alt="logo" className="logo" src="./assets/Union.svg" />
-          <h1>fit parent</h1>
+          <h1>fit parents</h1>
         </div>
         <div className="nav-links">
           <img alt="nav-img" className="nav-img" src="./assets/Dads.svg" />
