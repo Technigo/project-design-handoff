@@ -1,0 +1,14 @@
+.achieve-container {
+    background-color: #181818;
+    background-image: url(../assets/paw.svg);
+    background-repeat:no-repeat;
+    background-position: right 380px top 10px;
+    background-size: 20%;
+}
+
+@media (min-width:668px) and (max-width:1023px) {
+    .achieve-container {
+        background-position: right 170px top 10px;
+        background-size: 30%;
+   }
+}
