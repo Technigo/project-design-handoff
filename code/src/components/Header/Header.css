@@ -1,9 +1,12 @@
 .Header {
+    /*width: calc(100% - 32px);*/
+    /*width: 100vw;*/
     width: calc(100% - 32px);
     position: absolute;
     z-index: 3;
     top: 0;
     left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,6 +96,8 @@
   
   @media (min-width: 641px) {
     .Header {
+    /*width: calc(100% - 64px);
+      width: 100vw;*/
       width: calc(100% - 64px);
       margin: 32px 32px;
     }
@@ -100,7 +105,9 @@
 
   @media (min-width: 1025px) {
     .Header {
-      width: calc(100% - 128px);
-      margin: 32px 64px;
+    /*width: calc(100% - 128px);
+    width: 100%;*/
+    width: calc(100% - 128px);
+    margin: 32px 64px;
     }
   }
