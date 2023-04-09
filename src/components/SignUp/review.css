@@ -7,17 +7,21 @@
 
 .awssld__content {
     background-color: #66A1AE;
-  }
+}
 
-  .awssld__bullets button {
+.awssld__bullets button {
     height: 4px;
     width: 4px;
     background: lightgray;   
-  }
+}
   
-  .awssld__bullets .awssld__bullets--active {
+.awssld__bullets .awssld__bullets--active {
     background: white;
-  }
+}
+
+.awssld__bullets {
+    bottom: -25px;
+}
 
 .review-card {
   display: flex;
