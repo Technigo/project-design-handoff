@@ -13,10 +13,10 @@ code {
 }
 
 .section1 {
-  background-image: url("C:\Users\ajmal\Desktop\code\project-design-handoff\public\images\Hero.jpg");
+  background-image: url("../public/images/Hero.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-} 
+}
