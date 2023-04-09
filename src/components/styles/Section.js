@@ -12,13 +12,11 @@ export const Wrapper = styled.div`
   @media (min-width: 768px) and (max-width: 1023px) {
     height: ${(props) => (props.height || '100vh')};
     padding: 24px;
-    padding-top: 128px;
   }
 
   @media (max-width: 768px) {
     height: ${(props) => (props.height || '100vh')};
     padding: 16px;
-    padding-top: 128px;
   }
 `
 
