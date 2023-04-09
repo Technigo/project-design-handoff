@@ -20,12 +20,21 @@ body {
   .navBar {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
   }
   
+  .navBarDesktop {
+    display: none;
+  }
+
   .headerWrapper .primaryButtonSmall {
     display: none;
   }
 
+  .signInButton {
+    display: none;
+  }
   /* .signUpButton:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -49,6 +58,26 @@ body {
   
   @media (min-width: 667px) and (max-width: 1024px) {
   
+
+    .navBarDesktop {
+      display: none;
+    }
+
+    .signInButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      text-decoration: underline;
+      width: 54px;
+      height: 11px;
+      padding: 0;
+      background-color: #F2FDFF;
+      margin-right: 24px;
+      margin-top: 26px;
+      margin-bottom: 16px;
+    }
+
     /*can't get css to add placement to PrimaryButtonSmall.css*/
     .headerWrapper .primaryButtonSmall { 
       background-color: #FFD9BF;
@@ -75,6 +104,48 @@ body {
       /*can't get css to add placement to PrimaryButtonSmall.css*/
   @media (min-width: 1025px) {
   
+
+    .navBarDesktop {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      border: none;
+      text-decoration: none;
+      /* width: 54px; */
+      height: 11px;
+      padding: 0;
+      background-color: #F2FDFF;
+      margin-top: 26px;
+      margin-bottom: 16px;
+      margin-right: 100px;
+      gap: 56px;
+    }
+
+    .desktopNavButton {
+      display: inline-block;
+      background-color: #F2FDFF;
+      border: none;
+      font-family: poppins;
+      font-size: 16px;
+    }
+
+    .signInButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      text-decoration: underline;
+      width: 54px;
+      height: 11px;
+      padding: 0;
+      background-color: #F2FDFF;
+      margin-right: 24px;
+      margin-top: 26px;
+      margin-bottom: 16px;
+      font-family: poppins;
+      font-size: 16px;
+    }
+   
     .headerWrapper .primaryButtonSmall {
       background-color: #FFD9BF;
       color: #210440;
