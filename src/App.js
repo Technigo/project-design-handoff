@@ -3,7 +3,11 @@ import { createGlobalStyle } from 'styled-components';
 import Navbar from 'components/Navbar'
 import Hero from 'components/Hero'
 import { Benefits } from 'components/Benefits';
+import { Membership } from 'components/Membership';
+import { Articles } from 'components/Articles';
+import { ImageSlider } from 'components/Reviews';
 import Contacts from 'components/Contacts';
+import { Footer } from 'components/Footer';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -20,7 +24,11 @@ export const App = () => {
       <Navbar />
       <Hero />
       <Benefits />
+      <Membership />
+      <Articles />
+      <ImageSlider />
       <Contacts />
+      <Footer />
     </>
   )
 }
