@@ -45,7 +45,7 @@ code {
 
 .navbar-links a {
   text-decoration: none;
-  color: rgb(46, 85, 85);
+  color: #E3F7FC;
 }
 
 .navbar-hamburger-menu {
@@ -93,7 +93,7 @@ code {
     width: 30px;
     height: 5px;
     margin-bottom: 5px;
-    background-color: #333;
+    background-color: #E3F7FC;
   }
     
     .navbar-links-open li {
@@ -106,7 +106,7 @@ code {
     }
   
     .navbar-links-open a {
-      color: rgb(46, 85, 85);
+      color: #E3F7FC;
       font-size: 1.2em; /* Increase the font size for better readability */
     }
   }

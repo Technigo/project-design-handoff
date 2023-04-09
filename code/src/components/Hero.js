@@ -64,12 +64,13 @@ const SubText = styled.p`
 const Button = styled.button`
   font-size: 1.2rem;
   padding: 0.8rem 1.5rem;
-  border-color: orange;
+  border-color: #ff8f3d;
   border-radius: 10px ;
+  border: 3px solid;
   background-color: transparent;
   color: #FF8F3D;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     background-color: #fff;

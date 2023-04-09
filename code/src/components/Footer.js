@@ -9,7 +9,7 @@ import pinterestIcon from '../images/pinterest.png';
 
 const Footer = () => {
   return (
-    <footer className="footer" style={{ backgroundColor: '#D7CBFF' }}>
+    <footer className="footer" style={{ backgroundColor: '#2c3153' }}>
       <div className="footer-content">
         <div className="logo-container">
           <img src={logo} alt="Logo" className="logo" />
