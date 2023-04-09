@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div className="contact" style={backgroundStyle}>
       <div className="contact-content">
-        <h2><span style={{ color: '#62CABC' }}>Book</span> <span style={{ color: 'white' }}>a free trial</span></h2>
+        <h1><span style={{ color: '#62CABC' }}>Book</span> <span style={{ color: 'white' }}>a free trial</span></h1>
         <p>Tell us about your preferences and we offer you a tailored plan for a healthier life</p>
         <form>
           <label className="nameinput" htmlFor="name">

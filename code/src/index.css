@@ -13,6 +13,11 @@ code {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,11 +61,13 @@ code {
   .navbar {
     flex-direction: row;
     height: auto;
-    
+    padding: 0;
   }
 
   .navbar-logo {
     margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
   }
 
   .navbar-links {
@@ -86,6 +93,8 @@ code {
     display: block;
     cursor: pointer;
     margin-left: auto;
+    z-index: 101;
+    margin-right: 15px;
   }
 
   .navbar-hamburger-menu span {
@@ -94,6 +103,7 @@ code {
     height: 5px;
     margin-bottom: 5px;
     background-color: #E3F7FC;
+    z-index: 105;
   }
     
     .navbar-links-open li {

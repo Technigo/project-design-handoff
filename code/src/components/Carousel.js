@@ -43,7 +43,7 @@ const Section = () => {
 
   return (
     <div className="section">
-      <h1>Take easy steps to your desired lifestyle</h1>
+      <h2>Take easy steps to your desired lifestyle</h2>
       <AwesomeSlider>
         {cardboxes.map((cardbox) => (
           <div key={cardbox.id}>{renderSlide(cardbox)}</div>

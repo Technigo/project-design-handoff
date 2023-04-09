@@ -13,8 +13,16 @@
     
   }
 
-  h1 {
+  .section {
+    background-color: #D7CBFF;
+    
+  }
+
+  h2 {
     text-align: center;
+    background-color: #D7CBFF;
+    margin-top: 0px;
+    padding-top: 20px;
   }
 
   .carousel-section {

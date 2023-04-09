@@ -42,7 +42,7 @@ const HeaderText = styled.h1`
 
   @media only screen and (max-width: 600px) {
     position: absolute;
-    top: 20px;
+    top: 70px;
     left: 20px;
     margin-right: 40px;
   }
