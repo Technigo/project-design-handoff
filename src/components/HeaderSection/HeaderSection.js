@@ -3,7 +3,7 @@ import { Image } from '../styledComponents/Images'
 import hero from '../../images/hero.svg'
 import { FlexContainer } from '../styledComponents/Containers'
 import { NavbarSection } from './Navbar'
-import { HeroSection } from './Hero'
+import { HeroSection } from './HeroSection'
 
 export const HeaderSection = () => {
   return (
