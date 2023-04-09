@@ -69,8 +69,19 @@ const BookCard = styled.div`
 
     &:hover {
       filter: none;
+
+      ${Button} {
+        background-color: var(--primary-color-3);
+      }
     }
+    &:active {
+      filter: none;
+
+      ${Button} {
+        background-color: var(--secondary-color-3);
+      }
   }
+}
 `;
 
 const BookCardImg = styled.img`

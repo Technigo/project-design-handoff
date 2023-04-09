@@ -112,10 +112,10 @@ const NameInputDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  width: 100%;
 
   @media (min-width: 668px) {
     flex-wrap: nowrap;
-    width: 100%;
     justify-content: space-between;
     gap: 10px;
   }
