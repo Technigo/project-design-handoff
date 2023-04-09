@@ -22,8 +22,9 @@ export const HeroTextContent = styled.h1`
   text-align: center;
   letter-spacing: -0.022em;
   color: #0962CF;
-
-  @media (min-width: 768px) {
+  display:${(props) => (props.display)};
+ 
+  @media ((min-width: 768px)) {
     display: flex;
     color: #FFFFFF;
     font-size: 1.5rem;

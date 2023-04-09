@@ -50,6 +50,14 @@ top: 60%;
   }
 `;
 
+const HeroTextContainer = styled.div`
+display:none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`;
+
 export const HeroPage = () => {
   return (
     <HeroContainer>
@@ -57,11 +65,13 @@ export const HeroPage = () => {
         <Logo src={`${logoHero}`} alt="logo of the page" />
         <Navbar />
       </Topwrapper>
-      <HeroTextContent>
+      <HeroTextContainer>
+        <HeroTextContent>
           Physical activity is vital for the body.
           Learn how to master unique skills where you’ll develop strength,
           confidence and you&apos;ll defy yourself.
-      </HeroTextContent>
+        </HeroTextContent>
+      </HeroTextContainer>
       <ButtonDiv>
         <ButtonHover
           btnOnHover={joinBtnHover}
