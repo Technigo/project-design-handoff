@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import LogoImg from '../images/Site-logo.png'
-import MenuIcon from '../icons/Menu.png'
-import SearchIcon from '../icons/Search.png'
+import MenuIconImg from '../icons/Menu.png'
+import SearchIconImg from '../icons/Search.png'
 
 const StyledNavBar = styled.div`
 display: flex;
@@ -47,11 +47,27 @@ display:flex;
   display: none;
 }
 `
-const Icon = styled.img`
+const MenuIcon = styled.img`
 width: 40px;
 height: 40px;
-padding-right: 16px;
+margin-right: 16px;
+
+.search{
+  background-color:red;
+}
 `
+const SearchIcon = styled.img`
+width: 40px;
+height: 40px;
+margin-right: 16px;
+
+&:hover{
+  background-color: white;
+  border-radius: 50%;
+}
+}
+`
+
 const Logo = styled.img`
 width: 96px;
 height: 29px;
@@ -75,8 +91,8 @@ export const NavBar = () => {
     <StyledNavBar>
       <Logo src={LogoImg} alt="site-logo" />
       <StyledIcons>
-        <Icon src={MenuIcon} alt="menu" />
-        <Icon src={SearchIcon} alt="search" />
+        <MenuIcon src={MenuIconImg} alt="menu" />
+        <SearchIcon src={SearchIconImg} alt="search" />
       </StyledIcons>
       <DesktopHeader>
         <ul>

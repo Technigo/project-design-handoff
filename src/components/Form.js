@@ -95,6 +95,7 @@ input {
   accent-color: #131313;
 }
 
+
 label {
   display: flex;
   align-items: flex-end;

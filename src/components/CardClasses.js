@@ -1,8 +1,11 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react'
 import styled from 'styled-components'
+import Slider from 'react-slick'
+
 import BegImg from '../images/Beginner.png'
-// import InterImg from '../images/Intermediate.png'
-// import ExpImg from '../images/Expert.png'
+import InterImg from '../images/Intermediate.png'
+import ExpImg from '../images/Expert.png'
 import { ClassesHead } from './Typography'
 import { Button } from './Button'
 
@@ -10,7 +13,7 @@ const CardImg = styled.img`
 width: 312px;
 height: 240px;
 object-fit: center;
-border-radius: 13.8886px;
+border-radius: 13.8886px; 
 `
 
 const StyledCard = styled.div`
@@ -29,46 +32,55 @@ gap: 32px;
   justify-content: center;
 }
 
-
 @media (min-width:641px) {
   display: none;
 }
 `
 
 export const CardClasses = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
   return (
-    // <div className="carousel">
-    <StyledCard>
-      <CardImg src={BegImg} alt="beginner" />
-      <div className="card-info">
-        <ClassesHead>Beginner</ClassesHead>
-        <p className="card-text">
-          Beginner classes for aerial silks teach you the foundational
-          moves and techniques, and is led by experienced instructors
-          to guide you. No prior experience is necessary.
-        </p>
-        <Button>See more</Button>
+    <Slider {...settings}>
+      <div className="carousel">
+        <StyledCard>
+          <CardImg src={BegImg} alt="beginner" />
+          <div className="card-info">
+            <ClassesHead>Beginner</ClassesHead>
+            <p className="card-text">
+              Beginner classes for aerial silks teach you the foundational
+              moves and techniques, and is led by experienced instructors
+              to guide you. No prior experience is necessary.
+            </p>
+            <Button>See more</Button>
+          </div>
+        </StyledCard>
+        <StyledCard>
+          <CardImg src={InterImg} alt="beginner" />
+          <ClassesHead>Intermediate</ClassesHead>
+          <p className="card-text">
+            Intermediate classes build on foundational moves and introduce complex techniques,
+            led by experienced instructors. They improve strength, flexibility, and coordination.
+          </p>
+          <Button>See more</Button>
+        </StyledCard>
+        <StyledCard>
+          <CardImg src={ExpImg} alt="beginner" />
+          <ClassesHead>Expert</ClassesHead>
+          <p className="card-text">
+            Expert classes are for the experienced aerialists,
+            which offer a challenging workout with advanced techniques.
+            Led by skilled instructors to help guide you to refine your skills.
+          </p>
+          <Button>See more</Button>
+        </StyledCard>
       </div>
-    </StyledCard>
-    // <StyledCard>
-    //   <CardImg src={InterImg} alt="beginner" />
-    //   <Body>Intermediate</Body>
-    //   <p className="card-text">
-    //     Intermediate classes build on foundational moves and introduce complex techniques,
-    //     led by experienced instructors. They improve strength, flexibility, and coordination.
-    //   </p>
-    //   <Button>See more</Button>
-    // </StyledCard>
-    // <StyledCard>
-    //   <CardImg src={ExpImg} alt="beginner" />
-    //   <Body>Expert</Body>
-    //   <p className="card-text">
-    //     Expert classes are for the experienced aerialists,
-    //     which offer a challenging workout with advanced techniques.
-    //     Led by skilled instructors to help guide you to refine your skills.
-    //   </p>
-    //   <Button>See more</Button>
-    // </StyledCard>
-    // </div>
+    </Slider>
   )
 }
