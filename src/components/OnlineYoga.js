@@ -37,7 +37,10 @@ line-height: 160%;
 @media(min-width: 768px) {
   font-size: 20px;
   padding-bottom: 3.5rem;
+`
 
+const Mark = styled.mark`
+font-weight: 700;
 `
 
 const OnlineYoga = () => {
@@ -45,7 +48,7 @@ const OnlineYoga = () => {
     <StyledSection>
       <StyledWrapper>
         <StyledH2>Our Online Yoga Offering</StyledH2>
-        <StyledYogaP>Practice yoga conveniently and comfortably from home with our online yoga classes. 
+        <StyledYogaP>Practice yoga conveniently and comfortably from home with our <Mark>online yoga classes</Mark>. 
         Our experienced yoga teachers will guide you through a variety of classes and styles, from beginner to advanced,
          with clear and easy-to-follow instructions.</StyledYogaP>
       </StyledWrapper>
