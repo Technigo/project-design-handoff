@@ -37,7 +37,6 @@ export const HeroTextContent = styled.h1`
 const HeroA = styled.img`
   width: 12.7%;
   transform: ${(props) => (props.transform)};
-  border:solid red;
 
   @media (min-width: 768px) {
     display: none;

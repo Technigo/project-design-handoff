@@ -1,3 +1,4 @@
+
 .carousel .slide img {
     max-height: 318px; 
 }
@@ -18,17 +19,16 @@ p{
     opacity:1;
 }
 
-.carousel .control-prev.control-arrow{
-    background:blue;
+button.prev{
+    position:relative;
     top:184px;
     left:0;
     z-index:99;
-    
 }
 
-.carousel .control-next.control-arrow {
-    background:red;
+button.next {
+    position:relative;
     top:-200px;
-    right:-330px;
+    right:-11%;
     z-index:99;
 }

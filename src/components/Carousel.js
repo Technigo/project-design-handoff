@@ -1,3 +1,5 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import styled from 'styled-components';
@@ -12,7 +14,7 @@ import aerialCircus from '../assets/carousel/carousel-aerial.svg';
 import tumble from '../assets/carousel/carousel-tumble.svg';
 import parkour from '../assets/carousel/carousel-parkour.svg';
 import learnMoreBtn from '../assets/carousel/button-learnMore.svg';
-// import arrow from '../assets/arrow.svg';
+import arrow from '../assets/logo-A-blue.png';
 
 export const SingleSlideWrapper = styled.div`
   display:flex;
@@ -36,7 +38,21 @@ class Gallery extends React.Component {
           infiniteLoop
           showThumbs={false}
           showIndicators={false}
-          showStatus={false}>
+          showStatus={false}
+          renderArrowPrev={(clickHandler, hasPrev) => hasPrev && (
+            <button className="prev" onClick={clickHandler} style={{ background: 'none', border: 'none' }}>
+              <img
+                style={{ height: '30px', width: '30px', transform: 'rotate(-90deg)' }}
+                src={arrow} />
+            </button>
+          )}
+          renderArrowNext={(clickHandler, hasNext) => hasNext && (
+            <button className="next" onClick={clickHandler} style={{ background: 'none', border: 'none' }}>
+              <img
+                style={{ height: '30px', width: '30px', transform: 'rotate(90deg)' }}
+                src={arrow} />
+            </button>
+          )}>
 
           <SingleSlideWrapper>
             <img src={acrobatics} alt="" />

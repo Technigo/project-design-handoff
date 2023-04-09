@@ -75,12 +75,13 @@ const MemberLogoA = styled.img`
 
 const MemberTitle = styled.h1`
   position:absolute;
-  width: 75,3%;
+  width: 70,3%;
   height: 98px;
   top:15%;
+  left:10%;
   font-style: italic;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 98%;
   text-align: center;
   letter-spacing: -0.022em;
