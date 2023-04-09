@@ -313,6 +313,11 @@ button {
   margin: 1rem;
 }
 
+/* ---- Sign Up form ---- */
+.create-account-button {
+  background-color: #dcd2f1;
+}
+
 /* ---- Sticky Nav ---- */
 .sticky-nav-container {
   display: flex;

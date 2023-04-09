@@ -6,6 +6,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
+import longstrech from '../assets/images/longstretch.jpg';
+
 const SignUpForm = () => {
   const {
     register,
@@ -23,58 +25,73 @@ const SignUpForm = () => {
       </div>
       <div>
         <div>
-          <img alt="some-alt-text" />
+          <img src={longstrech} alt="some-alt-text" />
         </div>
         <div className="form">
           {/* "handleSubmit" will validate your inputs before invoking "onSubmit" */}
           <form onSubmit={handleSubmit(onSubmit)}>
             {/* register your input into the hook by invoking the "register" function */}
             <div>
-              <label htmlFor="firstName">First Name</label>
-              <input
-                id="firstName"
-                aria-invalid={errors.firstName ? 'true' : 'false'}
-                {...register('firstName', { required: true, maxLength: 30 })}
-              />
-              {errors.firstName && errors.firstName.type === 'required' && (
-                <span role="alert">This is required</span>
-              )}
-              <label htmlFor="lastName">Last Name</label>
-              <input
-                id="lastName"
-                aria-invalid={errors.lastName ? 'true' : 'false'}
-                {...register('lastName', { required: true, maxLength: 30 })}
-              />
-              {errors.lastName && errors.lastName.type === 'required' && (
-                <span role="alert">This is required</span>
-              )}
+              <fieldset>
+                <legend>
+                  <label htmlFor="firstName">First Name</label>
+                </legend>
+                <input
+                  id="firstName"
+                  aria-invalid={errors.firstName ? 'true' : 'false'}
+                  {...register('firstName', { required: true, maxLength: 30 })}
+                />
+                {errors.firstName && errors.firstName.type === 'required' && (
+                  <span role="alert">This is required</span>
+                )}
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label htmlFor="lastName">Last Name</label>
+                </legend>
+                <input
+                  id="lastName"
+                  aria-invalid={errors.lastName ? 'true' : 'false'}
+                  {...register('lastName', { required: true, maxLength: 30 })}
+                />
+                {errors.lastName && errors.lastName.type === 'required' && (
+                  <span role="alert">This is required</span>
+                )}
+              </fieldset>
             </div>
             <div>
-              <label htmlFor="email">Email</label>
-              <input
-                id="email"
-                aria-invalid={errors.email ? 'true' : 'false'}
-                {...register('email', { required: true, maxLength: 30 })}
-              />
-              {errors.email && errors.email.type === 'required' && (
-                <span role="alert">This is required</span>
-              )}
-              <input
-                id="password"
-                aria-invalid={errors.password ? 'true' : 'false'}
-                {...register('password', { required: true, maxLength: 30 })}
-              />
-              {errors.password && errors.password.type === 'required' && (
-                <span role="alert">This is required</span>
-              )}
+              <fieldset>
+                <legend>
+                  <label htmlFor="email">Email</label>
+                </legend>
+                <input
+                  id="email"
+                  aria-invalid={errors.email ? 'true' : 'false'}
+                  {...register('email', { required: true, maxLength: 30 })}
+                />
+                {errors.email && errors.email.type === 'required' && (
+                  <span role="alert">This is required</span>
+                )}
+              </fieldset>
+
+              <fieldset>
+                <legend>
+                  <label htmlFor="password">Password</label>
+                </legend>
+                <input
+                  id="password"
+                  aria-invalid={errors.password ? 'true' : 'false'}
+                  {...register('password', { required: true, maxLength: 30 })}
+                />
+                {errors.password && errors.password.type === 'required' && (
+                  <span role="alert">This is required</span>
+                )}
+              </fieldset>
             </div>
 
-            {/* include validation with required or other standard HTML validation rules */}
-            <input {...register('exampleRequired', { required: true })} />
-            {/* errors will return when field validation fails  */}
-            {errors.exampleRequired && <span>This field is required</span>}
-
-            <button type="submit">Create Account</button>
+            <button type="submit" className="create-account-button">
+              Create Account
+            </button>
             <p>
               Already have an account? <span>Login</span>
             </p>
