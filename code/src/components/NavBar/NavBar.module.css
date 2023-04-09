@@ -83,3 +83,12 @@
         opacity: 1;
     }
 }
+
+
+@media (min-width: 1024px){
+.NavBar svg{
+    border:red 2px solid;
+    margin-left:80%;
+}
+
+}

@@ -25,6 +25,7 @@ const Header = styled.section`
   
   @media (min-width: 640px){
     background-image: url(${heroImage});
+    background-position: left;
     }
 `;
 
