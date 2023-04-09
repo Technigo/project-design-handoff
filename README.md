@@ -1,15 +1,26 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
+This week you will experience a design hand-off from a UX-design student and work on transforming that design into code. It is a landing page for a gym/fitness club and you will build it in React. We want you to think about how you structure the site and what components to create, and preferably use styled components as the styling. Your mission is to follow the designs thoroughly, but keep in mind that the designs are made from students that are, like you, learning a new profession. Interpret the design kindly.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a perfect opportunity to explore fun npm packages to create an image carousel or make some fun animations if that’s included in the design.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I worked with React and Styled Components.
+I used reusable components.
+I tried out a npm package for the slider/carousel.
+I have a sticky navbar.
+I have a hamburger menu.
+I imported images to components.
+I tried to make the app look as close as possible to the design given.
+
+Several things i struggled with; the image pathways. It was hard to understand what to write in the pathway (..//images etc) 
+The npm packages, I tried out a few and had to skip them bc it was too tricky. But in the end I found the "awesome slider" that i used. 
+I did not have time to finish the whole project with every component and every responsive(desktop, tablet) .
+I focused on mobile and I concentrated on trying out a npm package and trying out styled components a little bit.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://stellular-concha-9280a1.netlify.app/
 
-<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a>
+"https://www.flaticon.com/free-icons/facebook" icons created by Freepik - Flaticon
