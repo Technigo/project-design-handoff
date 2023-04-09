@@ -9,9 +9,7 @@ export const article = [
 ]
 
 const Articlewrapper = styled.div`
-max-width: 1400px;
-margin-left: 2rem;
-margin-right: 2rem;
+max-width: 1300px;
 `
 
 const ArticleContainer1 = styled.div`
@@ -23,10 +21,9 @@ const ArticleContainer1 = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
-  @media (min-width: 900px) {
+  @media (min-width: 1140px) {
     display:flex;
     flex-direction: row;
-    padding: 2rem;
     justify-content: center;
     align-items: center;
   }
@@ -40,7 +37,7 @@ const ArticleContainer2 = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
-  @media (min-width: 900px) {
+  @media (min-width: 1140px) {
     display:flex;
     flex-direction: row-reverse;
     padding: 2rem;
@@ -61,8 +58,6 @@ const ContentBox = styled.div`
 }
 `;
 const Header = styled.h1`
-  font-family: 'Libre Franklin';
-  font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
@@ -72,17 +67,14 @@ const Header = styled.h1`
   margin-top: 20px;
 `;
 const Paragraf = styled.p`
-  font-family: 'Libre Franklin';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  letter-spacing: 0.127905px;
   color: #025323;
-  padding: 0 50px;
+  padding: 0 2rem;
   @media (min-width: 768px) {
-    width: 30em;
+    width: 400px;
   }
 `;
 const Button = styled.button`
@@ -95,13 +87,11 @@ const Button = styled.button`
   border-radius: 15px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom:15px;
-  margin-top: 10px;
+  margin-bottom:4rem;
+  margin-top: 2rem;
   border: none;
-  font-family: 'Libre Franklin';
   font-size: 22px;
   line-height: 29px;
-  font-style: normal;
   font-weight: 600;
   cursor: pointer;
   @media (max-width: 768px) {
@@ -111,8 +101,8 @@ const Button = styled.button`
 `;
 const ImgBox = styled.div`
   width: 603px;
-  height: 411.94px;
-  border: 0.58px solid #025323;
+  height: 410px;
+  border: 0.6px solid #025323;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -123,6 +113,9 @@ const ImgBox = styled.div`
     width:auto;
     height:250px;
   }
+ @media (min-width: 1140px) {
+    margin-right: 2rem;
+ }
 `
 const Image = styled.img`
   width: 560px;

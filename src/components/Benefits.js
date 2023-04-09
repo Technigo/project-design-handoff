@@ -1,20 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
+import Blob from '../images/Blob.png'
+import Yoga from '../images/Benefits_back.png'
+import Frame from '../images/Vector.png'
 
 const BenefitsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3em;
   padding: 1rem;
+  margin-top: 2rem;
   @media (min-width: 768px) {
     flex-direction: row;
     padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem
   }
 `
 
 const Text = styled.div`
-  background-image: url("../images/Blob.png");
+  background-image: url(${Blob});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -108,8 +115,8 @@ export const Benefits = () => {
       </Text>
       <ImageDiv>
         <Overlay>
-          <YogaWrapper src="../images/Benefits_back.png" alt="yoga" />
-          <VectorWrapper src="../images/Vector.png" alt="vector" />
+          <YogaWrapper src={Yoga} alt="yoga" />
+          <VectorWrapper src={Frame} alt="vector" />
         </Overlay>
       </ImageDiv>
     </BenefitsWrapper>
