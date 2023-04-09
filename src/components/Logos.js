@@ -30,6 +30,7 @@ const LogoTab = styled.div`
 
     img {
         height: 48px;
+        padding: 0;
     }
     @media (max-width: 454px) {
         display: none;
@@ -48,17 +49,15 @@ const LogoDesk = styled.div`
     justify-content: center;
     justify-items: center;
     margin-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
 
     h5 {
         margin-left: 10px;
-        margin-top: 10px;
     }
 
     img {
-        padding-top: 13px;
         margin-left: 5px;
-        height: 48px;
+        padding: 0;
     }
     @media (max-width: 454px) {
         display: none;
