@@ -4,7 +4,6 @@ import IconFcb from '../assets/fcb.svg'
 import IconIg from '../assets/ig.svg'
 import IconYb from '../assets/yt.svg'
 import IconLi from '../assets/li.svg'
-import { Button } from './Button'
 import { ButtonL } from './ButtonL'
 
 const Footer = () => {
@@ -12,8 +11,10 @@ const Footer = () => {
     <section className="footer-container">
       <div className="footer-content-wrapper">
         <div className="mobile-buttons-container">
-          <Button />
-          <Button />
+          <button type="button" className="button-footer primary">Get started
+          </button>
+          <button type="button" className="button-footer brighter">Download App
+          </button>
         </div>
         <div className="subscribe-container">
           <h1 className="subscribe-header">Subscribe</h1>
