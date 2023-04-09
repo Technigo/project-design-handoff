@@ -27,6 +27,13 @@ const AcrobaticsButton = styled.img`
 
 const AcrobaticsImage = styled.img`
   width: 100%;
+
+  @media (min-width: 768px) {
+    width:50%;
+    position:absolute;
+    right:0;
+    border:solid red;
+  }
 `;
 
 const AcrobaticsText = styled.p`
@@ -39,8 +46,23 @@ const AcrobaticsText = styled.p`
   letter-spacing: -0.022em;
   color: #000000;
   margin-left:1rem;
+
+  @media (min-width: 768px) {
+    width:45%;
+    left:0;
+    border:solid blue;
+  }
 `;
 
+const AcrobaticsTextPartTwo = styled.p`
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 155%;
+  text-align: justify;
+  letter-spacing: -0.022em;
+  color: #000000;
+`;
 const OurClassesButton = styled.img`
   width:50%;
 `;
@@ -55,7 +77,11 @@ const CarouselContainer = styled.div`
 display:flex;
 position:relative;
 top:65.6%;
-`
+
+@media (min-width: 768px) {
+  display: none;
+}
+`;
 
 export const BookClasses = () => {
   return (
@@ -69,9 +95,12 @@ export const BookClasses = () => {
         sporting events, and martial arts. Extensive use of acrobatic skills are
         most often performed in acro dance, circus, gymnastics, and freerunning
         and to a lesser extent in other athletic activities including ballet,
-        slacklining and diving. Although acrobatics is most commonly associated
+        slacklining and diving.
+        <AcrobaticsTextPartTwo>
+        Although acrobatics is most commonly associated
         with human body performance, t he term is used to describe other types
         of performance, such as aerobatics.
+        </AcrobaticsTextPartTwo>
       </AcrobaticsText>
       <OurClassesButton src={`${ourClassesBtn}`} />
       <CarouselContainer>

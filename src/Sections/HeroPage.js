@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Slogan } from 'components/Slogan';
+import { HeroTextContent } from 'components/HeroText';
 import Navbar from 'components/Menu';
 import heroBg from '../assets/hero.svg';
 import heroBgLarge from '../assets/hero-large.svg';
@@ -43,7 +44,10 @@ width:100vw;
 height:6%;
 position:absolute;
 top: 60%;
-right:0;
+
+@media (min-width: 768px) {
+    top:90%;
+  }
 `;
 
 export const HeroPage = () => {
@@ -53,13 +57,18 @@ export const HeroPage = () => {
         <Logo src={`${logoHero}`} alt="logo of the page" />
         <Navbar />
       </Topwrapper>
+      <HeroTextContent>
+          Physical activity is vital for the body.
+          Learn how to master unique skills where you’ll develop strength,
+          confidence and you&apos;ll defy yourself.
+      </HeroTextContent>
       <ButtonDiv>
         <ButtonHover
           btnOnHover={joinBtnHover}
           btn={joinBtn}
           position="relative"
           width="41.2%"
-          right="0" />
+          right="-6%" />
       </ButtonDiv>
       <Slogan />
     </HeroContainer>

@@ -6,8 +6,13 @@ const HeroTextWrapper = styled.div`
   display:flex;
   flex-direction:row;
   justify-content:space-between;
-`
-const HeroTextContent = styled.h1`
+  
+  @media (min-width: 768px) {
+    display: none;
+  }
+  
+`;
+export const HeroTextContent = styled.h1`
   z-index:99;
   width: 70%;
   font-style: normal;
@@ -17,12 +22,27 @@ const HeroTextContent = styled.h1`
   text-align: center;
   letter-spacing: -0.022em;
   color: #0962CF;
+
+  @media (min-width: 768px) {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    position:absolute;
+    width:45%;
+    top:58%;
+    right:5%;
+    text-align:left;
+  }
 `
 const HeroA = styled.img`
   width: 12.7%;
   transform: ${(props) => (props.transform)};
   border:solid red;
-`
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
 
 export const HeroText = () => {
   return (
