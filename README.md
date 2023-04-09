@@ -1,13 +1,11 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project has been done in a collaboration between me and another UX-student at Technigo who supplied the specs. Focus has been from my part to follow the specs and make us of React and styled components.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The handoff was done 2 days before easter and we were given very little time to complete the task. I sat most through the holiday trying to get as far as I could. That which is still missing is responsiveness to  media screens above 1200px width.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+[Project-desig-handoff](https://acrogymprojectdesignhandoffbylt.netlify.app)
