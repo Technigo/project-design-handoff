@@ -13,6 +13,12 @@ margin: 1.5rem
 
 @media(min-width: 768px) and (max-width: 1024px) {
   margin-left: 2rem;
+  width: 627px;
+}
+
+@media(min-width: 1025) {
+  width: 686px;
+  margin-left: 7rem;
 }
 `
 const StyledH2 = styled.h2`

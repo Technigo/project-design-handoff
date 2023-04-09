@@ -6,14 +6,21 @@ export const CTA = styled.button`
     color: #F5F5F5;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
-    padding: 1rem;
+    font-size: 16px;
+    text-align: center;
+    padding: 16px 64px;
     border: none;
-    width: 345px;
-    height: 56px;
-    scroll-behavior: smooth;
 
     &:active {
         background-color: #AC7816;
+    }
+
+    @media(min-width: 768px) and (max-width: 1024px) {
+        font-size: 20px;
+    }
+
+    @media(min-width: 1024px) {
+        font-size: 24px;
     }
 
 ${props => props.choose && css`

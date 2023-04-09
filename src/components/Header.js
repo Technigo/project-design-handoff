@@ -9,18 +9,20 @@ background-position: center;
 background-size: cover;
 color: #F5F5F5;
 padding-bottom: 5rem;
+padding-top: 1.5rem;
 
 @media(min-width: 768px) and (max-width: 1024px) {
-background-size: 120%;
+background-size: 130%;
 }
 `
 const StyledHeaderWrapper = styled.div`
-padding: 1.5rem;
+padding: 0 1.5rem;
 `
 const StyledLogoWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 
 @media(min-width: 1025) {
   padding: 5.5rem;
@@ -54,7 +56,7 @@ font-weight: 700;
 
 @media(min-width: 768px) and (max-width: 1024px) {
   max-width: 600px;
-  font-size: 3.2rem;
+  font-size: 50px;
   line-height: 160%;
   }
 `
