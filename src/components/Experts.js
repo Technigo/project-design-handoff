@@ -1,5 +1,7 @@
+/* eslint-disable */
 import React from 'react'
 import './ExpertsCss.css'
+import Quote from '../assets/quote.svg'
 
 const Experts = () => {
   return (
@@ -18,14 +20,19 @@ const Experts = () => {
           <h2 className="header-numbers2">HAPPY CLIENTS IN PROGRESS</h2>
         </div>
       </div>
+      <hr className="line" />
       <div className="big-field">
+        <img
+          src={Quote}
+          alt="Logotyp"
+          className="icon-quote" />
         <p className="maintext-experts">
             This experience is
-            beautiful. We get more out of
+            beautiful.<span className="bold-maintext-experts">We get more out of
             our exercises and we have
             grown better at using the little
             moments for a laugh together.
-            It has brought us so much closer, me and my terrier girl.
+            It has brought us so much closer,</span> me and my terrier girl.
         </p>
         <p className="quoted-experts">
             Sanna, 32, and
