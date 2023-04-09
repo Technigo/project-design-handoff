@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaBars } from 'react-icons/fa'
 import './NavBarCss.css'
 import Namnlöst from '../assets/Namnlöst-1 2.svg'
 import Fit from '../assets/Fit.svg'
@@ -26,13 +25,15 @@ const NavBar = () => {
           </div>
         </div>
         <div className="menu-container">
-          <ul>
+          <ul className="nav-bar-list">
             <li><a href="#">Gift cards</a></li>
             <li><a href="#">Join us</a></li>
           </ul>
-          <button type="button" className="hamburger-sign">
-            <FaBars />
-          </button>
+          <div className="hamburger-sign">
+            <span className="bar1" />
+            <span className="bar2" />
+            <span className="bar3" />
+          </div>
         </div>
       </nav>
     </section>
