@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import memberStripes from '../assets/member-stripes.svg';
-import logoABlack from '../assets/logo-A-black.svg';
+import logoABlack from '../assets/logo/logo-hero.svg';
 import { ButtonHover } from '../components/ButtonHover';
 import sendBtn from '../assets/button-send.svg';
 import sendBtnHover from '../assets/button-send-hover.svg';

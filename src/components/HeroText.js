@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logoHeroA from '../assets/logo-A-blue.svg';
+import logoHeroA from '../assets/logo/logo-A-blue.svg';
 
 const HeroTextWrapper = styled.div`
   display:flex;

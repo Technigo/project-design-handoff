@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HeroText } from 'components/HeroText';
-// import { HeroTextContent } from 'components/HeroText';
 
+import { HeroText } from 'components/HeroText';
 import Gallery from 'components/Carousel';
 import { Classes } from 'components/Classes';
 import acroBtn from '../assets/button-acrobatics.svg';

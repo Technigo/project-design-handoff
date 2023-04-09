@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import contactStripes from '../assets/contact-stripes.svg';
-import logoAG from '../assets/logo-AG-white.svg';
+import logoAG from '../assets/logo/logo-AG-white.svg';
 import socialMedia from '../assets/social-media.svg';
-import brand1 from '../assets/brand1.svg';
-import brand2 from '../assets/brand2.svg';
-import brand3 from '../assets/brand3.svg';
-import brand4 from '../assets/brand4.svg';
+import brand1 from '../assets/brands/brand1.svg';
+import brand2 from '../assets/brands/brand2.svg';
+import brand3 from '../assets/brands/brand3.svg';
+import brand4 from '../assets/brands/brand4.svg';
 
 export const Contact = () => {
   return (

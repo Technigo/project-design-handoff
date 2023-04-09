@@ -14,7 +14,7 @@ import aerialCircus from '../assets/carousel/carousel-aerial.svg';
 import tumble from '../assets/carousel/carousel-tumble.svg';
 import parkour from '../assets/carousel/carousel-parkour.svg';
 import learnMoreBtn from '../assets/carousel/button-learnMore.svg';
-import arrow from '../assets/logo-A-blue.png';
+import arrow from '../assets/logo/logo-A-blue.png';
 
 export const SingleSlideWrapper = styled.div`
   display:flex;
