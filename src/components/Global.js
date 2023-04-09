@@ -31,8 +31,8 @@ export const TopLeftLogo = styled(Logo)`
    position: relative;
 
    @media screen and (max-width: 768px) {
-   margin-left: 5rem;
    width: 15vh;
+   margin-left: 8rem;
   }
 `;
 

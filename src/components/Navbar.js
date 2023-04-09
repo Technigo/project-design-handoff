@@ -19,7 +19,7 @@ export const Nav = styled.nav`
   height: 5rem;
   padding: 0 2rem;
   z-index: 1;
-  width: 90%;
+  width: 83%;
 `;
 
 export const StickyNav = styled(Nav)`
@@ -61,6 +61,6 @@ export const MobileNavIcon = styled.div`
     font-size: 1.2rem;
     color: #E3F7FC;
     cursor: pointer;
-    margin-right: -15rem;
+    margin-right: -14rem;
   }
 `;
