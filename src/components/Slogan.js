@@ -24,6 +24,12 @@ const HeroTitleGO = styled.h1`
   top:50%;
   left:4.8%;
 }
+
+@media (min-width: 1024px) {
+  font-size: 16.8rem;
+  top: 11%;
+  left: 8.8%;
+}
 `;
 
 const HeroTitleBEYOND = styled.h1`
@@ -43,7 +49,13 @@ const HeroTitleBEYOND = styled.h1`
   font-size: 4.5rem;
   top:69%;
   left:7.5%;
+  }
+  @media (min-width: 1024px) {
+    font-size: 5.8rem;
+    top: 54%;
+    left: 11.8%;
 }
+
 `;
 
 const HeroTitleTHE = styled.h1`
@@ -62,6 +74,12 @@ margin:0;
 @media (min-width: 768px) {
   font-size: 4.75rem;
   top:77%;
+}
+
+@media (min-width: 1024px) {
+  font-size: 5.6rem;
+    top: 67%;
+    left: 26.8%;
 }
 `;
 
@@ -83,6 +101,12 @@ margin:0;
   font-size: 5.4rem;
   left:48%;
   top:76%;
+}
+
+@media (min-width: 1024px) {
+  font-size: 7.6rem;
+    top: 63%;
+    left: 46.8%
 }
 `;
 

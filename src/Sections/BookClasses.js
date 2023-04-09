@@ -101,12 +101,6 @@ export const BookClasses = () => {
   return (
     <AcrobaticsContainer>
       <HeroText />
-      {/* <HeroTextContent>
-          Physical activity is vital for the body.
-          Learn how to master unique skills where you’ll develop strength,
-          confidence and you&apos;ll defy yourself.
-      </HeroTextContent> */}
-
       <AcrobaticsButton src={acroBtn} />
       <AcrobaticsImage src={`${acroImg}`} />
       <AcrobaticsText>

@@ -8,105 +8,6 @@ import brand2 from '../assets/brand2.svg';
 import brand3 from '../assets/brand3.svg';
 import brand4 from '../assets/brand4.svg';
 
-const ContactContainer = styled.div`
-  height: 100vh;
-  width: 100vw;
-  background-color:#42403C;
-  position:relative;
-
-  @media (min-width: 768px) {
-}
-  `;
-
-const ContactStripesDiv = styled.div`
-  display: flex;
-  max-width: 75%;
-  padding-top:8px;
-  position:relative;
-  left:-35px;
-
-  @media (min-width: 768px) {
-  width: 50%;
-}
-`;
-
-const ContactStripesImage = styled.img`
-  width: 100%;
-`;
-
-const ContactChildDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  width:100vw;
-  position:absolute;
-  top:20%;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-
-  @media (min-width: 768px) {
-  flex-direction: row;
-  gap:2rem;
-}
-`;
-
-const LogoAndOContactDiv = styled.div`
- display: flex;
- flex-direction: column;
- align-items: center;
- height:max-content;
-
- @media (min-width: 768px) {
-  gap:6rem;
- }
-`;
-
-const LogoDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 42.7%;
-`;
-
-const LogoImage = styled.img`
-  width: 100%;
-  `;
-
-const ContactInfoDiv = styled.div`
-  display: flex;
-  flex-direction:column;
-  width: 46.7%;
-  margin-top:15%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 119%;
-  text-align: center;
-  letter-spacing: -0.022em;
-`;
-
-const SocialMedia = styled.img`
-  width: 53.9%;
-  height: 3.5%;
-  margin-top:15%;
-`;
-
-const BrandsDiv = styled.div`
-  display: flex; 
-  flex-direction:column;
-  width: 31.7%;
-  gap:2rem; 
-
-  @media (min-width: 768px) {
-    gap:5rem;
-    padding-right: 10%;
-}
-`;
-
-const BrandImage = styled.img`
-  width: 100%;
-  filter: invert(100%);
-`;
-
 export const Contact = () => {
   return (
     <ContactContainer>
@@ -134,3 +35,134 @@ export const Contact = () => {
     </ContactContainer>
   );
 };
+
+const ContactContainer = styled.div`
+  height: 100vh;
+  width: 100vw;
+  background-color:#42403C;
+  position:relative;
+
+  @media (min-width: 1024x) {
+}
+`;
+
+const ContactStripesDiv = styled.div`
+  display: flex;
+  max-width: 75%;
+  padding-top:8px;
+  position:relative;
+  left:-35px;
+
+  @media (min-width: 768px) {
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  width: 40%;
+}
+`;
+
+const ContactStripesImage = styled.img`
+  width: 100%;
+`;
+
+const ContactChildDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  width:100vw;
+  position:absolute;
+  top:20%;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  @media (min-width: 768px) {
+  flex-direction: row;
+  gap:2rem;
+}
+
+@media (min-width: 1024px) {
+  gap:1rem;
+  height:100vh;
+  top:5%;
+  left:5%;
+}
+`;
+
+const LogoAndOContactDiv = styled.div`
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height:max-content;
+
+ @media (min-width: 768px) {
+  gap:6rem;
+ }
+
+ @media (min-width: 1024px) {
+  gap:2rem;
+ }
+`;
+
+const LogoDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 42.7%;
+
+  @media (min-width: 1024px) {
+    width:30%;
+}
+`;
+
+const LogoImage = styled.img`
+  width: 100%;
+  `;
+
+const ContactInfoDiv = styled.div`
+  display: flex;
+  flex-direction:column;
+  width: 46.7%;
+  margin-top:15%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 119%;
+  text-align: center;
+  letter-spacing: -0.022em;
+`;
+
+const SocialMedia = styled.img`
+  width: 53.9%;
+  height: 3.5%;
+  margin-top:15%;
+
+  @media (min-width: 1024px) {
+    width:30%;
+}
+`;
+
+const BrandsDiv = styled.div`
+  display: flex; 
+  flex-direction:column;
+  width: 31.7%;
+  gap:2rem; 
+
+  @media (min-width: 768px) {
+    gap:5rem;
+    padding-right: 10%;
+}
+
+  @media (min-width: 1024px) {
+      width: 25%;
+  }
+`;
+
+const BrandImage = styled.img`
+  width: 100%;
+  filter: invert(100%);
+
+  @media (min-width: 1024px) {
+      width: 70%;
+  }
+`;
+

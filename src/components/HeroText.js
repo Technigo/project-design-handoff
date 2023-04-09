@@ -22,7 +22,6 @@ export const HeroTextContent = styled.h1`
   text-align: center;
   letter-spacing: -0.022em;
   color: #0962CF;
-  display:${(props) => (props.display)};
  
   @media ((min-width: 768px)) {
     display: flex;
@@ -33,6 +32,11 @@ export const HeroTextContent = styled.h1`
     top:58%;
     right:5%;
     text-align:left;
+  }
+
+  @media ((min-width: 1024px)) {
+    top:38%;
+    width:35%;
   }
 `
 const HeroA = styled.img`

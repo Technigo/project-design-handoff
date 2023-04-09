@@ -39,6 +39,10 @@ const MemberStripesDiv = styled.div`
   height: 232.6px;
   right:0;
 
+  @media (min-width: 1024px) {
+    height:340px;
+    margin-top: -86px;
+  }
 `
 
 const MemberStripes = styled.img`
@@ -62,7 +66,7 @@ const LogoTitleContainer = styled.div`
   @media (min-width: 768px) {
     width:50vw;
   }
- `;
+`;
 
 const MemberLogoA = styled.img`
   position:absolute;
@@ -71,6 +75,11 @@ const MemberLogoA = styled.img`
   left: 0px;
   top:25%;
   transform: rotate(90deg);
+
+  @media (min-width: 1024px) {
+    height: 154.3px;
+    top:-33%;
+  }
 `;
 
 const MemberTitle = styled.h1`
@@ -87,6 +96,10 @@ const MemberTitle = styled.h1`
   letter-spacing: -0.022em;
   color: #000000;
   margin:0;
+
+  @media (min-width: 1024px) {
+    left:17%;
+  }
 `;
 
 const FormWrapper = styled.form`
@@ -103,6 +116,10 @@ const FormWrapper = styled.form`
   margin-bottom:15.5%;
   padding:0.3rem;
   padding-bottom:1.5rem;
+
+  @media (min-width: 1024px) {
+    top:3%;
+  }
  `;
 
 const FormText = styled.p`
@@ -131,7 +148,7 @@ const FormLabel = styled.label`
 const FormInput = styled.input`
   width: 80%;
   height:2.75rem;
-  border: 1.5px solid #074EE8;
+  border: 2px solid #074EE8;
   border-radius: 15.2px;
   margin-bottom:7%;
   background: transparent;

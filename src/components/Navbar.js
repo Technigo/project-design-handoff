@@ -38,6 +38,10 @@ const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
   position: relative;
+
+  @media (min-width: 1024px) {
+    padding: 0;
+  }
 `;
 
 const Hamburger = styled.div`
@@ -99,6 +103,15 @@ const Menu = styled.div`
     /* left: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; */
     transition: all 0.3s ease-in-out;
   }
+
+  @media (min-width: 1024px) {
+    display: flex;
+    position: relative;
+    width:fit-content;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.85) 56%;
+    right:0;
+  }
 `;
 
 const Link = styled.a`
@@ -107,10 +120,6 @@ const Link = styled.a`
   cursor: pointer;
   padding: 0 1rem;
   position: relative;
-  /* left: 32.24%;
-  right: 44.86%;
-  top: 23.84%;
-  bottom: 72.67%; */
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;

@@ -19,6 +19,10 @@ const ClassesContainer = styled.div`
   @media (min-width: 768px) {
   display: flex;
 }
+
+@media (min-width: 1024px) {
+  margin-bottom:7%;
+}
 `;
 
 const GroupOfThree = styled.div`
@@ -29,11 +33,20 @@ const GroupOfThree = styled.div`
   width: 100vw;
   margin-top:5%;
   gap:1rem;
+
+  @media (min-width: 1024px) {
+    flex-wrap:none;
+    gap:0;
+}
 `;
 const SingleClassWrapper = styled.div`
     display:display;
     flex-direction:column;
     width:40%;
+
+    @media (min-width: 1024px) {
+    width:30%;
+}
 `
 
 const SlideImage = styled.img`

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Slogan } from 'components/Slogan';
 import { HeroTextContent } from 'components/HeroText';
-import Navbar from 'components/Menu';
+import Navbar from 'components/Navbar';
 import heroBg from '../assets/hero.svg';
 import heroBgLarge from '../assets/hero-large.svg';
 import logoHero from '../assets/logo-hero.svg';
@@ -28,13 +28,18 @@ const Logo = styled.img`
   width: 21.5%;
   margin-top: 4%;
   margin-left: 4.5%;
+
+  @media (min-width: 1024px) {
+    width: 10%;
+    margin-top: 1%;
+  }
 `
 const Topwrapper = styled.div`
   display:flex;
   flex-direction:row;
   justify-content:space-between;
-  padding-right:7.4%;
-  padding-top:4.7%;
+  /* padding-right:7.4%;
+  padding-top:4.7%; */
  `;
 
 const ButtonDiv = styled.div`
