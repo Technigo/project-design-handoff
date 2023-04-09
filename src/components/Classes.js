@@ -39,21 +39,11 @@ const Arrow = styled.img`
   padding-left: 7px;
 `
 
-/* Placeholder/potential wrapper for carousel */
-const ClassCarouselWrapper = styled.div`
-border: pink dotted 5px;
-height: 240px;
-width: 80%;
-color: black;
-`
-
 export const Classes = () => {
   return (
     <ClassesWrapper>
       <Heading>Our Classes <Arrow src="./images/icons/arrow.svg" /></Heading>
-      <ClassCarouselWrapper>
-        <ClassSlider />
-      </ClassCarouselWrapper>
+      <ClassSlider />
     </ClassesWrapper>
   )
 }
