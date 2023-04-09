@@ -9,7 +9,7 @@ padding-top: 1.5rem;
 padding-bottom: 3.75rem;
 `
 const StyledWrapper = styled.div`
-margin: 1.5rem
+margin: 1.5rem;
 
 @media(min-width: 768px) and (max-width: 1024px) {
   margin-left: 2rem;
@@ -34,10 +34,10 @@ color: #02393F;
 font-size: 16px;
 line-height: 160%;
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media(min-width: 768px) {
   font-size: 20px;
   padding-bottom: 3.5rem;
-}
+
 `
 
 const OnlineYoga = () => {
