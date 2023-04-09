@@ -8,9 +8,9 @@ const Footer = () => {
         <img src="./logo2.svg" alt="logo" className="footer_logo" />
       </div>
       <div className="text-container">
-        <p>Contact us:</p>
+        <p>Contact us</p>
         <p>acrogym@sportsorg.se</p>
-        <p>mob: 078 652 45 32</p>
+        <p>040 552 43 57</p>
       </div>
       <div className="social-media-container">
         <img src="./ig.svg" alt="logo" className="social_media_logo" />

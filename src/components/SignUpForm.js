@@ -38,6 +38,7 @@ const SignUpForm = () => {
 
   return (
     <div>
+      <h1>Become a member</h1>
       <section className="sign-up-form">
         <div className="sign-up-list">
           <form onSubmit={handleSubmit}>

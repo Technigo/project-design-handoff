@@ -1,6 +1,15 @@
 
   /* sign-up form rules   - starts here  */ 
-
+h1 {
+    font-family: sora;
+    font-size: 32px;
+    margin-top: -8px;
+    padding-top: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffcccc;
+    background-color: #333366;
+}
   .sign-up-form {
     margin-top: -8px;
     font-family: sora;
