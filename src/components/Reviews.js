@@ -105,7 +105,6 @@ background: #EBEBEB;
 padding: 3em;
 font-family: 'Libre Franklin';
 font-style: normal;
-margin-bottom:3em;
 `
 
 export const ReviewHeader = styled.h1`

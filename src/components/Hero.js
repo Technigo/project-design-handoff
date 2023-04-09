@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import HeroBackground from '../images/Hero.jpg'
 
 const HeroWrapper = styled.div`
 position: relative;
@@ -20,7 +21,7 @@ const HeroContainer = styled.div`
 }
 `
 const HeroImg = styled.div`
-background-image: url("../images/Hero.jpg");
+background-image: url(${HeroBackground});
 background-repeat: no-repeat;
 background-size: cover;
 height: 100%;

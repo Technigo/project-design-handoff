@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import SiteLogo from '../images/logo.svg';
+import SearchIcon from '../images/search.svg';
+import BurgerIcon from '../images/Hamburger.svg'
 
 const Nav = styled.nav`
   display: flex; 
@@ -74,7 +77,7 @@ li {
 const Navbar = () => {
   return (
     <Nav>
-      <Logo src="../images/Logo.png" alt="logo" />
+      <Logo src={SiteLogo} alt="logo" />
       <StyledList>
         <li>Home</li>
         <li>About</li>
@@ -83,8 +86,8 @@ const Navbar = () => {
         <li>Membership</li>
       </StyledList>
       <NavContainer>
-        <Search src="../images/search.svg" alt="looking glass" />
-        <Hamburger src="../images/Hamburger Menu.svg" alt="hamburger menu icon" />
+        <Search src={SearchIcon} alt="looking glass" />
+        <Hamburger src={BurgerIcon} alt="hamburger menu icon" />
       </NavContainer>
     </Nav>
   )

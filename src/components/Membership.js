@@ -37,8 +37,6 @@ const SliderItemContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: 'Libre Franklin';
-  font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
@@ -46,12 +44,10 @@ const Title = styled.h1`
   color: #025323;
   margin-top: 46px;
   padding: 0 10px;
-  margin-bottom: 25px;
+  margin-bottom: 1rem;
 `;
 
 const Content = styled.p`
-  font-family: 'Libre Franklin';
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 167.5%;
@@ -74,8 +70,6 @@ const Wrapper = styled.div`
   margin-bottom: 25px;
 `
 const Header = styled.h2`
-  font-family: 'Libre Franklin';
-  font-style: normal;
   font-weight: 600;
   font-size: 18.5071px;
   line-height: 22px;
@@ -83,8 +77,6 @@ const Header = styled.h2`
   margin-top: 1em;
 `;
 const Access = styled.p`
-  font-family: 'Libre Franklin';
-  font-style: normal;
   font-weight: 500;
   font-size: 9.25353px;
   line-height: 11px;
@@ -92,8 +84,6 @@ const Access = styled.p`
   margin:0px;
 `;
 const Price = styled.p`
-  font-family: 'Libre Franklin';
-  font-style: normal;
   font-weight: 500;
   font-size: 12.2091px;
   line-height: 15px;
@@ -110,7 +100,7 @@ const Button = styled.button`
   border-radius: 15px;
   text-align: center;
   color: #FFFFFF;
-  margin-top: 1em;
+  font-size: 20px;
   width: 244px;
   cursor:pointer;
 `;
@@ -127,6 +117,10 @@ const ArrowButtonLeft = styled.button`
   position:absolute;
   top: 60%;
   left: 25px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ArrowButtonRight = styled.button`
@@ -141,6 +135,10 @@ const ArrowButtonRight = styled.button`
   position:absolute;
   top: 60%;
   right: 25px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const Membership = () => {

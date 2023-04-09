@@ -7,41 +7,35 @@ import LinkedIn from '../images/LinkedIn.svg'
 
 const FooterWrapper = styled.div`
 background-color: #EBEBEB;
-width: auto;
-height: auto;
-object-fit: cover;
-background-image: url(${GreenBottom});
-background-size: 100% 100%; /* Update this line */
-background-repeat: no-repeat;
-background-position: center;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-padding: 4em;
 position: relative;
-@media (max-width: 768px) {
-  padding: 2em;
-}
-@media (max-width: 480px) {
-  padding: 1em;
-}
-`;
+`
+
+const ImgContainer = styled.div`
+  width: 100%;
+`
+
+const FooterImg = styled.div`
+height: 500px;
+background-image: url(${GreenBottom});
+background-size: cover; 
+background-repeat: no-repeat;
+background-position: center;
+position: relative;
+`
 
 const IconsSection = styled.section`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 15.53px;
-  padding-top:2em;
-  @media (max-width: 768px) {
-    margin-top: 2em; 
-  }
-  @media (max-width: 480px) {
-    margin-top: 1em; 
-  }
-`;
+  gap: 17px;
+  margin-bottom: -6rem;
+position: absolute;
+`
 
 const FacebookLogo = styled.img`
   max-width: 100%;
@@ -71,60 +65,55 @@ const LinkedInLogo = styled.img`
 `;
 
 const SubscribeText = styled.h5`
-  font-family: 'Libre Franklin';
-  font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 12px;
   padding: 0;
-  margin: 0;
+  margin-bottom: -12rem;
   color: #FFFFFF;
-  margin-top: 1em;
+  position: absolute;
+
+  @media (min-width: 744px) {
+    font-size: 16px;
+}
+@media (min-width: 1000px) {
+    font-size: 22px;
+}
 `;
 
 const EmailInputWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 20px;
-`;
+  margin-bottom: -20rem;
+  position: absolute;
+`
 
 const EmailInput = styled.input`
-  font-family: 'Libre Franklin';
-  font-style: normal;
   font-weight: 500;
   font-size: 7.83486px;
   line-height: 9px;
-  height:18px;
+  height:30px;
   border: none;
-`;
+  width: 50vw;
+`
 
 const SubscribeButton = styled.button`
-  font-family: 'Libre Franklin';
-  font-style: normal;
-  background-color: grey;
+  background-color: lightgrey;
   color: #65775A;
   font-size: 7.83486px;
   font-weight: 500;
   line-height: 9px;
   border: none;
   cursor: pointer;
-  height:20px;
-`;
-
-const GreenBottomOverlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+  height:32px;
 `;
 
 export const Footer = () => {
   return (
     <FooterWrapper>
-      <GreenBottomOverlay />
+      <ImgContainer>
+        <FooterImg />
+      </ImgContainer>
       <IconsSection>
         <FacebookLogo src={Facebook} alt="Facebook Logo" />
         <InstagramLogo src={Instagram} alt="Instagram Logo" />
