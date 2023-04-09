@@ -13,7 +13,11 @@ const Classes = ({ screenSize }) => {
     <div className="classesWrapper">
       <img className="ribbonOnBarreImage" src="../images/PictureFrameHalfPill.svg" alt="Ribbon on barre" />
       <div className="infoWrapper">
-        <img className="vectorImage" src="../images/Vector.svg" alt="Vector" />
+        <div className="backgroundImage">
+          <img className="whiteBackgroundMobile" src="../images/WhiteBackgroundMobile.svg" alt="White background shape" />
+          <img className="whiteBackgroundTablet" src="../images/WhiteBackgroundTablet.svg" alt="White background shape" />
+          <img className="whiteBackgroundDesktop" src="../images/WhiteBackgroundDesktop.svg" alt="White background shape" />
+        </div>
         <div className="infoSection">
           <h2>Come Sweat It Out at the Barre</h2>
           {/* // eslint-disable-next-line max-len */}

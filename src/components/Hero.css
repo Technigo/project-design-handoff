@@ -1,7 +1,7 @@
 .heroWrapper {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .heroImage {
@@ -53,6 +53,8 @@
     text-align: center;
     padding-right: 16px;
     padding-left: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     gap: 20px;
 }
 
@@ -103,7 +105,7 @@ p {
         padding-left: 16px;
         padding-bottom: 10px;
         position: absolute;
-        top: 220px;
+        top: 190px;
         left: 0;
         right: 300px;
         border-top-right-radius: 200px;

@@ -16,10 +16,19 @@
     margin-left: 16px;
 } 
 
-.vectorImage {
+.whiteBackgroundMobile {
     position: relative;
     width: 100%;
     z-index: 0;
+}
+
+.whiteBackgroundTablet {
+    display: none;
+}
+
+
+.whiteBackgroundDesktop {
+    display: none;
 }
 
 .infoWrapper {
@@ -74,6 +83,12 @@ p {
 
 @media (min-width: 450px) and (max-width: 666px) {
 
+    .classesWrapper {
+    }
+
+    .ribbonOnBarreImage {
+        /* margin-bottom: 100px; */
+    }
     .barreBasicImage {
         position: relative;
         margin-top: 30px;
@@ -82,6 +97,8 @@ p {
 .classesWrapper {
     
 }
+
+
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
@@ -93,5 +110,39 @@ p {
 
 .classesWrapper {
     padding-bottom: 320px;
+}
+
+.whiteBackgroundMobile {
+    display: none;
+}
+
+.whiteBackgroundTablet {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.whiteBackgroundDesktop {
+    display: none;
+}
+
+}
+
+@media (min-width: 1025px) {
+
+.whiteBackgroundMobile {
+    display: none;
+}
+
+.whiteBackgroundTablet {
+    display: none;
+}
+
+.whiteBackgroundDesktop {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 0;
 }
 }
