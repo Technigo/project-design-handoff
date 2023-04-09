@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 20px 30px 0;
+  background-color: grey;
+  
+}
+
+.navbar-logo img {
+  display: flex;
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #E3F7FC;
+}
+
+.navbar-hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 668px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    padding: 0;
+  }
+
+  .navbar-logo {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+  .navbar-links-open {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: grey;
+    padding: 10px;
+    align-items: center;
+    width: 40%;
+    z-index: 100;
+    
+  }
+
+  .navbar-hamburger-menu {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 101;
+    margin-right: 15px;
+  }
+
+  .navbar-hamburger-menu span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #E3F7FC;
+    z-index: 105;
+  }
+    
+    .navbar-links-open li {
+      margin-right: 0;
+      margin-bottom: 10px;
+      text-align: right;
+    }
+    .navbar-links li:last-child {
+      margin-bottom: 0;
+    }
+  
+    .navbar-links-open a {
+      color: #E3F7FC;
+      font-size: 1.2em; /* Increase the font size for better readability */
+    }
+  }
