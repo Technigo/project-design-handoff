@@ -43,7 +43,7 @@ export const ReviewTemp = () => {
       <ComeJoin>
         <h3>Come join us!</h3>
         <p>Discover all the benefits of Power Yoga and
-            Become a part of our amazing community!
+           Become a part of our amazing community!
         </p>
         <Slider />
       </ComeJoin>

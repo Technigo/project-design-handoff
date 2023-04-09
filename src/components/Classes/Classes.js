@@ -22,9 +22,9 @@ export const Classes = () => {
           <i className="fa-sharp fa-solid fa-chevron-down" />
         </ArrowDown>
       </div>
-      <div className="yoga-container">
-        <Slider />
-      </div>
+
+      <Slider />
+
     </>
   )
 }

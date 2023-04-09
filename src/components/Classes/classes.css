@@ -6,12 +6,11 @@
     margin: 16px 0 16px 0;
   }
 
-.yoga-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10px;
-  }
+  .yoga-container{
+    width: 310px;
+    padding-top: 20px; 
+    margin-bottom: 50px;
+}
 
 .yoga-container h3{
     padding-bottom: 8px;
@@ -19,8 +18,8 @@
 }
 
 .yoga-style img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
 }
 
 .awssld__content {
@@ -28,18 +27,10 @@
 }
 
 .awssld {
-  --organic-arrow-thickness: 3px;
+  --organic-arrow-thickness: 0;
   --organic-arrow-height: 13px;
   --slider-height-percentage: 60%;
   --loader-bar-color: #fff;
   --loader-bar-height: 1px;
-  --organic-arrow-color: #000;
-}
-
-.awssld__controls__arrow-right {
-  left: -70px;
-}
-
-.awssld__controls__arrow-left {
-  right: -70px;
+  --organic-arrow-color: #00000000;
 }

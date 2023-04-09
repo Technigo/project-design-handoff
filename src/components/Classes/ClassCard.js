@@ -1,16 +1,10 @@
 import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
-import styled from 'styled-components';
 import 'react-awesome-slider/dist/styles.css';
-
-const Slide = styled.div`
-width: 400px;
-height: fit-content;
-`
 
 export const Slider = () => {
   return (
-    <Slide>
+    <section className="yoga-container">
       <AwesomeSlider bullets={false}>
         <div className="yoga-style">
           <h3>Power Yoga 60</h3>
@@ -27,6 +21,6 @@ export const Slider = () => {
           <img src="./img/yoga-3.png" alt="Yoga Strong" />
         </div>
       </AwesomeSlider>
-    </Slide>
+    </section>
   );
 }
