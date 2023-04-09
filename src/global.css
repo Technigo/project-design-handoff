@@ -215,6 +215,87 @@ button {
   left: 20px;
 }
 
+/* ---- Workouts ---- */
+.item-a {
+  grid-area: strech;
+}
+.item-b {
+  grid-area: healthy;
+  height: 80vh;
+  background-color: #efefef;
+  position: relative;
+}
+
+.item-c {
+  grid-area: ab;
+  height: 30vh;
+  position: relative;
+  background-color: #dcd2f1;
+}
+
+.item-d {
+  grid-area: cardio;
+  height: 30vh;
+  position: relative;
+  background-color: #cad7ba;
+}
+.workout-box-container {
+  display: grid;
+  grid-template-columns: 10vw auto 10vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    '. strech .'
+    '. healthy .'
+    '. ab .'
+    '. cardio .';
+}
+.workout-box-container > div {
+  border-radius: 30px;
+}
+.box {
+  margin: 1rem 0 1rem 0;
+}
+.box > h2 {
+  font-size: 2rem;
+}
+.strech {
+  background-image: url(./assets/images/stretch.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+.strech > div:first-child {
+  position: absolute;
+  right: 50%;
+  top: 40%;
+  margin-right: -50px;
+}
+
+.strech > div:last-child {
+  position: absolute;
+  bottom: 4rem;
+  right: 25%;
+  left: 50%;
+  margin-left: -100px;
+}
+.healthy > div {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.ab > div {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+
+.cardio > div {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+
 /* ---- Sticky Nav ---- */
 .sticky-nav-container {
   display: flex;
