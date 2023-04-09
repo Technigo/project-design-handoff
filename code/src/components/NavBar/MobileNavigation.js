@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { HiMenu } from 'react-icons/hi'
 import { IoMdCloseCircleOutline } from 'react-icons/io'
+import { RxMagnifyingGlass } from 'react-icons/rx';
 import NavLinks from './NavLinks';
 import classes from './NavBar.module.css'
 
@@ -24,9 +25,11 @@ const MobileNavigation = () => {
 
   return (
     <nav className={classes.MobileNavigation}>
+      <RxMagnifyingGlass style={{ fontSize: '2rem', color: 'white', marginLeft: '1rem', marginBottom: '3rem' }} />
       {open ? closeIcon : hamburgerIcon}
       {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
     </nav>
+
   )
 }
 

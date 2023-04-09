@@ -3,10 +3,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React from 'react';
 
-const handleButtonClick = () => {
-  alert('Thank you for trying Self Health!');
-};
-
 const NavLinks = (props) => {
   return (
     <div>
@@ -31,8 +27,6 @@ const NavLinks = (props) => {
           <a className="menu-item" href="#club">Club</a>
         </li>
       </ul>
-
-      <button className="tryforfree" type="submit" onClick={handleButtonClick}>Try for Free</button>
     </div>
   );
 }
