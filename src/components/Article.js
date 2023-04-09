@@ -19,7 +19,7 @@ const ArticleContainer1 = styled.div`
 
   @media (min-width: 992px) {
     display: flex; 
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; 
   }
 `;
 const ArticleContainer2 = styled.div`
@@ -61,17 +61,15 @@ const Paragraf = styled.p`
   padding: 0 50px;
 `;
 const Button = styled.button`
-
-  margin-left:35%;
   padding: 15px 47px;
   background: #025323;
   border-radius: 15px;
   text-align: center;
   color: #FFFFFF;
   margin-bottom:61px;
+  
 `;
 const ImgBox = styled.div`
-
   width: 378.84px;
   height: 258.8px;
   border: 0.58px solid #025323;
@@ -79,7 +77,6 @@ const ImgBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
 `
 const Image = styled.img`
   width: 351.82px;
@@ -88,17 +85,24 @@ const Image = styled.img`
   border-radius: 12.5651px;
 `;
 const ArticleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
   @media (min-width: 992px){
     width: 588px;
     height: 393px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
   }
 `
 
 const ArticleSection = styled.div`
-  @media (min-width: 992px){
-    padding: 133px 133px;
-  }
+ 
  
 `
 
