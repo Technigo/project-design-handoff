@@ -27,7 +27,6 @@ const cardboxes = [
 
 const CarouselSection = ({ text, text2, logo }) => (
   <div className="carousel-section">
-    <h1>Take easy steps to your desired lifestyle</h1>
     <div className="carousel-wrapper" style={{ backgroundColor: '#D7CBFF' }}>
       <div className="carousel-box">
         <img src={logo} alt="Logo" style={{ width: '50px' }} />
@@ -44,6 +43,7 @@ const Section = () => {
 
   return (
     <div className="section">
+      <h1>Take easy steps to your desired lifestyle</h1>
       <AwesomeSlider>
         {cardboxes.map((cardbox) => (
           <div key={cardbox.id}>{renderSlide(cardbox)}</div>
