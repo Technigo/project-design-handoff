@@ -22,6 +22,10 @@ export const Headline2 = styled.h2`
         margin:0;
         text-align: ${(props) => (props.workoutsh2 ? 'left' : 'center')};
 
+    @media (min-width:1023px) and (max-width: 1203px) {
+        line-height: ${(props) => (props.workoutsh2 ? '96px' : '')};;
+    }
+
     @media (max-width: 768px) {
        font-size: ${(props) => (props.workoutsh2 ? '56px' : '24px')};
        line-height: ${(props) => (props.workoutsh2 ? '73.36px' : '28.32px')};

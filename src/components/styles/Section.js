@@ -219,6 +219,9 @@ export const TextBlock = styled(TextContainer)`
   align-items: stretch; 
   height: ${(props) => (props.grey ? '70%' : '100%')};
 
+  @media (min-width: 768px) and (max-width: 1223px) {
+    gap: ${(props) => (props.large ? '20px' : '8px')};
+  }
 
   @media (max-width: 768px) {
     width: ${(props) => (props.workoutscolumn ? '100%' : '')};
