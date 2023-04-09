@@ -24,6 +24,9 @@ const MemberShipContainer = styled.div`
   justify-content: center;
   background-color: #EBEBEB;
   position: relative;
+  @media (min-width: 1024px){
+    display: none;
+  }
 `;
 
 const SliderItemContainer = styled.div`
@@ -56,14 +59,18 @@ const Content = styled.p`
   font-size: 18px;
   line-height: 167.5%;
   text-align: center;
-  color: #025323;
-  padding: 0 50px;
+
 `;
 export const Image = styled.img`
   width: 288.54px;
   height: 201.05px;
   object-fit: cover;
   border-radius: 16.8246px;
+  @media (min-width: 1024px){
+    width: 311.13px;
+    height: 205.91px;
+ }
+ 
 `;
 const Wrapper = styled.div`
   align-items: left;
@@ -138,6 +145,36 @@ const ArrowButtonRight = styled.button`
   top: 60%;
   right: 15px;
 `;
+const OptionalContainer = styled.div`
+  @media (min-width: 1024px){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBEBEB;
+  }
+
+`
+const ClassWrapper = styled.div`
+   display: flex;
+   flex-direction: row;
+`
+const Class = styled.div`
+  Width: 311.13px;
+  Height: 460.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBEBEB;
+  border: 2.52369px solid #025323;
+  border-radius: 16.8246px;
+  margin: 15px;
+  
+  @media (max-width: 667px){
+  display: none; 
+}
+`
 
 export const Membership = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -151,6 +188,7 @@ export const Membership = () => {
   };
 
   return (
+    <>
     <MemberShipContainer>
       <Title>Sign up for membership</Title>
       <Content>Most classes are 30 minutes and serivel of them can been taken online</Content>
@@ -174,5 +212,36 @@ export const Membership = () => {
         <img src={Rightarrow} alt="right"/>
       </ArrowButtonRight>
     </MemberShipContainer>
+
+    <OptionalContainer>
+       <Title>Sign up for membership</Title>
+       <Content>Most classes are 30 minutes and serivel of them can been taken online</Content>
+       <ClassWrapper>
+        <Class>
+          <Image src={items[0].image} alt="carousel item" />
+          <Header>{items[0].header}</Header>
+          <Access>{items[0].access}</Access>
+          <Price>{items[0].price}</Price>
+          <Button type="button">Buy Now</Button>
+       </Class>
+       <Class>
+          <Image src={items[1].image} alt="carousel item" />
+          <Header>{items[1].header}</Header>
+          <Access>{items[1].access}</Access>
+          <Price>{items[1].price}</Price>
+          <Button type="button">Buy Now</Button>
+       </Class>
+       <Class>
+          <Image src={items[2].image} alt="carousel item" />
+          <Header>{items[2].header}</Header>
+          <Access>{items[2].access}</Access>
+          <Price>{items[2].price}</Price>
+          <Button type="button">Buy Now</Button>
+        </Class>
+       </ClassWrapper>
+       
+    </OptionalContainer>
+    </>
   );
 };
+

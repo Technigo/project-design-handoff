@@ -16,6 +16,11 @@ const ArticleContainer1 = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
+
+  @media (min-width: 968px) {
+    display: flex; 
+    flex-direction: row-reverse;
+  }
 `;
 const ArticleContainer2 = styled.div`
   margin-top:30px;
@@ -24,9 +29,16 @@ const ArticleContainer2 = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
+
+  @media (min-width: 968px) {
+    display: flex; 
+    flex-direction: row;
+  }
 `;
 const ContentBox = styled.div`
-  padding:
+  padding: 0 31px;
+  justify-content: center;
+  align-items: center;
 `;
 const Header = styled.h1`
   font-family: 'Libre Franklin';
@@ -49,10 +61,8 @@ const Paragraf = styled.p`
   padding: 0 50px;
 `;
 const Button = styled.button`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+
+  margin-left:35%;
   padding: 15px 47px;
   background: #025323;
   border-radius: 15px;
@@ -61,6 +71,7 @@ const Button = styled.button`
   margin-bottom:61px;
 `;
 const ImgBox = styled.div`
+
   width: 378.84px;
   height: 258.8px;
   border: 0.58px solid #025323;
@@ -68,42 +79,57 @@ const ImgBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
+  margin-left: 20px;
 `
 const Image = styled.img`
   width: 351.82px;
   height: 234.34px;
-  left: 33.82px;
-  top: 907.13px;
   border: 6px solid #025323;
   border-radius: 12.5651px;
 `;
+const ArticleWrapper = styled.div`
+  @media (min-width: 968px){
+    width: 588px;
+    height: 393px;
+    justify-content: center;
+  }
+`
+
+const ArticleSection = styled.div`
+  @media (min-width: 968px){
+    padding: 133px 133px;
+  }
+ 
+`
 
 export const Article = () => {
   return (
-    <>
+    <ArticleSection>
       <ArticleContainer1>
-        <ContentBox>
-          <Header>{article[0].header}</Header>
-          <Paragraf>{article[0].paragraf}</Paragraf>
-        </ContentBox>
-        <Button type="button">Read more</Button>
+        <ArticleWrapper>
+          <ContentBox>
+            <Header>{article[0].header}</Header>
+            <Paragraf>{article[0].paragraf}</Paragraf>
+          </ContentBox>
+          <Button type="button">Read more</Button>
+        </ArticleWrapper>
         <ImgBox>
           <Image src={Readme1} alt="readme" />
         </ImgBox>
       </ArticleContainer1>
 
       <ArticleContainer2>
-        <ContentBox>
-          <Header>{article[1].header}</Header>
-          <Paragraf>{article[1].paragraf}</Paragraf>
-        </ContentBox>
-        <Button type="button">Read more</Button>
+        <ArticleWrapper>
+          <ContentBox>
+            <Header>{article[0].header}</Header>
+            <Paragraf>{article[0].paragraf}</Paragraf>
+          </ContentBox>
+          <Button type="button">Read more</Button>
+        </ArticleWrapper>
         <ImgBox>
           <Image src={Readme2} alt="readme" />
         </ImgBox>
       </ArticleContainer2>
-    </>
+    </ArticleSection>
   )
 }
