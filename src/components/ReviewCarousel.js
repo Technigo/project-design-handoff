@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-//  import ReactSimplyCarousel from 'react-simply-carousel'
+import ReactSimplyCarousel from 'react-simply-carousel'
 import User1 from './images/review1.png'
 import User2 from './images/review2.png'
 import User3 from './images/review3.png'
@@ -12,19 +12,19 @@ const reviews = [
     id: 1,
     name: 'John B.',
     image: User1,
-    review: 'Anyone who thinks of joining a class, do it! Its such a great mix of physical exercise and a calm break from the everyday life.'
+    text: 'Anyone who thinks of joining a class, do it! Its such a great mix of physical exercise and a calm break from the everyday life.'
   },
   {
     id: 2,
     name: 'Anna M.',
     image: User2,
-    review: 'Just WOW. I have never tried something like this before, but this is definetally my new thing! Never going back to a normal gym.'
+    text: 'Just WOW. I have never tried something like this before, but this is definetally my new thing! Never going back to a normal gym.'
   },
   {
     id: 3,
     name: 'Moa F.',
     image: User3,
-    review: '10/10 recommend! Everyone should go to the Santulan studio and try out power yoga at least once in their lives.'
+    text: '10/10 recommend! Everyone should go to the Santulan studio and try out power yoga at least once in their lives.'
   }
 ]
 
@@ -34,12 +34,11 @@ const reviews = [
 const OuterWrapper = styled.div`
   height: 260px;
   border: 1px dotted pink;
-  width: 95%;
-  max-width: 451px;
+  width: fit-content;
 `
 
 const ReviewWrapper = styled.div`
-  width: 100%;
+  width: 360px;
   height: 232px;
   background-color: #4796A8;
   border-radius: 20px;
@@ -47,6 +46,15 @@ const ReviewWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (min-width: 454px) {
+    width: 451px;
+  }
+  @media (min-width: 685px) {
+    width: 340px;
+  }
+  @media (min-width: 902px) {
+    width: 451px;
+  }
 `
 
 const ReviewText = styled.p`
@@ -80,15 +88,65 @@ line-height: 26px;
 `
 
 export const ReviewCarousel = () => {
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0)
   return (
     <OuterWrapper>
-      <ReviewWrapper>
-        <ReviewText>{reviews[1].review}</ReviewText>
-        <ReviewerWrapper>
-          <ReviewerImage src={reviews[1].image} />
-          <ReviewerName>{reviews[1].name}</ReviewerName>
-        </ReviewerWrapper>
-      </ReviewWrapper>
+      <ReactSimplyCarousel
+        activeSlideIndex={activeSlideIndex}
+        onRequestChange={setActiveSlideIndex}
+        itemsToShow={1}
+        itemsToScroll={1}
+        forwardBtnProps={{
+          // here you can also pass className, or any other button element attributes
+          style: {
+            display: 'none'
+          },
+          children: <span>{'>'}</span>
+        }}
+        backwardBtnProps={{
+          // here you can also pass className, or any other button element attributes
+          style: {
+            display: 'none'
+          },
+          children: <span>{'>'}</span>
+        }}
+        /* These dots are too big, but there seems to be limits to personalisation */
+        dotsNav={{
+          show: true,
+          itemBtnProps: {
+            style: {
+              height: 12,
+              width: 3,
+              borderRadius: '50%',
+              border: 0,
+              background: 'lightgray',
+              margin: 5
+            }
+          },
+          activeItemBtnProps: {
+            style: {
+              height: 12,
+              width: 3,
+              borderRadius: '50%',
+              border: 0,
+              background: 'white',
+              margin: 5
+            }
+          }
+        }}
+        speed={400}
+        easing="linear">
+        {/* Content of the slider: */}
+        {reviews.map((item) => (
+          <ReviewWrapper key={item.id}>
+            <ReviewText>{item.text}</ReviewText>
+            <ReviewerWrapper>
+              <ReviewerImage src={item.image} />
+              <ReviewerName>{item.name}</ReviewerName>
+            </ReviewerWrapper>
+          </ReviewWrapper>
+        ))}
+      </ReactSimplyCarousel>
     </OuterWrapper>
   )
 }

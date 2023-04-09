@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: stretch;
 
-  @media (min-width: 545px) {
+  @media (min-width: 454px) {
     margin: 26px auto 20px auto;
   }
 
