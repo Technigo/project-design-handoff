@@ -1,6 +1,12 @@
 import React from 'react';
-import { DesktopHero } from './components/Hero/DesktopHero';
+import { Hero } from './components/Hero/Hero';
+import { Intro } from './components/Intro/Intro';
 
 export const App = () => {
-  return <DesktopHero />;
+  return (
+    <div>
+      <Hero />
+      <Intro />
+    </div>
+  );
 };

@@ -1,24 +1,25 @@
 import React from 'react';
 import { Navbar } from '../Navbar/Navbar';
-import { Button } from '../Button/Button';
-import { StyledDesktopHero } from './DesktopHero.styled';
+import { StyledHero } from './Hero.styled';
 import BgVideo from '../images/hero-video.mp4';
+import MobileImg from '../images/hero-image.jpg';
 
-export const DesktopHero = () => {
+export const Hero = () => {
   return (
-    <StyledDesktopHero>
+    <StyledHero>
       <div className="hero">
         <Navbar />
         <video autoPlay muted loop id="hero-video">
           <source src={BgVideo} type="video/mp4" />
         </video>
+        <img id="hero-image" src={MobileImg} alt="mobile" />
         <div className="hero-text">
           Outdoor <br /> Workout
         </div>
-        <div className="hero-btn">
-          <Button>Join us today!</Button>
-        </div>
+        <button type="button" className="hero-btn">
+          Join us today!
+        </button>
       </div>
-    </StyledDesktopHero>
+    </StyledHero>
   );
 };

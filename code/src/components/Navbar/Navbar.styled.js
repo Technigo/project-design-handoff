@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledNavbar = styled.div`
+  .mobile-logo {
+    display: none;
+  }
+
   header {
     display: flex;
     align-items: center;
@@ -13,10 +17,6 @@ export const StyledNavbar = styled.div`
     left: 0;
     width: 100%;
     height: 97px;
-  }
-
-  .logo-img {
-    width: 10vw;
   }
 
   nav a {
@@ -43,6 +43,14 @@ export const StyledNavbar = styled.div`
   }
 
   @media screen and (max-width: 820px) {
+    .desktop-logo {
+      display: none;
+    }
+
+    .mobile-logo {
+      display: inline;
+    }
+
     header nav {
       display: flex;
       flex-wrap: nowrap;
