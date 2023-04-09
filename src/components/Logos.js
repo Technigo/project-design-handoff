@@ -53,6 +53,7 @@ const LogoDesk = styled.div`
 
     h5 {
         margin-left: 10px;
+        width: 100px;
     }
 
     img {

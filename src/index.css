@@ -20,6 +20,8 @@ code {
   background-image: url('/public/img/yoga1515x982.jpg');
   background-size: cover;
   background-position: center;
+  position: relative;
+  height: 928px;
   margin: 0;
 }
 
