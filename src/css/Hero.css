@@ -1,0 +1,119 @@
+.hero-container {
+  display: flex; 
+  text-align: center; 
+  background-image: url('../Images/hero.png');
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position:25% 21%; 
+}
+
+.hero-text-and-button {
+display: flex; 
+flex-direction: column; 
+align-content: center;
+width: 100%; 
+object-fit: cover;
+margin: 100px 0px; 
+}
+
+.hero-text-and-button h4 {
+  width: 700px; 
+  font-family: 'Inter';
+  font-weight: 700; 
+  font-size: 32px; 
+  align-self: center; 
+  color: #FBEDDE;
+  line-height: 45px;  
+
+}
+
+.title-text {
+  display: flex; 
+  width: 700px;
+  font-family:'Poppins';
+  font-weight: 600;
+  font-size: 96px; 
+  color: #FBEDDE; 
+  align-self: center; 
+  line-height: 102px; 
+  margin-top: 157px; 
+  margin-bottom:0px; 
+
+}
+/* 
+.button {
+  width: 390px; 
+  padding: 32px 49px; 
+  background: #DBFE62;
+  border-radius: 47px;
+  align-self: center; 
+  font-family: 'Poppins'; 
+  font-size: 24px; 
+  font-weight: 600; 
+} */
+
+
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .hero-container {
+    background-position: 75% 21%; 
+  }
+
+  .title-text {
+    font-size: 88px; 
+    font-weight:500;;
+    margin: 100px 32px 0px 32px 
+  }
+  .hero-text-and-button h4 {
+    width: 80%; 
+    font-size: 24px;
+}  
+  .hero-text-and-button {
+    margin-top: 176px; 
+    margin-bottom: 30px; 
+  }
+
+}
+
+@media (max-width: 667px) {
+  .title-text {
+    font-size: 56px;
+    font-weight: 500;  
+    width: 80%; 
+    justify-content: center; 
+    line-height: 56px; 
+    margin: 100px 32px 0px 32px; 
+  }
+
+  .hero-container {
+    background-position: 75% 21%; 
+  }
+
+  .hero-text-and-button h4 {
+    width: 80%; 
+    font-size: 24px;
+}  
+  .hero-text-and-button {
+    margin-top: 176px; 
+    margin-bottom: 30px; 
+  }
+
+  .pitch-title {
+    margin: 24px; 
+  }
+
+  /* .button {
+    width: 80%; 
+  }   */
+
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 16px; 
+  }
+
+  .hamburger-menu {
+    width: 50%; 
+  }
+}
