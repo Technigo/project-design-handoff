@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <div className="hero-container">
       <img className="background-img" src="./images/people/Hero.svg" alt="Hand on barr" />
@@ -9,5 +9,3 @@ const Hero = () => {
     </div>
   );
 }
-
-export default Hero

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Join.css';
 
-const Join = () => {
+export const Join = () => {
   return (
     <div className="join">
       <p>Join our full-body workout inspired by Ballet, Pilates, and Yoga.</p>
@@ -9,5 +9,3 @@ const Join = () => {
     </div>
   );
 }
-
-export default Join

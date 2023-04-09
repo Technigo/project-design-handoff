@@ -2,7 +2,7 @@
 import React from 'react';
 import './Class.css';
 
-const Class = () => {
+export const Class = () => {
   return (
     <section className="classes-container">
       <div className="sweat">
@@ -15,5 +15,3 @@ const Class = () => {
     </section>
   );
 }
-
-export default Class

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Praise.css';
 
-const Praise = () => {
+export const Praise = () => {
   return (
     <div className="praise">
       <h2>Why Students Love Our Barre Classes</h2>
@@ -12,7 +12,5 @@ const Praise = () => {
       <p> I always feel energized at the end of the class” </p>
       <p> -Paula Ray, <i> Barre Strong Student </i></p>
     </div>
-  )
+  );
 }
-
-export default Praise

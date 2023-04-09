@@ -2,7 +2,7 @@
 import React from 'react';
 import './Form.css';
 
-const Form = () => {
+export const Form = () => {
   return (
     <section>
       <div className="register">
@@ -39,12 +39,5 @@ const Form = () => {
         </form>
       </div>
     </section>
-  )
+  );
 }
-
-export default Form
-
-/*
-Link for Login
-https://www.w3schools.com/css/css_link.asp
-*/
