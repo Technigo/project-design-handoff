@@ -33,10 +33,37 @@ height: 100%;
 --organic-arrow-color: #000;
 }
 
+.awssld__controls {
+  visibility: visible;
+}
+
 .awssld__controls__arrow-left {
-  right: -160%;
+  right: -100%;
 }
 
 .awssld__controls__arrow-right {
- left: -160%;
+ left: -100%;
+}
+
+@media (min-width: 670px) {
+  .yoga-container{
+    height: 35vh;
+  }
+
+  .awssld__controls__arrow-left {
+    right: -290%;
+  }
+  
+  .awssld__controls__arrow-right {
+   left: -290%;
+  }
+}
+
+@media (min-width: 895px) {
+  .awssld {
+    display: none;
+  }
+  .yoga-container{
+    display: none;
+  }
 }
