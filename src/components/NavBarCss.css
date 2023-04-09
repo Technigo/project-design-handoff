@@ -9,8 +9,14 @@
 .nav-container {
     width: 100%;
     background-image: url(../assets/yogadog\ 1.svg);
-    background-position: bottom -10px right -350px;
-    height: 1000px;
+    background-position: bottom -220px right -350px;
+    height: 100%vh;
+    /*
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 100%vh;
+    width: 100%; */
 
 }
 
@@ -115,11 +121,12 @@ a {
 @media (min-width:1024px) {
 
  .nav-container {
-    background-size: contain;
     background-color: #95A6B5;
-    background-size: 120%;
-    background-position: center;
+    background-size: cover;
+    background-position: 50%;
     background-repeat: no-repeat;
+    height: 100%vh;
+    width: 100%;
 
 }
 .hamburger-sign {

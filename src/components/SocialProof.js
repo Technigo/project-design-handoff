@@ -17,7 +17,7 @@ const SocialProof = () => {
             and humans. We aim to give you the best experience
             and for knowledge and understanding to grow.
         </p>
-        <Button className="button-social-proof"> Find out more </Button>
+        <Button className="button-social-proof"> Read more </Button>
       </div>
     </section>
   )
