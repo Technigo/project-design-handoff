@@ -1,13 +1,17 @@
 .signup-outer-wrapper{
   position:relative;
-}
+  background-image: url('/public/assets/forminput.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+ }
+
 .signup-inner-wrapper {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100;
-    background-color: rgba(0, 0, 0, 0.1);
   }
 
 .signup-outer-wrapper h1{
@@ -18,7 +22,6 @@
     margin-top:4rem;
     text-align: center;
     color:#62CABC;
-    ;
    }
 
 .highlighted-text{
@@ -41,6 +44,9 @@
 .form input {
   background-color: transparent;
   border-bottom: white 2px solid;
+  border-right:0;
+  border-left:0;
+  border-top:0;
   font-weight: bold;
 }
 
@@ -67,10 +73,10 @@
 
 .checkbox-container {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   
-  .checkbox-container p{
+  .checkbox-label{
   font-size: 1.2rem;
   line-height: 1rem;
   letter-spacing: 0.5px;
@@ -101,5 +107,108 @@
 
 @media (min-width: 640px)
 {
-  
+  .signup-outer-wrapper{
+    height: 60vh;
+    background-size: 150%;
+    background-position: top left;
+    background-repeat: no-repeat; }
+
+  .signup-card {
+    background-color: white;
+    box-shadow: 0px 5px 31px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    max-width:50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding:20px;
+    margin-left:30px;
+    margin-top:20px;
+  }
+  .signup-outer-wrapper h1{
+    font-size: 3rem;
+    margin-bottom:0;
+    margin-top:5px;
+   }
+   .signup-outer-wrapper h3{
+    font-size: 1.5rem;
+    color:#373F74;
+    margin-top: 0;
+   }
+
+  .form input {
+    width: 50vw;
+    border-bottom: #373F74 2px solid;
+    margin:5px;
+}
+.form{
+  margin-top:24%;
+  margin-right:30px;
+  color:#373F74;
+  gap:0;
+}
+
+.checkbox-container{
+  width: 30vw;
+  margin-left: 10px;
+  margin-top:20px;
+  line-height: 1rem;
+}
+.checkbox-label{
+  font-size: 1.5rem;
+  color:#373F74;
+  width:80%;
+
+  }
+  .custom-checkbox{
+    height: 1.5rem;
+    max-width:30px;
+  }
+.free-trial-button{
+  margin-left:6.5rem;
+  border-width: 5px;
+  font-size: 2rem;
+}
+}
+
+
+@media (min-width: 1025px)
+{
+  .signup-outer-wrapper{
+    height: 100vh;
+    background-size: 120%;
+    background-position: top left;
+}
+
+  .signup-card {
+    max-width:40vw;
+    height: 90vh;
+  }
+   .signup-outer-wrapper h3{
+    font-size: 1.9rem;
+    margin-top: 15px;
+   }
+
+  .form input {
+    width: 40vw;
+    border-bottom: #373F74 2px solid;
+    margin:5px;
+}
+.form{
+  margin-top:20%;
+}
+
+.checkbox-container{
+  width: 40vw;
+  margin-left: 20px;
+  margin-top:4rem;
+}
+.checkbox-label{
+  font-size: 1.5rem;
+  }
+
+.free-trial-button{
+  margin-left:8.5rem;
+}
 }
