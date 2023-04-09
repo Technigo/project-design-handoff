@@ -104,7 +104,10 @@ input[type=text] {
 }
 
 @media (min-width:668px) and (max-width:1023px) {
-
+    .button-submit {
+        border: 1px red solid;
+        background-color: #F35408;
+    }
     .footer-content-wrapper {
         display: flex;
         flex-direction: column;

@@ -1,0 +1,65 @@
+.social-proof-container {
+    background-color: #F0EAE1;
+    padding: 4rem 2rem;
+}
+
+.proof-text-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.header-proof {
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #95A6B5;
+    
+}
+
+.habits-text-size2 {
+    font-size: 24px;
+    font-style: oblique;
+    font-weight: 800;
+    color: #95A6B5;
+}
+
+.proof-paragraph {
+    color: #95A6B5;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 1.5rem 0;
+}
+
+.button-social-proof {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #95A6B5;
+}
+
+@media (min-width:668px) and (max-width:1023px) {
+    .social-proof-container {
+        padding: 4rem 5rem;
+    }
+    .button-social-proof {
+        width: 200px;
+    }  
+}
+
+@media (min-width:1024px) {
+    .social-proof-container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-top: 3rem;
+    }
+
+    .button-social-proof {
+        width: 200px;
+    } 
+}

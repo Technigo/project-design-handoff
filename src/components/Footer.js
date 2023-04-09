@@ -1,10 +1,11 @@
 import React from 'react'
 import './FooterCss.css'
-import { Button } from './Button'
 import IconFcb from '../assets/fcb.svg'
 import IconIg from '../assets/ig.svg'
 import IconYb from '../assets/yt.svg'
 import IconLi from '../assets/li.svg'
+import { Button } from './Button'
+import { ButtonL } from './ButtonL'
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
           <p className="paragraph">Catch up on research, meet the trainers and experts behind our concept and courses. Receive invitations to events and additional courses online and on site world-wide.</p>
           <div className="input-container">
             <input type="text" placeholder="Enter your email" />
-            <Button>Submit</Button>
+            <ButtonL>Submit</ButtonL>
           </div>
         </div>
         <div className="bottom-footer-container">
