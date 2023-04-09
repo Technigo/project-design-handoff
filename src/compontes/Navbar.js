@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MenuIcon from '../assets/images/menu.svg';
+
 const Navbar = () => {
   return (
     <nav className="top-nav">
@@ -19,7 +21,8 @@ const Navbar = () => {
         </li>
       </ul>
       <button type="button">Download app</button>
-      <button type="button">🍔</button>
+
+      <img src={MenuIcon} alt="menu-button" />
     </nav>
   );
 };

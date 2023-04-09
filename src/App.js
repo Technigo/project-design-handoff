@@ -10,11 +10,11 @@ export const App = () => {
   return (
     <>
       <Header />
+      <StickyNav />
       <Benefits />
       <Workout />
       <Application />
       <SignUpForm />
-      <StickyNav />
     </>
   );
 };

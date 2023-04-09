@@ -21,8 +21,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul,
+ol {
   list-style: none;
   padding: 0;
 }
@@ -99,13 +99,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ---- Main navigation ---- */
+
 .top-nav {
   display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
 }
 
 .top-nav ul {
-  display: flex;
+  display: none;
 }
+.top-nav button {
+  display: none;
+}
+
+/* ---- Header ---- */
+
 .header {
   background-image: url(./assets/images/childpose.jpg);
   background-position: center;
@@ -160,4 +170,28 @@ button {
 .card {
   border-radius: 30px;
   background-color: beige;
+}
+
+/* ---- Sticky Nav ---- */
+.sticky-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 85vh;
+}
+.sticky-nav-container nav {
+  background-color: black;
+  color: #ffff;
+  border-radius: 30px;
+}
+
+.sticky-nav-container nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-nav-container li {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
 }
