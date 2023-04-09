@@ -8,7 +8,7 @@ import { CardClasses } from './CardClasses'
 
 const StyledOurClasses = styled.div`
 background-color: #D7C3E2;
-height: 630px;
+height: 690px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -30,7 +30,7 @@ display: flex;
 align-self: stretch;
 justify-self: flex-start;
 position: relative;
-margin-top: -50px;
+margin-top: -60px;
 
 @media (min-width:641px) and (max-width:1024px) {
   height: 161px;
@@ -48,7 +48,7 @@ display: flex;
 align-self: stretch;
 justify-content: flex-end;
 position: relative;
-bottom: -40px;
+bottom: -60px;
 
 @media (min-width:641px) and (max-width:1024px) {
   height: 160px;

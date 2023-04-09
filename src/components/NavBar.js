@@ -28,15 +28,35 @@ ul {
   list-style-type: none;
 }
 
-li,p {
+li, .searchBtn {
   font-size: 24px;
   letter-spacing: 1px;
 }
 
-p {
+.searchBtn {
   margin-right: 47px;
   display: flex;
- justify-self: end;
+  justify-self: end;
+  border: none;
+  background-color:transparent;
+  align-items:center;
+  gap: 4px;
+  transition: background-position 2s;
+}
+
+.searchBtnImg{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+  visibility: hidden;
+}
+
+.searchBtn {
+  &:hover .searchBtnImg {
+    visibility: visible;
+  }
 }
 `
 
@@ -51,11 +71,8 @@ const MenuIcon = styled.img`
 width: 40px;
 height: 40px;
 margin-right: 16px;
-
-.search{
-  background-color:red;
-}
 `
+
 const SearchIcon = styled.img`
 width: 40px;
 height: 40px;
@@ -100,7 +117,10 @@ export const NavBar = () => {
           <li>About</li>
           <li>Contact</li>
         </ul>
-        <p>Search</p>
+        <button className="searchBtn" type="button" alt="search">
+          <img className="searchBtnImg" src={SearchIconImg} alt="search" />
+          Search
+        </button>
       </DesktopHeader>
     </StyledNavBar>
   )
