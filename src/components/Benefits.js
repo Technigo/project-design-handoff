@@ -7,6 +7,7 @@ import SelSrc from '../icons/self-care.svg'
 const StyledSection = styled.section`
 background-color: #D0C4B8;
 padding: 1.5rem;
+
 `
 
 const StyledBenefitsWrapper = styled.div`
@@ -26,6 +27,8 @@ const StyledBenefitsWrapper = styled.div`
     flex-direction: row;
     max-width: 1216px;
     gap: 5rem;
+    margin: auto;
+    padding-bottom: 4.5rem;
     }
 `
 
@@ -43,13 +46,12 @@ const StyledCard = styled.div`
     @media(min-width: 768px) and (max-width: 1024px) {
       max-height: 313px;
       max-width: 450px;
-     
     }
 
     @media(min-width: 1025px) {
       max-width: 352px;
       max-height: 345px;
-      padding: 16px 8px;
+      padding: 24px 32px;
     }
 
 `
@@ -63,11 +65,14 @@ const StyledH2 = styled.h2`
       font-size: 40px;
       width: 540px;
       margin-left: 32px;
-      margin-bottom: 64px;
+      margin-bottom: 4rem;
     }
 
     @media(min-width: 1025px) {
-      width: unset;
+      max-width: 1216px;
+      margin: auto;
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
     }
 `
 const Icon = styled.img`

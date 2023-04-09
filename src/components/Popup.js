@@ -31,7 +31,7 @@ padding-bottom: 3rem;
 overflow-y: scroll;
 z-index: 3;
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   gap: 1.5rem;   
 }
 
@@ -73,13 +73,13 @@ flex-direction: column;
 gap: 1rem;
 align-items: center;
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 `
 const SecondRow = styled.div`
-@media(min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   grid-row: 2;
   grid-column: 1 / span 2;
   display: flex;
@@ -106,7 +106,7 @@ gap: 1rem;
 justify-content: center;
 padding-bottom: 40px;
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   grid-column: 2;
   width: 100%;
 }
@@ -129,7 +129,7 @@ color: #F5F5F5;
 border: none;
 }
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   padding: 12px 40px;
   width: 146px;
 }

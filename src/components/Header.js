@@ -14,17 +14,20 @@ padding-top: 1.5rem;
 @media(min-width: 768px) and (max-width: 1024px) {
 background-size: 130%;
 }
+
+@media (min-width: 1025px) {
+max-height: 1200px;
+}
 `
 const StyledHeaderWrapper = styled.div`
 padding: 0 1.5rem;
 `
 const StyledLogoWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+display: flex;
+justify-content: space-between;
+align-items: center;
 
-@media(min-width: 1025) {
+@media (min-width: 1025px) {
   padding: 5.5rem;
 }
 `
@@ -42,19 +45,20 @@ margin-top: 10rem;
   max-width: 600px;
   }
 
-  @media(min-width: 1025) {
-    display: flex;
-    flex-direction: column;
-    align-content: left;
-    margin-left: 7rem;
-    margin-top: 15rem;
+@media(min-width: 1025px) {
+  max-width: 605px;
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  margin-left: 7rem;
+  margin-top: 15rem;
   }
 `
 const StyledH1 = styled.h1`
 font-size: 2rem;
 font-weight: 700;
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   max-width: 600px;
   font-size: 50px;
   line-height: 160%;
@@ -66,12 +70,12 @@ font-size: 21px;
 color: #F5F5F5;
 line-height: 150%;
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   max-width: 600px;
   font-weight: 400;
   } 
 
-@media(min-width: 1025) {
+@media (min-width: 1025px) {
   font-size: 20px;
 }
 `
@@ -80,12 +84,12 @@ const StyledBtnWrapper = styled.div`
 display: flex;
 justify-content: center;
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   margin: 2rem;
   justify-content: flex-start;
   } 
 
-  @media(min-width: 1025) {
+  @media (min-width: 1025px) {
     margin-left: 7rem;
     justify-content: flex-start;
   }

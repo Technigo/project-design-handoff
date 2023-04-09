@@ -7,7 +7,6 @@ export const CTA = styled.button`
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     font-size: 16px;
-    text-align: center;
     padding: 16px 64px;
     border: none;
 
@@ -19,8 +18,8 @@ export const CTA = styled.button`
         font-size: 20px;    
     }
 
-    @media(min-width: 1024px) {
-        font-size: 24px;
+    @media(min-width: 1025px) {
+        font-size: 20px;
     }
 
 ${props => props.choose && css`
@@ -31,11 +30,6 @@ ${props => props.choose && css`
     color: #02393F;
     border: 0.5px solid #000000;
     border-radius: 12px
-    
-    @media(min-width: 768px) and (max-width: 1024px) {
-    width: 247px;
-    height: 46px;
-}
 
 `}
 
@@ -65,6 +59,11 @@ ${props => props.chosen && css`
     color: #F5F5F5;
     border: none;
     border-radius: 12px
+
+    @media(min-width: 768px)  {
+        width: 242px;
+        height: 46px;
+    }
 `}
 `
 
