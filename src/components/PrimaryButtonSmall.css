@@ -1,0 +1,30 @@
+.primaryButtonSmall {
+    background-color: #FFD9BF;
+    color: #210440;
+    border-radius: 30px;
+    width: 100px;
+    height: 32px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 8px 16px;
+}
+
+  .primaryButtonSmall:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .primaryButtonSmall:active {
+    background-color:#FFB685;
+    ;
+  }
+  .primaryButtonSmall:disabled {
+    background-color: #F3F4F8;
+    color: #5B5D6B;
+
+  }

@@ -1,0 +1,235 @@
+.finalSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9AD4D6;
+}
+
+
+.testimonalsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 32px;
+    background-color: #9AD4D6;
+}
+
+.testimonialsTitle {
+    margin-bottom: 32px;
+}
+
+.purpleBackgroundContainerMobile {
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -1000px;
+    /* object-fit: cover;     */
+    /* left: 0; */
+
+}
+
+.purpleBackgroundContainerTablet {
+    display: none;
+}
+
+.purpleBackgroundContainerDesktop {
+    display: none;
+}
+
+
+.registerWrapper {
+    z-index: 1;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.topRegister {
+    background-color: #F2FDFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+}
+
+.logInButton {
+    text-decoration: underline;
+    border: none;
+    background-color:#F2FDFF;
+    font-family: poppins;
+    font-size: 12px;
+
+
+}
+.registerText {
+    color: #252525;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.accountText {
+    color: #252525;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+}
+
+/* .registrationForm .primaryButtonLarge {
+    justify-content: center;
+} */
+
+.formButtonWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.formButtonWrapper .primaryButtonLarge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.bottomFormRegister {
+    margin-bottom: 20px;
+}
+
+span {
+    display: block;
+    margin-bottom: 5px;
+    font-family: poppins;
+    font-size: 14px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+
+  label[for="newsletter"], label[for="termsAndConditions"] {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .registrationButton {
+    border: none;
+    text-decoration: underline;
+    background-color: white;
+    font-family: poppins;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+  .checkboxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(1.5);
+  }
+  
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+    .purpleBackgroundContainerMobile {
+        display: none;
+    }
+
+    .purpleBackgroundContainerTablet {
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .purpleBackgroundContainerDesktop {
+        display: none;
+    }
+
+    .registerWrapper {
+        margin: auto 20%;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+
+    .topRegister {
+        border-radius: 20px 20px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .purpleBackgroundContainerMobile {
+        display: none;
+    }
+
+    .purpleBackgroundContainerTablet {
+        display: none;
+    }
+
+    .purpleBackgroundContainerDesktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .registerWrapper {
+        display: flex;
+        flex-direction: row;
+        margin: auto 10%;
+        border-radius: 20px 20px;
+        margin-bottom: 80px;
+    }
+
+    .topRegister {
+        flex-basis: 30%;
+        border-radius: 20px 20px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .bottomFormRegister {
+        flex-basis: 70%;
+    }
+
+    .registerTitle {
+        text-align: left;
+    }
+   
+}

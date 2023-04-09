@@ -1,0 +1,196 @@
+.classesWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #9AD4D6;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    padding-bottom: 650px; /* change the padding for media queries. maybe make the component above also move down*/
+}
+
+.ribbonOnBarreImage {
+    position: relative;
+    width: 100%;
+    margin-bottom: -60px;
+    z-index: 1;
+    margin-left: 16px;
+} 
+
+.whiteBackgroundMobile {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.whiteBackgroundTablet {
+    display: none;
+}
+
+
+.whiteBackgroundDesktop {
+    display: none;
+}
+
+.infoWrapper {
+    position: relative;
+}
+
+.infoSection {
+    position: absolute;
+    margin-top: -190px;
+    /* border: red solid 2px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    top: 290px;
+    /* left: 1%;
+    right: 1%; */
+    min-width: 300px;
+    /* min-height: 340px; */
+    height: auto;
+    padding: 0px 8px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 328px;
+    height: 107px;
+    left: calc(50% - 328px/2);
+    /* top: 1048px; */
+ }
+
+h2 {
+    /* margin: 0 auto; */
+    text-align: center;
+    color: #210440;
+    margin-bottom: 5px;
+    z-index: 3;
+}
+
+p {
+    /* position: relative; */
+    font-size: 16px;
+    text-align: center;
+    /* padding: 20px auto; */
+    z-index: 2;
+} 
+
+.boldText {
+    font-weight: bold;
+    margin-bottom: 31px; 
+
+}
+
+
+@media (min-width: 450px) and (max-width: 666px) {
+
+    .classesWrapper {
+    }
+
+    .ribbonOnBarreImage {
+        /* margin-bottom: 100px; */
+    }
+    .barreBasicImage {
+        position: relative;
+        margin-top: 30px;
+}
+
+.classesWrapper {
+    
+}
+
+
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+.barreBasicImage {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.classesWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #9AD4D6;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    padding-bottom: 320px; /*320px to start with*/
+}
+
+
+.whiteBackgroundMobile {
+    display: none;
+}
+
+.whiteBackgroundTablet {
+    display: flex;
+    position: relative;
+    top: -200px;
+    width: 100%;
+    z-index: 0;
+}
+
+.whiteBackgroundDesktop {
+    display: none;
+}
+
+.ribbonOnBarreImage {
+    position: absolute;
+    width: 100%;
+    bottom: 480px;
+    z-index: 1;
+    margin-left: 30px;
+} 
+
+.infoSection {
+    position: absolute;
+    margin-top: -190px;
+    /* border: red solid 2px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 250px; /* this makes it move up*/
+    min-width: 300px;
+    height: auto;
+    padding: 0px 8px;
+    width: 328px;
+    height: 107px;
+    left: calc(50% - 328px/2);
+ }
+
+ .barreBasicImage {
+    position: relative;
+    top: 300px;
+    z-index: 0;
+ }
+
+}
+
+@media (min-width: 1025px) {
+
+.whiteBackgroundMobile {
+    display: none;
+}
+
+.whiteBackgroundTablet {
+    display: none;
+}
+
+.whiteBackgroundDesktop {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+/* .infoWrapper {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+}
