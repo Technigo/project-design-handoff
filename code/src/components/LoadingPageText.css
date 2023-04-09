@@ -49,7 +49,19 @@
     flex-direction: row;
     margin:20px;
   }
-
+  .tryforfree-hero{
+    border-color:#FF8F3D;
+    border-radius: 10px;
+    border-width: 3px;
+    color:#FF8F3D;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom:2%;
+    left:5%
+  
+  }
   @media (min-width: 640px)
 {
   .loading-page-wrapper h1{
@@ -94,7 +106,7 @@
   bottom:20%;
 }
 .users-trainers{
-  margin-top:6rem;
+  margin-top:10rem;
   margin-left:2rem;
   display: flex;
   justify-content: center;
@@ -117,8 +129,7 @@
   font-size: 2rem;
   font-weight: bold;
   position: absolute;
-  right:20%;
-  bottom:15%
+  
 
 }
 

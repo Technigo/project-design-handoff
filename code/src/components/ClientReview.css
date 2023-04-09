@@ -59,10 +59,17 @@
     
     .card
   {
-    height: 35vh;
+    height: 40vh;
   }
   .client-review-container h1 {
     margin-top:20px;
   }
 
+}
+
+@media (min-width:1025){
+  .card
+  {
+    height: 45vh;
+  }
 }

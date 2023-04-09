@@ -90,5 +90,30 @@ position:relative;
 
 @media (min-width:1025px)
 {
-  
+  .info-page-wrapper{
+  height: 60vw;
   }
+  .coach-support-text{
+    width:500px;
+  }
+
+  #man-stretching {
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    right: 0%;
+  }
+
+  .workout-plan-text{
+    width:500px;
+    position:absolute;
+    bottom:20%
+  }
+
+  #workout-equipment {
+    width: 45vw;
+    border-radius: 22%;
+}
+
+
+}

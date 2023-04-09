@@ -167,3 +167,10 @@ width:30vw;
   font-size: 0.8rem;
 }
 }
+
+@media (min-width: 1025px){
+.footer-page-outer-wrapper {
+  height: 50vh;
+}
+
+}

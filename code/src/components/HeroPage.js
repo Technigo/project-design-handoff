@@ -23,7 +23,7 @@ const Header = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 110vh;
+  height: 115vh;
 
   &::before {
     content: "";
