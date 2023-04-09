@@ -1,55 +1,81 @@
-import React from 'react'
-import { Wrapper, InnerContainer, ImgCardLarge } from 'components/styles/Section'
+/* eslint-disable */
+import React, { useState } from 'react'
+import { useForm } from 'react-hook-form';
+import { Wrapper, OuterContainer, InnerContainer, CardsContainer, ImgCardLarge } from 'components/styles/Section'
 import { Tagline, Headline2 } from 'components/styles/Text'
 import { Logo } from 'components/styles/Image'
-import { Label, Form, TextInput, TextInputBox, LabelLogin, OrText } from 'components/styles/Input'
-import { ButtonCommunity, ButtonCommunityLogin } from 'components/styles/Button'
+import { Label, Form, TextInput, TextInputBox, LabelLogin, OrText, Error } from 'components/styles/Input'
+import { Button } from 'components/styles/Button'
 
 export const Community = () => {
+
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  
+  const onSubmit = () => {
+    alert('Thank you! Looking forward to meeting you!');
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setPassword('');
+  };
+
   return (
-    <Wrapper height="100%">
-      <InnerContainer flexcolumn alignscenter>
+    <Wrapper id="#sectionFive" height="100%">
+      <OuterContainer>
         <Tagline>COMMUNITY</Tagline>
         <Headline2>Sign up & join our community to get started today</Headline2>
-        <InnerContainer grid workoutsbox flexcolumn>
+        <InnerContainer community grid>
           <ImgCardLarge style={{ backgroundImage: 'linear-gradient(6.08deg, #DCD2F1 7.04%, rgba(255, 255, 255, 0)  50.17%), url("./images/community-yoga.jpg")' }} workouts />
-          <InnerContainer flexcolumn padding="0 44px" formpadding>
+          <CardsContainer formcontainer>
             <Headline2>Create account</Headline2>
-            <Form>
+            <Form onSubmit={handleSubmit(onSubmit)}>
               <TextInputBox>
-                <Label for="fname">First name</Label>
-                <TextInput type="text" id="fname" name="fname" />
+                <Label htmlFor="fname">First name</Label>
+                <TextInput type="text" id="fname" name="fname" {...register('firstName', { required: true, pattern: /^[A-Za-z]+$/i })} onChange={(event) => setFirstName(event.target.value)} value={firstName} />  
+                {errors?.firstName?.type === 'required' && <Error>Please enter your first name</Error>}
               </TextInputBox>
               <TextInputBox>
-                <Label for="lname">Last name</Label>
-                <TextInput type="text" id="lname" name="lname" />
+                <Label htmlFor="lname">Last name</Label>
+                <TextInput type="text" id="lname" name="lname" {...register('lastName', { required: true })} onChange={(event) => setLastName(event.target.value)} value={lastName} />
+                {errors?.firstName?.type === 'required' && <Error>Please enter your last name</Error>}
               </TextInputBox>
               <TextInputBox grow>
-                <Label for="email">Email</Label>
-                <TextInput type="email" id="email" name="email" pattern=".+@globex\.com" required />
+                <Label htmlFor="email">Email</Label>
+                <TextInput type="email" id="email" name="email" {...register('email', { required: true, pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i })} onChange={(event) => setEmail(event.target.value)} value={email} />
+                {errors?.email?.type === 'required' && <Error>Please enter your email</Error>}
+                {errors?.lastName?.type === 'pattern' && (<Error>Please enter a valid email</Error>)}
               </TextInputBox>
               <TextInputBox grow>
-                <Label for="password">Password</Label>
-                <TextInput type="text" id="password" name="password" />
+                <Label htmlFor="password">Password</Label>
+                <TextInput type="text" id="password" name="password" {...register('password', { required: true, minLength: { value: 6 } })} onChange={(event) => setPassword(event.target.value)} value={password} />
+                {errors.password && (<Error>Password must be six or more characters</Error>)}
               </TextInputBox>
-              <ButtonCommunity>Create account</ButtonCommunity>
+              <Button square type="submit">Create account</Button>
               <TextInputBox grow>
                 <LabelLogin>Already have an account?</LabelLogin>
-                <ButtonCommunityLogin>Login</ButtonCommunityLogin>
+                <Button login>Login</Button>
               </TextInputBox>
               <OrText>Or</OrText>
-              <ButtonCommunity iconBtn>
+              <Button logo>
                 <Logo src="./assets/apple-icon2.svg" />
                 Sign in with Apple
-              </ButtonCommunity>
-              <ButtonCommunity iconBtn>
+              </Button>
+              <Button logo>
                 <Logo src="./assets/google-icon.svg" />
                 Sign in with Google
-              </ButtonCommunity>
+              </Button>
             </Form>
-          </InnerContainer>
+          </CardsContainer>
         </InnerContainer>
-      </InnerContainer>
+      </OuterContainer>
     </Wrapper>
   )
 }

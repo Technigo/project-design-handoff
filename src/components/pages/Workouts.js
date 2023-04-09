@@ -1,15 +1,15 @@
 import React from 'react'
-import { Wrapper, InnerContainer, TextOnImageContainer, TextBlock, ImgCardLarge, TextContainer } from 'components/styles/Section'
+import { Wrapper, OuterContainer, InnerContainer, CardsContainer, InnerCardsContainer, TextOnImageContainer, TextBlock, ImgCardLarge, TextContainer } from 'components/styles/Section'
 import { Tagline, Headline2, Headline3, BodyText, LineBreak } from 'components/styles/Text'
 import { Button } from 'components/styles/Button'
 
 export const Workouts = () => {
   return (
-    <Wrapper height="100%">
-      <InnerContainer flexcolumn alignscenter>
+    <Wrapper id="#sectionThree" height="100%">
+      <OuterContainer>
         <Tagline>WORKOUTS</Tagline>
         <Headline2>One 5 min workout is better than none.</Headline2>
-        <InnerContainer grid gridrow="652.281px" workoutsbox wrap>
+        <InnerContainer workouts>
           <ImgCardLarge
             workoutsbox
             relative
@@ -27,7 +27,7 @@ export const Workouts = () => {
               <Button secondary>View more</Button>
             </TextOnImageContainer>
           </ImgCardLarge>
-          <InnerContainer flexcolumn workoutsbox>
+          <CardsContainer workouts flexcolumn>
             <TextBlock large grey flexcolumn>
               <Headline2 workoutsh2>Healthy
                 made easy
@@ -39,7 +39,7 @@ export const Workouts = () => {
                 and video to help you understand and perfect each move.
               </BodyText>
             </TextBlock>
-            <InnerContainer workoutscolumn>
+            <InnerCardsContainer workouts flexcolumn>
               <TextBlock purple flexcolumn half workoutscolumn>
                 <Headline3 workoutsh3>
                   <LineBreak>AB</LineBreak>
@@ -58,10 +58,10 @@ export const Workouts = () => {
                   And so much more...
                 </BodyText>
               </TextBlock>
-            </InnerContainer>
-          </InnerContainer>
+            </InnerCardsContainer>
+          </CardsContainer>
         </InnerContainer>
-      </InnerContainer>
+      </OuterContainer>
     </Wrapper>
   )
 }

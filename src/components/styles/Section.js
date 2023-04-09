@@ -1,87 +1,189 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-    height: 100vh;
-    padding: 32px;
-    box-sizing: border-box;
-    position: ${(props) => (props.relative ? 'relative' : '')};
+  height: 100vh;
+  padding: 32px;
+  box-sizing: border-box;
 
-    @media (min-width: 768px) and (max-width: 1440px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     height: ${(props) => (props.height || '100vh')};
-    }
+  }
 
-    @media (min-width: 768px) and (max-width: 1023px) {
-      height: ${(props) => (props.height || '100vh')};
-        padding: 24px;
-    }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: ${(props) => (props.height || '100vh')};
+      padding: 24px;
+  }
 
-    @media (max-width: 768px) {
-      height: ${(props) => (props.height || '100vh')};
-        padding: 16px;
+  @media (max-width: 768px) {
+    height: ${(props) => (props.height || '100vh')};
+    padding: 16px;
   }
 `
 
+export const HeroContainer = styled.div`
+  position: absolute;
+  left: 152px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  @media (min-width: 668px) and (max-width: 1023px) {
+    left: 128px;
+  }
+
+  @media (max-width: 668px) {
+    left: 40px;
+    top: 150px;
+    gap: 40px;
+  }
+`
 export const OuterContainer = styled.div`
-    position: ${(props) => (props.absolute ? 'absolute' : '')};
-    left: ${(props) => (props.hero ? '152px' : '0')};
-    top: ${(props) => (props.hero ? '200px' : '0')};
-    display: flex;
-    flex-direction: ${(props) => (props.flexcolumn ? 'column' : '')};
-    gap: ${(props) => (props.gap || '20px')};
-
-    @media (min-width: 668px) and (max-width: 1023px) {
-        left: ${(props) => (props.hero ? '128px' : '0')};
-    }
-
-    @media (max-width: 768px) {
-        left: ${(props) => (props.hero ? '40px' : '0')};
-        top: ${(props) => (props.hero ? '150px' : '0')};
-        gap: ${(props) => (props.hero ? '40px' : '')};
-  }
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 `
-
 export const InnerContainer = styled.div`
-    display: ${(props) => (props.grid ? 'grid' : 'flex')};
-    grid-template-columns: ${(props) => (props.columns || 'repeat(2,1fr)')};
-    grid-template-rows: ${(props) => (props.gridrow || '')};
-    flex-direction: ${(props) => (props.flexcolumn ? 'column' : '')};
-    gap: ${(props) => (props.gap || '20px')};
-    align-items: ${(props) => (props.alignscenter ? 'center' : 'flex-start')};
-    justify-content: ${(props) => (props.justifycenter ? 'center' : 'flex-start')};
-    width: 100%;
-    flex-wrap: ${(props) => (props.wrap ? 'wrap' : '')};
-    box-sizing: border-box;
-    align-content: ${(props) => (props.workoutsbox && 'stretch')};
-    max-width: ${(props) => (props.maxwidth || '')};
-    justify-self: ${(props) => (props.justifyself || '')};
-    align-self: ${(props) => (props.center ? 'center' : '')};
-    padding: ${(props) => (props.padding || '')};
+  width: 100%;
+  box-sizing: border-box;
+  gap: ${(props) => (props.gap || '20px')};
+  margin: ${(props) => (props.margin || '')};
+  flex-direction: ${(props) => (props.flexcolumn ? 'column' : '')};
+  grid-template-rows: ${(props) => (props.gridrow || '')};
+  display: ${(props) => (props.grid ? 'grid' : 'flex')};
+  max-width: ${(props) => (props.maxwidth || '')};
+  justify-self: ${(props) => (props.justifyself || '')};
+  align-self: ${(props) => (props.center ? 'center' : '')};
+  padding: ${(props) => (props.padding || '')};
     margin: ${(props) => (props.margin || '')};
 
-        
-    @media (min-width: 668px) and (max-width: 1023px) {
-       display:  ${(props) => (props.workoutsbox ? 'flex' : '')};
-       grid-template-columns: ${(props) => (props.benefitsgrid ? 'repeat(2,1fr)' : '')};
-       grid-template-rows: ${(props) => (props.benefitsgrid ? 'repeat(2,1fr)' : '')};
+  ${(props) => props.hero && css`
+    flex-direction: column;
+  `}
 
+  ${(props) => props.benefits && css`
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+
+    @media (min-width: 668px) and (max-width: 1023px) {
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
     }
 
-    @media (max-width: 768px) {
-      display:  ${(props) => (props.workoutsbox ? 'flex' : '')};
-      grid-template-columns: ${(props) => (props.benefitsgrid ? 'repeat(1,1fr)' : '')};
-       grid-template-rows: ${(props) => (props.benefitsgrid ? 'repeat(4,1fr)' : '')};
-       flex-direction: ${(props) => (props.workoutscolumn ? 'column' : '')};
-       padding: ${(props) => (props.formpadding ? '16px' : '')};
+    @media (max-width: 668px) {
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(4,1fr);
+    }
+  `}
+    
+  ${(props) => props.workouts && css`
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 652.281px;
+    margin-top: 20px;
+
+    @media (min-width: 668px) and (max-width: 1023px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 668px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  `}
+
+    ${(props) => props.activity && css`
+      grid-template-columns: repeat(3,1fr);
+      flex-wrap: no-wrap;
+      margin-top: 20px;
+
+    @media (min-width: 668px) and (max-width: 1023px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 668px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  `}
+
+  ${(props) => props.community && css`
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 600px;
+    gap: 20px;
+    margin-top: 30px;
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 60vh;
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 60vh;
+  }
+  `}
+`
+export const CardsContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+
+    ${(props) => props.activitycontainer1 && css`
+      max-width: 287px;
+      align-self: center;
+      justify-self: flex-end;
+      gap:58px;
+  `}
+
+      ${(props) => props.activitycontainer2 && css`
+      justify-self: flex-start;
+      max-width: 287px;
+      align-self: center;
+      gap:58px;
+  `}
+
+      ${(props) => props.formcontainer && css`
+      padding: 0 44px;
+      align-items: flex-start;
+  `}
+`
+
+export const InnerCardsContainer = styled.div`
+    display: flex;
+    gap: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+   
+  @media (max-width: 668px) {
+      flex-direction: column;
+    }
 `
 
 export const TextOnImageContainer = styled(InnerContainer)`
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 20px;
+    padding: ${(props) => (props.workoutstext ? '40px' : '20px')};
     gap: 8px;
     justify-content: ${(props) => (props.workoutstext ? 'space-between' : '')};
+    
+    @media (max-width: 768px) {
+        max-width: ${(props) => (props.maxwidth ? '70%' : '')};
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+  }
 `
 
 export const TextContainer = styled.div`
@@ -97,23 +199,24 @@ export const TextContainer = styled.div`
 `
 
 export const TextBlock = styled(TextContainer)`
-    box-sizing: border-box;
-    background-color: ${(props) => (props.grey && '#EFEFEF')};
-    background-color: ${(props) => (props.purple && '#DCD2F1')};
-    background-color: ${(props) => (props.green && '#CAD7BA')};
-    padding: 40px;
-    border-radius: 30px;
-    gap: ${(props) => (props.large ? '40px' : '8px')};
-    width: ${(props) => (props.half && '50%')};
-    align-items: stretch;
+  box-sizing: border-box;
+  background-color: ${(props) => (props.grey && '#EFEFEF')};
+  background-color: ${(props) => (props.purple && '#DCD2F1')};
+  background-color: ${(props) => (props.green && '#CAD7BA')};
+  padding: 40px;
+  border-radius: 30px;
+  gap: ${(props) => (props.large ? '40px' : '8px')};
+  width: ${(props) => (props.half && '50%')};
+  align-items: stretch; 
+  height: ${(props) => (props.grey ? '70%' : '100%')};
 
-        @media (max-width: 768px) {
-        width: ${(props) => (props.workoutscolumn ? '100%' : '')};
-        gap: ${(props) => (props.large ? '51px' : '8px')};
+
+  @media (max-width: 768px) {
+    width: ${(props) => (props.workoutscolumn ? '100%' : '')};
+    gap: ${(props) => (props.large ? '51px' : '8px')};
   }
             
 `
-
 export const ButtonContainer = styled.div`
     display: flex;
     gap: 8px;
@@ -138,17 +241,17 @@ export const ImgContainer = styled.div`
     height: ${(props) => (props.position || '')};
    
     @media (min-width: 768px) and (max-width: 1023px) {
-       height: ${(props) => (props.workoutsbox ? '672px' : '726px')};
-       width: ${(props) => (props.workoutsbox ? '100%' : '')};
-        width: 100%;
-        background-size: cover;
-        background-position: top;
-         border-radius: 30px;
+      height: ${(props) => (props.workoutsbox ? '672px' : '726px')};
+      width: ${(props) => (props.workoutsbox ? '100%' : '')};
+      width: 100%;
+      background-size: cover;
+      background-position: top;
+      border-radius: 30px;
     }
 
     @media (max-width: 768px) {
-        height: ${(props) => (props.workoutsbox ? '672px' : '')};
-        width: ${(props) => (props.workoutsbox ? '100%' : '')};
+      height: ${(props) => (props.workoutsbox ? '672px' : '')};
+      width: ${(props) => (props.workoutsbox ? '100%' : '')};
   }
 `
 
@@ -162,7 +265,7 @@ export const ImgCardSmall = styled.div`
     height: 442px;
    
     @media (min-width: 768px) and (max-width: 1023px) {
-        height: 100vh;
+        height: 504px;
     }
 
     @media (max-width: 768px) {
@@ -179,39 +282,10 @@ export const ImgCardLarge = styled.div`
     position: ${(props) => (props.relative ? 'relative' : '')};
    
     @media (min-width: 768px) and (max-width: 1023px) {
-        height: 100vh;
+        height: 672px;
     }
 
     @media (max-width: 768px) {
         height: 100vh;
   }
-`
-
-export const GradientContainer = styled.div`
-    border-radius: 30px;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-`
-
-export const Gradient1 = styled(GradientContainer)`
-    background: linear-gradient(10.68deg, #DCBAF9 17.69%, rgba(255, 255, 255, 0) 60.42%);
-`
-
-export const Gradient2 = styled(GradientContainer)`
-    background: linear-gradient(18.32deg, #F4DDAB 17.32%, rgba(255, 255, 255, 0) 64.81%);
-`
-
-export const Gradient3 = styled(GradientContainer)`
-    background: linear-gradient(13.26deg, #ABD1F4 17.53%, rgba(255, 255, 255, 0) 51.7%);
-`
-
-export const Gradient4 = styled(GradientContainer)`
-    background: linear-gradient(20.79deg, #CAD7BA 19.92%, rgba(255, 255, 255, 0) 56%);
-`
-
-export const Gradient5 = styled(GradientContainer)`
-    background: linear-gradient(6.08deg, #DCD2F1 7.04%, rgba(255, 255, 255, 0) 50.17%);
 `

@@ -19,6 +19,7 @@ export const Header = styled.header`
         padding: 43px 32px;
   }
 `
+
 export const NavWhite = styled.nav`
         display: flex;
         align-items: center;
@@ -28,8 +29,23 @@ export const NavWhite = styled.nav`
         border-radius: 100px;
         width: 380px;
         height: 40px;
+        padding-right:12px;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 999;
 `
-export const NavBlack = styled(NavWhite)`
+export const NavBlack = styled.nav`
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 100px;
+        width: 380px;
+        height: 40px;
+        padding-right:12px;
         background: #222322;
         position: fixed;
         bottom: 32px;
@@ -40,6 +56,10 @@ export const NavBlack = styled(NavWhite)`
 `
 
 export const NavLink = styled.a`
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
         font-size: 14px;
         font-weight: 700;
         color: ${(props) => (props.whitenav ? '#222322' : '#FFFFFF')};
@@ -54,18 +74,17 @@ export const NavLink = styled.a`
     }
 
 `
-
 export const HeaderDiv = styled.div`
         display:contents;
         
         @media (min-width: 668px) and (max-width: 1023px) {
-            display: flex,
-            gap: 35px;
+            display:contents;
         }
-        @media (max-width: 768px) {
+
+        @media (max-width: 668px) {
         display: none;
-  }
-    `
+        }
+`
 
 export const Hamburger = styled.img`
         display:none;

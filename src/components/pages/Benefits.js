@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper, InnerContainer, TextOnImageContainer, ImgCardSmall } from 'components/styles/Section'
+import { Wrapper, OuterContainer, InnerContainer, TextOnImageContainer, ImgCardSmall } from 'components/styles/Section'
 import { Tagline, Headline2, Headline3, BodyText } from 'components/styles/Text'
 import { Button } from 'components/styles/Button'
 
@@ -16,12 +16,12 @@ export const Card = ({ color, img, headlineTitle, bodyText }) => {
 
 export const Benefits = () => {
   return (
-    <Wrapper height="100%">
-      <InnerContainer flexcolumn alignscenter justifycenter gap="10px">
+    <Wrapper id="#sectionTwo" height="100%">
+      <OuterContainer>
         <Tagline>BENEFITS</Tagline>
         <Headline2>Healthy doesn&apos;t have to be hard. We make it easy
         </Headline2>
-        <InnerContainer grid columns="repeat(4,1fr)" benefitsgrid margin="74px 0 52px 0">
+        <InnerContainer benefits grid margin="74px 0 52px 0">
           <Card
             color="#DCBAF9"
             img="./images/yoga-benefits1.jpg"
@@ -44,7 +44,7 @@ export const Benefits = () => {
             bodyText="Search among our recipies & get inspired for a healthy inside." />
         </InnerContainer>
         <Button>Download app</Button>
-      </InnerContainer>
+      </OuterContainer>
     </Wrapper>
   )
 }

@@ -9,6 +9,7 @@ body {
     block-size: fit-content;
     height: 100%;
     overflow-x: hidden;
+    padding-bottom: 20vh;
 }
 
 code {

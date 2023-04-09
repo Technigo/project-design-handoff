@@ -1,7 +1,7 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
-import { Wrapper, InnerContainer, TextContainer } from 'components/styles/Section'
-import { Tagline, Headline2, BodyText } from 'components/styles/Text'
+import { Wrapper, OuterContainer, InnerContainer, CardsContainer, TextContainer } from 'components/styles/Section'
+import { Tagline, Headline2, Headline3, BodyText } from 'components/styles/Text'
 import { PhoneImage } from 'components/styles/Image'
 import { TextCarousel } from 'components/parts/TextCarousel'
 
@@ -10,17 +10,17 @@ export const Activity = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1023px)' })
 
   return (
-    <Wrapper height="100%">
-      <InnerContainer flexcolumn alignscenter>
+    <Wrapper id="#sectionFour" height="100%">
+      <OuterContainer>
         <Tagline>ACTIVITY</Tagline>
         <Headline2>Track you activity & celebrate your progress</Headline2>
-        <InnerContainer grid columns="repeat(3,1fr)" workoutsbox flexcolumn alignscenter>
+        <InnerContainer grid activity>
           {isDesktopOrLaptop && (
-            <InnerContainer flexcolumn maxwidth="287px" justifyself="flex-end" center>
+            <CardsContainer activitycontainer1>
               <TextContainer flexcolumn>
-                <Headline2>
+                <Headline3 workoutsh3>
                   Milestones
-                </Headline2>
+                </Headline3>
                 <BodyText>
                   Don&apos;t have any personal goals yet?
                   Challenge yourself by completing our pre-made
@@ -28,40 +28,40 @@ export const Activity = () => {
                 </BodyText>
               </TextContainer>
               <TextContainer flexcolumn>
-                <Headline2>
+                <Headline3 workoutsh3>
                   Stats
-                </Headline2>
+                </Headline3>
                 <BodyText>
                   View your general stats and keep track of your achievments
                 </BodyText>
               </TextContainer>
-            </InnerContainer>)}
+            </CardsContainer>)}
           <PhoneImage
             src="./assets/phone.svg" />
           {isDesktopOrLaptop && (
-            <InnerContainer flexcolumn maxwidth="287px" center>
+            <CardsContainer activitycontainer2>
               <TextContainer flexcolumn>
-                <Headline2>
+                <Headline3 workoutsh3>
                   Schedule
-                </Headline2>
+                </Headline3>
                 <BodyText>
                   Schedule and monitor all your workouts in the calender
                   and set up a personal reminder to keep you going
                 </BodyText>
               </TextContainer>
               <TextContainer flexcolumn>
-                <Headline2>
+                <Headline3 workoutsh3>
                   Personal
-                </Headline2>
+                </Headline3>
                 <BodyText>
                   Track any personal fitness activities you
                   accomplish by adding them you your calender
                 </BodyText>
               </TextContainer>
-            </InnerContainer>)}
+            </CardsContainer>)}
           {isTabletOrMobile && <TextCarousel />}
         </InnerContainer>
-      </InnerContainer>
+      </OuterContainer>
     </Wrapper>
   )
 }

@@ -1,50 +1,40 @@
 import React, { useState } from 'react'
-import { Wrapper, OuterContainer, InnerContainer, TextContainer, ButtonContainer, IconContainer } from 'components/styles/Section'
+import { Wrapper, HeroContainer, InnerContainer, TextContainer, ButtonContainer, IconContainer } from 'components/styles/Section'
 import { Headline1, Tagline, BodyText, Headline5 } from 'components/styles/Text'
-import { Button, ButtonOutlined } from '../styles/Button'
-import { Header, NavWhite, NavBlack, NavLink, HeaderDiv, Hamburger } from '../styles/Header'
+import { NavBarTop, NavBarSticky } from 'components/parts/NavBarSticky'
+import { Button } from '../styles/Button'
+import { Header, HeaderDiv, Hamburger } from '../styles/Header'
 import { ImageHero, Logo } from '../styles/Image'
 
 export const Hero = () => {
-  const [navBar, setNavBar] = useState(false);
+  const [navBarVisible, setNavBarVisible] = useState(false);
 
-  const toggleNavBar = () => {
+  const showNavBar = () => {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > 100) {
-      setNavBar(true)
+      setNavBarVisible(true)
     } else if (scrolled <= 100) {
-      setNavBar(false)
+      setNavBarVisible(false)
     }
   };
 
-  window.addEventListener('scroll', toggleNavBar);
+  window.addEventListener('scroll', showNavBar);
 
   return (
-    <Wrapper hero>
+    <Wrapper id="#sectionOne">
       <ImageHero />
       <Header>
         <Logo src="./assets/easyfit-desktop.png" />
         <Hamburger src="./assets/hamburger.svg" />
         <HeaderDiv>
-          {navBar ? (
-            <NavBlack>
-              <NavLink href="/" width="57.484px">Benefits</NavLink>
-              <NavLink href="/" width="65.984px">Workouts</NavLink>
-              <NavLink href="/" width="53.039px">Activity</NavLink>
-              <NavLink href="/" width="79.414px">Community</NavLink>
-            </NavBlack>)
-            : (
-              <NavWhite>
-                <NavLink href="/" whitenav width="57.484px">Benefits</NavLink>
-                <NavLink href="/" whitenav width="65.984px">Workouts</NavLink>
-                <NavLink href="/" whitenav width="53.039px">Activity</NavLink>
-                <NavLink href="/" whitenav width="79.414px">Community</NavLink>
-              </NavWhite>)}
+          <NavBarTop />
           <Button headerBtn>Download App</Button>
         </HeaderDiv>
+        {navBarVisible && (
+          <NavBarSticky />)}
       </Header>
-      <OuterContainer absolute hero flexcolumn gap="70px">
-        <InnerContainer flexcolumn gap="48px">
+      <HeroContainer>
+        <InnerContainer hero gap="48px">
           <TextContainer flexcolumn maxwidth>
             <Tagline hero>FEEL THE DIFFERENCE</Tagline>
             <Headline1>Healthy made easy</Headline1>
@@ -55,10 +45,10 @@ export const Hero = () => {
           </TextContainer>
           <ButtonContainer>
             <Button>Download app</Button>
-            <ButtonOutlined>Create account</ButtonOutlined>
+            <Button outlined>Create account</Button>
           </ButtonContainer>
         </InnerContainer>
-        <InnerContainer flexcolumn>
+        <InnerContainer hero>
           <Headline5>Compatible with</Headline5>
           <IconContainer>
             <Logo src="./assets/apple-icon.svg" />
@@ -66,7 +56,7 @@ export const Hero = () => {
             <Logo src="./assets/chromecast-icon.svg" />
           </IconContainer>
         </InnerContainer>
-      </OuterContainer>
+      </HeroContainer>
     </Wrapper>
   )
 }

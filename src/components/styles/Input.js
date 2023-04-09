@@ -18,11 +18,19 @@ export const Label = styled.label`
 `
 export const TextInput = styled.input`
     background: #FFFFFF;
-    border: 1px solid #222322;
+    border: none;
+    outline: 1px solid #222322;
     border-radius: 8px;
     height: 64px;
     width: 100%;
     box-sizing: border-box;
+    padding: 5px 15px;
+    font-size: 18px;
+
+    &:focus {
+        outline: 2px solid #A99BD1;
+        border: none;
+    }
 
      @media (max-width: 768px) {
        height: 48px;
@@ -62,4 +70,24 @@ export const OrText = styled.p`
     height:1px;
     margin: 5px 10px;
   }
+`
+
+export const Error = styled.p`
+    font-size: 14px;
+    color: #E36363;
+    margin-bottom: 10px;
+    font-weight: 500;
+
+    &:before {
+    display:inline-block;
+    content:"ⓘ";
+    color: #E36363;
+    font-size: 12px;
+    margin-right:5px;
+    font-weight: bold;
+  }
+
+    @media (max-width: 667px) {
+        font-size: 12px;
+    }
 `;
