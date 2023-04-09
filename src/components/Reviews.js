@@ -1,13 +1,15 @@
 import React from 'react';
+import '../css/Reviews.css'
+
+import Blob2Mobile from '../assets/Blob 2 Mobile.svg'
 
 const Reviews = () => {
   return (
     <div className="reviewsContainer">
-      <div className="imageOverlay" />
-      <img className="shape" alt="Decorative element" />
-      <img className="shape" alt="Ribbons on barre" />
+      <img className="vectorShape" src={Blob2Mobile} alt="Decorative element" />
+      <img className="shape" alt="Ribbons hanging from a barre" />
       <div>
-        <h3 className="reviewsTitle">Why Students Love Our Barre Classes</h3>
+        <h2 className="reviewsTitle">Why Students Love Our Barre Classes</h2>
         <p className="reviewsExamples">The instructors are amazing, the atmosphere is supportive,</p>
         <p> and the workouts are challenging yet fun!</p>
         <p> -Robyn Andersson, <span>Barre Basic Student</span></p>

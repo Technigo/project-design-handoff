@@ -19,15 +19,4 @@ body {
       monospace;
   }
 
-  /* Mobile layout grid */
-
-  main {
-    position: relative;
-    width: 360px;
-    height: 800px;
-    left: 3183px;
-    top: 232px;
-    background: #FFFFFF;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');

@@ -1,30 +1,19 @@
-import React from 'react'
+import React from 'react';
+import '../css/Selection.css';
+
+import PliewithwheightsbyYulissatagle from '../assets/Plie with wheights by Yulissatagle.png';
 
 const Selection = () => {
   return (
     <div className="allClasses">
-      <div>
+      <div className="classBarreBasic">
+        <img className="barreBasicImage" src={PliewithwheightsbyYulissatagle} alt="Barre Basic class" />
         <h2>Barre Basic</h2>
-        <p>kfshkjfsk</p>
-        <button type="button">Read More</button>
-      </div>
-      <div>
-        <h2>Barre Strong</h2>
-        <p>kfshkjfsk</p>
-        <button type="button">Read More</button>
-      </div>
-      <div>
-        <h2>Barre Flex</h2>
-        <p>kfshkjfsk</p>
-        <button type="button">Read More </button>
-      </div>
-      <div>
-        <h2>Barre Dance</h2>
-        <p>kfshkjfsk</p>
-        <button type="button">Read More</button>
+        <p>Our Beginner’s Class will give you a solid foundation on your...</p>
+        <button type="button" className="readMoreBtn">Read More</button>
       </div>
     </div>
   )
 }
 
-export default Selection
+export default Selection;

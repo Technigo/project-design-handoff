@@ -1,15 +1,18 @@
 import React from 'react';
+import '../css/Intro.css';
+
+import HeroHandsonBarre from '../assets/Hero – Hands on Barre.png';
 
 const Intro = () => {
   return (
     <div className="intro">
       <div className="imageContainer">
-        <div className="imageOverlay" />
-        <img className="heroImage" src="..l/assets/HandsOnBarre.png" alt="Hands on barre" />
-        <h1 className="mobileTitle">Raise the Barre With Us!</h1>
+        <img className="heroImage" src={HeroHandsonBarre} alt="Hands on barre" />
+        <div className="imageOverlay">
+          <h1 className="mobileTitle">Raise the Barre With Us!</h1>
+        </div>
       </div>
-      <div className="introduction">
-        <h1 className="tabletDesktopTitle">Raise the Barre With Us!</h1>
+      <div className="presentation">
         <p>Join our full-body workout inspired by Ballet, Pilates, and Yoga.</p>
         <button type="button" className="joinUsBtn">Join Us!</button>
       </div>

@@ -1,0 +1,54 @@
+.overviewContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #9AD4D6;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    padding-bottom: 600px;
+}
+
+.overviewImage {
+    position: relative;
+    width: 100%;
+    margin-bottom: -60px;
+    z-index: 1;
+    margin-left: 16px;
+} 
+
+.vectorShape {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 290px;
+    min-width: 300px;
+    margin-top: -190px;
+    padding: 0px 8px;
+    width: 328px;
+    height: 107px;
+ }
+
+h2 {
+    text-align: center;
+    color: #210440;
+    margin-bottom: 5px;
+    z-index: 3;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    z-index: 2;
+} 
+
+span {
+    font-weight: bold;
+    margin-bottom: 31px; 
+}

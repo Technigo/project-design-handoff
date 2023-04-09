@@ -1,0 +1,58 @@
+.allClasses {
+    display: flex;
+    flex-direction: column;
+    background-color: #9AD4D6;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    padding-bottom: 600px;
+}
+
+.vectorShape {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.barreBasicImage {
+    position: relative;
+    width: 100%;
+    margin-bottom: -60px;
+    z-index: 1;
+    margin-left: 16px;
+    border-radius: 0px 80px 80px 0px;
+    transform: rotate(180deg);
+} 
+
+.classBarreBasic {
+    position: absolute;
+    margin-top: -190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 290px;
+    min-width: 300px;
+    height: auto;
+    padding: 0px 8px;
+    width: 328px;
+    height: 107px;
+ }
+
+h2 {
+    text-align: center;
+    color: #210440;
+    margin-bottom: 5px;
+    z-index: 3;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    z-index: 2;
+} 
+
+.readMoreBtn {
+    font-weight: bold;
+    margin-bottom: 31px; 
+
+}
