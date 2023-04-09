@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import memberStripes from '../assets/member-stripes.svg';
-import logoABlack from '../assets/logo/logo-hero.svg';
+import logoABlack from '../assets/logo/logo-A-black.svg';
 import { ButtonHover } from '../components/ButtonHover';
 import sendBtn from '../assets/button-send.svg';
 import sendBtnHover from '../assets/button-send-hover.svg';
@@ -43,6 +43,11 @@ const MemberStripesDiv = styled.div`
     height:340px;
     margin-top: -86px;
   }
+
+  @media (min-width: 1200px) {
+    height: 397px;
+    margin-top: -316px;
+  }
 `
 
 const MemberStripes = styled.img`
@@ -65,6 +70,10 @@ const LogoTitleContainer = styled.div`
 
   @media (min-width: 768px) {
     width:50vw;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: -44%;
   }
 `;
 
