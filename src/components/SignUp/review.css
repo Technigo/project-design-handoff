@@ -1,5 +1,41 @@
 
 .review-container{
     width: 380px;
-    margin: 0;
+    padding-top: 20px; 
+    margin-bottom: 50px;
 }
+
+.react-awesome-slider {
+    background-color: #f0f0f0;
+  }
+  
+
+.review-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 190px;
+  max-width: 330px;
+  background-color: #4796A8;
+  padding: 10px 30px;
+  border-radius: 13px;
+}
+
+  img {
+    height: 50px;
+    padding: 0;
+  }
+
+  h5 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    align-self: center;
+    padding: 0 10px; 
+    color: #fff;
+  }
