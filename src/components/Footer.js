@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useMediaQuery } from "@react-hook/media-query";
 
 const StyledFooterLogoWrapper = styled.div`
 display: flex;
@@ -10,6 +11,15 @@ const StyledFooterWrapper = styled.div`
 padding-left: 24px;
 padding-top: 32px;
 padding-bottom: 32px;
+
+@media(min-width: 768px) {
+  max-width: 509px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 0.5rem;
+}
 `
 
 const StyledFooter = styled.footer`
@@ -30,7 +40,18 @@ color: #D0C4B8;
 font-size: 16px;
 line-height: 200%;
 padding: 0;
+
+@media(min-width: 768px) {
+width: 509px;
+display: flex;
+gap: 2.75rem;
+}
 `
+const StyledHR = styled.hr`
+width: 480px;
+border: 1px solid #D0C4B8;
+`
+
 const StyledSoMeLinks = styled.div`
 display: flex;
 gap: 3rem;
@@ -40,6 +61,7 @@ width: 32px;
 `
 
 const Footer = () => {
+  const isMobile = useMediaQuery('(max-width: 767px)'); // Hook to check screen size.
   return (
     <StyledFooter>
       <StyledFooterWrapper>
@@ -53,6 +75,10 @@ const Footer = () => {
           <li>Terms & Conditions</li>
           <li>Contact</li>
         </AffiliateLinks>
+        {isMobile ?  null : <StyledHR />
+        // Rendering the little line under the link depending on if its mobile
+        // or not.
+        }
         <StyledSoMeLinks>
           <SoMeIcon src="../icons/instagram.svg" alt="Instagram link"/>
           <SoMeIcon src="../icons/tiktok.svg" alt="Tiktok link"/>

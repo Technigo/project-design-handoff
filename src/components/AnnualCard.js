@@ -12,7 +12,6 @@ margin-top: 35px;
 
 @media (min-width: 768px) and (max-width: 1024px) {
   width: ${props => props.selected ? "337px" : "304px"};
-  height: ${props => props.selected ? "568px" : "510px"};
 }
 
 @media (min-width: 1025px) {
@@ -23,11 +22,10 @@ margin-top: 35px;
 `
 const StyledAnnualWrapper = styled.div`
 margin-left: 1.5rem;
-margin-bottom: 2.5rem;
+padding-bottom: 2.5rem;
 margin-top: 2.5rem;
 
-@media (min-width: 768px) {
-  margin-bottom: 2.5rem;
+@media (min-width: 1025px) {
   margin-top: unset;
 }
 `

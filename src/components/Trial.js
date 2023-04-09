@@ -26,12 +26,11 @@ margin-top: ${props => props.small ? "0px" : "35px"
 // because it's harder to read
 const StyledTrialWrapper = styled.div`
 margin-left: 1.5rem;
-margin-bottom: 2.5rem;
-margin-top: 2.5rem;
+padding-bottom: 2.5rem;
+padding-top: 2.5rem;
 
-@media(min-width: 768px) {
-  margin-bottom: 2.5rem;
-  margin-top: 2.5rem;
+@media (min-width: 1025px) {
+  margin-top: unset;
 }
 `
 
