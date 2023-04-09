@@ -69,7 +69,11 @@ export const Image = styled.img`
   @media (min-width: 992px){
     width: 311.13px;
     height: 205.91px;
- }
+  }
+  @media (min-width: 600px){
+    width: 255.7px;
+    height: 173px;
+  }
  
 `;
 const Wrapper = styled.div`
@@ -156,23 +160,32 @@ const OptionalContainer = styled.div`
   @media (max-width: 600px){
     display: none; 
   }
+  
 
 `
 const ClassWrapper = styled.div`
    display: flex;
    flex-direction: row;
+   
 `
 const Class = styled.div`
+  @media (min-width: 992px){
   Width: 311.13px;
   Height: 460.8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #EBEBEB;
-  border: 2.52369px solid #025323;
-  border-radius: 16.8246px;
-  margin: 15px;
+  }
+  @media (min-width: 600px){
+    width: 262.64px;
+    height: 388.99px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEBEB;
+    border: 2.52369px solid #025323;
+    border-radius: 16.8246px;
+    margin: 15px;
+  }
+  
 }
 `
 
@@ -217,27 +230,27 @@ export const Membership = () => {
        <Title>Sign up for membership</Title>
        <Content>Most classes are 30 minutes and serivel of them can been taken online</Content>
        <ClassWrapper>
-        <Class>
-          <Image src={items[0].image} alt="carousel item" />
-          <Header>{items[0].header}</Header>
-          <Access>{items[0].access}</Access>
-          <Price>{items[0].price}</Price>
-          <Button type="button">Buy Now</Button>
-       </Class>
-       <Class>
-          <Image src={items[1].image} alt="carousel item" />
-          <Header>{items[1].header}</Header>
-          <Access>{items[1].access}</Access>
-          <Price>{items[1].price}</Price>
-          <Button type="button">Buy Now</Button>
-       </Class>
-       <Class>
-          <Image src={items[2].image} alt="carousel item" />
-          <Header>{items[2].header}</Header>
-          <Access>{items[2].access}</Access>
-          <Price>{items[2].price}</Price>
-          <Button type="button">Buy Now</Button>
+          <Class>
+            <Image src={items[0].image} alt="carousel item" />
+            <Header>{items[0].header}</Header>
+            <Access>{items[0].access}</Access>
+            <Price>{items[0].price}</Price>
+            <Button type="button">Buy Now</Button>
         </Class>
+        <Class>
+            <Image src={items[1].image} alt="carousel item" />
+            <Header>{items[1].header}</Header>
+            <Access>{items[1].access}</Access>
+            <Price>{items[1].price}</Price>
+            <Button type="button">Buy Now</Button>
+        </Class>
+        <Class>
+            <Image src={items[2].image} alt="carousel item" />
+            <Header>{items[2].header}</Header>
+            <Access>{items[2].access}</Access>
+            <Price>{items[2].price}</Price>
+            <Button type="button">Buy Now</Button>
+          </Class>
        </ClassWrapper> 
     </OptionalContainer>
     </>

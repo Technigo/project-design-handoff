@@ -20,6 +20,7 @@ const ArticleContainer1 = styled.div`
   @media (min-width: 992px) {
     display: flex; 
     flex-direction: row-reverse; 
+    margin-top: 10%;
   }
 `;
 const ArticleContainer2 = styled.div`
@@ -48,6 +49,10 @@ const Header = styled.h1`
   line-height: 39px;
   text-align: center;
   color: #025323;
+  @media (min-width: 600px){
+    font-size: 42px;
+    line-height: 51px;
+  }
 `;
 const Paragraf = styled.p`
   font-family: 'Libre Franklin';
@@ -59,6 +64,10 @@ const Paragraf = styled.p`
   letter-spacing: 0.127905px;
   color: #025323;
   padding: 0 50px;
+  @media (min-width: 600px){
+    font-size: 22px;
+    line-height: 27px;
+  }
 `;
 const Button = styled.button`
   padding: 15px 47px;
@@ -77,12 +86,31 @@ const ImgBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 600px){
+    width: 600px;
+    height: 408px;
+  }
+  @media (min-width: 992px){
+    width: 600px;
+    height: 408px; 
+
+  }
 `
 const Image = styled.img`
   width: 351.82px;
   height: 234.34px;
   border: 6px solid #025323;
   border-radius: 12.5651px;
+  @media (min-width: 600px){
+    width: 554px;
+    height: 373px;
+  }
+  @media (min-width: 992px){
+    width: 560px;
+    height: 374px;
+
+  }
+
 `;
 const ArticleWrapper = styled.div`
   display: flex;
