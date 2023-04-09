@@ -75,8 +75,15 @@ const SignUpForm = () => {
             {errors.exampleRequired && <span>This field is required</span>}
 
             <button type="submit">Create Account</button>
-            <p></p>
+            <p>
+              Already have an account? <span>Login</span>
+            </p>
           </form>
+          <div>
+            <p>---Or---</p>
+            <button type="button">Sign in with Apple</button>
+            <button type="button">Sign in with Google</button>
+          </div>
         </div>
       </div>
     </section>
