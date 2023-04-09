@@ -2,12 +2,13 @@
 
 Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A design student made a landing page and we created it in React from a Figma file.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We split the page into components and made a few each. Then we assembled to page individially. Most of the time I spent on responsiveness and trying out styled components for the first time. I also spent some time remaking parts of other components to fit better with the components I already made. With more time I would fix responsiveness issues and remake some details with a different approach which I think would have made the outcome more managable and easier to fit into a responsive design.
+
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://wonderful-chaja-e38c75.netlify.app/
