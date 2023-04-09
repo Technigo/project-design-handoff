@@ -84,8 +84,8 @@ export const YogaSlider = () => {
   return (
     <SliderContainer>
       <Swiper
-        initialSlide="3"
-        spaceBetween={12}
+        initialSlide="32"
+        spaceBetween={8}
         slidesPerView={1.5}
         freeMode
         loop
@@ -93,6 +93,9 @@ export const YogaSlider = () => {
         breakpoints={{
           768: {
             slidesPerView: 2.5,
+          },
+          1025: {
+            slidesPerView: 4,
           },
         }}
         className="YogaSwiper">

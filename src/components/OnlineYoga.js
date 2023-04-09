@@ -12,11 +12,11 @@ const StyledWrapper = styled.div`
 margin: 1.5rem;
 
 @media(min-width: 768px) and (max-width: 1024px) {
-  margin-left: 2rem;
   width: 627px;
+  margin-left: 2rem;
 }
 
-@media(min-width: 1025) {
+@media(min-width: 1025px) {
   width: 686px;
   margin-left: 7rem;
 }

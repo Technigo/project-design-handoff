@@ -9,16 +9,6 @@ import styled from 'styled-components'
 export const NutritionSlider = () => {
   const SliderContainer = styled.div`
   display: flex;
-
-  @media (min-width: 768px) {
-    width: 768px;
-    margin: auto;
-  }
-
-  @media (min-width: 1025px) {
-    width: 1025px;
-    margin: auto;
-  }
   `
   const StyledP = styled.h3`
   color: #02393F;
@@ -63,7 +53,7 @@ export const NutritionSlider = () => {
         freeMode
         loop
         breakpoints={{
-          768: {
+          700: {
             slidesPerView: 2.5,
           },
           1025: {
@@ -97,6 +87,24 @@ export const NutritionSlider = () => {
               <StyledMinute>55 min</StyledMinute>
             </StyledDescriptionWrapper>
             <StyledImg src="img/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg" alt="food" />
+          </StyledCardContainer>
+        </SwiperSlide>
+        <SwiperSlide>
+          <StyledCardContainer>
+            <StyledDescriptionWrapper>
+              <StyledP>Healthy and vibrant strawberry cake</StyledP>
+              <StyledMinute>55 min</StyledMinute>
+            </StyledDescriptionWrapper>
+            <StyledImg src="img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="food" />
+          </StyledCardContainer>
+        </SwiperSlide>
+        <SwiperSlide>
+          <StyledCardContainer>
+            <StyledDescriptionWrapper>
+              <StyledP>Healthy and vibrant strawberry cake</StyledP>
+              <StyledMinute>55 min</StyledMinute>
+            </StyledDescriptionWrapper>
+            <StyledImg src="img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="food" />
           </StyledCardContainer>
         </SwiperSlide>
         <SwiperSlide>

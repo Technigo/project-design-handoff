@@ -24,7 +24,6 @@ export const CTA = styled.button`
     }
 
 ${props => props.choose && css`
-    width: unset;
     background: #D0C4B8;
     font-size: 16px;
     padding: 8px 36px;
@@ -34,7 +33,6 @@ ${props => props.choose && css`
 `}
 
 ${props => props.chosen && css`
-    width: 212px;
     font-weight: 700;
     background: #02393F;
     font-size: 16px;
