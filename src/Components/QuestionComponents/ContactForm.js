@@ -39,7 +39,7 @@ const ContactForm = () => {
           placeholder="Your message here" />
       </label>
 
-      <button type="submit">Send</button>
+      <button className="send-button" type="submit">Send</button>
     </form>
   );
 }

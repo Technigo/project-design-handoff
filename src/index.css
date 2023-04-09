@@ -3,31 +3,32 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
   font-family: 'Calibri', sans-serif;
 }
 
 /* General styling (mobile first) */
 .main-container{
-  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 
 /* Header-styling */
 
 .header-section{
-  background-image: url('./Images/mobilehero.svg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-image: url('./Images/mobilehero.png');
   background-size: cover;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navbar{
@@ -81,6 +82,16 @@ body {
 
 h1, h2, h3, h4, h5{
   font-family: 'Permanent Marker';
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+label{
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .hero-header{
@@ -170,6 +181,10 @@ button{
 .benefits-section{
   background-color: #EDFDFF;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .benefits-header{
@@ -178,14 +193,13 @@ button{
   background-color: #096B78;
   border-bottom: 5px solid #004852;
   border-radius: 0px 0px 100px 13px;
-  padding: 0px 86px 0px 16px;
   margin: 0;
   height: 44px;
   width: 344px;
   font-weight: 400;
   line-height: 113.5%;
   letter-spacing: -0.022em;
-  text-align: left;
+  align-self: flex-start;
   padding: 8px 16px;
 }
 
@@ -193,14 +207,13 @@ button{
   background: #004852;
   border-radius: 8px;
   height: 364px;
-  width: 312px;
+  width: 328px;
   color: #ffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 47px auto 0;
 }
 
 .benefits-text{
@@ -218,7 +231,7 @@ button{
 
 .examples-header{
   color:#FFE600; 
-  padding: 0px 42px 0px 19.2px;
+  padding: 3.9px 42px 3.9px 19.2px;
   width: 309.2px;
   height: 34.8px;
   background: #096B78;
@@ -226,15 +239,17 @@ button{
   border-radius: 0px 0px 60px 0px;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 113.5%;
   letter-spacing: -0.022em;
+  display: flex;
+  align-items: center;
 }
 
 .examples-list{
   padding: 10px;
   gap: 10px;
-  width: 279px;
+  width: 285px;
   height: 174px; 
   border: 3px solid #045661;
   border-radius: 13px;
@@ -271,12 +286,21 @@ button{
 /****** Pick your position *******/
 .position-section{
   background-image: url('./Images/mobileframefill.svg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
-  padding: 16px;
+   padding: 0 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.position-header{
+padding: 0px 86px 0px 16px;
+background: #EDFDFF;
+border-bottom: 5px solid #128E9F;
+border-radius: 0px 0px 100px 13px;
+margin: 0 16px;
+font-size: 24px;
 }
 
 .about-box{
@@ -307,6 +331,7 @@ button{
   border-radius: 22.7727px 22.7727px 0px 22.7727px;
   width: 279px;
   height: 119.53px;
+  margin-left: auto ;
 }
 
 .deck-header{
@@ -369,11 +394,11 @@ button{
 .review-section {
   position: relative;
   background-color: #EDFDFF;
-  z-index: -2;
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100vw;
+  padding: 41px;
 }
 
 .review-section::before {
@@ -420,35 +445,39 @@ button{
 
 .question-section{
  background-color:#004852;
- ;
-}
-
-.qa-div{
-  text-align: left;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 25.3233px;
-  gap: 12px;
-  background-color: #EDFDFF;
-  border: 5.27569px solid #FFE600;
-  box-shadow: 0px 4.22056px 4.22056px rgba(0, 0, 0, 0.25);
-  border-radius: 13px;
-  margin: 16px; 
+  padding-bottom: 45px;
+}
+
+.faq-div{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 24px;
+gap: 16px;
+width: 329px;
+background: #EDFDFF;
+border: 5px solid #045661;
+border: 5.27569px solid #FFE600;
+box-shadow: 0px 4.22056px 4.22056px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
 }
 
 .question-form{
   background-color: #EDFDFF;
   padding: 24px;
-gap: 16px;
-
-width: 329px;
-height: 589px;
-
-background: #EDFDFF;
-border: 5px solid #045661;
-box-shadow: 0px 4.22056px 4.22056px rgba(0, 0, 0, 0.25);
-border-radius: 13px;
+  width: 329px;
+  height: 589px;
+  background: #EDFDFF;
+  border: 5px solid #045661;
+  box-shadow: 0px 4.22056px 4.22056px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  margin-top: 12px;
 }
 
 .form-div{
@@ -462,22 +491,54 @@ border-radius: 13px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin-top: 16px;
+}
 
+.faq-div p{
+  margin: 12px;
+  text-align: center;
+}
+
+textarea{
+  gap: 8px;
+  width: 261px;
+  height: 242.06px;
+  background: #FFFFFF;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.send-button{
+  width: 123px;
+  height: 35.94px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: auto;
 }
 
 /****Footer-section ****/
+
 .footer-section{
+  background-color: #EDFDFF;
+  padding-top: 49px;
+}
+
+.footer-div{
   background-image: url('./Images/mobilefoot.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 328px;
   color: #F7FEFF;
-  text-align: center;
   width: 100vw;
+  padding-bottom: 28px;
 }
 
 .footer-list{
   display: flex;
+  justify-content: center;
+  padding: 43px 0;
+  text-align: center;
 }
 
 .footer-list ul {
@@ -488,8 +549,14 @@ border-radius: 13px;
   display: flex;
   justify-content: center;
   gap: 12px;
+  margin-bottom: 62px;
 }
 
 .footer-section a{
   color: inherit;
+}
+
+figure{
+  margin-left: 10%;
+  display: inline-block;
 }

@@ -3,7 +3,7 @@ import React from 'react';
 const QandA = ({ question, answer }) => {
   return (
     <div>
-      <h5>{question}</h5>
+      <p className="bold">{question}</p>
       <p>{answer}</p>
     </div>
   )

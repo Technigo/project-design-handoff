@@ -10,7 +10,7 @@ import ProgramDeck from 'Images/ProgramDeck.png'
 const PickYourPosition = () => {
   return (
     <section className="position-section">
-      <h3 className="examples-header">PICK YOUR POSITION</h3>
+      <h3 className="position-header">PICK YOUR POSITION</h3>
 
       <div className="about-box">
         <h4 className="about-header">ABOUT THE PROGRAMS</h4>

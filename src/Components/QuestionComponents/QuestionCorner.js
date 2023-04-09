@@ -6,7 +6,7 @@ const QuestionCorner = () => {
   return (
     <section className="question-section">
       <h2>QUESTION CORNER</h2>
-      <div className="qa-div">
+      <div className="faq-div">
         <h3>FREQUENTLY ASKED QUESTIONS</h3>
         <QandA
           question="Can I do a program aimed at another position than my current one?"
