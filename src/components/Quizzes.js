@@ -1,7 +1,7 @@
 import React from 'react';
-import './Quiz.css';
+import './Quizzes.css';
 
-const Quiz = () => {
+const Quizzes = () => {
   return (
     <div className="quiz-container">
       <h5 className="quizheader">Find Your Barre</h5>
@@ -11,4 +11,4 @@ const Quiz = () => {
   )
 }
 
-export default Quiz
+export default Quizzes

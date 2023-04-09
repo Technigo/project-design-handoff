@@ -4,7 +4,7 @@ import { Header } from 'components/Header';
 import { Hero } from 'components/Hero';
 import { Join } from 'components/Join';
 import { Class } from 'components/Class';
-import { Quiz } from 'components/Quiz';
+import { Quizzes } from 'components/Quizzes';
 import { Praise } from 'components/Praise';
 import { Form } from 'components/Form';
 
@@ -15,7 +15,7 @@ export const App = () => {
       <Hero />
       <Join />
       <Class />
-      <Quiz />
+      <Quizzes />
       <Praise />
       <Form />
       <Footer />
