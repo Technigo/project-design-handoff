@@ -29,12 +29,21 @@ export const Header = () => {
         <MenuDeskTop />
       </LogoSection>
       <section className="intro-text">
-        <p>Santulan Power Yoga Stockholm</p>
-        <h1>Move your body <br />
+        <div>
+          <p>Santulan Power Yoga Stockholm</p>
+          <h1>Move your body <br />
           Rest your mind
-        </h1>
-        <SignUpBtn />
-        <p>Want to know more about us?</p>
+          </h1>
+          <div className="blue-text">
+            <p>
+          Build strength, agility and endurance
+          whilst in a calm and serene studio,
+          tucked away in Kungsholmen, Stockholm.
+            </p>
+          </div>
+          <SignUpBtn />
+          <p>Want to know more about us?</p>
+        </div>
       </section>
     </Navigation>
   )

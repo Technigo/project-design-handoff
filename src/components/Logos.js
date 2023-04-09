@@ -49,13 +49,14 @@ const LogoDesk = styled.div`
     justify-items: center;
 
     h5 {
-        padding-top: 18px;
         margin-left: 10px;
+        margin-top: 10px;
     }
 
     img {
+        padding-top: 13px;
+        margin-left: 5px;
         height: 48px;
-        padding-top: 20px;
     }
     @media (max-width: 454px) {
         display: none;

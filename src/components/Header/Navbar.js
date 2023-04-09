@@ -79,7 +79,7 @@ const StyledNav = styled.nav`
     }
     @media (min-width: 895px) {
         width: auto;
-        padding: 15px 180px;
+        padding: 0 180px;
         flex-direction: row;
         gap: 5rem;
         height: auto;

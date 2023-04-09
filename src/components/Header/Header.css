@@ -28,3 +28,28 @@ i {
     color: #fff;
     font-weight: 500;
 }
+
+.blue-text p {
+    color:#89D6E8;
+    font-size: 18px;
+    max-width: 21rem;
+}
+
+@media (max-width: 895px) {
+    .blue-text p  {
+    display: none;
+    }
+}
+ @media (min-width: 895px) {
+    .intro-text {
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 8rem;
+    padding: 250px 0 0 0;
+}
+
+    .blue-text p  {
+        display: flex;
+        }
+}
+

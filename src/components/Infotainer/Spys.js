@@ -39,7 +39,7 @@ export const SpyStudio = () => {
             Santulan to empower your journey to personal
             growth and well-being. Our classes weave
             ancient yogic philosophy into 21st century life,
-            and everyone`&apos`s welcome, from absolute beginners
+            and everyons&apos;s welcome, from absolute beginners
             to advanced practitioners. We passionately
             believe that Power Yoga is for everyone,
             and no matter your age or flexibility,
