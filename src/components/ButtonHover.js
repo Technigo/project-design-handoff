@@ -8,6 +8,7 @@ position: ${(props) => props.position};
 width: ${(props) => props.width};
 left: ${(props) => props.left};
 top: ${(props) => props.top};
+margin-left: ${(props) => props.marginLeft};
 `;
 
 export const ButtonHover = (props) => {
@@ -29,7 +30,8 @@ export const ButtonHover = (props) => {
       position={props.position}
       width={props.width}
       left={props.left}
-      top={props.top} />
+      top={props.top}
+      marginLeft={props.marginLeft} />
   );
 }
 

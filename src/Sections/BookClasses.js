@@ -13,7 +13,7 @@ import { ButtonHover } from '../components/ButtonHover';
 const AcrobaticsContainer = styled.div`
   display: flex;
   flex-direction:column;
-  height: 1632px;
+  height: fit-content;
   width: 100vw;
   background-image: url(${acroBg});
   background-repeat: no-repeat;
@@ -22,27 +22,15 @@ const AcrobaticsContainer = styled.div`
   
 `;
 const AcrobaticsButton = styled.img`
-  position: absolute;
-  width: 290px;
-  height: 35.6px;
-  left: 0px;
-  top: 983.41px;
+  width: 80%;
 `;
 
 const AcrobaticsImage = styled.img`
-  position: absolute;
   width: 100%;
-  height: 400.82px;
-  left: 0.5%;
-  top: 1018px;
 `;
 
 const AcrobaticsText = styled.p`
-  position: absolute;
   width: 85.9%;
-  height: 334px;
-  left: 30px;
-  top: 1467px;
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
@@ -50,14 +38,17 @@ const AcrobaticsText = styled.p`
   text-align: justify;
   letter-spacing: -0.022em;
   color: #000000;
-  margin:0;
+  margin-left:1rem;
 `;
 
 const OurClassesButton = styled.img`
-  position: relative;
-  width: 165px;
-  height: 37.24px;
-  top: 63%;
+  width:50%;
+`;
+
+const ButtonDiv = styled.div`
+display:flex;
+justify-content: center;
+margin-bottom: 7%;
 `;
 
 const CarouselContainer = styled.div`
@@ -86,13 +77,12 @@ export const BookClasses = () => {
       <CarouselContainer>
         <Gallery />
       </CarouselContainer>
-      <ButtonHover
-        btnOnHover={classesBookBtnHover}
-        btn={classesBookBtn}
-        position="relative"
-        width="67%"
-        left="16.4%"
-        top="65.3%" />
+      <ButtonDiv>
+        <ButtonHover
+          btnOnHover={classesBookBtnHover}
+          btn={classesBookBtn}
+          width="67%" />
+      </ButtonDiv>
     </AcrobaticsContainer>
   );
 };

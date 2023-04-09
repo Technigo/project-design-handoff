@@ -4,7 +4,6 @@ import { Slogan } from 'components/Slogan';
 import Navbar from 'components/Menu';
 import heroBg from '../assets/hero.svg'
 import logoHero from '../assets/logo-hero.svg';
-// import { Hamburger } from '../components/Hamburger';
 import { ButtonHover } from '../components/ButtonHover';
 import joinBtn from '../assets/button-join.svg';
 import joinBtnHover from '../assets/button-join-hover.svg';

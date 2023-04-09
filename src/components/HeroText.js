@@ -8,12 +8,8 @@ const HeroTextWrapper = styled.div`
   justify-content:space-between;
 `
 const HeroTextContent = styled.h1`
-  position: absolute;
   z-index:99;
-  width: 239px;
-  height: 90px;
-  left: 54px;
-  top: 851px;
+  width: 70%;
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
@@ -21,27 +17,24 @@ const HeroTextContent = styled.h1`
   text-align: center;
   letter-spacing: -0.022em;
   color: #0962CF;
-  `
+`
 const HeroA = styled.img`
-  position: absolute;
   width: 46px;
   height: 43px;
-  left: ${(props) => (props.left)};
-  right: ${(props) => (props.right)};
-  top: 875px;
+  margin-top: 25px;
   transform: ${(props) => (props.transform)};
 `
 
 export const HeroText = () => {
   return (
     <HeroTextWrapper>
-      <HeroA src={`${logoHeroA}`} left="0" transform="rotate(90deg)" />
+      <HeroA src={`${logoHeroA}`} transform="rotate(90deg)" />
       <HeroTextContent>
           Physical activity is vital for the body.
           Learn how to master unique skills where you’ll develop strength,
           confidence and you&apos;ll defy yourself.
       </HeroTextContent>
-      <HeroA src={`${logoHeroA}`} right="0" transform="rotate(-90deg)" />
+      <HeroA src={`${logoHeroA}`} transform="rotate(-90deg)" />
     </HeroTextWrapper>
   )
 }
