@@ -90,4 +90,7 @@ max-width: 100vw;
 
 @media (min-width: 1025px){
   
+  .logo{
+     height: 5rem;
+    }
 }
