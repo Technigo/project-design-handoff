@@ -1,0 +1,76 @@
+.experts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: #181818;
+    gap: 3rem;
+}
+.numbers-parent {
+    display: flex;
+    flex-direction: row;
+    gap: .4rem;
+    justify-content: center;
+}
+.numbers-child {
+    background-color: #95A6B5;
+    padding: 1.5rem .5rem;
+    border-radius: 5px 30px 5px 30px;
+    width: 100px;
+    height: 130px;
+}
+.header-numbers{
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.header-numbers2 {
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.big-field {
+    background-color:#F0EAE1;
+    border-radius: 5px 80px 5px 80px;
+    width: 320px;
+    height: 350px;
+}
+
+.maintext-experts {
+    color: #95A6B5;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    font-family: Roboto;
+    font-style: Italic;
+    font-size: 16px;
+    line-height: 19px;
+    Line-height: 100%;
+}
+
+.quoted-experts {
+    font-family: Roboto;
+    color: #95A6B5;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: right;
+    padding: 2rem 3rem;
+    padding-left: 7rem;
+
+}
