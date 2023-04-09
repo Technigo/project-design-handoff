@@ -13,10 +13,10 @@ const StyledNutrWrapper = styled.div`
 width: 88%;
 margin: auto;
 
-@media(min-width: 768px) and (max-width: 1024px) {
-  margin-left: 2rem;
-  margin-bottom: 3rem;
-  width: 615px;
+  @media(min-width: 768px) and (max-width: 1024px) {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    width: 615px;
   }
 
   @media(min-width: 1025px) {
@@ -32,8 +32,8 @@ color: #02393F;
 font-size: 25px;
 line-height: 160%;
 
-@media(min-width: 768px) {
-  font-size: 40px;
+  @media(min-width: 768px) {
+    font-size: 40px;
 }
 `
 
@@ -54,10 +54,10 @@ const Nutrition = () => {
     <StyledNutrWrapper>
       <StyledH2>
         {isMobile ? 'Your Personalized Nutrition Plan' : 'Your Personalized Meal Plan'
-        // Rendering the different titles depending on screen size. I think this could be done with
-        // props and a title component, but I've not gotten it to work on resize of screen,
-        // only on first render of site. 
-        // Instead I have installed an npm package to solve this. Might not be the best solution.
+        /* Rendering the different titles depending on screen size. I think this could be done with
+        props and a title component, but I've not gotten it to work on resize of screen,
+        only on first render of site. 
+        Instead I have installed an npm package to solve this. Might not be the best solution. */
         } 
       </StyledH2> 
       <StyledP>Receive a personalized nutrition plan that aligns with your dietary preferences, health concerns or fitness objectives. 

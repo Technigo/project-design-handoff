@@ -33,11 +33,11 @@ const StyledVideo = styled.video`
   border-radius: 12px;
   }
 
-  @media(min-width: 1025px) {
-    height: 260px;
-    width: 412px;
-  }
-  `
+    @media(min-width: 1025px) {
+      height: 260px;
+      width: 412px;
+    }
+`
 
 const StyledVideoContainer = styled.div`
   position: relative;
@@ -113,14 +113,12 @@ export const YogaSlider = () => {
               <StyledP>Yinyoga to calm down</StyledP>
               <StyledP>15 min</StyledP>
             </StyledDescriptionWrapper>
-
             <StyledVideo 
               ref={(ref) => setVidRef(ref, 0)} 
               src={videoSrc} 
               poster="img/videoposter.png"
               onClick={() => handleToggleVideo(0)}
             />
-
           </StyledVideoContainer>
         </SwiperSlide>
         <SwiperSlide>

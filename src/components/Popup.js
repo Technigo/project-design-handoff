@@ -4,6 +4,10 @@ import styled from "styled-components";
 import { Trial } from "./Trial";
 import { CTA } from "./CTA";
 
+/* I'm very proud of this popup! 
+Coded by yours truly! Works as intended! 
+Looks like it should! */
+
 const Overlay = styled.div`
 position: fixed;
 height: 100vh;
@@ -31,10 +35,9 @@ padding-bottom: 3rem;
 overflow-y: scroll;
 z-index: 3;
 
-@media (min-width: 768px) {
-  gap: 1.5rem;   
+  @media (min-width: 768px) {
+    gap: 1.5rem;   
 }
-
 `
 
 const ExitWrapper = styled.div`
@@ -73,19 +76,19 @@ flex-direction: column;
 gap: 1rem;
 align-items: center;
 
-@media (min-width: 768px) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 `
 const SecondRow = styled.div`
-@media (min-width: 768px) {
-  grid-row: 2;
-  grid-column: 1 / span 2;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+  @media (min-width: 768px) {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 `
 
 const StyledInput = styled.input`
@@ -111,10 +114,10 @@ gap: 1rem;
 justify-content: center;
 padding-bottom: 40px;
 
-@media (min-width: 768px) {
-  grid-column: 2;
-  width: 100%;
-}
+  @media (min-width: 768px) {
+    grid-column: 2;
+    width: 100%;
+  }
 `
 
 const SignUpBtn = styled.button`
@@ -134,9 +137,9 @@ color: #F5F5F5;
 border: none;
 }
 
-@media (min-width: 768px) {
-  padding: 12px 40px;
-  width: 146px;
+  @media (min-width: 768px) {
+    padding: 12px 40px;
+    width: 146px;
 }
 `
 
@@ -144,10 +147,9 @@ const Popup = ({ setIsShowing }) => {
   const isMobile = useMediaQuery('(max-width: 767px)'); // Hook to check screen size.
   const [isOpen, setIsOpen] = useState(true);
 
-  // Locking scrolling under the popup.
-  // Could be done with CSS classes
-  // but since I'm stubborn this is a styled component
-  // so I'm solving it like this
+  /* Locking scrolling under the popup.
+  Could be done with CSS classes but since I'm stubborn 
+  this is a styled component so I'm solving it like this */
 
   useEffect(() => {
     if (isOpen) {
@@ -206,7 +208,7 @@ const Popup = ({ setIsShowing }) => {
           </StyledButtonWrapper>
         </StyledForm>
         {isMobile ? <Trial /> : null
-        // Conditional rendering of the trial box for mobile only 
+        // Conditional rendering of the trial box for mobile only! Fun stuff!
         }
       </StyledPopup>
     </Overlay>

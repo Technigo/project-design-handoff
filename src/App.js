@@ -11,17 +11,19 @@ import Footer from "components/Footer";
 import CTADiv from "components/CTADiv";
 
 export const App = () => {
+// Hi and welcome to my code. This thing toggles the popup!
   const [isShowing, setIsShowing] = useState(false);
-  console.log(isShowing);
 
   const handleCTAClick = () => {
+  // This thing handles the actual click and changes state of popup!
     setIsShowing(true);
   };
 
   return (
-    <div>
+  
+    <>
       <GlobalStyle />
-      <Header onClick={() => setIsShowing(true)} />
+      <Header onClick={handleCTAClick} />
       <Benefits />
       <CTADiv onClick={handleCTAClick} />
       <Testimonials />
@@ -30,8 +32,10 @@ export const App = () => {
       <CTADiv onClick={handleCTAClick} />
       <Nutrition />
       <Pricing />
-      {isShowing && <Popup setIsShowing={setIsShowing} />}
+      {isShowing && <Popup setIsShowing={setIsShowing} 
+      // actually rendering the popup when it's set to showing
+      />}
       <Footer />
-    </div>
+    </>
   );
 };

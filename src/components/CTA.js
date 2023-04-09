@@ -1,26 +1,36 @@
 import styled, { css } from 'styled-components';
 
+/* This is a super nice and useful component,
+it's all over the site in different ways.
+I don't know how to comment in this code but the
+different props send different looks to the buttons.
+The first one is the yellow one used in the Div component.
+Choose is the "unchosen button".
+"chosen" is pre-selected
+I wish I had more time to implement more funtions.
+The onclick from different components, for example! */
+
 export const CTA = styled.button`
-    background-color: #D69A2A;
-    border-radius: 0.7rem;
-    color: #F5F5F5;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 16px 64px;
-    border: none;
+background-color: #D69A2A;
+border-radius: 0.7rem;
+color: #F5F5F5;
+font-family: 'Libre Baskerville', serif;
+font-weight: 700;
+font-size: 16px;
+padding: 16px 64px;
+border: none;
 
-    &:active {
-        background-color: #AC7816;
-    }
+&:active {
+background-color: #AC7816;
+}
 
-    @media(min-width: 768px) and (max-width: 1024px) {
-        font-size: 20px;    
-    }
+@media(min-width: 768px) and (max-width: 1024px) {
+    font-size: 20px;    
+}
 
-    @media(min-width: 1025px) {
-        font-size: 20px;
-    }
+@media(min-width: 1025px) {
+    font-size: 20px;
+}
 
 ${props => props.choose && css`
     background-color: transparent;
@@ -30,7 +40,6 @@ ${props => props.choose && css`
     color: #02393F;
     border: 0.5px solid #000000;
     border-radius: 12px
-
 `}
 
 ${props => props.small && css`

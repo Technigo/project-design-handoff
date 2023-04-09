@@ -39,7 +39,6 @@ export const NutritionSlider = () => {
   height: 176px;
   object-position: center;
   border-radius: 12px;
-  
   `
 
   const StyledCardContainer = styled.div`
@@ -47,12 +46,13 @@ export const NutritionSlider = () => {
   display: block;
   height: 238px;
 
-  @media(min-width 1025px) {
-    height: 308px;
+    @media(min-width 1025px) {
+      height: 308px;
   }
   `
 
   return (
+  // This is probably a big hot mess!
     <SliderContainer>
       <Swiper
         initialSlide="1"
@@ -125,7 +125,6 @@ export const NutritionSlider = () => {
             <StyledImg src="img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="food" />
           </StyledCardContainer>
         </SwiperSlide>
-        
       </Swiper>
     </SliderContainer>
   );

@@ -76,8 +76,7 @@ const Footer = () => {
           <li>Contact</li>
         </AffiliateLinks>
         {isMobile ?  null : <StyledHR />
-        // Rendering the little line under the link depending on if its mobile
-        // or not.
+        // Rendering the little decorative line under the link depending on if its mobile or not.
         }
         <StyledSoMeLinks>
           <SoMeIcon src="../icons/instagram.svg" alt="Instagram link"/>

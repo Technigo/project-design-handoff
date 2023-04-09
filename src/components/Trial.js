@@ -44,7 +44,7 @@ font-size: ${props => props.small ? "32px" : "32px"
 // There must be a nicer way to do this. It only affects the popup component,
 // the rendering of the trial box in tablet mode + above.
 // I want the bgcolor and the rest to be as it's in selected, but not the H1 size.
-// Well, might come back to this later.
+// Well, might come back to this later. Also, not even sure it works??
 };
 margin: 0;
 `

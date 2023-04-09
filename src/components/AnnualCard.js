@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { CTA } from "./CTA";
 
+/* This component is set up for being able to accept the
+"selected" but I've not actually implemented the toggle of
+it. It's just set for selected for the demo. */
+
 const StyledAnnualBox = styled.div`
 background-color: ${props => props.selected ? "#F4E4D7" : "#D0C4B8"};
 box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
@@ -50,7 +54,6 @@ color: #02393F;
 margin-top: 1.5rem;
 width: 228px;
 margin-bottom: 2.5rem;
-
 `
 
 const StyledSmallPrint = styled.p`
@@ -80,8 +83,8 @@ border-bottom: 0.3px solid #02393F;
 `
 
 export const AnnualCard = ({ selected }) => {
-  // Again, making styled components MIGHT have been a bad choice here.
-  // I have to pass the selected to everything in order to make the card render correctly.
+  /* Making everything into styled components MIGHT have been a bad choice here.
+  I have to pass the selected to everything in order to make the card render correctly. */
   return (
     <StyledAnnualBox selected={selected}>
       <StyledAnnualWrapper>

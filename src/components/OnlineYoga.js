@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/media-has-caption */
+// I am ashamed to admit I have disabled this. It's for demo purposes only. Promise.
 import React from "react";
 import styled from 'styled-components'
 import { YogaSlider } from "./YogaSlider";
@@ -11,15 +12,15 @@ padding-bottom: 3.75rem;
 const StyledWrapper = styled.div`
 margin: 1.5rem;
 
-@media(min-width: 768px) and (max-width: 1024px) {
-  width: 627px;
-  margin-left: 2rem;
-}
+  @media(min-width: 768px) and (max-width: 1024px) {
+    width: 627px;
+    margin-left: 2rem;
+  }
 
-@media(min-width: 1025px) {
-  width: 686px;
-  margin-left: 7rem;
-}
+  @media(min-width: 1025px) {
+    width: 686px;
+    margin-left: 7rem;
+  }
 `
 const StyledH2 = styled.h2`
 font-weight: 700;
@@ -55,7 +56,6 @@ const OnlineYoga = () => {
          with clear and easy-to-follow instructions.</StyledYogaP>
       </StyledWrapper>
       <YogaSlider />
-     
     </StyledSection>
   )
 }
