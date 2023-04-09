@@ -26,6 +26,7 @@ const Spys = styled.div`
     }
   @media (min-width: 455px) {
         display: flex;
+        height: 55vh;
     }
 `;
 
