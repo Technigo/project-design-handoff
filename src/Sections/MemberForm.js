@@ -40,13 +40,13 @@ const MemberStripesDiv = styled.div`
   right:0;
 
   @media (min-width: 1024px) {
-    height:340px;
-    margin-top: -86px;
+    height:50vh;
+    margin-top: -15%;
   }
 
   @media (min-width: 1200px) {
-    height: 397px;
-    margin-top: -316px;
+    height: 50vh;
+    margin-top: -25%;
   }
 `
 
@@ -70,6 +70,11 @@ const LogoTitleContainer = styled.div`
 
   @media (min-width: 768px) {
     width:50vw;
+    
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: -23%;
   }
 
   @media (min-width: 1200px) {
