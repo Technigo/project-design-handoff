@@ -3,6 +3,7 @@ import './NavBarCss.css'
 import Namnlöst from '../assets/Namnlöst-1 2.svg'
 import Fit from '../assets/Fit.svg'
 import LogoTablet from '../assets/logo-tablet.png'
+import HeroBox from './HeroBox'
 
 const NavBar = () => {
   return (
@@ -36,6 +37,7 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
+      <HeroBox />
     </section>
   )
 }

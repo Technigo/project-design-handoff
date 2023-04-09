@@ -14,7 +14,10 @@ I used the React library and downloaded Fa Icons to use for the purposes of the 
 
 For me, the biggest challenge in  CSS styling is fixing the background picture so it looks fine for all screen sizes. I spent a lot of time to try the best properties for the background in the navbar, so the hero image fits all mobile devices well. I experimented with the percentage of the background size and background position. 
 
+I also discovered new shapes of objects with a of background color, using a border's radius. 
+
 It's a great experience to elaborate on a project with a designer, especially as I could see the other side of web creation and find the best way of communciation.
+Following the design directly from a Figma document was also a great lesson!
 
 ## View it live
 
