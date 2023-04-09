@@ -61,7 +61,7 @@ font-size: 10px;
 const StyledHeader = styled.h1`
 font-size: 32px;
 margin-left: 24px;
-margin-top: 32px;
+padding-top: 32px;
 font-weight: 700;
 color: #02393F;
 align-self: flex-start;
