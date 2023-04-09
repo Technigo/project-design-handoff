@@ -39,7 +39,8 @@ margin-top: 0;
   margin-top: -7%;
   font-size: 56px;
   position: relative;
-  right: 34%;
+  right: 0%;
+  transform: skew(10deg, 0deg);
 }
 `
 export const ClassImgContainer = styled.div`
@@ -67,9 +68,13 @@ height: 115%;
 
 @media (min-width: 1024px) {
   height: 478px;
-  width: 338px;
+  width: 485px;
+  transform: skew(10deg) translate(-17%);
 }
 `;
+
+export const FilterHover = styled.img`
+`
 
 export const ClassDiv = styled.div`
 display: flex;
@@ -137,14 +142,14 @@ padding-left: 12px;
 
 @media (min-width: 1024px) {
   top: -9%;
-    left: 26.85%;
-    position: relative;
-    scale: 1;
-    width: 222px;
-    height: 60.7px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 34px;
+  left: 37.85%;
+  position: relative;
+  scale: 1;
+  width: 222px;
+  height: 60.7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 34px;
 }
 `
 
@@ -382,4 +387,8 @@ export const ClassDivDesktop = styled.div`
 `
 
 export const DesktopWrapper = styled.div`
-transform: skew(0deg) rotate(0deg);`
+transform: skew(-10deg) rotate(0deg);
+    overflow: hidden;
+    width: 70%;
+    margin-right: 70px;
+    `

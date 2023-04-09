@@ -8,6 +8,10 @@ background-color: rgb(185, 246, 21);
 display: flex;
 flex-direction: column;
 align-items: center;
+
+@media (min-width: 1024px) {
+    height: auto;
+}
 `
 
 export const SingleLogoBlack = styled.img`

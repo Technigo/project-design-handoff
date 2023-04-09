@@ -16,6 +16,13 @@ margin-bottom: 59px;
   scale: 1.4;
   margin-left: 32px;
 }
+
+@media (min-width: 1024px) {
+  scale: 1;
+  margin-left: 0px;
+  width: 412px;
+  margin-bottom: 150px;
+}
 `
 
 const OCimg = styled.img`
