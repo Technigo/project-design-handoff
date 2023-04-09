@@ -19,10 +19,9 @@ const HeroTextContent = styled.h1`
   color: #0962CF;
 `
 const HeroA = styled.img`
-  width: 46px;
-  height: 43px;
-  margin-top: 25px;
+  width: 12.7%;
   transform: ${(props) => (props.transform)};
+  border:solid red;
 `
 
 export const HeroText = () => {

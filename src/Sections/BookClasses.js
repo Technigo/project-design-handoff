@@ -64,7 +64,7 @@ export const BookClasses = () => {
       <AcrobaticsButton src={acroBtn} />
       <AcrobaticsImage src={`${acroImg}`} />
       <AcrobaticsText>
-        Acrobaticsis is the performance of human feats of balance, agility, and
+        Acrobatics is is the performance of human feats of balance, agility, and
         motor coordination. Acrobatic skills are used in performing arts,
         sporting events, and martial arts. Extensive use of acrobatic skills are
         most often performed in acro dance, circus, gymnastics, and freerunning

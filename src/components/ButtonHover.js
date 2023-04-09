@@ -7,6 +7,7 @@ cursor: pointer;
 position: ${(props) => props.position}; 
 width: ${(props) => props.width};
 left: ${(props) => props.left};
+right: ${(props) => props.right};
 top: ${(props) => props.top};
 margin-left: ${(props) => props.marginLeft};
 `;
@@ -30,6 +31,7 @@ export const ButtonHover = (props) => {
       position={props.position}
       width={props.width}
       left={props.left}
+      right={props.right}
       top={props.top}
       marginLeft={props.marginLeft} />
   );

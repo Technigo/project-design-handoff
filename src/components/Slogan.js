@@ -7,14 +7,13 @@ const SloganContainer = styled.div`
 `;
 
 const HeroTitleGO = styled.h1`
-  position: absolute;
-  width: 210px;
-  height: 170px;
-  left: 10px;
-  top:59.6%;
+  position:absolute;
+  width: 58.3%;
+  top:62%;
+  left: 2.8%;
   font-style: italic;
   font-weight: 600;
-  font-size: 142.936px;
+  font-size: 8.8rem;
   line-height: 119%;
   letter-spacing: -0.022em;
   color: #B9F615;
@@ -23,13 +22,12 @@ const HeroTitleGO = styled.h1`
 
 const HeroTitleBEYOND = styled.h1`
   position: absolute;
-  width: 142px;
-  height: 48px;
-  left: 18px;
+  width: 39.4%;
+  left: 5%;
   top: 79.2%;
   font-style: italic;
   font-weight: 600;
-  font-size: 39.9506px;
+  font-size: 2.5rem;
   line-height: 119%;
   letter-spacing: -0.022em;
   color: #b9f615;
@@ -38,33 +36,32 @@ const HeroTitleBEYOND = styled.h1`
 
 const HeroTitleTHE = styled.h1`
 position: absolute;
-width: 73px;
-height: 53px;
-left: 83px;
+width: 20.3%;
+left: 23%;
 top: 84.4%;
 font-style: italic;
 font-weight: 600;
-font-size: 44.0651px;
+font-size: 2.75rem;
 line-height: 119%;
 letter-spacing: -0.022em;
 color: #B9F615;
 margin:0;
-`
+`;
 
 const HeroTitleLIMITS = styled.h1`
 position: absolute;
-width: 151px;
+width: 41.9%;
 height: 66px;
-left: 191px;
+left: 53.1%;
 top: 83.0%;
 font-style: italic;
 font-weight: 600;
-font-size: 55.0281px;
+font-size: 3.4rem;
 line-height: 119%;
 letter-spacing: -0.022em;
 color: #B9F615;
 margin:0;
-`
+`;
 
 export const Slogan = () => {
   return (

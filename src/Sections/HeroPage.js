@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Slogan } from 'components/Slogan';
 import Navbar from 'components/Menu';
-import heroBg from '../assets/hero.svg'
+import heroBg from '../assets/hero.svg';
+import heroBgLarge from '../assets/hero-large.svg';
 import logoHero from '../assets/logo-hero.svg';
 import { ButtonHover } from '../components/ButtonHover';
 import joinBtn from '../assets/button-join.svg';
@@ -15,6 +16,10 @@ const HeroContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: 768px) {
+    background-image: url(${heroBgLarge});
+  }
 `
 
 const Logo = styled.img`
@@ -29,7 +34,17 @@ const Topwrapper = styled.div`
   justify-content:space-between;
   padding-right:7.4%;
   padding-top:4.7%;
- `
+ `;
+
+const ButtonDiv = styled.div`
+display:flex;
+justify-content: flex-end;
+width:100vw;
+height:6%;
+position:absolute;
+top: 60%;
+right:0;
+`;
 
 export const HeroPage = () => {
   return (
@@ -38,13 +53,14 @@ export const HeroPage = () => {
         <Logo src={`${logoHero}`} alt="logo of the page" />
         <Navbar />
       </Topwrapper>
-      <ButtonHover
-        btnOnHover={joinBtnHover}
-        btn={joinBtn}
-        position="absolute"
-        width="41.2%"
-        left="58.7%"
-        top="57.3%" />
+      <ButtonDiv>
+        <ButtonHover
+          btnOnHover={joinBtnHover}
+          btn={joinBtn}
+          position="relative"
+          width="41.2%"
+          right="0" />
+      </ButtonDiv>
       <Slogan />
     </HeroContainer>
   )
