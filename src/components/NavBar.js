@@ -1,6 +1,6 @@
 import React from 'react'
 import './NavBarCss.css'
-import Namnlöst from '../assets/Namnlöst-1 2.svg'
+import Namnlost from '../assets/Namnlost.svg'
 import Fit from '../assets/Fit.svg'
 import LogoTablet from '../assets/logo-tablet.png'
 import HeroBox from './HeroBox'
@@ -11,7 +11,7 @@ const NavBar = () => {
       <nav className="nav-bar">
         <div className="icons-container">
           <img
-            src={Namnlöst}
+            src={Namnlost}
             alt="Logo"
             className="picture" />
           <img
