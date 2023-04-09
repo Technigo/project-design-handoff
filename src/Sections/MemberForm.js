@@ -13,6 +13,11 @@ const ImageAndFormWrapper = styled.div`
   display: flex;
   flex-direction:column;
   align-items:center;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    width:100vw;
+  }
 `;
 
 const MemberFormContainer = styled.div`
@@ -22,6 +27,10 @@ const MemberFormContainer = styled.div`
   display: flex;
   flex-direction:column;
   align-items:center;
+
+  @media (min-width: 768px) {
+    width:50vw;
+  }
 `;
 
 const MemberStripesDiv = styled.div`
@@ -49,6 +58,10 @@ const LogoTitleContainer = styled.div`
   margin-top: 7%;
   z-index:99;
   left:0;
+
+  @media (min-width: 768px) {
+    width:50vw;
+  }
  `;
 
 const MemberLogoA = styled.img`
@@ -127,6 +140,10 @@ const MemberImage = styled.img`
   width: 100vw;
   height: fit-content;
   margin-bottom:10%;
+
+  @media (min-width: 768px) {
+    width:50vw;
+  }
 `;
 
 export const MemberForm = () => {

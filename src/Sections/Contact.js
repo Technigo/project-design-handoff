@@ -13,6 +13,9 @@ const ContactContainer = styled.div`
   width: 100vw;
   background-color:#42403C;
   position:relative;
+
+  @media (min-width: 768px) {
+}
   `;
 
 const ContactStripesDiv = styled.div`
@@ -21,6 +24,10 @@ const ContactStripesDiv = styled.div`
   padding-top:8px;
   position:relative;
   left:-35px;
+
+  @media (min-width: 768px) {
+  width: 50%;
+}
 `;
 
 const ContactStripesImage = styled.img`
@@ -36,6 +43,11 @@ const ContactChildDiv = styled.div`
   justify-content: center;
   align-items: center;
   gap: 4rem;
+
+  @media (min-width: 768px) {
+  flex-direction: row;
+  gap:2rem;
+}
 `;
 
 const LogoAndOContactDiv = styled.div`
@@ -43,6 +55,10 @@ const LogoAndOContactDiv = styled.div`
  flex-direction: column;
  align-items: center;
  height:max-content;
+
+ @media (min-width: 768px) {
+  gap:6rem;
+ }
 `;
 
 const LogoDiv = styled.div`
@@ -79,6 +95,11 @@ const BrandsDiv = styled.div`
   flex-direction:column;
   width: 31.7%;
   gap:2rem; 
+
+  @media (min-width: 768px) {
+    gap:5rem;
+    padding-right: 10%;
+}
 `;
 
 const BrandImage = styled.img`

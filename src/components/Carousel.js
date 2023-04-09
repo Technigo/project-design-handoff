@@ -14,13 +14,13 @@ import parkour from '../assets/carousel/carousel-parkour.svg';
 import learnMoreBtn from '../assets/carousel/button-learnMore.svg';
 // import arrow from '../assets/arrow.svg';
 
-const SingleSlideWrapper = styled.div`
+export const SingleSlideWrapper = styled.div`
   display:flex;
   flex-direction:column;
   width:100vw;
 `
 
-const ButtonLearn = styled.img`
+export const ButtonLearn = styled.img`
   cursor: pointer;
   width: 148.46px;
   height: 40.49px;

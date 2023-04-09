@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { HeroText } from 'components/HeroText';
 import Gallery from 'components/Carousel';
+import { Classes } from 'components/Classes';
 import acroBtn from '../assets/button-acrobatics.svg';
 import acroImg from '../assets/acrobat.svg';
 import acroBg from '../assets/acrobatics-background.svg';
@@ -23,6 +24,11 @@ const AcrobaticsContainer = styled.div`
 `;
 const AcrobaticsButton = styled.img`
   width: 80%;
+ 
+  @media (min-width: 768px) {
+    width:45%;
+    margin-top:7%;
+  }
 `;
 
 const AcrobaticsImage = styled.img`
@@ -32,7 +38,6 @@ const AcrobaticsImage = styled.img`
     width:50%;
     position:absolute;
     right:0;
-    border:solid red;
   }
 `;
 
@@ -50,7 +55,9 @@ const AcrobaticsText = styled.p`
   @media (min-width: 768px) {
     width:45%;
     left:0;
-    border:solid blue;
+    margin-top: 7%;
+    margin-bottom:7%;
+    font-size: 1.3rem;
   }
 `;
 
@@ -62,7 +69,12 @@ const AcrobaticsTextPartTwo = styled.p`
   text-align: justify;
   letter-spacing: -0.022em;
   color: #000000;
+  
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
+
 const OurClassesButton = styled.img`
   width:50%;
 `;
@@ -106,6 +118,7 @@ export const BookClasses = () => {
       <CarouselContainer>
         <Gallery />
       </CarouselContainer>
+      <Classes />
       <ButtonDiv>
         <ButtonHover
           btnOnHover={classesBookBtnHover}
