@@ -30,24 +30,3 @@ code {
     url("./assets/hero-image.jpg");
   background-size: cover;
 }
-
-.register-form-text {
-  background: #f2fdff;
-  border-radius: 8px 8px 0px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px 0px;
-}
-
-.footer-section {
-  display: flex;
-  justify-content: center;
-  background-color: var(--secondary-bg-color);
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
