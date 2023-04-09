@@ -8,6 +8,7 @@ const Logo = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 10px;
 
     img {
         height: 48px;
@@ -47,6 +48,7 @@ const LogoDesk = styled.div`
     display: flex;
     justify-content: center;
     justify-items: center;
+    margin-bottom: 10px;
 
     h5 {
         margin-left: 10px;

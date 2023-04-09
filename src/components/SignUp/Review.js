@@ -1,6 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const TheDiv = styled.div`
+  background-color: #66A1AE;
+  width: 100%;
+
+  @media (min-width: 895px) {
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+`
+
 const ComeJoin = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,11 +65,12 @@ const Reviews = styled.div`
     padding: 0 10px; 
     color: #fff;
   }
+
 `;
 
 export const ReviewTemp = () => {
   return (
-    <div>
+    <TheDiv>
       <ComeJoin>
         <h3>Come join us!</h3>
         <p>Discover all the benefits of Power Yoga and
@@ -73,6 +86,6 @@ export const ReviewTemp = () => {
           </p>
         </Reviews>
       </ComeJoin>
-    </div>
+    </TheDiv>
   )
 }

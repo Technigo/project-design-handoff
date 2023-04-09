@@ -4,8 +4,7 @@ import { PowYoga } from './components/Infotainer/PowerYoga';
 import { Classes } from './components/Classes/Classes';
 import { SpyStudio } from './components/Infotainer/Spys';
 import { Adress } from './components/Infotainer/Adress';
-import { ReviewTemp } from './components/Review/Review';
-import { SignUp } from './components/SignUp';
+import { SignReview } from './components/SignUp/SignReview';
 import { Foot } from './components/Footer/Footer';
 
 export const App = () => {
@@ -19,8 +18,7 @@ export const App = () => {
         <Classes />
         <SpyStudio />
         <Adress />
-        <ReviewTemp />
-        <SignUp />
+        <SignReview />
       </main>
       <Foot />
     </>

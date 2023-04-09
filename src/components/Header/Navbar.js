@@ -63,9 +63,7 @@ const MenuBackground = styled.div`
     z-index: 1;
 
     @media (min-width: 895px) {
-        width: auto;
-        height: auto;
-        background-color: transparent;
+        display: none;
 }
 `
 const StyledNav = styled.nav`

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { LogoIcon, LogoText } from '../Logos'
-import './footer.css';
 
 const Logo = styled.div`
     background-color: #2E160E;
@@ -25,7 +24,7 @@ const NavFoot = styled.div`
       display: flex;
       gap: 3rem;
       list-style: none;
-      margin-top: 20px;
+      margin: 20px 0 0;
     }
 
     a {

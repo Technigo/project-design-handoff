@@ -11,12 +11,14 @@ const MenuDesk = styled.nav`
         font-size: 18px;
         margin-top: 20px;
         color: white;
+        cursor: pointer;
     }
 
     i {
       font-size: 20px;
       padding-top: 20px;
       margin-right: 40px;
+      cursor: pointer;
     }
 
     @media (max-width: 895px) {
