@@ -4,16 +4,30 @@
     padding-top: 20px; 
     margin-bottom: 50px;
 }
+
+.awssld__content {
+    background-color: #66A1AE;
+  }
+
+  .awssld__bullets button {
+    height: 4px;
+    width: 4px;
+    background: lightgray;   
+  }
   
+  .awssld__bullets .awssld__bullets--active {
+    background: white;
+  }
 
 .review-card {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 230px;
+  height: 170px;
   max-width: 310px;
   background-color: #4796A8;
   padding: 10px 30px;
+  border-radius: 15px;
 }
 
   img {

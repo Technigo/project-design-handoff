@@ -60,7 +60,7 @@ const MenuBackground = styled.div`
     right: 0;
     background-color: #000;
     opacity: 85%;
-    height: 70vh;
+    height: 100vh;
     z-index: 1;
 
     @media (min-width: 895px) {
