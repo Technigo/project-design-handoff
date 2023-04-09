@@ -58,7 +58,6 @@ input[type=text] {
     font-family: 'Roboto';
     font-style: italic;
     font-weight: 600;
-    font-size: 12px;
     line-height: 14px;
 }
 
@@ -76,7 +75,8 @@ input[type=text] {
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    gap: .5rem
+    gap: .5rem;
+    padding-left: 1rem;
 }
 
 .ul-footer {
@@ -103,7 +103,11 @@ input[type=text] {
 
 @media (min-width:668px) and (max-width:1023px) {
 
-
+    .footer-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
     .mobile-buttons-container {
         display: none;
     }
@@ -114,9 +118,8 @@ input[type=text] {
         align-content: flex-start;
         font-family: Roboto;
         color: #F0EAE1;
-        width: auto;
-        padding: 5rem;
-        width: 86%;
+        padding: 5rem 6rem;
+        width: 90%;
 
     }
 
@@ -130,54 +133,52 @@ input[type=text] {
         text-align: center;
     }
 
+    .links-footer {
+        color: #F0EAE1;
+        font-size: .7rem;
+    }
+
 }
 
 @media (min-width:1024px) {
-
     .mobile-buttons-container {
         display: none;
+    }
+
+    .footer-content-wrapper {
+        display: flex;
+        flex-direction: column;
     }
 
     .subscribe-container {
         display: flex;
         flex-direction: column;
+        align-content: flex-start;
         font-family: Roboto;
         color: #F0EAE1;
-        width: 550px;
+        width: auto;
+        padding: 5rem 10rem;
+        width: 86%;
+
     }
 
     .bottom-footer-container {
-        display: inline-flex;
+        display: flex;
         flex-direction: row;
         padding-top: 100px;
         justify-content: space-between;
-        
-    }
-
-    .icons-box {
-        display: inline-flex;
-        flex-direction: row;
-        gap: 3vh;
-        padding: 0 3.9rem;
-
-    }
-
-    .footer-content-wrapper {
-        /*padding: 100px 290px;*/
-        padding: 6rem 15rem;
-    }
-
-    .ul-footer {
         gap: 2rem;
-        margin: 0;
-        display: flex;
-        justify-content: flex-start;
-        padding-bottom: 0;
-        
+        padding: 0rem 10rem;
     }
 
     .links-footer {
         color: #F0EAE1;
         font-size: .8rem;
     }
+
+      .icons-box {
+        gap: 4vh;
+
+    }
+
 }
