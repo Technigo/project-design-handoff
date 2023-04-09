@@ -16,7 +16,7 @@ background-size: 130%;
 }
 
 @media (min-width: 1025px) {
-max-height: 1200px;
+max-height: 900px;
 }
 `
 const StyledHeaderWrapper = styled.div`
