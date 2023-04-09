@@ -17,7 +17,11 @@ position:relative;
 
 const HeadlineContainer = styled.div`
 text-align: center;
-padding: 2.4rem 2rem 0 2rem;
+padding: 2.4rem 1rem 0 1rem;
+
+@media (min-width: 380px) {
+  padding: 2.4rem 2rem 0 2rem;
+}
 
 @media (min-width: 744px) {
     padding: 2.4rem 2.2rem 0 2.2rem;

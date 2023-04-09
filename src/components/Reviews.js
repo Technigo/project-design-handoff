@@ -102,7 +102,7 @@ display: flex;
 flex-direction: column;
 height: auto;
 background: #EBEBEB;
-padding: 3em;
+padding: 3em 1em 3em 1em;
 `
 
 export const ReviewHeader = styled.h1`
@@ -133,13 +133,16 @@ export const ReviewContainer = styled.div`
   background: #F4F4F4;
   box-shadow: 0px 0px 14.5722px rgba(203, 203, 203, 0.25);
   border-radius: 21.2852px;
-  width: 50vw;
+  width: 75vw;
   height: 50vh;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 550px) {
+    width: 65vw;
+}
 
   @media (min-width: 744px) {
-    width: 33vw;
+    width: 40vw;
   height: 50vh;
 }
 @media (min-width: 1000px) {

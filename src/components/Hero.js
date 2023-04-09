@@ -39,10 +39,11 @@ flex-direction: column;
 position: absolute;
 width: min(80%, 750px);
 top: 10%;
-padding-left: 3rem;
+padding-left: 2rem;
 
 @media (min-width: 744px) {
     top: 20%;
+    padding-left: 3rem;
 }
 @media (min-width: 1100px) {
     width: min(60%, 750px);
@@ -94,7 +95,7 @@ const Button = styled.button`
   color: #FFFFFF;
   background: #025323;
   border-radius: 15px;
-  width: 244px;
+  width: 200px;
   height: 59px;
   border: none;
   margin-top: 3rem;
@@ -103,7 +104,9 @@ const Button = styled.button`
   &:hover {
     cursor: pointer;
   }
-
+@media (min-width: 380px) {
+    width: 244px;
+}
   @media (min-width: 550px) {
     align-self: flex-start;
 }
