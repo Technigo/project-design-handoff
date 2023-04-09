@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react'
 import styled from 'styled-components'
+import ShapeTwo from '../assets/shape2.svg'
 
 const StyledSection = styled.section`
 display: flex;
@@ -37,9 +38,23 @@ const StyledSmallerText = styled(StyledText)`
 font-size: 14px;
 `
 
+const StyledBackgroundShape = styled.div`
+
+img {
+  position: absolute;
+  transform: rotate(-12.82deg);
+
+  z-index: -1;
+  object-fit: cover;
+}
+`
+
 const SocialProofSection = () => {
   return (
     <StyledSection>
+      <StyledBackgroundShape>
+        <img src={ShapeTwo} alt="background shape" />
+      </StyledBackgroundShape>
       <h1>Why Students Love<br />
     Our Barre Classes
       </h1>

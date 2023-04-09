@@ -1,5 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
+import HeroImage from '../assets/hero-image.jpg'
+
+const StyledSection = styled.section`
+ height: 528px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(${HeroImage});
+  background-size: cover;`
 
 const StyledHeroTitle = styled.h1`
 font-family: "Poppins";
@@ -14,9 +25,9 @@ font-family: "Poppins";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <StyledSection>
       <StyledHeroTitle>Raise the Barre With Us!</StyledHeroTitle>
-    </section>
+    </StyledSection>
 
   )
 }

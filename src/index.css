@@ -19,14 +19,3 @@ code {
 .app-container {
   display: grid;
 }
-
-.hero-section {
-  height: 528px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
-    url("./assets/hero-image.jpg");
-  background-size: cover;
-}

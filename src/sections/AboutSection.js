@@ -76,8 +76,8 @@ const AboutSection = () => {
 No dance experience required!
           </b>
         </StyledText>
+        <Carousel />
       </StyledContainer>
-      <Carousel />
     </section>
   )
 }
