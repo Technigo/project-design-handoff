@@ -1,10 +1,10 @@
 .NavBar {
-    width: 100vw;
+    width:100vw;
     height: 100px;
     opacity: 0.9;
     position: fixed;
-    top: 5%;
-    left:25%;
+    top: 2%;
+    right:0.5%;
     z-index: 1;
   }
   
@@ -12,9 +12,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-right: 30px;
-    padding-bottom: 50px;
+    padding-right: 0;
+    padding-bottom: 0;
     display: inline-block;
+    background-color: grey; 
+    position: absolute; 
+    top: 60%; 
+    right: 0; 
   }
   
   .NavBar nav ul li {
@@ -37,10 +41,9 @@
   
   @media (max-width: 990px) {
     .NavBar {
-      width: 40vw;
+      width: 100vw;
       display: flex;
       justify-content: center;
-      right: 3%;
     }
   
     .NavBar .Navigation {
@@ -63,9 +66,9 @@
     .NavBar nav ul {
       display: flex;
       flex-direction: column;
-      width: 100%;
-      border-top: 2px solid #D7CBFF;
-      padding-top: 18rem;
+    
+      background-color: grey;
+
     }
   
     .NavBar nav ul li {
@@ -88,16 +91,14 @@
   }
   
   @media (min-width: 1024px) {
-    .NavBar svg {
-      border: red 2px solid;
-      margin-left: 80%;
-    }
+    
+
   }
   
   @media (min-width: 700px) {
     .NavBar nav ul li {
       display: inline-block;
-      margin: 3vw;
+      margin: 10px;
     }
   }
   
