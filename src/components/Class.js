@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React from 'react';
-import './Classes.css';
+import './Class.css';
 
-const Classes = () => {
+const Class = () => {
   return (
     <section className="classes-container">
       <div className="sweat">
@@ -16,4 +16,4 @@ const Classes = () => {
   );
 }
 
-export default Classes
+export default Class
