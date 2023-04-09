@@ -148,18 +148,20 @@ margin-bottom:10px;
 .contact-us-footer h2{
 margin-top:10px;
 margin-bottom:10px;
+width:30vw;
 }
 
 .footer-page-inner-wrapper{
   margin-left:55%;
+  width: 45vw;
 }
 
 .policy-links-container{
     display:flex;
     flex-direction: row;
-    width:60vw;
     gap:5px;
     margin-top:3rem;
+
 }
 .policy-links{
   font-size: 0.8rem;

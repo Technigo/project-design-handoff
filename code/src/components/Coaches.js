@@ -41,7 +41,7 @@ const CoachesCarousel = () => {
             <img src="../assets/Lili.jpg" alt="picture of Lili" />
           </div>
           <div className="coaches-card">
-            <img src="../assets/Liz.jpg" alt="picture of Liz" />
+            <img src="../assets/Liz.jpg" alt="picture of Liz" style={{ marginTop: '25px', marginLeft: '15px' }} />
           </div>
         </Carousel>
       </div>
