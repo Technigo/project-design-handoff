@@ -1,6 +1,5 @@
 import React from 'react';
 import './Classes.css';
-// import Slider from 'react-slick';
 
 const Classes = () => {
   return (
