@@ -6,7 +6,7 @@ import 'swiper/css';
 import "swiper/css/free-mode";
 import styled from 'styled-components'
 import videoSrc from '../videos/video.mp4'
-import BtnSrc from '../icons/playbtn.svg'
+// import BtnSrc from '../icons/playbtn.svg'
 
 const SliderContainer = styled.div`
   display: flex;
@@ -42,8 +42,10 @@ const StyledVideo = styled.video`
 const StyledVideoContainer = styled.div`
   position: relative;
   display: block;
-
-  &:before {
+  `
+// Can't get the overlay to work because Swiper overrides,
+// so handing in without
+/*  &:before {
     content: "";
     position: absolute;
     top: 0;
@@ -59,15 +61,16 @@ const StyledVideoContainer = styled.div`
       opacity: 1;
       z-index: 2;
     }
-  }
-  `
-const StyledBtn = styled.img`
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  z-index: 3;
-  margin: auto;
-  `
+  } */
+ 
+// Can't center this because Swiper keeps overriding
+/* const StyledBtn = styled.img`
+//  position: absolute;
+//  top: 50%;
+//  left: 20%;
+//  z-index: 3;
+//  margin: auto;
+*/
 
 export const YogaSlider = () => {
 
@@ -110,10 +113,14 @@ export const YogaSlider = () => {
               <StyledP>Yinyoga to calm down</StyledP>
               <StyledP>15 min</StyledP>
             </StyledDescriptionWrapper>
-            <div>
-              <StyledBtn src={BtnSrc} onClick={() => handleToggleVideo(0)} alt="play" />
-              <StyledVideo ref={(ref) => setVidRef(ref, 0)} src={videoSrc} poster="img/videoposter.png"/>
-            </div>
+
+            <StyledVideo 
+              ref={(ref) => setVidRef(ref, 0)} 
+              src={videoSrc} 
+              poster="img/videoposter.png"
+              onClick={() => handleToggleVideo(0)}
+            />
+
           </StyledVideoContainer>
         </SwiperSlide>
         <SwiperSlide>
@@ -122,10 +129,12 @@ export const YogaSlider = () => {
               <StyledP>Yinyoga to calm down</StyledP>
               <StyledP>15 min</StyledP>
             </StyledDescriptionWrapper>
-            <div>
-              <StyledBtn src={BtnSrc} onClick={() => handleToggleVideo(1)} alt="play" />
-              <StyledVideo ref={(ref) => setVidRef(ref, 1)} src={videoSrc} poster="img/videoposter.png"/>
-            </div>
+            <StyledVideo 
+              ref={(ref) => setVidRef(ref, 1)} 
+              src={videoSrc} 
+              poster="img/videoposter.png"
+              onClick={() => handleToggleVideo(1)}
+            />
           </StyledVideoContainer>
         </SwiperSlide>
         <SwiperSlide>
@@ -134,8 +143,12 @@ export const YogaSlider = () => {
               <StyledP>Yinyoga to calm down</StyledP>
               <StyledP>15 min</StyledP>
             </StyledDescriptionWrapper>
-            <StyledBtn src={BtnSrc} onClick={() => handleToggleVideo(2)} alt="play" />
-            <StyledVideo ref={(ref) => setVidRef(ref, 2)} src={videoSrc} poster="img/videoposter.png"/>
+            <StyledVideo 
+              ref={(ref) => setVidRef(ref, 2)} 
+              src={videoSrc} 
+              poster="img/videoposter.png"
+              onClick={() => handleToggleVideo(2)}
+            />
           </StyledVideoContainer>
         </SwiperSlide>
         <SwiperSlide>
@@ -144,8 +157,12 @@ export const YogaSlider = () => {
               <StyledP>Yinyoga to calm down</StyledP>
               <StyledP>15 min</StyledP>
             </StyledDescriptionWrapper>
-            <StyledBtn src={BtnSrc} onClick={() => handleToggleVideo(2)} alt="play" />
-            <StyledVideo ref={(ref) => setVidRef(ref, 2)} src={videoSrc} poster="img/videoposter.png"/>
+            <StyledVideo 
+              ref={(ref) => setVidRef(ref, 3)} 
+              src={videoSrc} 
+              poster="img/videoposter.png"
+              onClick={() => handleToggleVideo(3)}
+            />
           </StyledVideoContainer>
         </SwiperSlide>
       </Swiper>
