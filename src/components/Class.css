@@ -1,0 +1,12 @@
+.classes-container {
+    color: #210440;
+}
+
+.classes-container h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.rubberband {
+    border-radius: 80px 0px 0px 80px;
+}
