@@ -41,6 +41,8 @@ line-height: 160%;
 
 const Mark = styled.mark`
 font-weight: 700;
+background-color: transparent;
+color: #02393F;
 `
 
 const OnlineYoga = () => {

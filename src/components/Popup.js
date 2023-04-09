@@ -97,6 +97,11 @@ border: 1.5px solid #A8A8A8;
 box-shadow: 0px 0px 8px #A8A8A8;
 border-radius: 12px;
 padding: 1rem;
+
+&:focus {
+  outline: none;
+  border: 3px solid #419B60;
+}
 `
 
 const StyledButtonWrapper = styled.div`
@@ -189,11 +194,11 @@ const Popup = ({ setIsShowing }) => {
         }
         <StyledHeader>Register here</StyledHeader>
         <StyledForm>
-          <StyledInput id="firstname" type="text" placeholder="First Name" />
-          <StyledInput id="secondname" type="text" placeholder="Last Name" />
+          <StyledInput type="text" placeholder="First Name" />
+          <StyledInput type="text" placeholder="Last Name" />
           <SecondRow>
-            <StyledInput id="email" type="text" placeholder="Email Adress" />
-            <StyledInput id="password" placeholder="Password" />
+            <StyledInput type="text" placeholder="Email Adress" />
+            <StyledInput placeholder="Password" />
           </SecondRow>
           <StyledButtonWrapper>
             <SignUpBtn>Login</SignUpBtn>
