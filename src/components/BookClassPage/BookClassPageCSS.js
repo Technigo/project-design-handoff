@@ -369,7 +369,7 @@ export const ImagesWrapper = styled.div`
 `
 
 export const DesktopImages = styled.div`
-display: hidden;
+display: none;
 
 @media (min-width: 1024px) {
   display: flex;
