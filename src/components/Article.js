@@ -17,7 +17,7 @@ const ArticleContainer1 = styled.div`
   justify-content: center;
   background-color: #FFFFFF;
 
-  @media (min-width: 968px) {
+  @media (min-width: 992px) {
     display: flex; 
     flex-direction: row-reverse;
   }
@@ -30,7 +30,7 @@ const ArticleContainer2 = styled.div`
   justify-content: center;
   background-color: #FFFFFF;
 
-  @media (min-width: 968px) {
+  @media (min-width: 992px) {
     display: flex; 
     flex-direction: row;
   }
@@ -88,7 +88,7 @@ const Image = styled.img`
   border-radius: 12.5651px;
 `;
 const ArticleWrapper = styled.div`
-  @media (min-width: 968px){
+  @media (min-width: 992px){
     width: 588px;
     height: 393px;
     justify-content: center;
@@ -96,7 +96,7 @@ const ArticleWrapper = styled.div`
 `
 
 const ArticleSection = styled.div`
-  @media (min-width: 968px){
+  @media (min-width: 992px){
     padding: 133px 133px;
   }
  

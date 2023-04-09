@@ -24,7 +24,7 @@ const MemberShipContainer = styled.div`
   justify-content: center;
   background-color: #EBEBEB;
   position: relative;
-  @media (min-width: 1024px){
+  @media (min-width: 600px){
     display: none;
   }
 `;
@@ -66,7 +66,7 @@ export const Image = styled.img`
   height: 201.05px;
   object-fit: cover;
   border-radius: 16.8246px;
-  @media (min-width: 1024px){
+  @media (min-width: 992px){
     width: 311.13px;
     height: 205.91px;
  }
@@ -146,12 +146,15 @@ const ArrowButtonRight = styled.button`
   right: 15px;
 `;
 const OptionalContainer = styled.div`
-  @media (min-width: 1024px){
+  @media (min-width: 992px){
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #EBEBEB;
+  }
+  @media (max-width: 600px){
+    display: none; 
   }
 
 `
@@ -170,9 +173,6 @@ const Class = styled.div`
   border: 2.52369px solid #025323;
   border-radius: 16.8246px;
   margin: 15px;
-  
-  @media (max-width: 667px){
-  display: none; 
 }
 `
 
@@ -238,8 +238,7 @@ export const Membership = () => {
           <Price>{items[2].price}</Price>
           <Button type="button">Buy Now</Button>
         </Class>
-       </ClassWrapper>
-       
+       </ClassWrapper> 
     </OptionalContainer>
     </>
   );
