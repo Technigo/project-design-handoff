@@ -1,10 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { LogoIcon, LogoText } from '../Logos'
 import './footer.css';
 
 const Logo = styled.div`
     background-color: #2E160E;
     color: #fff;
+
+    img {
+        height: 48px;
+        padding-top: 20px;
+    }
 
     hr {
         margin: 20px 50px;
@@ -19,7 +25,7 @@ const NavFoot = styled.div`
       display: flex;
       gap: 3rem;
       list-style: none;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     a {
@@ -55,6 +61,8 @@ const IconSome = styled.div`
 export const Foot = () => {
   return (
     <Logo>
+      <LogoIcon />
+      <LogoText />
       <NavFoot>
         <ul>
           <li><a href="#">Classes</a></li>

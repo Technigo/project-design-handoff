@@ -47,20 +47,24 @@ export const SignUp = () => {
       <Inputs>
         <h2>Sign up for a class!</h2>
         <h4>Enter personal details*</h4>
-        <div>
-          <input
-            aria-label="name-input"
-            type="text"
-            placeholder="Name" />
-        </div>
+
+        <input
+          aria-label="name-input"
+          type="text"
+          placeholder="Name"
+          required />
         <input
           aria-label="email-input"
           type="email"
-          placeholder="Email" />
+          placeholder="Email"
+          required />
         <input
           aria-label="phone-input"
-          type="number"
-          placeholder="Phonenumber" />
+          type="tel"
+          id="phone"
+          placeholder="Phonenumber"
+          required />
+
         <h4>Choose a class*</h4>
         <ClassBtn />
         <SignUpBtn />

@@ -16,9 +16,16 @@ const Pyoga = styled.div`
     line-height: 130%;
     padding: 10px 32px;
     align-self: center;
+    text-align: center;
     color: #fff;
     max-width: 420px;
   }
+  @media (max-width: 454px) {
+        display: none;
+ }
+  @media (min-width: 455px) {
+        display: flex;
+ }
 `;
 
 export const PowYoga = () => {

@@ -85,6 +85,7 @@ const StyledNav = styled.nav`
         height: auto;
         margin: 0;
     }`;
+
 export const Menu = () => {
   const [open, toggleOpen] = useState(false);
 
