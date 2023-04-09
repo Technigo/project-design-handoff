@@ -24,9 +24,9 @@ width: 100%;
 }
 `
 export const BookCardsWrapper = styled(SliderWrapper)`
-height: 45vh;
 flex-direction: column;
 gap: 40px;
+height: unset;
 
 @media (min-width: 667px) {
   gap: 48px;
@@ -44,6 +44,8 @@ export const CardDiv = styled.div`
 height: 50vh;
 width: 81%;
 background-color: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px 40px 0px 0px;
 
 @media (min-width: 667px) {
   width: 50%;
@@ -51,19 +53,19 @@ background-color: #FFFFFF;
 }
 
 @media (min-width: 1024px) {
-  width: 100%
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  width: 20%;
 }
 `
 export const SingleCardBook = styled(CardDiv)`
 height: 50vh;
 width: 100%;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 @media (min-width: 1024px) {
   width: 25%;
   height: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px 40px 0px 0px;
 }
 `
 
@@ -73,7 +75,7 @@ width: 100%;
 `
 
 export const ImagewrapperBookCard = styled(Imagewrapper)`
-height: 50%;
+height: 57%;
 `
 
 export const CardImage = styled.img`
@@ -94,4 +96,5 @@ padding: 10px 16px;
 export const TextInfoCardBook = styled(TextInfoDiv)`
 height: 42%;
 align-items: center;
+gap: 24px;
 `

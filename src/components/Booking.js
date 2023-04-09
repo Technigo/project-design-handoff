@@ -10,20 +10,25 @@ import ThirdPhoneCardImg from '../images/book-phone-third.jpg'
 import FirstTabletCardImg from '../images/tablet-book-first.jpg'
 
 const StyledSection = styled.section`
-  height: 100vh;
   background-color: #F5F5F5; 
 
-  @media (min-width: 1024px) {
+  @media (min-width: 667px) {
     background-color: #FFFFFF;
+  }
+  @media (min-width: 1024px) {
+    height: 100vh;
   }
 `
 const InnerWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background-color: #F5F5F5;
-  padding: 1.6%; 
-  height: 100vh;
+  padding: 13.3% 1.6%;
 
   @media (min-width: 667px) {
     padding: 0 11.35%;
+    background-color: #FFFFFF;
   }
 
   @media (min-width: 1024px) {
