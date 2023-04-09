@@ -83,7 +83,6 @@ const ContactChildDiv = styled.div`
 
 @media (min-width: 1024px) {
   gap:1rem;
-  height:100vh;
   top:5%;
   left:5%;
 }

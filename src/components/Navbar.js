@@ -143,4 +143,8 @@ const Link = styled.a`
       background-color: #ccc;
     }
   }
+
+  @media (max-width: 1024px) {
+    font-size:28px;
+  }
 `;
