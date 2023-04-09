@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ReactSimplyCarousel from 'react-simply-carousel'
+import CarouselCard from './CarouselCard'
 
 const Carousel = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
@@ -82,20 +83,14 @@ const Carousel = () => {
         }}
         speed={400}
         easing="linear">
-        <div style={{ width: 300, height: 300, background: '#ff80ed' }}>
-          slide 0
+        <div>
+          <CarouselCard text="slide 1" picture="picture-one.jpg" />
         </div>
-        <div style={{ width: 300, height: 300, background: '#065535' }}>
-          slide 1
+        <div>
+          <CarouselCard text="slide 2" />
         </div>
-        <div style={{ width: 300, height: 300, background: '#000000' }}>
-          slide 2
-        </div>
-        <div style={{ width: 300, height: 300, background: '#133337' }}>
-          slide 3
-        </div>
-        <div style={{ width: 300, height: 300, background: '#ffc0cb' }}>
-          slide 4
+        <div>
+          <CarouselCard text="slide 3" />
         </div>
 
       </ReactSimplyCarousel>
