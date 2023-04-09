@@ -15,11 +15,13 @@ margin: auto;
 
 @media(min-width: 768px) and (max-width: 1024px) {
   margin-left: 2rem;
+  margin-bottom: 3rem;
   width: 615px;
   }
 
   @media(min-width: 1025px) {
     margin-left: 6.7rem;
+    margin-bottom: 2.75rem;
     width: 691px;
   }
 `

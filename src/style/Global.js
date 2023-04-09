@@ -13,6 +13,7 @@ body {
   font-family: 'Libre Baskerville', serif;
   background: #E5E5E5;
   scroll-behavior: smooth;
+  color: #02393F;
 }
 `
 

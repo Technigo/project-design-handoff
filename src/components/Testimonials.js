@@ -4,21 +4,36 @@ import { useMediaQuery } from "@react-hook/media-query";
 import { TestimonialSlider } from "./TestimonialSlider";
 import TestimonialList from "./TestimonialList";
 
+const TestimonialSection = styled.section`
+background: #02393f;
+
+@media(min-width: 1025px) {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  margin: auto;
+  padding-left: 4rem;
+}
+`
+
 const TestimonialWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  background: #02393f;
   padding: 1.5rem;
 
   @media(min-width: 768px) and (max-width: 1024px) {
-    padding-top: 48px;
-    padding-bottom: 64px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
   }
 
-  @media(min-width: 1025) {
-    padding-top: 52px;
-    padding-bottom: 162px
+  @media(min-width: 1025px) {
+    max-width: 1180px;
+    margin-auto;
+    padding-top: 3.25rem;
+    padding-bottom: 10rem;
   }
 `
 
@@ -30,24 +45,28 @@ const Title = styled.h2`
 
   @media(min-width: 768px) and (max-width: 1024px) {
     font-size: 40px;
-    margin-left: 32px;
+    margin-left: 2rem;
     }
 
-
+@media(min-width: 1025px) {
+  font-size: 40px;
+}
 `
 
 export const Testimonials = () => {
   const isMobile = useMediaQuery('(max-width: 767px)'); // Hook to check screen size.
 
   return (
-    <TestimonialWrapper>
-      <Title>What our yogis say:</Title>
-      {isMobile ? <TestimonialList /> : <TestimonialSlider />
-      // Rendering the slider or array of cards, depending on screen size. 
-      // I've not gotten conditional rendering to work on resize of screen, only on first render of site. 
-      // Instead I have installed an npm package to solve this. Might not be the best solution.
-      }
-    </TestimonialWrapper>
+    <TestimonialSection>
+      <TestimonialWrapper>
+        <Title>What our yogis say:</Title>
+        {isMobile ? <TestimonialList /> : <TestimonialSlider />
+          // Rendering the slider or array of cards, depending on screen size. 
+          // I've not gotten conditional rendering to work on resize of screen, only on first render of site. 
+          // Instead I have installed an npm package to solve this. Might not be the best solution.
+        }
+      </TestimonialWrapper>
+    </TestimonialSection>
   );
 };
 

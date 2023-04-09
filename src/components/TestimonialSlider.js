@@ -13,7 +13,7 @@ export const TestimonialSlider = () => {
   display: flex;
 
   @media(min-width: 1025px) {
-    width: 1180px;
+    max-width: 1180px;
     margin: auto;
   }
   `

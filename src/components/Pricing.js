@@ -20,6 +20,10 @@ color: #F4E4D7;
 font-weight: 700;
 font-size: 25px;
 line-height: 160%;
+
+@media(min-width: 768px) and (max-width: 1024px) {
+  font-size: 40px;
+  }
 `
 
 const Pricing = () => {
