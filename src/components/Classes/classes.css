@@ -19,8 +19,8 @@
 }
 
 .yoga-style img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
 }
 
 .awssld__content {
@@ -37,9 +37,9 @@
 }
 
 .awssld__controls__arrow-right {
-  left: -50px;
+  left: -70px;
 }
 
 .awssld__controls__arrow-left {
-  right: -50px;
+  right: -70px;
 }
