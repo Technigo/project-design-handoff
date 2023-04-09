@@ -16,18 +16,20 @@ const Footer = () => {
         <p>Our Studio</p>
         <p>FAQs</p>
       </div>
-      <div className="classes">
+      <div className="classes-info">
         <h5>Classes</h5>
         <p>Pricing</p>
         <p>Schedule</p>
         <p>Instructors</p>
         <p>About Barre</p>
       </div>
-      <div className="Socials">
+      <div className="socials">
         <p className="follow">Follow Us</p>
-        <img className="sm-icon" src="./images/icons_social/_Facebook.svg" alt="Facebook logo" />
-        <img className="sm-icon" src="./images/icons_social/_Instagram.svg" alt="Instagram logo" />
-        <img className="sm-icon" src="./images/icons_social/_Tiktok.svg" alt="TikTok logo" />
+        <div className="icons">
+          <img className="sm-icon" src="./images/icons_social/_Facebook.svg" alt="Facebook logo" />
+          <img className="sm-icon" src="./images/icons_social/_Instagram.svg" alt="Instagram logo" />
+          <img className="sm-icon" src="./images/icons_social/_Tiktok.svg" alt="TikTok logo" />
+        </div>
       </div>
     </section>
   )

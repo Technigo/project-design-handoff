@@ -1,5 +1,10 @@
 /*opacity Hero img has a White overlay with 30% opacity*/
 
+.hero-container {
+    display: flex;
+    text-align: center;
+}
+
 h1 {
     color: #210440;
 }

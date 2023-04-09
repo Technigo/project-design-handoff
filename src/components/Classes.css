@@ -1,5 +1,5 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"; 
+/*import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"; */
 
 .classes-container {
     color: #210440;
@@ -8,4 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 .classes-header {
     font-size: 24px;
     font-weight: 600;
+}
+
+.rubberband {
+    border-radius: 80px 0px 0px 80px;
 }
