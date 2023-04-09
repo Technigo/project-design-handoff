@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import './Form.css';
 
@@ -12,26 +13,26 @@ const Form = () => {
       <div className="form">
         <form className="labels">
           <label className="name"> First Name
-            <input type="text"/>
+            <input type="text" />
           </label>
-          <label> Last Name
-            <input type="text"/>
+          <label className="last-name"> Last Name
+            <input type="text" />
           </label>
-          <label> Phone number
-            <input type="number"/>
+          <label className="phone-number"> Phone number
+            <input type="number" />
           </label>
-          <label> Email (username)
-            <input type="email"/>
+          <label className="email"> Email (username)
+            <input type="email" />
           </label>
-          <label> Password
-            <input type="password"/>
+          <label className="password"> Password
+            <input type="password" />
           </label>
-          <label>
-            <input type="checkbox"/>
+          <label className="newsletter">
+            <input type="checkbox" />
             I want to receive Raise Studio’s Newsletter!
           </label>
-          <label>
-            <input type="checkbox"/>
+          <label className="terms">
+            <input type="checkbox" />
             I have read and understood the Terms & Conditions and Privacy Policy.
           </label>
           <button className="joinBtn2" type="button">Join Raise Studio</button>
