@@ -4,7 +4,7 @@ import heroimg from '../../assets/hero.svg'
 import Heroimg1024 from '../../assets/HeroBkgrnd1024.svg'
 
 export const Parentdiv = styled.div`
-  height: 100vh;
+  height: 105vh;
   width: 100vw;
   background-image: url(${heroimg});
   background-repeat: no-repeat;
