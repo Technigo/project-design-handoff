@@ -120,6 +120,7 @@ const ButtonAndTextContainer = styled.div`
   flex-direction: column-reverse;
   line-height: 1;
   width: 90%;
+  margin-bottom: 2rem;
 }
 `
 
