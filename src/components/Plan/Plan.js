@@ -25,7 +25,7 @@ export const Plan = () => {
         <form>
           <div className="form-group">
             <div className="name-group">
-              <label htmlFor="firstname">First name:</label>
+              <label htmlFor="firstname name">First name:</label>
               <input type="text" id="firstname" name="firstname" required />
             </div>
             <div className="name-group">

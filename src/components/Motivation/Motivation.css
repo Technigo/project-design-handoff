@@ -3,7 +3,7 @@ background-image: url('/public/images/motivation.png');
 background-color: #28282B;
 background-size: cover;
 background-position: center;
-height: 100vh;
+height: auto;
 display: flex;
 flex-direction: column;
 }
@@ -16,7 +16,7 @@ align-items: center;
 color: #FBEDDE;
 font-family: "Poppins", sans-serif;
 font-weight: 500;
-font-size: 48px;
+font-size: 3rem;
 margin-bottom: 20px;
 }
 
@@ -37,7 +37,7 @@ width: 500px;
 .motivation-columns img {
 max-width: 100%;
 height: auto;
-max-height: 300px; /* Set a maximum height for the images to prevent them from getting too large */
+max-height: 300px;
 margin: 10px;
 }
 
@@ -78,4 +78,62 @@ color: #FBEDDE;
   .motivation-bottom img {
     width: 25px;
     height: 25px;
+  }
+
+   /* MOBILE SIZE */
+  @media screen and (max-width: 768px) {
+    .motivation-columns {
+      flex-direction: column;
+    }
+  }
+  
+  .motivation-column {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 90%; 
+    max-width: 500px;
+  }
+  
+  .motivation-columns img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; 
+    margin: 10px;
+  }
+  
+  .motivation-columns p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FBEDDE;
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 1.6rem; 
+  }
+  
+  .motivation-column h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem; 
+    margin-bottom: 10px;
+    color: #FBEDDE;
+  }
+  
+  .motivation-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+  
+  .motivation-bottom p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem; 
+  }
+
+  .motivation h1 {
+    text-align: center
   }

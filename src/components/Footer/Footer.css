@@ -62,3 +62,38 @@ font-weight: 700;
 font-size: 32px;
 color: #FBEDDE;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      padding: 10px;
+      align-items: flex-start;
+    }
+    
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+    
+    .footer-programs {
+      margin-top: 40px;
+    }
+    
+    .footer-logos {
+      justify-content: center;
+    }
+    
+    .footer-logos img {
+      margin: 0 5px;
+      margin-top: 10px;
+      height: 25px;
+    }
+    
+    .footer-programs h3 {
+      font-size: 24px;
+    }
+    
+    .footer-programs p {
+      font-size: 16px;
+    }
+  }
+  
