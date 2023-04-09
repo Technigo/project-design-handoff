@@ -6,6 +6,7 @@ display: flex;
 flex-direction: row;
 gap: 16px;
 align-items: center;
+
 `
 const StyledLabel = styled.label`
 font-family: 'Poppins';
