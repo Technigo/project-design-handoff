@@ -71,11 +71,6 @@ export const BodyText = styled.p`
         color: ${(props) => (props.white ? '#FFFFFF' : '#222322')};
         margin:0;
 
-
-    @media (max-width: 768px) {
-        font-size: 14px;
-        line-height: 16.52px;
-  }
 `
 
 export const LineBreak = styled.span`

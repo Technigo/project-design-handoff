@@ -11,12 +11,14 @@ export const Wrapper = styled.div`
 
   @media (min-width: 768px) and (max-width: 1023px) {
     height: ${(props) => (props.height || '100vh')};
-      padding: 24px;
+    padding: 24px;
+    padding-top: 128px;
   }
 
   @media (max-width: 768px) {
     height: ${(props) => (props.height || '100vh')};
     padding: 16px;
+    padding-top: 128px;
   }
 `
 
@@ -59,7 +61,7 @@ export const InnerContainer = styled.div`
   justify-self: ${(props) => (props.justifyself || '')};
   align-self: ${(props) => (props.center ? 'center' : '')};
   padding: ${(props) => (props.padding || '')};
-    margin: ${(props) => (props.margin || '')};
+  margin: ${(props) => (props.margin || '')};
 
   ${(props) => props.hero && css`
     flex-direction: column;
@@ -70,12 +72,12 @@ export const InnerContainer = styled.div`
     align-items: center;
     grid-template-columns: repeat(4,1fr);
 
-    @media (min-width: 668px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
       grid-template-columns: repeat(2,1fr);
       grid-template-rows: repeat(2,1fr);
     }
 
-    @media (max-width: 668px) {
+    @media (max-width: 768px) {
       grid-template-columns: repeat(1,1fr);
       grid-template-rows: repeat(4,1fr);
     }
@@ -125,11 +127,13 @@ export const InnerContainer = styled.div`
 @media (min-width: 768px) and (max-width: 1023px) {
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: 60vh;
+    gap: 40px;
   }
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: 60vh;
+    grid-template-rows: 736px;
+    gap: 40px;
   }
   `}
 `
@@ -156,6 +160,10 @@ export const CardsContainer = styled.div`
       ${(props) => props.formcontainer && css`
       padding: 0 44px;
       align-items: flex-start;
+
+      @media (max-width: 768px) {
+      padding: 0 32px;
+  }
   `}
 `
 
@@ -179,10 +187,11 @@ export const TextOnImageContainer = styled(InnerContainer)`
     justify-content: ${(props) => (props.workoutstext ? 'space-between' : '')};
     
     @media (max-width: 768px) {
-        max-width: ${(props) => (props.maxwidth ? '70%' : '')};
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+      max-width: ${(props) => (props.maxwidth ? '70%' : '')};
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 40px;
   }
 `
 
@@ -286,6 +295,6 @@ export const ImgCardLarge = styled.div`
     }
 
     @media (max-width: 768px) {
-        height: 100vh;
+        height: 736px;
   }
 `

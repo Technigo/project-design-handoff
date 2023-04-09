@@ -2,6 +2,7 @@ import React from 'react'
 import { Wrapper, OuterContainer, InnerContainer, CardsContainer, InnerCardsContainer, TextOnImageContainer, TextBlock, ImgCardLarge, TextContainer } from 'components/styles/Section'
 import { Tagline, Headline2, Headline3, BodyText, LineBreak } from 'components/styles/Text'
 import { Button } from 'components/styles/Button'
+import { PlayButton } from 'components/styles/Image'
 
 export const Workouts = () => {
   return (
@@ -16,6 +17,7 @@ export const Workouts = () => {
             style={{ background: 'linear-gradient(6.64deg, #DCBAF9 2.22%, rgba(255, 255, 255, 0) 45.49%), url("./images/workout-yoga.jpg")',
               backgroundPosition: 'center',
               backgroundSize: 'cover' }}>
+            <PlayButton src="./assets/playbutton.svg" alt="play button" />
             <TextOnImageContainer alignscenter workoutstext>
               <TextContainer flexcolumn gap="8px">
                 <Headline3 workoutsh3>5 min warm up

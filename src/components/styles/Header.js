@@ -12,10 +12,10 @@ export const Header = styled.header`
         justify-content: space-between;
 
         @media (min-width: 668px) and (max-width: 1023px) {
-            padding: 42px 42px;
+        padding: 42px 42px;
         }
 
-         @media (max-width: 768px) {
+        @media (max-width: 768px) {
         padding: 43px 32px;
   }
 `
@@ -30,12 +30,6 @@ export const NavWhite = styled.nav`
         width: 380px;
         height: 40px;
         padding-right:12px;
-        position: absolute;
-        top: 45px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        z-index: 999;
 `
 export const NavBlack = styled.nav`
         display: flex;
@@ -71,7 +65,7 @@ export const NavLink = styled.a`
         
         &:hover {
         font-size: 13px;
-    }
+        }
 
 `
 export const HeaderDiv = styled.div`
