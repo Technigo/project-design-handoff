@@ -19,18 +19,31 @@ const HeroPage = () => {
   )
 };
 const Header = styled.section`
+  position: relative; /* add position relative to make the hero-image position absolute within this element */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   height: 110vh;
-  background-image: url(${heroImage2});
-  background-size: cover;
-  background-position: center;
-  
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${heroImage2});
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* set a negative z-index to place it behind the navbar */
+  }
+
   @media (min-width: 640px){
-    background-image: url(${heroImage});
-    background-position: left;
+    &::before {
+      background-image: url(${heroImage});
+      background-position: left;
     }
+  }
 };
 
 .search-icon {
@@ -42,8 +55,12 @@ const Header = styled.section`
   @media (min-width: 640px){
     margin-left: 85%;
     margin-top: 5%;
-    }
+  }
+  @media (min-width: 1024px){
+    display:none;
+  }
 }
 `;
 
 export default HeroPage;
+

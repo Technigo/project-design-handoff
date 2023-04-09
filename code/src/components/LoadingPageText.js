@@ -2,6 +2,9 @@ import React from 'react';
 import './LoadingPageText.css';
 
 const LoadingPageText = () => {
+  const handleButtonClick = () => {
+    alert('Thank you for trying Self Health!');
+  };
   return (
     <section className="loading-page-wrapper">
       <div className="text-wrapper">
@@ -13,6 +16,7 @@ const LoadingPageText = () => {
           <p className="users"><span>1250+</span><br />active users</p>
           <p className="trainers"><span>50+ </span><br />personal trainers</p>
         </div>
+        <button className="tryforfree-hero" type="submit" onClick={handleButtonClick}>Try for Free</button>
       </div>
     </section>
   )

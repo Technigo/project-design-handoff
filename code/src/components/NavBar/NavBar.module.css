@@ -1,106 +1,103 @@
-.NavBar{
+.NavBar {
     width: 100vw;
     height: 100px;
     opacity: 0.9;
-    position:absolute;
-    top: 3%;
-}
-
-.NavBar nav ul {
+    position: fixed;
+    top: 5%;
+    left:25%;
+    z-index: 1;
+  }
+  
+  .NavBar nav ul {
     list-style: none;
-    margin:0;
-    padding:0;
-    padding:30px 0;
-    padding-right:30px;
+    margin: 0;
+    padding: 0;
+    padding-right: 30px;
     padding-bottom: 50px;
-}
-
-.NavBar nav ul li {
+    display: inline-block;
+  }
+  
+  .NavBar nav ul li {
     display: inline-block;
     margin: 7vw;
-}
-
-.NavBar nav ul li a {
+  }
+  
+  .NavBar nav ul li a {
     text-decoration: none;
-    color:#E3F7FC;
-    position: absolute;
-    right:5%;
-}
-
-.NavBar a:hover {
+    color: #E3F7FC;
+  }
+  
+  .NavBar a:hover {
     border-bottom: 5px solid #D7CBFF;
-}
-
-.NavBar .MobileNavigation{
-    display:none;
-}
-
-
-
-@media (max-width: 990px) {
-    .NavBar{
-        width: 40vw;
-        display:flex;
-        justify-content: center;
-        position:absolute;
-        right: 3%;
+  }
+  
+  .NavBar .MobileNavigation {
+    display: none;
+  }
+  
+  @media (max-width: 990px) {
+    .NavBar {
+      width: 40vw;
+      display: flex;
+      justify-content: center;
+      right: 3%;
     }
-
+  
     .NavBar .Navigation {
-        display:none
+      display: none
     }
-
-    .NavBar .MobileNavigation{
-        display:flex;
-        align-items: center;
+  
+    .NavBar .MobileNavigation {
+      display: flex;
+      align-items: center;
     }
-    
-    .NavBar .MobileNavigation .Hamburger{
-        fill: white;
-        position: absolute;
-        right:5%;
-        cursor: pointer;
-        top:2%;
+  
+    .NavBar .MobileNavigation .Hamburger {
+      fill: white;
+      position: absolute;
+      right: 5%;
+      cursor: pointer;
+      top: 2%;
     }
-
-    .NavBar nav ul{
-        display:flex;
-        flex-direction: column;
-        width:100%;
-        border-top: 2px solid #D7CBFF;
-        padding-top:18rem;
+  
+    .NavBar nav ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-top: 2px solid #D7CBFF;
+      padding-top: 18rem;
     }
-
-    .NavBar nav ul li{
-        padding-left: 15%;
+  
+    .NavBar nav ul li {
+      padding-left: 15%;
     }
-
+  
     .NavBar button {
-      margin-top:0;
-      padding-top:0;
-      width:125px;
-      }
-
-    .NavBar{
-        opacity: 1;
+      margin-top: 0;
+      padding-top: 0;
+      width: 125px;
     }
-    .MagIcon{
-        margin-right: 25px;
+  
+    .NavBar {
+      opacity: 1;
     }
-}
-
-
-@media (min-width: 1024px){
-.NavBar svg{
-    border:red 2px solid;
-    margin-left:80%;
-}
-
-}
-
-@media (min-width: 700px){
-.NavBar nav ul li {
-    display: inline-block;
-    margin: 3vw;
-}
-}
+  
+    .MagIcon {
+      margin-right: 25px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .NavBar svg {
+      border: red 2px solid;
+      margin-left: 80%;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .NavBar nav ul li {
+      display: inline-block;
+      margin: 3vw;
+    }
+  }
+  
