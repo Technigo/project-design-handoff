@@ -33,8 +33,6 @@ const reviews = [
 
 const OuterWrapper = styled.div`
   height: 260px;
-  border: 1px dotted pink;
-  width: fit-content;
 `
 
 const ReviewWrapper = styled.div`

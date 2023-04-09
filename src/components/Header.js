@@ -7,7 +7,7 @@ const HeaderWrapper = styled.header`
   height: 60px;
   width: 100vw;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.04) 9.9%, rgba(0, 0, 0, 0.23) 35.94%, rgba(0, 0, 0, 0.4) 80.21%);
-  @media (min-width: 545px) {
+  @media (min-width: 454px) {
     height: 80px;
   }
   @media (min-width: 685px) {
@@ -22,7 +22,7 @@ const HeaderInnerWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (min-width: 545px) {
+  @media (min-width: 454px) {
     margin: auto 56px auto 56px;
     padding-top: 20px;
   }

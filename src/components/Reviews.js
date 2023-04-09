@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   align-items: center;
   padding-top: 8px;
   padding-bottom: 30px;
-  @media (min-width: 545px) {
+  @media (min-width: 454px) {
     padding-top: 30px;
   @media (min-width: 685px) {
     padding-top: 60px;

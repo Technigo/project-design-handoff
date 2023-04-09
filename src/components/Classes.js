@@ -10,7 +10,7 @@ padding-bottom: 18px;
 display: flex;
 flex-direction: column;
 align-items: center;
-@media (min-width: 545px) {
+@media (min-width: 454px) {
   padding-top: 36px;
   padding-bottom: 27px;
 }
@@ -27,7 +27,7 @@ const Heading = styled.h2`
   font-weight: 500;
   line-height: 27px;
   margin-bottom: 18px;
-@media (min-width: 545px) {
+@media (min-width: 454px) {
   margin-bottom: 37px;
 }
 @media (min-width: 685px) {

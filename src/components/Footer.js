@@ -11,7 +11,7 @@ const FooterWrapper = styled.footer`
 /* Makes sure the logo is hidden, but only on mobile */
 const LogoWrapper = styled.div`
   visibility: hidden;
-  @media (min-width: 545px) {
+  @media (min-width: 454) {
     visibility: visible;
     margin-top: 26px;
   @media (min-width: 685px) {
@@ -27,7 +27,7 @@ const Navbar = styled.nav`
   justify-content: space-between;
   width: 390px;
   margin: auto auto 24px auto;
-  @media (min-width: 545px) {
+  @media (min-width: 454) {
     margin: 20px auto 26px auto;
   @media (min-width: 685px) {
     margin: 20px auto 48px auto;
@@ -52,7 +52,7 @@ const LinksOuterWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (min-width: 545px) {
+  @media (min-width: 454px) {
     width: 80%;
     max-width: 582px;
   }
@@ -64,7 +64,7 @@ const LinksInnerWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 24px auto 22px auto;
-  @media (min-width: 545px) {
+  @media (min-width: 454px) {
     margin: 24px auto 26px auto;
   }
   @media (min-width: 685px) {
