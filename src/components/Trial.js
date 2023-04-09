@@ -75,16 +75,16 @@ font-size: 13px;
 padding: 1rem;
 border-bottom: 0.3px solid #02393F;
 `
-export const Trial = ({ small }) => {
+export const Trial = ({ small, selected }) => {
   return (
-    <StyledTrialBox>
+    <StyledTrialBox selected={selected}>
       <StyledTrialWrapper>
-        <StyledTrialH1>7-day trial <StyledSpan>$0.00</StyledSpan></StyledTrialH1>
+        <StyledTrialH1 selected={selected}>7-day trial <StyledSpan>$0.00</StyledSpan></StyledTrialH1>
         <StyledSmallPrint>Trial automatically upgrades to a monthly subscription after 7 days</StyledSmallPrint>
         <StyledBenefits>
-          <StyledBenefitsP>Unlimited recipe options </StyledBenefitsP>
-          <StyledBenefitsP>Full access to all yoga classes</StyledBenefitsP>
-          <StyledBenefitsP>5% discount in our yoga store</StyledBenefitsP>
+          <StyledBenefitsP selected={selected}>Unlimited recipe options </StyledBenefitsP>
+          <StyledBenefitsP selected={selected}>Full access to all yoga classes</StyledBenefitsP>
+          <StyledBenefitsP selected={selected}>5% discount in our yoga store</StyledBenefitsP>
         </StyledBenefits>
         {small ? null : <CTA choose>Choose this plan</CTA>
           // This is rendering the CTA when it's not set to small

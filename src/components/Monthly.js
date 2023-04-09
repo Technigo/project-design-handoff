@@ -61,16 +61,16 @@ const StyledBenefitsP = styled.p`
   padding: 1rem;
   border-bottom: 0.3px solid #02393F;
 `
-export const Monthly = () => {
+export const Monthly = ({ selected }) => {
   return (
-    <StyledMonthlyBox>
+    <StyledMonthlyBox selected={selected}>
       <StyledMonthlyWrapper>
-        <StyledMonthlylH1>Monthly <StyledSpan>$9.99</StyledSpan></StyledMonthlylH1>
+        <StyledMonthlylH1 selected={selected}>Monthly <StyledSpan>$9.99</StyledSpan></StyledMonthlylH1>
         <StyledSmallPrint>Full flexibility. Cancel anytime</StyledSmallPrint>
         <StyledBenefits>
-          <StyledBenefitsP>20 new recipes a month</StyledBenefitsP>
-          <StyledBenefitsP>Full access to all yoga classes</StyledBenefitsP>
-          <StyledBenefitsP>5% discount in our yoga store</StyledBenefitsP>
+          <StyledBenefitsP selected={selected}>20 new recipes a month</StyledBenefitsP>
+          <StyledBenefitsP selected={selected}>Full access to all yoga classes</StyledBenefitsP>
+          <StyledBenefitsP selected={selected}>5% discount in our yoga store</StyledBenefitsP>
         </StyledBenefits>
         <CTA choose>Choose this plan</CTA>
       </StyledMonthlyWrapper>
