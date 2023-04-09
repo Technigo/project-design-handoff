@@ -2,6 +2,11 @@
   --main-bg-color: #9ad4d6;
   --secondary-bg-color: #f2fdff;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
