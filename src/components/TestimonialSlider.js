@@ -11,6 +11,11 @@ import { testimonialArray } from "./TestimonialList";
 export const TestimonialSlider = () => {
   const SliderContainer = styled.div`
   display: flex;
+
+  @media(min-width: 1025px) {
+    width: 1180px;
+    margin: auto;
+  }
   `
   return (
     <SliderContainer>
@@ -25,7 +30,7 @@ export const TestimonialSlider = () => {
             slidesPerView: 2.5,
           },
           1025: {
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
         }}
         modules={[FreeMode]}

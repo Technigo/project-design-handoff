@@ -32,6 +32,11 @@ const StyledVideo = styled.video`
   object-position: center;
   border-radius: 12px;
   }
+
+  @media(min-width: 1025px) {
+    height: 260px;
+    width: 412px;
+  }
   `
 
 const StyledVideoContainer = styled.div`
@@ -84,18 +89,18 @@ export const YogaSlider = () => {
   return (
     <SliderContainer>
       <Swiper
-        initialSlide="32"
+        initialSlide="1"
         spaceBetween={8}
         slidesPerView={1.5}
         freeMode
         loop
         modules={[FreeMode]}
         breakpoints={{
-          768: {
+          700: {
             slidesPerView: 2.5,
           },
           1025: {
-            slidesPerView: 4,
+            slidesPerView: 2.5,
           },
         }}
         className="YogaSwiper">

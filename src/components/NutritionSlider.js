@@ -32,22 +32,30 @@ export const NutritionSlider = () => {
   `
 
   const StyledImg = styled.img`
+  position: absolute;
+  bottom: 0px;
   object-fit: cover;
   width: 226px;
   height: 176px;
   object-position: center;
   border-radius: 12px;
+  
   `
 
   const StyledCardContainer = styled.div`
   position: relative;
   display: block;
+  height: 238px;
+
+  @media(min-width 1025px) {
+    height: 308px;
+  }
   `
 
   return (
     <SliderContainer>
       <Swiper
-        initialSlide="2"
+        initialSlide="1"
         spaceBetween={8}
         slidesPerView={1.5}
         freeMode
@@ -58,6 +66,7 @@ export const NutritionSlider = () => {
           },
           1025: {
             slidesPerView: 4,
+            initialSlide: 0,
           },
         }}
         modules={[FreeMode]}

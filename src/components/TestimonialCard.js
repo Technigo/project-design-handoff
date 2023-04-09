@@ -22,10 +22,8 @@ background: #02393f;
     height: 488px;
   }
 
-  @media(min-width: 1025) {
-    flex-direction: row;
-    gap: 40px;
-    height: 506px;
+  @media(min-width: 1025px) {
+        width: 100%;
   }
 `
 const Img = styled.img`
