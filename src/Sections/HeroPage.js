@@ -38,8 +38,6 @@ const Topwrapper = styled.div`
   display:flex;
   flex-direction:row;
   justify-content:space-between;
-  /* padding-right:7.4%;
-  padding-top:4.7%; */
  `;
 
 const ButtonDiv = styled.div`

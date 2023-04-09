@@ -81,7 +81,6 @@ const Hamburger = styled.div`
       transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
-  
 
   @media (max-width: 768px) {
     display: flex;
@@ -144,7 +143,7 @@ const Link = styled.a`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) {
     font-size:28px;
   }
 `;

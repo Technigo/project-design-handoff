@@ -30,6 +30,12 @@ const HeroTitleGO = styled.h1`
   top: 11%;
   left: 8.8%;
 }
+
+@media (min-width: 1200px) {
+  font-size: 20.8rem;
+    top: 15%;
+    left: 9.8%;
+}
 `;
 
 const HeroTitleBEYOND = styled.h1`
@@ -50,10 +56,17 @@ const HeroTitleBEYOND = styled.h1`
   top:69%;
   left:7.5%;
   }
+
   @media (min-width: 1024px) {
     font-size: 5.8rem;
     top: 54%;
     left: 11.8%;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 6.8rem;
+    top: 54%;
+    left: 14.8%;
 }
 
 `;
@@ -81,6 +94,12 @@ margin:0;
     top: 67%;
     left: 26.8%;
 }
+
+@media (min-width: 1200px) {
+  font-size: 7.6rem;
+    top: 65%;
+    left: 25.8%;
+}
 `;
 
 const HeroTitleLIMITS = styled.h1`
@@ -107,6 +126,12 @@ margin:0;
   font-size: 7.6rem;
     top: 63%;
     left: 46.8%
+}
+
+@media (min-width: 1200px) {
+  font-size: 10.6rem;
+    top: 61%;
+    left: 45.8%;
 }
 `;
 
