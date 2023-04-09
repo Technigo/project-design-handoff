@@ -124,7 +124,7 @@ export const InnerContainer = styled.div`
     gap: 20px;
     margin-top: 30px;
 
-@media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: 60vh;
     gap: 40px;
@@ -138,72 +138,84 @@ export const InnerContainer = styled.div`
   `}
 `
 export const CardsContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
 
-    ${(props) => props.activitycontainer1 && css`
-      max-width: 287px;
-      align-self: center;
-      justify-self: flex-end;
-      gap:58px;
+  ${(props) => props.activitycontainer1 && css`
+    max-width: 287px;
+    align-self: center;
+    justify-self: flex-end;
+    gap:58px;
   `}
 
-      ${(props) => props.activitycontainer2 && css`
-      justify-self: flex-start;
-      max-width: 287px;
-      align-self: center;
-      gap:58px;
+    ${(props) => props.activitycontainer2 && css`
+    justify-self: flex-start;
+    max-width: 287px;
+    align-self: center;
+    gap:58px;
   `}
 
-      ${(props) => props.formcontainer && css`
-      padding: 0 44px;
-      align-items: flex-start;
+  ${(props) => props.formcontainer && css`
+    padding: 0 44px;
+    align-items: flex-start;
 
-      @media (max-width: 768px) {
-      padding: 0 32px;
+    @media (max-width: 768px) {
+    padding: 0 32px;
+    }
+  `}
+`
+
+export const HeaderDiv = styled.div`
+  display:contents;
+  
+  @media (min-width: 668px) and (max-width: 1023px) {
+    display:contents;
   }
-  `}
+
+  @media (max-width: 668px) {
+    display: none;
+  }
 `
 
 export const InnerCardsContainer = styled.div`
-    display: flex;
-    gap: 20px;
-    gap: 20px;
-    box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  gap: 20px;
+  box-sizing: border-box;
    
   @media (max-width: 668px) {
-      flex-direction: column;
-    }
+    flex-direction: column;
+  }
 `
 
 export const TextOnImageContainer = styled(InnerContainer)`
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: ${(props) => (props.workoutstext ? '40px' : '20px')};
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: ${(props) => (props.workoutstext ? '40px' : '20px')};
+  gap: 8px;
+  justify-content: ${(props) => (props.workoutstext ? 'space-between' : '')};
+  
+  @media (max-width: 768px) {
+    max-width: ${(props) => (props.maxwidth ? '70%' : '')};
+    display: flex;
+    flex-direction: column;
     gap: 8px;
-    justify-content: ${(props) => (props.workoutstext ? 'space-between' : '')};
-    
-    @media (max-width: 768px) {
-      max-width: ${(props) => (props.maxwidth ? '70%' : '')};
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      padding: 40px;
+    padding: 40px;
   }
 `
 
 export const TextContainer = styled.div`
-    display: flex;
-    flex-direction: ${(props) => (props.flexcolumn ? 'column' : '')};
-    gap: ${(props) => (props.gap || '20px')};
-    max-width: ${(props) => (props.maxwidth ? '328px' : '')};
-    overflow-wrap: break-word;
+  display: flex;
+  flex-direction: ${(props) => (props.flexcolumn ? 'column' : '')};
+  gap: ${(props) => (props.gap || '20px')};
+  max-width: ${(props) => (props.maxwidth ? '328px' : '')};
+  overflow-wrap: break-word;
 
-      @media (max-width: 768px) {
-        max-width: ${(props) => (props.maxwidth ? '70%' : '')};
+  @media (max-width: 768px) {
+    max-width: ${(props) => (props.maxwidth ? '70%' : '')};
   }
 `
 
@@ -230,74 +242,74 @@ export const TextBlock = styled(TextContainer)`
             
 `
 export const ButtonContainer = styled.div`
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 
-    @media (max-width: 768px) {
-        flex-direction: column;
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `
 
 export const IconContainer = styled.div`
-    display: flex;
-    gap: 44px;
-    align-items: center;
+  display: flex;
+  gap: 44px;
+  align-items: center;
 
-        @media (max-width: 768px) {
-        gap:8px;
+  @media (max-width: 768px) {
+    gap:8px;
   }
 `
 
 export const ImgContainer = styled.div`
-    height: ${(props) => (props.height || '100%')};
-    height: ${(props) => (props.position || '')};
-   
-    @media (min-width: 768px) and (max-width: 1023px) {
-      height: ${(props) => (props.workoutsbox ? '672px' : '726px')};
-      width: ${(props) => (props.workoutsbox ? '100%' : '')};
-      width: 100%;
-      background-size: cover;
-      background-position: top;
-      border-radius: 30px;
-    }
+  height: ${(props) => (props.height || '100%')};
+  height: ${(props) => (props.position || '')};
 
-    @media (max-width: 768px) {
-      height: ${(props) => (props.workoutsbox ? '672px' : '')};
-      width: ${(props) => (props.workoutsbox ? '100%' : '')};
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: ${(props) => (props.workoutsbox ? '672px' : '726px')};
+    width: ${(props) => (props.workoutsbox ? '100%' : '')};
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    border-radius: 30px;
+  }
+
+  @media (max-width: 768px) {
+    height: ${(props) => (props.workoutsbox ? '672px' : '')};
+    width: ${(props) => (props.workoutsbox ? '100%' : '')};
   }
 `
 
 export const ImgCardSmall = styled.div`
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    border-radius: 30px;
-    position: relative;
-    height: 442px;
-   
-    @media (min-width: 768px) and (max-width: 1023px) {
-        height: 504px;
-    }
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  border-radius: 30px;
+  position: relative;
+  height: 442px;
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+      height: 504px;
+  }
 
-    @media (max-width: 768px) {
-        height: 100vh;
+  @media (max-width: 768px) {
+      height: 100vh;
   }
 `
 
 export const ImgCardLarge = styled.div`
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    border-radius: 30px;
-    position: ${(props) => (props.relative ? 'relative' : '')};
-   
-    @media (min-width: 768px) and (max-width: 1023px) {
-        height: 672px;
-    }
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  border-radius: 30px;
+  position: ${(props) => (props.relative ? 'relative' : '')};
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 672px;
+  }
 
-    @media (max-width: 768px) {
-        height: 736px;
+  @media (max-width: 768px) {
+    height: 736px;
   }
 `

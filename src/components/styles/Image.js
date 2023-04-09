@@ -28,7 +28,18 @@ export const PlayButton = styled.img`
 
 export const Logo = styled.img`
     object-fit: cover;
+    cursor: pointer;
 `
+export const Hamburger = styled.img`
+        display:none;
+        height: 24px;
+        width: 24px;
+        
+        @media (max-width: 768px) {
+        display: block;
+  }
+    `
+
 export const PhoneImage = styled.img`
     object-fit: cover;
     justify-self: center;

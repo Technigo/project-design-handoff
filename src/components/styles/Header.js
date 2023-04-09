@@ -68,25 +68,4 @@ export const NavLink = styled.a`
         }
 
 `
-export const HeaderDiv = styled.div`
-        display:contents;
-        
-        @media (min-width: 668px) and (max-width: 1023px) {
-            display:contents;
-        }
-
-        @media (max-width: 668px) {
-        display: none;
-        }
-`
-
-export const Hamburger = styled.img`
-        display:none;
-        height: 24px;
-        width: 24px;
-        
-        @media (max-width: 768px) {
-        display: block;
-  }
-    `
 

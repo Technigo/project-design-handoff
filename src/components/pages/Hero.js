@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Wrapper, HeroContainer, InnerContainer, TextContainer, ButtonContainer, IconContainer } from 'components/styles/Section'
+import { Wrapper, HeroContainer, InnerContainer, TextContainer, ButtonContainer, IconContainer, HeaderDiv } from 'components/styles/Section'
 import { Headline1, Tagline, BodyText, Headline5 } from 'components/styles/Text'
 import { NavBarTop, NavBarSticky } from 'components/parts/NavBarSticky'
 import { Button } from '../styles/Button'
-import { Header, HeaderDiv, Hamburger } from '../styles/Header'
-import { ImageHero, Logo } from '../styles/Image'
+import { Header } from '../styles/Header'
+import { ImageHero, Logo, Hamburger } from '../styles/Image'
 
 export const Hero = () => {
   const [navBarVisible, setNavBarVisible] = useState(false);
