@@ -92,3 +92,10 @@
 }
 
 }
+
+@media (min-width: 700px){
+.NavBar nav ul li {
+    display: inline-block;
+    margin: 3vw;
+}
+}
