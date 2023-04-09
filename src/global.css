@@ -296,6 +296,22 @@ button {
   bottom: 50px;
   left: 20px;
 }
+/* ---- Application component ---- */
+.horizontal-scroll-wrapper {
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 1rem 0;
+  overflow-x: scroll;
+}
+
+.horizontal-scroll-wrapper > div {
+  width: 600px;
+  height: 15rem;
+  margin: 1rem;
+}
 
 /* ---- Sticky Nav ---- */
 .sticky-nav-container {
