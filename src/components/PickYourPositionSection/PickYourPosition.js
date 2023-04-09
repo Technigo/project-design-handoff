@@ -8,11 +8,7 @@ import { SectionTitle, CardText } from '../styledComponents/Texts'
 import { FlexContainer, ContainerForMobile, ContainerForBiggerScreens, PickYourPositionContainer } from '../styledComponents/Containers'
 import { Carousel } from './Carousel'
 import ProgramDeck from '../../images/ProgramDeck.png'
-import { PositionImage, PositionImageContainer } from './Positions';
-import DesktopcardsPivot from '../../images/DesktopcardsPivot.png'
-import DesktopcardsJammer from '../../images/DesktopcardsJammer.png'
-import DesktopcardsBlocker from '../../images/DesktopcardsBlocker.png'
-import DesktopcardsFreneso from '../../images/DesktopcardsFreneso.png'
+import { CardDeck } from './CardDeck'
 
 export const PickYourPositionSection = () => {
   return (
@@ -46,18 +42,7 @@ export const PickYourPositionSection = () => {
         <Carousel />
       </ContainerForMobile>
       <ContainerForBiggerScreens padding="20px" background="#19737F" borderRadius="23px">
-        <PositionImageContainer>
-          <PositionImage src={DesktopcardsPivot} />
-        </PositionImageContainer>
-        <PositionImageContainer>
-          <PositionImage src={DesktopcardsJammer} />
-        </PositionImageContainer>
-        <PositionImageContainer>
-          <PositionImage src={DesktopcardsBlocker} />
-        </PositionImageContainer>
-        <PositionImageContainer>
-          <PositionImage src={DesktopcardsFreneso} />
-        </PositionImageContainer>
+        <CardDeck />
       </ContainerForBiggerScreens>
     </FlexContainer>
   )

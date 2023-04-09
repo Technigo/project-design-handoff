@@ -1,96 +1,40 @@
-import styled from 'styled-components';
+import React from 'react'
+import { Hero, Title, SecondaryTitle, ButtonContainer, ParagraphContainer, SecondaryTitleHidden } from './HeroCSS'
+import { Button } from '../styledComponents/Button'
+import { Highlight } from '../styledComponents/Highlight'
+import { Paragraph, ParagraphHidden } from '../styledComponents/Texts'
 
-export const Hero = styled.section`
-position:relative;
-display: flex;
-flex-direction:column;
-justify-content: flex-start;
-align-items:center;
-gap: 15px;
-height:100%;
-@media (min-width: 1024px) {
-margin:0 11%;
-align-items:flex-start;
-gap:82px;
-margin:6% 0;
-@media (min-width: 1024px) {
-margin:6% 11.6% 0;
+export const HeroSection = () => {
+  return (
+    <Hero>
+      <Title>Up your game with fit2Derby!</Title>
+      <SecondaryTitleHidden>Customised online off skate programs
+          for roller derby players
+      </SecondaryTitleHidden>
+      <SecondaryTitle>Looking to put the Power in power jam?
+        Land that apex? Brace for days? With fit2Derby’s
+      <Highlight cta> customised online off skate programs for roller derby players, </Highlight>
+        a full time jam will feel like a breeze!
+      </SecondaryTitle>
+      <ParagraphHidden visible>Choose between our
+        <Highlight cta> individual sign-up </Highlight> and
+        <Highlight cta> Team sign-up </Highlight>
+          with exclusive access to our
+        <Highlight cta> Multiplayer Platform </Highlight>
+      </ParagraphHidden>
+      <ParagraphContainer>
+        <Paragraph> <Highlight cta> Sign up as an individual </Highlight> if you are looking
+            to improve your skills on your own.
+        </Paragraph>
+        <Paragraph> Or, <Highlight cta> sign up as a team </Highlight>
+           to access our <Highlight cta> Multiplayer Platform </Highlight>
+to track your own as well as your team’s progress.
+        </Paragraph>
+      </ParagraphContainer>
+      <ButtonContainer>
+        <Button fontSize="1.25em">Individual sign-up</Button>
+        <Button fontSize="1.25em">Join with your team</Button>
+      </ButtonContainer>
+    </Hero>
+  )
 }
-
-}
-`;
-
-export const Title = styled.h1`
-width:87%;
-font-family: 'Permanent Marker', cursive;
-color:#ffffff;
-font-size: 8vh;
-font-weight: bold;
-
-@media (min-width: 1024px) {
-   font-size: 5.6em;
-}
-`;
-
-export const SecondaryTitle = styled.h2`
-padding: 2% 0;
-width: 80%;
-font-size: 4vh;
-font-weight: 600;
-color:#FFE600;
-display:none;
-box-sizing: border-box;
-text-shadow: 0px 3.13103px 3.13103px rgba(0, 0, 0, 0.25);
-
-  @media (min-width: 1024px) {
-    flex-direction: column;
-      display:inline-block;
-      font-weight: 300;
-      color:#ffffff;
-      font-size:3vh;
-      max-width: 55%;
-  }
-`;
-
-export const SecondaryTitleHidden = styled.h2`
-padding: 2% 0;
-width: 80%;
-font-size: 4vh;
-font-weight: 600;
-color:#FFE600;
-display:flex;
-box-sizing: border-box;
-text-shadow: 0px 3.13103px 3.13103px rgba(0, 0, 0, 0.25);
-
-  @media (min-width: 1024px) {
-      display:none;
-  }
-`;
-
-export const ButtonContainer = styled.div`
-display: flex;
-flex-direction:column;
-justify-content: center;
-align-items:center;
-width:100%;
-margin: 50px 0;
-
-  @media (min-width: 1024px) {
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0;
-  }
-`;
-
-export const ParagraphContainer = styled.div`
-display:none;
-
-  @media (min-width: 1024px) {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 55%;
-  }
-
-`;
-

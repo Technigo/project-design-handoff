@@ -1,68 +1,69 @@
-import styled from 'styled-components';
+/* eslint-disable react/no-unescaped-entities */
+import React from 'react'
+import { CardText, CardTitle } from '../styledComponents/Texts'
+import { CardsFlexContainer } from '../styledComponents/Containers'
+import { CardContainer, CardImageContainer, CardImage, CardTextContainer } from './CardsCSS'
+import Endurancephoto from '../../images/Endurancephoto.png'
+import Agilityphoto from '../../images/Agilityphoto.png'
+import strengthphoto from '../../images/strengthphoto.png'
+import Prehabphoto from '../../images/Prehabphoto.png'
 
-export const CardContainer = styled.div`
-position:relative;
-display:flex;
-min-width:50%;
-justify-content:center;
-align-self: ${(props) => (props.reversed ? 'flex-end' : 'flex-start')};
-
-  @media (min-width: 1024px) {
-    min-width:0;
-       width: 434px;
-  };
-`;
-
-export const CardImageContainer = styled.div`
-box-sizing:border-box;
-background: ${(props) => (props.reversed ? '#096B78' : '#004852')};
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-self:${(props) => (props.reversed ? 'flex-end' : 'flex-start')};
-align-items:${(props) => (props.reversed ? 'flex-end' : 'flex-start')};
-height: 256px;
-width: 223px;
-border-radius:${(props) => (props.reversed ? '13px 2px 2px 13px' : '2px 13px 13px 2px')};
-padding: 0px 24px 0px 24px;
-`
-
-export const CardImage = styled.img`
-height: 230px;
-width: 152px;
-left: 0px;
-top: -6px;
-border-radius:${(props) => (props.reversed ? '8px 0px 0px 8px' : '0px 8px 8px 0px')};
-box-shadow: 0px 4px 4px 0px #00000040;
-background: linear-gradient(270.15deg, #EDFDFF 0.31%, rgba(237, 253, 255, 0.858911) 23.89%, rgba(237, 253, 255, 0) 58.6%), url(e2.png);
-border-left:${(props) => (props.reversed ? '' : '8px solid #FFE600')};
-border-right:${(props) => (props.reversed ? '8px solid #FFE600' : '')};
-`
-
-export const CardTextContainer = styled.div`
-position:absolute;
-align-self:${(props) => (props.reversed ? 'flex-start' : 'flex-end')};
-width: 200px;
-height: 218px;
-right:${(props) => (props.reversed ? 'auto' : '-70px')};
-left:${(props) => (props.reversed ? '-70px' : 'auto')};
-top: 18px;
-box-sizing:border-box;
-background: #EDFDFF;
-border-radius:${(props) => (props.reversed ? '2px 13px 13px 2px' : '13px 2px 2px 13px')};
-box-shadow: 0px 4px 4px 0px #00000040;
-display:flex;
-flex-direction:column;
-align-items:${(props) => (props.reversed ? 'flex-start' : 'flex-end')};
-text-align:${(props) => (props.reversed ? 'left' : 'right')};
-  @media (min-width: 1024px) {
-    right:${(props) => (props.reversed ? 'auto' : '-40px')};
-left:${(props) => (props.reversed ? '-40px' : 'auto')};
-width: 300px;
-  }
-  @media (min-width: 1440px) {
-    right:${(props) => (props.reversed ? 'auto' : '-100px')};
-left:${(props) => (props.reversed ? '-100px' : 'auto')};
-width: 350px;
-  }
-`
+export const Cards = () => {
+  return (
+    <CardsFlexContainer>
+      <CardContainer>
+        <CardImageContainer>
+          {/* <BackgroundColor background="#004852" width="100%" height="40%" /> */}
+          <CardImage src={Endurancephoto} />
+        </CardImageContainer>
+        <CardTextContainer>
+          <CardTitle>Endurance</CardTitle>
+          <CardText>Endurance training is essential for roller derby players
+            as it builds stamina for long games,
+            aids in faster recovery,
+            reduces fatigue-related injuries and ensures
+            a high level of performance throughout the game
+          </CardText>
+        </CardTextContainer>
+      </CardContainer>
+      <CardContainer reversed>
+        <CardImageContainer reversed>
+          <CardImage reversed src={Agilityphoto} />
+        </CardImageContainer>
+        <CardTextContainer reversed>
+          <CardTitle>Agility</CardTitle>
+          <CardText>Agility training is crucial for roller derby athletes.
+            It improves speed, balance, coordination, and reaction time on skates.
+            It reduces the risk of injury and prepares players for the demands of the sport
+          </CardText>
+        </CardTextContainer>
+      </CardContainer>
+      <CardContainer>
+        <CardImageContainer>
+          <CardImage src={strengthphoto} />
+        </CardImageContainer>
+        <CardTextContainer>
+          <CardTitle>Strength</CardTitle>
+          <CardText>Strength training is equally crucial, as it
+            improves muscle strength, balance, stability, and resilience.
+            It helps players hit harder, block better, and prevent injuries.
+            It's essential for becoming a stronger, more agile athlete
+          </CardText>
+        </CardTextContainer>
+      </CardContainer>
+      <CardContainer reversed>
+        <CardImageContainer reversed>
+          <CardImage reversed src={Prehabphoto} />
+        </CardImageContainer>
+        <CardTextContainer reversed>
+          <CardTitle>Prehab</CardTitle>
+          <CardText>Often overlooked as it focuses on smaller muscles and sometimes
+            “boring” exercises, but crucial to avoid common injuries such as concussions,
+            twisted knees, broken ankles,
+            dislocated shoulders and torn ligaments
+          </CardText>
+        </CardTextContainer>
+      </CardContainer>
+    </CardsFlexContainer>
+  )
+}

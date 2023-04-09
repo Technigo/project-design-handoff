@@ -1,13 +1,14 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This assignment was about having a design hand-off from a UX designer student and then follow the design while working together how it would be done in practice.
+Furthermore, the main topic for the duration of this project was to learn and use styled component.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I've started with the initial planning, what could be a resuable compknent and what not. I've started with the mobile first approach and compared the design for each media screen how to best create components.
+I've used npm package to add a carousel.
+The page is responsive to mobile, tablet and desktop. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Deployed link: https://nora-design-handoff-project.netlify.app/
