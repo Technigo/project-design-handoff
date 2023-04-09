@@ -59,49 +59,49 @@ const FinalSection = () => {
           <h3 className="accountTitle">Create an Account to Book Barre Classes and Buy Credits.</h3>
           <p className="accountText">Already have an account? <button type="button" className="logInButton">Login</button></p>
         </div>
-      </div>
-      <div className="bottomFormRegister">
-        <form className="registrationForm">
-          <label htmlFor="firstName">
-            <span>First Name</span>
-            <input type="text" id="firstName" name="firstName" required /><br />
-          </label>
-          <label htmlFor="lastName">
-            <span>Last Name</span>
-            <input type="text" id="lastName" name="lastName" required /><br />
-          </label>
-          <label htmlFor="phone">
-            <span>Phone number</span>
-            <input type="tel" id="phone" name="phone" required /><br />
-          </label>
-          <label htmlFor="email">
-            <span>Email (username) </span>
-            <input type="email" id="email" name="email" required /><br />
-          </label>
-          <label htmlFor="password">
-            <span>Password</span>
-            <input type="password" id="password" name="passoword" required /><br />
-          </label>
-          <div className="checkboxContainer">
-            <label htmlFor="newsletter">
-              <span>I want to receive Raise Studio&apos;s
-          Newsletter!
-              </span>
-              <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" />
-            </label><br />
-            <label htmlFor="termsAndConditions">
-              <span>I have read and understood the
-                <button type="button" className="registrationButton"> Terms & Conditions</button> and
-                <button type="button" className="registrationButton"> Privacy Policy</button>
-              </span>
-              <input type="checkbox" id="termsAndConditions" name="termsAndConditions" value="termsAndConditions" />
+        <div className="bottomFormRegister">
+          <form className="registrationForm">
+            <label htmlFor="firstName">
+              <span>First Name</span>
+              <input type="text" id="firstName" name="firstName" required /><br />
             </label>
-          </div>
-          {/* <input type="submit" value="Submit" /> */}
-          <div className="formButtonWrapper">
-            <PrimaryButtonLarge className="primaryButtonLarge" buttonText="Join Raise Studio" />
-          </div>
-        </form>
+            <label htmlFor="lastName">
+              <span>Last Name</span>
+              <input type="text" id="lastName" name="lastName" required /><br />
+            </label>
+            <label htmlFor="phone">
+              <span>Phone number</span>
+              <input type="tel" id="phone" name="phone" required /><br />
+            </label>
+            <label htmlFor="email">
+              <span>Email (username) </span>
+              <input type="email" id="email" name="email" required /><br />
+            </label>
+            <label htmlFor="password">
+              <span>Password</span>
+              <input type="password" id="password" name="passoword" required /><br />
+            </label>
+            <div className="checkboxContainer">
+              <label htmlFor="newsletter">
+                <span>I want to receive Raise Studio&apos;s
+          Newsletter!
+                </span>
+                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" />
+              </label><br />
+              <label htmlFor="termsAndConditions">
+                <span>I have read and understood the
+                  <button type="button" className="registrationButton"> Terms & Conditions</button> and
+                  <button type="button" className="registrationButton"> Privacy Policy</button>
+                </span>
+                <input type="checkbox" id="termsAndConditions" name="termsAndConditions" value="termsAndConditions" />
+              </label>
+            </div>
+            {/* <input type="submit" value="Submit" /> */}
+            <div className="formButtonWrapper">
+              <PrimaryButtonLarge className="primaryButtonLarge" buttonText="Join Raise Studio" />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   )

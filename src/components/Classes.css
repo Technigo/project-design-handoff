@@ -104,13 +104,24 @@ p {
 @media (min-width: 667px) and (max-width: 1024px) {
 
 .barreBasicImage {
-    position: relative;
-    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
 
 .classesWrapper {
-    padding-bottom: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: #9AD4D6;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    padding-bottom: 320px; /*320px to start with*/
 }
+
 
 .whiteBackgroundMobile {
     display: none;
@@ -119,6 +130,7 @@ p {
 .whiteBackgroundTablet {
     display: flex;
     position: relative;
+    top: -200px;
     width: 100%;
     z-index: 0;
 }
@@ -126,6 +138,36 @@ p {
 .whiteBackgroundDesktop {
     display: none;
 }
+
+.ribbonOnBarreImage {
+    position: absolute;
+    width: 100%;
+    bottom: 480px;
+    z-index: 1;
+    margin-left: 30px;
+} 
+
+.infoSection {
+    position: absolute;
+    margin-top: -190px;
+    /* border: red solid 2px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 250px; /* this makes it move up*/
+    min-width: 300px;
+    height: auto;
+    padding: 0px 8px;
+    width: 328px;
+    height: 107px;
+    left: calc(50% - 328px/2);
+ }
+
+ .barreBasicImage {
+    position: relative;
+    top: 300px;
+    z-index: 0;
+ }
 
 }
 
@@ -145,4 +187,10 @@ p {
     width: 100%;
     z-index: 0;
 }
+
+/* .infoWrapper {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
 }

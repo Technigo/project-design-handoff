@@ -18,19 +18,29 @@
 }
 .iconWrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 16px;
     margin-top: 16px;
 }
 
-@media (min-width: 450px) and (max-width: 666px) {
+.facebook, .instagram, .tikTok {
+    width: 101px;
+    height: 24px;   
+}
 
+
+@media (min-width: 667px) {
+
+    .footerWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+}
+    
+    .iconWrapper {
+        display: flex;
+        flex-direction: column;
+}
 
 }
 
-@media (min-width: 667px) and (max-width: 1024px) {
-
-
-
-
-}
