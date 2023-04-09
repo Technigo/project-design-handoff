@@ -90,23 +90,37 @@ const EmailInputWrapper = styled.div`
 
 const EmailInput = styled.input`
   font-weight: 500;
-  font-size: 7.83486px;
+  font-size: 9px;
   line-height: 9px;
   height:30px;
   border: none;
   width: 50vw;
+
+  @media (min-width: 744px) {
+    font-size: 11px;
+    font-weight: 600;
+    color: #025323;
+    width: 28vw;
+}
 `
 
 const SubscribeButton = styled.button`
   background-color: lightgrey;
   color: #65775A;
-  font-size: 7.83486px;
+  font-size: 9px;
   font-weight: 500;
   line-height: 9px;
   border: none;
   cursor: pointer;
   height:32px;
-`;
+  
+  @media (min-width: 744px) {
+    font-size: 11px;
+    font-weight: 600;
+    color: #025323;
+    width: 9vw;
+}
+`
 
 export const Footer = () => {
   return (

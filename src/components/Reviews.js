@@ -103,8 +103,6 @@ flex-direction: column;
 height: auto;
 background: #EBEBEB;
 padding: 3em;
-font-family: 'Libre Franklin';
-font-style: normal;
 `
 
 export const ReviewHeader = styled.h1`
@@ -135,18 +133,33 @@ export const ReviewContainer = styled.div`
   background: #F4F4F4;
   box-shadow: 0px 0px 14.5722px rgba(203, 203, 203, 0.25);
   border-radius: 21.2852px;
-  width: 269px;
-  height: 300px;
+  width: 50vw;
+  height: 50vh;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 744px) {
+    width: 33vw;
+  height: 50vh;
+}
+@media (min-width: 1000px) {
+    width: 270px;
+  height: 300px;
+}
+
   img {
-    width: 83.05px;
-    height: 83.05px;
-    left: 431.03px;
-    top: 39.38px;
+    width: 83px;
+    height: 83px;
+    left: 430px;
+    top: 40px;
     border-radius: 50%;
     object-fit: cover;
     padding: 20px;
+
+    @media (min-width: 1000px) {
+        width: 78px;
+        height: 78px;
+}
   }
   h2 {
     font-size: 24px;
@@ -155,10 +168,10 @@ export const ReviewContainer = styled.div`
   p {
     font-size: 16px;
     line-height: 1.25;
-    text-align: center;
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 0;
+    padding: 0 2rem;
   }
 `;
 
@@ -169,14 +182,13 @@ const ButtonContainer = styled.div`
 `;
 
 const ButtonWrapper = styled.button`
-  background-color: white;
+  background-color: transparent;
   border: 1px solid #025323;
   border-radius: 50%;
   color: #025323;
   cursor: pointer;
   font-size: 20px;
   height: 35px;
-  line-height: 1;
   margin-right: 10px;
   margin-left: 10px;
   text-align: center;

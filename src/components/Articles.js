@@ -10,6 +10,8 @@ export const article = [
 
 const Articlewrapper = styled.div`
 max-width: 1300px;
+margin-left: auto;
+    margin-right: auto;
 `
 
 const ArticleContainer1 = styled.div`
@@ -21,14 +23,17 @@ const ArticleContainer1 = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
+
   @media (min-width: 1140px) {
     display:flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin-left: 1rem;
+    width: 96%;
   }
-  
-`;
+`
 const ArticleContainer2 = styled.div`
   margin-top:30px;
   margin-bottom: 60px;
@@ -37,14 +42,15 @@ const ArticleContainer2 = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
+  
   @media (min-width: 1140px) {
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     padding: 2rem;
     justify-content: center;
     align-items: center;
   }
-`;
+`
 const ContentBox = styled.div`
 @media (min-width: 768px) {
    display: flex;
@@ -53,30 +59,41 @@ const ContentBox = styled.div`
    flex-direction: column;
 }
 @media (min-width: 1024px) {
-  /* Styles for desktop view */
   width: 100%;
 }
-`;
+`
+
+const TextContainer = styled.div`
+width: 80vw;
+
+@media (min-width: 550px) {
+    width: 450px;
+  }`
+
 const Header = styled.h1`
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
-  text-align: center;
   color: #025323;
   margin-bottom: 10px;
   margin-top: 20px;
-`;
+  @media (min-width: 744px) {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  @media (min-width: 1140px) {
+    font-size: 54px;
+  }
+`
 const Paragraf = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   color: #025323;
-  padding: 0 2rem;
   @media (min-width: 768px) {
     width: 400px;
   }
-`;
+`
 const Button = styled.button`
   display: flex;
   flex-direction: row;
@@ -98,43 +115,43 @@ const Button = styled.button`
     margin-left: auto;
     margin-right: auto;
   }
-`;
+`
 const ImgBox = styled.div`
-  width: 603px;
-  height: 410px;
+  width: 80vw;
+  height: auto;
   border: 0.6px solid #025323;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
-  @media (max-width: 768px) {
-    width:auto;
-    height:250px;
-  }
+  padding: 15px;
+  margin-left: 1em;
+  margin-right: 1em;
+  
  @media (min-width: 1140px) {
     margin-right: 2rem;
+    width: 52vw;
  }
 `
 const Image = styled.img`
-  width: 560px;
-  height: 374px;
+  width: 74vw;
+  height: auto;
   border: 6px solid #025323;
-  border-radius: 12.5651px;
-  @media (max-width: 768px) {
-    width:auto;
-    height:230px;
-  }
-`;
+  border-radius: 13px;
+  @media (min-width: 1140px) {
+    width: 40vw;
+ }
+`
 
 export const Articles = () => {
   return (
     <Articlewrapper>
       <ArticleContainer1>
         <ContentBox>
-          <Header>{article[0].header}</Header>
-          <Paragraf>{article[0].paragraf}</Paragraf>
+          <TextContainer>
+            <Header>{article[0].header}</Header>
+            <Paragraf>{article[0].paragraf}</Paragraf>
+          </TextContainer>
           <Button type="button">Read more</Button>
         </ContentBox>
         <ImgBox>
@@ -144,8 +161,10 @@ export const Articles = () => {
 
       <ArticleContainer2>
         <ContentBox>
-          <Header>{article[1].header}</Header>
-          <Paragraf>{article[1].paragraf}</Paragraf>
+          <TextContainer>
+            <Header>{article[1].header}</Header>
+            <Paragraf>{article[1].paragraf}</Paragraf>
+          </TextContainer>
           <Button type="button">Read more</Button>
         </ContentBox>
         <ImgBox>

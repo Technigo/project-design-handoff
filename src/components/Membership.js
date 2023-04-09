@@ -23,18 +23,28 @@ const MemberShipContainer = styled.div`
   background-color: #EBEBEB;
   position: relative;
   padding: 2em;
-`;
+`
 
 const SliderItemContainer = styled.div`
-  width: auto;
-  height: 427.34px;
+  width: 80vw;
+  height: 427px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2.52369px solid #025323;
-  border-radius: 16.8246px;
+  border: 2px solid #025323;
+  border-radius: 16px;
   margin-bottom: 2em;
-`;
+
+  @media (min-width: 420px) {
+    width: 70vw;
+    height: 480px;
+ }
+
+ @media (min-width: 600px) {
+    width: 350px;
+    height: 510px;
+ }
+`
 
 const Title = styled.h1`
   font-weight: 600;
@@ -45,7 +55,7 @@ const Title = styled.h1`
   margin-top: 46px;
   padding: 0 10px;
   margin-bottom: 1rem;
-`;
+`
 
 const Content = styled.p`
   font-weight: 500;
@@ -53,16 +63,28 @@ const Content = styled.p`
   line-height: 167.5%;
   text-align: center;
   color: #025323;
-  padding: 0 50px;
   margin-bottom: 25px;
-`;
+
+  @media (min-width: 400px) {
+  padding: 0 6em;
+ }
+`
+
 export const Image = styled.img`
-  width: 288.54px;
+  width: 80vw;
   height: auto;
   object-fit: cover;
-  border-top-left-radius: 16.8246px;
-  border-top-right-radius: 16.8246px;
-`;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+
+  @media (min-width: 420px) {
+    width: 70vw;
+ }
+ @media (min-width: 600px) {
+    width: 350px;
+ }
+`
+
 const Wrapper = styled.div`
   align-items: left;
   width: auto;
@@ -71,25 +93,28 @@ const Wrapper = styled.div`
 `
 const Header = styled.h2`
   font-weight: 600;
-  font-size: 18.5071px;
+  font-size: 18px;
   line-height: 22px;
   color: #025323;
   margin-top: 1em;
-`;
+`
+
 const Access = styled.p`
   font-weight: 500;
-  font-size: 9.25353px;
+  font-size: 9px;
   line-height: 11px;
   color: #025323;
-  margin:0px;
-`;
+  margin:0;
+`
+
 const Price = styled.p`
   font-weight: 500;
-  font-size: 12.2091px;
+  font-size: 12px;
   line-height: 15px;
   color: #000000;
   margin-right: 10px;
-`;
+`
+
 const Button = styled.button`
   display: flex;
   flex-direction: row;
@@ -101,13 +126,17 @@ const Button = styled.button`
   text-align: center;
   color: #FFFFFF;
   font-size: 20px;
-  width: 244px;
+  width: 200px;
   cursor:pointer;
-`;
+
+  @media (min-width: 330px) {
+    width: 244px;
+ }
+`
 
 const ArrowButtonLeft = styled.button`
-  height: 19.28px;
-  width: 19.28px;
+  height: 19px;
+  width: 19px;
   background-color: transparent;
   border: none;
   display: flex;
@@ -124,8 +153,8 @@ const ArrowButtonLeft = styled.button`
 `;
 
 const ArrowButtonRight = styled.button`
-  height: 19.28px;
-  width: 19.28px;
+  height: 19px;
+  width: 19px;
   background-color: transparent;
   border: none;
   display: flex;
