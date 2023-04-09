@@ -8,9 +8,12 @@ const Nav = styled.nav`
   justify-content: space-between; 
   height: 85px;
   width: 100vw;
+  max-width: 1400px;
   background-color: white;
+  z-index: 10;
 
   @media (min-width: 744px) {
+    position: absolute;
     background-color: transparent;
     margin-top: 1.5rem;
 }
@@ -18,7 +21,7 @@ const Nav = styled.nav`
 
 const Logo = styled.img`
   width: 46px;
-  padding-left: 2.4rem;
+  padding-left: 3rem;
   @media (min-width: 744px) {
     width: 77px;
 }

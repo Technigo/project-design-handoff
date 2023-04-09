@@ -56,6 +56,7 @@ border-radius: 15px;
 }
 @media (min-width: 968px) {
     margin-left: 2.4rem;
+    width: 252px;
 }
 &:hover {
     cursor: pointer;
