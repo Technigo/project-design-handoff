@@ -10,7 +10,7 @@ const LogoSection = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 15px;
+    margin: 0 15px;
 `
 const Navigation = styled.div`
     display: flex;

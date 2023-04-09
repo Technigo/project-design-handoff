@@ -9,15 +9,15 @@ const MenuDesk = styled.nav`
 
     a {
         font-size: 18px;
-        margin-top: 20px;
+        margin-top: 25px;
         color: white;
         cursor: pointer;
     }
 
     i {
       font-size: 20px;
-      padding-top: 20px;
-      margin-right: 40px;
+      padding-top: 25px;
+      margin-right: 20px;
       cursor: pointer;
     }
 

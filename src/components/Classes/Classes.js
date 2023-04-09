@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Slider } from './ClassCard'
 import './classes.css';
 
 const ArrowDown = styled.i`
@@ -23,7 +24,7 @@ export const Classes = () => {
       </div>
       <div className="yoga-container">
         <h3>Power yoga 60</h3>
-        <img src="./img/yoga-3.png" alt="yoga woman" />
+        <Slider />
       </div>
     </>
   )

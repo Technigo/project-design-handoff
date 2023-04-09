@@ -47,6 +47,7 @@ const HamburgerButton = styled.button`
         right: 50%;
         transform: translate(50%, -50%) rotate(270deg);
     }
+
     @media (min-width: 895px) {
         display: none;
 }

@@ -24,7 +24,7 @@ const NavFoot = styled.div`
       display: flex;
       gap: 3rem;
       list-style: none;
-      margin: 20px 0 0;
+      margin: 10px 0 0;
     }
 
     a {
