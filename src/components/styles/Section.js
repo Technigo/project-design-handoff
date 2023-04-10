@@ -40,7 +40,7 @@ export const HeroContainer = styled.div`
   @media (max-width: 668px) {
     left: 40px;
     top: 80px;
-    gap: 1vh;
+    gap: 4vh;
   }
 `
 export const OuterContainer = styled.div`
