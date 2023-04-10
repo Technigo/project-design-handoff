@@ -1,8 +1,14 @@
+.heroimg-container{
+  width: 100%;
+}
+
+
+
+
 .heroimg-background img {
     position: relative;
     display: inline-block;
-    height: 806px;
-    width: 360px;
+     width: 100%;
     overflow: hidden;
 }
 .Ham-menu {

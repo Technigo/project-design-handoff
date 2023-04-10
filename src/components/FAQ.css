@@ -1,6 +1,7 @@
 
 .faq-container {
     background-color: #D7CBFF;
+    width: 100%;
   }
 
 .FAQ {
@@ -8,7 +9,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin-top: 80px;
-width: 360px;
+
 height: 334px;;
 background-color: #D7CBFF;
 padding-bottom: 20px;
