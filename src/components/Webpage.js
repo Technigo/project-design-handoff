@@ -74,14 +74,9 @@ const WebPage = () => {
         img3Title="Pilates"
         img4Title="Running" />
       <Footer
-        // img="https://example.com/image1.jpg"
         link1="Impressum"
         link2="Datenschutz"
         shortText="Follow us"
-        // img="https://example.com/image1.jpg"
-        // img="https://example.com/image1.jpg"
-        // img="https://example.com/image1.jpg"
-        // img="https://example.com/image1.jpg"
         title="Programs"
         link3="Active in pregnancy"
         link4="Getting fit for the child"
