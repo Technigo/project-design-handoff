@@ -57,3 +57,13 @@ overflow: hidden;
 
 }
 `;
+
+export const PickPositionHeadline = styled.div`
+height: 44px;
+left: 16px;
+right: 86px;
+top: 0px;
+background: #EDFDFF;
+border-bottom: 5px solid #128E9F;
+border-radius: 0px 0px 100px 13px;
+`;
