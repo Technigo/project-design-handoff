@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-    font-family: 'Karla', sans-serif;
+  font-family: 'Karla', sans-serif;
     
 `
