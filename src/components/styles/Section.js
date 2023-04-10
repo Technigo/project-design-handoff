@@ -212,6 +212,7 @@ export const TextOnImageContainer = styled(InnerContainer)`
     display: flex;
     flex-direction: column;
     padding: 40px;
+    align-items: flex-start;
   }
 `
 
