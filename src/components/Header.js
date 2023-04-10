@@ -23,6 +23,7 @@ const HeroContainer = styled.div`
   object-fit: cover;
   position: relative; /* Add position relative to the container */
   min-height: 100vh;
+  font-family: 'Helvetica Neue';
 
   @media screen and (max-width: 768px) {
   min-height: 100vh;
@@ -82,7 +83,7 @@ color: #E3F7FC;
 
 const StyledTitle = styled.h1`
 font-size:2rem;
-font-weight: bold;
+font-weight: 700;
 word-break: break-word;
 margin-bottom: 4rem;
 
