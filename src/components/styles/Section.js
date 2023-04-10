@@ -38,7 +38,7 @@ export const HeroContainer = styled.div`
   }
 
   @media (max-width: 668px) {
-    top: 120px;
+    top: 130px;
     left: 40px;
     gap: 70px;
   }
