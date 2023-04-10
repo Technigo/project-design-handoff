@@ -1,63 +1,57 @@
 import React from 'react';
-import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
-import './Videoslider.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './Nutrition.css';
 import videoimg from '../img/video-standard.png'
 
 export const Carousel = () => {
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 1,
+    centerMode: true,
+    arrows: true,
+    className: 'nutrition-slick-carousel'
+  };
+
   return (
-    <CarouselProvider
-      naturalSlideWidth={100}
-      naturalSlideHeight={125}
-      totalSlides={4}>
-      <div className="carousel-wrapper">
-        <Slider>
-          <Slide index={0}>
-            <div className="video-card">
-              <div className="video-card-text">
-                <h3 className="video-title">Yinyoga to calm down</h3>
-                <p className="video-duration">15 min</p>
-              </div>
-              <div className="video-card-image">
-                <img src={videoimg} alt="video" />
-              </div>
-            </div>
-          </Slide>
-          <Slide index={1}>
-            <div className="video-card">
-              <div className="video-card-text">
-                <h3 className="video-title">Yinyoga to calm down</h3>
-                <p className="video-duration">15 min</p>
-              </div>
-              <div className="video-card-image">
-                <img src={videoimg} alt="video" />
-              </div>
-            </div>
-          </Slide>
-          <Slide index={2}>
-            <div className="video-card">
-              <div className="video-card-text">
-                <h3 className="video-title">Yinyoga to calm down</h3>
-                <p className="video-duration">15 min</p>
-              </div>
-              <div className="video-card-image">
-                <img src={videoimg} alt="video" />
-              </div>
-            </div>
-          </Slide>
-          <Slide index={3}>
-            <div className="video-card">
-              <div className="video-card-text">
-                <h3 className="video-title">Yinyoga to calm down</h3>
-                <p className="video-duration">15 min</p>
-              </div>
-              <div className="video-card-image">
-                <img src={videoimg} alt="video" />
-              </div>
-            </div>
-          </Slide>
-        </Slider>
+    <Slider {...settings}>
+      <div className="recipe-card">
+        <div className="nutrition-carousel">
+          <div className="nutrition-carousel-text">
+            <h3 className="nutrition-carousel-bigtext">Buddhabowl</h3>
+            <p className="nutrition-carousel-time">15 min</p>
+          </div>
+          <div className="nutrition-image">
+            <img src={videoimg} alt="video" className="nutrition-carousel-image" />
+          </div>
+        </div>
       </div>
-    </CarouselProvider>
-  );
-};
+      <div className="recipe-card">
+        <div className="nutrition-carousel">
+          <div className="nutrition-carousel-text">
+            <h3 className="nutrition-carousel-bigtext">Healthy and vibrant strawberry cake</h3>
+            <p className="nutrition-carousel-time">55 min</p>
+          </div>
+          <div className="nutrition-image">
+            <img src={videoimg} alt="video" className="nutrition-carousel-image" />
+          </div>
+        </div>
+      </div>
+      <div className="recipe-card">
+        <div className="nutrition-carousel">
+          <div className="nutrition-carousel-text">
+            <h3 className="nutrition-carousel-bigtext">Vegan cauliflower pizza</h3>
+            <p className="nutrition-carousel-time">55 min</p>
+          </div>
+          <div className="nutrition-image">
+            <img src={videoimg} alt="video" className="nutrition-carousel-image" />
+          </div>
+        </div>
+      </div>
+    </Slider>
+  )
+}

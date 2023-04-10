@@ -1,13 +1,12 @@
 .online-background {
-    height: 646px;
     background: #D0C4B8;
+    padding-bottom: 24px;
 }
 
 .online-yoga-bigtext {
     font-style: normal;
 font-weight: 700;
 font-size: 25px;
-line-height: 160%;
 color: #02393F;
 padding-top: 24px;
 }

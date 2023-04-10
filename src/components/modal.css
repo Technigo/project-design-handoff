@@ -23,8 +23,11 @@
     position: absolute;
     top: 24px;
     right: 24px;
-    font-size: 24px;
+    font-size: 12px;
     cursor: pointer;
+    border-radius: 50%;
+    color: #02393F;
+    border: solid 1px #02393F;
 }
 
 .modal-content {

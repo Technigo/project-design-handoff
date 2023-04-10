@@ -1,6 +1,6 @@
 .testimonial-background {
-    height: 1708px;
     background-color: #02393F;
+    padding-bottom: 24px;
 }
 .img-container {
     height: 245px;
@@ -23,7 +23,6 @@
 border-radius: 0px;
 font-size: 25px;
 font-weight: 700;
-line-height: 40px;
 letter-spacing: 0.01em;
 text-align: left;
 color: #D0C4B8;
@@ -52,7 +51,6 @@ gap: 32px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 160%;
     hanging-punctuation: first last;
     color: #F4E4D7;
     overflow: hidden;
@@ -66,7 +64,6 @@ gap: 32px;
     font-style: italic;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
     color: #D0C4B8;
 }
 

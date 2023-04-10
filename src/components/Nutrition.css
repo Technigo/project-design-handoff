@@ -1,13 +1,12 @@
 .nutrition-background {
-    height: 672px;
     background: #D0C4B8;
+    padding-bottom: 24px;
 }
 
 .nutrition-bigtext {
     font-style: normal;
 font-weight: 700;
 font-size: 25px;
-line-height: 160%;
 color: #02393F;
 }
 
@@ -15,7 +14,6 @@ color: #02393F;
     font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 150%;
 color: #02393F;
 }
 
@@ -50,7 +48,6 @@ border-radius: 12px;
     font-style: normal;
 font-weight: 700;
 font-size: 13px;
-line-height: 160%;
 color: #02393F;
 }
 
@@ -58,7 +55,6 @@ color: #02393F;
     font-style: normal;
 font-weight: 400;
 font-size: 13px;
-line-height: 150%;
 text-align: center;
 color: #02393F;
 }
@@ -71,7 +67,6 @@ align-items: center;
 padding: 8px 0px;
 gap: 6px;
 width: 226px;
-height: 40px;
 }
 
 .recipe-card {
@@ -80,9 +75,6 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 gap: 16px;
-
-width: 226px;
-height: 232px;
 }
 
 .recipe-carousel {

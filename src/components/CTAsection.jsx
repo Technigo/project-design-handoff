@@ -5,9 +5,11 @@ import './CTAsection.css';
 export const CTAsection = () => {
   return (
     <div className="cta-background">
-      <Button>
+      <div className="button-cta">
+        <Button>
         Start your 7-day free trial
-      </Button>
+        </Button>
+      </div>
     </div>
   );
 }
