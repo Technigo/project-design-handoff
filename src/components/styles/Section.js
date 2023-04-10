@@ -34,13 +34,13 @@ export const HeroContainer = styled.div`
 
   @media (min-width: 668px) and (max-width: 1023px) {
     left: 128px;
-    gap: 4vh;
+    gap: 70px;
   }
 
   @media (max-width: 668px) {
     left: 40px;
-    top: 80px;
-    gap: 4vh;
+    top: 100px;
+    gap: 70px;
   }
 `
 export const OuterContainer = styled.div`
@@ -70,7 +70,7 @@ export const InnerContainer = styled.div`
     flex-direction: column;
 
     @media (max-width: 768px) {
-      gap: 3vh;
+      gap: 4vh;
     }
   `}
 
