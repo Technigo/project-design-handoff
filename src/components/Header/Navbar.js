@@ -69,7 +69,7 @@ const MenuBackground = styled.div`
 `
 const StyledNav = styled.nav`
     display: flex;
-    margin: 70px auto auto 40px;
+    margin: 90px auto auto 90px;
     flex-direction: column;
     color: white;
 

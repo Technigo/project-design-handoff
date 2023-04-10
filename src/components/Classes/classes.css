@@ -60,9 +60,6 @@ height: 100%;
 }
 
 @media (min-width: 895px) {
-  .awssld {
-    display: none;
-  }
   .yoga-container{
     display: none;
   }
