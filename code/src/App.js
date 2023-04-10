@@ -4,7 +4,7 @@ import { Header } from 'components/Header/Header';
 // import { Hero } from 'components/Hero/Hero';
 import { Intro } from 'components/Intro/Intro';
 import { Classes } from 'components/Classes/Classes';
-// import { SignUp } from 'components/SignUp';
+import { SignUp } from 'components/SignUp/SignUp';
 // import { Book } from 'components/Book/Book';
 // import { Review } from 'components/Review';
 // import { Connect } from 'components/Connect';
@@ -20,8 +20,8 @@ export const App = () => {
       {/* <main>  */}
       <Intro />
       <Classes />
-      {/* <SignUp />
-        <Book />
+      <SignUp />
+      {/* <Book />
         <Review />
         <Connect />
       </main>
