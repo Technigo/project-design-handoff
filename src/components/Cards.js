@@ -5,11 +5,11 @@ import { BodyText, H1, H4 } from 'style/Texts';
 const BgImg = styled.div`
     margin: 16px;
     repeat: no-repeat;
-    overflow: hidden;
     width: 100%;
     height: 100vh;
     border-radius: 30px;
-    object-fit: fill§1  x;
+    background-size: cover;
+    background-position: center top;
     border: none;
     position: relative;
     `

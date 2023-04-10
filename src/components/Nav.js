@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FlexColumnCenter } from 'style/Flex';
 import { Benefits } from './Benefits';
 import { Workout } from './Workouts';
 import { Activity } from './Activity';
@@ -27,13 +28,15 @@ const NavbarLink = styled.a`
 
 export const Navbar = () => {
   return (
-    <NavbarWrapper>
-      <>
-        <NavbarLink href={Benefits}>Benefits</NavbarLink>
-        <NavbarLink href={Workout}>Programs</NavbarLink>
-        <NavbarLink href={Activity}>Activity</NavbarLink>
-        <NavbarLink href={Community}>Plans</NavbarLink>
-      </>
-    </NavbarWrapper>
+    <FlexColumnCenter>
+      <NavbarWrapper>
+        <>
+          <NavbarLink href={Benefits}>Benefits</NavbarLink>
+          <NavbarLink href={Workout}>Programs</NavbarLink>
+          <NavbarLink href={Activity}>Activity</NavbarLink>
+          <NavbarLink href={Community}>Plans</NavbarLink>
+        </>
+      </NavbarWrapper>
+    </FlexColumnCenter>
   )
 }
