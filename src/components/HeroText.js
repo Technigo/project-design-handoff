@@ -6,6 +6,7 @@ const HeroTextWrapper = styled.div`
   display:flex;
   flex-direction:row;
   justify-content:space-between;
+  max-width: 100vw;
   
   @media (min-width: 768px) {
     display: none;
@@ -42,6 +43,9 @@ export const HeroTextContent = styled.h1`
 const HeroA = styled.img`
   width: 12.7%;
   transform: ${(props) => (props.transform)};
+  margin-right: ${(props) => (props.right)};
+  padding:0;
+  margin:0;
 
   @media (min-width: 768px) {
     display: none;

@@ -106,7 +106,7 @@ const LogoAndOContactDiv = styled.div`
 const LogoDiv = styled.div`
   display: flex;
   justify-content: center;
-  width: 42.7%;
+  width: 30.7%;
 
   @media (min-width: 1024px) {
     width:30%;
@@ -131,7 +131,7 @@ const ContactInfoDiv = styled.div`
 `;
 
 const SocialMedia = styled.img`
-  width: 53.9%;
+  width: 44.9%;
   height: 3.5%;
   margin-top:15%;
 
@@ -143,7 +143,7 @@ const SocialMedia = styled.img`
 const BrandsDiv = styled.div`
   display: flex; 
   flex-direction:column;
-  width: 31.7%;
+  width: 25.7%;
   gap:2rem; 
 
   @media (min-width: 768px) {
