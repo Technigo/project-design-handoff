@@ -1,6 +1,7 @@
 .heroimg-container{
   width: 390px;
 
+
 }
 
 
@@ -13,27 +14,28 @@
 .Ham-menu {
   position: absolute;
   padding: 14px;
-  margin-top: -794px;
+  margin-top: -815px;
   margin-left: 298px;
 }
 .hero-logo{
   position: absolute;
   padding: 14px;
-  margin-top: -800px;
+  margin-top: -820px;
 }
 
 .lupa {
   position: absolute;
   padding: 14px;
-  margin-top: -803px;
+  margin-top: -823px;
   margin-left: 255px;
 }
 .hero-padding {
    margin: 30px; 
+  
 }
   .hero-text-h1 {
     position: absolute;
-    top: 90px; 
+    top: 110px; 
     left: 15px; 
     color:#E3F7FC ;
     font-size: 40px;
