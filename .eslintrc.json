@@ -26,6 +26,8 @@
     "react-hooks"
   ],
   "rules": {
+    "react/jsx-props-no-spreading": 0,
+    "linebreak-style": "off",
     "react/function-component-definition": [
       2,
       {
