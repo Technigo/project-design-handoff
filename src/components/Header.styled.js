@@ -75,7 +75,7 @@ font-weight:500;
 
 const JammerImg = styled.img`
     display: flex;
-    width: 30%;
+    width: 80%;
        margin-right: auto;
    margin-left: auto;
     @media (min-width: 1025px) {
@@ -126,11 +126,11 @@ const Header = () => {
           to track your own as well as your team’s progress.
         </TextOnGreen>
       </ParagraphContainer>
+      <JammerImg src={jammerImg} />
       <ButtonContainer>
         <Button fontSize="20px">Individual sign-up</Button>
         <Button fontSize="20px">Join with your team</Button>
       </ButtonContainer>
-      <JammerImg src={jammerImg} />
     </HeaderContainer>
   );
 };

@@ -1,12 +1,14 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
+Design-Hand-Off in a collab project together with UX-design students this week where we were handed over a design-file in Figma done by a stydent in our paralel UX-design bootcamp at Technigo. My project was on a theme very close to my heart, Roller Derby! I got to enterpret a design on a gym-program website, designed by Caroline Bensryd. This was a really fun project, which i would have loved to have LOOOOADS of more time working on than the given 4 days of coding. I managed to complete 2,5 (out of 4) sections within the given time estimate. My process started with the hand-off, which i followed up by closely study the design-system and make a skiss suggestion for myself in how to build the components folders. After that i started the coding. My time estimate got slowed down due to this was my forst time using styled components in React, and i really wanted to practise using them. I rearranged my folders system a lot before i landed in a working flow that made sense for my ability and the design system. Since the process for me had to be organic, since my experience working with styled components kind of had to grow with the project, I got to a point where i just kind of had to continue and build with the structure i had instead of go back and change the ground structure each time i came to a realisation. Since the hours ran out i just had to keep going to have anyting at all to demo by the end of the week. 
+If i have had more time i would have rearranged the styled components so that the header section would be structured in a complete different way, and that the styled components were more logically used from their different purpuse. The way i learned from using styled components is very present in the structure of this code, so i see this project as a learning process from where im going to look back and view my coding and how my confidence in trying out expands organically along the way. I really enjoyed it, and the flow went smooother and smoother as i got more used to the system and the order in which i had to do the steps. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The spiderweb of this code starded to make more and more sence and i got familiar with how i could actually make my components reusable and speed up the coding process. 
 
-## The problem
+My friend who is a carpenter said once that a common saying within her buisseness is that the first house you build you should build for your worst enemy. Handing over this code to my fellow UX-designer student I must honestly say that unfortunally feels i little like it should have been delivered to my worst enemy instead of her hahah.. Whith that said I really aim to go back to this project and maybe rebuild it so that the code is build up the way i would build it if i started off with the experience i got now. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+One day I also will finnish it and get that image caurosel to work properly. But for now it is wat it is! 
+
 
 ## View it live
 

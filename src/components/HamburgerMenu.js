@@ -34,18 +34,7 @@ const HamburgerButton = styled.button`
     span::before {
         top: 10px;
     }
-    .active {
-        /* position:absolute; */
-       /*  top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%) rotate(45deg); */
-    }
- /*    .active::before, .active::after {
-        position:absolute; */
-        /* top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%) rotate(270deg); */
-    }
+
     @media (min-width: 1025px) {
         display: none
 }
