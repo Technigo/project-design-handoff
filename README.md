@@ -21,3 +21,4 @@ Following the design directly from a Figma document was also a great lesson!
 
 ## View it live
 
+https://courageous-choux-751081.netlify.app/
