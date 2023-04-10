@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+  }
+  
+  html, body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  body {
+    background-color: #fbf3f2;
+    display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  }
+
+ 
