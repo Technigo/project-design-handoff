@@ -202,14 +202,13 @@ export const TextOnImageContainer = styled(InnerContainer)`
   left: 0;
   bottom: 0;
   padding: ${(props) => (props.workoutstext ? '40px' : '20px')};
-  gap: 8px;
+  gap: ${(props) => (props.workouts ? '20px' : '8px')};
   justify-content: ${(props) => (props.workoutstext ? 'space-between' : '')};
   
   @media (max-width: 768px) {
     max-width: ${(props) => (props.maxwidth ? '70%' : '')};
     display: flex;
     flex-direction: column;
-    gap: 8px;
     padding: 40px;
   }
 `
@@ -223,7 +222,6 @@ export const TextContainer = styled.div`
 
   @media (max-width: 768px) {
     max-width: ${(props) => (props.maxwidth ? '70%' : '')};
-    gap: ${(props) => (props.hero ? '10px' : '')};
   }
 `
 

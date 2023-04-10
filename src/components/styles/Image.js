@@ -45,12 +45,12 @@ export const PhoneImage = styled.img`
     justify-self: center;
      
     @media (min-width: 668px) and (max-width: 1023px) {
-       width: 325px;
+       width: 345px;
        height: 625px;
     }
 
     @media (max-width: 668px) {
         height: 440px;
-        width: 228.8px;
+        width: 240.8px;
   }
 `

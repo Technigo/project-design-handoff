@@ -18,7 +18,7 @@ export const Workouts = () => {
               backgroundPosition: 'center',
               backgroundSize: 'cover' }}>
             <PlayButton src="./assets/playbutton.svg" alt="play button" />
-            <TextOnImageContainer alignscenter workoutstext>
+            <TextOnImageContainer alignscenter workoutstext workouts>
               <TextContainer flexcolumn gap="8px">
                 <Headline3 workoutsh3>5 min warm up
                 </Headline3>
