@@ -39,8 +39,8 @@ export const HeroContainer = styled.div`
 
   @media (max-width: 668px) {
     left: 40px;
-    top: 101px;
-    gap: 4vh;
+    top: 80px;
+    gap: 1vh;
   }
 `
 export const OuterContainer = styled.div`

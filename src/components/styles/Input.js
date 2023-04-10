@@ -30,10 +30,12 @@ export const TextInput = styled.input`
   &:focus {
       outline: 2px solid #A99BD1;
       border: none;
+      border-radius: 8px;
   }
 
    @media (max-width: 768px) {
     height: 48px;
+    border-radius: 8px;
   }
 `
 export const TextInputBox = styled.div`
