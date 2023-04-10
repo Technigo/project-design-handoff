@@ -19,15 +19,15 @@
 .color-overlay {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 390px;
   height: 108%;
   background-color: rgba(35, 35, 38, 0.595); 
   pointer-events: none;
   padding-bottom: 2px;
 }
 .trialimg-container img {
-  width: 100%;
-  height: auto;
+  width: 390px;
+ 
 }
 
 .trialimg-container{
