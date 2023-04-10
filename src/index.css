@@ -255,6 +255,7 @@ padding: 24px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 40px;
 }
 
 .price-plan-container h1 {
@@ -283,6 +284,7 @@ background-color: #D0C4B8;
 width: 304px;
 height: 402px;
 border-radius: 12px;
+box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .price-plan-btn {
@@ -500,6 +502,8 @@ font-weight: 400;
   .yogis-header h1 {
     color: #D0C4B8;
     font-family: 'Libre Baskerville';
+    padding: 48px 32px 48px 32px;
+  margin: 0;
   }
 
   .yogi-card {
@@ -521,6 +525,7 @@ font-weight: 400;
     font-size: 16px;
     line-height: 25,6px;
     font-weight: 400;
+   
   }
 
 .online-yoga-container img {
@@ -567,6 +572,11 @@ font-weight: 400;
     align-items: center;
     justify-content: center;
   }
+
+  .carousel {
+padding-bottom: 48px;
+  }
+  
 
   .personalised-meal-container {
   background-color: #D0C4B8;
@@ -622,6 +632,7 @@ font-weight: 400;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 24px 0px 72px 0px;
   }
   
   .price-plan-container h1 {
@@ -650,6 +661,7 @@ font-weight: 400;
   width: 304px;
   height: 402px;
   border-radius: 12px;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   .price-plan-btn {
@@ -1052,6 +1064,15 @@ margin-top: -24px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 32px 0px 62px 0px;
+  min-width: 100%;
+}
+
+.priceplancard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Add this to center the cards horizontally */
+  flex-wrap: wrap; 
 }
 
 .price-plan-container h1 {
@@ -1076,10 +1097,11 @@ line-height: 20px;
 }
 .price-plan-card {
   margin: 5px;
-background-color: #D0C4B8;
-width: 304px;
-height: 402px;
-border-radius: 12px;
+  background-color: #D0C4B8;
+  width: 300px; /* Adjust the width to fit within the container */
+  height: 402px;
+  border-radius: 12px;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .price-plan-btn {
