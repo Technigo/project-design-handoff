@@ -19,17 +19,16 @@ const PersonalisedMeal = () => {
         centerMode
         swipeable
         showArrows={false}
-        centerSlidePercentage={33}
+        centerSlidePercentage={50}
         showIndicators={false}>
         <div className="meal-card">
-          <div className="meal-text-buddha">
-            <p>Buddhabowl 15 min</p>
-          </div>
+          <p>Buddhabowl 15 min <br /><br /><br />
+          </p>
           <img src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="Buddhabowl" />
         </div>
         <div className="meal-card">
           <div className="meal-text">
-            <p>Vegan Cauliflower Pizza 30 min
+            <p>Vegan Cauliflower Pizza 30 min<br /><br />
             </p>
           </div>
           <img src="./images/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Vegan Cauliflower Pizza" />
@@ -37,7 +36,7 @@ const PersonalisedMeal = () => {
         </div>
         <div className="meal-card">
           <div className="meal-text">
-            <p>Roasted veggies with peanut sauce 55 min
+            <p>Roasted veggies with peanut sauce 55 min<br /><br />
             </p>
           </div>
           <img src="./images/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt="Roasted Veggies with peanut sauce" />

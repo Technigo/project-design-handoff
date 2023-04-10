@@ -214,13 +214,14 @@ margin-top: -24px;
 .personalised-meal-container {
   background-color: #D0C4B8;
 padding-bottom: 24px;
-padding: 24px;
+margin-top: -24px;
+
 }
 
 .personalised-meal-container h1 {
   color: #02393F;
   font-family: 'Libre Baskerville';
-  padding: 24px;
+padding: 24px;
 }
 
 .personalised-meal-container p {
@@ -285,12 +286,15 @@ width: 304px;
 height: 402px;
 border-radius: 12px;
 box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+position: relative;
 }
 
 .price-plan-btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
 }
 
 .footer-container {
@@ -622,9 +626,6 @@ padding-bottom: 48px;
     align-items: center;
   }
 
-  .meal-text-buddha {
-    padding-top: 15px;
-  }
 
   .price-plan-container {
     background-color: #D69A2A;
@@ -662,12 +663,15 @@ padding-bottom: 48px;
   height: 402px;
   border-radius: 12px;
   box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
   }
   
   .price-plan-btn {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; /* Add this */
+    position: absolute;
+    bottom: 24px;
+    width: 100%;
   }
   
   .footer-container {
@@ -1102,12 +1106,16 @@ line-height: 20px;
   height: 402px;
   border-radius: 12px;
   box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+  margin-left: 40px;
+  position: relative;
 }
 
 .price-plan-btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: center; /* Add this */
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
 }
 
 .footer-container {

@@ -18,7 +18,7 @@ const OnlineYoga = () => {
         centerMode
         swipeable
         showArrows={false}
-        centerSlidePercentage={33}
+        centerSlidePercentage={50}
         showIndicators={false}>
         <div className="movie-card">
           <div className="movie-text">
