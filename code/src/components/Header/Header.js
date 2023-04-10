@@ -4,7 +4,7 @@ import { Button } from '../Button';
 import { StyledHeader, StyledHeaderDiv, HeaderTitle } from './Header.styled';
 import heroVideo from '../../assets/hero-video.mp4';
 
-export const Header = ({ title }) => {
+export const Header = () => {
   return (
     <StyledHeader>
       <video autoPlay loop muted>
@@ -12,7 +12,7 @@ export const Header = ({ title }) => {
       </video>
       <NavBar />
       <StyledHeaderDiv>
-        <HeaderTitle className="header">{title}</HeaderTitle>
+        <HeaderTitle className="header">OUTDOOR WORKOUT</HeaderTitle>
         <Button headerCta>Join us today!</Button>
       </StyledHeaderDiv>
     </StyledHeader>

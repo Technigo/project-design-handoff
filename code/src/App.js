@@ -2,8 +2,8 @@ import React from 'react';
 import { NavBar } from 'components/Navbar/Navbar';
 import { Header } from 'components/Header/Header';
 // import { Hero } from 'components/Hero/Hero';
-// import { Intro } from 'components/Intro/Intro';
-// import { Classes } from 'components/WorkoutClasses/Classes';
+import { Intro } from 'components/Intro/Intro';
+import { Classes } from 'components/Classes/Classes';
 // import { SignUp } from 'components/SignUp';
 // import { Book } from 'components/Book/Book';
 // import { Review } from 'components/Review';
@@ -16,11 +16,11 @@ export const App = () => {
     <>
       <NavBar />
       {/* <GlobalStyles /> */}
-      <Header title="OUTDOOR WORKOUT" />
-      {/* <main>
-        <Intro />
-        <Classes />
-        <SignUp />
+      <Header />
+      {/* <main>  */}
+      <Intro />
+      <Classes />
+      {/* <SignUp />
         <Book />
         <Review />
         <Connect />
