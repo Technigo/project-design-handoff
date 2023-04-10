@@ -1,106 +1,151 @@
 import styled from 'styled-components';
 
-export const StyledNavbar = styled.div`
-  .mobile-logo {
+export const StyledNavBar = styled.nav`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+`;
+
+export const HeaderLogo = styled.img`
+  @media (max-width: 667px) {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  @media (min-width: 668px) {
+    display: none;
+  }
+`;
+
+export const HeaderLogoFull = styled.img`
+  @media (max-width: 667px) {
     display: none;
   }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-    color: var(--neutralBlack);
-    z-index: 1;
+  @media (min-width: 668px) {
+    width: 180px;
+    height: 77px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 97px;
+    top: 20px;
+    left: 20px;
+  }
+`;
+
+export const UlElements = styled.ul`
+  display: flex;
+
+  @media (max-width: 667px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
-  nav a {
-    margin: 0px 1.5rem;
+  @media (min-width: 668px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+`;
+
+export const LiElements = styled.li`
+  list-style-type: none;
+  margin: 3px;
+
+  a {
+    display: block;
+    padding: 10px;
     color: var(--neutralBlack);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 24px;
     text-decoration: none;
-    font-size: 20px;
-  }
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--neutralBlack);
+    &:hover {
+      text-decoration: underline 3px var(--primaryPink);
+    }
 
-  nav a:hover {
-    text-decoration: underline var(--primaryPink) 2px;
-  }
+    @media (min-width: 668px) {
+      text-transform: none;
+      border-bottom: none;
+      margin-top: 30px;
+      &:active {
+        color: var(--primaryPink);
+      }
+    }
 
-  header .nav-btn {
-    padding: 5px;
-    cursor: pointer;
+    @media (min-width: 668px) {
+      display: flex;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+      line-height: 29px;
+    }
+  }
+`;
+
+export const ToggleButton = styled.button`
+  display: none;
+
+  @media (max-width: 667px) {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
     background: transparent;
     border: none;
+    cursor: pointer;
     outline: none;
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    font-size: 1.8rem;
+    z-index: 10;
   }
+`;
 
-  @media screen and (max-width: 820px) {
-    .desktop-logo {
+export const CloseIcon = styled.img`
+  color: var(--neutralBlack);
+`;
+
+export const MenuIcon = styled.img`
+  color: var(--neutralBlack);
+`;
+
+export const MenuNav = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 667px) {
+    position: fixed;
+    right: 0;
+    width: 40%;
+    min-height: 60vh;
+    overflow: hidden;
+    background-color: var(--neutralWhite);
+    z-index: 9;
+    transition: all 0.5s ease-in-out;
+    ${(props) => !props.isOpen
+      && `
       display: none;
-    }
-
-    .mobile-logo {
-      display: inline;
-    }
-
-    header nav {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 100%;
-    }
+    `}
   }
 
-  @media screen and (max-width: 640px) {
-    header .nav-btn {
-      visibility: visible;
-      opacity: 1;
-      color: var(--neutralBlack);
-    }
+  @media (min-width: 668px) {
+    justify-content: flex-end;
+    margin-right: 25px;
+  }
 
-    header nav {
-      color: var(--neutralBlack);
-      background-color: var(--primaryWhite);
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 243px;
-      padding: 160px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      transition: 0.5s;
-      transform: translateY(-100vh);
-    }
-
-    header .responsive_nav {
-      transform: none;
-      background-color: var(--primaryWhite);
-      text-transform: uppercase;
-    }
-
-    nav .nav-close-btn {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-
-    nav a {
-      font-size: 1.5rem;
-    }
-
-    .logo-img {
-    }
+  @media (min-width: 1024px) {
+    justify-content: center;
+    margin-right: 0;
   }
 `;

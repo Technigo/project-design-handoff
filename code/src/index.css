@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
 :root {
@@ -19,4 +18,22 @@
   --neutralWhite: #fff;
   --neutralGrey: #525252;
   --neutralRed: #f80a0a;
+  --fontFamily: 'Inter', sans-serif;
+  --fontSize: 16px;
+}
+
+html {
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily);
+  color: var(--neutralBlack);
+}
+
+button {
+  color: var(--neutralBlack);
+}
+
+header,
+section,
+footer {
+  padding: 10px;
 }
