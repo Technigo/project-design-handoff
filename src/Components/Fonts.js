@@ -16,22 +16,25 @@ margin-bottom: 56px;
 export const BigBlackTitle = styled.h1`
 font-size: 50px;
 color: black;
+padding-bottom: 45px;
 `
 
 export const YellowTitle = styled.h2`
 font-size: 24px;
+font-weight: 500;
+line-height: 27px;
 color: #FF9F0A;
+
+@media (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 36px;
+}
 `
 
 export const SmallBlackTitle = styled.h3`
-font-size: 50px;
+font-size: 24px;
 font-weight: bold;
 color: black;
-`
-
-export const WhiteParagraph = styled.p`
-font-size: 16px;
-color: white;
 `
 
 export const BlueParagraph = styled.p`
@@ -39,21 +42,17 @@ font-size: 16px;
 color: #89D6E8;
 `
 
-export const BigWhiteParagraph = styled.p`
-font-size: 24px;
+export const WhiteParagraph = styled.p`
+font-size: 16px;
 color: white;
-`
+font-weight: 400;
+line-height: 20px;
+padding-top: 8px;
 
-export const CTABtnText = styled.h2`
-font-size: 24px
-font-weight: semi-bold;
-background-color: #FF9F0A;
-width: fit-content;
-padding: 12px 50px;
-border-radius: 20px;
-justify-content: center;
-color: black;
-margin-bottom: 8px;
+@media (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 28px;
+}
 `
 
 export const NavLinks = styled.p`
