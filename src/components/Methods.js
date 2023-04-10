@@ -1,7 +1,12 @@
 import React from 'react';
 import '../index.css';
 
-const Methods = ({ title, img1, img2, img3, img4, img1Title, img2Title, img3Title, img4Title }) => {
+import img1 from '../images/Icon-1.png'
+import img2 from '../images/Icon-2.png'
+import img3 from '../images/Icon-3.png'
+import img4 from '../images/Icon-4.png'
+
+const Methods = ({ title, img1Title, img2Title, img3Title, img4Title }) => {
   return (
     <section className="methods-section">
       <div className="methods-container">

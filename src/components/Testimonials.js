@@ -1,8 +1,12 @@
 import React from 'react';
 import '../index.css';
 
+import img1 from '../images/Test-1.png'
+import img2 from '../images/Test-2.png'
+import img3 from '../images/Test-3.png'
+
 // eslint-disable-next-line max-len
-const Testimonial = ({ title, backgroundImg, img1, img2, img3, img1Title, img2Title, img3Title, img1Subtitle, img2Subtitle, img3Subtitle, buttonText, onClick }) => {
+const Testimonial = ({ title, backgroundImg, img1Title, img2Title, img3Title, img1Subtitle, img2Subtitle, img3Subtitle, buttonText, onClick }) => {
   const testimonialBackground = {
     backgroundImage: `url(${backgroundImg})`
   };

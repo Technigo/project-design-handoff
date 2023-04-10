@@ -1,4 +1,7 @@
 import React from 'react';
+
+import HeroImg from '../images/HeroImg.png'
+
 import Hero from './Hero';
 import Motivation from './Motivation';
 import Program from './Program';
@@ -7,29 +10,22 @@ import Testimonials from './Testimonials';
 import Methods from './Methods';
 import Footer from './Footer';
 import Header from './Header';
-// import heroImage from ''
+
 // import backgroundImage from ''
 
 const WebPage = () => {
-  const planButtonsTexts = [
-    { line1: 'Pre-selected', line2: '0 CHF' },
-    { line1: '3 months plan', line2: 'XX CHF' },
-    { line1: '6 months plan', line2: 'XX CHF' },
-    { line1: '12 months plan', line2: 'XX CHF' }
+  const plans = [
+    { title: 'Pre-selected', amount: '0 CHF' },
+    { title: '3 months plan', amount: 'XX CHF' },
+    { title: '6 months plan', amount: 'XX CHF' },
+    { title: '12 months plan', amount: 'XX CHF' }
   ];
 
   return (
     <div>
-      <Header
-        // img1="https://example.com/image1.jpg"
-        // img2="https://example.com/image2.jpg"
-        // img3="https://example.com/image3.jpg"
-        // img4="https://example.com/image4.jpg"
-        // img5="https://example.com/image5.jpg"
-        // img6="https://example.com/image6.jpg"
-      />
+      <Header />
       <Hero
-        // heroImage={heroImage}
+        heroImage={HeroImg}
         title="Becoming a fit parent"
         subtitle="Say Goodbye to Excuses and Hello to Results with Our Online Fitness Program for Busy Parents."
         buttonText="Start trial"
@@ -37,9 +33,6 @@ const WebPage = () => {
       <Motivation
         // backgroundImg="https://example.com/background.jpg"
         title="How we get you in shape:"
-        // img1="https://example.com/image1.jpg"
-        // img2="https://example.com/image2.jpg"
-        // img3="https://example.com/image3.jpg"
         img1Title="Keep at it - even on the worse days"
         img2Title="Do it when ever where ever you want"
         img3Title="Push it but with caution"
@@ -47,7 +40,6 @@ const WebPage = () => {
         img2Subtitle="With our science-proofed hacks you will not stay behind"
         img3Subtitle="Our experienced team knows everything about Rectus stasis, C-section and..."
         shortText="Choose your program" />
-      {/* icon="https://example.com/icon.jpg" */}
       <Program
         title="Find your program"
         img1Title="Active in Pregnancy"
@@ -61,7 +53,7 @@ const WebPage = () => {
       <Plan
         title1="Choose your plan"
         title2="Become a fit parent"
-        buttonsTexts={planButtonsTexts}
+        plans={plans}
         buttonText="Create account"
         finishingText="Already have an account? Login"
         onClick={() => console.log('Button clicked!')} />

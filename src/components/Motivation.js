@@ -1,8 +1,13 @@
 import React from 'react';
 import '../index.css';
 
+import img1 from '../images/Motivation-1.png'
+import img2 from '../images/Motivation-2.png'
+import img3 from '../images/Motivation-3.png'
+import icon from '../images/Read-more.png'
+
 // eslint-disable-next-line max-len
-const Motivation = ({ title, backgroundImg, img1, img2, img3, img1Title, img2Title, img3Title, img1Subtitle, img2Subtitle, img3Subtitle, shortText, icon }) => {
+const Motivation = ({ title, backgroundImg, img1Title, img2Title, img3Title, img1Subtitle, img2Subtitle, img3Subtitle, shortText }) => {
   const motivationBackground = {
     backgroundImage: `url(${backgroundImg})`
   };

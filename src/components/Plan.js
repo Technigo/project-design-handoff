@@ -2,15 +2,15 @@
 import React from 'react';
 import '../index.css'
 
-const Plan = ({ title1, title2, buttonsTexts, buttonText, finishingText, onClick }) => {
+const Plan = ({ title1, title2, plans, buttonText, finishingText, onClick }) => {
   return (
     <section className="plan-section">
       <h2>{title1}</h2>
       <div className="plan-buttons">
-        {buttonsTexts.map((text) => (
-          <button type="button" key={text} className="plan-button">
-            <span className="plan-button-line1">{text.line1}</span>
-            <span className="plan-button-line2">{text.line2}</span>
+        {plans.map((plan) => (
+          <button type="button" key={plan.title} className="plan-button">
+            <span className="plan-button-line1">{plan.title}</span>
+            <span className="plan-button-line2">{plan.amount}</span>
           </button>
         ))}
       </div>

@@ -1,8 +1,15 @@
 import React from 'react';
 import '../index.css';
 
+import img1 from '../images/Program-1.png'
+import img2 from '../images/Program-2.png'
+import img3 from '../images/Program-3.png'
+import img4 from '../images/Program-4.png'
+import img5 from '../images/Program-5.png'
+import img6 from '../images/Program-7.png'
+
 // eslint-disable-next-line max-len
-const Program = ({ title, img1, img2, img3, img4, img5, img6, img1Title, img2Title, img3Title, img4Title, img5Title, img6Title, buttonText, onClick }) => {
+const Program = ({ title, img1Title, img2Title, img3Title, img4Title, img5Title, img6Title, buttonText, onClick }) => {
   return (
     <section className="program-section">
       <div className="program-container">
