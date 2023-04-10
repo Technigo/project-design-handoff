@@ -133,7 +133,7 @@ export const InnerContainer = styled.div`
 
   @media (min-width: 768px) and (max-width: 1023px) {
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: 60vh;
+    grid-template-rows: 672px;
     gap: 40px;
   }
 
