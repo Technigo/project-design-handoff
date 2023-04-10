@@ -201,10 +201,12 @@ export const TextOnImageContainer = styled(InnerContainer)`
   position: absolute;
   left: 0;
   bottom: 0;
+  display: flex;
   padding: ${(props) => (props.workoutstext ? '40px' : '20px')};
   gap: ${(props) => (props.workouts ? '20px' : '8px')};
   justify-content: ${(props) => (props.workoutstext ? 'space-between' : '')};
-  
+  align-items: center;
+
   @media (max-width: 768px) {
     max-width: ${(props) => (props.maxwidth ? '70%' : '')};
     display: flex;
