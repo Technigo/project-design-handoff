@@ -90,6 +90,7 @@ const CarouselContainer = styled.div`
 display:flex;
 position:relative;
 top:65.6%;
+max-width:100%;
 
 @media (min-width: 768px) {
   display: none;

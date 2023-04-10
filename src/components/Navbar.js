@@ -103,7 +103,7 @@ const Menu = styled.div`
     transition: all 0.3s ease-in-out;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 769px) {
     display: flex;
     position: relative;
     width:fit-content;
@@ -142,7 +142,9 @@ const Link = styled.a`
       background-color: #ccc;
     }
   }
-
+  @media (min-width: 769px) {
+    font-size:21px;
+  }
   @media (min-width: 1024px) {
     font-size:28px;
   }
