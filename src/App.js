@@ -1,12 +1,13 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { ImageSlider } from 'ReviewSlider'
-import Navbar from 'Navbar'
-import { Benefits } from 'Benefits';
-import Contacts from 'Contacts';
-import { Hero } from 'Hero';
-import { Membership } from 'Membership';
-import { Article } from 'Article';
+import { ImageSlider } from 'Components/Reviews'
+import { Navbar } from 'Components/Navbar'
+import { Benefits } from 'Components/Benefits';
+import Contacts from 'Components/Contacts';
+import { Hero } from 'Components/Hero';
+import { Membership } from 'Components/Membership';
+import { Article } from 'Components/Article';
+import { Footer } from 'Components/Footer';
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
       <Article />
       <ImageSlider />
       <Contacts />
+      <Footer />
     </>
   )
 }
