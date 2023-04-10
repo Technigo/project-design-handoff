@@ -15,8 +15,8 @@ export const Header = styled.header`
     padding: 42px 42px;
   }
 
-  @media (max-width: 768px) {
-    padding: 43px 32px;
+  @media (max-width: 668px) {
+    padding: 43px 40px;
   }
 `
 
