@@ -38,8 +38,8 @@ export const HeroContainer = styled.div`
   }
 
   @media (max-width: 668px) {
+    top: 120px;
     left: 40px;
-    top: 100px;
     gap: 70px;
   }
 `
