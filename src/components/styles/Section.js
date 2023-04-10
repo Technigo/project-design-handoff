@@ -266,25 +266,6 @@ export const IconContainer = styled.div`
   }
 `
 
-export const ImgContainer = styled.div`
-  height: ${(props) => (props.height || '100%')};
-  height: ${(props) => (props.position || '')};
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    height: ${(props) => (props.workoutsbox ? '672px' : '726px')};
-    width: ${(props) => (props.workoutsbox ? '100%' : '')};
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    border-radius: 30px;
-  }
-
-  @media (max-width: 768px) {
-    height: ${(props) => (props.workoutsbox ? '672px' : '')};
-    width: ${(props) => (props.workoutsbox ? '100%' : '')};
-  }
-`
-
 export const ImgCardSmall = styled.div`
   height: 100%;
   width: 100%;
