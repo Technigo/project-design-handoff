@@ -15,15 +15,12 @@
 
 .top-nav {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: auto 1fr; 
   flex-direction: row;
-  align-items: center;
   justify-content: flex-end;
   background: transparent;
   padding: 1em;
-  height: 40px;
-  padding: 16px;
-  margin-top: 0px;
+  margin-left: 2em;
   position: absolute;
   top: 0;
   right: 0;
