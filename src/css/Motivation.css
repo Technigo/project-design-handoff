@@ -1,0 +1,70 @@
+.container {
+    background-image: url('/public/assets/Section.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FBEDDE;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+
+.container h2 {
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 45px;
+/* identical to box height, or 94% */
+letter-spacing: -0.24px;
+color: #FBEDDE;
+margin-bottom: 100px;
+}
+
+.motivation-section{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+margin-bottom: 80px;
+}
+
+.card{
+display: flex;
+flex-direction: column;
+margin: 10px;
+width: 500px;
+}
+
+.card img {
+    max-width: 100%;
+height: auto;
+max-height: 300px; /* Set a maximum height for the images to prevent them from getting too large */
+margin: 10px;
+}
+
+h3{
+display: flex;
+align-items: flex-start;
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+/* or 100% */
+color: #FBEDDE;
+margin-bottom: -30px;
+}
+
+h4{
+display: flex;
+align-items: flex-start;
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 32px;
+/* or 100% */
+color: #FBEDDE;
+text-decoration: underline;
+}
