@@ -27,11 +27,11 @@ export const TextInput = styled.input`
   padding: 5px 15px;
   font-size: 18px;
 
-  &:focus {
+    &:focus {
       outline: 2px solid #A99BD1;
       border: none;
       border-radius: 8px;
-  }
+    }
 
    @media (max-width: 768px) {
     height: 48px;

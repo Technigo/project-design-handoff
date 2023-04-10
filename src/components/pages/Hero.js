@@ -21,7 +21,7 @@ export const Hero = () => {
   window.addEventListener('scroll', showNavBar);
 
   return (
-    <Wrapper hero id="#sectionOne">
+    <Wrapper hero id="#sectionOne" height="812px">
       <ImageHero />
       <Header>
         <Logo src="./assets/easyfit-desktop.png" />
