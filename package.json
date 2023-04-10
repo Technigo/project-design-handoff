@@ -10,8 +10,15 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "flickity": "^3.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-simply-carousel": "^8.5.5",
+    "react-slick": "^0.29.0",
+    "save": "^2.9.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.9"
   },
   "scripts": {
     "start": "react-scripts start",
