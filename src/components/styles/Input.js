@@ -60,6 +60,10 @@ export const OrText = styled.p`
     width: 148px;
     background: #222322;
     height:1px;
+   
+    @media (max-width: 768px) {
+    width: 120px;
+    }
   }
 
     &:before {
@@ -69,6 +73,10 @@ export const OrText = styled.p`
     background: #222322;
     height:1px;
     margin: 5px 10px;
+
+    @media (max-width: 768px) {
+    width: 120px;
+    }
   }
 `
 

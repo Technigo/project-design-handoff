@@ -21,7 +21,7 @@ export const Hero = () => {
   window.addEventListener('scroll', showNavBar);
 
   return (
-    <Wrapper id="#sectionOne">
+    <Wrapper hero id="#sectionOne">
       <ImageHero />
       <Header>
         <Logo src="./assets/easyfit-desktop.png" />
@@ -35,7 +35,7 @@ export const Hero = () => {
       </Header>
       <HeroContainer>
         <InnerContainer hero gap="48px">
-          <TextContainer flexcolumn maxwidth>
+          <TextContainer hero flexcolumn maxwidth>
             <Tagline hero>FEEL THE DIFFERENCE</Tagline>
             <Headline1>Healthy made easy</Headline1>
             <BodyText white>

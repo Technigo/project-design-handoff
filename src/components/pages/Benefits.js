@@ -16,7 +16,7 @@ export const CardBenefit = ({ color, img, headlineTitle, bodyText }) => {
 
 export const Benefits = () => {
   return (
-    <Wrapper id="#sectionTwo" height="100%">
+    <Wrapper benefits id="#sectionTwo" height="100%">
       <OuterContainer>
         <Tagline>BENEFITS</Tagline>
         <Headline2>Healthy doesn&apos;t have to be hard. We make it easy

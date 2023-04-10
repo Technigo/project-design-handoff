@@ -12,11 +12,15 @@ export const Wrapper = styled.div`
   @media (min-width: 768px) and (max-width: 1023px) {
     height: ${(props) => (props.height || '100vh')};
     padding: 24px;
+    margin-bottom: ${(props) => (props.hero ? '24px' : '128px')};
+    margin-top: ${(props) => (props.benefits ? '128px' : '')};
   }
 
   @media (max-width: 768px) {
     height: ${(props) => (props.height || '100vh')};
     padding: 16px;
+    margin-bottom: ${(props) => (props.hero ? '24px' : '128px')};
+    margin-top: ${(props) => (props.benefits ? '128px' : '')};
   }
 `
 
@@ -26,16 +30,17 @@ export const HeroContainer = styled.div`
   top: 200px;
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 7vh;
 
   @media (min-width: 668px) and (max-width: 1023px) {
     left: 128px;
+    gap: 4vh;
   }
 
   @media (max-width: 668px) {
     left: 40px;
-    top: 150px;
-    gap: 40px;
+    top: 101px;
+    gap: 4vh;
   }
 `
 export const OuterContainer = styled.div`
@@ -63,6 +68,10 @@ export const InnerContainer = styled.div`
 
   ${(props) => props.hero && css`
     flex-direction: column;
+
+    @media (max-width: 768px) {
+      gap: 3vh;
+    }
   `}
 
   ${(props) => props.benefits && css`
@@ -160,7 +169,7 @@ export const CardsContainer = styled.div`
     align-items: flex-start;
 
     @media (max-width: 768px) {
-    padding: 0 32px;
+    padding: 0 16px;
     }
   `}
 `
@@ -214,6 +223,7 @@ export const TextContainer = styled.div`
 
   @media (max-width: 768px) {
     max-width: ${(props) => (props.maxwidth ? '70%' : '')};
+    gap: ${(props) => (props.hero ? '10px' : '')};
   }
 `
 

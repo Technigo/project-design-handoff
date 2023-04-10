@@ -47,6 +47,12 @@ export const NavBlack = styled.nav`
         right: 0;
         margin: auto;
         z-index: 999;
+
+
+  @media (max-width: 768px) {
+    width: 320px;
+    padding-right: 18px;
+  }
 `
 
 export const NavLink = styled.a`
