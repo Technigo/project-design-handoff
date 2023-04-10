@@ -16,7 +16,7 @@ const AcrobaticsContainer = styled.div`
   display: flex;
   flex-direction:column;
   height: fit-content;
-  width: 100vw;
+  max-width: 100vw;
   background-image: url(${acroBg});
   background-repeat: no-repeat;
   background-size: cover;

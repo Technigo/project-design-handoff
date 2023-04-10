@@ -131,7 +131,7 @@ const ContactInfoDiv = styled.div`
 `;
 
 const SocialMedia = styled.img`
-  width: 44.9%;
+  width: 40.9%;
   height: 3.5%;
   margin-top:15%;
 
@@ -143,7 +143,7 @@ const SocialMedia = styled.img`
 const BrandsDiv = styled.div`
   display: flex; 
   flex-direction:column;
-  width: 25.7%;
+  width: 20.7%;
   gap:2rem; 
 
   @media (min-width: 768px) {
@@ -152,7 +152,7 @@ const BrandsDiv = styled.div`
 }
 
   @media (min-width: 1024px) {
-      width: 25%;
+      width: 20%;
   }
 `;
 

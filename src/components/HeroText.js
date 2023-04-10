@@ -7,6 +7,7 @@ const HeroTextWrapper = styled.div`
   flex-direction:row;
   justify-content:space-between;
   max-width: 100vw;
+  overflow-x: hidden;
   
   @media (min-width: 768px) {
     display: none;
