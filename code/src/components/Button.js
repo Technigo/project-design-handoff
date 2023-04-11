@@ -1,9 +1,5 @@
 import styled, { css } from 'styled-components';
 
-// The props object is being used to conditionally apply
-// CSS styles based on the value of for example `props.headerCta`.
-// If `headerCta` is truthy, the following styles will be applied
-
 export const Button = styled.button`
   display: flex;
   flex-direction: row;
