@@ -58,6 +58,8 @@ export const Main = () => {
   return (
     // <Slider {...settings}>
     <FlexCard>
+      {/* <Title
+        pageTitle="Take easy steps to your desired lifestyle" /> */}
       <CustomerCard
         title="Fill the simple form"
         text="Fill the primary questionnaire and we will contact you to know more about your health condition, fitness background and your special needs. The information is valuable to find your best matched coach!"

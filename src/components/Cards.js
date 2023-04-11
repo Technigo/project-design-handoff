@@ -8,12 +8,21 @@ width: 320px;
 height: 382.5px;
 border-radius: 30px;
 padding: 20px;
+font-family: 'Helvetica Neue';
 
   @media only screen and (max-width: 767px) {
     width: 100%;
     height: auto;
   }
 `;
+
+const PageTitle = styled.h2`
+font-family: 'Helvetica Neue';
+`;
+
+export const Title = ({ pageTitle }) => {
+  return <PageTitle>{pageTitle}</PageTitle>;
+};
 
 const ReviewTitle = styled.h3`
 color: #000;
@@ -48,4 +57,3 @@ export const CustomerCard = ({ customerImage, title, text }) => {
     </CardContainer>
   );
 };
-
