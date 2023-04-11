@@ -1,0 +1,76 @@
+.primary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    padding: 16px 24px 16px 24px;
+    background: #FFD9BF;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.primary-button:visited {
+    background-color: #FFB685;
+}
+
+.primary-button:disabled {
+    background-color: #F3F4F8;
+}
+
+.our-classes-button {
+    display: none;
+    /*justify-content: center;
+    align-items: center;
+    height: 46px;
+    padding: 16px 24px 16px 24px;
+    background: #FFD9BF;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;*/
+}
+
+.our-classes-button:hover,
+.our-classes-button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.our-classes-button:visited {
+    background-color: #FFB685;
+}
+
+.our-classes-button:disabled {
+    background-color: #F3F4F8;
+}
+
+@media (min-width: 668px) {
+    
+    .our-classes-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 46px;
+        padding: 16px 24px 16px 24px;
+        background: #FFD9BF;
+        border: none;
+        border-radius: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+    }    
+
+}

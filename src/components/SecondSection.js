@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageCarousel from './ImageCarousel';
 
 const SecondSection = () => {
   return (
@@ -7,7 +8,9 @@ const SecondSection = () => {
         <p className="join-us-paragraph">Join our full-body workout inspired by ballet, pilates and yoga.</p>
         <button className="primary-button" type="button">Join Us!</button>
       </div>
-      <div>image goes here</div>
+      <div className="second-section-image-container">
+        <img src="src/assets/barre-with-rubber-bands.png" alt="barre with rubber bands" className="second-section-image" />
+      </div>
       <div className="come-sweat-container">
         <h1 className="h1-second-section">Come Sweat It Out at the Barre</h1>
         <p className="second-section-paragraph">
@@ -16,9 +19,12 @@ const SecondSection = () => {
           <br />
           <span className="span-bolder">No dance experience required!</span>
         </p>
-        <button className="primary-button" type="button">Our classes button?</button>
+        <button className="our-classes-button" type="button">Our Classes</button>
       </div>
-      <p>... Image carousel goes here ...</p>
+      <div className="card-carousel">
+        <img src="src/assets/card-barre-basic.svg" alt="barre basic information" className="single-card" />
+      </div>
+      <ImageCarousel />
     </section>
   );
 }

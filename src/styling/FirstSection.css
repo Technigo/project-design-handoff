@@ -3,7 +3,7 @@
     flex-direction: column;
     /*justify-content: center;*/
     align-items: center;
-    background-image: url("/assets/hero-hands-on-barre.svg");
+    background-image: url("/src/assets/hero-hands-on-barre.svg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 528px;
