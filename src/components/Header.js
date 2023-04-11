@@ -24,13 +24,12 @@ color: white;
 font-size: 25px;
 position: absolute;
 margin-top: 200px;
-
 `
 const KnowMoreText = styled.h1`
 color: white;
 font-size: 16px;
 position: absolute;
-margin-top: 350px;
+margin-top: 580px;
 `
 
 const Header = () => {

@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AboutSection = styled.div`
+display:none;
 background-color: #2E160E;
 height: 305px;
 `
@@ -15,6 +16,8 @@ const Text = styled.p`
 color: white;
 font-size: 16px;
 `
+
+
 
 const About = () => {
   return (
