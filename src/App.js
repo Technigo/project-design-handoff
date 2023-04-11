@@ -1,9 +1,16 @@
 import React from 'react'
+import Header from 'components/Header.styled'
+import GlobalStyle from 'components/GlobalStyle'
+import BenefitSection from 'components/BenefitSection'
+import BenefitCards from 'components/Cards'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
+    <>
+      <GlobalStyle />
+      <Header />
+      <BenefitSection />
+      <BenefitCards />
+    </>
+  );
 }
