@@ -32,7 +32,7 @@ const ArticleContainer2 = styled.div`
   background-color: #FFFFFF;
 
   @media (min-width: 992px) {
-    display: flex; 
+    display: flex;
     flex-direction: row;
   }
 `;

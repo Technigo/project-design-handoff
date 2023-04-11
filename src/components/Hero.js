@@ -81,7 +81,7 @@ export const Hero = () => {
       <img className="hero-img" src={heroImage} alt="Person doing yoga" />
       <Heading>Breath in breath out</Heading>
       <Text>Yogistudio offers an overall concept in self-healing
-         with a focus on calm and therapeutic forms of yoga.
+        with a focus on calm and therapeutic forms of yoga.
       </Text>
       <Button type="button" id="bookAClass">Book a class</Button>
     </div>
