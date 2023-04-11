@@ -54,6 +54,7 @@ export const Button = styled.button`
       color: var(--neutral-light);
       padding: 12px 30px;
       gap: 10px;
+
       &:active {
         background-color: var(--secondaryBlue);
       }
@@ -66,6 +67,7 @@ export const Button = styled.button`
       padding: 12px 30px;
       width: 50%;
       background: var(--primaryYellow);
+
       &:active {
         background-color: var(--secondaryYellow);
       }

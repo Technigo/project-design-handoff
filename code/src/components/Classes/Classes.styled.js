@@ -78,6 +78,7 @@ export const YellowRoundButton = styled.button`
   bottom: 50%;
   transform: translateY(50%);
   cursor: pointer;
+
   &:focus {
     outline: none;
   }
@@ -108,6 +109,7 @@ export const ClassCardContainer = styled.div`
 
   @media (min-width: 1024px) {
     box-shadow: none;
+
     &:hover {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
