@@ -14,6 +14,7 @@ export const FlexCard = styled.div`
    @media only screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
   }
 `;
 
