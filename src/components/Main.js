@@ -1,16 +1,16 @@
 /* eslint-disable max-len */
-// /* eslint-disable react/jsx-props-no-spreading */
-// import React from 'react';
-// import styled from 'styled-components';
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react';
+import styled from 'styled-components';
 // import Slider from 'react-slick';
-// import { CustomerCard } from './Cards';
-// import cardImage from '../assets/card-image.svg';
+import { CustomerCard } from './Cards';
+import cardImage from '../assets/card-image.svg';
 
-// export const FlexCard = styled.div`
-// display: flex;
-// background-color: #D7CBFF;
-// gap: 30px;
-// `;
+export const FlexCard = styled.div`
+  display: flex;
+  background-color: #D7CBFF;
+  gap: 30px;
+`;
 
 // const settings = {
 //   dots: true,
@@ -42,29 +42,26 @@
 //         slidesToScroll: 1
 //       }
 //     }
-//     You can unslick at a given breakpoint now by adding:
-//     settings: "unslick"
-//     instead of a settings object
 //   ]
 // };
 
-// export const Main = () => {
-//   return (
-//     <Slider {...settings}>
-//       <FlexCard>
-//         <CustomerCard
-//           title="Fill the simple form"
-//           text="Fill the primary questionnaire and we will contact you to know more about your health condition, fitness background and your special needs. The information is valuable to find your best matched coach!"
-//           customerImage={cardImage} />
-//         <CustomerCard
-//           title="Fill the simple form"
-//           text="Fill the primary questionnaire and we will contact you to know more about your health condition, fitness background and your special needs. The information is valuable to find your best matched coach!"
-//           customerImage={cardImage} />
-//         <CustomerCard
-//           title="Fill the simple form"
-//           text="Fill the primary questionnaire and we will contact you to know more about your health condition, fitness background and your special needs. The information is valuable to find your best matched coach!"
-//           customerImage={cardImage} />
-//       </FlexCard>
-//     </Slider>
-//   )
-// }
+export const Main = () => {
+  return (
+    // <Slider {...settings}>
+    <FlexCard>
+      <CustomerCard
+        title="Fill the simple form"
+        text="Fill the primary questionnaire and we will contact you to know more about your health condition, fitness background and your special needs. The information is valuable to find your best matched coach!"
+        customerImage={cardImage} />
+      <CustomerCard
+        title="Fill the simple form"
+        text="Fill the primary questionnaire and we will contact you to know more about your health condition, fitness background and your special needs. The information is valuable to find your best matched coach!"
+        customerImage={cardImage} />
+      <CustomerCard
+        title="Fill the simple form"
+        text="Fill the primary questionnaire and we will contact you to know more about your health condition, fitness background and your special needs. The information is valuable to find your best matched coach!"
+        customerImage={cardImage} />
+    </FlexCard>
+    // </Slider>
+  )
+}

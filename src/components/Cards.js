@@ -18,7 +18,7 @@ color: #000;
 `;
 
 const CustomerImage = styled.img`
-border: solid #000;
+display: block;
 `;
 
 export const CustomerCard = ({ customerImage, title, text }) => {
