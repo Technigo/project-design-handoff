@@ -29,7 +29,7 @@ export const TextInput = styled.input`
 
     &:focus {
       outline: none;
-      caret-color: black;
+      caret-color: #A99BD1;
     }
 
     &:hover {
