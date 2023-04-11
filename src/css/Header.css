@@ -11,10 +11,10 @@ body {
     background-color: #F2FDFF;
   }
 
-  .navBar {
+  /* .navBar {
     display: flex;
     flex-direction: row;
-  }
+  } */
   
   .logo {
     margin-top: 12px;

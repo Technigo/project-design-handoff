@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import '../css/Intro.css';
 
@@ -8,9 +10,7 @@ const Intro = () => {
     <div className="intro">
       <div className="imageContainer">
         <img className="heroImage" src={HeroHandsonBarre} alt="Hands on barre" />
-        <div className="imageOverlay">
           <h1 className="mobileTitle">Raise the Barre With Us!</h1>
-        </div>
       </div>
       <div className="presentation">
         <p>Join our full-body workout inspired by Ballet, Pilates, and Yoga.</p>

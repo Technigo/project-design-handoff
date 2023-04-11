@@ -10,8 +10,7 @@ const Overview = () => {
       <div className="overviewContainer">
         <img className="overviewImage" src={Pictureframehalfpill} alt="Ribbons hanging from a barre" />
         <img className="vectorShape" src={Blob1Mobile} alt="Decorative element" />
-        <div className="information" />
-        <div>
+        <div className="information">
           <h2>Come Sweat It Out at the Barre</h2>
           <p>Our Barre Classes are full-body workouts where we’ll pulse, plié, and sweat our way</p>
           <p>through a series of exercises.</p>

@@ -6,7 +6,7 @@ import Selection from 'components/Selection.js';
 import Quiz from 'components/Quiz.js';
 import Reviews from 'components/Reviews.js';
 import Form from 'components/Form.js';
-import Footer from 'components/Footer.js'
+import Footer from 'components/Footer.js';
 
 export const App = () => {
   return (
