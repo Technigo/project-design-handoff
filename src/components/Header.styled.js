@@ -108,7 +108,7 @@ const Header = () => {
       </SecondHeaderText>
       <SecondHeaderText>Looking to put the Power in power jam?
         Land that apex? Brace for days? With fit2Derbys
-      <Highlight> customised online off skate programs for roller derby players, </Highlight>
+        <Highlight> customised online off skate programs for roller derby players, </Highlight>
         a full time jam will feel like a breeze!
       </SecondHeaderText>
       <TextOnGreen mobile>Choose between our

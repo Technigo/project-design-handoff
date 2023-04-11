@@ -12,5 +12,5 @@ export const App = () => {
       <BenefitSection />
       <BenefitCards />
     </>
-  )
+  );
 }

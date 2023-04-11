@@ -24,9 +24,6 @@ height: 100%;
     position: relative;
     margin-top: 1rem;
     flex-direction: row-reverse;
-  
-   
-
 
 // Tablet 
 @media(min-width: 1024px) {
