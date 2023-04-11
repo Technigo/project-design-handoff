@@ -16,4 +16,8 @@ const NBI = styled.div`
 display: flex;
 gap: 34px;
 justify-content: flex-end;
+
+img {
+  cursor: pointer;
+}
 `

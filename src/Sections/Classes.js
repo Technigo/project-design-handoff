@@ -6,7 +6,7 @@ import { ClassesSlider } from '../Components/ClassesSlider';
 import DownArrow from '../Assets/Icons/DownArrow.svg';
 
 const ClassesDiv = styled.div`
-height: 370px;
+height: 350px;
 display: flex;
 flex-direction: column;
 text-align: center;
