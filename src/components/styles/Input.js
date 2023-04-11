@@ -18,8 +18,8 @@ export const Label = styled.label`
 `
 export const TextInput = styled.input`
   background: #FFFFFF;
-  border: none;
-  outline: 1px solid #222322;
+  border: 1px solid #222322;
+  outline: none;
   border-radius: 8px;
   height: 64px;
   width: 100%;
@@ -28,14 +28,15 @@ export const TextInput = styled.input`
   font-size: 18px;
 
     &:focus {
-      outline: 2px solid #A99BD1;
-      border: none;
-      border-radius: 8px;
+      outline: none;
+    }
+
+    &:hover {
+      border: 2px solid #A99BD1;
     }
 
    @media (max-width: 768px) {
     height: 48px;
-    border-radius: 8px;
   }
 `
 export const TextInputBox = styled.div`
