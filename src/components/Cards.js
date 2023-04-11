@@ -22,7 +22,7 @@ color: #000;
     font-size: 1.2rem;
   }
 `;
-const ReviewText = styled.h3`
+const ReviewText = styled.p`
     color: #000;
 
  @media only screen and (max-width: 767px) {
