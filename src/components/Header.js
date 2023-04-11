@@ -50,7 +50,7 @@ padding-left: 2rem;
 @media screen and (max-width: 768px) {
     width: 100%;
     padding: 0 3rem; /* Add padding to adjust the spacing */
-    flex-direction: column; /* Display as a column */
+    flex-direction: column; 
     align-items: flex-end;
     color: #E3F7FC;
     transform: translateX(-40%);
@@ -164,13 +164,16 @@ const ActiveTrainers = styled.span`
  flex-grow: 1;
 `;
 
+// Define a component called Title that accepts a prop called "text"
 const Title = ({ text }) => {
   return (
     <StyledTitle>{text}</StyledTitle>
   );
 };
 
+// Define a component called Description that accepts a prop called "text"
 const Description = ({ text }) => {
+  // Render a StyledDescription component with the "text" prop as its content
   return (
     <StyledDescription>{text}</StyledDescription>
   );
