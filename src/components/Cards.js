@@ -8,17 +8,35 @@ width: 320px;
 height: 382.5px;
 border-radius: 30px;
 padding: 20px;
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const ReviewTitle = styled.h3`
 color: #000;
+
+@media only screen and (max-width: 767px) {
+    font-size: 1.2rem;
+  }
 `;
 const ReviewText = styled.h3`
-color: #000;
+    color: #000;
+
+ @media only screen and (max-width: 767px) {
+    font-size: 1rem;
+  }
 `;
 
 const CustomerImage = styled.img`
-display: block;
+ display: block;
+
+ @media only screen and (max-width: 767px) {
+    font-size: 1rem;
+    height: auto;
+  }
 `;
 
 export const CustomerCard = ({ customerImage, title, text }) => {

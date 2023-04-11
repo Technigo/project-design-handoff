@@ -10,6 +10,11 @@ export const FlexCard = styled.div`
   display: flex;
   background-color: #D7CBFF;
   gap: 30px;
+
+   @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 // const settings = {
