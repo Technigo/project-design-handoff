@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components';
 
+// The props object is being used to conditionally apply
+// CSS styles based on the value of for example `props.headerCta`.
+// If `headerCta` is truthy, the following styles will be applied
+
 export const Button = styled.button`
   display: flex;
   flex-direction: row;
@@ -15,10 +19,11 @@ export const Button = styled.button`
   ${(props) => props.headerCta
     && css`
       background-color: var(--primaryYellow);
-      color: var(--neutral-dark);
+      color: var(--neutralBlack);
       font-size: 2rem;
       padding: 8px 55px;
       width: 100%;
+
       &:active {
         background-color: var(--secondaryYellow);
       }
@@ -37,6 +42,7 @@ export const Button = styled.button`
       background-color: var(--primaryYellow);
       align-self: center;
       width: 100%;
+
       &:active {
         background-color: var(--secondaryYellow);
       }
