@@ -1,13 +1,16 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+For this project I had to bring to life a design by a UX designer student at Technigo's bootcamp. The main focus was to use react styled components. The site was a landing page for an acrobatics gym.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The challenge was mainly regarding positioning the sections of the page according to the Figma design. 
+To make the page responsive all measuremtns needed to be calculated and converted to relative units. 
+
+I also tried the react-resposive-carousel package to implement an image carousel on the page. 
+
+I drew help from documentation, stackOverflow and other team mates.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://design-handoff-joannaphilips.netlify.app/
