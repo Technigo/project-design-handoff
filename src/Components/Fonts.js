@@ -55,6 +55,13 @@ padding-top: 8px;
 }
 `
 
+export const ReviewParagraph = styled.p`
+font-size: 16px;
+color: white;
+font-weight: 600;
+line-height: 26px;
+`
+
 export const NavLinks = styled.p`
 font-size: 16px;
 color: white;
