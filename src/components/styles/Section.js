@@ -5,9 +5,6 @@ export const Wrapper = styled.div`
   padding: 32px;
   box-sizing: border-box;
 
-  @media (min-width: 768px) and (max-width: 1440px) {
-    height: ${(props) => (props.height || '100vh')};
-  }
 
   @media (min-width: 768px) and (max-width: 1023px) {
     height: ${(props) => (props.height || '100vh')};
