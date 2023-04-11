@@ -125,7 +125,7 @@ export const SignUpInput = styled.input`
   border: solid 1px var(--neutralBlack);
   box-sizing: border-box;
   &::placeholder {
-    color: var(--neutral-dark);
+    color: var(--neutralBlack);
   }
   &:focus {
     outline: none;
