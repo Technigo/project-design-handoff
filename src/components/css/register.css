@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Kulim+Park&display=swap');
+
+
+.register-container{
+	background-color:#B9F615;
+}
+
+.titlereg{
+	font-family: 'Kulim Park', sans-serif;	
+	
+	padding: 20px;
+	text-align: center;
+	font-size: 40px;
+}
+.form{
+	background-color: rgba(255, 255, 255, 0.9);
+	margin: 20px;
+	padding: 20px;
+	
+}
+
+.input{
+	border: #074EE8 solid 1.52px;
+	border-radius: 15.2151px;
+	font-family: 'Kulim Park', sans-serif;
+	height: 44px;
+width: 251px;
+left: 53px;
+top: 2711.55859375px;
+margin-bottom: 10px;
+
+}
+
+.formBtn{
+	background-color: #FA005B;
+	border: none;
+	color: white;
+	border-radius: 15.2569px;
+	font-family: 'Kulim Park', sans-serif;
+	height: 36.5px;
+width: 73px;
+margin-left: 85px;
+
+
+
+}

@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Kulim+Park&display=swap');
+
+p {
+  font-family: 'Kulim Park', sans-serif;
+}
+
+.hero-wrapper {
+display: flex;
+flex-direction: column;
+  }
+
+.Header{
+position: absolute;
+}
+.startPicture{
+	width: 100%;
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+	
+  .hero-container{
+	display: flex;
+	flex-direction: column;
+
+  }
+  .goBeyond {
+    color: #B9F615;
+    font-family: 'Kulim Park';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 8rem;
+	position: absolute;
+	top: 52%;
+	left: 22%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+  }
+
+  .goBeyond1 {
+    color: #B9F615;
+    z-index: 2;
+ font-family: 'Kulim Park';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+	position: absolute;
+    top: 77%;
+    left: 21%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+  }
+.Thelimits{
+	display: flex;
+}
+  .goBeyond2 {
+	display: inline;
+    color: #B9F615;
+    font-family: 'Kulim Park';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+	position: absolute;
+	top: 82%;
+    left: 25%;
+	transform: translate(-50%, -50%);
+  }
+
+  .goBeyond3{
+	display: inline;
+	color: #B9F615;
+    z-index: 2;
+    font-family: 'Kulim Park';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+	margin-top: 0;
+	margin-left: 40px;
+	position: absolute;
+	top: 86.9%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+  }
+  
+  .hero-paragraph {
+	padding: 60px;
+	text-align: center;
+  }
+  
+  .hero-paragraph p {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+  }
+  
+  .joinButton {
+	font-size: 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 6.6rem;
+  position: absolute;
+  top: 57vh;
+
+  }
+  
+
+
+/*Tablet*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+ {
+	.hero-container {
+		display: flex;
+		justify-content: flex-end;
+		
+	  }
+	  
+	  .goBeyond {
+		color: #B9F615;
+		position: absolute;
+		left: 53%;
+		top: 28%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .goBeyond1 {
+		color: #B9F615;
+		position: absolute;
+		left: 63%;
+		top: 38%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .goBeyond2 {
+		color: #B9F615;
+		position: absolute;
+		left: 73%;
+		top: 48%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .goBeyond3 {
+		color: #B9F615;
+		position: absolute;
+		left: 83%;
+		top: 58%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 402px;
+		height: 326px;
+		font-family: 'Kulim Park';
+		font-style: italic;
+		font-weight: bold;
+		font-size: 7rem;
+	  }
+	  
+	  .hero-paragraph {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		background-color: rgba(0, 0, 0, 0.5);
+	  }
+
+}
+
+
+
+
+
+
+/*desktop*/
+@media screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1600px) 
+  { 
+
+.hero-container {
+	display: flex;
+	justify-content: flex-end;
+	
+  }
+  
+  .goBeyond {
+	color: #B9F615;
+	position: absolute;
+	left: 53%;
+	top: 28%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 402px;
+	height: 326px;
+	font-family: 'Kulim Park';
+	font-style: italic;
+	font-weight: bold;
+	font-size: 7rem;
+  }
+  
+  .goBeyond1 {
+	color: #B9F615;
+	position: absolute;
+	left: 63%;
+	top: 38%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 402px;
+	height: 326px;
+	font-family: 'Kulim Park';
+	font-style: italic;
+	font-weight: bold;
+	font-size: 7rem;
+  }
+  
+  .goBeyond2 {
+	color: #B9F615;
+	position: absolute;
+	left: 73%;
+	top: 48%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 402px;
+	height: 326px;
+	font-family: 'Kulim Park';
+	font-style: italic;
+	font-weight: bold;
+	font-size: 7rem;
+  }
+  
+  .goBeyond3 {
+	color: #B9F615;
+	position: absolute;
+	left: 83%;
+	top: 58%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 402px;
+	height: 326px;
+	font-family: 'Kulim Park';
+	font-style: italic;
+	font-weight: bold;
+	font-size: 7rem;
+  }
+  
+  .hero-paragraph {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
+}

@@ -1,0 +1,45 @@
+.footer-container{
+	
+	background-color: #42403C;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footLogo{
+	display: grid;
+	grid-template-columns: 1fr;
+margin: 45px;
+	
+	justify-content: center;
+	justify-items: center;
+}
+.contactUs{
+	color: #B9F615;
+}
+.contact {
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFF;
+	text-align: center;
+}
+.phone{
+	color: #FFF;
+}
+
+.soMe{
+	width: 60vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.sponsor{
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 2vh;
+  margin-bottom: 20px;
+
+}
