@@ -11,15 +11,12 @@ export const Community = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors }
   } = useForm();
 
   const onSubmit = (data) => {
     alert(JSON.stringify(data));
   };
-
-  console.log(watch('example')); // watch input value by passing the name of it
 
   return (
     <>
@@ -39,17 +36,17 @@ export const Community = () => {
         <input 
           {...register('firstName', { required: true, maxLength: 20, pattern: /^[A-Öa-ö]+$/i })} />
           </fieldset>
-          {errors?.firstName?.type === 'required' && ( <Error>⚠ This field is required</Error> )}
-          {errors?.firstName?.type === 'maxLength' && ( <Error>⚠ First name cannot exceed 20 characters</Error> )}
-          {errors?.firstName?.type === 'pattern' && ( <Error>⚠ Alphabetical characters only</Error> )}
+          {errors?.firstName?.type === 'required' && (<Error>⚠ This field is required</Error>)}
+          {errors?.firstName?.type === 'maxLength' && (<Error>⚠ First name cannot exceed 20 characters</Error>)}
+          {errors?.firstName?.type === 'pattern' && (<Error>⚠ Alphabetical characters only</Error>)}
           <fieldset>
         <legend>Last name</legend>
         <input 
           {...register('lastName', { required: true, maxLength: 20, pattern: /^[A-Öa-ö]+$/i })} />
           </fieldset>
-          {errors?.lastName?.type === 'required' && ( <Error>⚠ This field is required</Error> )}
-          {errors?.lastName?.type === 'maxLength' && ( <Error>⚠ Last name cannot exceed 20 characters</Error> )}
-          {errors?.lastName?.type === 'pattern' && ( <Error>⚠ Alphabetical characters only</Error> )}
+          {errors?.lastName?.type === 'required' && (<Error>⚠ This field is required</Error>)}
+          {errors?.lastName?.type === 'maxLength' && (<Error>⚠ Last name cannot exceed 20 characters</Error>)}
+          {errors?.lastName?.type === 'pattern' && (<Error>⚠ Alphabetical characters only</Error>)}
           <fieldset>
         <legend>Email</legend>
         <input type="email" 

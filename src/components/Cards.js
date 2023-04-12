@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BodyText, H1, H4 } from 'style/Texts';
+import { ViewMoreButton } from 'style/ButtonsStyle';
 
 const BgImg = styled.div`
-    margin: 16px;
-    repeat: no-repeat;
-    width: 100%;
     height: 100vh;
+    width: 100%;
+    margin-bottom: 16px;
     border-radius: 30px;
     background-size: cover;
     background-position: center top;
@@ -15,7 +15,6 @@ const BgImg = styled.div`
     `
 
 const BgColor = styled.div`
-    margin: 16px;
     repeat: no-repeat;
     overflow: hidden;
     height: 100%;
@@ -23,6 +22,7 @@ const BgColor = styled.div`
     border-radius: 30px;
     object-fit: cover;
     padding: 32px;
+    margin-top: 16px;
     border: none;
     display: block;
 `
@@ -30,6 +30,12 @@ const BgColor = styled.div`
 const TextWrapper = styled.div`
     position: absolute;
     bottom: 20px;
+    margin: 32px;
+`
+
+const TextWrapperVideo = styled.div`
+    position: absolute;
+    bottom: 10%;
     margin: 32px;
 `
 
@@ -41,6 +47,19 @@ export const Card = ({ color, imgSrc, headline, text }) => {
         <H4 color="#fff">{headline}</H4>
         <BodyText color="#fff">{text}</BodyText>
       </TextWrapper>
+    </BgImg>
+  )
+}
+
+export const CardVideo = ({ color, imgSrc, headline, text, button }) => {
+  return (
+    <BgImg
+      style={{ backgroundImage: `linear-gradient(17deg, ${color} 16%, rgba(255, 255, 255, 0) 54%), url(${imgSrc})`, repeat: 'no-repeat' }}>
+      <TextWrapperVideo>
+        <H4 color="#fff">{headline}</H4>
+        <BodyText color="#fff">{text}</BodyText>
+      </TextWrapperVideo>
+      <ViewMoreButton color="#222322" bg="#FFFFFF">{button}</ViewMoreButton>
     </BgImg>
   )
 }

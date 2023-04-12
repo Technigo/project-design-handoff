@@ -34,3 +34,10 @@ export const SubmitButton = styled(Button)`
     margin: 20px 0;
     padding: 22px 10px;
 `
+
+export const ViewMoreButton = styled(Button)`
+    width: 70vw;
+    position: absolute;
+    bottom: 20px;
+    left: 15%;
+`

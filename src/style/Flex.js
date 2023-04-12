@@ -15,7 +15,7 @@ export const FlexColumn = styled.div`
     position: absolute;
     gap: 12px;
     padding: 32px;
-    margin: 16px;
+    margin: 0 auto;;
 `
 
 export const FlexColumnCenter = styled.div`
