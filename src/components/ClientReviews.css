@@ -1,0 +1,72 @@
+
+.client-reviews-container {
+    background-color: #D7CBFF;
+    width: 390px;
+    height: 800px;
+  }
+
+.client-conatiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h3 {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: #03092E; 
+}
+
+h2 {
+color: #03092E;
+width: 336px;
+height: 138px;
+left: 12px;
+top: 6px;
+
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 50px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -1px;
+}
+
+p1 {
+width: 262px;
+height: 168px;
+
+font-style: italic;
+font-weight: 700;
+font-size: 15px;
+line-height: 28px;
+display: flex;
+align-items: center;
+color: #03092E;
+padding: 22px;
+margin-top: 33px;
+margin-bottom: 60px;
+}
+
+.slider-container-client{
+  width: 320px;
+  margin: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  background-color: white;
+}
+
+/*----- hide default arrows ----- */
+
+.slider-container-client .slick-prev:before,
+.slider-container-client .slick-next:before {
+  content: none;
+}
+
+

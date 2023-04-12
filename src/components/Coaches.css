@@ -1,0 +1,67 @@
+.coaches-container{
+    width: 390px;
+    height: 403px;
+}
+
+.coaches-container h2{
+ 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #03092E;
+    margin-top: -15px;
+    width: 300px;
+    margin-left: 20px;
+}
+    
+  .cards-coach {
+    position: relative;
+    right:5%;
+    }
+ 
+   
+.slider-coach .slick-dots {
+    position: absolute;
+    bottom: 0; 
+    left: 49%; 
+    transform: translateX(-50%); 
+   
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-coach .slick-dots li {
+    margin-right: 12px; /* gap in the dots */
+  }
+
+  .slider-coach .slick-dots li button:before {
+    content: "";
+    position: absolute;
+    width: 20px; 
+    height: 20px; 
+    background-color: #62CABC; 
+    border-radius: 50%;
+    opacity: 0.8; 
+  }
+  
+  .slider-coach .slick-dots li.slick-active button:before {
+    background-color: #082824; 
+  }
+  
+  .slider-coach{
+    width: 250px;
+    padding-left: 60px;
+    margin-top: -35px;
+  }
+
+  .coach-image5 {
+    padding: 30px;
+  }
+  
