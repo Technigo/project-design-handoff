@@ -29,7 +29,7 @@ background-color: salmon;
 export const NavbarInnerContainer = styled.div`
 width: 100%;
 height: 80px;
-flex: display;
+flex: display; /*WRONG?!*/
 `;
 
 export const NavbarLinkContainer = styled.div`

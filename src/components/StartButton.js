@@ -10,6 +10,7 @@ padding: 5px 16px;
 font-style: italic;
 &:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.1);
 }
 ${(props) => props.outlined && css`
 background-color: transparent;

@@ -1,21 +1,36 @@
 import React from 'react';
+import GlobalStyles from 'styles/Global';
 import Navbar from 'components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Hero } from 'components/Hero/Hero';
+import { ThemeProvider } from 'styled-components';
+import { TheBenefits } from 'components/TheBenefits/TheBenefits';
 import Footer from './components/Footer';
+
+const theme = {
+  colors: {
+    header: '#ebfbff',
+    body: '#fff',
+    footer: '#00333'
+  }
+}
 
 export const App = () => {
   return (
-    <Router>
-      <Navbar />
-      <Hero />
-      <Routes>
-        <Route path="/" />
-        <Route path="/products" />
-        <Route path="/contact" />
-        <Route path="/about" />
-      </Routes>
-      <Footer />
-    </Router>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Router>
+        <Navbar />
+        <Hero />
+        <Routes>
+          <Route path="/" />
+          <Route path="/products" />
+          <Route path="/contact" />
+          <Route path="/about" />
+        </Routes>
+        <TheBenefits />
+        <Footer />
+      </Router>
+    </ThemeProvider>
   )
 }
