@@ -105,6 +105,13 @@ button {
   height: 3.6rem;
   font-weight: 700;
   font-size: 1.1rem;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  background-color: #a99bd1;
+  cursor: pointer;
 }
 
 /* ---- Main navigation ---- */
@@ -316,6 +323,50 @@ button {
 /* ---- Sign Up form ---- */
 .create-account-button {
   background-color: #dcd2f1;
+  border-radius: 8px;
+  width: 97%;
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-basis: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+fieldset {
+  border-radius: 8px;
+  border: 1px solid #2e2e34;
+  width: 93vw;
+}
+
+fieldset label {
+  padding: 6px;
+}
+
+fieldset input {
+  width: 100%;
+  border: none;
+  margin: 5px 0;
+}
+form span::before {
+  content: url(./assets/images/Icon.svg);
+  padding: 5px;
+}
+form span {
+  vertical-align: middle;
+  color: red;
+}
+
+.divider {
+  display: flex;
+}
+p .line {
+  display: block;
+  width: 140px;
+  height: 0;
+  border: 1px solid #222322;
 }
 
 /* ---- Sticky Nav ---- */
