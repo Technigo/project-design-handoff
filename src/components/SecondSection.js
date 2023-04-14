@@ -1,5 +1,6 @@
 import React from 'react';
-import ImageCarousel from './ImageCarousel';
+
+import card1 from '../assets/card-barre-basic.svg';
 
 const SecondSection = () => {
   return (
@@ -21,10 +22,9 @@ const SecondSection = () => {
         </p>
         <button className="our-classes-button" type="button">Our Classes</button>
       </div>
-      <div className="card-carousel">
-        <img src="src/assets/card-barre-basic.svg" alt="barre basic information" className="single-card" />
+      <div className="barre-card-container">
+        <img src={card1} alt="barre basic information" className="barre-card-basic" />
       </div>
-      <ImageCarousel />
     </section>
   );
 }

@@ -9,6 +9,8 @@ import './styling/FirstSection.css'
 import './styling/SecondSection.css'
 import './styling/ThirdSection.css'
 import './styling/FourthSection.css'
+import './styling/FormSection.css'
+
 import { App } from './App'
 
 ReactDOM.render(<App />, document.getElementById('root'))

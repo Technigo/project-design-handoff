@@ -74,6 +74,12 @@
     color: #252525;
 }
 
-.single-card {
+.barre-card-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.barre-card-basic {
     width: 248px;
+    margin-left: 16px;
 }

@@ -1,10 +1,13 @@
 import React from 'react';
 
+import logoImage1 from '../assets/logo-small-light-background.svg'
+import hamburgerImage from '../assets/hamburger-menu.svg'
+
 const NavBar = () => {
   return (
     <section className="navbar-container">
-      <img src="../assets/logo-small-light-background.svg" alt="logo" className="nav-logo" />
-      <img src="../assets/hamburger-menu.svg" alt="hamburger menu" className="hamburger-menu" />
+      <img src={logoImage1} alt="logo" className="nav-logo" />
+      <img src={hamburgerImage} alt="hamburger menu" className="hamburger-menu" />
     </section>
   );
 }
