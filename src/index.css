@@ -5,9 +5,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #E2E2E2;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 730px;
+}
+
+.hero-img {
+  width: 147%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 744px) {
+  .hero-wrapper {
+    height: 872px;
+  }
+  .hero-img {
+    /*width: 134%;*/
+    display: none;
+  }
+  .parent-container {
+    background-image: url(.//assets/Hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1.5rem;
+    /*background-position: center center;*/
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero-wrapper {
+    height: 1022px;
+  }
+  .hero-img {
+    width: 100%;
+  }
 }
