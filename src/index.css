@@ -11,3 +11,100 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.header-section {
+  background-color:#7034E4;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.header-logo img {
+  height: 2rem;
+}
+
+.header-logo {
+  flex: 1;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger {
+  text-align: right;
+  flex: 1;
+}
+
+.hero-container {
+  height: 40rem;
+  margin-top: 0;
+  margin-left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero-content {
+  text-align: center;
+  color: beige;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.motivation-section {
+  background-color: #28282b;
+  color: beige;
+}
+
+.program-section {
+  background-color: white;
+}
+
+.plan-section {
+  background-color: #28282b;
+  color: beige;
+}
+
+.testimonial-section {
+  background-color: #344840;
+  color: #e4a195;
+}
+
+.methods-section {
+  background-color: #e4a195;
+  color: #344840;
+}
+
+.footer-container {
+  background-color: #7034E4;
+  color: beige;
+}
+
+.footer-col-1 img {
+  height: 2rem;
+}
+
+.footer-links1 {
+  text-decoration: underline;
+}
+
+.footer-links2 {
+  text-decoration: underline;
+}
+

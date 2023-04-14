@@ -1,9 +1,13 @@
 import React from 'react'
 
+import Webpage from './components/Webpage';
+
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <Webpage />
     </div>
   )
 }
+
+export default App;

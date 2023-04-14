@@ -23,7 +23,8 @@
     }
   },
   "plugins": [
-    "react-hooks"
+    "react-hooks",
+    "import"
   ],
   "rules": {
     "react/function-component-definition": [
@@ -50,12 +51,12 @@
     "curly": "error",
     "eol-last": "off",
     "import/extensions": "off",
-    "import/no-extraneous-dependencies": "off",
-    "import/no-unresolved": "off",
-    "import/prefer-default-export": "off",
+    "import/no-named-default": "error",
+    "import/order": ["error", {"newlines-between": "always"}],
+    "import/prefer-default-export": "warn",
     "indent": [
-      "error",
-      2,
+    "error",
+    2,
       {
         "SwitchCase": 1
       }
@@ -126,6 +127,10 @@
     "react/jsx-indent": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "semi": "off"
+    "semi": "off",
+
+    "import/no-commonjs": 0,
+    "import/no-dynamic-require": "off",
+    "global-require": "off"
   }
 }
