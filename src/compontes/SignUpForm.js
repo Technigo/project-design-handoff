@@ -83,10 +83,10 @@ const SignUpForm = () => {
                   aria-invalid={errors.password ? 'true' : 'false'}
                   {...register('password', { required: true, maxLength: 30 })}
                 />
-                {errors.password && errors.password.type === 'required' && (
-                  <span role="alert">This is required</span>
-                )}
               </fieldset>
+              {errors.password && errors.password.type === 'required' && (
+                <span role="alert">This is required</span>
+              )}
             </div>
 
             <button type="submit" className="create-account-button">
@@ -97,7 +97,13 @@ const SignUpForm = () => {
             </p>
           </form>
           <div>
-            <p>---Or---</p>
+            <div className="divider">
+              <p>
+                <span className="line" />
+                Or
+                <span className="line" />
+              </p>
+            </div>
             <button type="button">Sign in with Apple</button>
             <button type="button">Sign in with Google</button>
           </div>
