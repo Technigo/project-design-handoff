@@ -45,6 +45,9 @@ code {
   height: 40rem;
   margin-top: 0;
   margin-left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .hero-content {
