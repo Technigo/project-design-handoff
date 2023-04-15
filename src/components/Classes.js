@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -30,22 +30,35 @@ margin-top: 50px;
 `
 
 export const Classes = () => {
-  let slidesToShow = 1.1;
-  let slidesToScroll = 1;
-  let dots = false;
-  let arrows = true;
+  const [slidesToShow, setSlidesToShow] = useState(1.1);
+  const [slidesToScroll, setSlidesToScroll] = useState(1);
+  const [dots, setDots] = useState(false);
+  const [arrows, setArrows] = useState(true);
 
-  if (window.innerWidth > 1023) {
-    slidesToShow = 4;
-    slidesToScroll = 4;
-    dots = false;
-    arrows = false;
-  } else if (window.innerWidth > 667) {
-    slidesToShow = 2.1;
-    slidesToScroll = 2;
-    dots = false;
-    arrows = true
-  }
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1023) {
+        setSlidesToShow(4);
+        setSlidesToScroll(4);
+        setDots(false);
+        setArrows(false);
+      } else if (window.innerWidth > 667) {
+        setSlidesToShow(2.1);
+        setSlidesToScroll(2);
+        setDots(false);
+        setArrows(true)
+      } else {
+        setSlidesToShow(1.1);
+        setSlidesToScroll(1);
+        setDots(false);
+        setArrows(true);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+  })
 
   const settings = {
     dots,
@@ -61,16 +74,16 @@ export const Classes = () => {
         <TextDiv>
           <Detailtext>OUR CLASSES</Detailtext>
           <TitleSection>
-          WE HAVE SOMETHING
-          FOR EVERYONE
+            WE HAVE SOMETHING
+            FOR EVERYONE
           </TitleSection>
           <Pbold>
-        Three different levels. Read more
+            Three different levels. Read more
           </Pbold>
         </TextDiv>
         <SliderWrapper>
           <Slider {...settings}>
-            <CardDiv>
+            <CardDiv style={{ width: '90%;' }}>
               <Imagewrapper>
                 <CardImage src={ClassesCardio} alt="two people jogging outdoors" />
               </Imagewrapper>
@@ -78,7 +91,7 @@ export const Classes = () => {
                 <div>
                   <CardTitle>CARDIO</CardTitle>
                   <Pregular>Focuses on different cardio exercises such as jogging,
-          running stairs, jump rope, uphill sprints and more.
+                    running stairs, jump rope, uphill sprints and more.
                   </Pregular>
                 </div>
                 <CardButton><p>Read more</p></CardButton>
@@ -92,8 +105,8 @@ export const Classes = () => {
                 <div>
                   <CardTitle>MODERATE</CardTitle>
                   <Pregular>
-          Classes that everyone can participate in regardless of age,
-           shape or athletic ability.
+                    Classes that everyone can participate in regardless of age,
+                    shape or athletic ability.
                   </Pregular>
                 </div>
                 <CardButton><p>Read more</p></CardButton>
@@ -121,7 +134,7 @@ export const Classes = () => {
                 <div>
                   <CardTitle>HIIT</CardTitle>
                   <Pregular>
-                  Intense interval exercises
+                    Intense interval exercises
                   </Pregular>
                 </div>
                 <CardButton><p>Read more</p></CardButton>

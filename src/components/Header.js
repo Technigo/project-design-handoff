@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import { StyledButtonHeader } from './Button'
+import { StyledButtonHeader, NavToggleButton } from './Button'
 import { Headline1, Headline2, HeaderButtonP } from './Typography'
 import HeroImage from '../images/header-image.jpg'
 import LogoPhone from '../images/phone-logo.svg'
 import NavPhone from '../images/hamburger-icon.svg'
+import CloseNav from '../images/nav-close.svg'
 import LogoBig from '../images/logo-big.svg'
 import HeroVideo from '../images/hero-video.mp4'
 
 const StyledHeader = styled.header`
-
 display:flex;
 flex-direction: column;
 justify-content: space-between;
@@ -122,9 +122,11 @@ export const Header = () => {
         <PhoneNavMedia
           src={LogoPhone}
           alt="logo with a tree" />
-        <PhoneNavMedia
-          src={NavPhone}
-          alt="logo with a tree" />
+        <NavToggleButton onClick={CloseNav}>
+          <PhoneNavMedia
+            src={NavPhone}
+            alt="logo with a tree" />
+        </NavToggleButton>
         <TabletNavMedia img src={LogoBig} alt="logo with a tree" />
         <TabletNavList>
           <li>Pricelist</li>

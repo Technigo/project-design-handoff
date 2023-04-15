@@ -1,6 +1,23 @@
 
 import styled from 'styled-components'
 
+export const NavToggleButton = styled.button`
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+
+    @media (min-width: 668px) {
+      display: none;
+    }
+`
+
 export const StyledButtonHeader = styled.button`
   height: 67px;
   background-color: #FAC75D;

@@ -3,16 +3,18 @@ import nextArrow from '../images/slick-next.jpg'
 import prevArrow from '../images/slick-prev.jpg'
 
 export const SliderWrapper = styled.div`
-display: flex;
-justify-content: center;
-gap: 16px;
-height: 50vh;
-width: 97vw;
 
+@media (min-width: 1024px) {
+  display: flex;
+  justify-content: center;
+}
 .slick-slider {
   width: 95%;
   height: 55vh;
-  padding-left: 16px;
+
+  @media (min-width: 1024px) {
+  padding:unset;
+}
 
   @media (min-width: 1024px) {
     width: 90vw;
@@ -67,6 +69,13 @@ width: 97vw;
 
 }
 
+@media (min-width: 668px) {
+.slick-slide > div {
+  width: 98%;
+  margin: 0 auto;
+}
+}
+
 .slick-track::before, .slick-track::after {
   @media (min-width: 1024px) {
     width: 100vw;
@@ -118,7 +127,8 @@ border-radius: 40px 40px 0px 0px;
 }
 
 @media (min-width: 1024px) {
-  width: 20%;
+  width: 95%;
+  margin: unset;
 }
 `
 export const SingleCardBook = styled(CardDiv)`
@@ -131,6 +141,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px 40px 0px 0px;
+  margin: 0 10px 0 15px;
 }
 `
 
