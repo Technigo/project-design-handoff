@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+
+form {
+    width: 100%;
+}
+
+fieldset:hover {
+    border: 1px solid #A99BD1;
+}
+
+fieldset {
+    border: 1px solid #222322;
+    border-radius: 8px; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-family: 'Karla' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131%;
+    letter-spacing: -0.022em;
+    color: #222322;
+}
+
+input {
+    margin: 2px;
+    border: none;
+    background: #FFFFFF;
+}
+
+input:focus {
+    outline:none;
+}
