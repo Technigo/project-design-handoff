@@ -30,8 +30,9 @@ const MemberShipContainer = styled.div`
 `;
 
 const SliderItemContainer = styled.div`
-  width: 288.54px;
-  height: 427.34px;
+  /* width: 288px;
+  height: 427px; */
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,8 +77,10 @@ const Content = styled.p`
 
 `;
 export const Image = styled.img`
-  width: 288.54px;
-  height: 201.05px;
+  /* width: 288.54px;
+  height: 201.05px; */
+  width: auto;
+  height: 100vh;
   object-fit: cover;
   border-radius: 16.8246px;
   @media (min-width: 992px){
@@ -249,10 +252,11 @@ const Class = styled.div`
     border-radius: 16.8246px;
     margin: 15px;
   }
+   &:hover {
+    transform: scale(1.1);
+  }
   
-}
 `
-
 export const Membership = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -322,12 +326,6 @@ export const Membership = () => {
             <Button type="button">Buy Now</Button>
           </Class>
        </ClassWrapper> 
-       <ArrowButtonLeft onClick={handlePrevClick}>
-        <img src={Leftarrow} alt="left"/>
-       </ArrowButtonLeft>
-       <ArrowButtonRight onClick={handleNextClick}>
-        <img src={Rightarrow} alt="right"/>
-       </ArrowButtonRight>
     </OptionalContainer>
     </>
   );

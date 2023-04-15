@@ -7,6 +7,9 @@ export const article = [
   { header: 'Guide for beginners', paragraf: 'Join our growing community and let us support your well-being. If you are a beginner and do not dare to try yoga because you think you are too stiff and immobile for some of the positions, then you have come to the right place!' },
   { header: 'Yoga retreat ', paragraf: 'This is not just a yoga retreat, meditation course or wellness trip – it is a complete experience for body and soul. Our concept is designed to, togetherwith yoga and meditation and other exciting spiritual tools, allow you to explore movement, emotions, stillness and above all – yourself.' }
 ]
+const ArticleSection = styled.div`
+  margin-bottom: 10%;
+`
 const ArticleContainer1 = styled.div`
   width: 100vw;
   height: auto;
@@ -129,11 +132,6 @@ const ArticleWrapper = styled.div`
   }
 `
 
-const ArticleSection = styled.div`
- 
- 
-`
-
 export const Article = () => {
   return (
     <ArticleSection>
@@ -153,8 +151,8 @@ export const Article = () => {
       <ArticleContainer2>
         <ArticleWrapper>
           <ContentBox>
-            <Header>{article[0].header}</Header>
-            <Paragraf>{article[0].paragraf}</Paragraf>
+            <Header>{article[1].header}</Header>
+            <Paragraf>{article[1].paragraf}</Paragraf>
           </ContentBox>
           <Button type="button">Read more</Button>
         </ArticleWrapper>
