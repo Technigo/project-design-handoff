@@ -1,6 +1,6 @@
 # Design Handoff
 
-This was a build done by Sima Boreiri who designed a webpage in mobile tablet and desktop. I built it as best as I could using React and a variety of different styled components. 
+This was a design done by Sima Boreiri who gave me a figma file with specifications for the website in mobile, tablet and desktop. I built it using React and a variety of different styled components. 
 
 ## The problem
 
