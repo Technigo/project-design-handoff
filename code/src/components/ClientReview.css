@@ -1,0 +1,75 @@
+.client-review-container {
+    background-color: #D7CBFF;
+    width: 100vw;
+    height: 80vh;
+  }
+  
+  .client-review-container h1 {
+  color: #03092E;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:10px;
+  padding:10px;
+  }
+  
+  .client-review-container h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #03092E;
+  position: absolute;
+  top:55%;
+  left:48%;
+  } 
+  
+  .client-review-container p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style:italic;
+    color: #03092E;
+    padding-top:30px;
+    margin-right:10px;
+    margin-left:10px;
+    } 
+  
+  .card {
+    box-shadow: 0px 5px 31px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    justify-content: center;
+    background-color: white;
+    margin-right:20px;
+    margin-left:20px;
+    }
+  
+  .card img {
+    margin: 10px;
+  }
+
+  .Liana{
+    border-radius: 50%;
+  }
+
+  @media (min-width:641px){
+    .client-review-container {
+      height: 55vh;
+    }
+    
+    .card
+  {
+    height: 40vh;
+  }
+  .client-review-container h1 {
+    margin-top:20px;
+  }
+
+}
+
+@media (min-width:1025){
+  .card
+  {
+    height: 45vh;
+  }
+}

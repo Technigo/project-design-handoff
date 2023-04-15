@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: Helvetica Neue,
+    monospace;
+}
+
+.entire-wrapper{
+max-width: 100vw;
+}
+
+.logo{
+  height:2rem;
+}
+
+.tryforfree{
+  border-color:#FF8F3D;
+  border-radius: 10px;
+  border-width: 3px;
+  color:#FF8F3D;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navcomp {
+ opacity: 0;
+ font-size: 0;
+ margin: 0;
+ padding: 0;
+}
+
+
+
+.loading-page-wrapper{
+  width: 100vw;
+
+}
+.hero-img{
+  width: 100vw;
+  margin:0;
+  z-index: -1;
+}
+
+.burger-icon{
+  max-height: 8vh;
+  align-content: right;
+}
+
+.burger-menu{
+  background-color: #03092E;
+  opacity: 0.4;
+}
+
+.menu-item{
+  color:white;
+  font-size: 2rem;
+  padding:10px;
+  text-align:left;
+}
+
+.circle-check{
+  max-width: 1.25rem;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* CSS styles for screens between 641px and 1024px */
+  .navcomp {
+    opacity: 1;
+   }
+   .logo{
+   position: static; 
+    height: 4.5rem;
+    margin-left: 30px;
+   }
+
+}
+
+
+@media (min-width: 1025px){
+  
+  .logo{
+     height: 5rem;
+    }
+}

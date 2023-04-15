@@ -1,0 +1,104 @@
+.NavBar {
+    width:100vw;
+    height: 100px;
+    opacity: 0.9;
+    position: fixed;
+    top: 2%;
+    right:0.5%;
+    z-index: 1;
+  }
+  
+  .NavBar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    display: inline-block;
+    background-color: grey; 
+    position: absolute; 
+    top: 60%; 
+    right: 0; 
+  }
+  
+  .NavBar nav ul li {
+    display: inline-block;
+    margin: 7vw;
+  }
+  
+  .NavBar nav ul li a {
+    text-decoration: none;
+    color: #E3F7FC;
+  }
+  
+  .NavBar a:hover {
+    border-bottom: 5px solid #D7CBFF;
+  }
+  
+  .NavBar .MobileNavigation {
+    display: none;
+  }
+  
+  @media (max-width: 990px) {
+    .NavBar {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .NavBar .Navigation {
+      display: none
+    }
+  
+    .NavBar .MobileNavigation {
+      display: flex;
+      align-items: center;
+    }
+  
+    .NavBar .MobileNavigation .Hamburger {
+      fill: white;
+      position: absolute;
+      right: 5%;
+      cursor: pointer;
+      top: 2%;
+    }
+  
+    .NavBar nav ul {
+      display: flex;
+      flex-direction: column;
+    
+      background-color: grey;
+
+    }
+  
+    .NavBar nav ul li {
+      padding-left: 15%;
+    }
+  
+    .NavBar button {
+      margin-top: 0;
+      padding-top: 0;
+      width: 125px;
+    }
+  
+    .NavBar {
+      opacity: 1;
+    }
+  
+    .MagIcon {
+      margin-right: 25px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    
+
+  }
+  
+  @media (min-width: 700px) {
+    .NavBar nav ul li {
+      display: inline-block;
+      margin: 10px;
+    }
+  }
+  

@@ -1,13 +1,11 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This was a design done by Sima Boreiri who gave me a figma file with specifications for the website in mobile, tablet and desktop. I built it using React and a variety of different styled components. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started with the mobile first and then tried to make it responsive in desktop and tablet. I tried several new npm packages including react-icons, react-multi-carousel, and a new hamburger menu. I was unable to get the npm package for the hamburger menu to work so I rebuilt without. 
 
 ## View it live
+https://jennifers-handoff-project-technigo.netlify.app/
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
