@@ -30,13 +30,13 @@ const MemberShipContainer = styled.div`
 `;
 
 const SliderItemContainer = styled.div`
-  /* width: 288px;
-  height: 427px; */
+  width: 288px;
+  height: 427px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2.52369px solid #025323;
+  border: 3px solid #025323;
   border-radius: 16.8246px;
   margin-bottom: 46px;
 `;
@@ -77,10 +77,8 @@ const Content = styled.p`
 
 `;
 export const Image = styled.img`
-  /* width: 288.54px;
-  height: 201.05px; */
-  width: auto;
-  height: 100vh;
+  width: 284px;
+  height: 201px;
   object-fit: cover;
   border-radius: 16.8246px;
   @media (min-width: 992px){
@@ -100,6 +98,7 @@ const Wrapper = styled.div`
   margin-bottom: 25px;
   @media (min-width: 992px){
     padding-left: 35px;
+
   }
   @media (min-width: 600px){
     padding-left: 30px;
