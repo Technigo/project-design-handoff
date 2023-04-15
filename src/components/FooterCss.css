@@ -1,0 +1,221 @@
+.footer-container {
+    background-color: #95A6B5;
+    height: auto;
+}
+
+.footer-content-wrapper {
+    /*padding: 100px 290px;*/
+    padding: 0;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    border: none;
+    width: 320px;
+    height: 44px;
+    background: #F1F5F9;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    color: #64748B;
+}
+
+.input-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+}
+
+.subscribe-header {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #F0EAE1;
+}
+
+.paragraph {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding-top:20px;
+    padding-bottom: 40px;
+    color: #F0EAE1;
+}
+
+.links-footer {
+    color: #F0EAE1;
+    font-size: .6rem;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.bottom-footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.icons-box {
+    padding-bottom: 2rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: .5rem;
+    padding-left: 1rem;
+}
+
+.ul-footer {
+    gap: .5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem; 
+    list-style: none;
+}
+
+
+.subscribe-container {
+    display: none;
+}
+
+.mobile-buttons-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+
+}
+
+.button-footer {
+    display: block;
+    color: #F0EAE1 !important;
+    height: 2.3rem;
+    width: 6rem;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px !important;;
+    line-height: 19px;
+    color: #95A6B5;
+    text-transform: capitalize;
+    width: 100%;
+
+}
+
+.button-footer:hover {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+
+.primary {
+    background-color: transparent;
+    border: none;
+    background-color: #F35408;
+
+}
+.brighter {
+    background-color: transparent;
+    border: 1px solid #F0EAE1;
+}
+
+@media (min-width:668px) and (max-width:1023px) {
+    .button-submit {
+        background-color: #F35408;
+    }
+    .footer-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .mobile-buttons-container {
+        display: none;
+    }
+
+    .subscribe-container {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        font-family: Roboto;
+        color: #F0EAE1;
+        padding: 5rem 6rem;
+        width: 90%;
+
+    }
+
+    .bottom-footer-container {
+        display: inline-flex;
+        flex-direction: row;
+        padding-top: 100px;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 2rem 6rem;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+
+    .links-footer {
+        color: #F0EAE1;
+        font-size: .5rem;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .mobile-buttons-container {
+        display: none;
+    }
+
+    .footer-content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe-container {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        font-family: Roboto;
+        color: #F0EAE1;
+        width: auto;
+        padding: 5rem 10rem;
+        width: 86%;
+
+    }
+
+    .bottom-footer-container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 100px;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 0rem 10rem;
+    }
+
+    .links-footer {
+        color: #F0EAE1;
+        font-size: .8rem;
+    }
+
+      .icons-box {
+        gap: 4vh;
+
+    }
+
+}
