@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+  /* COLORS */
+  --primary-color: #d7c3e2;
+  --primary-color-a: #e1d2e9;
+  --primary-color-b: #cdb4db;
+  --primary-color-c: #a490af;
+  --primary-color-d: #7b6c83;
+
+  --secondary-color: #bde0fe;
+  --secondary-color-a: #d7ecfe;
+  --secondary-color-b: #97b3cb;
+  --secondary-color-c: #718698;
+
+  --main-light-color: #f9f6fb;
+  --main-mid-color: #4c5a66;
+  --main-dark-color: #131313;
+
+  --color-error: #a91717;
+  --color-success: #22992e;
+}
+
+.App {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+/* --------- MOBILE --------- */
+
+/* Headline 3 */
+h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* Sub headline 3 */
+h2 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* Title 3 */
+h3 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* Body */
+p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+/* Caption */
+p .caption {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 160%;
+  font-weight: 500;
+}
+
+/* BUTTONS */
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px 0px #00000040;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+  
+.mainbutton {
+  color: var(--main-dark-color);
+  background-color: var(--secondary-color);
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 2px solid var(--secondary-color);
+  box-shadow: 0px 2px 4px 0px #00000040;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.mainbutton:hover {
+  border: 2px solid var(--secondary-color-b);
+}
+
+.textbutton {
+  color: var(--main-dark-color);
+  background-color: #E1D2E9;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0px 2px 4px 0px #00000040;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.textbutton:hover {
+  background-color: #CDB4DB;
+}
+
+
+/* --------- TABLET --------- */
+
+@media (min-width: 641px) {
+  /* Headline 2 */
+  h1 {
+    font-size: 40px;
+  }
+
+  /* Sub headline 2 */
+  h2 {
+    font-size: 24px;
+  }
+
+  /* Title 2 */
+  h3 {
+    font-size: 32px;
+  }
+
+  /* Body */
+  p {
+    font-size: 16px;
+  }
+
+  /* Caption */
+  p .caption {
+    font-size: 16px;
+  }
+}
+
+/* --------- DESKTOP --------- */
+
+@media (min-width: 1025px) {
+  /* Headline 1 */
+  h1 {
+    font-size: 64px;
+  }
+
+  /* Sub headline 1 */
+  h2 {
+    font-size: 32px;
+  }
+
+  /* Title 1 */
+  h3 {
+    font-size: 40px;
+  }
+
+  /* Body */
+  p {
+    font-size: 20px;
+  }
+
+  /* Caption */
+  p .caption {
+    font-size: 16px;
+  }
+}
+
+

@@ -1,0 +1,113 @@
+.Header {
+    /*width: calc(100% - 32px);*/
+    /*width: 100vw;*/
+    width: calc(100% - 32px);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 16px;
+    padding: 0;
+  }
+
+  .menu-text {
+    display: flex;
+    gap: 7rem;
+  }
+
+  .menu-text p {
+    cursor: pointer;
+  }
+
+  .search-text {
+    cursor: pointer;
+  }
+
+  .icons img {
+    cursor: pointer;
+  }
+
+  .searchfield {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .searchfield button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: none;
+  }
+
+  .searchfield .searchicon {
+    background-color: white;
+    border-radius: 50%;
+    height: 48px;
+    padding: 8px;
+    z-index: 1;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .searchInputBar {
+    position: relative;
+    padding-left: 20px;
+    right: 25px;
+    height: 48px;
+    border-radius: 16px;
+    border: none;
+    width: 0;
+    visibility: hidden;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .searchfield button:focus-within .searchInputBar {
+    width: 200px;
+    visibility: visible;
+    transition: width 0.3s ease-in-out;
+  }
+
+  /*
+  .searchfield:focus-within .search-text {
+    display: none;
+    transition: width 0.3s ease-in-out;
+  }
+  */
+
+  .searchicon:focus-within {
+    visibility: visible;
+  }
+  
+  @media (min-width: 641px) {
+    .Header {
+    /*width: calc(100% - 64px);
+      width: 100vw;*/
+      width: calc(100% - 64px);
+      margin: 32px 32px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .Header {
+    /*width: calc(100% - 128px);
+    width: 100%;*/
+    width: calc(100% - 128px);
+    margin: 32px 64px;
+    }
+  }
