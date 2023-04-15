@@ -5,6 +5,7 @@ const ContactsWrapper = styled.div`
 background-color: #EBEBEB;
 display: flex;
 flex-direction: column;
+justify-content: center;
 height: 100vh;
 gap: 2.4rem;
 align-items: center;

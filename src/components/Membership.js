@@ -221,6 +221,7 @@ const OptionalContainer = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #EBEBEB;
+  padding: 10% 0;
   }
   @media (max-width: 600px){
     display: none; 
