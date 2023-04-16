@@ -2,19 +2,19 @@ import React from 'react';
 
 import card1 from '../assets/card-barre-basic.svg';
 
-const SecondSection = () => {
+const JoinUsSection = () => {
   return (
-    <section className="second-section-container">
+    <section className="join-us-section-container">
       <div className="join-us-container">
         <p className="join-us-paragraph">Join our full-body workout inspired by ballet, pilates and yoga.</p>
         <button className="primary-button" type="button">Join Us!</button>
       </div>
-      <div className="second-section-image-container">
-        <img src="src/assets/barre-with-rubber-bands.png" alt="barre with rubber bands" className="second-section-image" />
+      <div className="rubber-bands-image-container">
+        <img src="src/assets/barre-with-rubber-bands.png" alt="barre with rubber bands" className="rubber-bands-image" />
       </div>
       <div className="come-sweat-container">
-        <h1 className="h1-second-section">Come Sweat It Out at the Barre</h1>
-        <p className="second-section-paragraph">
+        <h1 className="come-sweat-title">Come Sweat It Out at the Barre</h1>
+        <p className="come-sweat-paragraph">
         Our barre classes are full-body workouts where we&apos;ll pulse, plié, and sweat
         our way through a series of exercises.
           <br />
@@ -29,7 +29,7 @@ const SecondSection = () => {
   );
 }
 
-export default SecondSection;
+export default JoinUsSection;
 
 // eslint-disable-next-line max-len
 // <img className="second-section-image" src="/assets/barre-with-rubber-bands.png" alt="barre with rubber bands" />

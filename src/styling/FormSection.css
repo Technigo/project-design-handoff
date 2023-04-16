@@ -4,8 +4,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.form-section-title {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-section-text {
+    font-family: 'Poppins', sans-serif;
+}
+
 .register-form {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.input-label {
+    font-family: 'Poppins', sans-serif;
+}
+
+.checkbox-wrapper {
+    display: flex;
+}
+
+.checkbox-label {
+    font-family: 'Poppins', sans-serif;
 }

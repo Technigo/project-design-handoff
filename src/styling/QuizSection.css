@@ -1,35 +1,24 @@
-.fourth-section-container {
+.quiz-section-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #9AD4D6;
-    color: #210440;
+    background-color: #210440;
+    color: #F2FDFF;
     font-family: 'Poppins', sans-serif;
     padding: 32px 0px 32px 0px;
     text-align: center;
 }
 
-.text-wrapper {
-    width: 320px;
-}
-
-.h1-fourth-section {
+.quiz-section-title {
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
-    color: #252525;    ;
 }
 
-.quote-paragraph {
+.quiz-section-paragraph {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 20px 0px 20px 0px;
-    line-height: 22px;
-    color: #252525;   
-}
-
-.quote-signature {
-    font-size: 16px;
-    color: #252525;   
+    width: 220px;
 }

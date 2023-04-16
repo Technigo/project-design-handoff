@@ -1,8 +1,8 @@
 import React from 'react';
 
-const FirstSection = () => {
+const Footer = () => {
   return (
-    <section className="first-section-container">
+    <section className="footer-container">
       <div className="hero-text-container">
         <p className="hero-text">Raise the barre with us!</p>
       </div>
@@ -10,4 +10,4 @@ const FirstSection = () => {
   );
 }
 
-export default FirstSection;
+export default Footer;

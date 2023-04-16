@@ -1,24 +1,35 @@
-.third-section-container {
+.quote-section-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #210440;
-    color: #F2FDFF;
+    background-color: #9AD4D6;
+    color: #210440;
     font-family: 'Poppins', sans-serif;
     padding: 32px 0px 32px 0px;
     text-align: center;
 }
 
-.h1-third-section {
+.text-wrapper {
+    width: 320px;
+}
+
+.quote-title {
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
+    color: #252525;    ;
 }
 
-.third-section-paragraph {
+.quote-paragraph {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     margin: 20px 0px 20px 0px;
-    width: 220px;
+    line-height: 22px;
+    color: #252525;   
+}
+
+.quote-signature {
+    font-size: 16px;
+    color: #252525;   
 }
