@@ -1,9 +1,20 @@
-import React from 'react'
+import Application from 'compontes/Application';
+import Benefits from 'compontes/Benefits';
+import Header from 'compontes/Header';
+import SignUpForm from 'compontes/SignUpForm';
+import StickyNav from 'compontes/StickyNav';
+import Workout from 'compontes/Workout';
+import React from 'react';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-}
+    <>
+      <Header />
+      <StickyNav />
+      <Benefits />
+      <Workout />
+      <Application />
+      <SignUpForm />
+    </>
+  );
+};

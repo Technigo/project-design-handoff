@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap');
+
+* Box sizing rules */ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a className get default styles */
+a:not([className]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* ---- Gereric ---- */
+
+button {
+  border-radius: 100px;
+  width: 13rem;
+  height: 3.6rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  background-color: #a99bd1;
+  cursor: pointer;
+}
+
+/* ---- Main navigation ---- */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.top-nav ul {
+  display: none;
+}
+.top-nav button {
+  display: none;
+}
+
+/* ---- Header ---- */
+
+.header {
+  background-image: url(./assets/images/childpose.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 30px;
+  margin: 1rem;
+  color: #ffff;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  height: 60vh;
+  margin: auto auto;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  line-height: 131%;
+  width: 332px;
+}
+.header-content p {
+  width: 332px;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo-container * {
+  padding: 1rem;
+}
+
+/* ----Benefits Container---- */
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container > div:nth-child(1) {
+  background-image: url(./assets/images/swanposition.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card-container > div:nth-child(2) {
+  background-image: url(./assets/images/lunge.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card-container > div:nth-child(3) {
+  background-image: url(./assets/images/breath.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card-container > div:nth-child(4) {
+  background-image: url(./assets/images/breakfast.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card {
+  position: relative;
+  border-radius: 30px;
+  margin: 2rem 1rem;
+  height: 80vh;
+  width: 80vw;
+}
+
+.card .card-text {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+
+/* ---- Workouts ---- */
+.item-a {
+  grid-area: strech;
+}
+.item-b {
+  grid-area: healthy;
+  height: 80vh;
+  background-color: #efefef;
+  position: relative;
+}
+
+.item-c {
+  grid-area: ab;
+  height: 30vh;
+  position: relative;
+  background-color: #dcd2f1;
+}
+
+.item-d {
+  grid-area: cardio;
+  height: 30vh;
+  position: relative;
+  background-color: #cad7ba;
+}
+.workout-box-container {
+  display: grid;
+  grid-template-columns: 10vw auto 10vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    '. strech .'
+    '. healthy .'
+    '. ab .'
+    '. cardio .';
+}
+.workout-box-container > div {
+  border-radius: 30px;
+}
+.box {
+  margin: 1rem 0 1rem 0;
+}
+.box > h2 {
+  font-size: 2rem;
+}
+.strech {
+  background-image: url(./assets/images/stretch.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+.strech > div:first-child {
+  position: absolute;
+  right: 50%;
+  top: 40%;
+  margin-right: -50px;
+}
+
+.strech > div:last-child {
+  position: absolute;
+  bottom: 4rem;
+  right: 25%;
+  left: 50%;
+  margin-left: -100px;
+}
+.healthy > div {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.ab > div {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+
+.cardio > div {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+/* ---- Application component ---- */
+.horizontal-scroll-wrapper {
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 1rem 0;
+  overflow-x: scroll;
+}
+
+.horizontal-scroll-wrapper > div {
+  width: 600px;
+  height: 15rem;
+  margin: 1rem;
+}
+
+/* ---- Sign Up form ---- */
+.create-account-button {
+  background-color: #dcd2f1;
+  border-radius: 8px;
+  width: 97%;
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-basis: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+fieldset {
+  border-radius: 8px;
+  border: 1px solid #2e2e34;
+  width: 93vw;
+}
+
+fieldset label {
+  padding: 6px;
+}
+
+fieldset input {
+  width: 100%;
+  border: none;
+  margin: 5px 0;
+}
+form span::before {
+  content: url(./assets/images/Icon.svg);
+  padding: 5px;
+}
+form span {
+  vertical-align: middle;
+  color: red;
+}
+
+.divider {
+  display: flex;
+}
+p .line {
+  display: block;
+  width: 140px;
+  height: 0;
+  border: 1px solid #222322;
+}
+
+/* ---- Sticky Nav ---- */
+.sticky-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 85vh;
+}
+.sticky-nav-container nav {
+  background-color: black;
+  color: #ffff;
+  border-radius: 30px;
+}
+
+.sticky-nav-container nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-nav-container li {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
