@@ -1,5 +1,6 @@
 import React from 'react';
 
+import barreImage from '../assets/barre-with-rubber-bands.png'
 import card1 from '../assets/card-barre-basic.svg';
 
 const JoinUsSection = () => {
@@ -10,7 +11,7 @@ const JoinUsSection = () => {
         <button className="primary-button" type="button">Join Us!</button>
       </div>
       <div className="rubber-bands-image-container">
-        <img src="src/assets/barre-with-rubber-bands.png" alt="barre with rubber bands" className="rubber-bands-image" />
+        <img src={barreImage} alt="barre with rubber bands" className="rubber-bands-image" />
       </div>
       <div className="come-sweat-container">
         <h1 className="come-sweat-title">Come Sweat It Out at the Barre</h1>

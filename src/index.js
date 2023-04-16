@@ -10,6 +10,7 @@ import './styling/JoinUsSection.css'
 import './styling/QuizSection.css'
 import './styling/QuoteSection.css'
 import './styling/FormSection.css'
+import './styling/Footer.css'
 
 import { App } from './App'
 

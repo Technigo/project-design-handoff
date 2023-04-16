@@ -1,8 +1,8 @@
 .join-us-section-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
     font-family: 'Poppins', sans-serif;
     background-color: #9AD4D6;
     padding: 32px 0px 32px 0px;
@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-self: center;
     height: 120px;
     width: 328px;
     text-align: center;
@@ -25,8 +26,9 @@
 }
 
 .rubber-bands-image-container {
-    display: inline-block;
+    display: flex;
     height: 160px;
+    justify-content: flex-end;
     /*position: relative;
     left: 0px;
     right: -344px;*/
@@ -35,12 +37,12 @@
 
 .rubber-bands-image {
     justify-self: right;
-    /*transform: rotateX(180deg);*/
 }
 
 .come-sweat-container {
     display: flex;
     flex-direction: column;
+    align-self: center;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -77,9 +79,19 @@
 .barre-card-container {
     display: flex;
     overflow: hidden;
+    align-self: center;
 }
 
 .barre-card-basic {
     width: 248px;
     margin-left: 16px;
 }
+
+/*@media (min-width: 668px) {
+
+    .rubber-bands-image {
+        height: 400px;
+        width: 1000px;
+    }
+
+}*/
