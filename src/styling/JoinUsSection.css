@@ -1,0 +1,97 @@
+.join-us-section-container {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;
+    justify-content: center;*/
+    font-family: 'Poppins', sans-serif;
+    background-color: #9AD4D6;
+    padding: 32px 0px 32px 0px;
+}
+
+.join-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    height: 120px;
+    width: 328px;
+    text-align: center;
+    margin: 32px 0px 32px 0px;
+}
+
+.join-us-paragraph {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.rubber-bands-image-container {
+    display: flex;
+    height: 160px;
+    justify-content: flex-end;
+    /*position: relative;
+    left: 0px;
+    right: -344px;*/
+    /*justify-content: flex-end?? */
+}
+
+.rubber-bands-image {
+    justify-self: right;
+}
+
+.come-sweat-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 328px;
+    padding: 0px 8px 0px 8px;
+    margin: 32px 0px 32px 0px;
+}
+
+.come-sweat-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #210440;
+    margin-bottom: 32px;
+    width: 230px;
+}
+
+.come-sweat-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 26px;
+    color: #252525;
+    width: 300px;
+    margin-bottom: 26px;
+}
+
+.span-bolder {
+    font-size: 16px;
+    font-weight: 600;
+    color: #252525;
+}
+
+.barre-card-container {
+    display: flex;
+    overflow: hidden;
+    align-self: center;
+}
+
+.barre-card-basic {
+    width: 248px;
+    margin-left: 16px;
+}
+
+/*@media (min-width: 668px) {
+
+    .rubber-bands-image {
+        height: 400px;
+        width: 1000px;
+    }
+
+}*/
