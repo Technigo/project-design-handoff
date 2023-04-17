@@ -45,29 +45,3 @@ color: white;
   gap: 20px;
   padding-top: 50px;
 } 
-
-/* /////////////// BIG MOBILE //////////////////////// */
-
-@media (min-width: 370px) {
-  .main-content-container {
-      height: 40%;
-}
-}
-
-/* /////////////// TABLET //////////////////////// */
-
-@media (min-width: 668px) {
-  .main-content-container {
-      height: 40%;
-      width: 30%;
-      margin-left: 8%;
-}
-}
-
-/* /////////////// LAPTOP //////////////////////// */
-
-@media (min-width: 1023px) {
-  .main-content-container {
-      height: 40%;
-}
-}

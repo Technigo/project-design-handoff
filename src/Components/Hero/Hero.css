@@ -5,7 +5,7 @@
     margin: auto;
     background-color: rgba(149, 166, 181, 0.6);
     border-radius: 8px 80px;
-    height: 60vh;
+    height: 60%;
     padding: 40px;
     color: white;
 }
@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 520px;
+    top: 90%;
     left: calc(50% + 10px);
 }
 
@@ -49,12 +49,14 @@
     width: 80px;
     height: 80px
 }
-
-/* /////////////// BIG MOBILE //////////////////////// */
-
-@media (min-width: 667px) {
+/* ///////// BIG MOBILE //////*/
+@Media
+ (min-width: 370px) {
+    .main-content-container {
+        height: 50%;
+}
 .circle-box {
-    top: 760px;
+    top: 94%;
     left: calc(50% + 30px);
 }
 .circle {
@@ -62,28 +64,26 @@
     height: 100px
 }
 }
-
-/* /////////////// TABLET //////////////////////// */
-
-@media (min-width: 768px) {
+/* ///////// TABLET //////*/
+@Media
+ (min-width: 668px) {
     .main-content-container {
-        height: 70%;
-        width: 30%;
+        height: 40%;
+        width: 40%;
         margin-left: 8%;
 }
 .circle-box {
-    top: 960px;
+    top: 93%;
     left: calc(50% + 100px);
 }
 .circle {
-    width: 100px;
-    height: 100px
+    width: 100%;
+    height: 100%;
 }
 }
-
-/* /////////////// LAPTOP //////////////////////// */
-
-@media (min-width: 1023px) {
+/* /////////LAPTOP //////*/
+@Media
+ (min-width: 1023px) {
     .main-content-container {
         height: 40%;
 }
