@@ -31,8 +31,8 @@ export const Hero = () => {
               Get started at your personal level.
         </p>
         <ButtonsContainer>
-          <StartButton cta>Get started</StartButton>
-          <StartButton outlined>Default</StartButton>
+          <StartButton primary>Get started</StartButton>
+          <StartButton>Default</StartButton>
         </ButtonsContainer>
       </HeroTextContainer>
       <PlayButtonContainer>

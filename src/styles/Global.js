@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { createGlobalStyle } from 'styled-components';
 /* import styled, { createGlobalStyle, css } from 'styled-components' */
 /* Might add more here later with inspiration from below link: */
@@ -19,7 +20,8 @@ body {
     margin: 0;
     padding: 0;
     background: beige;
-    font-family: Open-Sans, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 `
 

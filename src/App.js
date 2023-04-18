@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Hero } from 'components/Hero/Hero';
 import { ThemeProvider } from 'styled-components';
 import { TheBenefits } from 'components/TheBenefits/TheBenefits';
+import { SpeakToTheGoals } from 'components/SpeakToTheGoals/SpeakToTheGoals';
 import Footer from './components/Footer';
 
 const theme = {
@@ -12,6 +13,10 @@ const theme = {
     header: '#ebfbff',
     body: '#fff',
     footer: '#00333'
+  },
+  primaryButton: {
+    bg: '#F35408',
+    outline: 'none'
   }
 }
 
@@ -29,6 +34,7 @@ export const App = () => {
           <Route path="/about" />
         </Routes>
         <TheBenefits />
+        <SpeakToTheGoals />
         <Footer />
       </Router>
     </ThemeProvider>

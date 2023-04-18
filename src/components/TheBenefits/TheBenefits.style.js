@@ -8,12 +8,14 @@ flex-direction: column;
 align-items: center;
 `;
 
-export const BenefitsHeaderContainer = styled.div`
-width: 70%;
-height: 40%;
+export const TitleContainer = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
+
+h1, h2 {
+    color: var(--main-color-h1)
+}
 `;
 
 export const BenefitsListContainer = styled.div`
@@ -21,18 +23,21 @@ display: flex;
 flex-direction: row;
 `;
 
+export const UlTest = styled.ul`
+list-style: none;
+margin: 0;
+color: red;s
+`
+
 export const BenefitsLeftContainer = styled.div`
-flex: 50%;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding-left: 5%;
+
 `;
 
 export const BenefitsRightContainer = styled.div`
-flex: 50%;
 display: flex;
 flex-direction: column;
 align-items: flex-end;
-padding-left: 50px;
 `;

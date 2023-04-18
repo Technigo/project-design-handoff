@@ -1,3 +1,15 @@
+:root {
+  --main-font-h1: "Roboto";
+  --main-color-h1: #F0EAE1;
+  --main-color-h2: #F0EAE1;
+}
+
+/* background: #F0EAE1; - beige
+background: #95A6B5; - gråblå
+background: #F35408; - orange
+background: #464646; - antracitgrå */
+
+
 body {
   margin: 0;
   padding: 0;
