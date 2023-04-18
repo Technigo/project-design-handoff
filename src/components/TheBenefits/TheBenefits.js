@@ -3,10 +3,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { Wrapper } from 'styles/Wrapper.style';
+import { SectionTitle } from 'components/sectionTitle/SectionTitle';
 import {
   BenefitsContainer,
-  TitleContainer,
-  UlTest,
+  UlContainer,
   BenefitsListContainer,
   BenefitsLeftContainer,
   BenefitsRightContainer
@@ -16,13 +16,10 @@ export const TheBenefits = () => {
   return (
     <BenefitsContainer>
       <Wrapper>
-        <TitleContainer>
-          <h2>BUILD HEALTHY HABITS</h2>
-          <h1>FOR YOU AND YOUR DOG</h1>
-        </TitleContainer>
+        <SectionTitle />
         <BenefitsListContainer>
           <BenefitsLeftContainer>
-            <UlTest>
+            <UlContainer>
               <li><FontAwesomeIcon icon={faCheck} />
            Work your mind, body, have fun and develop amazing skills together.
               </li>
@@ -34,10 +31,10 @@ export const TheBenefits = () => {
                 <FontAwesomeIcon icon={faCheck} />
               Levels from beginner to advanced dog owner/puppy to old dog.
               </li>
-            </UlTest>
+            </UlContainer>
           </BenefitsLeftContainer>
           <BenefitsRightContainer>
-            <UlTest>
+            <UlContainer>
               <li>
                 <FontAwesomeIcon icon={faCheck} />
               Online workouts and programs.
@@ -50,7 +47,7 @@ export const TheBenefits = () => {
                 <FontAwesomeIcon icon={faCheck} />
               Experienced coaches.
               </li>
-            </UlTest>
+            </UlContainer>
           </BenefitsRightContainer>
         </BenefitsListContainer>
       </Wrapper>
