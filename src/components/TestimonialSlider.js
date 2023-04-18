@@ -1,22 +1,17 @@
-
 import React from "react";
 import { FreeMode } from "swiper";
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import "swiper/css/free-mode";
-import styled from 'styled-components'
+import styled from "styled-components";
 import { TestimonialCard } from "./TestimonialCard";
 import { testimonialArray } from "./TestimonialList";
 
 export const TestimonialSlider = () => {
   const SliderContainer = styled.div`
   display: flex;
-
-  @media(min-width: 1025px) {
-    max-width: 1180px;
-    margin: auto;
   }
-  `
+  `;
   return (
     <SliderContainer>
       <Swiper
