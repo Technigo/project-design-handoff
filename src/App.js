@@ -1,6 +1,5 @@
 import React from 'react';
 import GlobalStyles from 'styles/Global';
-import Navbar from 'components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Hero } from 'components/Hero/Hero';
 import { ThemeProvider } from 'styled-components';
@@ -25,7 +24,6 @@ export const App = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Router>
-        <Navbar />
         <Hero />
         <Routes>
           <Route path="/" />

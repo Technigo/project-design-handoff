@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-max-width: 80%
+display: flex;
+flex-direction: column;
+width: ${(props) => (props.bigWrapper ? '80%' : '75%')};
+justify-content: ${(props) => (props.center ? 'center' : 'flex-start')};
+background-color: tomato;
+
 `;
+

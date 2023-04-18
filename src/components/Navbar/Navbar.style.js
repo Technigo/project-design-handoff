@@ -3,33 +3,31 @@ import { Link } from 'react-router-dom';
 
 export const NavbarContainer = styled.nav`
 width: 100%;
-height: 80px;
-background-color: black;
 display: flex;
 flex-direction: column;
 color: white;
+
 `;
 
 export const LeftContainer = styled.div`
-flex: 70%;
 display: flex;
-align-items: center;
-padding-left: 5%;
-background-color: red;
+padding-left: 5%
+
+
 `;
 
 export const RightContainer = styled.div`
-flex: 30%;
+
 display: flex;
-align-items: flex-end;
-padding-left: 50px;
-background-color: salmon;
+flex-direction: row;
+justify-content: flex-end;
+width: 100%;
+
 `;
 
 export const NavbarInnerContainer = styled.div`
 width: 100%;
-height: 80px;
-flex: display; /*WRONG?!*/
+
 `;
 
 export const NavbarLinkContainer = styled.div`
@@ -37,8 +35,8 @@ display: flex;
 `;
 
 export const NavLink = styled(Link)`
-color: white;
-font-size: x-large;
+color: black;
+font-size: 1rem;
 font-family: Roboto;
 text-decoration: none;
 margin: 10px;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const BenefitsContainer = styled.div`
 width: 100%;
+position: relative;
 background-color: #95A6B5;
 display: flex;
 flex-direction: column;
@@ -9,19 +10,9 @@ align-items: center;
 padding: 5%;
 `;
 
-export const TitleContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-h1, h2 {
-    color: var(--main-color-h1)
-}
-`;
-
 export const BenefitsListContainer = styled.div`
 display: flex;
-flex-direction: row;
+flex-direction: column;
 `;
 
 export const UlContainer = styled.ul`
@@ -48,4 +39,9 @@ export const BenefitsRightContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: flex-end;
+`;
+
+export const TextContainer = styled.div`
+display: flex;
+flex-direction: row;
 `;

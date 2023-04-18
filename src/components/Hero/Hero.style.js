@@ -6,29 +6,27 @@ to work right now: background-image: url(${HeroImg}); */
 
 export const HeroContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    margin: auto;
     background-image: url(${BackgroundImg});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 8px 80px;
-    padding: 40px;
     color: white;
 `;
 
 export const HeroTextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 695.81px;
-    height: 537.43px;
-    margin: 15%;
     background: #32495d7f;
     opacity: 0.95;
     border-radius: 8px 160px;
     padding: 5rem;
+    max-width: 27rem;
+
+   
 `;
 
 export const HeroMainText = styled.div`
@@ -37,6 +35,13 @@ export const HeroMainText = styled.div`
     color: white;
     justify-content: center;
 `;
+export const Text = styled.p`
+
+padding-top: 1.5rem;
+padding-bottom: 3rem;
+
+
+`
 
 export const ButtonsContainer = styled.div`
     display: flex;
@@ -45,11 +50,13 @@ export const ButtonsContainer = styled.div`
 `;
 
 export const PlayButtonContainer = styled.div`
-    display: block;
-    position: absolute;
-    transform:translateY(580%) translateX(800%);
-    right: auto;
+   top: 90%;
+   left: 75%;
+   position: absolute;
 `;
+
+// transform:translateY(580%) translateX(800%);
+// right: auto;
 
 // This below is still to fix into styled component //
 // And to be put somewhere between HeroMainText and ButtonsCont //

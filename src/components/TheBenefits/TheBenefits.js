@@ -9,46 +9,50 @@ import {
   UlContainer,
   BenefitsListContainer,
   BenefitsLeftContainer,
-  BenefitsRightContainer
+  BenefitsRightContainer,
+  TextContainer
 } from './TheBenefits.style';
 
 export const TheBenefits = () => {
   return (
     <BenefitsContainer>
       <Wrapper>
-        <SectionTitle />
         <BenefitsListContainer>
-          <BenefitsLeftContainer>
-            <UlContainer>
-              <li><FontAwesomeIcon icon={faCheck} />
+          <SectionTitle />
+
+          <TextContainer>
+            <BenefitsLeftContainer>
+              <UlContainer>
+                <li><FontAwesomeIcon icon={faCheck} />
            Work your mind, body, have fun and develop amazing skills together.
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faCheck} />
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} />
               Get the most out of your time together every day.
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faCheck} />
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} />
               Levels from beginner to advanced dog owner/puppy to old dog.
-              </li>
-            </UlContainer>
-          </BenefitsLeftContainer>
-          <BenefitsRightContainer>
-            <UlContainer>
-              <li>
-                <FontAwesomeIcon icon={faCheck} />
+                </li>
+              </UlContainer>
+            </BenefitsLeftContainer>
+            <BenefitsRightContainer>
+              <UlContainer>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} />
               Online workouts and programs.
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faCheck} />
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} />
               Research based training.
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faCheck} />
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCheck} />
               Experienced coaches.
-              </li>
-            </UlContainer>
-          </BenefitsRightContainer>
+                </li>
+              </UlContainer>
+            </BenefitsRightContainer>
+          </TextContainer>
         </BenefitsListContainer>
       </Wrapper>
     </BenefitsContainer>

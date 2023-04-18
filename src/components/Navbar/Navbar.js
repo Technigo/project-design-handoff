@@ -14,20 +14,16 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarInnerContainer>
-        <LeftContainer>
-          <LogoImg height={100} />
-        </LeftContainer>
         <RightContainer>
           <NavbarLinkContainer>
             <NavLink to="/"> GIFT CARDS</NavLink>
             <NavLink to="/"> JOIN US</NavLink>
           </NavbarLinkContainer>
         </RightContainer>
+        <LeftContainer>
+          <LogoImg height={80} />
+        </LeftContainer>
       </NavbarInnerContainer>
-      {/* <NavbarExtendedContainer>
-        { /* OUTCOMMENTED FOR NOW
-      <NavbarExtendedContainer> */}
-      {/* </NavbarExtendedContainer> */}
     </NavbarContainer>
   )
 }
