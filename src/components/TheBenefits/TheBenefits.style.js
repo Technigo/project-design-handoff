@@ -26,7 +26,7 @@ flex-direction: row;
 export const UlTest = styled.ul`
 list-style: none;
 margin: 0;
-color: red;s
+color: blue;
 `
 
 export const BenefitsLeftContainer = styled.div`
