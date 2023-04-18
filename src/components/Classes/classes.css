@@ -1,0 +1,66 @@
+.classes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 16px 0 16px 0;
+}
+
+.yoga-container{
+  height: 45vh;
+}
+
+.yoga-container h3{
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.yoga-card img {
+width: 200px;
+height: 200px;
+}
+
+.awssld__content {
+background-color: transparent;
+}
+
+.awssld {
+height: 100%;
+--organic-arrow-thickness: 3px;
+--organic-arrow-height: 13px;
+--slider-height-percentage: 60%;
+--loader-bar-color: #fff;
+--loader-bar-height: 1px;
+--organic-arrow-color: #000;
+}
+
+.awssld__controls {
+  visibility: visible;
+}
+
+.awssld__controls__arrow-left {
+  right: -100%;
+}
+
+.awssld__controls__arrow-right {
+ left: -100%;
+}
+
+@media (min-width: 670px) {
+  .yoga-container{
+    height: 35vh;
+  }
+
+  .awssld__controls__arrow-left {
+    right: -290%;
+  }
+  
+  .awssld__controls__arrow-right {
+   left: -290%;
+  }
+}
+
+@media (min-width: 895px) {
+  .yoga-container{
+    display: none;
+  }
+}

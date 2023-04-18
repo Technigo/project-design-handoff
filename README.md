@@ -1,13 +1,16 @@
 # Design Handoff
 
-Replace this readme with your own information about your project.
+Week 9. This project involved buliding a landing page with React components and incorporating a given design from UX design students @Technigo. The design was given to us through a hand-off through demo and Figma file.
+The brief was to build with React, preferably Styled Components, use reusaable components and finish it of as close as possible to the design.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
+Such a rewarding and fun week!  I created a sketch on what components i needed and how they could be used regarding weather my designer wanted it to be shown on different screen sizes and if it could be reusable. I also acknowledged the bigger challenges and started with the basic structure first.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used npm packages for my carousels and struggled a bit with overriding it's built in styling-properties at first. Indeed challenging but revarding to learn!
+
+The project was handed to us on tuesday and due to Easter holidays there where som limitations on time for this week. I ended up with leaving the hamburger menu slightly unfinished and should evolve the accessibilty if I had more time.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://ux-handoff-poweryoga.netlify.app
