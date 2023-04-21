@@ -10,6 +10,6 @@ If I had more time I would implement styled components instead of vanilla CSS.
 
 ## View it live
 
-https://easyfit-fictious-gym-byfanny.netlify.app/
+https://fictious-gym-developedbyfanny.netlify.app/
 
 (Designed by Linnea Rådahl)
