@@ -60,10 +60,10 @@ const Community = () => {
         <span className="orText"><p className="line" /><p>Or</p><p className="line" /></span>
         <div className="signInBtnWrapper">
           <OutlinedBtn2 type="button">
-            <span className="signInBtn"><img alt="apple icon" src="../images/icons/apple-logo.png" />Sign in with Apple</span>
+            <span className="signInBtn"><img alt="apple icon" src="../images/icons/applelogo.png" />Sign in with Apple</span>
           </OutlinedBtn2>
           <OutlinedBtn2 type="button">
-            <span className="signInBtn"><img alt="google icon" src="../images/icons/google-logo.png" />Sign in with Google</span>
+            <span className="signInBtn"><img alt="google icon" src="../images/icons/googlelogo.png" />Sign in with Google</span>
           </OutlinedBtn2>
         </div>
       </div>
