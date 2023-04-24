@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { PrimaryBtn, OutlinedBtn2 } from 'styling/Button';
