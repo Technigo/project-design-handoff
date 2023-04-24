@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import button from '../assets/icons/Buttons.png'
-import logoSmall from '../assets/logos/EASYFITmobile.png'
-import logoMedium from '../assets/logos/EASYFITdesktop.png'
-import menuIcon from '../assets/icons/navigation.png'
 import './Hero.css'
 
 const Hero = () => {
