@@ -20,7 +20,7 @@ const Workouts = () => {
         <Tagline>Workouts</Tagline>
         <Headline5>One 5 min workout is better than none.</Headline5>
       </div>
-      <div className="videoCard" style={{ backgroundImage: 'linear-gradient(5deg, #DCBAF9 10%, rgba(255, 255, 255, 0) 40%), url("../images/stretch.jpg")' }}>
+      <div className="videoCard" style={{ backgroundImage: 'linear-gradient(5deg, #DCBAF9 10%, rgba(255, 255, 255, 0) 40%), url("../images/sidestrech.jpg")' }}>
         <img className="playIcon" alt="icon" src="../images/icons/playbutton.png" />
         <div className="textBtnWrapper">
           <div>

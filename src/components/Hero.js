@@ -41,9 +41,7 @@ const Hero = () => {
       </div>
       <div className="compatibleWrapper">
         <Body>Compatible with</Body>
-        <img alt="apple tv logo" className="compatibleLogo" src="/images/icons/appletvlogo.png" />
-        <img alt="apple tv logo" className="compatibleLogo" src="/images/icons/roku.png" />
-        <img alt="apple tv logo" className="compatibleLogo" src="/images/icons/chromecastlogo.png" />
+        <img alt="logos" className="compatibleLogo1" src="/images/icons/logos.png" />
       </div>
     </header>
   )
