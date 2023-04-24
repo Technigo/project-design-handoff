@@ -1,10 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 16px;
 }
 
 code {
@@ -12,21 +21,24 @@ code {
     monospace;
 }
 
-:root {
-  --primary-color: #dcd2f1;
-  --primary-color-a: #a99bd1;
+ /* SECTIONS */
+ section {
+  max-width: 100%;
+  margin-top: 120px;
+ }
 
-  --secondary-color: #cad7ba;
-  --socondary-color-a: #f4ddab;
-  --socondary-color-b: #abd1f4;
-  --socondary-color-c: #dcbaf9;
+ .introBenefits, .introWorkouts, .introActivity, .introCommunity {
+  text-align: center;
+ }
 
-  --semantic-colors: #e36363;
-  --semantic-colors-a: #6cbf8d;
-
-  --neutrals-color: #000;
-  --neutrals-color-a: #222322;
-  --neutrals-color-b: #efefef;
-  --neutrals-color-c: #ffffff;
-  
+/* CARDS */
+.cardWrapper, .videoCard, .smallCard, .mediumCard, .communityCard {
+  margin: 16px 0;
+  padding: 40px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

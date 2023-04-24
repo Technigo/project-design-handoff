@@ -1,42 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import './Hero.css'
+import React, { useState } from 'react';
+import { PrimaryBtn, OutlinedBtn } from 'styling/Button';
+import { Body, Headline2, Tagline } from 'styling/Text'
+import 'styling/Hero.css'
 
 const Hero = () => {
-  const [screenSize, setScreenSize] = useState(window.innerWidth);
-  const isMobile = screenSize <= 640;
-  const isDesktop = screenSize >= 1025;
+  const [visible, setVisible] = useState(false)
 
-  useEffect(() => {
-    const handleResize = () => setScreenSize(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop
+    if (scrolled > 150) {
+      setVisible(true)
+    } else if (scrolled <= 150) {
+      setVisible(false)
+    }
+  }
+
+  window.addEventListener('scroll', toggleVisible)
 
   return (
-    <>
-      {!isDesktop && (
-        <div className="Header">
-          {isMobile && (<img src={logoSmall} alt="Easyfit logo" />)}
-          {!isMobile && (<img src={logoMedium} alt="Easyfit logo" />)}
-          <div className="icons">
-            <img src={menuIcon} alt="menu" className="menu" />
-            <img src={button} alt="search" className="search" />
-          </div>
+    <header className="sectionHero" style={{ backgroundImage: 'url("/images/header.jpg")' }}>
+      <nav className="navBar">
+        <p className="logo">Easyfit</p>
+        <div className={visible ? 'menuBarScroll' : 'menuBarTop'}>
+          <a href="#benefits">Benefits</a>
+          <a href="#workouts">Workouts</a>
+          <a href="#activity">Activity</a>
+          <a href="#community">Community</a>
         </div>
-      )}
-
-      {isDesktop && (
-        <div className="Header">
-          <img src={logoMedium} alt="Easyfit logo" />
-          <div className="menu-text">
-            <p>Classes</p>
-            <p>About</p>
-            <p>Contact</p>
-          </div>
-          <p className="search-text">Search</p>
+        <PrimaryBtn>Downloap app</PrimaryBtn>
+        <img alt="menu icon" className="burgerMenu" src="/images/icons/menu.png" />
+      </nav>
+      <div className="heroWrapper">
+        <Tagline className="heroTagline">Feel the difference</Tagline>
+        <Headline2 className="heroHeadline">Healthy made easy</Headline2>
+        <Body>Join us now and try out our 5-30 min workouts that will get you motivated.</Body>
+        <div className="btnWrapper">
+          <PrimaryBtn>Download app</PrimaryBtn>
+          <OutlinedBtn>Create account</OutlinedBtn>
         </div>
-      )}
-    </>
+      </div>
+      <div className="compatibleWrapper">
+        <Body>Compatible with</Body>
+        <img alt="apple tv logo" className="compatibleLogo" src="/images/icons/appletvlogo.png" />
+        <img alt="apple tv logo" className="compatibleLogo" src="/images/icons/roku.png" />
+        <img alt="apple tv logo" className="compatibleLogo" src="/images/icons/chromecastlogo.png" />
+      </div>
+    </header>
   )
 }
 

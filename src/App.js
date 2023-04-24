@@ -1,23 +1,28 @@
 /* eslint-disable react/jsx-no-undef */
 import React from 'react'
+import { createGlobalStyle } from 'styled-components'
 import Hero from 'components/Hero'
-import Activity from 'components/Activity'
 import Benefits from 'components/Benefits'
+import Workouts from 'components/Workouts'
+import Activity from 'components/Activity'
 import Community from 'components/Community'
-import Programs from 'components/Programs'
-import Button from 'components/Button'
-import './index.css'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: 'Karla', sans-serif;
+  }
+`;
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Hero />
-      <Activity />
+      <GlobalStyle />
       <Benefits />
+      <Workouts />
+      <Activity />
       <Community />
-      <Programs />
-      <Button />
-    </div>
+    </>
   )
 }
 
