@@ -27,7 +27,7 @@ const Community = () => {
         <Tagline>Community</Tagline>
         <Headline5>Sign up & join our community to get started today</Headline5>
       </div>
-      <div className="communityCard" style={{ backgroundImage: 'linear-gradient(6deg, #DCD2F1 7%, rgba(255, 255, 255, 0) 50%), url("../images/backstrech.jpg")' }} />
+      <div className="communityCard" style={{ backgroundImage: 'linear-gradient(6deg, #DCD2F1 7%, rgba(255, 255, 255, 0) 50%), url("../images/backstretch.jpg")' }} />
       <div className="signUpWrapper">
         <Headline3>Create account</Headline3>
         <form onSubmit={handleSubmit(onSubmit)}>

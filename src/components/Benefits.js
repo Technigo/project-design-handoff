@@ -22,7 +22,7 @@ const Benefits = () => {
       </div>
       <Card
         color="#DCBAF9"
-        imgSrc="../images/legstrech.jpg"
+        imgSrc="../images/legstretch.jpg"
         headlineTitle="Apartment friendly workouts"
         bodyText="No matter where you are or the size of your space, we got a class for you." />
       <Card
