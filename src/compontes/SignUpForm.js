@@ -93,12 +93,12 @@ const SignUpForm = () => {
               Create Account
             </button>
             <p>
-              Already have an account? <span>Login</span>
+              Already have an account? <span className="bold">Login</span>
             </p>
           </form>
           <div>
-            <div className="divider">
-              <p>
+            <div>
+              <p className="divider">
                 <span className="line" />
                 Or
                 <span className="line" />

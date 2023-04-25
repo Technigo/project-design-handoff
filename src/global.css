@@ -108,6 +108,10 @@ button {
   border: none;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 button:hover,
 button:focus {
   background-color: #a99bd1;
@@ -350,23 +354,27 @@ fieldset input {
   border: none;
   margin: 5px 0;
 }
-form span::before {
+form span[role='alert']::before {
   content: url(./assets/images/Icon.svg);
   padding: 5px;
 }
-form span {
+form span[role='alert'] {
   vertical-align: middle;
   color: red;
 }
 
 .divider {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
 }
 p .line {
   display: block;
   width: 140px;
   height: 0;
   border: 1px solid #222322;
+  margin: 0 2rem;
 }
 
 /* ---- Sticky Nav ---- */
@@ -376,6 +384,7 @@ p .line {
   align-items: center;
   position: sticky;
   top: 85vh;
+  z-index: 9999;
 }
 .sticky-nav-container nav {
   background-color: black;
