@@ -7,6 +7,10 @@ export const article = [
   { header: 'Guide for beginners', paragraf: 'Join our growing community and let us support your well-being. If you are a beginner and do not dare to try yoga because you think you are too stiff and immobile for some of the positions, then you have come to the right place!' },
   { header: 'Yoga retreat ', paragraf: 'This is not just a yoga retreat, meditation course or wellness trip – it is a complete experience for body and soul. Our concept is designed to, togetherwith yoga and meditation and other exciting spiritual tools, allow you to explore movement, emotions, stillness and above all – yourself.' }
 ]
+
+const ArticleSection = styled.div`
+  margin-bottom: 10%;
+`
 const ArticleContainer1 = styled.div`
   width: 100vw;
   height: auto;
@@ -16,46 +20,28 @@ const ArticleContainer1 = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
-
-  @media (min-width: 900px) {
-    display:flex;
-    flex-direction: row;
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
-  })
-  
+  @media (min-width: 992px) {
+    display: flex; 
+    flex-direction: row-reverse; 
+    margin-top: 10%;
+  }
 `;
 const ArticleContainer2 = styled.div`
   margin-top:30px;
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
-
-  @media (min-width: 900px) {
-    display:flex;
-    flex-direction: row-reverse;
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
-  })
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+  }
 `;
 const ContentBox = styled.div`
-@media (min-width: 768px) {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-})
-
-@media (min-width: 1024px) {
-  /* Styles for desktop view */
-  width: 30em;
-}
-
+  padding: 0 31px;
+  justify-content: center;
+  align-items: center;
 `;
 const Header = styled.h1`
   font-family: 'Libre Franklin';
@@ -65,8 +51,10 @@ const Header = styled.h1`
   line-height: 39px;
   text-align: center;
   color: #025323;
-  margin-bottom: 10px;
-  margin-top: 20px;
+  @media (min-width: 600px){
+    font-size: 42px;
+    line-height: 51px;
+  }
 `;
 const Paragraf = styled.p`
   font-family: 'Libre Franklin';
@@ -78,85 +66,112 @@ const Paragraf = styled.p`
   letter-spacing: 0.127905px;
   color: #025323;
   padding: 0 50px;
-
-  @media (min-width: 768px) {
-    width: 30em;
-  })
-`;
-const Button = styled.button`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 47px;
-  background: #025323;
-  border-radius: 15px;
-  text-align: center;
-  color: #FFFFFF;
-  margin-bottom:15px;
-  margin-top: 10px;
-  border: none;
-  font-family: 'Libre Franklin';
-  font-size: 22px;
-  line-height: 29px;
-  font-style: normal;
-  font-weight: 600;
-  cursor: pointer;
-  @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
+  @media (min-width: 600px){
+    font-size: 22px;
+    line-height: 27px;
   }
 `;
+const Button = styled.button`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 47px;
+background: #025323;
+border-radius: 15px;
+text-align: center;
+color: #FFFFFF;
+margin-bottom:15px;
+margin-top: 10px;
+border: none;
+font-family: 'Libre Franklin';
+font-size: 22px;
+line-height: 29px;
+font-style: normal;
+font-weight: 600;
+cursor: pointer;
+@media (max-width: 768px) {
+  margin-left: auto;
+  margin-right: auto;
+};
+  
+`;
 const ImgBox = styled.div`
-  width: 603px;
-  height: 411.94px;
+  width: 378.84px;
+  height: 258.8px;
   border: 0.58px solid #025323;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
-  @media (max-width: 768px) {
-    width:auto;
-    height:250px;
+  @media (min-width: 600px){
+    width: 600px;
+    height: 408px;
+  }
+  @media (min-width: 992px){
+    width: 600px;
+    height: 408px; 
   }
 `
 const Image = styled.img`
-  width: 560px;
-  height: 374px;
+  width: 351.82px;
+  height: 234.34px;
   border: 6px solid #025323;
   border-radius: 12.5651px;
-  @media (max-width: 768px) {
-    width:auto;
-    height:230px;
+  @media (min-width: 600px){
+    width: 554px;
+    height: 373px;
+  }
+  @media (min-width: 992px){
+    width: 560px;
+    height: 374px;
   }
 `;
+const ArticleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  @media (min-width: 992px){
+    width: 588px;
+    height: 393px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+`
 
 export const Article = () => {
   return (
-    <>
+    <ArticleSection>
       <ArticleContainer1>
-        <ContentBox>
-          <Header>{article[0].header}</Header>
-          <Paragraf>{article[0].paragraf}</Paragraf>
+        <ArticleWrapper>
+          <ContentBox>
+            <Header>{article[0].header}</Header>
+            <Paragraf>{article[0].paragraf}</Paragraf>
+          </ContentBox>
           <Button type="button">Read more</Button>
-        </ContentBox>
+        </ArticleWrapper>
         <ImgBox>
           <Image src={Readme1} alt="readme" />
         </ImgBox>
       </ArticleContainer1>
 
       <ArticleContainer2>
-        <ContentBox>
-          <Header>{article[1].header}</Header>
-          <Paragraf>{article[1].paragraf}</Paragraf>
+        <ArticleWrapper>
+          <ContentBox>
+            <Header>{article[1].header}</Header>
+            <Paragraf>{article[1].paragraf}</Paragraf>
+          </ContentBox>
           <Button type="button">Read more</Button>
-        </ContentBox>
+        </ArticleWrapper>
         <ImgBox>
           <Image src={Readme2} alt="readme" />
         </ImgBox>
       </ArticleContainer2>
-    </>
+    </ArticleSection>
   )
 }

@@ -29,7 +29,7 @@ margin-top: 7rem;
 
 color: #025323;
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   font-size: 48px;
   line-height: 60px;
   display: flex;
@@ -55,7 +55,7 @@ margin-left: 4em;
 
 color: #025323;
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   font-size: 16px;
   line-height: 24px;
   margin-left: 0;
@@ -95,6 +95,7 @@ line-height: 29px;
   @media (max-width: 768px) {
     padding: 10px 30px;
     margin-left: 0;
+    
 `
 export const Hero = () => {
   return (
