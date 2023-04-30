@@ -4,8 +4,7 @@ import HeroBackground from '../images/___oksana-taran-xB4ExGcUai0-unsplash.jpg';
 
 const HeroWrapper = styled.div`
 position: relative;
-width: 100vw;
-max-width: 1400px;`
+width: 100vw;`
 
 const HeroContainer = styled.div`
   height: 730px;

@@ -48,7 +48,7 @@ export const ImageSlider = () => {
               disableNavIfAllVisible: false,
               hideNavIfAllVisible: true,
               width: '100%',
-              justifyItems: 'center',
+              justifyItems: 'space-evenly',
               display: 'flex',
               infinite: true,
               flexWrap: 'no-wrap'
@@ -100,11 +100,13 @@ display: flex;
 flex-direction: column;
 height: auto;
 background: #EBEBEB;
-
+@media (min-width: 1024px) and (max-width: 1440px) {
+  width: 100%;
+}
 `
 
 export const ReviewHeader = styled.h1`
-font-family: 'Libre Franklin SemiBold'
+font-family: 'Libre Franklin SemiBold';
 font-weight: 600;
 font-size: 28px;
 text-align: center;
@@ -122,7 +124,6 @@ export const ReviewList = styled.section`
 display: flex;
 justify-content: space-evenly;
 padding: 20px;
-
 `
 
 export const ReviewContainer = styled.div`
@@ -157,7 +158,7 @@ export const ReviewContainer = styled.div`
 
   p {
     position: relative;
-    font-family: 'Libre Franklin'
+    font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -167,7 +168,7 @@ export const ReviewContainer = styled.div`
     margin-bottom: 20px;
     margin-top: 0;
   }
-`;
+`
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -200,7 +201,8 @@ background-color: #F4F4F4;
 @media (min-width: 992px) and (max-width: 1024px){
   height: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
+    width: 100%;
     height: 20px;
   }
 `

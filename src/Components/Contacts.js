@@ -10,7 +10,9 @@ gap: 2.4rem;
 align-items: center;
 padding-bottom: 6em;
 @media (min-width: 968px) {
-    flex-direction: row;
+  flex-direction: row;
+    display: flex;
+    justify-content: space-around;
 }
 `
 
@@ -21,7 +23,13 @@ padding: 2.4rem 2rem 0 2rem;
     padding: 2.4rem 2.2rem 0 2.2rem;
 }
 @media (min-width: 968px) {
-    text-align: left;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 `
 
@@ -52,7 +60,13 @@ border-radius: 15px;
     font-size: 22px;
 }
 @media (min-width: 968px) {
-    margin-left: 2.4rem;
+  margin-left: 2.4rem;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 &:hover {
     cursor: pointer;
@@ -181,7 +195,7 @@ margin-right: auto;
 @media (min-width: 744px) {
     font-size: ${(props) => ((props.bigSize && '22px') || (props.secondSize && '18px') || '16px')};
 }
-@media (min-width: 968px) {
+@media (min-width: 968px) and (max-width: 1440px) {
     margin-left: ${(props) => props.bigSize && '2.4rem'};
   }`
 

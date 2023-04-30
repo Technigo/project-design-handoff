@@ -61,7 +61,7 @@ li {
     cursor: pointer;
   }
 }
-@media (min-width: 968px) {
+@media (min-width: 968px) and (max-width: 1400px) {
     display: flex;
 }`
 
