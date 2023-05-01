@@ -1,0 +1,50 @@
+/* /////////////// MOBILE //////////////////////// */
+
+.master-number {
+    background-color: hsl(0, 0%, 9%);
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    }
+    .blue-box-container {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .numbers-container {
+        width: 100%;
+    }
+    .big-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .blue-box {
+        scale: 80%;
+    }
+
+/* /////////////// TABLET //////////////////////// */
+
+@Media (min-width: 668px) {
+        .blue-box-container {
+            flex-direction: column;
+            padding-top: 0px;
+            scale: 110%;
+        }
+        .numbers-container {
+            display: flex;
+            justify-content: center;
+        }
+        .master-number {
+            justify-content: center;
+        }
+
+        .line {
+            margin: 0px;
+            padding: 0px;
+        }
+      }

@@ -1,0 +1,80 @@
+/* /////////////// MOBILE //////////////////////// */
+
+.speak-to-the-goals-container {
+    background-color: #181818;
+    width: 100%;
+    height: 550px;
+}
+.speak-to-the-goals-container p {
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    font-style: italic;
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
+.speak-to-the-goals-container h1{
+   color: white;
+   font-size: 30px;
+   padding-left: 40px;
+   padding-top: 40px;
+   font-weight: 800;
+   font-style: italic;
+}
+.speak-to-the-goals-button-container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.speak-to-the-goals-title {
+    padding: 20px;
+}
+.grid {
+    display: none;
+}
+.title-button-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 60px;
+}
+.get-started-button-title {
+    display: none;
+}
+
+.workout-text-tablet {
+        display: none;
+    }
+
+/* /////////////// TABLET //////////////////////// */
+
+@media (min-width: 668px) {
+    .slider {
+        display: none;
+    }
+    .grid {
+        display: grid;
+    }
+    .speak-to-the-goals-container {
+        background-color: #181818;
+        height: 900px;
+    }
+
+    .get-started-button-title {
+        display: flex;
+        align-items: center;
+    }
+    .workout-text {
+        display: none;
+    }
+    .workout-text-tablet {
+        display: flex;
+        justify-content: right;
+        padding-right: 20px;
+    }
+
+    .speak-to-the-goals-button-container {
+        display: none;
+    }
+}
