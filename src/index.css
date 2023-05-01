@@ -1,10 +1,31 @@
+:root {
+  --main-font-h1: "Roboto";
+  --main-color-h1: #F0EAE1;
+  --main-color-h2: #F0EAE1;
+}
+
+/* background: #F0EAE1; - beige
+background: #95A6B5; - gråblå
+background: #F35408; - orange
+background: #464646; - antracitgrå */
+
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+h1,h2,h3,p{
+
+  padding: 0px;
+  margin: 0px;
 }
 
 code {
