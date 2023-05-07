@@ -124,6 +124,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
+  margin-bottom: 1rem;
 }
 
 .top-nav ul {
@@ -133,30 +134,33 @@ button:focus {
   display: none;
 }
 
-/* ---- Header ---- */
+.top-nav-heading {
+  font-size: 1.25rem;
+}
 
-.header {
+/* ---- Header ---- */
+.header-container {
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 1rem 0;
+}
+
+.header-content {
+  grid-column-start: 2;
   background-image: url(./assets/images/childpose.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
-  border-radius: 30px;
-  margin: 1rem;
-  color: #ffff;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 85%;
 }
 
-.header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80vw;
-  height: 60vh;
-  margin: auto auto;
-}
-
-.header-content h1 {
-  font-size: 4rem;
+.header-content > h1 {
+  font-size: 3rem;
   line-height: 131%;
   width: 332px;
 }
@@ -172,6 +176,29 @@ button:focus {
   padding: 1rem;
 }
 
+.header-button-container {
+  display: flex;
+  flex-direction: column;
+}
+.header-button-container > * {
+  margin: 0.2rem 0;
+}
+
+.download-button {
+  background-color: #dcd2f1;
+  color: #070707;
+  margin: 1rem 0;
+}
+
+.create-button {
+  background-color: transparent;
+  color: rgb(252, 252, 252);
+  border: 2px solid rgb(252, 252, 252);
+}
+
+.compatible-container {
+  margin: 1rem 0;
+}
 /* ----Benefits Container---- */
 .benefits {
   display: flex;
@@ -308,6 +335,25 @@ button:focus {
   left: 20px;
 }
 /* ---- Application component ---- */
+.application-container {
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-rows: 100px 1fr 150px;
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+}
+
+.title-container {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 100vw;
+  margin: 0 3rem;
+}
+.iphone-muck-up {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.text-container {
+  grid-area: 3 / 2 / 4 / 3;
+}
 .horizontal-scroll-wrapper {
   width: 100%;
   align-items: flex-start;
@@ -325,6 +371,20 @@ button:focus {
 }
 
 /* ---- Sign Up form ---- */
+
+.signup-form-container {
+  padding-bottom: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.signup-form-img {
+  width: 100%;
+  height: auto;
+}
 .create-account-button {
   background-color: #dcd2f1;
   border-radius: 8px;
@@ -375,6 +435,41 @@ p .line {
   height: 0;
   border: 1px solid #222322;
   margin: 0 2rem;
+}
+
+.signup-button-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-button {
+  border: 1px solid #222322;
+  background-color: #ffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.apple-logo {
+  content: url(./assets/images/apple-logo.png);
+  width: 18px;
+
+  height: 18px;
+  margin: auto 1rem;
+}
+
+.google-logo {
+  content: url(./assets/images/google.png);
+  width: 18px;
+  height: 18px;
+  margin: 0 1rem;
 }
 
 /* ---- Sticky Nav ---- */

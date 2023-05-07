@@ -18,14 +18,18 @@ const SignUpForm = () => {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <section>
+    <section className="signup-form-container">
       <div className="title-container">
         <h3>BENEFITS</h3>
         <h2>Healthy doesn’t have to be hard. We make it easy</h2>
       </div>
       <div>
         <div>
-          <img src={longstrech} alt="some-alt-text" />
+          <img
+            src={longstrech}
+            alt="some-alt-text"
+            className="signup-form-img"
+          />
         </div>
         <div className="form">
           {/* "handleSubmit" will validate your inputs before invoking "onSubmit" */}
@@ -104,8 +108,16 @@ const SignUpForm = () => {
                 <span className="line" />
               </p>
             </div>
-            <button type="button">Sign in with Apple</button>
-            <button type="button">Sign in with Google</button>
+            <div className="signup-button-container">
+              <button type="button" className="signup-button">
+                <span className="apple-logo" />
+                Sign in with Apple
+              </button>
+              <button type="button" className="signup-button">
+                <span className="google-logo" />
+                Sign in with Google
+              </button>
+            </div>
           </div>
         </div>
       </div>

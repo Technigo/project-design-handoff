@@ -5,7 +5,7 @@ import MenuIcon from '../assets/images/menu.svg';
 const Navbar = () => {
   return (
     <nav className="top-nav">
-      <h1>FITEASY</h1>
+      <h1 className="top-nav-heading">FITEASY</h1>
       <ul>
         <li>
           <a href="#">Benefits</a>
