@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const InfoText = styled.p`
+const InfoText = styled.h1`
 color: white;
 font-size: 16px;
 `
@@ -26,12 +26,12 @@ const YogaInfo = () => {
         <h1>What is Power Yoga?</h1>
       </Header>
       <InfoText>
-        <p>Power yoga is a fast-paced style of yoga that&apos;s
+        <h1>Power yoga is a fast-paced style of yoga that&apos;s
          focused on building strength and endurance.
          Whilst practising this form of yoga, you will feel
          the tension and toxins leaving your body and
          your posture and back pain getting better.
-        </p>
+        </h1>
       </InfoText>
     </PageSection>
   )
