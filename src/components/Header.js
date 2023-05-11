@@ -40,8 +40,9 @@ const Header = () => {
         <p>Santulan Power Yoga Stockholm</p>
       </HeaderText>
       <SloganText>
-        <h1>Move your body</h1>
-        <h1>Rest your mind</h1>
+        <h1>Move your body
+          Rest your mind
+        </h1>
       </SloganText>
       <SignUpBtn />
       <KnowMoreText>

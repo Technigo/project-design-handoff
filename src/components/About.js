@@ -17,8 +17,6 @@ color: white;
 font-size: 16px;
 `
 
-
-
 const About = () => {
   return (
     <AboutSection>
