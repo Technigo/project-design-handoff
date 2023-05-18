@@ -6,40 +6,65 @@ height: 178px;
 background-color: #2E160E;
 `
 
-const Link = styled.p`
+const Link = styled.div`
 display: flex;
 flex-direction: row;
-justify-content: space-around;
 align-items: center;
+justify-content: center;
 font-size: 15px;
 color: white;
+padding-top: 30px;
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+a {
+     font-size: 12px;
+     font-weight: 400;
+     color: #fff;
+     text-decoration: none;
+}
 `
 
-const Line = styled.img`
+const Line = styled.hr`
 background-color: white;
 height: 1px;
-width: 334px;
+border: none;
+width: 80%;
 display: flex;
-margin-top: 62px;
-margin-left: 50px;
 `
-const FontAwesomeIcon = styled.i`
-background-color: white;
+const Icons = styled.div`
+display: flex;
+justify-content: center;
+gap: 25px;
+margin: 20px;
+i {
+  font-size: 20px;
+  color: #fff;
+}
+i:hover {
+     opacity: 70%;
+    }
 `
 
 const Footer = () => {
   return (
     <FooterSection>
       <Link>
-        <p>Classes</p>
-        <p>About</p>
-        <p>Contact</p>
+        <ul>
+          <li><a href="Classes">Classes</a></li>
+          <li><a href="About">About Us</a></li>
+          <li><a href="Contact">Contact</a></li>
+        </ul>
       </Link>
-      <Line src="./images/Vector 750.png" />
-      <FontAwesomeIcon icon="fa-brands fa-instagram" />
-      <FontAwesomeIcon icon="fa-brands fa-facebook" />
-      <FontAwesomeIcon icon="fa-brands fa-linkedin" />
-      <FontAwesomeIcon icon="fa-brands fa-twitter" />
+      <Line />
+      <Icons>
+        <i className="fa-brands fa-instagram" />
+        <i className="fa-brands fa-facebook" />
+        <i className="fa-brands fa-linkedin" />
+        <i className="fa-brands fa-twitter" />
+      </Icons>
     </FooterSection>
   )
 }

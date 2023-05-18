@@ -48,6 +48,7 @@ font-size: 15px;
 color: white;
 background-color: #FF9F0A;
 margin-bottom: 10px;
+margin-top: 20px;
 `
 
 const SignUp = () => {

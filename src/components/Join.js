@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Review from 'components/Review'
 
 const JoinUsSection = styled.div`
 display: flex;
@@ -30,6 +31,7 @@ const Join = () => {
         become a part of our amazing community!
         </p>
       </JoinText>
+      <Review />
     </JoinUsSection>
   )
 }
