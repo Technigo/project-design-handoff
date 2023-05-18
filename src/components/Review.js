@@ -9,7 +9,7 @@ const Slider = () => {
       <AwesomeSlider>
         <div className="Review">
           <h5>
-         Anyone who thinks of joining a class, do it! Its such a great mix of physical exercise and a calm break from the everyday life. 
+         Anyone who thinks of joining a class, do it! Its such a great mix of physical exercise and a calm break from the everyday life.
           </h5>
           <img src="/images/reviewimg1.png" alt="Profilepicture of John B" />
           <p>
