@@ -13,14 +13,17 @@ align-items: center;
 const SignUpHeader = styled.h1`
 font-size: 20px;
 color: black;
+margin-bottom: -40px;
 `
 const PersonalText = styled.p`
 font-size: 24px;
 color: #FF9F0A;
+margin-bottom: -20px;
 `
 const ChooseClassText = styled.p`
 font-size: 24px;
 color: #FF9F0A;
+margin-bottom: -17px;
 `
 const ClassBtn = styled.button`
 align-items: center;
