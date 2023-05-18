@@ -29,7 +29,21 @@ height: 48px;
 border-radius: 20px;
 padding: 10px;
 border-style: none;
+font-size: 15px;
+color: white;
 background-color: #888585;
+margin-bottom: 10px;
+`
+const SignUpBtn = styled.button`
+align-items: center;
+width: 340px;
+height: 48px;
+border-radius: 20px;
+padding: 10px;
+border-style: none;
+font-size: 15px;
+color: white;
+background-color: #FF9F0A;
 margin-bottom: 10px;
 `
 
@@ -49,6 +63,7 @@ const SignUp = () => {
       <ClassBtn type="button">Poweryoga 60 </ClassBtn>
       <ClassBtn type="button">Poweryoga 75</ClassBtn>
       <ClassBtn type="button">Strong yoga</ClassBtn>
+      <SignUpBtn type="button">Sign up for class</SignUpBtn>
     </SignUpSection>
   )
 }
