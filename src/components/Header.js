@@ -23,7 +23,10 @@ const SloganText = styled.h1`
 color: white;
 font-size: 25px;
 position: absolute;
-margin-top: 200px;
+margin-top: 130px;
+h1 {
+  margin-bottom: -30px;
+}
 `
 const KnowMoreText = styled.h1`
 color: white;
@@ -40,9 +43,8 @@ const Header = () => {
         <p>Santulan Power Yoga Stockholm</p>
       </HeaderText>
       <SloganText>
-        <h1>Move your body
-          Rest your mind
-        </h1>
+        <h1>Move your body</h1>
+        <h1>Rest your mind</h1>
       </SloganText>
       <SignUpBtn />
       <KnowMoreText>
