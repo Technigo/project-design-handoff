@@ -8,19 +8,21 @@ font-size: 16px;
 `
 const PageSection = styled.div`
 display: none;
+
+@media (min-width: 768px) {
+display:block;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 background-color: #2E160E;
 height: 298px;
-@media (min-width: 768px) {
-display:block
+margin-top: 20px;
 
 }
 `
 const Header = styled.h1`
 color: #FF9F0A;
-font-size: 24px;
+font-size: 17px;
 `
 
 const PowerYoga = () => {
