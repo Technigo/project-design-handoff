@@ -5,9 +5,10 @@ const FindUsSection = styled.div`
 background-color: #66A1AE;
 display: flex;
 flex-direction: row;
-margin-left: 20px;
 margin-bottom: 20px;
-width: 350px;
+margin-left: 10px;
+margin-top: 20px;
+width: 400px;
 `
 const FindUsImage = styled.img`
 width: 185px;

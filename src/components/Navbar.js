@@ -17,6 +17,7 @@ const Navbar = () => {
   return (
     <NavbarSection>
       <LogoImage src="./images/Logo (2).png" />
+      <i className="fa-regular fa-bars" />
     </NavbarSection>
   )
 }

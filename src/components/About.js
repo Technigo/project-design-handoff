@@ -6,15 +6,28 @@ const AboutSection = styled.div`
 display:none;
 background-color: #2E160E;
 height: 305px;
+@media (min-width:768px){
+  display: block;
+}
 `
 const Header = styled.h1`
 color: #FF9F0A;
-font-size: 24px;
+font-size: 17px;
+margin-top: 20px;
+display: flex;
+justify-content: center;
 `
 
-const Text = styled.p`
+const Text = styled.div`
 color: white;
 font-size: 16px;
+display: flex;
+justify-content: center;
+margin-top: -30px;
+p {
+  justify-content: center;
+  max-width: 320px;
+}
 `
 
 const About = () => {

@@ -6,51 +6,42 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-`
-const HeaderImg = styled.img`
-height: 100%;
-width: auto;
+height: 930px;
+background-image: url("/images/headeryoga.png");
 background-size: cover;
+
 `
 const HeaderText = styled.p`
 color: white;
 font-size: 16px;
-position: absolute;
 align-self: center;
+margin-bottom: -40px;
 `
 const SloganText = styled.h1`
 color: white;
 font-size: 25px;
-position: absolute;
-margin-top: 130px;
-h1 {
-  margin-bottom: -30px;
-}
 `
 const SignBtn = styled.button`
 padding: 11px, 83px, 11px, 83px;
 border-radius: 20px;
 border-style: none;
+margin-top: 40px;
 width: 324px;
 height: 55px;
 background-color: #FF9F0A;
 color: black;
 font-size: 24px;
-position: absolute;
 top: 700px;
 `
 
 const KnowMoreText = styled.h1`
 color: white;
 font-size: 16px;
-position: absolute;
-margin-top: 580px;
 `
 
 const Header = () => {
   return (
     <HeaderSection>
-      <HeaderImg src="./images/headeryoga.png" alt="person doing yoga" />
       <HeaderText>
         <p>Santulan Power Yoga Stockholm</p>
       </HeaderText>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from 'components/Navbar'
 import Header from 'components/Header';
+import PowerYoga from 'components/PowerYoga';
 import Carousel from 'components/Carousel';
 import About from 'components/About';
 import Find from 'components/Find';
@@ -13,6 +14,7 @@ export const App = () => {
     <>
       <Navbar />
       <Header />
+      <PowerYoga />
       <Carousel />
       <About />
       <Find />
