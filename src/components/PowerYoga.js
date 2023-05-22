@@ -7,7 +7,7 @@ color: white;
 font-size: 16px;
 `
 const PageSection = styled.div`
-display: none:
+display: none;
 flex-direction: column;
 align-items: center;
 justify-content: center;
