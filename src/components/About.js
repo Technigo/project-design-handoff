@@ -10,12 +10,14 @@ height: 305px;
   display: block;
 }
 `
-const Header = styled.h1`
-color: #FF9F0A;
-font-size: 17px;
-margin-top: 20px;
+const Header = styled.div`
 display: flex;
 justify-content: center;
+h1 {
+color: #FF9F0A;
+font-size: 25px;
+margin-top: 20px;
+}
 `
 
 const Text = styled.div`

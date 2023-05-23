@@ -2,9 +2,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const InfoText = styled.h1`
+const InfoText = styled.div`
+display: flex;
+justify-content: center;
 color: white;
+p {
 font-size: 16px;
+width: 320px;
+}
 `
 const PageSection = styled.div`
 display: none;
@@ -20,9 +25,13 @@ margin-top: 20px;
 
 }
 `
-const Header = styled.h1`
+const Header = styled.div`
+display: flex;
+justify-content: center;
+h1 {
 color: #FF9F0A;
-font-size: 17px;
+font-size: 25px;
+}
 `
 
 const PowerYoga = () => {
@@ -32,12 +41,12 @@ const PowerYoga = () => {
         <h1>What is Power Yoga?</h1>
       </Header>
       <InfoText>
-        <h1>Power yoga is a fast-paced style of yoga that&apos;s
+        <p>Power yoga is a fast-paced style of yoga that&apos;s
          focused on building strength and endurance.
          Whilst practising this form of yoga, you will feel
          the tension and toxins leaving your body and
          your posture and back pain getting better.
-        </h1>
+        </p>
       </InfoText>
     </PageSection>
   )
