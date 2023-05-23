@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const FindUsSection = styled.div`
 background-color: #66A1AE;
 display: flex;
-flex-direction: row;
+justify-content: center;
+align-items: center;
 margin-bottom: 20px;
 margin-left: 10px;
 margin-top: 20px;

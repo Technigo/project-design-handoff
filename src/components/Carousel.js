@@ -1,25 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const CarouselSection = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-`
-
-const OurClasses = styled.h1`
-font-size: 18px;
-color: #FF9F0A;
-`
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
 
 const Carousel = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000
+  };
+
   return (
-    <CarouselSection>
-      <OurClasses>
-        <h1>Our classes </h1>
-      </OurClasses>
-    </CarouselSection>
-  )
-}
+    <CarouselWrapper>
+      <h1>Our Classes</h1>
+      <Slider {...settings}>
+        <div>
+          <h3>Power yoga 60</h3>
+          <img src="/images/carousel1.png" alt="person doing yoga" />
+        </div>
+        <div>
+          <h3>Power yoga 75</h3>
+          <img src="/images/carousel2.png" alt="person doing yoga" />
+        </div>
+        <div>
+          <h3>Yoga Strong</h3>
+          <img src="/images/carousel3.png" alt="person doing yoga" />
+        </div>
+      </Slider>
+    </CarouselWrapper>
+  );
+};
 
 export default Carousel;
+
+const CarouselWrapper = styled.div`
+
+`

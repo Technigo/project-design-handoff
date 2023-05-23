@@ -9,6 +9,9 @@ align-items: center;
 height: 930px;
 background-image: url("/images/headeryoga.png");
 background-size: cover;
+min-height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
 
 `
 const HeaderText = styled.p`
