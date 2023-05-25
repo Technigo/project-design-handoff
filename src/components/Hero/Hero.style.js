@@ -53,6 +53,7 @@ export const PlayButtonContainer = styled.div`
    top: 90%;
    left: 75%;
    position: absolute;
+   z-index: 99;
 `;
 
 // transform:translateY(580%) translateX(800%);

@@ -19,7 +19,6 @@ export const TheBenefits = () => {
       <Wrapper>
         <BenefitsListContainer>
           <SectionTitle />
-
           <TextContainer>
             <BenefitsLeftContainer>
               <UlContainer>

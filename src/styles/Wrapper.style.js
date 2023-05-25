@@ -5,7 +5,5 @@ display: flex;
 flex-direction: column;
 width: ${(props) => (props.bigWrapper ? '80%' : '75%')};
 justify-content: ${(props) => (props.center ? 'center' : 'flex-start')};
-background-color: tomato;
-
 `;
 

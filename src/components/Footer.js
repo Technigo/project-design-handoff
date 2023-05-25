@@ -7,18 +7,19 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-section">
-        <h3>Ylva Karlsson</h3>
-        <p>
+        <h3>Made by: Ylva Karlsson, student at Technigo 2023</h3>
+        <div className="icon-container">
           <a href="https://github.com/person1">
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} size="2x" className="icon" />
           </a>
           <a href="https://www.linkedin.com/ylvakarlsson87">
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} size="2x" className="icon" />
           </a>
           <a href="mailto:ylva_87@hotmail.com">
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon icon={faEnvelope} size="2x" className="icon" />
           </a>
-        </p>
+        </div>
+        <h4>Design by Cecilia Lestrell, UX-design student at Technigo 2023</h4>
       </div>
     </footer>
   );
