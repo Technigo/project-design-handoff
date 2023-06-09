@@ -1,0 +1,154 @@
+.sectionHero {
+    height: 810px;
+    padding: 40px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+  
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-style: italic;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .burgerMenu {
+    filter: invert(100%);
+  }
+  
+  .navBar button, .menuBarTop, .menuBarScroll {
+    display: none;
+  }
+  
+  .heroWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+  }
+  
+  .heroHeadline {
+    margin: 20px 0;
+    line-height: 84px;
+  }
+  
+  .heroWrapper button {
+    width: 100%;
+    margin: 0 8px 8px 0;
+  }
+  
+  .btnWrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  
+  .compatibleWrapper {
+    color: white;
+  }
+  
+  .compatibleLogo {
+    margin: 10px 10px 10px 0;
+    max-height: 22px;
+  }
+
+
+  /* RESPONSIVE DESIGN FOR TABLET AND DESKTOP */
+@media (min-width: 667px) {
+  .sectionHero {
+    height: 910px;
+  }
+
+  .heroWrapper {
+    max-width: 410px;
+  }
+  
+  .btnWrapper {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .compatibleLogo {
+    max-height: 44px;
+  }
+  
+  .burgerMenu {
+    display: none;
+  }
+  
+  .navBar button, .menuBarTop, .menuBarScroll {
+    display: block;
+  }
+  
+  .navBar button {
+    font-size: 12px;
+    width: 150px;
+  }
+  
+  .menuBarTop, .menuBarScroll {
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .menuBarTop {
+    background-color: white;
+  }
+  
+  .menuBarTop a {
+    color: black;
+  }
+  
+  .menuBarScroll {
+    background-color: black;
+    width:fit-content;
+    position: fixed;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .menuBarScroll a {
+    color: white;
+  }
+}
+
+/* RESPONSIVE DESIGN FOR TABLET ONLY */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .navBar button, .menuBarTop, .menuBarScroll {
+    padding: 14px 28px;
+  }
+
+  a {
+    margin: 0 6px;
+    text-decoration: none;
+  }
+}
+
+/* RESPONSIVE DESIGN FOR DESKTOP ONLY */
+@media (min-width: 1024px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .menuBarTop, .menuBarScroll {
+    padding: 18px 36px;
+  }
+
+  a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+}
