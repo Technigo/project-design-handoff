@@ -3,8 +3,6 @@ import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 import Hero from 'components/Hero'
 import Benefits from 'components/Benefits'
-import Workouts from 'components/Workouts'
-import Activity from 'components/Activity'
 import Community from 'components/Community'
 
 const GlobalStyle = createGlobalStyle`
@@ -19,8 +17,6 @@ const App = () => {
       <Hero />
       <GlobalStyle />
       <Benefits />
-      <Workouts />
-      <Activity />
       <Community />
     </>
   )
