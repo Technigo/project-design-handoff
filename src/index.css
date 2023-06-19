@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+.ReviewSlider{
+  width: 300px;
+  height: 500px;
+  
+  
+}
+.Review {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 170px;
+  max-width: 310px;
+  background-color: #4796A8;
+  padding: 10px 30px;
+  border-radius: 15px;
+  color: white;
+  border-radius: 30px;
+}
