@@ -40,10 +40,10 @@ position: absolute;
 const FacebookLogo = styled.img`
   max-width: 100%;
   
-  &:hover path {
-   
-    opacity: 0.8; 
-}
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 `;
 
 const InstagramLogo = styled.img`

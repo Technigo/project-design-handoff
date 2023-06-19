@@ -10,6 +10,7 @@ import Contacts from 'components/Contacts';
 import { Footer } from 'components/Footer';
 
 const GlobalStyle = createGlobalStyle`
+
 body {
   font-family: 'Libre Franklin', sans-serif;
   color: #025323;
