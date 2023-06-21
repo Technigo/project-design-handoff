@@ -6,7 +6,7 @@ import Wellbeing from 'Wellbeing/Wellbeing';
 import YogisCarousel from 'Yogis/YogisCarousel';
 import OnlineYoga from 'OnlineYoga';
 import PersonalisedMeal from 'PersonalisedMeal';
-import PricePlan from 'Priceplan';
+import PricingPlan from 'PricingPlan';
 import Footer from 'Footer';
 import Yogis from './Yogis/Yogis';
 
@@ -46,7 +46,7 @@ export const App = () => {
         <FreeTrialButton />
       </div>
       <PersonalisedMeal />
-      <PricePlan />
+      <PricingPlan />
       <Footer />
     </>
   );
