@@ -958,12 +958,14 @@ max-width: 90%;
 }
 
 .movie-card {
-
   margin-right: 24px;
  margin-bottom: 48px;
 }
 
-
+.yoga-container {
+  display: flex;
+  align-items: flex-start;
+}
 
 .online-yoga-container {
   background-color: #D0C4B8;
@@ -996,6 +998,11 @@ margin-top: -24px;
   align-items: center;
   justify-content: center;
 }
+
+
+/*
+
+*/
 
 .personalised-meal-container {
 background-color: #D0C4B8;

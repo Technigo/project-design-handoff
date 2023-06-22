@@ -2,7 +2,7 @@ import React from 'react';
 
 const YogisCards = () => {
   return (
-    <main>
+    <main className="yoga-container">
       <div className="yogi-card">
         <img src="./images/pexels-cottonbro-studio-4056535 - Edited.png" alt="yoga woman" />
         <p>“This program has really helped me to be more grounded in the present moment.
