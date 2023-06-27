@@ -23,7 +23,8 @@ const Advantages = () => {
       </div>
 
       <div className="diet">
-        <h3>Your preferred workout and diet plan</h3>
+        <h3>Your preferred workout</h3>
+        <h3>and diet plan</h3>
         <ul className="custom-list">
           <li>We offer various type of workout  </li>
           <li>Trainings are conducted by certified
