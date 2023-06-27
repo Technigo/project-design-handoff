@@ -28,14 +28,18 @@ const Advantages = () => {
         <ul className="custom-list">
           <li>We offer various type of workout  </li>
           <li>Trainings are conducted by certified
-             coaches and tailored according to your
+             coaches
+          </li>
+          <li>and tailored according to your
               personal needs
           </li>
+
         </ul>
         <div>Diet plan</div>
         <ul className="custom-list">
           <li>We offer different healthy diets</li>
-          <li>Diet plans are customised according to your health conditions and background </li>
+          <li>Diet plans are customised according to </li>
+          <li> your health conditions and background </li>
         </ul>
         <img src={`${process.env.PUBLIC_URL}/img/adv-diet1.png`} alt="adv-diet1" />
         <img className="food-img" src={`${process.env.PUBLIC_URL}/img/adv-diet2.png`} alt="adv-diet2" />
