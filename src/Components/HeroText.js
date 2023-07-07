@@ -21,7 +21,7 @@ const HeroTextDiv = styled.div`
 display: flex;
 gap: 15px;
 flex-direction: column;
-margin-top: 400px;
+margin-top: 350px;
 width: 522px;
 text-align: center;
 align-items: center;
@@ -33,6 +33,8 @@ align-items: center;
 `
 
 const NameTextDiv = styled.div`
+margin-bottom: -15px;
+
 @media (min-width: 1024px) {
 display: none;
 }

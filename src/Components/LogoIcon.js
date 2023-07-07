@@ -9,7 +9,7 @@ const DesktopDiv = styled.div`
 }
 
 img {
-  padding-left: 50px;
+  padding-left: 20px;
 }`
 
 const MobileDiv = styled.div`

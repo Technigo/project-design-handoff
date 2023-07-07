@@ -8,7 +8,9 @@ export const Hero = () => {
   return (
     <HeroSection>
       <Navbar />
-      <HeroText />
+      <HeroTextWrapper>
+        <HeroText />
+      </HeroTextWrapper>
     </HeroSection>
   )
 }
@@ -18,5 +20,16 @@ background-image: url(${HeroBackground});
 height: 982px;
 background-size: cover;
 background-position: 65%;
+display: flex;
+flex-direction: column;
+`
 
+const HeroTextWrapper = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+
+@media (min-width: 1024px) {
+  justify-content: flex-start;
+}
 `

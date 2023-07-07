@@ -5,10 +5,12 @@ font-size: 48px;
 text-align: center;
 font-style: bold;
 color: white;
+padding-bottom: 45px;
 
 @media (min-width: 1024px) {
     font-size: 56px;
     font-weight: bold;
+    padding-bottom: 0px;
 }
 `
 

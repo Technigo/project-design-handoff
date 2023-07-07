@@ -13,9 +13,12 @@ border: none;
 border-radius: 20px;
 margin-bottom: 8px;
 cursor: pointer;
+transition: 0.2s ease-in-out;
 
 :hover {
+    transition: transform 0.2s ease-in-out;
     opacity: 80%;
+    transform: scale(1.02);
 }
 
 @media (min-width: 1024px) {

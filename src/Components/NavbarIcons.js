@@ -7,7 +7,9 @@ export const NavbarIcons = () => {
   return (
     <NBI>
       <img className="search" src={Search} alt="Search Icon" />
-      <img className="menu" src={HamburgerMenuIcon} alt="HamburgerMenu Icon" />
+      <HamIcon>
+        <img className="menu" src={HamburgerMenuIcon} alt="HamburgerMenu Icon" />
+      </HamIcon>
     </NBI>
   )
 }
@@ -15,9 +17,18 @@ export const NavbarIcons = () => {
 const NBI = styled.div`
 display: flex;
 gap: 34px;
+padding-right: 20px;
 justify-content: flex-end;
 
 img {
   cursor: pointer;
+}
+`
+
+const HamIcon = styled.div`
+display: flex;
+
+@media (min-width: 1023px) {
+  display: none;
 }
 `
