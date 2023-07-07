@@ -63,6 +63,14 @@ line-height: 20px;
 }
 `
 
+export const NavLink = styled.p`
+font-size: 16px;
+color: white;
+font-weight: 400;
+line-height: 20px;
+cursor: pointer;
+`
+
 export const ReviewParagraph = styled.p`
 font-size: 16px;
 color: white;
