@@ -13,7 +13,7 @@ border: none;
 border-radius: 50px;
 margin-bottom: 8px;
 cursor: pointer;
-box-shadow: 0px 13px 13px -4px rgba(10, 6, 36, 0.7);
+box-shadow: 0px 13px 13px -4px rgba(10, 6, 36, 0.5);
 transition: 0.2s ease-in-out;
 
 :hover {
