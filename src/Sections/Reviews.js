@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { WhiteParagraph, ReviewParagraph } from '../Components/Fonts';
+import { Paragraph, ReviewParagraph } from '../Components/Fonts';
 import ReviewMan from '../Assets/Photos/reviewprofilepic1.png';
 
 const ReviewSection = styled.section`
 margin: auto;
-background-color: #46A1AE;
 display: flex;
+background-color: #8c78af;
 align-items: center;
 flex-direction: column;
 text-align: center;
@@ -27,7 +27,7 @@ width: 100%;
 const ReviewsTitle = styled.h1`
 font-size: 24px;
 font-weight: bold;
-color: black;
+color: #312661;
 
 @media (min-width: 1024px) {
     font-size: 40px;
@@ -53,7 +53,7 @@ text-align: left;
 flex-direction: column;
 width: 415px;
 height: 232px;
-background-color: #3791A1;
+background: #B3A1CC;
 border-radius: 20px;
 padding-top: 35px;
 padding-left: 35px;
@@ -81,10 +81,10 @@ export const Reviews = () => {
     <ReviewSection>
       <ReviewsTitle>Come join us!</ReviewsTitle>
       <WhiteTextDiv>
-        <WhiteParagraph>
+        <Paragraph purple>
         Discover all  the benefits of Power Yoga and
         become a part of our amazing community!
-        </WhiteParagraph>
+        </Paragraph>
       </WhiteTextDiv>
       <SingleReviewDiv>
         <ReviewTextDiv>

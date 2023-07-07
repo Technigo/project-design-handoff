@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BigBlackTitle, YellowTitle } from 'Components/Fonts';
+import { BigBlackTitle, PurpleTitle } from 'Components/Fonts';
 import { ClassButton } from '../Components/ClassButton';
 import { CTAButtonSUF } from '../Components/CTAButton';
 
@@ -11,7 +11,7 @@ align-items: center;
 justify-content: center;
 display: flex;
 flex-direction: column;
-border: 4px solid #66A1AE;
+border: 4px solid #8c78af;
 
 @media (min-width: 1024px) {
   width: 50%;
@@ -20,11 +20,13 @@ border: 4px solid #66A1AE;
 }
 
 input[type=text] {
+  outline: none;
+  box-sizing: border-box;
     width: 340px;
     height: 48px;
-    border: 1px solid #888585;
+    border: 1px solid #c0b3d6;
     border-radius: 20px;
-    color: #888585;
+    color: #c0b3d6;
     font-family: Outfit;
     font-size: 16px;
     font-weight: 500;
@@ -32,7 +34,21 @@ input[type=text] {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    &:hover {
+       border: 2px solid #c0b3d6;
+     }
 }`
+
+const Label = styled.label`
+  font-size: 16px;
+  position: relative;
+   font-weight: 500; 
+   top: 20px;
+   left: 14px;
+   padding: 0 8px;
+   background: #FFFFFF;
+   color: #c0b3d6;
+   `
 
 const ClassButtonDiv = styled.div`
 display: flex;
@@ -46,13 +62,16 @@ export const SignupForm = () => {
     <SUFSection>
       <BigBlackTitle>Sign up for a class</BigBlackTitle>
       <form>
-        <YellowTitle>Enter personal details*</YellowTitle>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Phone Number" />
+        <PurpleTitle>Enter personal details*</PurpleTitle>
+        <Label>Name</Label>
+        <input type="text" />
+        <Label>Email</Label>
+        <input type="text" />
+        <Label>Phone Number</Label>
+        <input type="text" />
       </form>
       <ClassButtonDiv>
-        <YellowTitle>Choose a class*</YellowTitle>
+        <PurpleTitle>Choose a class*</PurpleTitle>
         <ClassButton>Power Yoga 60</ClassButton>
         <ClassButton>Power Yoga 75</ClassButton>
         <ClassButton>Yoga Strong</ClassButton>

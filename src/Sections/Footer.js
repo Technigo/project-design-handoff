@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { WhiteParagraph } from '../Components/Fonts';
+import { Paragraph } from '../Components/Fonts';
 import Instagram from '../Assets/Icons/Tablet/Instagram.svg';
 import Facebook from '../Assets/Icons/Tablet/Facebook.svg';
 import LinkedIn from '../Assets/Icons/Tablet/LinkedIn.svg';
@@ -13,7 +13,7 @@ import Logo from '../Assets/Icons/Logo.svg';
 import Logoandname from '../Assets/Icons/Logoandname.svg';
 
 const FooterSection = styled.section`
-background-color: #2E160E;
+background: linear-gradient(137deg, rgba(255,230,235,1) 35%, rgba(233,229,255,1) 100%);
 margin: auto;
 height: 180px;
 text-align: center;
@@ -82,7 +82,6 @@ margin-bottom: 30px;
 const SoMeIcons = styled.div`
 display: flex;
 justify-content: space-evenly;
-background-color: #2E160E;
 width: 400px;
 margin: auto;
 
@@ -94,7 +93,6 @@ margin: auto;
 const DesktopSoMeIcons = styled.div`
 display: flex;
 justify-content: space-evenly;
-background-color: #2E160E;
 width: 400px;
 margin: auto;
 
@@ -113,9 +111,9 @@ export const Footer = () => {
         <img src={Logoandname} alt="Santulan Yoga Logo and name" />
       </DesktopLogoDiv>
       <FooterNav>
-        <WhiteParagraph>Classes</WhiteParagraph>
-        <WhiteParagraph>About</WhiteParagraph>
-        <WhiteParagraph>Contact</WhiteParagraph>
+        <Paragraph>Classes</Paragraph>
+        <Paragraph>About</Paragraph>
+        <Paragraph>Contact</Paragraph>
       </FooterNav>
       <FooterLine />
       <SoMeIcons>

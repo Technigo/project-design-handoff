@@ -19,9 +19,14 @@ const HeroSection = styled.section`
 background-image: url(${HeroBackground});
 height: 982px;
 background-size: cover;
-background-position: 65%;
+background-position: 55%;
 display: flex;
 flex-direction: column;
+
+@media (min-width: 1024px) {
+  background-size: cover;
+  background-position: 0%;
+}
 `
 
 const HeroTextWrapper = styled.div`

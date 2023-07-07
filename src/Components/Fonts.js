@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const HeaderTitle = styled.h1`
 font-size: 48px;
@@ -16,15 +16,15 @@ padding-bottom: 45px;
 
 export const BigBlackTitle = styled.h1`
 font-size: 50px;
-color: black;
+color: #312661;
 padding-bottom: 45px;
 `
 
-export const YellowTitle = styled.h2`
+export const PurpleTitle = styled.h2`
 font-size: 24px;
 font-weight: 500;
 line-height: 27px;
-color: #FF9F0A;
+color: #312661;
 
 @media (min-width: 1024px) {
     font-size: 32px;
@@ -35,12 +35,12 @@ color: #FF9F0A;
 export const SmallBlackTitle = styled.h3`
 font-size: 24px;
 font-weight: bold;
-color: black;
+color: #312661;
 `
 
 export const BlueParagraph = styled.p`
 font-size: 24px;
-color: #89D6E8;
+color: #e6dcff;
 width: 522px;
 height: 80px;
 display: flex;
@@ -53,7 +53,7 @@ padding-bottom: 15px;
 }
 `
 
-export const WhiteParagraph = styled.p`
+export const Paragraph = styled.p`
 font-size: 16px;
 color: white;
 font-weight: 400;
@@ -63,6 +63,10 @@ line-height: 20px;
     font-size: 24px;
     line-height: 28px;
 }
+
+${(props) => props.purple && css`
+    color: #312661;
+`}
 `
 
 export const NavLink = styled.p`

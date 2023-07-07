@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { WhiteParagraph } from '../Components/Fonts';
+import { Paragraph } from '../Components/Fonts';
 import AddressPhoto from '../Assets/Photos/addressphoto.jpg';
 
 const AddressDiv = styled.div`
@@ -20,7 +20,7 @@ margin-bottom: 16px;
 const AddressTextDiv = styled.div`
 width: 259px;
 height: 192px;
-background-color: #46A1AE;
+background: #8c78af;
 display: flex;
 align-items: center;
 padding-left: 7px;
@@ -45,10 +45,10 @@ export const Address = () => {
     <AddressDiv>
       <AddressImg src={AddressPhoto} alt="Sunny house in stockholm" />
       <AddressTextDiv>
-        <WhiteParagraph>Find us at:<br />
+        <Paragraph>Find us at:<br />
         Fridhemsplansgatan No. 10<br />
         Stockholm, Sweden
-        </WhiteParagraph>
+        </Paragraph>
       </AddressTextDiv>
     </AddressDiv>
   )

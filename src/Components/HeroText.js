@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 import React from 'react';
-import { HeaderTitle, BlueParagraph, WhiteParagraph } from './Fonts'
+import { HeaderTitle, BlueParagraph, Paragraph } from './Fonts'
 import { CTAButton } from './CTAButton'
 
 export const HeroText = () => {
   return (
     <HeroTextDiv>
-      <NameTextDiv><WhiteParagraph>Santulan Power Yoga Stockholm</WhiteParagraph></NameTextDiv>
+      <NameTextDiv><Paragraph>Santulan Power Yoga Stockholm</Paragraph></NameTextDiv>
       <HeaderTitle>Move your body <br />Rest your mind</HeaderTitle>
       <BlueParagraph>Build strength, agility and endurance<br />
 whilst in a calm and serene studio, tucked away in Kungsholmen, Stockholm.
       </BlueParagraph>
       <CTAButton>Sign up for a class</CTAButton>
-      <WhiteParagraph>Want to know more about us?</WhiteParagraph>
+      <Paragraph>Want to know more about us?</Paragraph>
     </HeroTextDiv>
   )
 }

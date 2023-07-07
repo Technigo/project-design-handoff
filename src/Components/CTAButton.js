@@ -6,23 +6,23 @@ text-align: center;
 justify-content: center;
 font-size: 20px;
 font-weight: 600;
-background-color: #FF9F0A;
-color: black;
+background: linear-gradient(132deg, rgba(224,135,184,1) 35%, rgba(164,135,232,1) 100%);
+color: white;
 padding: 14px 65px;
 border: none;
-border-radius: 20px;
+border-radius: 50px;
 margin-bottom: 8px;
 cursor: pointer;
+box-shadow: 0px 13px 13px -4px rgba(10, 6, 36, 0.7);
 transition: 0.2s ease-in-out;
 
 :hover {
     transition: transform 0.2s ease-in-out;
-    opacity: 80%;
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 @media (min-width: 1024px) {
-    padding: 14px 165px;
+    padding: 20px 80px;
 }
 `
 
@@ -32,8 +32,8 @@ text-align: center;
 justify-content: center;
 font-size: 24px;
 font-weight: 600;
-background-color: #FF9F0A;
-color: black;
+background-color: #382D6D;
+color: white;
 padding: 11px 65px;
 border: none;
 border-radius: 20px;
