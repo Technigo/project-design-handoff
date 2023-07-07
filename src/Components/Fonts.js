@@ -84,6 +84,15 @@ font-weight: 600;
 line-height: 26px;
 `
 
+export const ReviewName = styled.p`
+font-size: 16px;
+color: white;
+font-weight: 600;
+line-height: 26px;
+display: flex;
+align-items: center;
+`
+
 export const NavLinks = styled.p`
 font-size: 16px;
 color: white;

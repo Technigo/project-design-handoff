@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Paragraph, ReviewParagraph } from '../Components/Fonts';
+import { Paragraph, ReviewParagraph, ReviewName } from '../Components/Fonts';
 import ReviewMan from '../Assets/Photos/reviewprofilepic1.png';
 
 const ReviewSection = styled.section`
@@ -59,7 +59,7 @@ padding-top: 35px;
 padding-left: 35px;
 
 @media (min-width: 1024px) {
-  margin-top: 200px;
+  margin-top: 150px;
   }`
 
 const ReviewTextDiv = styled.div`
@@ -91,11 +91,11 @@ export const Reviews = () => {
           <ReviewParagraph>
             Anyone who thinks of joining a class, do it!
             Its such a great mix of physical exercise and a calm break
-            from the everyday life.
+            from everyday life.
           </ReviewParagraph>
           <ReviewerInfo>
             <img src={ReviewMan} alt="Male reviewer" />
-            <ReviewParagraph> John B.</ReviewParagraph>
+            <ReviewName> John B.</ReviewName>
           </ReviewerInfo>
         </ReviewTextDiv>
       </SingleReviewDiv>

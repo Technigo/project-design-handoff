@@ -101,6 +101,10 @@ margin: auto;
 }
 `
 
+const SomeIcon = styled.img`
+  cursor: pointer;
+`
+
 export const Footer = () => {
   return (
     <FooterSection>
@@ -117,16 +121,16 @@ export const Footer = () => {
       </FooterNav>
       <FooterLine />
       <SoMeIcons>
-        <img src={Instagram} alt="Instagram" />
-        <img src={Facebook} alt="Facebook" />
-        <img src={LinkedIn} alt="LinkedIn" />
-        <img src={Twitter} alt="Twitter" />
+        <SomeIcon src={Instagram} alt="Instagram" />
+        <SomeIcon src={Facebook} alt="Facebook" />
+        <SomeIcon src={LinkedIn} alt="LinkedIn" />
+        <SomeIcon src={Twitter} alt="Twitter" />
       </SoMeIcons>
       <DesktopSoMeIcons>
-        <img src={DesktopInstagram} alt="Instagram" />
-        <img src={DesktopFacebook} alt="Facebook" />
-        <img src={DesktopLinkedIn} alt="LinkedIn" />
-        <img src={DesktopTwitter} alt="Twitter" />
+        <SomeIcon src={DesktopInstagram} alt="Instagram" />
+        <SomeIcon src={DesktopFacebook} alt="Facebook" />
+        <SomeIcon src={DesktopLinkedIn} alt="LinkedIn" />
+        <SomeIcon src={DesktopTwitter} alt="Twitter" />
       </DesktopSoMeIcons>
     </FooterSection>
   )
