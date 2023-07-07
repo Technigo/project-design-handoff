@@ -5,7 +5,6 @@ font-size: 48px;
 text-align: center;
 font-style: bold;
 color: white;
-margin-bottom: 56px;
 
 @media (min-width: 1024px) {
     font-size: 56px;
@@ -38,8 +37,18 @@ color: black;
 `
 
 export const BlueParagraph = styled.p`
-font-size: 16px;
+font-size: 24px;
 color: #89D6E8;
+width: 522px;
+height: 80px;
+display: flex;
+text-align: center;
+display: none;
+padding-bottom: 15px;
+
+@media (min-width: 1024px) {
+    display: inline-block;
+}
 `
 
 export const WhiteParagraph = styled.p`
@@ -47,7 +56,6 @@ font-size: 16px;
 color: white;
 font-weight: 400;
 line-height: 20px;
-padding-top: 8px;
 
 @media (min-width: 1024px) {
     font-size: 24px;

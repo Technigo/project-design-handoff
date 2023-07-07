@@ -4,7 +4,7 @@ export const CTAButton = styled.button`
 font-family: Outfit;
 text-align: center;
 justify-content: center;
-font-size: 24px;
+font-size: 20px;
 font-weight: 600;
 background-color: #FF9F0A;
 color: black;
