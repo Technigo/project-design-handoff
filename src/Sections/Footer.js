@@ -17,6 +17,7 @@ background-color: #2E160E;
 margin: auto;
 height: 180px;
 text-align: center;
+position: relative;
 
 @media (min-width: 688px) {
     height: 240px;

@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { Hero } from './Sections/Hero';
 import { PowerYogaInfo } from './Sections/PowerYogaInfo';
 import { Classes } from './Sections/Classes';
 import { Address } from './Sections/Address';
 import { SantulanInfo } from './Sections/SantulanInfo';
-import { Reviews } from './Sections/Reviews';
-import { SignupForm } from './Sections/SignupForm';
+import { ReviewsSignUp } from './Sections/ReviewsSignUp';
 import { Footer } from './Sections/Footer';
 
 export const App = () => {
@@ -16,8 +15,7 @@ export const App = () => {
       <Classes />
       <SantulanInfo />
       <Address />
-      <Reviews />
-      <SignupForm />
+      <ReviewsSignUp />
       <Footer />
     </div>
   )

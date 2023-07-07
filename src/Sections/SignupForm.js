@@ -5,13 +5,20 @@ import { ClassButton } from '../Components/ClassButton';
 import { CTAButtonSUF } from '../Components/CTAButton';
 
 const SUFSection = styled.section`
-margin: auto;
-padding-top: 25px;
-padding-bottom: 25px;
+width: 100%;
+padding-top: 35px;
+padding-bottom: 35px;
 align-items: center;
+justify-content: center;
 display: flex;
 flex-direction: column;
 border: 4px solid #66A1AE;
+
+@media (min-width: 1024px) {
+  width: 50%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 input[type=text] {
     width: 340px;

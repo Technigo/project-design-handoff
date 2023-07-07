@@ -10,9 +10,9 @@ display: flex;
 align-items: center;
 flex-direction: column;
 text-align: center;
-height: 431px;
-padding-top: 20px;
-padding-bottom: 20px;
+padding-top: 25px;
+padding-bottom: 25px;
+width: 100%;
 
 @media (min-width: 688px) {
     padding-top: 30px;
@@ -21,6 +21,7 @@ padding-bottom: 20px;
 @media (min-width: 1024px) {
     padding-top: 60px;
     height: 728px;
+    width: 50%;
 }`
 
 const ReviewsTitle = styled.h1`
