@@ -5,7 +5,6 @@ import { ClassButton } from '../Components/ClassButton';
 import { CTAButtonSUF } from '../Components/CTAButton';
 
 const SUFSection = styled.section`
-width: 100%;
 padding-top: 35px;
 padding-bottom: 35px;
 align-items: center;
