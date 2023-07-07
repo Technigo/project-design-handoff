@@ -24,6 +24,7 @@ export const PurpleTitle = styled.h2`
 font-size: 24px;
 font-weight: 500;
 line-height: 27px;
+padding-bottom: 15px;
 color: #312661;
 
 @media (min-width: 1024px) {
@@ -60,7 +61,7 @@ font-weight: 400;
 line-height: 20px;
 
 @media (min-width: 1024px) {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
 }
 

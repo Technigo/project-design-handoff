@@ -14,6 +14,6 @@ margin-top: 10px;
 cursor: pointer;
 
 :focus {
-    background-color: #66A1AE;
+    background-color: #8c78af;
 }
 `

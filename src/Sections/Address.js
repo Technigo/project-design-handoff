@@ -8,13 +8,13 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-margin-top: 16px;
+margin-top: 30px;
 margin-left: 16px;
 margin-right: 16px;
-margin-bottom: 16px;
+margin-bottom: 30px;
 
 @media (min-width: 1024px) {
-    margin: 50px;
+    margin: 80px;
 }`
 
 const AddressTextDiv = styled.div`

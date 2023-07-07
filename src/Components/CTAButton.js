@@ -32,12 +32,19 @@ text-align: center;
 justify-content: center;
 font-size: 24px;
 font-weight: 600;
-background-color: #382D6D;
+background: linear-gradient(132deg, rgba(224,135,184,1) 35%, rgba(164,135,232,1) 100%);
 color: white;
 padding: 11px 65px;
 border: none;
 border-radius: 20px;
+box-shadow: 0px 13px 13px -4px rgba(10, 6, 36, 0.3);
 margin-bottom: 8px;
 cursor: pointer;
 margin-top: 45px;
+
+:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.03);
+}
+
 `
