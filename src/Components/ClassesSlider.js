@@ -17,7 +17,11 @@ position: relative;
 padding-top: 16px;
 display: flex;
 align-items: center;
-justify-content: center;`
+justify-content: center;
+
+@media (min-width: 1023px) {
+    display: none;
+}`
 
 const ClassesInfoContainer = styled.div`
 display: flex;
