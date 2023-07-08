@@ -41,9 +41,6 @@ padding-top: 16px;
 
 @media (min-width: 688px) {
     width: 378px;
-}
-
-@media (min-width: 1024px) {
 }`
 
 const SingleReviewDiv = styled.div`
@@ -51,19 +48,30 @@ margin-top: 24px;
 display: flex;
 text-align: left;
 flex-direction: column;
-width: 415px;
+width: 290px;
 height: 232px;
 background: #B3A1CC;
 border-radius: 20px;
 padding-top: 35px;
-padding-left: 35px;
+padding-left: 25px;
+padding-right: 25px;
+
+@media (min-width: 688px) {
+  margin-top: 150px;
+  width: 415px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
 
 @media (min-width: 1024px) {
   margin-top: 150px;
+  width: 415px;
+  padding-right: 35px;
   }`
 
 const ReviewTextDiv = styled.div`
-width: 341px;`
+display: flex;
+flex-direction: column;`
 
 const ReviewerInfo = styled.div`
 width: 140px;
