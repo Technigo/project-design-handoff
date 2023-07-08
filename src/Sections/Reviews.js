@@ -104,12 +104,13 @@ img {
 
 const Arrow = styled.button`
 border: none;
+position: absolute;
 background: transparent;
 display: flex;
 justify-content: center;
 flex-direction: column;
-margin-top: 24px;
-padding-left: 10px;
+margin-top: 140px;
+padding-left: 350px;
 cursor: pointer;
 
 :hover {
@@ -117,7 +118,8 @@ cursor: pointer;
 }
 
 @media (min-width: 688px) {
-  margin-top: 150px;
+  margin-top: 265px;
+  margin-left: 155px;
 }
 `
 
