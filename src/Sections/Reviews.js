@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Paragraph, ReviewParagraph, ReviewName } from '../Components/Fonts';
-import ReviewMan from '../Assets/Photos/reviewprofilepic1.png';
+import ReviewPerson1 from '../Assets/Photos/reviewprofilepic1.png';
+import ReviewPerson2 from '../Assets/Photos/reviewprofilepic2.png';
+import ReviewPerson3 from '../Assets/Photos/reviewprofilepic3.png';
+import RightArrow from '../Assets/Icons/RightArrow.svg';
+
+const AllReviews = [
+  { name: 'John B.',
+    image: ReviewPerson1,
+    review: 'Anyone who thinks of joining a class, do it! Its such a great mix of physical exercise and a calm break from everyday life.' },
+  { name: 'Anna M.',
+    image: ReviewPerson2,
+    review: 'Just WOW. I have never tried something like this before, but this is definitely my new thing! Never going back to a normal gym.' },
+  { name: 'Moa F.',
+    image: ReviewPerson3,
+    review: '10/10 recommend! Everyone should go to the Santulan studio and try out power yoga at least once in their lives.' }
+]
 
 const ReviewSection = styled.section`
 margin: auto;
@@ -42,6 +57,9 @@ padding-top: 16px;
 @media (min-width: 688px) {
     width: 378px;
 }`
+
+const ReviewAndArrow = styled.div`
+display: flex;`
 
 const SingleReviewDiv = styled.div`
 margin-top: 24px;
@@ -84,7 +102,31 @@ img {
   height: 50px;
 }`
 
+const Arrow = styled.button`
+border: none;
+background: transparent;
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-top: 24px;
+padding-left: 10px;
+cursor: pointer;
+
+:hover {
+ opacity: 60%;
+}
+
+@media (min-width: 688px) {
+  margin-top: 150px;
+}
+`
+
 export const Reviews = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNextClick = () => {
+    setCurrentIndex(currentIndex === AllReviews.length - 1 ? 0 : currentIndex + 1);
+  };
   return (
     <ReviewSection>
       <ReviewsTitle>Come join us!</ReviewsTitle>
@@ -94,19 +136,20 @@ export const Reviews = () => {
         become a part of our amazing community!
         </Paragraph>
       </WhiteTextDiv>
-      <SingleReviewDiv>
-        <ReviewTextDiv>
-          <ReviewParagraph>
-            Anyone who thinks of joining a class, do it!
-            Its such a great mix of physical exercise and a calm break
-            from everyday life.
-          </ReviewParagraph>
-          <ReviewerInfo>
-            <img src={ReviewMan} alt="Male reviewer" />
-            <ReviewName> John B.</ReviewName>
-          </ReviewerInfo>
-        </ReviewTextDiv>
-      </SingleReviewDiv>
+      <ReviewAndArrow>
+        <SingleReviewDiv>
+          <ReviewTextDiv>
+            <ReviewParagraph>
+              {AllReviews[currentIndex].review}
+            </ReviewParagraph>
+            <ReviewerInfo>
+              <img src={AllReviews[currentIndex].image} alt="Male reviewer" />
+              <ReviewName>{AllReviews[currentIndex].name}</ReviewName>
+            </ReviewerInfo>
+          </ReviewTextDiv>
+        </SingleReviewDiv>
+        <Arrow onClick={handleNextClick}><img src={RightArrow} alt="next class button" /></Arrow>
+      </ReviewAndArrow>
     </ReviewSection>
   )
 }
