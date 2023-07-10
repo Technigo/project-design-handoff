@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { SmallBlackTitle } from './Fonts';
 import PowerYoga60 from '../Assets/Photos/poweryoga60.png';
-import PowerYoga75 from '../Assets/Photos/poweryoga60.png';
+import PowerYoga75 from '../Assets/Photos/poweryoga75.png';
 import YogaStrong from '../Assets/Photos/yogastrong.png';
 
 export const DesktopClasses = () => {
