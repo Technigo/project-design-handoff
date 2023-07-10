@@ -74,6 +74,10 @@ padding-top: 35px;
 padding-left: 25px;
 padding-right: 25px;
 
+@media (max-width: 400px) {
+  width: 200px;
+}
+
 @media (min-width: 688px) {
   margin-top: 150px;
   width: 415px;
@@ -85,7 +89,7 @@ padding-right: 25px;
   margin-top: 150px;
   width: 415px;
   padding-right: 35px;
-  }`
+}`
 
 const ReviewTextDiv = styled.div`
 display: flex;
@@ -96,6 +100,10 @@ width: 140px;
 display: flex;
 gap: 16px;
 padding-top: 44px;
+
+@media (max-width: 400px) {
+padding-top: 25px;
+}
 
 img {
   width: 50px;
@@ -116,6 +124,12 @@ cursor: pointer;
 :hover {
  opacity: 60%;
 }
+
+@media (max-width: 400px) {
+  margin-top: 145px;
+padding-left: 260px;
+}
+
 
 @media (min-width: 688px) {
   margin-top: 265px;

@@ -16,4 +16,8 @@ cursor: pointer;
 :focus {
     background-color: #8c78af;
 }
+
+@media (max-width: 400px) {
+      width: 290px;
+     }
 `

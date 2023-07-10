@@ -37,6 +37,10 @@ input[type=text] {
     &:hover {
        border: 2px solid #c0b3d6;
      }
+
+     @media (max-width: 400px) {
+      width: 290px;
+     }
 }`
 
 const Label = styled.label`

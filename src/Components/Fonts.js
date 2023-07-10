@@ -15,9 +15,13 @@ padding-bottom: 45px;
 `
 
 export const BigBlackTitle = styled.h1`
-font-size: 50px;
+font-size: 32px;
 color: #312661;
 padding-bottom: 45px;
+
+@media (min-width: 1024px) {
+    font-size: 50px;
+}
 `
 
 export const PurpleTitle = styled.h2`

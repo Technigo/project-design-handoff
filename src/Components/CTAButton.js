@@ -47,4 +47,8 @@ margin-top: 45px;
     transform: scale(1.03);
 }
 
+@media (max-width: 400px) {
+      width: 290px;
+      font-size: 20px;
+     }
 `
