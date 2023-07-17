@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const StyledNutrition = styled.section`
     background-color: ${({ theme }) => (theme.colors.beige)};
@@ -20,44 +20,6 @@ export const StyledNutrition = styled.section`
         font-size: 16px;
         max-width: 550px;
         align-self: flex-start;
-    }
-
-    .recipe-section {
-        display: flex;
-        overflow: hidden;
-        align-items: flex-end;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        /* justify-content: center; */
-    }
-
-    .recipe-card {
-        display: flex;
-        flex-direction: column;
-        /* width: 90%; */
-        align-items: center;
-        margin: 10px;
-    }
-
-    .recipe-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        width: 235px;
-    }
-
-    .recipe-info p{
-        margin: 10px 0 2px 0;
-        font-size: 14px;
-    }
-
-    .recipe-title {
-        width: 60%;
-    }
-
-    .recipe-card:hover > .recipe-info {
-        font-weight: bold;
     }
 
     img {
@@ -104,3 +66,45 @@ export const StyledNutrition = styled.section`
 
     }
     `
+
+export const RecipeSection = styled.div`
+    display: flex;
+    overflow: hidden;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* justify-content: center; */
+
+@media (min-width: 1025px) {
+    justify-content: center;
+}
+`
+
+export const RecipeCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    /* width: 90%; */
+    align-items: center;
+    margin: 10px;
+
+`
+
+export const RecipeInfo = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 235px;
+    
+p {
+    margin: 10px 0 2px 0;
+    font-size: 14px;
+}
+
+${RecipeCard}:hover & {
+    font-weight: bold;
+}
+`
+export const RecipeTitle = styled.p`
+    width: 60%;
+`

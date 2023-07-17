@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import recipes from 'libraries/recipes';
-import { StyledNutrition } from 'components/Nutrition/Nutrition.styles';
+import { StyledNutrition, RecipeSection, RecipeCard, RecipeInfo, RecipeTitle } from 'components/Nutrition/Nutrition.styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -54,19 +54,19 @@ export const Nutrition = () => {
         , and includes access to healthy recipes, inspiration and meal plans to support you on your
         wellness journey.
       </p>
-      <div className="recipe-section" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+      <RecipeSection onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
         <FontAwesomeIcon icon={faArrowCircleLeft} type="button" className="left-arrow" onClick={prev} />
         {recipes.map((recipe) => (
-          <div key={recipe.id} className="recipe-card" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-            <div className="recipe-info">
-              <p className="recipe-title">{recipe.title}</p>
+          <RecipeCard key={recipe.id} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+            <RecipeInfo>
+              <RecipeTitle>{recipe.title}</RecipeTitle>
               <p>{recipe.time}</p>
-            </div>
+            </RecipeInfo>
             <img src={`/assets/${recipe.image}`} alt={`${recipe.title}`} />
-          </div>
+          </RecipeCard>
         ))}
         <FontAwesomeIcon icon={faArrowCircleRight} type="button" className="right-arrow" onClick={next} />
-      </div>
+      </RecipeSection>
     </StyledNutrition>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import plans from 'libraries/plans';
-import { StyledPlans } from 'components/Plans/Plans.styles';
+import { StyledPlans, PlanWrapper, PlanCard, PlanButton, PlanPrice, PlanPayment, PlanSubtitle, PlanDetails } from 'components/Plans/Plans.styles';
 import { RegistrationModal } from 'components/RegistrationModal/RegistrationModal'
 
 export const Plans = () => {
@@ -15,22 +15,22 @@ export const Plans = () => {
     <>
       <StyledPlans>
         <h2 id="plans">Choose your preferred pricing plan:</h2>
-        <div className="plan-wrapper">
+        <PlanWrapper>
           {plans.map((plan) => (
-            <div key={plan.id} className="plan-card">
+            <PlanCard key={plan.id}>
               <h3>{plan.title}</h3>
-              <p className="price">{plan.price}</p>
-              <p className="payment">{plan.payment}</p>
-              <p className="subtitle">{plan.subtitle}</p>
-              <div className="plan-details">
+              <PlanPrice>{plan.price}</PlanPrice>
+              <PlanPayment>{plan.payment}</PlanPayment>
+              <PlanSubtitle>{plan.subtitle}</PlanSubtitle>
+              <PlanDetails>
                 <p>{plan.recipes}</p>
                 <p>{plan.yoga}</p>
                 <p>{plan.discount}</p>
-              </div>
-              <button type="button" value={plan.id} onClick={handleClick}>Choose this plan</button>
-            </div>
+              </PlanDetails>
+              <PlanButton type="button" value={plan.id} onClick={handleClick}>Choose this plan</PlanButton>
+            </PlanCard>
           ))}
-        </div>
+        </PlanWrapper>
       </StyledPlans>
       {showform && (<RegistrationModal id={id} setShowForm={setShowForm} />)}
     </>

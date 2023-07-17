@@ -23,9 +23,8 @@ export const StyledBenefits = styled.section`
     @media (min-width: 768px) and (max-width: 1100px) {
         padding: 32px;
     }
-
-
 `
+
 export const BenefitsWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -38,6 +37,7 @@ export const BenefitsWrapper = styled.div`
     justify-content: space-evenly;
     }
 `
+
 export const EachBenefit = styled.div`
     width: 100%;
     max-width: 450px;
@@ -56,5 +56,4 @@ export const EachBenefit = styled.div`
     height: 300px;
     width: 300px;
     }
-
 `

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const StyledHero = styled.section`
     max-width: 100vw;
@@ -8,36 +8,6 @@ export const StyledHero = styled.section`
     background-image: url('/assets/ladytwisting.png');
     background-size: cover;
     background-position: top;
-
-    .nav-bar {
-        display: flex;
-        height: 70px;
-        width: 100%;
-        justify-content: space-between;
-        margin: 0 0 30% 0;
-    }
-
-    .lotus-logo {
-        position: relative;
-        z-index: 0;
-        display: flex;
-    }
-
-    .hexagon {
-        width: 70px;
-        /* align-self: flex-start; */
-        position: absolute;
-        z-index: 1;
-    }
-
-    .lotus {
-        width: 40px;
-        position: absolute;
-        z-index: 2;
-        margin: 15px;
-    }
-
-
 
     h1 {
         font-size: 32px;
@@ -71,4 +41,32 @@ export const StyledHero = styled.section`
             margin: 0 0 15% 0;
         }
     }
+`
+
+export const NavBar = styled.div`
+        display: flex;
+        height: 70px;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 0 30% 0;
+`
+
+export const LotusLogo = styled.div`
+        position: relative;
+        z-index: 0;
+        display: flex;
+`
+
+export const Hexagon = styled.img`
+        width: 70px;
+        /* align-self: flex-start; */
+        position: absolute;
+        z-index: 1;
+`
+
+export const Lotus = styled.img`
+        width: 40px;
+        position: absolute;
+        z-index: 2;
+        margin: 15px;
 `

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const StyledCallButton = styled.div`
 height: 8em;
@@ -25,7 +25,7 @@ button:active {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* align-items: flex-start; */
+  /* align-items: ${(props) => props.alignItem || 'flex-start'}; */
   
 }
 `

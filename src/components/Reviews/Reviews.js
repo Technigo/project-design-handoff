@@ -1,20 +1,20 @@
 import React from 'react';
 import reviews from 'libraries/reviews';
-import { StyledReviews } from 'components/Reviews/Reviews.styles';
+import { StyledReviews, ReviewWrapper, EachReview, ReviewBody, ReviewBy } from 'components/Reviews/Reviews.styles';
 
 export const Reviews = () => {
   return (
     <StyledReviews>
       <h2>What our yogis say:</h2>
-      <div className="review-wrapper">
+      <ReviewWrapper>
         {reviews.map((review) => (
-          <div key={review.id} className="each-review">
+          <EachReview key={review.id}>
             <img src={`/assets/${review.image}`} alt={`lady ${review.action}`} />
-            <p className="review-body">{review.body}</p>
-            <p className="review-by">-{review.author}, {review.location}</p>
-          </div>
+            <ReviewBody>{review.body}</ReviewBody>
+            <ReviewBy>-{review.author}, {review.location}</ReviewBy>
+          </EachReview>
         ))}
-      </div>
+      </ReviewWrapper>
     </StyledReviews>
   )
 }
