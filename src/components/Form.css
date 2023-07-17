@@ -1,8 +1,20 @@
-.register {
-    background-color: #F2FDFF;
+.registerWrapper {
+    background-color: white;
     border-radius: 8px 8px 0px 0px;
+    margin-bottom: 50px;
 }
 
+.registerTop {
+    background-color: #F2FDFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+
+
+}
 .h3 {
     font-size: 18px;
     font-weight: 500;
@@ -12,6 +24,14 @@
 .login {
     font-size: 12px;
     font-weight: 400;
+}
+
+.loginBtn {
+    text-decoration: underline;
+    border: none;
+    background-color: #F2FDFF;
+    font-family: Poppins;
+    font-size: 12px;
 }
 
 .form {
@@ -41,10 +61,15 @@
     box-shadow: none;
 }
 
-/*.name {
-    width: 328px;
-    height: 48px;
-    border-radius: 4px;
-}*/
+.registerText {
+    color: #252525;
+    margin-top: 32px;    
+}
 
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox*/
+.accountText {
+    font-weight: 500;
+}
+
+.loginText {
+    font-size: 12px;
+}
