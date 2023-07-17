@@ -1,6 +1,6 @@
 import React from 'react';
 import reviews from 'libraries/reviews';
-import { StyledReviews } from 'styles/Reviews.styles';
+import { StyledReviews } from 'components/Reviews/Reviews.styles';
 
 export const Reviews = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledCallButton } from 'styles/CallButton.styles'
+import { StyledCallButton } from 'components/CTAButton/CallButton.styles'
 
 export const CallButton = () => {
   const handleScroll = () => {

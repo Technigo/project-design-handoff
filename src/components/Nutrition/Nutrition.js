@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import recipes from 'libraries/recipes';
-import { StyledNutrition } from 'styles/Nutrition.styles';
+import { StyledNutrition } from 'components/Nutrition/Nutrition.styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 

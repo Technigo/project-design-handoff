@@ -1,8 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { StyledHero } from 'styles/Hero.styles';
-import { CallButton } from './CallButton';
+import { StyledHero } from 'components/Hero/Hero.styles';
+import { CallButton } from '../CTAButton/CallButton';
 
 export const Hero = () => {
   return (

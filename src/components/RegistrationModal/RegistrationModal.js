@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { StyledForm } from 'styles/Form.styles';
+import { StyledRegistrationModal } from 'components/RegistrationModal/RegistrationModal.styles';
 import plans from 'libraries/plans';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
 
-export const Form = ({ id, setShowForm }) => {
+export const RegistrationModal = ({ id, setShowForm }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -28,7 +28,7 @@ export const Form = ({ id, setShowForm }) => {
   const planMatch = plans.find((plan) => plan.id == id);
 
   return (
-    <StyledForm>
+    <StyledRegistrationModal>
       <form onSubmit={handleSubmit}>
         <div className="form-top">
           <div className="form-header">
@@ -60,6 +60,6 @@ export const Form = ({ id, setShowForm }) => {
             </div>)}
         </div>
       </form>
-    </StyledForm>
+    </StyledRegistrationModal>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import plans from 'libraries/plans';
-import { StyledPlans } from 'styles/Plans.styles';
-import { Form } from 'components/Form'
+import { StyledPlans } from 'components/Plans/Plans.styles';
+import { RegistrationModal } from 'components/RegistrationModal/RegistrationModal'
 
 export const Plans = () => {
   const [id, setId] = useState(0)
@@ -32,7 +32,7 @@ export const Plans = () => {
           ))}
         </div>
       </StyledPlans>
-      {showform && (<Form id={id} setShowForm={setShowForm} />)}
+      {showform && (<RegistrationModal id={id} setShowForm={setShowForm} />)}
     </>
 
   )

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledForm = styled.section`
+export const StyledRegistrationModal = styled.section`
     display: flex;
     flex-direction: column;
     background-color: rgb(0,0,0, 0.3);

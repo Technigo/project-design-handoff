@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledYoga } from 'styles/Yoga.styles';
+import { StyledYoga } from 'components/Yoga/Yoga.styles';
 
 export const Yoga = () => {
   return (
