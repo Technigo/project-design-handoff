@@ -1,0 +1,184 @@
+.registerWrapper {
+    background-color: white;
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom: 50px;
+}
+
+.registerTop {
+    background-color: #F2FDFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.registerMain {
+    margin-bottom: 24px;
+}
+.h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #252525;
+}
+
+.login {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.loginBtn {
+    text-decoration: underline;
+    border: none;
+    background-color: #F2FDFF;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+.form {
+    background-color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 24px;
+    margin-left: 24px;
+    padding: 32px 16px;
+}
+
+.joinBtnWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.joinBtn2 {
+    background-color: #FFD9BF;
+    color: #210440;
+    border-radius: 30px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    width: 221px;
+    height: 46px;
+    border: none;
+}
+
+.joinBtn2:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.joinBtn2:active {
+    background-color: #FFB685;
+    box-shadow: none;
+}
+
+.registerText {
+    color: #252525;
+    margin-top: 32px;
+    font-size: 24px;
+}
+
+.accountText {
+    color: #252525;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.loginText {
+    font-size: 12px;
+}
+
+span {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+label[for="newsletter"], label[for="terms"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 3px;
+}
+
+.registerBtn {
+    border: none;
+    text-decoration: underline;
+    background-color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+.checkboxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-bottom: 6px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+.registerWrapper {
+    margin: auto 20%;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.registerTop {
+    border-radius: 20px 20px 0px 0px;
+}
+}
+
+@media (min-width: 1025px) {
+
+.registerWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: auto 10%;
+    border-radius: 20px 20px;
+    margin-bottom: 80px;
+}
+
+.registerTop {
+    flex-basis: 30%;
+    border-radius: 20px 20px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.registerText {
+    font-size: 36px;
+}
+
+.accountText {
+    font-size: 18px;
+}
+}

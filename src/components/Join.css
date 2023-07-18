@@ -1,0 +1,29 @@
+.joinWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0px;
+}
+
+
+.joinBtn {
+    background-color: #FFD9BF;
+    border: none;
+    color: #210440;
+    border-radius: 30px;
+    width: 328px;
+    height: 46px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.joinBtn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.joinBtn:active {
+    background-color: #FFB685;
+    box-shadow: none;
+}

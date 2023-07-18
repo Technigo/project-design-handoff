@@ -1,0 +1,10 @@
+.praiseWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBCBD8;
+    padding: 32px;
+    margin: 36px 0px;
+}
+

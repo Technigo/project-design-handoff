@@ -1,0 +1,164 @@
+.navWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 64px;
+    background-color: #F2FDFF;
+}
+
+.logo {
+    margin: 12px 0px 12px 16px;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBarDesktop, .signInBtn, .signUpBtn {
+    display: none;
+}
+
+.hamburgerMenu {
+    height: 24px;
+    width: 24px;
+    margin: 20px 20px 0px 0px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+.navBarDesktop {
+    display: none;
+}
+
+.signInBtn {
+    display: flex;
+    justify-content: center;
+    background-color: #F2FDFF;
+    color: #252525;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    width: 54px;
+    height: 11px;
+    padding: 0;
+    margin: 26px 24px 30px 0px;
+    border: none;
+    text-decoration: underline;
+}
+
+.signInBtn:hover {
+    color: #3C0774;
+}
+
+.signInBtn:active {
+    color: #210440;
+}
+
+.signUpBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFD9BF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: #210440;
+    border-radius: 16px;
+    width: 100px;
+    height: 32px;
+    border: none;
+    margin: 26px 30px 20px 0px;
+}
+
+.signUpBtn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.signUpBtn:active {
+    background-color: #FFB685;
+    box-shadow: none;
+}
+}
+
+@media (min-width: 1025px) {
+
+.navBarDesktop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    height: 11px;
+    background-color: #F2FDFF;
+    margin: 26px 120px 16px 0px;
+    gap: 50px;
+    padding: 0;
+}
+
+.desktopNavButton {
+    display: inline-block;
+    background-color: #F2FDFF;
+    border: none;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.signInBtn {
+    display: flex;
+    justify-content: center;
+    background-color: #F2FDFF;
+    color: #252525;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    width: 54px;
+    height: 11px;
+    padding: 0;
+    margin: 26px 24px 30px 0px;
+    border: none;
+    text-decoration: underline;
+}
+
+.signInBtn:hover {
+    color: #3C0774;
+}
+
+.signInBtn:active {
+    color: #210440;
+}
+
+.signUpBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFD9BF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: #210440;
+    border-radius: 16px;
+    width: 100px;
+    height: 32px;
+    border: none;
+    margin: 26px 60px 20px 0px;
+}
+
+.signUpBtn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.signUpBtn:active {
+    background-color: #FFB685;
+    box-shadow: none;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+}
