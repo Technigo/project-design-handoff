@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyledRegistrationModal, InputSection, FormHeader, ButtonSection, Button, PlanSection } from 'components/RegistrationModal/RegistrationModal.styles';
-import plans from 'libraries/plans';
+import { plans } from 'libraries/plans';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
 import { Header2, Header3, PlanCardStatic, PlanPrice, PlanPayment, PlanSubtitle, PlanDetails } from 'styles/Global';

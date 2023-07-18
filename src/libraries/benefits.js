@@ -1,5 +1,5 @@
 /* eslint-disable quotes */
-const benefits = [
+export const benefits = [
   {
     id: 1,
     body: "Whether you're looking to reduce stress, improve your flexibility or build strength - there's a yoga class for you.",
@@ -16,5 +16,3 @@ const benefits = [
     image: 'volunteering.svg'
   }
 ]
-
-export default benefits

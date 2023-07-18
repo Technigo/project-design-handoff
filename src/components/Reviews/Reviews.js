@@ -1,5 +1,5 @@
 import React from 'react';
-import reviews from 'libraries/reviews';
+import { reviews } from 'libraries/reviews';
 import { StyledReviews, ReviewWrapper, EachReview, ReviewBody, ReviewBy } from 'components/Reviews/Reviews.styles';
 import { Header2 } from 'styles/Global';
 

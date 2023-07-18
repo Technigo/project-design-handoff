@@ -1,5 +1,5 @@
 /* eslint-disable quotes */
-const recipes = [
+export const recipes = [
   {
     id: 1,
     title: 'Roasted veggies w. peanut sauce',
@@ -29,5 +29,3 @@ const recipes = [
     image: 'pizza.jpg'
   }
 ]
-
-export default recipes

@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React, { useState } from 'react';
-import recipes from 'libraries/recipes';
+import { recipes } from 'libraries/recipes';
 import { StyledNutrition, RecipeSection, RecipeCard, RecipeInfo, RecipeTitle } from 'components/Nutrition/Nutrition.styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';

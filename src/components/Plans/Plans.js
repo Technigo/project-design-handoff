@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import plans from 'libraries/plans';
+import { plans } from 'libraries/plans';
 import { StyledPlans, PlanWrapper } from 'components/Plans/Plans.styles';
 import { RegistrationModal } from 'components/RegistrationModal/RegistrationModal'
 import { Header2, Header3, PlanCard, PlanButton, PlanPrice, PlanPayment, PlanSubtitle, PlanDetails } from 'styles/Global';

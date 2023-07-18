@@ -1,5 +1,5 @@
 import React from 'react';
-import benefits from 'libraries/benefits';
+import { benefits } from 'libraries/benefits';
 import { StyledBenefits, BenefitsWrapper, EachBenefit } from 'components/Benefits/Benefits.styles';
 import { Header2 } from 'styles/Global';
 

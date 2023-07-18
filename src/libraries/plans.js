@@ -1,4 +1,4 @@
-const benefits = [
+export const plans = [
   {
     id: 1,
     title: '7-day trial',
@@ -30,5 +30,3 @@ const benefits = [
     discount: '5% discount in our yoga store'
   }
 ]
-
-export default benefits

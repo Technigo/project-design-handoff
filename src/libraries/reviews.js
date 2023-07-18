@@ -1,5 +1,5 @@
 /* eslint-disable quotes */
-const reviews = [
+export const reviews = [
   {
     id: 1,
     body: "“This program has really helped me to be more grounded in the present moment. I used to envy my dog, as silly as that sounds, who always would finds joy in the little things and always be present with whatever he is doing. He truly is my meditation master!”",
@@ -26,5 +26,3 @@ const reviews = [
   }
 
 ]
-
-export default reviews
