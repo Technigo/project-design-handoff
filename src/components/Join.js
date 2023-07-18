@@ -3,7 +3,7 @@ import './Join.css';
 
 export const Join = () => {
   return (
-    <div className="join">
+    <div className="joinWrapper">
       <p>Join our full-body workout inspired by Ballet, Pilates, and Yoga.</p>
       <button className="joinBtn" type="button">Join Us!</button>
     </div>

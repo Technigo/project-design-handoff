@@ -1,3 +1,12 @@
+.joinWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0px;
+}
+
+
 .joinBtn {
     background-color: #FFD9BF;
     border: none;
