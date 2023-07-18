@@ -8,20 +8,6 @@ export const StyledNutrition = styled.section`
     align-items: center;
     padding: 24px 24px 48px 24px;
 
-    h2 {
-        color: ${({ theme }) => (theme.colors.teal)};
-        align-self: flex-start;
-        width: 90%;
-        max-width: 550px;
-    }
-
-    p {
-        color: ${({ theme }) => (theme.colors.teal)};
-        font-size: 16px;
-        max-width: 550px;
-        align-self: flex-start;
-    }
-
     img {
         width: 235px;
         height: 175px;
@@ -99,6 +85,7 @@ export const RecipeInfo = styled.div`
 p {
     margin: 10px 0 2px 0;
     font-size: 14px;
+    color: ${({ theme }) => (theme.colors.teal)};
 }
 
 ${RecipeCard}:hover & {
@@ -107,4 +94,8 @@ ${RecipeCard}:hover & {
 `
 export const RecipeTitle = styled.p`
     width: 60%;
+    color: ${({ theme }) => (theme.colors.teal)};
+    font-size: 16px;
+    max-width: 550px;
+    align-self: flex-start;
 `

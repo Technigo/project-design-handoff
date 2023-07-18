@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { StyledRegistrationModal, InputSection, FormHeader, ButtonSection, Button, PlanSection, PlanCard, PlanPrice, PlanPayment, PlanSubtitle, PlanDetails } from 'components/RegistrationModal/RegistrationModal.styles';
+import { StyledRegistrationModal, InputSection, FormHeader, ButtonSection, Button, PlanSection } from 'components/RegistrationModal/RegistrationModal.styles';
 import plans from 'libraries/plans';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
+import { Header2, Header3, PlanCardStatic, PlanPrice, PlanPayment, PlanSubtitle, PlanDetails } from 'styles/Global';
 
 export const RegistrationModal = ({ id, setShowForm }) => {
   const [email, setEmail] = useState('');
@@ -32,7 +33,7 @@ export const RegistrationModal = ({ id, setShowForm }) => {
       <form onSubmit={handleSubmit}>
         <InputSection>
           <FormHeader>
-            <h2>Register Here</h2>
+            <Header2 headerColor="#02393F">Register Here</Header2>
             <FontAwesomeIcon icon={faCircleXmark} className="icon" onClick={handleFormClose} />
           </FormHeader>
           <input type="text" placeholder="First Name" />
@@ -46,8 +47,8 @@ export const RegistrationModal = ({ id, setShowForm }) => {
         </InputSection>
         <PlanSection>
           {planMatch && (
-            <PlanCard>
-              <h3>{planMatch.title}</h3>
+            <PlanCardStatic>
+              <Header3>{planMatch.title}</Header3>
               <PlanPrice>{planMatch.price}</PlanPrice>
               <PlanPayment>{planMatch.payment}</PlanPayment>
               <PlanSubtitle>{planMatch.subtitle}</PlanSubtitle>
@@ -57,7 +58,7 @@ export const RegistrationModal = ({ id, setShowForm }) => {
                 <p>{planMatch.discount}</p>
               </PlanDetails>
               {/* <button type="button">Choose this plan</button> */}
-            </PlanCard>)}
+            </PlanCardStatic>)}
         </PlanSection>
       </form>
     </StyledRegistrationModal>

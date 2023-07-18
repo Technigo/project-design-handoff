@@ -12,16 +12,6 @@ export const StyledReviews = styled.section`
         border-radius: 12px;
     }
 
-    h2 {
-        color: ${({ theme }) => (theme.colors.cream)};
-        align-self: flex-start;
-    }
-
-    p {
-        color: ${({ theme }) => (theme.colors.cream)};
-        font-size: 16px;
-    }
-
     @media (min-width: 768px) and (max-width: 1024px) {
         padding: 32px 0;
 
@@ -67,6 +57,8 @@ export const EachReview = styled.div`
 
 export const ReviewBody = styled.p`
     line-height: 1.5em;
+    color: ${({ theme }) => (theme.colors.cream)};
+    font-size: 16px;
 
 @media (min-width: 1025px) {
     height: 220px;
@@ -77,6 +69,8 @@ export const ReviewBy = styled.p`
     align-self: flex-end;
     font-style: italic;
     margin: 3em 0 1em 0;
+    color: ${({ theme }) => (theme.colors.cream)};
+    font-size: 16px;
 
 @media (min-width: 1025px) {
     align-self: flex-end;

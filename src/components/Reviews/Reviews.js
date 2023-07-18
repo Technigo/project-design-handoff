@@ -1,11 +1,12 @@
 import React from 'react';
 import reviews from 'libraries/reviews';
 import { StyledReviews, ReviewWrapper, EachReview, ReviewBody, ReviewBy } from 'components/Reviews/Reviews.styles';
+import { Header2 } from 'styles/Global';
 
 export const Reviews = () => {
   return (
     <StyledReviews>
-      <h2>What our yogis say:</h2>
+      <Header2 headerColor="#F4E4D7">What our yogis say:</Header2>
       <ReviewWrapper>
         {reviews.map((review) => (
           <EachReview key={review.id}>

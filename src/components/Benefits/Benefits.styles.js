@@ -10,11 +10,6 @@ export const StyledBenefits = styled.section`
         /* color: ${({ theme }) => (theme.colors.teal)}; */
     }
 
-    h2 {
-        color: ${({ theme }) => (theme.colors.teal)};
-        width: 90%;
-    }
-
     p {
         color: ${({ theme }) => (theme.colors.teal)};
         font-size: 20px;

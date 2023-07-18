@@ -1,8 +1,10 @@
+/* eslint-disable max-len */
 import React, { useState } from 'react';
 import recipes from 'libraries/recipes';
 import { StyledNutrition, RecipeSection, RecipeCard, RecipeInfo, RecipeTitle } from 'components/Nutrition/Nutrition.styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { Header2, SectionDescription } from 'styles/Global';
 
 export const Nutrition = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -48,12 +50,12 @@ export const Nutrition = () => {
 
   return (
     <StyledNutrition>
-      <h2>Your Personalized Nutrition Plan</h2>
-      <p>Receive a personalized nutrition plan that aligns with your dietary preferences,
+      <Header2 headerColor="#02393F">Your Personalized Nutrition Plan</Header2>
+      <SectionDescription descColor="#02393F">Receive a personalized nutrition plan that aligns with your dietary preferences,
         health concerns or fitness objectives. The plan promotes a well-balanced and nourishing diet
         , and includes access to healthy recipes, inspiration and meal plans to support you on your
         wellness journey.
-      </p>
+      </SectionDescription>
       <RecipeSection onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
         <FontAwesomeIcon icon={faArrowCircleLeft} type="button" className="left-arrow" onClick={prev} />
         {recipes.map((recipe) => (

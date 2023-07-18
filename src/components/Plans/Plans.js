@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import plans from 'libraries/plans';
-import { StyledPlans, PlanWrapper, PlanCard, PlanButton, PlanPrice, PlanPayment, PlanSubtitle, PlanDetails } from 'components/Plans/Plans.styles';
+import { StyledPlans, PlanWrapper } from 'components/Plans/Plans.styles';
 import { RegistrationModal } from 'components/RegistrationModal/RegistrationModal'
+import { Header2, Header3, PlanCard, PlanButton, PlanPrice, PlanPayment, PlanSubtitle, PlanDetails } from 'styles/Global';
 
 export const Plans = () => {
   const [id, setId] = useState(0)
@@ -14,11 +15,11 @@ export const Plans = () => {
   return (
     <>
       <StyledPlans>
-        <h2 id="plans">Choose your preferred pricing plan:</h2>
+        <Header2 headerColor="#F4E4D7" id="plans">Choose your preferred pricing plan:</Header2>
         <PlanWrapper>
           {plans.map((plan) => (
             <PlanCard key={plan.id}>
-              <h3>{plan.title}</h3>
+              <Header3>{plan.title}</Header3>
               <PlanPrice>{plan.price}</PlanPrice>
               <PlanPayment>{plan.payment}</PlanPayment>
               <PlanSubtitle>{plan.subtitle}</PlanSubtitle>

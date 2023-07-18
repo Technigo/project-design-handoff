@@ -8,17 +8,6 @@ export const StyledYoga = styled.section`
     align-items: center;
     padding: 24px 24px 48px 24px;
 
-    h2 {
-        color: ${({ theme }) => (theme.colors.teal)};
-        align-self: flex-start;
-        width: 90%;
-    }
-
-    p {
-        color: ${({ theme }) => (theme.colors.teal)};
-        font-size: 16px;
-    }
-
     span {
         font-weight: bold;
     }
@@ -70,6 +59,7 @@ export const VideoLabels = styled.div`
 p {
     margin: 10px 0 2px 0;
     font-size: 14px;
+    color: ${({ theme }) => (theme.colors.teal)};
 }
 `
 

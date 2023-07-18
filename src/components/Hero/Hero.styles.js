@@ -9,13 +9,6 @@ export const StyledHero = styled.section`
     background-size: cover;
     background-position: top;
 
-    h1 {
-        font-size: 32px;
-        color: ${({ theme }) => (theme.colors.white)};
-        line-height: 1.5em;
-        max-width: 550px; 
-    }
-
     p {
         font-size: 20px;
         color: ${({ theme }) => (theme.colors.white)};

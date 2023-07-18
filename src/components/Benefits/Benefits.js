@@ -1,11 +1,12 @@
 import React from 'react';
 import benefits from 'libraries/benefits';
 import { StyledBenefits, BenefitsWrapper, EachBenefit } from 'components/Benefits/Benefits.styles';
+import { Header2 } from 'styles/Global';
 
 export const Benefits = () => {
   return (
     <StyledBenefits>
-      <h2>Ready to prioritze your well-being?</h2>
+      <Header2 headerColor="#02393F">Ready to prioritze your well-being?</Header2>
       <BenefitsWrapper>
         {benefits.map((item) => (
           <EachBenefit key={item.id}>
