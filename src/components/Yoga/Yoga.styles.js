@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const StyledYoga = styled.section`
     background-color: ${({ theme }) => (theme.colors.beige)};
@@ -23,33 +23,6 @@ export const StyledYoga = styled.section`
         font-weight: bold;
     }
 
-    .yoga-intro {
-        width: 90%;
-        max-width: 550px;
-        align-self: flex-start;
-    }
-
-    .yoga-video {
-        display: flex;
-        flex-direction: column;
-        max-width: 450px;
-    }
-
-    .yoga-video-desktop {
-        display: none;
-    }
-
-    .video-labels {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    .video-labels p {
-        margin: 10px 0 2px 0;
-        font-size: 14px;
-    }
-
     video {
         width: 100%;
         border-radius: 12px;
@@ -60,20 +33,43 @@ export const StyledYoga = styled.section`
     }
 
     @media (min-width: 1025px) {
-        padding: 40px 72px 72px 72px;
-
-        .desktop-wrapper {
-            display: flex;
-            justify-content: space-evenly;
-            width: 100%;
-            max-width: 1450px;
-        }
-
-        .yoga-video-desktop, .yoga-video {
-            display: flex;
-            flex-direction: column;
-            max-width: 300px;
-        }
-        
+        padding: 40px 72px 72px 72px;        
     }
 `
+
+export const YogaIntro = styled.div`
+    width: 90%;
+    max-width: 550px;
+    align-self: flex-start;
+`
+export const VideoWrapper = styled.div`
+@media (min-width: 1025px) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1450px;        
+}
+`
+export const EachVideo = styled.div`
+    display: ${(props) => props.display || 'flex'};
+    flex-direction: column;
+    max-width: 450px;
+
+@media (min-width: 1025px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;   
+}
+`
+
+export const VideoLabels = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+p {
+    margin: 10px 0 2px 0;
+    font-size: 14px;
+}
+`
+

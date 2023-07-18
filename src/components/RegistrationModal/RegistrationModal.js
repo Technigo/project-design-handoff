@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyledRegistrationModal } from 'components/RegistrationModal/RegistrationModal.styles';
+import { StyledRegistrationModal, InputSection, FormHeader, ButtonSection, Button, PlanSection, PlanCard, PlanPrice, PlanPayment, PlanSubtitle, PlanDetails } from 'components/RegistrationModal/RegistrationModal.styles';
 import plans from 'libraries/plans';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
@@ -30,35 +30,35 @@ export const RegistrationModal = ({ id, setShowForm }) => {
   return (
     <StyledRegistrationModal>
       <form onSubmit={handleSubmit}>
-        <div className="form-top">
-          <div className="form-header">
+        <InputSection>
+          <FormHeader>
             <h2>Register Here</h2>
             <FontAwesomeIcon icon={faCircleXmark} className="icon" onClick={handleFormClose} />
-          </div>
-          <input type="text" className="first-name" placeholder="First Name" />
+          </FormHeader>
+          <input type="text" placeholder="First Name" />
           <input type="text" placeholder="Last Name" />
           <input type="email" onChange={handleEmailChange} value={email} placeholder="Email Address" />
           <input type="password" minLength="8" onChange={handlePasswordChange} value={password} placeholder="Password" />
-          <div className="buttons">
-            <button type="button" className="log-in">Log in</button>
-            <button type="submit" className="submit" disabled={!email || !password}>Sign up</button>
-          </div>
-        </div>
-        <div className="form-bottom">
+          <ButtonSection>
+            <Button type="button" buttonColor="transparent" textColor="#02393F">Log in</Button>
+            <Button type="submit" disabled={!email || !password}>Sign up</Button>
+          </ButtonSection>
+        </InputSection>
+        <PlanSection>
           {planMatch && (
-            <div className="plan-card">
+            <PlanCard>
               <h3>{planMatch.title}</h3>
-              <p className="price">{planMatch.price}</p>
-              <p className="payment">{planMatch.payment}</p>
-              <p className="subtitle">{planMatch.subtitle}</p>
-              <div className="plan-details">
+              <PlanPrice>{planMatch.price}</PlanPrice>
+              <PlanPayment>{planMatch.payment}</PlanPayment>
+              <PlanSubtitle>{planMatch.subtitle}</PlanSubtitle>
+              <PlanDetails>
                 <p>{planMatch.recipes}</p>
                 <p>{planMatch.yoga}</p>
                 <p>{planMatch.discount}</p>
-              </div>
-              <button type="button">Choose this plan</button>
-            </div>)}
-        </div>
+              </PlanDetails>
+              {/* <button type="button">Choose this plan</button> */}
+            </PlanCard>)}
+        </PlanSection>
       </form>
     </StyledRegistrationModal>
   )

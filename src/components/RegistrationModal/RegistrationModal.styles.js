@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const StyledRegistrationModal = styled.section`
     display: flex;
@@ -11,13 +11,6 @@ export const StyledRegistrationModal = styled.section`
     right: 0;
     overflow-y: scroll;
     height: 100vh;
-
-
-    .form-header {
-        display: flex;
-        justify-content: space-between;
-
-    }
 
     h2 {
         color: ${({ theme }) => (theme.colors.teal)};
@@ -41,12 +34,6 @@ export const StyledRegistrationModal = styled.section`
         align-self: center
     }
 
-    .form-top {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     input {
         border: 2px solid ${({ theme }) => (theme.inputs.passive)};
         border-radius: 10px;
@@ -65,79 +52,62 @@ export const StyledRegistrationModal = styled.section`
         border: 2px solid ${({ theme }) => (theme.inputs.valid)};
     } */
 
-    .buttons {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 0 0 10px 0;
-    }
-
-    button {
-        width: 40%;
-        border-radius: 12px;
-        font-size: 16px;
-        font-weight: bold;
-        height: 3em;
-        font-family: 'Libre Baskerville', serif;
-    }
-
-    .log-in {
-        background-color: transparent;
-        color: ${({ theme }) => (theme.colors.teal)};
-        border: 1px solid ${({ theme }) => (theme.colors.teal)} ;
-    }
-
-    .submit {
-        background-color: ${({ theme }) => (theme.colors.teal)};
-        color: ${({ theme }) => (theme.colors.white)};
-        border: 1px solid ${({ theme }) => (theme.colors.teal)} ;
-    }
-
-    .submit:disabled {
-        background-color: ${({ theme }) => (theme.inputs.passive)};
-        border: 1px solid ${({ theme }) => (theme.inputs.passive)} ;
-    }
-
     h3 {
         font-size: 32px;
         margin: 0;
     }
+`
 
-    .price {
-        font-size: 32px;
-        margin: 10px 0 5px 0;
-        font-weight: bold;
-    }
+export const InputSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
 
-    .payment {
-        font-size: 12px;
-        font-weight: bold;
-        margin: 0;
-    }
+export const FormHeader = styled.div`
+    display: flex;
+    justify-content: space-between;
+`
 
-    .subtitle {
-        font-size: 20px;
-        width: 60%;
-    }
+export const ButtonSection = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 10px 0;
+`
 
-    .plan-details p {
-        border-bottom: 1px solid;
-        padding:15px 0;
-        margin: 0;
-    }
+export const Button = styled.button`
+    width: 40%;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 3em;
+    font-family: 'Libre Baskerville', serif;
+    border: 1px solid ${({ theme }) => (theme.colors.teal)} ;
+    background-color: ${(props) => props.buttonColor || '#02393F'};
+    color: ${(props) => props.textColor || '#F5F5F5'};
 
-    .plan-card {
-        background-color: ${({ theme }) => (theme.colors.beige)};
-        color: ${({ theme }) => (theme.colors.teal)};
-        width: 100%;
-        border-radius: 12px;
-        padding: 24px;
-        /* box-shadow: 0 0 15px 5px #AC7816; */
-        margin: 15px 0;
-        display: flex;
-        flex-direction: column;
-    }
+:disabled {
+    background-color: ${({ theme }) => (theme.inputs.passive)};
+    border: 1px solid ${({ theme }) => (theme.inputs.passive)} ;
+}
+`
 
-    .plan-card button {
+export const PlanSection = styled.div`
+
+`
+
+export const PlanCard = styled.div`
+    background-color: ${({ theme }) => (theme.colors.beige)};
+    color: ${({ theme }) => (theme.colors.teal)};
+    width: 100%;
+    border-radius: 12px;
+    padding: 24px;
+    /* box-shadow: 0 0 15px 5px #AC7816; */
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+
+    button {
         width: 170px;
         height: 2em;
         align-self: flex-start;
@@ -149,17 +119,30 @@ export const StyledRegistrationModal = styled.section`
         margin: 15px 0 0 0; 
         color: ${({ theme }) => (theme.colors.teal)};
     }
+`
 
-    /* @media (min-width: 1025px) {
-        
-        form {
-            flex-direction: row-reverse;
-            justify-content: space-between;
-        }
+export const PlanPrice = styled.p`
+    font-size: 32px;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+`
 
-        .form-top, .form-bottom {
-            width: 45%;
-        }
-    } */
+export const PlanPayment = styled.p`
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    max-width: 240px;
+`
 
+export const PlanSubtitle = styled.p`
+    font-size: 20px;
+    width: 60%;
+`
+
+export const PlanDetails = styled.div`
+p {
+    border-bottom: 1px solid;
+    padding:15px 0;
+    margin: 0;
+}
 `
