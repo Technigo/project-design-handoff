@@ -13,7 +13,7 @@ const NavbarWrapper = styled.div`
     padding: 2%;
     border-radius: 50px;
     position: fixed;
-    justify-items: space-between;
+    justify-content: space-between;
     z-index: 1;
     background-color: #222322;
     width: 80%;
@@ -24,6 +24,7 @@ const NavbarLink = styled.a`
     font-family: 'Karla', sans-serif;
     font-size: 12px;
     width: 100%;
+    text-align: center;
 `
 
 export const Navbar = () => {
