@@ -158,7 +158,7 @@ export const ReviewsSlider = () => {
           {/* here you can also pass any other element attributes.
          Also, you can use your custom components as slides */}
           {reviews.map((slider) => (
-            <ReviewList>
+            <ReviewList key={slider.id}>
               <ReviewContainer key={slider.id}>
                 <img src={slider.image} alt={slider.name} />
                 <h2>{slider.name}</h2>

@@ -220,8 +220,8 @@ export const Contacts = () => {
           </Paragraph>
         </FormTextContainer>
         <Form>
-          <StyledInput type="email" id="email" name="email" placeholder="   Your email" required />
-          <StyledInput passwordStyle type="password" id="password" name="password" required />
+          <StyledInput type="email" id="email" name="email" placeholder="   Your email" autoComplete="email" required />
+          <StyledInput passwordStyle type="password" id="password" name="password" autoComplete="new-password" required />
           <div>
             <SignUpButton type="submit">Sign up</SignUpButton>
             <Paragraph>Already have an account? <Span>Sign In</Span></Paragraph>

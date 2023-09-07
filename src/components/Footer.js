@@ -71,7 +71,7 @@ const LinkedInLogo = styled.img`
 }
 `;
 
-const SubscribeText = styled.h5`
+const SubscribeText = styled.h6`
   font-family: 'Libre Franklin';
   font-style: normal;
   font-weight: 600;
@@ -132,11 +132,13 @@ export const Footer = () => {
         <LinkedInLogo src={LinkedIn} alt="LinkedIn Logo" />
       </IconsSection>
       <SubscribeText>
-        <h5>Subscribe to get latest updates</h5>
+        Subscribe to get the latest updates
       </SubscribeText>
       <EmailInputWrapper>
         <EmailInput
           type="email"
+          name="email"
+          autoComplete="email"
           placeholder="Your email adress"
           required />
         <SubscribeButton
