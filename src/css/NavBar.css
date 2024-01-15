@@ -33,7 +33,8 @@
 }
 
 .hamburger:hover, .nav-img:hover,.logo-and-title:hover {
-  filter: brightness(80%)
+  filter: brightness(80%);
+  cursor: pointer;
 }
 
 

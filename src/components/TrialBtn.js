@@ -14,6 +14,7 @@ export const StyledTrialBtn = styled.button`
 
   :hover {
     box-shadow: 0px 4px 8px rgba(14, 14, 16, 0.5);
+    cursor: pointer;
   }
 
   :focus {    
